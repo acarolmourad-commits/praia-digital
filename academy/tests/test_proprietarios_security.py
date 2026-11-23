@@ -3,6 +3,8 @@ import pytest
 
 from academy.core.database import Base
 
+pytestmark = pytest.mark.usefixtures("owner_publication_sandbox")
+
 
 def _create_owner(client, payload):
     r = client.post("/proprietarios", json=payload)

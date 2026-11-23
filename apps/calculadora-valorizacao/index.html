@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps</title>
-<meta name="description" content="Projete a valorização de um imóvel no litoral paulista por taxa anual e prazo, e compare com o rendimento do CDI. Gratuito.">
+<title>Calculadora de Valorização Imobiliária — Cenários hipotéticos | Praia Digital Apps</title>
+<meta name="description" content="Projete variação de valor com taxas anuais hipotéticas e compare dois cenários. Sem médias de mercado ou promessa de retorno.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://praia.digital/apps/calculadora-valorizacao/">
 <style>
@@ -16,7 +16,7 @@ label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
 input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
 button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
 button:hover{background:#0c5c43}
-.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res[hidden]{display:none}.res{background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
 .res p{margin:6px 0;font-size:15px}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
@@ -32,148 +32,39 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     .links{display:grid;gap:10px;margin-top:8px}
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
+p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-invalid="true"]{border:2px solid #b91c1c} table{table-layout:fixed} td,th{overflow-wrap:anywhere}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Valorização Imobiliária | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-valorizacao/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
-<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps"><meta property="og:description" content="Projete a valorização de um imóvel no litoral por taxa anual e prazo, comparada ao CDI. Gratuito."><meta property="og:url" content="https://praia.digital/apps/calculadora-valorizacao/">
+<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Valorização Imobiliária — Cenários hipotéticos | Praia Digital Apps"><meta property="og:description" content="Compare dois cenários hipotéticos de variação de valor, sem previsão de mercado."><meta property="og:url" content="https://praia.digital/apps/calculadora-valorizacao/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto valoriza um imóvel no litoral por ano?","acceptedAnswer":{"@type":"Answer","text":"A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla)."}},{"@type":"Question","name":"O que mais influencia a valorização?","acceptedAnswer":{"@type":"Answer","text":"Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade."}},{"@type":"Question","name":"Valorização nominal ou real?","acceptedAnswer":{"@type":"Answer","text":"Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade."}},{"@type":"Question","name":"Quais custos entram na compra e na venda?","acceptedAnswer":{"@type":"Answer","text":"Na compra: ITBI (2–3%) + escritura e registro (~1%). Na venda: corretagem (5–6%) e IR sobre ganho de capital (15–22,5%, com isenções como a de único imóvel até R$ 440 mil). Total típico: 8–10% do valor."}},{"@type":"Question","name":"Imóvel ou CDI: qual rende mais?","acceptedAnswer":{"@type":"Answer","text":"Depende do horizonte. O CDI ganha no curtíssimo prazo, mas o imóvel soma valorização + aluguel líquido (~5% a.a. na temporada bem gerida) + proteção contra inflação — e o ganho na venda do único imóvel pode ser isento de IR."}},{"@type":"Question","name":"Imóvel na planta valoriza mais?","acceptedAnswer":{"@type":"Answer","text":"Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo."}}]}
-  </script>
+
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="calculadora-valorizacao">
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
-<header><h1 id="pd-app-title" tabindex="-1">📈 Calculadora de Valorização</h1><p>Projete o valor futuro do seu imóvel no litoral e compare com o CDI</p></header>
+<header><h1 id="pd-app-title" tabindex="-1">📈 Calculadora de Valorização</h1><p>Explore variação de valor com hipóteses explícitas, sem previsão de mercado</p></header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
-<div class="wrap">
-<div class="card">
-  <label>Valor atual do imóvel (R$)</label><input id="valor" type="number" value="500000">
-  <label>Cenário de valorização anual</label>
-  <select id="cenario" onchange="aplicar()">
-    <option value="4">Conservador — 4% a.a. (inflação)</option>
-    <option value="7" selected>Médio litoral — 7% a.a.</option>
-    <option value="10">Otimista (bairros em expansão) — 10% a.a.</option>
-    <option value="custom">Personalizada</option>
-  </select>
-  <label>Taxa anual personalizada (% a.a.)</label><input id="taxa" type="number" step="0.1" value="7">
-  <label>Prazo (anos)</label><input id="anos" type="number" value="10">
-  <label>CDI médio para comparação (% a.a.)</label><input id="cdi" type="number" step="0.1" value="13.5">
-  <button onclick="calcular()">Projetar valorização</button>
-  <div class="res" id="res">
-    <table>
-      <tr><th></th><th>Imóvel</th><th>CDI</th></tr>
-      <tr><td>Valor em <span id="prazo"></span> anos</td><td id="vfImo"></td><td id="vfCdi"></td></tr>
-      <tr><td>Ganho total</td><td id="gImo"></td><td id="gCdi"></td></tr>
-    </table>
-    <p id="dica" style="font-weight:700"></p>
-  </div>
-</div>
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">📈 Valorização anual por cidade <span class="tag">12 meses até set/2026</span></h2>
-<table>
-  <tr><th>Cidade</th><th>Valorização 12m</th><th>Driver principal</th></tr>
-  <tr><td>Bertioga</td><td>+15,2%</td><td>Riviera + expansão da orla sul</td></tr>
-  <tr><td>Peruíbe</td><td>+14,1%</td><td>preço-base baixo, nova demanda</td></tr>
-  <tr><td>Itanhaém</td><td>+13,8%</td><td>condomínios e acesso pela Padre Manoel</td></tr>
-  <tr><td>Mongaguá</td><td>+12,5%</td><td>plataforma de pesca + verticalização</td></tr>
-  <tr><td>São Sebastião</td><td>+12,1%</td><td>Maresias/Juquehy, temporada premium</td></tr>
-  <tr><td>Ubatuba</td><td>+11,3%</td><td>turismo o ano todo</td></tr>
-  <tr><td>Ilhabela</td><td>+10,5%</td><td>estoque limitado (ilha)</td></tr>
-  <tr><td>São Vicente</td><td>+10,5%</td><td>revitalização do centro e orla</td></tr>
-  <tr><td>Santos</td><td>+9,8%</td><td>liquidez e requalificação do centro</td></tr>
-  <tr><td>Praia Grande</td><td>+9,5%</td><td>maior estoque de lançamentos da baixada</td></tr>
-  <tr><td>Guarujá</td><td>+8,9%</td><td>Enseada/Astúrias, demanda de SP</td></tr>
-</table>
-<p style="font-size:12px;color:#64748B;margin-top:12px">Fonte: análise Praia Digital sobre anúncios e transações (12 meses até set/2026). Valorização passada não garante retorno futuro — use como referência, não como promessa.</p>
-</div>
-
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">💰 Valorização é só metade da conta: o retorno total</h2>
-<p style="font-size:14px;color:#334155">Imóvel de investimento rende de dois jeitos: <b>valorização</b> (patrimônio) e <b>aluguel</b> (renda). Somando os dois, a comparação com renda fixa muda de figura:</p>
-<table>
-  <tr><th>Exemplo: imóvel de R$ 500 mil em Praia Grande</th><th>Apenas valorização</th><th>Valorização + temporada</th></tr>
-  <tr><td>Retorno em 10 anos (9,5% a.a. + renda líquida ~5% a.a.)</td><td>~R$ 1,24 mi</td><td>~R$ 1,24 mi + ~R$ 25 mil/ano de renda</td></tr>
-  <tr><td>Equivalente em CDI (13,5% a.a. bruto)</td><td colspan="2">~R$ 1,77 mi — mas sem uso, sem hedge de inflação e com IR de 15–22,5% sobre o ganho</td></tr>
-</table>
-<p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: se a <b>valorização anual + yield líquido de aluguel</b> superar o CDI após impostos, o imóvel ganha no longo prazo — e ainda entrega uso próprio nas férias.</p>
-</div>
-
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">🚧 O que está impulsionando o litoral em 2026</h2>
-<ul style="font-size:14px;color:#334155;padding-left:1.2rem;line-height:1.7">
-  <li><b>Expansão da Riviera de São Lourenço (Bertioga):</b> novos módulos puxam toda a orla sul da cidade — maior valorização 12m do litoral (+15,2%).</li>
-  <li><b>Home office consolidado:</b> ~1 em cada 4 compradores de temporada no litoral declara trabalho remoto — demanda por 2+ quartos com escritório segue forte.</li>
-  <li><b>Temporada de cruzeiros em Santos:</b> o terminal portuário recebe dezenas de escalas por temporada, aquecendo comércio e aluguel de curta temporada no centro e na orla.</li>
-  <li><b>Acessos e mobilidade:</b> obras e melhorias na Padre Manoel da Nóbrega (Itanhaém/Peruíbe) e no sistema Anchieta–Imigrantes reduzem o tempo SP→praia e ampliam a base de visitantes de fim de semana.</li>
-  <li><b>Estoque limitado em ilhas e áreas preservadas:</b> Ilhabela e trechos de São Sebastião têm restrição física de novos lotes — escassez estrutural sustenta preços.</li>
-</ul>
-</div>
-
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">⚠️ Custos de transação que corroem o ganho (não esqueça!)</h2>
-<table>
-  <tr><th>Custo</th><th>Faixa típica</th><th>Quando incide</th></tr>
-  <tr><td>ITBI</td><td>2–3% do valor</td><td>na compra</td></tr>
-  <tr><td>Escritura + registro</td><td>~1%</td><td>na compra</td></tr>
-  <tr><td>Corretagem</td><td>5–6%</td><td>na venda</td></tr>
-  <tr><td>IR sobre ganho de capital</td><td>15–22,5%</td><td>na venda (há isenções, ex.: único imóvel até R$ 440 mil)</td></tr>
-</table>
-<p style="font-size:13px;color:#64748B;margin-top:8px">Na prática, comprar e vender "come" 8–10% do valor do imóvel. Por isso valorização só compensa com horizonte de <b>5+ anos</b> — em prazos curtos, os custos vencem o ganho.</p>
-</div>
-
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">🧭 3 erros comuns ao projetar valorização</h2>
-<ol style="font-size:14px;color:#334155;padding-left:1.2rem;line-height:1.7">
-  <li><b>Usar preço de anúncio como se fosse preço de venda.</b> O desconto médio de negociação no litoral fica entre 5% e 10% — projete com o valor real de transação.</li>
-  <li><b>Extrapolar um ano excepcional.</b> Bertioga subiu 15,2% em 12 meses, mas a média de longo prazo é menor. Use 6–8% a.a. no cenário-base e trate picos como bônus.</li>
-  <li><b>Ignorar a liquidez.</b> Imóvel fora do padrão do bairro (muito grande, sem vaga, longe do mar) pode ficar 12+ meses à venda — e liquidez baixa corrói o preço final.</li>
-</ol>
-</div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Quanto valoriza um imóvel no litoral por ano?</summary><p>A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla).</p></details>
-    <details><summary>O que mais influencia a valorização?</summary><p>Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade.</p></details>
-    <details><summary>Valorização nominal ou real?</summary><p>Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,5%) para avaliar o custo de oportunidade.</p></details>
-    <details><summary>Quais custos entram na compra e na venda?</summary><p>Na compra: ITBI (2–3%) + escritura e registro (~1%). Na venda: corretagem (5–6%) e IR sobre ganho de capital (15–22,5%, com isenções como a de único imóvel até R$ 440 mil). Total típico: 8–10% do valor.</p></details>
-    <details><summary>Imóvel ou CDI: qual rende mais?</summary><p>Depende do horizonte. O CDI (~13,5% a.a. bruto) ganha no curtíssimo prazo, mas o imóvel soma valorização + aluguel líquido (~5% a.a. na temporada bem gerida) + proteção contra inflação — e, ao contrário da renda fixa, o ganho na venda do único imóvel pode ser isento de IR.</p></details>
-    <details><summary>Imóvel na planta valoriza mais?</summary><p>Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
-      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
-      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
-    </div>
-  </div>
-
-<div class="card"><h2>📌 Como interpretar</h2>
-<p style="font-size:14px;margin-top:6px">A valorização imobiliária varia muito por cidade e bairro: use o <a href="/apps/comparador-cidades/">comparador de cidades</a> para escolher onde investir e o <a href="/apps/valor-imovel/">estimador de valor</a> para saber quanto seu imóvel vale hoje. Lembre-se: o imóvel também gera renda — some a valorização ao retorno do <a href="/apps/simulador-roi-temporada/">simulador de ROI de temporada</a> para o retorno total do investimento.</p>
-<p style="font-size:14px;margin-top:8px">Valores são projeções educativas, sem garantia. Consulte dados reais no <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">índice de preço por m² do litoral</a>.</p></div>
-</div>
-<script>
-const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-function aplicar(){const c=document.getElementById('cenario').value;if(c!=='custom')document.getElementById('taxa').value=c;}
-function calcular(){
-  const V=parseFloat(document.getElementById('valor').value)||0;
-  const t=(parseFloat(document.getElementById('taxa').value)||0)/100;
-  const a=parseFloat(document.getElementById('anos').value)||0;
-  const c=(parseFloat(document.getElementById('cdi').value)||0)/100;
-  if(V<=0||a<=0){alert('Verifique os valores.');return;}
-  const vfI=V*Math.pow(1+t,a), vfC=V*Math.pow(1+c,a);
-  document.getElementById('prazo').textContent=a;
-  document.getElementById('vfImo').textContent=fmt(vfI);
-  document.getElementById('vfCdi').textContent=fmt(vfC);
-  document.getElementById('gImo').textContent=fmt(vfI-V);
-  document.getElementById('gCdi').textContent=fmt(vfC-V);
-  document.getElementById('dica').textContent = vfI>vfC ? '🏆 Neste cenário, o imóvel supera o CDI — sem contar a renda de aluguel.' : 'ℹ️ O CDI rende mais neste cenário; some a renda de temporada ao imóvel para comparar o retorno total.';
-  document.getElementById('res').style.display='block';
-}
-</script>
+<main class="wrap"><div class="card">
+<p>Os números são exemplos editáveis, não médias de cidades, taxas vigentes ou recomendação de investimento. A comparação aplica duas taxas ao mesmo valor inicial, sem aportes ou retiradas.</p>
+<label for="valor">Valor inicial do imóvel (R$)</label><input id="valor" type="number" min="0.01" max="1000000000" step="0.01" value="500000">
+<label for="cenario">Exemplo de variação anual do imóvel</label><select id="cenario"><option value="-5">Hipótese de queda: −5% ao ano</option><option value="0" selected>Hipótese sem variação: 0% ao ano</option><option value="5">Hipótese de aumento: 5% ao ano</option><option value="custom">Personalizada</option></select>
+<label for="taxa">Variação efetiva anual do imóvel (% a.a.)</label><input id="taxa" type="number" min="-100" max="100" step="0.01" value="0">
+<label for="anos">Prazo (anos inteiros)</label><input id="anos" type="number" min="1" max="50" step="1" value="10">
+<label for="cdi">Taxa efetiva anual do cenário comparativo (% a.a.)</label><input id="cdi" type="number" min="-100" max="100" step="0.01" value="0">
+<p>Limites técnicos: valor inicial de R$ 0,01 a R$ 1 bilhão, prazo inteiro de 1 a 50 anos e taxas de −100% a 100% ao ano. Não são faixas de mercado. Taxa de −100% representa perda integral do valor neste modelo.</p>
+<button type="button" id="calcular">Projetar cenários</button><p id="erro" role="alert" hidden></p><noscript><p>Ative JavaScript para calcular. Nenhum resultado é produzido sem ele.</p></noscript>
+<div class="res" id="res" aria-live="polite" hidden><table><caption>Valores nominais nas hipóteses informadas</caption><tr><th scope="col">Indicador</th><th scope="col">Imóvel</th><th scope="col">Comparativo hipotético</th></tr><tr><th scope="row">Valor em <span id="prazo"></span> anos</th><td id="vfImo"></td><td id="vfCdi"></td></tr><tr><th scope="row">Variação acumulada em reais</th><td id="gImo"></td><td id="gCdi"></td></tr></table><p id="dica" style="font-weight:700"></p></div>
+</div><div class="card"><h2>Fórmula e interpretação</h2>
+<p>Valor projetado = valor inicial × (1 + taxa anual/100)^anos. Variação acumulada = valor projetado − valor inicial. A taxa é efetiva anual e permanece constante em todos os anos. Com taxa zero, o valor não muda; com −100%, fica zero. Taxas abaixo de −100% são rejeitadas.</p>
+<p>Os exemplos de queda, estabilidade e aumento servem apenas para explorar a fórmula. Editar a taxa seleciona o cenário personalizado. Um valor projetado maior não significa que uma alternativa seja melhor: a ferramenta não compara riscos, liquidez nem condições contratuais.</p>
+</div><div class="card"><h2>O que esta projeção não inclui</h2>
+<p>Não calculamos inflação, renda de aluguel, financiamento, manutenção, tributos, taxas ou despesas de compra e venda. O resultado não é ganho real, lucro líquido, avaliação de mercado ou retorno total do investimento. A coluna comparativa não representa CDI vigente nem produto financeiro específico.</p>
+<p>Não some automaticamente uma taxa de aluguel à taxa de variação de preço. Para uma análise completa, registre os fluxos de caixa, custos e datas; use premissas comparáveis e verifique as fontes dos dados que fornecer.</p>
+<p>Continue com o <a href="/blog/rentabilidade-imoveis-praia-2026.html">guia de rentabilidade sem promessas</a>, os <a href="/apps/custo-de-compra/">custos de compra</a> ou o <a href="/apps/simulador-roi-temporada/">simulador de temporada</a>. Explore também o <a href="/apps/comparador-cidades/">comparador de cidades</a> e o <a href="/apps/valor-imovel/">estimador de valor</a>, conferindo suas limitações.</p>
+<p><a href="/bairros/">Índice de bairros</a> · <a href="/bairros/santos/index.html">Santos</a> · <a href="/bairros/guaruja/index.html">Guarujá</a> · <a href="/bairros/sao-sebastiao/index.html">São Sebastião</a></p>
+</div></main>
+<script src="/apps/calculadora-valorizacao/calculadora.js"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
@@ -189,7 +80,7 @@ function calcular(){
 </section>
 
 <script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
-<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Defina valor atual, prazo e taxa anual como hipóteses, não como previsão garantida.</li><li>Compare cenários conservador, intermediário e otimista; confira a fonte e a data das taxas e tabelas.</li><li>A comparação simplificada com CDI não incorpora todos os custos, impostos, liquidez ou riscos de cada alternativa.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
-<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Valor do imóvel</a></li></ul></section>
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Defina valor atual, prazo e taxa anual como hipóteses, não como previsão garantida.</li><li>Compare hipóteses de queda, estabilidade e aumento, sem tratá-las como previsões.</li><li>A comparação hipotética não incorpora custos, impostos, liquidez ou riscos de cada alternativa.</li></ol><p class="pd-network-note">As taxas são hipóteses fornecidas por você, não dados de mercado validados. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue com o próximo aplicativo</h2><p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p><div class="pd-workflow" aria-labelledby="pd-workflow-title"><h3 id="pd-workflow-title">Use este resultado na sua rotina</h3><dl><div><dt>Antes de começar</dt><dd>Informe valor inicial, período e uma hipótese explícita de valorização.</dd></div><div><dt>O que registrar</dt><dd>Registre cenários e premissas. A projeção não prevê o preço futuro do imóvel.</dd></div></dl><p><strong>Continue sua análise</strong></p><ul class="pd-next-links"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/relatorio-imovel/">Relatório do imóvel</a></li></ul></div><details><summary>Explorar a rede completa de aplicativos</summary><div class="pd-network-group"><h3>Planejar a compra</h3><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/"><strong>Alugar ou comprar</strong><span>Compare cenários com os custos e o prazo que você informar.</span></a></li><li><a href="/apps/calculadora-financiamento/"><strong>Financiamento SAC e Price</strong><span>Compare sistemas de amortização usando as mesmas premissas.</span></a></li><li><a href="/apps/calculadora-consorcio/"><strong>Consórcio</strong><span>Organize parcelas e lance; a contemplação não tem data garantida.</span></a></li><li><a href="/apps/custo-de-compra/"><strong>Custos de compra</strong><span>Inclua tributos e despesas a confirmar para a sua operação.</span></a></li><li><a href="/apps/planejador-entrada/"><strong>Planejador de entrada</strong><span>Defina a meta e simule quanto reservar por mês.</span></a></li><li><a href="/apps/renda-para-financiar/"><strong>Renda para financiar</strong><span>Estime o comprometimento de renda; a aprovação depende do banco.</span></a></li></ul></div><div class="pd-network-group"><h3>Comparar cenários</h3><ul class="pd-network-grid"><li><a href="/apps/comparador-cidades/"><strong>Comparador de cidades</strong><span>Compare destinos pelo perfil escolhido e confira as fontes.</span></a></li><li><a href="/apps/valor-imovel/"><strong>Valor do imóvel</strong><span>Explore uma estimativa e confira referências antes de decidir.</span></a></li><li><a href="/apps/simulador-roi-temporada/"><strong>ROI de temporada</strong><span>Simule receita, despesas e retorno com suas premissas.</span></a></li><li><a href="/apps/temporada-ou-anual/"><strong>Temporada ou aluguel anual</strong><span>Compare os dois modelos com custos e ocupação informados.</span></a></li></ul></div><div class="pd-network-group"><h3>Preparar e revisar anúncios</h3><ul class="pd-network-grid"><li><a href="/apps/checklist-vistoria/"><strong>Checklist de vistoria</strong><span>Organize observações e pendências para a revisão do imóvel.</span></a></li><li><a href="/apps/oficina-ia-imobiliaria/"><strong>Oficina de IA</strong><span>Monte um briefing, confira lacunas e prepare modelos de e-mail.</span></a></li><li><a href="/apps/revisor-anuncios/"><strong>Revisor de anúncios</strong><span>Compare duas versões com uma ficha conferida e encontre divergências.</span></a></li><li><a href="/apps/relatorio-imovel/"><strong>Relatório do imóvel</strong><span>Reúna fontes, informações e próximos passos; imprima ou salve em PDF.</span></a></li></ul></div><div class="pd-network-group"><h3>Organizar vendas em marketplaces</h3><ul class="pd-network-grid"><li><a href="/apps/calculadora-precificacao-shopee/"><strong>Precificação Shopee e TikTok Shop</strong><span>Confira taxas aplicáveis e estime sua margem com os custos informados.</span></a></li></ul></div></details><p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>
 </body>
 </html>

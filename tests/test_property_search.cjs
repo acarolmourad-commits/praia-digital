@@ -42,3 +42,19 @@ assert.equal(conflicting.budgetCleared,true);
 assert(!conflicting.q.includes('700'));
 const monthly=s.fromParams(new URLSearchParams('q=alugar+apartamento+ate+R%24+9+mil+por+mes&finalidade=Aluguel'));
 assert.equal(monthly.preco_max,9000);
+
+// Issue #177: suites must never be silently treated as total bedrooms.
+for (const query of ['2 suítes', '2 suites', 'duas suítes', 'com suíte', 'sem suíte']) {
+  const state=s.parse(query);
+  assert.equal(state.quartos,'',query);
+  assert.equal(state.unsupportedSuites,true,query);
+  assert.equal(s.matches({...p,bedrooms:7,tags:['2 suítes']},state),false,query);
+}
+const mixed=s.parse('comprar casa em Bertioga com 3 quartos e 2 suítes até R$ 600 mil');
+assert.equal(mixed.quartos,'3');
+assert.equal(mixed.preco_max,600000);
+assert.equal(mixed.unsupportedSuites,true);
+assert.equal(s.fromParams(new URLSearchParams('q=2+su%C3%ADtes&quartos=2')).unsupportedSuites,true);
+assert.equal(s.parse('2 quartos').unsupportedSuites,false);
+assert.equal(s.matches(p,s.parse('2 quartos')),true);
+console.log('Issue #177 suite limitation assertions passed');

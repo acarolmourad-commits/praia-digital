@@ -5,3 +5,9 @@ test('missing data remains missing rather than invented',()=>{const d={tipo:'Apa
 test('zero bedrooms is retained and empty whitespace excluded',()=>{assert.equal(assess({quartos:0,custos:'  '}).filled,1);assert.match(briefing({tipo:'Studio',cidade:'Santos',finalidade:'Locação',quartos:0}),/Dormitórios: 0/);});
 test('briefing keeps supplied values and rejects incomplete minimum',()=>{assert.throws(()=>briefing({cidade:'Santos'}),/Preencha/);assert.match(briefing({tipo:'Casa',cidade:'Guarujá',finalidade:'Venda',area:'80 m² privativos',preco:'R$ 700.000'}),/Área e tipo de área: 80 m² privativos/);});
 test('all outreach stages are drafts and refusal closes contact',()=>{for(const etapa of ['primeiro','retorno','interesse','encerrar']) assert.match(followup({contexto:'Contexto confirmado.',etapa}),/NÃO ENVIADO/);assert.match(followup({contexto:'Não desejam contato.',etapa:'encerrar'}),/não enviar novas mensagens/);assert.throws(()=>followup({contexto:'',etapa:'primeiro'}));assert.throws(()=>followup({contexto:'x',etapa:'unknown'}));});
+
+test('followup rejects missing, unknown and inherited stages',()=>{
+  for (const etapa of [undefined,null,'','unknown','constructor','toString','__proto__','hasOwnProperty']) {
+    assert.throws(()=>followup({contexto:'Contexto fictício confirmado.',etapa}),/Escolha uma etapa válida\./,String(etapa));
+  }
+});

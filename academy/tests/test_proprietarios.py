@@ -2,6 +2,8 @@ import pytest
 
 from academy.core.database import Base
 
+pytestmark = pytest.mark.usefixtures("owner_publication_sandbox")
+
 
 def _create_owner(client, payload):
     r = client.post("/proprietarios", json=payload)
@@ -49,7 +51,7 @@ def test_valor_liquido_nao_pode_ser_maior_que_anunciado(client):
     assert r.status_code == 400
 
 
-def test_fluxo_aprovado_e_publicacao(client):
+def test_fluxo_aprovado_e_publicacao(client, owner_publication_sandbox):
     owner = {
         "nome_completo": "Carlos",
         "cpf_cnpj": "11122233344",
@@ -85,6 +87,9 @@ def test_fluxo_aprovado_e_publicacao(client):
     pub = r_pub.json()
     assert pub["status"] == "PUBLICADO"
     assert pub["pagina_url"].startswith("https://praia.digital/proprietarios/")
+    generated = owner_publication_sandbox / "proprietarios" / pub["pagina_url"].rsplit("/", 1)[-1]
+    assert generated.is_file()
+    assert pub["pagina_url"] in (owner_publication_sandbox / "sitemap.xml").read_text()
 
     assert Base.metadata.tables is not None
 

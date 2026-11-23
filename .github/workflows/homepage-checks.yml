@@ -4,9 +4,15 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'apps/**'
+      - 'tests/app-catalog-browser.cjs'
+      - 'tests/consorcio-regression.cjs'
       - 'captura-leads.html'
       - 'imoveis.html'
       - 'encontrar-imovel.html'
+      - 'home-classica.html'
+      - 'casa-condominio-fechado-bertioga.html'
+      - 'tests/issue177-*.cjs'
       - 'interesse.html'
       - 'cases.html'
       - 'anfitrioes/central-priceplabs.html'
@@ -68,6 +74,8 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
           node tests/test_property_search.cjs
+          node tests/consorcio-regression.cjs
+          node --test tests/issue177-dom.cjs
           node tests/test_house_bertioga.cjs
           node tests/test_apartment_bertioga.cjs
           node tests/test_apartment_indaia.cjs
@@ -80,11 +88,14 @@ jobs:
       - name: Browser journey tests (offline, no form submission)
         env:
           HOMEPAGE_QA_OUTPUT: ${{ runner.temp }}/homepage-qa
+          ISSUE177_QA_OUTPUT: ${{ runner.temp }}/issue177-qa
           INDAIA_QA_OUTPUT: ${{ runner.temp }}/indaia-qa
         run: |
           npm install --prefix "$RUNNER_TEMP/homepage-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/homepage-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/issue177-browser.cjs
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/homepage-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/app-catalog-browser.cjs
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/apartment-indaia-browser.cjs
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/apartment-indaia-84m2-browser.cjs
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/house-jardim-indaia-browser.cjs
@@ -94,6 +105,8 @@ jobs:
           name: homepage-browser-evidence
           path: |
             ${{ runner.temp }}/homepage-qa
+            ${{ runner.temp }}/issue177-qa
             ${{ runner.temp }}/indaia-qa
             ${{ runner.temp }}/homepage-navigation.json
           if-no-files-found: warn
+

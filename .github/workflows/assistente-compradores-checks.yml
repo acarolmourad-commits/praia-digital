@@ -1,0 +1,35 @@
+name: Buyer assistant checks
+on:
+  pull_request:
+    paths:
+      - 'ferramentas/assistente-virtual.html'
+      - 'js/assistente-compradores.js'
+      - 'tests/assistente-compradores*'
+      - '.github/workflows/assistente-compradores-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Local logic, DOM and responsive browser tests
+        env:
+          ASSISTENTE_QA_OUTPUT: ${{ runner.temp }}/assistente-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/assistente-deps" jsdom@26 playwright@1.58.2 --no-audit --no-fund
+          export NODE_PATH="$RUNNER_TEMP/assistente-deps/node_modules"
+          node --test tests/assistente-compradores.test.cjs
+          "$RUNNER_TEMP/assistente-deps/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          python3 scripts/build-navigation.py --report "$RUNNER_TEMP/assistente-navigation.json"
+          node tests/assistente-compradores-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: assistente-compradores-qa
+          path: ${{ runner.temp }}/assistente-qa

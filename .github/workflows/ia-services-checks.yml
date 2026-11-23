@@ -1,7 +1,7 @@
 name: IA services page
 on:
   pull_request:
-    paths: ['servicos-ia.html', 'css/servicos-ia-empresas.css', 'tests/test_ia_services.py', 'tests/ia-services-browser.cjs', '.github/workflows/ia-services-checks.yml']
+    paths: ['servicos-ia.html', 'css/servicos-ia-empresas.css', 'solicitar-servico.html', 'css/solicitar-servico.css', 'js/solicitar-servico.js', 'scripts/build-navigation.py', 'partials/header.html', 'assets/social/servicos-ia-*', 'tests/test_ia_services.py', 'tests/ia-services-browser.cjs', '.github/workflows/ia-services-checks.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,8 +13,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
       - run: python3 tests/test_ia_services.py
+      - run: python3 -m unittest discover -s tests -p 'test_navigation.py'
+      - run: node --check js/solicitar-servico.js
+      - run: node --test workers/livebridge-leads/worker.test.mjs
       - name: Browser checks
         run: |
           npm install --prefix "$RUNNER_TEMP/ia-qa" playwright@1.63.0 --no-audit --no-fund

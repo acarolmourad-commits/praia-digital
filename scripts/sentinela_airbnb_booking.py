@@ -4,7 +4,7 @@ Monitora fontes oficiais e separa links detectados de informativos revisados.
 Mudancas de hash ficam no relatorio, sem virar noticia. A revisao editorial
 versionada e preservada em toda coleta. Nao envia mensagens aos usuarios.
 """
-import hashlib, html, json, os, re, sys, urllib.request
+import hashlib, html, json, os, re, sys, urllib.error, urllib.request
 from datetime import datetime, timezone
 from urllib.parse import urljoin, urlparse
 
@@ -37,8 +37,14 @@ SOURCES = [
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; PraiaDigitalSentinela/1.0; +https://praia.digital/)"})
     try:
-        r = urllib.request.urlopen(req, timeout=30)
-        return r.status, r.read().decode("utf-8", errors="ignore")
+        with urllib.request.urlopen(req, timeout=30) as response:
+            return response.status, response.read().decode("utf-8", errors="ignore")
+    except urllib.error.HTTPError as error:
+        # HTTP failures have a real status; do not confuse them with DNS/timeouts.
+        # Never interpret an error page as source content or retry a blocked source.
+        status = error.code
+        error.close()
+        return status, f"ERROR: HTTP {status}"
     except Exception as e:
         return None, f"ERROR: {e}"
 

@@ -6,7 +6,7 @@ REPO = Path('.').resolve()
 SITEMAP_XML = REPO / 'sitemap.xml'
 SITEMAP_HTML = REPO / 'sitemap.html'
 
-BASE_URL = 'https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/'
+BASE_URL = 'https://praia.digital/litoral-prime-imoveis/'
 
 if not SITEMAP_XML.exists():
     raise SystemExit('sitemap.xml not found')

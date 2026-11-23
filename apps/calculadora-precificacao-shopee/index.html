@@ -77,6 +77,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
   <button class="btn" onclick="calc()">Calcular</button>
 </div>
 
+<p id="calc-status" role="status" aria-live="polite"></p>
 <div class="panel result" id="res">
   <div class="kpis">
     <div class="kpi"><b id="kLucro">—</b><small>Lucro por pedido</small></div>
@@ -100,22 +101,29 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
       <tr><td>Shopee</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
       <tr><td>Shopee</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
       <tr><td>Shopee</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
-      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>comissão da plataforma + comissão de afiliado (9,5%–12%, configurável acima)</td></tr>
+      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>6% + R$ 2,00 por pedido + comissão de afiliado informada</td></tr>
     </tbody>
   </table>
-  <p class="note">Margem de referência saudável em marketplace: <strong>10% a 20%</strong>. Abaixo de 10% qualquer imprevisto (extravio, reembolso, spike de ads) vira prejuízo.</p>
+  <p class="note">As faixas são premissas fixas desta simulação, não uma consulta às tarifas vigentes da sua conta. Margem positiva não garante lucro final: confira tributos, devoluções e demais custos não informados.</p>
 </div>
 
-<div class="panel" style="text-align:center">
-  <p style="font-weight:700">Prefere que especialistas cuidem de tudo isso?</p>
-  <p class="note" style="margin:6px 0 14px">Gestão completa de lojas na Shopee e TikTok Shop: cadastro, precificação, anúncios e relatórios.</p>
-  <a class="btn" style="text-decoration:none" href="/gestao-marketplaces.html">Conhecer a gestão de marketplaces</a>
-</div>
+<section class="panel" aria-labelledby="roteiro-precificacao-titulo" style="text-align:center">
+  <h2 id="roteiro-precificacao-titulo" style="font-size:1.05rem">Antes de definir o preço</h2>
+  <p class="note" style="margin:6px 0 14px">Use o checklist para conferir os custos e as regras da sua conta na Shopee ou no TikTok Shop. Registre as premissas e refaça a simulação quando elas mudarem.</p>
+  <a class="btn" style="text-decoration:none" href="/apps/guia-de-uso.html#vender">Abrir roteiro de precificação</a>
+</section>
 </div></main>
 <footer><div class="wrap">© 2026 Praia Digital · <a href="/termos-de-uso.html">Termos</a> · <a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/contato.html">Contato</a></div></footer>
 <script>
 const plat=document.getElementById('plat'),afWrap=document.getElementById('afWrap');
 plat.addEventListener('change',()=>{afWrap.style.display=plat.value==='tiktok'?'block':'none';});
+function invalidar(){
+  document.getElementById('res').classList.remove('show');
+  for(const id of ['kLucro','kMargem','kTaxa','sugestao','alerta'])document.getElementById(id).textContent='';
+  document.getElementById('detalheBody').innerHTML='';
+  document.getElementById('calc-status').textContent='Compare novamente após alterar os dados. Nenhum resultado atualizado está disponível.';
+}
+for(const id of ['plat','custo','preco','afiliado','frete','margemAlvo'])for(const event of ['input','change'])document.getElementById(id).addEventListener(event,invalidar);
 function taxaShopee(p){if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
 function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimada 6% + R$2 fixo + afiliado
 function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
@@ -136,19 +144,21 @@ function precoParaMargem(c,pl,af,ex,alvo){
   return candidatos.length?Math.min(...candidatos):null;
 }
 function calc(){
+  invalidar();
   const c=parseFloat(document.getElementById('custo').value),p=parseFloat(document.getElementById('preco').value);
   const pl=plat.value,af=Number(document.getElementById('afiliado').value),ex=Number(document.getElementById('frete').value);
   const alvo=document.getElementById('margemAlvo').value.trim()===''?15:Number(document.getElementById('margemAlvo').value);
   const res=document.getElementById('res'),al=document.getElementById('alerta');
-  if (![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
+  if (!['shopee','tiktok'].includes(pl) || ![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
   const r=lucro(p,c,pl,af,ex),m=r.lucro/p*100;
+  if(![r.lucro,r.taxa,m,c+ex].every(Number.isFinite)){alert('Os valores excedem o limite de cálculo. Revise os dados.');return;}
   document.getElementById('kLucro').textContent=fmt(r.lucro);
   document.getElementById('kLucro').className=r.lucro>=0?'good':'bad';
   document.getElementById('kMargem').textContent=m.toFixed(1).replace('.',',')+'%';
   document.getElementById('kMargem').className=m>=10?'good':(m>=0?'warn':'bad');
   document.getElementById('kTaxa').textContent=fmt(r.taxa);
   al.className='alert show '+(m>=10?'ok':(m>=0?'warn':'bad'));
-  al.textContent=m>=20?'Excelente: margem acima de 20% — avalie se o preço não está alto demais para converter.':(m>=10?'Dentro da faixa saudável (10–20%). Bom produto para escalar.':(m>=0?'Atenção: margem abaixo de 10%. Qualquer imprevisto vira prejuízo. Considere subir o preço ou reduzir custo.':'Prejuízo: este preço não cobre custo + taxas. Não anuncie nesse valor.'));
+  al.textContent=m>=0?'Saldo não negativo nas premissas informadas. Isso não garante lucro final nem recomenda escalar as vendas.':'Saldo negativo nas premissas informadas. Revise preço, taxas e despesas antes de decidir.';
   const ps=precoParaMargem(c,pl,af,ex,alvo);
   document.getElementById('sugestao').textContent=ps===null?'Meta inviável com as taxas e custos informados.':'Para margem de '+alvo+'%, o menor preço estimado em centavos é '+fmt(ps)+'. Valide taxas e tributos antes de usar.';
   const tb=document.getElementById('detalheBody');
@@ -157,11 +167,12 @@ function calc(){
     '<tr><td>(–) Taxa da plataforma'+(pl==='tiktok'?' (incl. afiliado '+af+'%)':'')+'</td><td>'+fmt(r.taxa)+'</td></tr>'+
     (ex?'<tr><td>(–) Custo extra por pedido</td><td>'+fmt(ex)+'</td></tr>':'')+
     '<tr><td><strong>= Resultado estimado por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
+  document.getElementById('calc-status').textContent='Simulação atualizada com os dados informados.';
   res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 </script>
 
-<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise com os aplicativos</h2><p>Ferramentas conectadas por objetivo, com acesso direto ao catálogo e à página inicial.</p><details><summary>Explorar os outros 12 aplicativos</summary><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou Comprar no Litoral?</a></li><li><a href="/apps/calculadora-consorcio/">Calculadora de Consórcio Imobiliário</a></li><li><a href="/apps/calculadora-financiamento/">Simulador de Financiamento</a></li><li><a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de Vistoria de Imóvel</a></li><li><a href="/apps/comparador-cidades/">Comparador de Cidades do Litoral</a></li><li><a href="/apps/custo-de-compra/">Calculadora de ITBI e Custos de Compra do Imóvel</a></li><li><a href="/apps/planejador-entrada/">Planejador de Entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para Financiar</a></li><li><a href="/apps/simulador-roi-temporada/">Simulador de ROI — Aluguel de Temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou Aluguel Anual?</a></li><li><a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel no Litoral?</a></li></ul></details><p><a href="/apps/">Catálogo de aplicativos</a> · <a href="/#jornadas-apps">Roteiros na página inicial</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Registre suas premissas e confira custos, tributos e limitações antes de decidir.</p></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue com o próximo aplicativo</h2><p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p><div class="pd-workflow" aria-labelledby="pd-workflow-title"><h3 id="pd-workflow-title">Use este resultado na sua rotina</h3><dl><div><dt>Antes de começar</dt><dd>Reúna custo do produto, embalagem, logística e taxas vigentes do seu canal.</dd></div><div><dt>O que registrar</dt><dd>Anote a margem estimada, promoções e taxas usadas. Confira as regras atuais da plataforma.</dd></div></dl><p>Explore outras ferramentas no catálogo ao final desta seção.</p></div><details><summary>Explorar a rede completa de aplicativos</summary><div class="pd-network-group"><h3>Planejar a compra</h3><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/"><strong>Alugar ou comprar</strong><span>Compare cenários com os custos e o prazo que você informar.</span></a></li><li><a href="/apps/calculadora-financiamento/"><strong>Financiamento SAC e Price</strong><span>Compare sistemas de amortização usando as mesmas premissas.</span></a></li><li><a href="/apps/calculadora-consorcio/"><strong>Consórcio</strong><span>Organize parcelas e lance; a contemplação não tem data garantida.</span></a></li><li><a href="/apps/custo-de-compra/"><strong>Custos de compra</strong><span>Inclua tributos e despesas a confirmar para a sua operação.</span></a></li><li><a href="/apps/planejador-entrada/"><strong>Planejador de entrada</strong><span>Defina a meta e simule quanto reservar por mês.</span></a></li><li><a href="/apps/renda-para-financiar/"><strong>Renda para financiar</strong><span>Estime o comprometimento de renda; a aprovação depende do banco.</span></a></li></ul></div><div class="pd-network-group"><h3>Comparar cenários</h3><ul class="pd-network-grid"><li><a href="/apps/comparador-cidades/"><strong>Comparador de cidades</strong><span>Compare destinos pelo perfil escolhido e confira as fontes.</span></a></li><li><a href="/apps/valor-imovel/"><strong>Valor do imóvel</strong><span>Explore uma estimativa e confira referências antes de decidir.</span></a></li><li><a href="/apps/calculadora-valorizacao/"><strong>Valorização projetada</strong><span>Veja o efeito das hipóteses de valorização ao longo do tempo.</span></a></li><li><a href="/apps/simulador-roi-temporada/"><strong>ROI de temporada</strong><span>Simule receita, despesas e retorno com suas premissas.</span></a></li><li><a href="/apps/temporada-ou-anual/"><strong>Temporada ou aluguel anual</strong><span>Compare os dois modelos com custos e ocupação informados.</span></a></li></ul></div><div class="pd-network-group"><h3>Preparar e revisar anúncios</h3><ul class="pd-network-grid"><li><a href="/apps/checklist-vistoria/"><strong>Checklist de vistoria</strong><span>Organize observações e pendências para a revisão do imóvel.</span></a></li><li><a href="/apps/oficina-ia-imobiliaria/"><strong>Oficina de IA</strong><span>Monte um briefing, confira lacunas e prepare modelos de e-mail.</span></a></li><li><a href="/apps/revisor-anuncios/"><strong>Revisor de anúncios</strong><span>Compare duas versões com uma ficha conferida e encontre divergências.</span></a></li><li><a href="/apps/relatorio-imovel/"><strong>Relatório do imóvel</strong><span>Reúna fontes, informações e próximos passos; imprima ou salve em PDF.</span></a></li></ul></div></details><p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>
 
 <section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Precifique com premissas verificadas</h2><ol><li>Informe custo, preço, plataforma e despesas adicionais aplicáveis.</li><li>Confira as taxas atuais no seu contrato e contabilize tributos, frete, devoluções e outros custos fora da simulação.</li><li>Use a margem sugerida como estimativa; não representa lucro líquido garantido nem recomendação de escala.</li></ol><details><summary>Como interpretar e compartilhar esta análise</summary><h3>Os resultados são uma proposta ou garantia?</h3><p>Não. São estimativas ou registros de apoio, sujeitos às premissas e limitações de cada ferramenta. Confirme dados e condições com os profissionais responsáveis.</p><h3>Como usar os apps em sequência?</h3><p>Comece pelo seu objetivo, registre as premissas e compare os resultados das ferramentas relacionadas. Os links não transferem automaticamente os dados preenchidos.</p><h3>Devo inserir informações confidenciais?</h3><p>Evite senhas, documentos pessoais e dados de clientes. Use apenas as informações necessárias e consulte a política de privacidade antes de compartilhar qualquer dado.</p></details></section>
 </body>

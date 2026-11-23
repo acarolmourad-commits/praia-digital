@@ -50,7 +50,9 @@ def find_html_files():
 
 def url_from_path(base: Path, path: Path):
     rel = path.relative_to(base).as_posix()
-    return f"https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/{rel}"
+    # Canonical domain do site. O host github.io era o domínio antigo do Pages e
+    # estava sendo gravado em canonical/og:url e no sitemap interim.
+    return f"https://praia.digital/litoral-prime-imoveis/{rel}"
 
 
 def update_sitemap():

@@ -1,0 +1,10 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {calculate}=require('../apps/renda-para-financiar/calculadora.js');
+const base={valor:120000,entrada:0,taxa:12,prazo:120,pct:30,tipoTaxa:'nominal'};
+const calc=o=>calculate({...base,...o});
+test('SAC and Price reference arithmetic',()=>{const r=calc();assert.equal(r.sac,2200);assert(Math.abs(r.price-1721.65138083105)<1e-8);assert.equal(r.rsac,2200/.3)});
+test('zero interest and full entry',()=>{const r=calc({taxa:0});assert.equal(r.sac,1000);assert.equal(r.price,1000);assert.equal(calc({entrada:100}).price,0)});
+test('effective annual conversion',()=>{const r=calc({taxa:12.68250301319698,tipoTaxa:'efetiva'});assert(Math.abs(r.sac-2200)<1e-8)});
+test('reject invalid ranges and empty/nonfinite inputs',()=>{for(const [field,values] of Object.entries({valor:['',0,-1,Infinity,1e10],entrada:['',-1,101],taxa:['',-1,101,NaN],prazo:['',0,1.5,601],pct:['',0,-1,101]})){for(const v of values)assert.equal(calc({[field]:v}).field,field)}});
+test('invalid rate convention',()=>assert.equal(calc({tipoTaxa:'other'}).field,'tipoTaxa'));
+test('tiny positive rates and boundaries stay finite',()=>{for(const o of [{taxa:1e-12},{valor:1e9,pct:.01,prazo:600,taxa:100},{valor:.01,prazo:1}]){const r=calc(o);assert(!r.error);assert(Object.values(r).every(Number.isFinite));}});

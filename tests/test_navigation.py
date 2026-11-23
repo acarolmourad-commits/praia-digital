@@ -10,6 +10,15 @@ spec.loader.exec_module(nav)
 HEADER = (ROOT / 'partials/header.html').read_text(encoding='utf-8')
 
 class NavigationTests(unittest.TestCase):
+    def test_ia_contact_is_contextual_and_other_pages_unchanged(self):
+        services = nav.header_for_page('servicos-ia.html', HEADER)
+        self.assertIn('href="/solicitar-servico.html?servico=Projeto%20personalizado">Solicitar proposta', services)
+        self.assertNotIn('href="/interesse.html"', services)
+        request = nav.header_for_page('solicitar-servico.html', HEADER)
+        self.assertIn('href="#brief-form">Preencher solicitação', request)
+        for page in ['index.html', 'servicos.html', 'imoveis.html', 'ia/marketplaces/index.html']:
+            self.assertEqual(nav.header_for_page(page, HEADER), HEADER)
+
     def test_leading_skip_link_precedes_navigation(self):
         skip = '<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>'
         text = '<html><head></head><body>' + skip + '<meta name="pd-shared-nav"><main id="conteudo">Guide</main></body></html>'

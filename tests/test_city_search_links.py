@@ -22,6 +22,48 @@ class Links(HTMLParser):
         if self.current is not None: self.current[1] += data
 
 class CitySearchLinksTests(unittest.TestCase):
+    def test_itanhaem_elevator_recommends_existing_seasonal_guide(self):
+        target = '/blog/itanhaem-guia-locacao-temporada-imoveis-2026.html'
+        links = Links((ROOT / 'cidades/itanhaem-elevador.html').read_text()).links
+        seasonal = [url for url, text in links if 'Aluguel de temporada' in text]
+        self.assertEqual([target], seasonal)
+        article = ROOT / target.lstrip('/')
+        self.assertTrue(article.is_file())
+        self.assertIn('https://praia.digital' + target, article.read_text())
+
+    def test_peruibe_family_recommends_existing_seasonal_guide(self):
+        target = '/blog/peruibe-guia-locacao-temporada-imoveis-2026.html'
+        # Preserve the thirteen destinations published by PR #187.
+        pages = [
+            'academia', 'comercial', 'compra-programada', 'elevador',
+            'gestao-de-imovel', 'midia-profissional', 'pet-friendly',
+            'propaganda-imobiliaria', 'residencial', 'sacada', 'seguranca',
+            'varanda', 'venda-rapida',
+        ]
+        self.assertTrue((ROOT / target.lstrip('/')).is_file())
+        for suffix in pages:
+            with self.subTest(page=suffix):
+                links = Links((ROOT / ('cidades/peruibe-' + suffix + '.html')).read_text()).links
+                seasonal = [url for url, text in links if 'Aluguel de temporada' in text]
+                self.assertEqual([target], seasonal)
+
+    def test_seasonal_cards_across_six_cities_have_existing_destinations(self):
+        missing = []
+        checked = 0
+        for city in ('bertioga', 'guaruja', 'mongagua', 'itanhaem', 'santos', 'peruibe'):
+            city_cards = 0
+            for page in (ROOT / 'cidades').glob(city + '-*.html'):
+                for url, text in Links(page.read_text()).links:
+                    if text.strip().startswith('Aluguel de temporada'):
+                        path = urlsplit(url).path
+                        checked += 1
+                        city_cards += 1
+                        if not path.startswith('/blog/') or not (ROOT / path.lstrip('/')).is_file():
+                            missing.append((page.name, url))
+            self.assertGreaterEqual(city_cards, 13, city)
+        self.assertEqual(len(missing), 0, f'Missing destinations: {missing[:5]}')
+        self.assertGreaterEqual(checked, 78)
+
     def test_no_invalid_protocol_relative_home(self):
         for slug in ['santos', 'praia-grande', 'guaruja', 'bertioga']:
             links = Links((ROOT / 'cidades' / (slug + '.html')).read_text()).links

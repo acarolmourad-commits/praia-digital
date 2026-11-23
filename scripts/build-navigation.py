@@ -29,6 +29,18 @@ def repair_heading(path, text):
                   lambda m: m.group(1) + title + m.group(2),
                   text, count=1, flags=re.I)
 
+def header_for_page(path, header):
+    """Keep the IA proposal journey consistent without changing other site journeys."""
+    targets = {
+        'servicos-ia.html': ('/solicitar-servico.html?servico=Projeto%20personalizado', 'Solicitar proposta'),
+        'solicitar-servico.html': ('#brief-form', 'Preencher solicitação'),
+    }
+    if path not in targets:
+        return header
+    href, label = targets[path]
+    return header.replace('href="/interesse.html">Falar com especialista</a>',
+                          f'href="{href}">{label}</a>')
+
 class Layout(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=False)
@@ -127,7 +139,7 @@ def build(root):
             continue
         text = path.read_text(encoding='utf-8', errors='surrogateescape')
         prepared = repair_heading(rel.as_posix(), text)
-        updated, included = transform(prepared, header)
+        updated, included = transform(prepared, header_for_page(rel.as_posix(), header))
         if included:
             from collections import Counter
             headings = lambda html: Counter(re.findall(r'<h1\b[^>]*>.*?</h1\s*>', html, re.I | re.S))

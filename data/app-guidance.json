@@ -1,0 +1,127 @@
+{
+  "alugar-ou-comprar": {
+    "prepare": "Reúna preço, aluguel, entrada, custos e um mesmo horizonte para comparar.",
+    "record": "Guarde as premissas e o patrimônio líquido estimado; repita a análise se as condições mudarem.",
+    "next": [
+      "calculadora-financiamento",
+      "custo-de-compra"
+    ]
+  },
+  "calculadora-financiamento": {
+    "prepare": "Tenha valor do imóvel, entrada, prazo e condições informadas pela instituição.",
+    "record": "Registre taxa, sistema de amortização, parcelas e custos que não entraram na conta.",
+    "next": [
+      "renda-para-financiar",
+      "custo-de-compra"
+    ]
+  },
+  "calculadora-consorcio": {
+    "prepare": "Consulte prazo, taxas e regras de lance no contrato da administradora.",
+    "record": "Anote custos e hipóteses. A contemplação depende das regras do grupo e não tem data garantida.",
+    "next": [
+      "planejador-entrada",
+      "calculadora-financiamento"
+    ]
+  },
+  "custo-de-compra": {
+    "prepare": "Separe o valor da compra e consulte tributos e emolumentos aplicáveis ao município.",
+    "record": "Registre a fonte e a data de cada custo, distinguindo estimativa de valor confirmado.",
+    "next": [
+      "planejador-entrada",
+      "checklist-vistoria"
+    ]
+  },
+  "planejador-entrada": {
+    "prepare": "Defina a meta, o valor já reservado, o prazo e quanto pode guardar por mês.",
+    "record": "Anote o esforço mensal e mantenha uma reserva para despesas além da entrada.",
+    "next": [
+      "custo-de-compra",
+      "calculadora-financiamento"
+    ]
+  },
+  "renda-para-financiar": {
+    "prepare": "Reúna renda comprovável, compromissos mensais e condições simuladas do financiamento.",
+    "record": "Guarde a renda estimada e os limites adotados. A decisão de crédito cabe à instituição.",
+    "next": [
+      "calculadora-financiamento",
+      "alugar-ou-comprar"
+    ]
+  },
+  "comparador-cidades": {
+    "prepare": "Defina prioridades de moradia ou investimento e consulte fontes atuais sobre cada local.",
+    "record": "Registre critérios, data e dúvidas a conferir em campo antes de escolher a cidade.",
+    "next": [
+      "valor-imovel",
+      "checklist-vistoria"
+    ]
+  },
+  "valor-imovel": {
+    "prepare": "Reúna área, características e referências comparáveis com fonte e data.",
+    "record": "Guarde a faixa estimada e diferenças entre os comparáveis; anúncios não comprovam preços de transações.",
+    "next": [
+      "comparador-cidades",
+      "relatorio-imovel"
+    ]
+  },
+  "calculadora-valorizacao": {
+    "prepare": "Informe valor inicial, período e uma hipótese explícita de valorização.",
+    "record": "Registre cenários e premissas. A projeção não prevê o preço futuro do imóvel.",
+    "next": [
+      "alugar-ou-comprar",
+      "relatorio-imovel"
+    ]
+  },
+  "simulador-roi-temporada": {
+    "prepare": "Separe diária, ocupação, despesas e investimento para o mesmo período.",
+    "record": "Registre receita, custos e resultado estimado; confira taxas e sazonalidade antes de decidir.",
+    "next": [
+      "temporada-ou-anual",
+      "relatorio-imovel"
+    ]
+  },
+  "temporada-ou-anual": {
+    "prepare": "Compare o mesmo período e inclua vacância, gestão, manutenção e custos de cada modalidade.",
+    "record": "Guarde as premissas e a diferença de resultado; teste ocupações e despesas alternativas.",
+    "next": [
+      "simulador-roi-temporada",
+      "oficina-ia-imobiliaria"
+    ]
+  },
+  "checklist-vistoria": {
+    "prepare": "Organize documentos, acesso ao imóvel e autorização para registrar fotos.",
+    "record": "Separe o que foi observado do que depende de confirmação ou inspeção por profissional habilitado.",
+    "next": [
+      "relatorio-imovel",
+      "revisor-anuncios"
+    ]
+  },
+  "oficina-ia-imobiliaria": {
+    "prepare": "Reúna uma ficha com características confirmadas, público e objetivo da comunicação.",
+    "record": "Guarde a versão revisada e as pendências; confira cada afirmação antes de publicar ou enviar.",
+    "next": [
+      "revisor-anuncios",
+      "relatorio-imovel"
+    ]
+  },
+  "revisor-anuncios": {
+    "prepare": "Tenha a ficha de referência e os textos que deseja comparar.",
+    "record": "Registre divergências resolvidas e informações ainda sem fonte; faça revisão humana do texto final.",
+    "next": [
+      "oficina-ia-imobiliaria",
+      "relatorio-imovel"
+    ]
+  },
+  "relatorio-imovel": {
+    "prepare": "Separe informações verificadas, fontes, datas e limitações da análise.",
+    "record": "Revise o documento e a impressão antes de compartilhar; retire dados pessoais desnecessários.",
+    "next": [
+      "checklist-vistoria",
+      "revisor-anuncios"
+    ]
+  },
+  "calculadora-precificacao-shopee": {
+    "prepare": "Reúna custo do produto, embalagem, logística e taxas vigentes do seu canal.",
+    "record": "Anote a margem estimada, promoções e taxas usadas. Confira as regras atuais da plataforma.",
+    "next": []
+  }
+}

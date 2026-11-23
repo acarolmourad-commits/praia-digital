@@ -1,0 +1,110 @@
+[
+  {
+    "id": "planejar",
+    "title": "Planejar a compra",
+    "description": "Reúna as premissas antes de comparar parcelas e comprometer a renda.",
+    "apps": [
+      {
+        "slug": "alugar-ou-comprar",
+        "title": "Alugar ou comprar",
+        "description": "Compare cenários com os custos e o prazo que você informar."
+      },
+      {
+        "slug": "calculadora-financiamento",
+        "title": "Financiamento SAC e Price",
+        "description": "Compare sistemas de amortização usando as mesmas premissas."
+      },
+      {
+        "slug": "calculadora-consorcio",
+        "title": "Consórcio",
+        "description": "Organize parcelas e lance; a contemplação não tem data garantida."
+      },
+      {
+        "slug": "custo-de-compra",
+        "title": "Custos de compra",
+        "description": "Inclua tributos e despesas a confirmar para a sua operação."
+      },
+      {
+        "slug": "planejador-entrada",
+        "title": "Planejador de entrada",
+        "description": "Defina a meta e simule quanto reservar por mês."
+      },
+      {
+        "slug": "renda-para-financiar",
+        "title": "Renda para financiar",
+        "description": "Estime o comprometimento de renda; a aprovação depende do banco."
+      }
+    ]
+  },
+  {
+    "id": "comparar",
+    "title": "Comparar cenários",
+    "description": "Registre a fonte e a data de cada hipótese; projeções não garantem retorno.",
+    "apps": [
+      {
+        "slug": "comparador-cidades",
+        "title": "Comparador de cidades",
+        "description": "Compare destinos pelo perfil escolhido e confira as fontes."
+      },
+      {
+        "slug": "valor-imovel",
+        "title": "Valor do imóvel",
+        "description": "Explore uma estimativa e confira referências antes de decidir."
+      },
+      {
+        "slug": "calculadora-valorizacao",
+        "title": "Valorização projetada",
+        "description": "Veja o efeito das hipóteses de valorização ao longo do tempo."
+      },
+      {
+        "slug": "simulador-roi-temporada",
+        "title": "ROI de temporada",
+        "description": "Simule receita, despesas e retorno com suas premissas."
+      },
+      {
+        "slug": "temporada-ou-anual",
+        "title": "Temporada ou aluguel anual",
+        "description": "Compare os dois modelos com custos e ocupação informados."
+      }
+    ]
+  },
+  {
+    "id": "preparar",
+    "title": "Preparar e revisar anúncios",
+    "description": "Use uma ficha conferida para produzir, comparar e apresentar informações.",
+    "apps": [
+      {
+        "slug": "checklist-vistoria",
+        "title": "Checklist de vistoria",
+        "description": "Organize observações e pendências para a revisão do imóvel."
+      },
+      {
+        "slug": "oficina-ia-imobiliaria",
+        "title": "Oficina de IA",
+        "description": "Monte um briefing, confira lacunas e prepare modelos de e-mail."
+      },
+      {
+        "slug": "revisor-anuncios",
+        "title": "Revisor de anúncios",
+        "description": "Compare duas versões com uma ficha conferida e encontre divergências."
+      },
+      {
+        "slug": "relatorio-imovel",
+        "title": "Relatório do imóvel",
+        "description": "Reúna fontes, informações e próximos passos; imprima ou salve em PDF."
+      }
+    ]
+  },
+  {
+    "id": "marketplaces",
+    "title": "Organizar vendas em marketplaces",
+    "description": "Simule custos do produto antes de revisar sua margem.",
+    "apps": [
+      {
+        "slug": "calculadora-precificacao-shopee",
+        "title": "Precificação Shopee e TikTok Shop",
+        "description": "Confira taxas aplicáveis e estime sua margem com os custos informados."
+      }
+    ]
+  }
+]

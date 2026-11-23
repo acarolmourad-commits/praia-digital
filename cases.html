@@ -14,16 +14,19 @@
 <link rel="canonical" href="https://praia.digital/cases.html">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:2rem}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:clamp(1rem,3vw,2rem)}
     .container{max-width:1100px;margin:0 auto}
     .hero{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:2rem;border-radius:18px;margin-bottom:1.5rem;text-align:center}
     .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:.5rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem;margin:1rem 0}
     .card{background:#fff;padding:1.25rem;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
     .metric{font-size:1.8rem;font-weight:800;color:#0077B6;margin:.3rem 0}
-    .cta{display:inline-block;background:#25D366;color:#fff;padding:.7rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:700;margin-top:1rem}
+    .cta{display:inline-block;background:#075f64;color:#fff;padding:.7rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:700;margin-top:1rem}
     :focus-visible{outline:3px solid #0077B6;outline-offset:3px}
     .small{font-size:.9rem;color:#555}
+    #evolucao-aplicativos p{margin:.75rem 0}
+    #evolucao-aplicativos summary{cursor:pointer;padding:.75rem 0}
+    #evolucao-aplicativos article{min-width:0}
   </style>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Exemplos ilustrativos de aplicação | Praia Digital">
@@ -94,48 +97,95 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <main class="container" id="main">
     <div class="hero">
       <h1>Exemplos ilustrativos de aplicação no litoral</h1>
-      <p>Cenários ilustrativos baseados em aplicações típicas das soluções. Os nomes, números e prazos abaixo são hipotéticos: não são resultados de clientes nem previsões ou garantias para sua operação.</p>
+      <p>Conheça melhorias verificadas nos nossos aplicativos e, em uma seção separada, cenários ilustrativos de aplicação. Os cenários descrevem métodos e indicadores a observar. Não são resultados de clientes, previsões ou garantias para sua operação.</p>
       <a class="cta" href="parceria-imobiliarias-litoral-paulista.html">Entender as possibilidades — falar com a equipe</a>
     </div>
 
+
+    <section id="evolucao-aplicativos" aria-labelledby="evolucao-titulo" class="card" style="margin-bottom:1.5rem">
+      <p class="small">Caso técnico da própria Praia Digital · Atualizado em 17/11/2026</p>
+      <h2 id="evolucao-titulo">Da informação confirmada ao anúncio revisado</h2>
+      <p>A Oficina de IA Imobiliária permite organizar um briefing e preparar um acompanhamento comercial. Uma melhoria já integrada impede copiar ou baixar um resultado gerado antes de uma alteração nos dados do formulário: é preciso gerar novamente ou restaurar os campos originais.</p>
+      <p>O texto continua disponível para revisão. Essa proteção ajuda a identificar uma diferença entre o formulário e o material que será usado; a conferência humana dos fatos continua necessária.</p>
+      <div class="grid">
+        <article>
+          <h3>1. Organize o briefing</h3>
+          <p>Reúna características, localização e condições confirmadas. Preencha somente informações que você pode comprovar e revise o texto gerado.</p>
+          <a class="cta" href="/apps/oficina-ia-imobiliaria/">Abrir a Oficina</a>
+        </article>
+        <article>
+          <h3>2. Revise o anúncio</h3>
+          <p>Use o revisor para orientar a conferência da descrição. Resolva dúvidas sobre disponibilidade e autorização antes de divulgar.</p>
+          <a class="cta" href="/apps/revisor-anuncios/">Abrir o revisor</a>
+        </article>
+        <article>
+          <h3>3. Prepare a apresentação</h3>
+          <p>Organize as informações no relatório do imóvel e confira o material antes de compartilhá-lo com um interessado.</p>
+          <a class="cta" href="/apps/relatorio-imovel/">Abrir o relatório</a>
+        </article>
+      </div>
+      <p class="small">Os links não transferem dados automaticamente entre aplicativos. Este é um caso de evolução do produto, não um depoimento de cliente nem evidência de aumento de vendas.</p>
+      <details>
+        <summary>Consultar a evidência técnica da melhoria</summary>
+        <p>O <a href="https://github.com/acarolmourad-commits/praia-digital/pull/191">registro público da correção</a> descreve o problema, a implementação e os testes automatizados de exportação. Integração realizada em 17/11/2026. O alcance da verificação é técnico; não mede resultados comerciais.</p>
+      </details>
+      <p><a href="/apps/">Explorar a rede de aplicativos gratuitos</a> · <a href="/#apps">Voltar aos roteiros da página inicial</a></p>
+    </section>
+
+    <section id="caso-estoque-vivo" aria-labelledby="caso-estoque-vivo-titulo" class="card" style="margin-bottom:1.5rem;scroll-margin-top:7rem">
+      <p class="small">Caso técnico da própria Praia Digital</p>
+      <h2 id="caso-estoque-vivo-titulo">Da precificação ao laboratório de estoque fictício</h2>
+      <p><strong>Pergunta:</strong> como revisar a precificação e experimentar regras de estoque antes de conectar uma loja?</p>
+      <p><strong>O que fizemos:</strong> ligamos o roteiro de precificação ao Laboratório Estoque Vivo e colocamos no laboratório uma volta para o mesmo roteiro. As páginas são independentes e não transferem dados entre si.</p>
+      <p><strong>Como conferir:</strong> abra o <a href="/apps/guia-de-uso.html#vender">roteiro de precificação</a> e siga para o laboratório. Execute o roteiro de verificações para observar uma reserva, a repetição de um evento, um cancelamento e uma saída física simulada. Use o link do laboratório para voltar ao ponto de partida.</p>
+      <p><a class="cta" href="/ia/marketplaces/piloto/#laboratorio">Experimentar o laboratório com estoque fictício</a></p>
+      <p class="small">A simulação usa dados fictícios em memória. Não acessa contas, lojas, APIs ou estoque real e não comprova integração nem resultado comercial. <a href="https://github.com/acarolmourad-commits/praia-digital/pull/241">Ver a implementação e os testes no PR #241</a>.</p>
+    </section>
+
+    <section id="guia-checklist-acessivel" aria-labelledby="guia-checklist-titulo" class="card" style="margin-bottom:1.5rem">
+      <p class="small">Caso técnico da própria Praia Digital · Integrado em 19/11/2026</p>
+      <h2 id="guia-checklist-titulo">Guia de aplicativos: checklist e navegação em telas estreitas</h2>
+      <p>Ao voltar ao guia, o navegador podia restaurar as caixas marcadas sem atualizar a contagem. O guia passou a recalcular o contador ao voltar à página. Também ajustamos a rolagem dos atalhos para que o cabeçalho fixo não cubra o início do conteúdo.</p>
+      <p>Em um teste com 320 px de largura, o início do conteúdo passou a aparecer abaixo do cabeçalho. No site publicado, marcar e desmarcar um item fez o contador passar de 0 a 1 e voltar a 0.</p>
+      <p><a class="cta" href="/apps/guia-de-uso.html">Abrir o guia prático dos aplicativos</a></p>
+      <p class="small"><a href="https://github.com/acarolmourad-commits/praia-digital/pull/239">Ver a correção e as evidências no PR #239</a> · <a href="https://github.com/acarolmourad-commits/praia-digital/actions/runs/44454721539">Consultar os testes em navegador</a>. O relato verifica a navegação e o checklist, não resultados de clientes ou impacto comercial.</p>
+    </section>
+
+    <h2>Cenários hipotéticos de aplicação</h2>
     <div class="grid">
       <div class="card">
-        <h2>Porto da Lua — Itanhaém</h2>
-        <div class="metric">Hipótese: +35 leads qualificados</div>
+        <h2>Captação com SEO local</h2>
+        <div class="metric">Métrica a observar: contatos qualificados</div>
         <p class="small" style="opacity:.75"><em>Exemplo ilustrativo — não representa resultado de cliente real.</em></p>
-        <p class="small">Em 4 semanas, com SEO local e follow-up estruturado.</p>
-        <p class="small">Perfil: imobiliária em crescimento na cidade.</p>
+        <p class="small">Registre a origem dos contatos e compare períodos equivalentes.</p>
         <a class="cta" href="cases/case-imobiliaria-porto-da-lua-35-leads-2026.html" target="_blank" rel="noopener">Ler exemplo ilustrativo de captação →</a>
       </div>
       <div class="card">
-        <h2>Costa Verde — Litoral</h2>
-        <div class="metric">Hipótese: 60% menos tempo de resposta</div>
+        <h2>Atendimento e tempo de resposta</h2>
+        <div class="metric">Métrica a observar: tempo até a resposta útil</div>
         <p class="small" style="opacity:.75"><em>Exemplo ilustrativo — não representa resultado de cliente real.</em></p>
-        <p class="small">Com atendimento inicial automático no WhatsApp.</p>
-        <p class="small">Perfil: agência com alta demanda e volume.</p>
+        <p class="small">Organize o atendimento e separe confirmação automática de resposta útil.</p>
         <a class="cta" href="cases/case-reducao-tempo-resposta-costa-verde-2026.html" target="_blank" rel="noopener">Ler exemplo ilustrativo de atendimento →</a>
       </div>
       <div class="card">
-        <h2>Recomendação automática — Itanhaém</h2>
-        <div class="metric">Hipótese: +28% visitas agendadas</div>
+        <h2>Recomendação de imóveis por perfil</h2>
+        <div class="metric">Métrica a observar: adequação das sugestões</div>
         <p class="small" style="opacity:.75"><em>Exemplo ilustrativo — não representa resultado de cliente real.</em></p>
-        <p class="small">Em 6 semanas, com IA sugerindo imóveis por perfil.</p>
-        <p class="small">Perfil: corretor que quer visitar mais e melhor.</p>
+        <p class="small">Compare sugestões por perfil com a busca por filtros.</p>
         <a class="cta" href="cases/case-recomendacao-automatica-imoveis-2026.html" target="_blank" rel="noopener">Ler exemplo ilustrativo de recomendação →</a>
       </div>
       <div class="card">
-        <h2>Fechamento — Centro histórico</h2>
+        <h2>Acompanhamento de uma negociação</h2>
+        <div class="metric">Métrica a observar: tempo entre etapas</div>
         <p class="small" style="opacity:.75"><em>Exemplo ilustrativo — não representa resultado de cliente real.</em></p>
-        <p class="small">Processo acelerado com IA aplicada à captação.</p>
-        <p class="small">Perfil: imobiliária interessada em ciclo mais curto.</p>
+        <p class="small">Compare imóveis e registre o andamento da análise.</p>
         <a class="cta" href="cases/case-fechamento-centro-historico-2026.html" target="_blank" rel="noopener">Ler exemplo ilustrativo</a>
       </div>
       <div class="card">
-        <h2>ROI — Imobiliária litoral</h2>
-        <div class="metric">Hipótese: ROI positivo em 90 dias</div>
+        <h2>Medição de ROI da captação</h2>
+        <div class="metric">Métrica a observar: retorno sobre o investimento</div>
         <p class="small" style="opacity:.75"><em>Exemplo ilustrativo — não representa resultado de cliente real.</em></p>
-        <p class="small">Com investimento leve em SEO local e conteúdo.</p>
-        <p class="small">Perfil: parceiro que quer retorno tangível.</p>
+        <p class="small">Compare custos e receitas atribuíveis no mesmo período.</p>
         <a class="cta" href="cases/case-roi-imobiliaria-litoral-2026.html" target="_blank" rel="noopener">Ler exemplo ilustrativo de ROI →</a>
       </div>
       <div class="card">

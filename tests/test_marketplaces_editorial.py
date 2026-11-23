@@ -8,12 +8,45 @@ import unittest
 import xml.etree.ElementTree as ET
 from contextlib import redirect_stdout
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
+from urllib.error import HTTPError, URLError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import marketplaces_editorial as editorial
 import sentinela_airbnb_booking as monitor
+
+
+class SourceFetchTests(unittest.TestCase):
+    def test_http_errors_preserve_status_without_reading_error_page(self):
+        for code in (403, 404, 429, 500, 503):
+            with self.subTest(code=code):
+                body = MagicMock()
+                error = HTTPError('https://example.test/', code, 'failure', {}, body)
+                with patch.object(monitor.urllib.request, 'urlopen', side_effect=error) as open_url:
+                    self.assertEqual(monitor.fetch('https://example.test/'),
+                                     (code, f'ERROR: HTTP {code}'))
+                open_url.assert_called_once()
+                body.read.assert_not_called()
+                body.close.assert_called_once()
+
+    def test_transport_failure_has_no_http_status(self):
+        with patch.object(monitor.urllib.request, 'urlopen', side_effect=URLError('DNS failure')):
+            status, body = monitor.fetch('https://example.test/')
+        self.assertIsNone(status)
+        self.assertTrue(body.startswith('ERROR:'))
+
+    def test_success_and_202_preserve_status_and_close_response(self):
+        for code in (200, 202):
+            with self.subTest(code=code):
+                response = MagicMock()
+                response.status = code
+                response.read.return_value = b'<html>source</html>'
+                response.__enter__.return_value = response
+                with patch.object(monitor.urllib.request, 'urlopen', return_value=response):
+                    self.assertEqual(monitor.fetch('https://example.test/'),
+                                     (code, '<html>source</html>'))
+                response.__exit__.assert_called_once()
 
 
 class EditorialTests(unittest.TestCase):

@@ -53,7 +53,7 @@ const cases = fs.readFileSync(path.join(root, 'cases.html'), 'utf8');
 assert(cases.includes('<title>Exemplos ilustrativos de aplicação'));
 assert(cases.includes('<h1>Exemplos ilustrativos de aplicação'));
 assert(!/métricas verificáveis|Ver como|Quero um resultado assim|Piloto sem custo inicial|Cases e resultados/.test(cases));
-assert.equal((cases.match(/<div class="metric">Hipótese:/g) || []).length, 4);
+assert.equal((cases.match(/<div class="metric">Métrica a observar:/g) || []).length, 5);
 assert(cases.includes('<main class="container" id="main">'));
 assert(!cases.includes('SearchAction'));
 console.log('Contact/cases: contextual choices, optional payment, reset/history, labels and illustrative copy passed. No submissions.');

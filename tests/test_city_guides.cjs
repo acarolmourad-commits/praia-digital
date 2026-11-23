@@ -54,9 +54,9 @@ console.log(`16 guides, regions 4/9/3, metadata, schemas, ${checkedLinks} local 
 
 // Owner requested withdrawal of the old Bertioga rental, retaining existing offers and adding the authorized apartment.
 assert(!catalog.some(p=>p.id===8||p.slug==='apartamento-alto-padrao-bertioga'));
-assert.deepEqual(catalog.filter(p=>p.city==='Bertioga').map(p=>p.id).sort((a,b)=>a-b),[9,10,11,12,13,14,15,16,17,18,19]);
+assert.deepEqual(catalog.filter(p=>p.city==='Bertioga').map(p=>p.id).sort((a,b)=>a-b),[9,10,11,12,13,14,15,16,17,18,19,20,21]);
 assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Aluguel'})))).length,0);
-assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Venda'})))).length,11);
+assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Venda'})))).length,13);
 assert(!read('imoveis.html').includes('Apartamento alto padrão - Bertioga'));
 assert(!read('encontrar-imovel.html').includes('apartamento-alto-padrao-bertioga'));
 assert(!read('fix_broken_links.py').includes('apartamento-alto-padrao-bertioga'));
@@ -64,4 +64,12 @@ assert(!read('scripts/automation/generate_landings_safe.py').includes('apartamen
 const withdrawn=read('leads/apartamento-alto-padrao-bertioga.html');
 assert(withdrawn.includes('noindex, follow')&&withdrawn.includes('Anúncio removido'));
 assert(!/application\/ld\+json|<form|wa.me|Unsplash|8.900|http-equiv="refresh"/i.test(withdrawn));
-console.log('Withdrawn Bertioga rental absent; all eleven real offers and empty rental filter preserved.');
+const sobrado=catalog.find(p=>p.id===21);
+assert.equal(sobrado.slug,'sobrado-indaia-94m2');
+const matches=params=>search.matches(sobrado,search.fromParams(new URLSearchParams(params)));
+assert(matches({cidade:'Bertioga',finalidade:'Venda',tipo:'casa',quartos:'2',preco_max:'1500000'}));
+assert(matches({q:'sobrado Indaiá 2 dormitórios',finalidade:'Venda'}));
+assert(!matches({cidade:'Bertioga',finalidade:'Aluguel'}));
+assert(!matches({cidade:'Bertioga',finalidade:'Venda',quartos:'3'}));
+assert(!matches({cidade:'Bertioga',finalidade:'Venda',preco_max:'1499999'}));
+console.log('Withdrawn Bertioga rental absent; all thirteen real offers and empty rental filter preserved.');

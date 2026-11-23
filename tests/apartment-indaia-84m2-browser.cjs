@@ -47,6 +47,7 @@ deadline.unref();
   progress(`${width}px: keyboard study link and tables`);
   const studyLink = page.getByRole('link', {name:'Ver estudo de Airbnb e valorização'});
   await studyLink.focus(); await page.keyboard.press('Enter');
+  await page.waitForURL(origin + detail + '#estudo-rentabilidade');
   assert.equal(new URL(page.url()).hash,'#estudo-rentabilidade');
   const study = page.locator('#estudo-rentabilidade');
   assert(await study.isVisible());

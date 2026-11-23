@@ -1,0 +1,94 @@
+// Exercise the built directory and all cross-app menus without network side effects.
+const {chromium}=require('playwright');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=process.env.HOMEPAGE_PREVIEW_ROOT||path.resolve(__dirname,'..');
+const origin='https://praia.digital';
+const problems=[];
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||undefined,args:['--no-sandbox']});
+try{for(const width of [360,768,1280]){
+  const context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'block'});
+  await context.route('**/*',async route=>{
+    const req=route.request(),url=new URL(req.url());
+    if(url.origin!==origin||req.method()!=='GET')return route.abort();
+    let file=path.join(root,decodeURIComponent(url.pathname));
+    if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');
+    if(!fs.existsSync(file))return route.fulfill({status:404,body:''});
+    const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'};
+    return route.fulfill({body:fs.readFileSync(file),contentType:mime[path.extname(file)]||'application/octet-stream'});
+  });
+  const page=await context.newPage();
+  await page.goto(origin+'/apps/');
+  assert.equal(await page.locator('.pd-site-header').count(),1);
+  assert.equal(await page.locator('.pd-catalog-group .card').count(),16);
+  assert.equal(await page.locator('#guia-premissas').count(),1);
+  const visibleCards = page.locator('.pd-catalog-group .card:visible');
+  assert.equal(await visibleCards.count(),16);
+  await page.locator('#app-query').fill('ANÚNCIO');
+  assert.equal(await visibleCards.count(),4,'Search matches the accented objective');
+  await page.locator('#app-query').fill('shópee');
+  assert.equal(await visibleCards.count(),1,'Search ignores case and accents');
+  assert.match(await page.locator('#app-results').innerText(),/^1 de 16/);
+  await page.locator('#app-goal').selectOption('grupo-planejar');
+  assert.equal(await visibleCards.count(),0,'Search and objective combine');
+  assert.ok(await page.locator('#app-empty').isVisible());
+  await page.locator('#app-query').press('Enter');
+  assert.equal(new URL(page.url()).pathname,'/apps/','Enter does not submit or navigate');
+  await page.locator('#app-clear').click();
+  assert.equal(await visibleCards.count(),16);
+  assert.equal(await page.locator('#app-query').evaluate(el=>el===document.activeElement),true);
+  await page.locator('#app-goal').selectOption('grupo-planejar');
+  assert.equal(await visibleCards.count(),6);
+  await page.locator('#objetivos-apps a[href="#grupo-marketplaces"]').click();
+  assert.equal(await visibleCards.count(),16,'Objective links restore hidden targets');
+  await page.locator('#app-query').fill('<img src=x onerror=alert(1)>');
+  assert.equal(await visibleCards.count(),0);
+  assert.equal(await page.locator('#app-results img').count(),0,'Search stays text only');
+  await page.locator('#app-clear').click();
+  const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
+  const overflow=async()=>{
+    const spill=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,elements:[...document.querySelectorAll('body *')].filter(el=>{const b=el.getBoundingClientRect();return b.width>0&&(b.left< -1||b.right>innerWidth+1)&&getComputedStyle(el).position!=='absolute';}).slice(0,8).map(el=>({tag:el.tagName,id:el.id,cls:el.className,width:el.getBoundingClientRect().width}))}));
+    if(spill.scroll>width+1){problems.push({url:page.url(),...spill});console.log(JSON.stringify(problems.at(-1)));}
+  };
+  await overflow();
+  await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});
+  for(const link of links){
+    await page.goto(origin+link);
+    assert.equal(await page.locator('.pd-workflow h3').count(),1,link);
+    assert.equal(await page.locator('.pd-workflow dd').count(),2,link);
+    assert.ok(await page.locator('.pd-workflow').isVisible(),link);
+    if(link==='/apps/revisor-anuncios/' && process.env.HOMEPAGE_QA_OUTPUT){
+      fs.mkdirSync(process.env.HOMEPAGE_QA_OUTPUT,{recursive:true});
+      await page.locator('.pd-workflow').screenshot({path:path.join(process.env.HOMEPAGE_QA_OUTPUT,`app-guidance-${width}.png`)});
+    }
+    const menu=page.locator('.pd-network details');
+    await menu.locator('summary').click();
+    assert.equal(await menu.locator('li').count(),15,link);
+    await overflow();
+    await page.locator('.pd-network a[href="/apps/"]').click();
+    assert.equal(new URL(page.url()).pathname,'/apps/');
+  }
+  const dailyPath='/ferramentas/calculadora-diaria-ideal-airbnb-2026.html';
+  const dailyCard=page.getByRole('navigation',{name:'Outros recursos'}).getByRole('link',{name:/Calculadora de diária de temporada/});
+  await dailyCard.press('Enter');
+  assert.equal(new URL(page.url()).pathname,dailyPath);
+  assert.equal(new URL(page.url()).hash,'#form-calculo');
+  assert.ok(await page.locator('#form-calculo').isVisible());
+  await overflow();
+  const nextSteps=page.getByRole('navigation',{name:'Compare o próximo cenário da temporada'});
+  for(const [ordinal,[name,target]] of [
+    [/Projetar receita/, '/apps/simulador-roi-temporada/'],
+    [/Comparar temporada/, '/apps/temporada-ou-anual/'],
+    [/Voltar ao catálogo/, '/apps/'],
+  ].entries()){
+    if(ordinal>0){
+      const response=await page.goto(origin+dailyPath+'#form-calculo');
+      assert.equal(response?.status(),200,dailyPath);
+    }
+    await nextSteps.getByRole('link',{name}).press('Enter');
+    assert.equal(new URL(page.url()).pathname,target);
+    assert.ok(await page.locator('h1').isVisible(), target);
+  }
+  await context.close();console.log(`Catalog, 16 return journeys and seasonal paths passed at ${width}px`);
+}assert.deepEqual(problems,[],'All app pages must fit the viewport');}
+finally{await browser.close();}})().catch(error=>{console.error(error);process.exit(1);});
+

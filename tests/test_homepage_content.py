@@ -64,6 +64,48 @@ class HomepageContent(unittest.TestCase):
             self.assertEqual(sum(t=='link' and a.get('rel')=='canonical' for t,a in tags),1,file)
             self.assertTrue(any(t=='meta' and a.get('name')=='viewport' for t,a in tags),file)
 
+class IllustrativeCases(unittest.TestCase):
+    def test_examples_are_methods_not_outcomes(self):
+        index=(ROOT/'cases.html').read_text(encoding='utf-8')
+        cards=index.split('<h2>Cenários hipotéticos de aplicação</h2>',1)[1].split('<h2>Conteúdos recomendados</h2>',1)[0]
+        routes=re.findall(r'href="(cases/case-[^"]+\.html)"',cards)
+        self.assertEqual(len(routes),5)
+        self.assertEqual(len(set(routes)),5)
+        self.assertIn('cases/case-imobiliaria-porto-da-lua-35-leads-2026.html',routes)
+        invented=r'(?:35\s+leads|(?:25|28|30|35|40|60|70)\s*%|(?:15|30|90)\s+dias|(?:4|6)\s+semanas|12\s+visitas|\bROI\s+positivo\b|\bprocesso acelerado\b)'
+        self.assertNotRegex(cards,invented)
+        self.assertEqual(cards.count('Métrica a observar:'),5)
+        self.assertIn('id="evolucao-aplicativos"',index)
+        self.assertIn('id="guia-checklist-acessivel"',index)
+        for route in routes:
+            with self.subTest(route=route):
+                doc=(ROOT/route).read_text(encoding='utf-8')
+                tags=Tags(doc).tags
+                titles=[re.search(r'<'+tag+r'[^>]*>([^<]*)</'+tag+r'>',doc).group(1) for tag in ('title','h1')]
+                self.assertTrue(all(x.startswith('Exemplo ilustrativo:') for x in titles))
+                canonical=[x['href'] for tag,x in tags if tag=='link' and x.get('rel')=='canonical']
+                self.assertEqual(canonical,['https://praia.digital/'+route])
+                for key in ('description','og:title','og:description','twitter:title','twitter:description'):
+                    matching=[x['content'] for tag,x in tags if tag=='meta' and (x.get('name')==key or x.get('property')==key)]
+                    self.assertEqual(len(matching),1,key)
+                    self.assertTrue(matching[0].startswith('Exemplo ilustrativo'),key)
+                schemas=[json.loads(s) for s in re.findall(r'<script type="application/ld\+json">([\s\S]*?)</script>',doc)]
+                articles=[s for s in schemas if s.get('@type')=='Article']
+                self.assertEqual(len(articles),1)
+                self.assertEqual(articles[0]['headline'],titles[0])
+                self.assertEqual(articles[0]['url'],canonical[0])
+                self.assertTrue(articles[0]['description'].startswith('Exemplo ilustrativo'))
+                self.assertTrue(any(q.get('name')=='Qual o conteúdo desta página?'
+                    and q.get('acceptedAnswer',{}).get('text')==articles[0]['description']
+                    for s in schemas if s.get('@type')=='FAQPage' for q in s.get('mainEntity',[])))
+                # Ignore legacy slugs in hrefs/canonical and JSON URL fields, not human-readable claims.
+                text=re.sub(r'https://praia\.digital/cases/[^"<\s]+','',doc)
+                self.assertNotRegex(text,invented)
+                self.assertNotIn('Em até 24 horas',text)
+                self.assertIn('<h2>O que medir</h2>',text)
+                self.assertNotIn('<h2>Resultado</h2>',text)
+
+
 class HomepageSocialPreview(unittest.TestCase):
     def test_institutional_image_and_accessible_metadata(self):
         from urllib.parse import urlsplit
@@ -95,5 +137,116 @@ class HomepageSocialPreview(unittest.TestCase):
         self.assertEqual(len(texts),5)
         self.assertTrue(all(t.get('x')=='600' for t in texts))
         self.assertIn('text-anchor="middle"',svg)
+
+
+class HomepageAppJourneys(unittest.TestCase):
+    def setUp(self):
+        self.html=(ROOT/'index.html').read_text()
+        self.tags=Tags(self.html).tags
+
+    def test_restored_home_anchors_resolve_network_backlinks(self):
+        from urllib.parse import urlsplit
+        ids=[a['id'] for t,a in self.tags if 'id' in a]
+        for anchor in ['apps','jornadas-apps']:
+            self.assertEqual(ids.count(anchor),1,anchor)
+        checked=0
+        pages=[ROOT/'apps/index.html',*sorted((ROOT/'apps').glob('*/index.html'))]
+        for page in pages:
+            for tag,attrs in Tags(page.read_text()).tags:
+                if tag!='a': continue
+                url=urlsplit(attrs.get('href',''))
+                if url.netloc not in ('','praia.digital'): continue
+                if url.path in ('','/') and url.fragment in ('apps','jornadas-apps'):
+                    self.assertIn(url.fragment,ids,str(page))
+                    checked+=1
+        self.assertGreater(checked,0)
+
+    def test_journeys_link_every_public_app_with_canonical_paths(self):
+        links={a.get('href') for t,a in self.tags if t=='a'}
+        apps=sorted((ROOT/'apps').glob('*/index.html'))
+        self.assertGreater(len(apps),0)
+        for app in apps:
+            self.assertIn('/apps/'+app.parent.name+'/',links)
+        self.assertNotRegex(self.html,r'href=["\']/apps/[^"\']+/index\.html')
+
+    def test_four_accessible_routes_and_clear_simulation_limits(self):
+        import html
+        match=re.search(r'<section id="apps"[^>]*>(.*?)</section>',self.html,re.S)
+        self.assertIsNotNone(match)
+        section=match.group(0)
+        tags=Tags(section).tags
+        attrs=next(a for t,a in tags if t=='section')
+        self.assertEqual(attrs['aria-labelledby'],'apps-titulo')
+        self.assertTrue(any(t=='h2' and a.get('id')=='apps-titulo' for t,a in tags))
+        self.assertEqual(sum(t=='article' for t,a in tags),4)
+        self.assertEqual(sum(t=='ol' for t,a in tags),4)
+        text=html.unescape(re.sub('<[^>]+>',' ',section))
+        self.assertIn('não transferem dados automaticamente',text)
+        self.assertIn('não garantem retorno ou aprovação de crédito',text)
+        self.assertNotRegex(text,r'R\$\s*\d|renda garantida|garantimos reservas')
+        self.assertFalse(any(t in ('script','form','input') for t,a in tags))
+
+    def test_journey_styles_are_responsive_and_keyboard_accessible(self):
+        css=(ROOT/'css/app-network.css').read_text()
+        self.assertIn('#jornadas-apps .grid.g2',css)
+        self.assertIn('@media(max-width:640px)',css)
+        self.assertIn('#jornadas-apps .app-steps a',css)
+        self.assertIn('min-height:44px',css)
+        self.assertIn('#jornadas-apps a:focus-visible',css)
+        self.assertIn('outline:3px solid #0e7c7b',css)
+
+
+class AppCatalogKeyboard(unittest.TestCase):
+    def test_catalog_keyboard_targets_and_complete_cards(self):
+        text=(ROOT/'apps/index.html').read_text()
+        tags=Tags(text).tags
+        ids=[a['id'] for t,a in tags if 'id' in a]
+        self.assertEqual(len(ids),len(set(ids)))
+        cards=[a['href'] for t,a in tags if t=='a' and a.get('class')=='card']
+        apps={'/apps/'+p.parent.name+'/' for p in (ROOT/'apps').glob('*/index.html')}
+        self.assertEqual({p for p in cards if p.startswith('/apps/') and p.endswith('/')},apps)
+        self.assertIn('/apps/guia-de-uso.html', cards)
+        self.assertEqual(len(cards),len(set(cards)))
+        for group in ['grupo-planejar','grupo-comparar','grupo-preparar','grupo-marketplaces']:
+            heading=next(a for t,a in tags if t=='h2' and a.get('id')==group)
+            self.assertEqual(heading['tabindex'],'-1')
+        self.assertEqual(sum(t=='a' and a.get('href')=='#objetivos-apps' for t,a in tags),4)
+        main=next(a for t,a in tags if t=='main')
+        self.assertEqual(main['id'],'catalogo-apps');self.assertEqual(main['tabindex'],'-1')
+        skip=next(a for t,a in tags if t=='a' and 'pd-skip' in a.get('class','').split())
+        self.assertIn('skip-link',skip['class'].split());self.assertEqual(skip['href'],'#catalogo-apps')
+        for t,a in tags:
+            href=a.get('href','')
+            if t=='a' and href.startswith('#'):self.assertIn(href[1:],ids)
+
+class HomepageSeasonalSpotlight(unittest.TestCase):
+    def test_black_friday_is_editorial_and_points_to_existing_page(self):
+        html=(ROOT/'index.html').read_text()
+        block=re.search(r'<section id="especial-black-friday".*?</section>',html,re.S).group(0)
+        self.assertEqual(html.count('id="especial-black-friday"'),1)
+        self.assertIn('aria-labelledby="black-friday-title"',block)
+        self.assertIn('id="black-friday-title"',block)
+        self.assertIn('href="/compras/black-friday.html"',block)
+        self.assertTrue((ROOT/'compras/black-friday.html').is_file())
+        self.assertIn('não descontos confirmados',block)
+        self.assertIn('links de afiliados',block)
+        self.assertIn('podemos receber comissão por compras qualificadas',block)
+        self.assertNotRegex(block,r'R\$|\d+%|cupom|menor preço')
+
+class PilotDiscovery(unittest.TestCase):
+    def test_pilot_links_are_explicit_simulation_not_an_extra_app(self):
+        home=(ROOT/'index.html').read_text()
+        catalog=(ROOT/'apps/index.html').read_text()
+        home_block=re.search(r'<aside class="pd-practice".*?</aside>',home,re.S).group()
+        catalog_block=re.search(r'<nav class="pd-catalog-cards" aria-label="Outros recursos">.*?</nav>',catalog,re.S).group()
+        for block in (home_block,catalog_block):
+            self.assertIn('href="/ia/marketplaces/piloto/"',block)
+            self.assertIn('Laboratório Estoque Vivo',block)
+            self.assertIn('produtos fictícios',block)
+            self.assertIn('sem conexão com lojas ou estoque real',block.lower())
+        groups=re.findall(r'<section class="pd-catalog-group".*?</section>',catalog,re.S)
+        self.assertEqual(sum(len(re.findall(r'class="card"',g)) for g in groups),16)
+        self.assertNotIn('/ia/marketplaces/piloto/', ''.join(groups))
+        self.assertTrue((ROOT/'ia/marketplaces/piloto/index.html').is_file())
 
 if __name__=='__main__': unittest.main()

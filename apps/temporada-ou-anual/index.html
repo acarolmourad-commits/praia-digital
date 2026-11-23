@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps</title>
-<meta name="description" content="Compare a receita líquida de aluguel de temporada vs. contrato anual no litoral de SP, com taxas, ocupação e yield anual. Gratuito.">
+<title>Temporada ou Aluguel Anual — comparação de cenários | Praia Digital Apps</title>
+<meta name="description" content="Compare receitas e despesas informadas para um mês hipotético de temporada e locação anual. Sem médias de mercado ou garantia de renda.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://praia.digital/apps/temporada-ou-anual/">
 <style>
@@ -16,7 +16,7 @@ label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
 input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
 button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
 button:hover{background:#0c5c43}
-.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res[hidden]{display:none}.res{background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
 .res p{margin:6px 0;font-size:15px}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
@@ -27,14 +27,13 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
     .faq summary::-webkit-details-marker{display:none}
     .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-invalid="true"]{border:2px solid #b91c1c} table{table-layout:fixed} td,th{overflow-wrap:anywhere}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps","url":"https://praia.digital/apps/temporada-ou-anual/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
-<meta property="og:type" content="website"><meta property="og:title" content="Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps"><meta property="og:description" content="Compare a receita líquida de aluguel de temporada vs. contrato anual no litoral de SP, com taxas, ocupação e yield anual. Gratuito."><meta property="og:url" content="https://praia.digital/apps/temporada-ou-anual/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Temporada ou Aluguel Anual — comparação de cenários | Praia Digital Apps","url":"https://praia.digital/apps/temporada-ou-anual/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Temporada ou Aluguel Anual — comparação de cenários | Praia Digital Apps"><meta property="og:description" content="Compare receitas e despesas informadas para um mês hipotético de temporada e locação anual. Sem médias de mercado ou garantia de renda."><meta property="og:url" content="https://praia.digital/apps/temporada-ou-anual/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
 
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto rende temporada vs. aluguel anual no litoral?", "acceptedAnswer": {"@type": "Answer", "text": "Em cidades como Guarujá e Santos, a temporada pode render 1,8–2,5× o aluguel anual em receita bruta, mas depois de taxas (20–30%), custos fixos e vacância, o líquido fica em 1,2–1,8×. Vale mais quem administra bem e aceita a oscilação."}}, {"@type": "Question", "name": "Qual ocupação anual é realista?", "acceptedAnswer": {"@type": "Answer", "text": "A média no litoral de SP fica entre 8 e 14 noites/mês (100–170 noites/ano), concentrada em dezembro–março, feriados e julho. Imóveis com piscina, vista mar e boas avaliações chegam a 15+ noites/mês."}}, {"@type": "Question", "name": "Quais taxas a temporada tem que o anual não tem?", "acceptedAnswer": {"@type": "Answer", "text": "Plataformas (Airbnb/Booking: 15–18% somando anfitrião+hóspede), limpeza (R$ 120–250 por estadia), gestão (15–25% se terceirizar), além de contas de consumo que no anual ficam com o inquilino."}}, {"@type": "Question", "name": "Posso misturar os dois modelos?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, e é uma estratégia comum: temporada no verão/feriados e contrato curto (ou temporada corporativa) no resto do ano. O aluguel por temporada mantém o imóvel disponível para seu uso próprio — impossível no contrato anual."}}]}
-  </script>
+
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="temporada-ou-anual">
@@ -42,70 +41,29 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <header><h1 id="pd-app-title" tabindex="-1">🌴 Temporada ou Aluguel Anual?</h1><p>Compare os dois modelos de renda do seu imóvel no litoral</p></header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
-<div class="wrap">
-<div class="card">
-  <label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" value="450000">
-  <label for="diaria">Diária média de temporada (R$)</label><input id="diaria" type="number" value="450">
-  <label for="noites">Noites ocupadas por mês (média anual)</label><input id="noites" type="number" value="12">
-  <label for="taxa">Taxas de temporada: plataforma + limpeza + gestão (%)</label><input id="taxa" type="number" value="25">
-  <label for="custos">Custos fixos mensais da temporada (R$): condomínio, IPTU, luz, internet</label><input id="custos" type="number" value="1200">
-  <label for="anual">Aluguel anual mensal possível (R$)</label><input id="anual" type="number" value="2800">
-  <button onclick="calc()">Comparar modelos</button>
-  <div class="res" id="res">
-    <table>
-      <tr><th></th><th>Temporada</th><th>Aluguel anual</th></tr>
-      <tr><td>Receita bruta/mês</td><td id="bt"></td><td id="ba"></td></tr>
-      <tr><td>Receita líquida/mês</td><td id="lt"></td><td id="la"></td></tr>
-      <tr><td>Líquido no ano</td><td id="at"></td><td id="aa"></td></tr>
-      <tr><td>Yield anual s/ valor do imóvel</td><td id="yt"></td><td id="ya"></td></tr>
-    </table>
-    <p id="dica" style="font-weight:700"></p>
-  </div>
-</div>
-<div class="card"><h2>📌 Qual modelo combina com seu imóvel?</h2>
-<p style="font-size:14px;margin-top:6px">Temporada no litoral de SP pode render 2–3× o aluguel anual, mas exige ocupação, gestão e tem custos maiores. A média anual de ocupação costuma ficar entre 8 e 14 noites/mês, concentrada no verão e feriados. Aprofunde a análise no <a href="/apps/simulador-roi-temporada/">Simulador de ROI de Temporada</a>, estime o valor do imóvel em <a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel?</a> e projete a valorização na <a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a>.</p>
-<p style="font-size:14px;margin-top:8px">Ainda escolhendo a cidade? Use o <a href="/apps/comparador-cidades/">Comparador de Cidades</a> para ranquear o litoral pelo seu perfil de investimento.</p></div>
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">📊 Temporada vs. anual por cidade <span class="tag">out/2026</span></h2>
-<p style="font-size:14px;color:#475569;margin-bottom:8px">Diária média e ocupação real de plataformas (Airbnb/Booking) no litoral de SP; líquido estimado já desconta ~28% de taxas e ~R$ 1.100/mês de custos fixos:</p>
-<table>
-  <tr><th>Cidade</th><th>Diária média</th><th>Noites/mês</th><th>Receita mensal temporada</th><th>Aluguel anual/mês</th></tr>
-  <tr><td>Guarujá</td><td>R$ 550</td><td>10</td><td>R$ 5.500 <small>(~R$ 2.860 líq.)</small></td><td>R$ 3.200</td></tr>
-  <tr><td>Santos</td><td>R$ 500</td><td>9</td><td>R$ 4.500 <small>(~R$ 2.140 líq.)</small></td><td>R$ 2.900</td></tr>
-  <tr><td>Bertioga</td><td>R$ 480</td><td>8</td><td>R$ 3.840 <small>(~R$ 1.665 líq.)</small></td><td>R$ 2.400</td></tr>
-  <tr><td>Praia Grande</td><td>R$ 380</td><td>9</td><td>R$ 3.420 <small>(~R$ 1.362 líq.)</small></td><td>R$ 2.300</td></tr>
-  <tr><td>Itanhaém</td><td>R$ 320</td><td>8</td><td>R$ 2.560 <small>(~R$ 743 líq.)</small></td><td>R$ 1.800</td></tr>
-  <tr><td>Mongaguá</td><td>R$ 300</td><td>7</td><td>R$ 2.100 <small>(~R$ 412 líq.)</small></td><td>R$ 1.600</td></tr>
-</table>
-<p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: temporada compensa quando a receita líquida supera o anual em 40%+ — abaixo disso, a estabilidade do contrato anual costuma vencer.</p>
-</div>
-<div class="card"><h2 style="font-size:17px;margin-bottom:6px">❓ Perguntas frequentes</h2>
-<div class="faq" style="margin-top:10px"><details><summary>Quanto rende temporada vs. aluguel anual no litoral?</summary><p>Em cidades como Guarujá e Santos, a temporada pode render 1,8–2,5× o aluguel anual em receita bruta, mas depois de taxas (20–30%), custos fixos e vacância, o líquido fica em 1,2–1,8×. Vale mais quem administra bem e aceita a oscilação.</p></details><details><summary>Qual ocupação anual é realista?</summary><p>A média no litoral de SP fica entre 8 e 14 noites/mês (100–170 noites/ano), concentrada em dezembro–março, feriados e julho. Imóveis com piscina, vista mar e boas avaliações chegam a 15+ noites/mês.</p></details><details><summary>Quais taxas a temporada tem que o anual não tem?</summary><p>Plataformas (Airbnb/Booking: 15–18% somando anfitrião+hóspede), limpeza (R$ 120–250 por estadia), gestão (15–25% se terceirizar), além de contas de consumo que no anual ficam com o inquilino.</p></details><details><summary>Posso misturar os dois modelos?</summary><p>Sim, e é uma estratégia comum: temporada no verão/feriados e contrato curto (ou temporada corporativa) no resto do ano. O aluguel por temporada mantém o imóvel disponível para seu uso próprio — impossível no contrato anual.</p></details></div>
-<p style="font-size:14px;margin-top:10px">📍 <a href="/bairros/"><b>Aprofunde por bairro</b></a> — rentabilidade varia muito entre bairros: compare 123 bairros do litoral no nosso índice.</p>
-</div>
-</div>
-<script>
-const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-function calc(){
-  const V=parseFloat(document.getElementById('valor').value)||1;
-  const D=parseFloat(document.getElementById('diaria').value)||0;
-  const N=parseFloat(document.getElementById('noites').value)||0;
-  const T=(parseFloat(document.getElementById('taxa').value)||0)/100;
-  const C=parseFloat(document.getElementById('custos').value)||0;
-  const A=parseFloat(document.getElementById('anual').value)||0;
-  const bt=D*N, lt=bt*(1-T)-C, la=A;
-  document.getElementById('bt').textContent=fmt(bt);
-  document.getElementById('ba').textContent=fmt(A);
-  document.getElementById('lt').textContent=fmt(lt);
-  document.getElementById('la').textContent=fmt(la);
-  document.getElementById('at').textContent=fmt(lt*12);
-  document.getElementById('aa').textContent=fmt(la*12);
-  document.getElementById('yt').textContent=(lt*12/V*100).toFixed(1)+'%';
-  document.getElementById('ya').textContent=(la*12/V*100).toFixed(1)+'%';
-  document.getElementById('dica').textContent = lt>la ? '🏆 Temporada rende mais no seu cenário — detalhe o payback no Simulador de ROI.' : '🏆 Aluguel anual rende mais no seu cenário — a temporada precisa de mais ocupação ou diária maior.';
-  document.getElementById('res').style.display='block';
-}
-</script>
+<main class="wrap"><div class="card">
+<p>Exemplos editáveis, não médias de mercado. Compare um mês hipotético com receitas e despesas atribuídas ao proprietário em cada modalidade. Nenhuma receita é garantida.</p>
+<label for="valor">Valor de referência do imóvel (R$)</label><input id="valor" type="number" min="0.01" max="1000000000" step="0.01" value="450000">
+<label for="diaria">Diária de temporada antes das taxas (R$)</label><input id="diaria" type="number" min="0" max="1000000000" step="0.01" value="450">
+<label for="noites">Noites ocupadas neste mês hipotético</label><input id="noites" type="number" min="0" max="31" step="1" value="12">
+<label for="taxa">Taxas de temporada sobre a receita bruta (%)</label><input id="taxa" type="number" min="0" max="100" step="0.01" value="25">
+<label for="custos">Demais despesas da temporada neste mês (R$)</label><input id="custos" type="number" min="0" max="1000000000" step="0.01" value="1200">
+<label for="anual">Receita bruta do contrato anual neste mês (R$)</label><input id="anual" type="number" min="0" max="1000000000" step="0.01" value="2800">
+<label for="custosAnual">Despesas do proprietário no contrato anual neste mês (R$)</label><input id="custosAnual" type="number" min="0" max="1000000000" step="0.01" value="400">
+<p>Inclua em cada campo de despesas os custos sob sua responsabilidade, como administração, limpeza, manutenção, condomínio e contas, quando aplicáveis. Na temporada, não repita despesas já incluídas na taxa percentual. Não desconte encargos pagos diretamente pelo inquilino que não sejam receita nem despesa sua.</p>
+<p>Todos os campos são obrigatórios; zero é permitido nas receitas, despesas, taxas e noites. Limites técnicos: valores monetários até R$ 1 bilhão, imóvel a partir de R$ 0,01, noites inteiras de 0 a 31 e taxa de 0% a 100%. Não são condições de mercado.</p>
+<button type="button" id="calcular">Comparar modelos</button><p id="erro" role="alert" hidden></p><noscript><p>Ative JavaScript para calcular. Nenhum resultado é produzido sem ele.</p></noscript>
+<div class="res" id="res" aria-live="polite" hidden><table><caption>Mês hipotético e multiplicação ilustrativa</caption><tr><th scope="col">Indicador</th><th scope="col">Temporada</th><th scope="col">Contrato anual</th></tr><tr><th scope="row">Receita bruta do mês</th><td id="bt"></td><td id="ba"></td></tr><tr><th scope="row">Saldo após despesas informadas do mês</th><td id="lt"></td><td id="la"></td></tr><tr><th scope="row">Saldo do mês × 12 (ilustrativo)</th><td id="at"></td><td id="aa"></td></tr><tr><th scope="row">Saldo × 12 / valor do imóvel</th><td id="yt"></td><td id="ya"></td></tr></table><p id="dica" style="font-weight:700"></p>
+<p>A multiplicação por 12 repete o mesmo mês hipotético, não prevê receita anual nem representa um calendário de reservas. Um cenário com 31 noites multiplicado por 12 teria 372 noites, portanto não pode ser usado como um ano real.</p></div>
+</div><div class="card"><h2>Fórmulas e comparação justa</h2>
+<p>Temporada: receita bruta = diária × noites; saldo = receita bruta × (1 − taxa/100) − demais despesas. Contrato anual: saldo = receita bruta do mês − despesas do proprietário no mês. Saldos negativos são exibidos, não substituídos por zero.</p>
+<p>O indicador percentual é apenas saldo mensal × 12 ÷ valor de referência do imóvel × 100. Não é ROI total nem retorno anual apurado. Custos de aquisição, financiamento, investimentos adicionais, inflação e valorização do imóvel não são calculados. Impostos e outros custos não informados também não são descontados automaticamente; o saldo não é necessariamente lucro líquido final.</p>
+<p>Use o mesmo período e critérios de despesas nas duas colunas. Para analisar um ano real, calcule cada mês conforme seus dias, ocupação, diária, vacância, inadimplência e despesas, depois some os resultados. Não multiplique a alta temporada como se durasse o ano todo.</p>
+</div><div class="card"><h2>Limitações e próximos passos</h2>
+<p>Saldo maior neste exemplo não torna uma modalidade automaticamente melhor. A ferramenta não avalia risco, trabalho de gestão, liquidez, condições contratuais ou regras do imóvel e condomínio. Confira suas premissas antes de decidir.</p>
+<p>Continue com o <a href="/blog/rentabilidade-imoveis-praia-2026.html">guia de rentabilidade sem promessas</a>, o <a href="/apps/simulador-roi-temporada/">simulador de temporada</a>, o <a href="/apps/valor-imovel/">estimador de valor</a> ou a <a href="/apps/calculadora-valorizacao/">projeção de variação de valor</a>, observando as limitações de cada modelo.</p>
+<p>Consulte também o <a href="/apps/comparador-cidades/">comparador de cidades</a> e o <a href="/bairros/">índice de bairros</a>.</p></div></main>
+<script src="/apps/temporada-ou-anual/calculadora.js"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
@@ -119,6 +77,6 @@ function calc(){
 </section>
 <script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
 <section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Compare receitas líquidas para o mesmo período, incluindo vacância e sazonalidade.</li><li>Registre custos operacionais, inadimplência, restrições condominiais e condições contratuais.</li><li>Use a comparação como apoio; valide premissas com dados locais e assessoria competente.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
-<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue com o próximo aplicativo</h2><p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p><div class="pd-workflow" aria-labelledby="pd-workflow-title"><h3 id="pd-workflow-title">Use este resultado na sua rotina</h3><dl><div><dt>Antes de começar</dt><dd>Compare o mesmo período e inclua vacância, gestão, manutenção e custos de cada modalidade.</dd></div><div><dt>O que registrar</dt><dd>Guarde as premissas e a diferença de resultado; teste ocupações e despesas alternativas.</dd></div></dl><p><strong>Continue sua análise</strong></p><ul class="pd-next-links"><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/oficina-ia-imobiliaria/">Oficina de IA</a></li></ul></div><details><summary>Explorar a rede completa de aplicativos</summary><div class="pd-network-group"><h3>Planejar a compra</h3><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/"><strong>Alugar ou comprar</strong><span>Compare cenários com os custos e o prazo que você informar.</span></a></li><li><a href="/apps/calculadora-financiamento/"><strong>Financiamento SAC e Price</strong><span>Compare sistemas de amortização usando as mesmas premissas.</span></a></li><li><a href="/apps/calculadora-consorcio/"><strong>Consórcio</strong><span>Organize parcelas e lance; a contemplação não tem data garantida.</span></a></li><li><a href="/apps/custo-de-compra/"><strong>Custos de compra</strong><span>Inclua tributos e despesas a confirmar para a sua operação.</span></a></li><li><a href="/apps/planejador-entrada/"><strong>Planejador de entrada</strong><span>Defina a meta e simule quanto reservar por mês.</span></a></li><li><a href="/apps/renda-para-financiar/"><strong>Renda para financiar</strong><span>Estime o comprometimento de renda; a aprovação depende do banco.</span></a></li></ul></div><div class="pd-network-group"><h3>Comparar cenários</h3><ul class="pd-network-grid"><li><a href="/apps/comparador-cidades/"><strong>Comparador de cidades</strong><span>Compare destinos pelo perfil escolhido e confira as fontes.</span></a></li><li><a href="/apps/valor-imovel/"><strong>Valor do imóvel</strong><span>Explore uma estimativa e confira referências antes de decidir.</span></a></li><li><a href="/apps/calculadora-valorizacao/"><strong>Valorização projetada</strong><span>Veja o efeito das hipóteses de valorização ao longo do tempo.</span></a></li><li><a href="/apps/simulador-roi-temporada/"><strong>ROI de temporada</strong><span>Simule receita, despesas e retorno com suas premissas.</span></a></li></ul></div><div class="pd-network-group"><h3>Preparar e revisar anúncios</h3><ul class="pd-network-grid"><li><a href="/apps/checklist-vistoria/"><strong>Checklist de vistoria</strong><span>Organize observações e pendências para a revisão do imóvel.</span></a></li><li><a href="/apps/oficina-ia-imobiliaria/"><strong>Oficina de IA</strong><span>Monte um briefing, confira lacunas e prepare modelos de e-mail.</span></a></li><li><a href="/apps/revisor-anuncios/"><strong>Revisor de anúncios</strong><span>Compare duas versões com uma ficha conferida e encontre divergências.</span></a></li><li><a href="/apps/relatorio-imovel/"><strong>Relatório do imóvel</strong><span>Reúna fontes, informações e próximos passos; imprima ou salve em PDF.</span></a></li></ul></div><div class="pd-network-group"><h3>Organizar vendas em marketplaces</h3><ul class="pd-network-grid"><li><a href="/apps/calculadora-precificacao-shopee/"><strong>Precificação Shopee e TikTok Shop</strong><span>Confira taxas aplicáveis e estime sua margem com os custos informados.</span></a></li></ul></div></details><p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>
 </body>
 </html>

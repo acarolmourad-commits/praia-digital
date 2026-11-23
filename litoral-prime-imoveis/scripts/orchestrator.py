@@ -11,22 +11,46 @@ REPO = Path(r"C:\Users\Carolina\praia-digital\litoral-prime-imoveis")
 DOMAIN = "https://praia.digital/litoral-prime-imoveis"
 
 
+SKIP_TOKENS = ("template", "backup", "draft", "internal", "temp-", "404.html")
+
+
+def _retired_slugs():
+    """Slugs de listagens aposentadas pelo proprietário (manifest na raiz do repo)."""
+    manifest = REPO.parent / "data" / "retired-listings.json"
+    try:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+        return set(data.get("slugs", []))
+    except Exception:
+        return set()
+
+
 def refresh_sitemap():
+    def indexable(rel: str) -> bool:
+        low = rel.lower()
+        if any(tok in low for tok in SKIP_TOKENS):
+            return False
+        if rel == "sitemap.html":
+            return False
+        return True
+
     rels = sorted(
         str(Path(p).relative_to(REPO)).replace("\\", "/")
         for p in glob.glob(str(REPO / "**/*.html"), recursive=True)
-        if "template" not in p and str(Path(p).relative_to(REPO)).replace("\\", "/") != "sitemap.html"
+        if indexable(str(Path(p).relative_to(REPO)).replace("\\", "/"))
     )
     sm_path = REPO / "sitemap.xml"
     text = sm_path.read_text(encoding="utf-8") if sm_path.exists() else ""
+    # Preservar apenas o prólogo (declaração XML + <urlset ...>). O epílogo é
+    # sempre reescrito: reconstruir o sufixo a partir do arquivo anterior
+    # descartava o </urlset> e gerava XML inválido (sitemap truncado no ar).
     if "<url>" in text:
         prefix = text.split("<url>")[0]
-        suffix = text.split("</url>")[-1].split("</urlset>")
-        suffix = suffix[-1].split("</urlset>")[0] if len(suffix) > 1 else ""
     else:
         prefix = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        suffix = "</urlset>"
+    suffix = "</urlset>"
     today = date.today().isoformat()
+    retired = _retired_slugs()
+    skipped = 0
     url_blocks = []
     # Always include sitemap.html
     url_blocks.append(
@@ -34,6 +58,10 @@ def refresh_sitemap():
         f"    <priority>0.5</priority>\n  <changefreq>weekly</changefreq>\n  </url>"
     )
     for rel in rels:
+        if rel.startswith("imoveis/") and rel.endswith(".html"):
+            if rel[len("imoveis/"):-len(".html")] in retired:
+                skipped += 1
+                continue
         loc = f"{DOMAIN}/{rel}"
         url_blocks.append(
             f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n"
@@ -41,7 +69,7 @@ def refresh_sitemap():
         )
     new_sm = prefix + "\n".join(url_blocks) + "\n" + suffix
     sm_path.write_text(new_sm, encoding="utf-8")
-    print(f"[OK] Sitemap sincronizado: {len(rels)} URLs")
+    print(f"[OK] Sitemap sincronizado: {len(url_blocks)} URLs ({skipped} listagens aposentadas omitidas)")
 
 
 def patch_whatsapp_links():
@@ -114,20 +142,23 @@ def sync_item_lists():
         return
     block = ",\n    ".join(items)
     new_items = '{\n  "@context": "https://schema.org",\n  "@type": "ItemList",\n  "name": "Imóveis no litoral de SP",\n  "itemListElement": [\n  ' + block + '\n  ]\n}'
+    import re
+    pattern = re.compile(
+        r'(<script[^>]*>\s*)\{.*?"@type":\s*"ItemList".*?(\s*</script>)', re.S
+    )
+    updated = []
     for rel in ["imoveis.html", "index.html"]:
         p = REPO / rel
         if not p.exists():
             continue
         html = p.read_text(encoding="utf-8")
-        start = html.find('{"@context": "https://schema.org", "@type": "ItemList"')
-        if start == -1:
+        if not pattern.search(html):
             continue
-        end = html.find("</script>", start) + len("</script>")
-        if end < len("</script>"):
-            continue
-        new_html = html[:start] + new_items + "\n  " + html[end:]
-        p.write_text(new_html, encoding="utf-8")
-    print(f"[OK] ItemLists sincronizados: {len(items)} imóveis")
+        new_html, n = pattern.subn(lambda m: m.group(1) + new_items + m.group(2), html, count=1)
+        if n and new_html != html:
+            p.write_text(new_html, encoding="utf-8")
+            updated.append(rel)
+    print(f"[OK] ItemLists sincronizados: {len(items)} imóveis em {len(updated)} páginas")
 
 
 def run_script(name: str, args=None):

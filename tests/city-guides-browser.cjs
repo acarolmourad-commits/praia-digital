@@ -51,13 +51,13 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    }
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
    if(c.slug==='bertioga'){
-    assert.equal(cards,11);
+    assert.equal(cards,13);
     assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
     await page.locator('#tipo-filtro').selectOption('Aluguel');
     assert.equal(await page.locator('.property-card').count(),0);
     assert(await page.locator('.imoveis-empty').isVisible());
     await page.locator('#tipo-filtro').selectOption('Venda');
-    assert.equal(await page.locator('.property-card').count(),11);
+    assert.equal(await page.locator('.property-card').count(),13);
    }
    results.push({city:c.name,width,cards,passed:true});
    console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
@@ -72,6 +72,20 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
   assert((await page.locator('.price').textContent()).includes('690.000'));
   await page.screenshot({path:path.join(output,`rio-praia-${width}.png`),fullPage:true});
   results.push({listing:'casa-rio-da-praia-100m2',width,photos:14,passed:true});
+  await page.goto(origin+'/imoveis.html?cidade=Bertioga&finalidade=Venda&tipo=casa');
+  const listingCard=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/sobrado-indaia-94m2.html"]')});
+  assert.equal(await listingCard.count(),1);
+  assert.equal(await listingCard.locator('[itemprop="availability"]').count(),0);
+  await listingCard.getByRole('link',{name:'Ver detalhes',exact:true}).click();
+  assert.equal(new URL(page.url()).pathname,'/imoveis/sobrado-indaia-94m2.html');
+  assert.match(await page.locator('h1').textContent(),/2 dormitórios.*Indaiá/);
+  assert.match(await page.locator('.price').textContent(),/1\.500\.000/);
+  assert.equal(await page.locator('.gallery figure').count(),9);
+  assert.match(await page.locator('.cover img').getAttribute('src'),/01-varanda-terrea-jardim\.webp$/);
+  await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Sobrado Indaiá overflow');
+  results.push({listing:'sobrado-indaia-94m2',width,photos:9,passed:true});
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await page.screenshot({path:path.join(output,`index-${width}.png`),fullPage:true});
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);await ctx.close();

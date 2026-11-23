@@ -15,23 +15,64 @@
       <meta itemprop="name" content="${escapeHtml(p.title)}">
       ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
-        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} ${p.score ? `<span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score}</span>` : ''}</h3>
+        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)}</h3>
         <p class="property-meta">${escapeHtml(p.locationLabel || p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
           <meta itemprop="price" content="${priceNumber(p.price)}">
-          <link itemprop="availability" href="https://schema.org/InStock">
+          ${p.availabilityUnconfirmed ? '' : '<link itemprop="availability" href="https://schema.org/InStock">'}
           <span>${escapeHtml(p.price)}</span>
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${p.title} — ${p.price} — ${p.locationLabel || p.city}. ${new URL(detailUrl(p), 'https://praia.digital/').href} Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
   
   const properties = [
+{
+  "id": 21,
+  "title": "Casa tipo sobrado com 2 dormitórios no Indaiá",
+  "slug": "sobrado-indaia-94m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.500.000",
+  "bedrooms": "2",
+  "area": "94,36 m² construídos",
+  "image": "https://praia.digital/assets/sobrado-indaia-94m2/01-varanda-terrea-jardim.webp",
+  "tags": [
+    "Sobrado",
+    "1 banheiro e 1 lavabo",
+    "Varanda com churrasqueira",
+    "Quintal"
+  ],
+  "description": "Sobrado à venda em Indaiá, Bertioga, por R$ 1.500.000. São 2 dormitórios, 94,36 m² construídos, 92,96 m² de terreno e varanda com churrasqueira.",
+  "availabilityUnconfirmed": true
+},
+{
+  "id": 20,
+  "title": "Casa com edícula no Indaiá: 7 quartos e 5 suítes",
+  "slug": "duas-casas-indaia-432m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Jardim Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.250.000",
+  "bedrooms": "7",
+  "area": "432 m² de terreno · 307,91 m² cadastrados de construção",
+  "image": "https://praia.digital/assets/duas-casas-indaia-432m2/01.webp",
+  "tags": [
+    "Uma única residência",
+    "5 suítes",
+    "Terreno 12 × 36 m",
+    "Cerca de 450 m da praia",
+    "Aceita financiamento"
+  ],
+  "description": "Uma única residência, com casa térrea na frente e edícula ao fundo, sem entradas independentes nem separação de água e energia. 7 quartos e 5 suítes no total. Jardim Indaiá, lado praia da Av. Anchieta. R$ 1.250.000.",
+  "contactEmail": "comercial@praia.digital"
+},
 {
   "id": 19,
   "title": "Residencial com 4 kitnets e edícula a 50 m da praia",
@@ -229,7 +270,7 @@
 
       {
         "id": 9,
-        "title": "Casa em condomínio fechado - Bertioga",
+        "title": "Casa com 2 quartos em condomínio fechado em Bertioga",
         "slug": "../casa-condominio-fechado-bertioga",
         "city": "Bertioga",
         "type": "Venda",
@@ -238,8 +279,8 @@
         "area": "105m²",
         "score": 95,
         "image": "https://praia.digital/img/bertioga-casa-fachada-externa.webp",
-        "tags": ["100m da praia", "Piscina", "Sauna", "Academia"],
-        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Imóvel real cadastrado na Praia Digital."
+        "tags": ["Cerca de 100 m da praia", "Piscina compartilhada", "Sauna", "Academia", "Sala de jogos", "2 banheiros", "1 vaga"],
+        "description": "Casa em condomínio fechado em Bertioga: área informada de 105 m², 2 quartos, 2 banheiros e 1 vaga. Piscina, sauna, academia e sala de jogos para uso compartilhado. Condomínio informado: R$ 710/mês, com água e internet inclusas. IPTU informado: R$ 105/mês. Consulte disponibilidade, medidas, valores e condições."
       }
     ];
 
@@ -291,6 +332,11 @@
     document.getElementById('preco-label').textContent=state.finalidade==='Aluguel' ? 'Aluguel máximo (R$/mês)' : state.finalidade ? 'Preço de compra máximo (R$)' : 'Orçamento máximo (escolha a finalidade)';
   }
   function showResults() {
+    if(state.unsupportedSuites) {
+      document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">A busca por suítes ainda não está disponível. Retire esse requisito da busca para consultar os anúncios por quartos e confirme as suítes com a equipe.</p>';
+      document.getElementById('search-status').textContent='Quantidade de suítes não verificada. Nenhum anúncio foi selecionado como correspondente a esse requisito.';
+      return;
+    }
     if(state.preco_max && !state.finalidade) {
       document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">Escolha comprar ou alugar para aplicar o orçamento informado.</p>';
       document.getElementById('search-status').textContent='Finalidade pendente: preço de compra e aluguel mensal não são comparáveis.';

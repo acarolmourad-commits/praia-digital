@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="Avalie um piloto de estoque compartilhado com produtos fictícios, roteiro verificável e documentação do LiveBridge AI e Estoque Vivo.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <meta name="theme-color" content="#16373d">
+  <title>Piloto de marketplaces — laboratório de avaliação | Praia Digital</title>
+  <link rel="canonical" href="https://praia.digital/ia/marketplaces/piloto/">
+  <link rel="stylesheet" href="piloto.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<meta name="pd-shared-nav">
+<main id="conteudo" class="lab">
+  <nav class="crumb" aria-label="Caminho da página"><a href="/">Praia Digital</a><span>/</span><a href="/ia/marketplaces/">Marketplaces</a><span>/</span><span aria-current="page">Laboratório</span></nav>
+  <section class="intro">
+    <div><p class="eyebrow">LABORATÓRIO DE AVALIAÇÃO</p><h1>Um piloto.<br>Um saldo confiável.</h1><p class="lead">Explore reservas, cancelamentos e saídas com produtos fictícios. Veja o resultado esperado antes de escolher o primeiro piloto da sua operação.</p><a class="button" href="#laboratorio">Experimentar o roteiro</a><a class="quiet-link" href="#documentacao">Consultar documentação</a></div>
+    <aside class="objective"><p class="eyebrow">PRIMEIRO FOCO PROPOSTO</p><h2>Estoque Vivo</h2><p>Conferir se pedidos de dois canais simulados preservam a relação:</p><p class="formula">disponível = físico − reservado</p><p>Sucesso demonstrável: 10 verificações aprovadas, nenhuma baixa duplicada e saldos conciliados.</p><span class="tag">Somente dados fictícios</span></aside>
+  </section>
+  <p class="notice">Esta demonstração roda na memória desta página e reinicia ao recarregar. Não acessa contas, lojas, estoque real ou APIs. Não transmite vídeo nem envia notificações. Nenhuma informação pessoal precisa ser informada.</p>
+  <nav class="anchors" aria-label="Nesta avaliação"><a href="#escolha">Escolha do piloto</a><a href="#laboratorio">Simulador</a><a href="#aceite">Critérios de avaliação</a><a href="#documentacao">Documentação</a></nav>
+  <section id="escolha"><p class="eyebrow">DECISÃO DE ESCOPO</p><h2>Começar pelo controle operacional</h2><p>O Estoque Vivo permite avaliar uma rotina com saldo, reserva e conferência, antes de conectar canais externos. O LiveBridge continua como uma segunda frente, dependente de fonte de vídeo autorizada, contas elegíveis e teste real de distribuição.</p>
+    <div class="comparison"><article><h3>Estoque Vivo: piloto proposto</h3><p>Uma marca, dois operadores, três SKUs fictícios e dois canais simulados. Conferir o ciclo completo de reserva, liberação e saída física.</p><p><strong>Resultado:</strong> saldo final conciliado e operações rastreáveis.</p></article><article><h3>LiveBridge AI: avaliação complementar</h3><p>Inventariar a origem do vídeo e o acesso a cada destino. Separar live, stories, publicações e catálogo. A seleção de um canal na demonstração não comprova integração.</p><p><strong>Resultado futuro:</strong> uma transmissão autorizada observada no destino escolhido, com evidência de início, interrupção e encerramento.</p></article></div>
+  </section>
+  <section id="laboratorio" class="panel"><div class="section-heading"><div><p class="eyebrow">SIMULAÇÃO ISOLADA</p><h2>Experimente o fluxo</h2></div><span class="tag">Sem conexão com produção</span></div>
+    <noscript><p class="notice">Ative JavaScript para executar a demonstração. O objetivo, o roteiro e os critérios de avaliação continuam disponíveis abaixo.</p></noscript>
+    <div class="actions"><button id="run" data-ready disabled type="button">Executar roteiro de 10 verificações</button><button id="reset" data-ready disabled type="button" class="secondary">Reiniciar demonstração</button></div>
+    <p id="feedback" role="status" aria-live="polite">Escolha o roteiro automático ou faça uma reserva manual abaixo. Executar o roteiro substitui somente o cenário desta página.</p>
+    <div class="table-scroll" role="region" aria-label="Saldos dos produtos fictícios" tabindex="0"><table><caption>Catálogo fictício — radar visual em até 150 unidades disponíveis por SKU</caption><thead><tr><th scope="col">Produto</th><th scope="col">SKU</th><th scope="col">Físico</th><th scope="col">Reservado</th><th scope="col">Disponível</th><th scope="col">Radar visual</th></tr></thead><tbody id="inventory"></tbody></table></div>
+    <p class="small">O radar deste laboratório é apenas visual. Bolsa e boné começam abaixo do limite; produtos diferentes não têm seus saldos somados.</p>
+    <form id="reserve-form"><fieldset><legend>Faça uma reserva fictícia</legend><div class="fields"><label for="sku">Produto<select id="sku" required></select></label><label for="quantity">Quantidade<input id="quantity" type="number" min="1" max="10000" step="1" value="12" required></label><label for="channel">Canal<select id="channel"></select></label><label for="actor">Operador<select id="actor"></select></label></div><div class="actions"><button data-ready disabled type="submit">Reservar unidades</button><button id="replay" disabled type="button" class="secondary">Repetir último evento manual</button></div></fieldset></form>
+    <h3>Pedidos simulados</h3><p id="empty">Ainda não há pedidos neste cenário.</p><ul id="orders" class="orders"></ul>
+    <div class="summary"><p id="reconciliation">Conferência ainda não executada</p><p id="event-count">0 operações aplicadas</p></div>
+    <details><summary>Ver histórico de operações aplicadas</summary><ol id="history"></ol></details>
+    <h3 id="check-count">Roteiro ainda não executado</h3><ol id="checks" class="checks"></ol>
+    <p class="small">As verificações medem o modelo didático deste laboratório. Não validam a API, concorrência entre dispositivos, permissões, integração nativa ou notificações do aplicativo real.</p>
+    <button id="download" data-ready disabled type="button" class="secondary">Baixar evidências da simulação (JSON)</button>
+  </section>
+  <section id="aceite"><p class="eyebrow">RESULTADO OBSERVÁVEL</p><h2>Como avaliar o primeiro piloto</h2><ol class="criteria"><li><strong>Base:</strong> iniciar com 160 camisetas, 12 bolsas e 5 bonés fictícios, sem reservas.</li><li><strong>Reserva e limite:</strong> reservar 12 camisetas: físico 160, reservado 12 e disponível 148. Recusar outra reserva de 149.</li><li><strong>Duplicidade e cancelamento:</strong> repetir o evento sem nova baixa; recusar alteração do conteúdo com o mesmo ID; cancelar o pedido e restaurar o disponível a 160.</li><li><strong>Saída:</strong> reservar 10 e confirmar a saída: físico 150, reservado 0 e disponível 150. Recusar cancelamento após saída.</li><li><strong>Conferência:</strong> preservar bolsa e boné; reconciliar pedidos e saldos; salvar o relatório de resultados.</li></ol>
+    <div class="notice"><h3>Antes de um piloto operacional</h3><p>Definir responsável pelo aceite, uma marca participante, fonte oficial do saldo, mapeamento dos SKUs, operadores, período de teste e plano de retorno. Usar ambiente separado e dados autorizados. Validar permissões, eventos repetidos/fora de ordem, falhas de rede e disputa pela última unidade no backend real. Somente então deliberar sobre produção.</p><p>A meta histórica de redução de trabalho manual precisa de uma medição inicial e outra final para o mesmo conjunto de tarefas. Este laboratório não comprova redução de tempo, receita, ausência de penalidades ou benefício comercial.</p></div>
+  </section>
+  <section id="documentacao"><p class="eyebrow">MATERIAIS COMPLEMENTARES</p><h2>Documentação para a avaliação</h2><div class="docs"><a href="especificacao.md"><strong>Especificação do piloto</strong><span>Escopo, modelo de dados, cenários e critérios de passagem.</span></a><a href="https://estoque.praia.digital/apresentacao.html"><strong>Apresentação do Estoque Vivo</strong><span>Proposta e limites do produto.</span></a><a href="https://estoque.praia.digital/integracao.html"><strong>Integração do Estoque Vivo</strong><span>Contrato técnico de pedidos normalizados; adaptadores por marca dependem de validação.</span></a><a href="/ia/marketplaces/#demonstracao"><strong>Demonstração conceitual do LiveBridge</strong><span>Seleção de destinos, sem captura ou transmissão.</span></a></div><details><summary>Estado dos componentes e limitações</summary><p>Consulta de 18/11/2026: /health do Estoque Vivo respondeu versão 1.2.0. O repositório contém trabalho de versão 1.3; isso não confirma publicação. Esta página não consulta o backend.</p><p>O simulador não inclui autenticação, persistência, recuperação, WebSocket, Web Push, importação Upseller, adaptadores, IA em execução ou conexão entre abas. O documento do projeto e o aceite da equipe são tratados separadamente.</p></details></section>
+  <p><a href="/apps/guia-de-uso.html#vender">Voltar ao roteiro de precificação</a> · Confira custos e premissas; os dados desta simulação não são transferidos para outros aplicativos.</p>
+  <footer><p>Praia Digital · Laboratório de marketplaces · versão 1.0</p><a href="/ia/marketplaces/">Voltar à apresentação de marketplaces</a></footer>
+</main>
+</body>
+</html>
