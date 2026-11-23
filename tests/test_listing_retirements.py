@@ -132,7 +132,9 @@ class ListingRetirements(unittest.TestCase):
         self.assertEqual(apartment['numberOfBedrooms'], 2)
         self.assertEqual(listing['offers']['price'], '235000')
         gallery = re.findall(r'<figure><a href="(/assets/[^"]+)"', text)
-        self.assertEqual(len(set(gallery)), 5)
+        self.assertEqual(len(gallery), 6)
+        self.assertEqual(len(set(gallery)), 6)
+        self.assertEqual(gallery[2], '/assets/apartamento-vicente-carvalho-ii-saoc-45m2/dormitorio-janela.webp')
         self.assertEqual(apartment['image'], ['https://praia.digital'+photo for photo in gallery])
         for photo in gallery:
             self.assertTrue(photo.startswith(f'/assets/{slug}/'))
