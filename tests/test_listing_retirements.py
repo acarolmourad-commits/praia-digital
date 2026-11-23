@@ -26,7 +26,7 @@ class ListingRetirements(unittest.TestCase):
         fixture = json.loads((ROOT / 'tests/fixtures/catalog-preservation.json').read_text(encoding='utf-8'))
         text = (ROOT / 'js/main.js').read_text(encoding='utf-8')
         records = json.loads(re.search(r'const properties\s*=\s*(\[.*?\]);', text, re.S)[1])
-        self.assertEqual([p['id'] for p in records], [21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9])
+        self.assertEqual([p['id'] for p in records], [22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9])
         # Keep the original preservation proof intact when adding a new listing.
         self.assertEqual(digest([p for p in records if p['id'] in [13, 12, 11, 10, 9]]), fixture['real_catalog_sha256'])
         self.assertEqual(next(p for p in records if p['id'] == 14)['slug'], 'apartamento-indaia-bertioga-84m2')
@@ -105,11 +105,53 @@ class ListingRetirements(unittest.TestCase):
             self.assertFalse(chunks.intersection({b'EXIF', b'XMP ', b'ICCP'}), rel)
         text = (ROOT / 'js/main.js').read_text(encoding='utf-8')
         records = json.loads(re.search(r'const properties\s*=\s*(\[.*?\]);', text, re.S)[1])
-        entry = records[0]
+        entry = next(p for p in records if p['slug'] == slug)
         self.assertEqual((entry['id'], entry['slug'], entry['city'], entry['type']), (21, slug, 'Bertioga', 'Venda'))
         self.assertTrue(entry['availabilityUnconfirmed'])
         self.assertEqual(entry['image'], house['image'][0])
         self.assertEqual(entry['bedrooms'], '2')
+
+    def test_saoc_listing_routes_and_gallery(self):
+        from urllib.parse import urlsplit, parse_qs
+        slug = 'apartamento-vicente-carvalho-ii-saoc-45m2'
+        url = f'https://praia.digital/imoveis/{slug}.html'
+        text = (ROOT / 'imoveis' / f'{slug}.html').read_text(encoding='utf-8')
+        self.assertIn(f'<link rel="canonical" href="{url}">', text)
+        self.assertIn('content="index, follow"', text)
+        self.assertIn('Corretora de imóveis · CRECI-SP 303939-F', text)
+        self.assertIn('Não aceita financiamento bancário', text)
+        self.assertIn('Área útil informada', text)
+        self.assertNotRegex(text, r'(?i)whatsapp|wa\.me|<form|<iframe|GeoCoordinates|InStock')
+        contact = urlsplit(re.search(r'href="(mailto:[^"]+)"', text)[1])
+        self.assertEqual(contact.path, 'comercial@praia.digital')
+        self.assertEqual(parse_qs(contact.query), {'subject': ['Interesse: Apartamento de 2 dormitórios no Vicente de Carvalho II (SAOC)']})
+        schema = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', text)[1])
+        apartment, listing = schema['@graph']
+        self.assertEqual(apartment['@type'], 'Apartment')
+        self.assertEqual(apartment['floorSize']['value'], 45)
+        self.assertEqual(apartment['numberOfBedrooms'], 2)
+        self.assertEqual(listing['offers']['price'], '235000')
+        gallery = re.findall(r'<figure><a href="(/assets/[^"]+)"', text)
+        self.assertEqual(len(set(gallery)), 5)
+        self.assertEqual(apartment['image'], ['https://praia.digital'+photo for photo in gallery])
+        for photo in gallery:
+            self.assertTrue(photo.startswith(f'/assets/{slug}/'))
+            raw = (ROOT / photo.lstrip('/')).read_bytes()
+            self.assertEqual((raw[:4], raw[8:12]), (b'RIFF', b'WEBP'))
+            pos, chunks = 12, set()
+            while pos < len(raw):
+                chunks.add(raw[pos:pos+4])
+                size = int.from_bytes(raw[pos+4:pos+8], 'little')
+                pos += 8 + size + (size % 2)
+            self.assertFalse(chunks.intersection({b'EXIF', b'XMP ', b'ICCP'}))
+        js = (ROOT / 'js/main.js').read_text(encoding='utf-8')
+        records = json.loads(re.search(r'const properties\s*=\s*(\[.*?\]);', js, re.S)[1])
+        entry = next(p for p in records if p['slug'] == slug)
+        self.assertEqual((entry['id'], entry['type'], entry['price']), (22, 'Venda', 'R$ 235.000'))
+        self.assertTrue(entry['detailsOnly'])
+        self.assertTrue(entry['availabilityUnconfirmed'])
+        self.assertNotIn('contactEmail', entry)
+        self.assertEqual((ROOT / 'sitemap.xml').read_text(encoding='utf-8').count(f'<loc>{url}</loc>'), 1)
 
     def test_cards_schema_and_unrelated_content(self):
         slugs = retired_slugs()
