@@ -101,11 +101,12 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
   const mailto=await page.getByRole('link',{name:'Consultar por e-mail'}).getAttribute('href');
   assert.equal(new URL(mailto).pathname,'comercial@praia.digital');
   assert.equal(new URL(mailto).searchParams.has('body'),false);
-  assert.equal(await page.locator('.gallery figure').count(),5);
+  assert.equal(await page.locator('.gallery figure').count(),6);
+  assert.equal(await page.locator('.gallery figure').nth(2).locator('img').getAttribute('alt'),'Dormitório com janela');
   await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
   await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Apartamento SAOC overflow');
-  results.push({listing:saocSlug,width,photos:5,passed:true});
+  results.push({listing:saocSlug,width,photos:6,passed:true});
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await page.screenshot({path:path.join(output,`index-${width}.png`),fullPage:true});
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);await ctx.close();
