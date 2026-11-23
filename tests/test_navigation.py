@@ -1,4 +1,5 @@
 import importlib.util
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -18,6 +19,17 @@ class NavigationTests(unittest.TestCase):
         self.assertIn('href="#brief-form">Preencher solicitação', request)
         for page in ['index.html', 'servicos.html', 'imoveis.html', 'ia/marketplaces/index.html']:
             self.assertEqual(nav.header_for_page(page, HEADER), HEADER)
+
+    def test_saoc_header_uses_the_listing_email(self):
+        path = 'imoveis/apartamento-vicente-carvalho-ii-saoc-45m2.html'
+        listing = (ROOT / path).read_text(encoding='utf-8')
+        contact = re.search(r'href="(mailto:[^"]+)">Consultar por e-mail</a>', listing)
+        self.assertIsNotNone(contact)
+        header = nav.header_for_page(path, HEADER)
+        self.assertIn(f'href="{contact[1]}">E-mail da corretora</a>', header)
+        self.assertNotIn('href="/interesse.html"', header)
+        for other in ['imoveis.html', 'imoveis/sobrado-indaia-94m2.html']:
+            self.assertEqual(nav.header_for_page(other, HEADER), HEADER)
 
     def test_leading_skip_link_precedes_navigation(self):
         skip = '<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>'
