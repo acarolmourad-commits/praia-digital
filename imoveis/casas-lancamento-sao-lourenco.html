@@ -161,9 +161,15 @@
  const fmt=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(n);
  const pct=n=>new Intl.NumberFormat('pt-BR',{style:'percent',minimumFractionDigits:1,maximumFractionDigits:1}).format(n);
  function calc(){
-  const v=Number(els.investimento.value),d=Number(els.diaria.value),o=Number(els.ocupacao.value),c=Number(els.custos.value);
-  const valid=[v,d,o,c].every(Number.isFinite)&&v>0&&d>0&&o>=0&&o<=100&&c>=0&&c<=95;
-  if(!valid){document.getElementById('noites').textContent='Confira os campos';document.getElementById('bruto').textContent='—';document.getElementById('liquido').textContent='—';document.getElementById('yield').textContent='—';document.getElementById('payback').textContent='—';return;}
+  const inputs=ids.map(id=>els[id].value.trim());
+  const [v,d,o,c]=inputs.map(value=>value===''?NaN:Number(value));
+  const missing=inputs.includes('');
+  const valid=!missing&&[v,d,o,c].every(Number.isFinite)&&v>0&&d>0&&o>=0&&o<=100&&c>=0&&c<=95;
+  if(!valid){
+    document.getElementById('noites').textContent=missing?'Preencha todos os campos. Digite 0 nos custos somente se quiser simular custos zero.':'Confira os campos';
+    for (const id of ['bruto','liquido','yield','payback']) document.getElementById(id).textContent='—';
+    return;
+  }
   const nights=365*o/100,gross=nights*d,net=gross*(1-c/100),y=net/v;
   document.getElementById('noites').textContent=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(nights)+' noites';
   document.getElementById('bruto').textContent=fmt(gross);
@@ -172,7 +178,7 @@
   document.getElementById('payback').textContent=net>0?(v/net).toLocaleString('pt-BR',{maximumFractionDigits:1})+' anos':'Não calculável';
  }
  document.getElementById('calcular').addEventListener('click',calc);
- ids.forEach(id=>els[id].addEventListener('change',calc));
+ ids.forEach(id=>els[id].addEventListener('input',calc));
  calc();
 })();
 </script>

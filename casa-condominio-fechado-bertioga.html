@@ -582,12 +582,16 @@
           </div>
         </form>
         <script>
+          function roiInputs() {
+            return ['propValue', 'adr', 'occupancy', 'nights', 'costs'].map(id => document.getElementById(id).value.trim());
+          }
           function calcROI() {
-            var v = Number(document.getElementById('propValue').value);
-            var a = Number(document.getElementById('adr').value);
-            var o = Number(document.getElementById('occupancy').value);
-            var n = Number(document.getElementById('nights').value);
-            var c = Number(document.getElementById('costs').value);
+            var inputs = roiInputs();
+            if (inputs.includes('')) {
+              document.getElementById('roiResult').textContent = 'Preencha todos os campos. Digite 0 nos custos somente se quiser simular custos zero.';
+              return;
+            }
+            var [v, a, o, n, c] = inputs.map(Number);
             if (![v, a, o, n, c].every(Number.isFinite) || v <= 0 || a < 0 || o < 0 || o > 100 || n < 0 || n > 365 || c < 0) {
               document.getElementById('roiResult').textContent = 'Informe valor do imóvel maior que zero, ocupação entre 0% e 100%, noites disponíveis entre 0 e 365 e diária e custos não negativos.';
               return;
@@ -601,6 +605,11 @@
               'Receita bruta simulada: R$ ' + gross.toLocaleString('pt-BR') + ' | Resultado após os custos informados: R$ ' + net.toLocaleString('pt-BR') +
               '<br>Retorno bruto simulado sobre o preço: ' + roiGross + '% | Retorno após os custos informados: ' + roiNet + '% | Prazo simples de retorno: ' + payback;
           }
+          document.getElementById('roiCalc').addEventListener('input', function () {
+            document.getElementById('roiResult').textContent = roiInputs().includes('')
+              ? 'Preencha todos os campos. Digite 0 nos custos somente se quiser simular custos zero.'
+              : '';
+          });
         </script>
       </div>
     </section>
