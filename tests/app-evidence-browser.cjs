@@ -134,6 +134,38 @@ const deadline = setTimeout(() => {
           await page.goBack();
           assert.equal(new URL(page.url()).pathname, source);
         }
+        if (width === 390) {
+          phase = `${width}px js=${javaScriptEnabled} homepage/portfolio discovery`;
+          console.log(phase);
+          const casePath = '/cases.html#caso-estoque-vivo';
+          await page.goto('https://praia.digital/');
+          const portfolioLink = page.locator('#apps a[href="' + casePath + '"]');
+          assert.equal(await portfolioLink.count(), 1);
+          await portfolioLink.click();
+          await page.waitForURL('**' + casePath);
+          const portfolioCase = page.locator('#caso-estoque-vivo');
+          assert.match(await portfolioCase.locator('h2').innerText(), /estoque fictício/);
+          assert.match(await portfolioCase.innerText(), /não comprova integração nem resultado comercial/);
+          assert.equal(await portfolioCase.getByRole('link', { name: 'roteiro de precificação' }).getAttribute('href'), '/apps/guia-de-uso.html#vender');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Portfolio overflow at 390 px');
+          const laboratoryLink = portfolioCase.getByRole('link', { name: 'Experimentar o laboratório com estoque fictício' });
+          // The incoming fragment can still be scrolling when the assertions above pass.
+          // Use Node-side geometry checks, which also run when page JS is disabled.
+          let lastLaboratoryBox = null;
+          let stableLaboratorySamples = 0;
+          const laboratoryDeadline = Date.now() + 5000;
+          while (stableLaboratorySamples < 3 && Date.now() < laboratoryDeadline) {
+            const current = await laboratoryLink.boundingBox();
+            assert.ok(current, 'Portfolio laboratory link must have a layout box');
+            stableLaboratorySamples = lastLaboratoryBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(current[key] - lastLaboratoryBox[key]) < 0.5) ? stableLaboratorySamples + 1 : 0;
+            lastLaboratoryBox = current;
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+          assert.equal(stableLaboratorySamples, 3, 'Portfolio laboratory link must stabilize before click');
+          await laboratoryLink.click();
+          await page.waitForURL('**/ia/marketplaces/piloto/#laboratorio');
+          assert.equal(await page.locator('#laboratorio').count(), 1);
+        }
         await page.goto('https://praia.digital/');
         await page.locator('#apps a[href="' + guide + '"]').click();
         await page.waitForURL('**' + guide);

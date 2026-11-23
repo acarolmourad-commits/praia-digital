@@ -67,7 +67,28 @@ try{for(const width of [360,768,1280]){
     await page.locator('.pd-network a[href="/apps/"]').click();
     assert.equal(new URL(page.url()).pathname,'/apps/');
   }
-  await context.close();console.log(`Catalog and 16 return journeys passed at ${width}px`);
+  const dailyPath='/ferramentas/calculadora-diaria-ideal-airbnb-2026.html';
+  const dailyCard=page.getByRole('navigation',{name:'Outros recursos'}).getByRole('link',{name:/Calculadora de diária de temporada/});
+  await dailyCard.press('Enter');
+  assert.equal(new URL(page.url()).pathname,dailyPath);
+  assert.equal(new URL(page.url()).hash,'#form-calculo');
+  assert.ok(await page.locator('#form-calculo').isVisible());
+  await overflow();
+  const nextSteps=page.getByRole('navigation',{name:'Compare o próximo cenário da temporada'});
+  for(const [ordinal,[name,target]] of [
+    [/Projetar receita/, '/apps/simulador-roi-temporada/'],
+    [/Comparar temporada/, '/apps/temporada-ou-anual/'],
+    [/Voltar ao catálogo/, '/apps/'],
+  ].entries()){
+    if(ordinal>0){
+      const response=await page.goto(origin+dailyPath+'#form-calculo');
+      assert.equal(response?.status(),200,dailyPath);
+    }
+    await nextSteps.getByRole('link',{name}).press('Enter');
+    assert.equal(new URL(page.url()).pathname,target);
+    assert.ok(await page.locator('h1').isVisible(), target);
+  }
+  await context.close();console.log(`Catalog, 16 return journeys and seasonal paths passed at ${width}px`);
 }assert.deepEqual(problems,[],'All app pages must fit the viewport');}
 finally{await browser.close();}})().catch(error=>{console.error(error);process.exit(1);});
 

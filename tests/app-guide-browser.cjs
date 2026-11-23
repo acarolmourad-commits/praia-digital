@@ -15,7 +15,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         const url = new URL(route.request().url());
         if (url.hostname !== 'praia.digital' || route.request().method() !== 'GET') return route.abort();
         let file = path.resolve(root, '.' + url.pathname);
-        if (!file.startsWith(root + path.sep)) return route.abort();
+        if (file !== root && !file.startsWith(root + path.sep)) return route.abort();
         if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
         if (!fs.existsSync(file)) return route.abort();
         const ext = path.extname(file);
@@ -24,6 +24,18 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       const page = await context.newPage();
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
+      await page.goto('https://praia.digital/');
+      const buyGuide=page.locator('article[aria-labelledby="roteiro-orcamento"]').getByRole('link',{name:'abra o roteiro de compra'});
+      await buyGuide.press('Enter');
+      assert.equal(new URL(page.url()).pathname, '/apps/guia-de-uso.html');
+      assert.equal(new URL(page.url()).hash, '#comprar');
+      assert.equal(await page.locator('#comprar input[type=checkbox]').count(), 3);
+      await page.waitForFunction(() => {
+        const target = document.getElementById('comprar');
+        const header = document.querySelector('.pd-site-header');
+        return Boolean(target && header && target.getBoundingClientRect().top >= header.getBoundingClientRect().bottom
+          && target.getBoundingClientRect().top < innerHeight);
+      });
       await page.goto('https://praia.digital/apps/guia-de-uso.html');
       assert.equal(await page.locator('.guide-route').count(), 4);
       assert.equal(await page.locator('input[type=checkbox]').count(), 12);
