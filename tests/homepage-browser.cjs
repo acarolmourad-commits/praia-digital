@@ -94,6 +94,61 @@ async function blackFriday(page, width) {
   await page.screenshot({ path: path.join(output, `black-friday-anchor-${width}.png`) });
 }
 
+async function contactPrivacy(browser, page, width) {
+  const paths = [
+    { path: '/interesse.html', form: '#f', button: /Continuar no WhatsApp/, notice: /revise e envie por lá/i },
+    { path: '/imoveis.html', form: '#contato-form', button: 'Abrir rascunho de e-mail', notice: /nada é enviado à equipe automaticamente/i }
+  ];
+  for (const target of paths) {
+    await page.goto(origin + target.path);
+    const form = page.locator(target.form);
+    const button = form.getByRole('button', { name: target.button });
+    assert(await button.isVisible());
+    const describedBy = await form.getAttribute('aria-describedby');
+    assert.match(await page.locator('#' + describedBy).innerText(), target.notice);
+    await button.click();
+    assert.equal(page.url(), origin + target.path, 'invalid empty form stays on the current page');
+    assert.equal(await form.evaluate(el => el.checkValidity()), false);
+  }
+  const offline = await offlineContext(browser, width, { javaScriptEnabled: false });
+  try {
+    const plain = await offline.context.newPage();
+    for (const target of paths) {
+      await plain.goto(origin + target.path);
+      const form = plain.locator(target.form);
+      await form.locator('#nome').fill('Pessoa Sintética');
+      if (target.form === '#f') {
+        await form.locator('#tel').fill('11900000000');
+        await form.locator('#cidade').selectOption('Bertioga');
+        await form.locator('#produto').selectOption('avaliacao');
+      } else {
+        await form.locator('#email').fill('visitante@example.invalid');
+        await form.locator('#interesse').selectOption('comprar');
+      }
+      await form.locator('#mensagem').fill('Somente teste');
+      assert(await form.evaluate(el => el.checkValidity()));
+      // The browser may reload for an empty GET or remain at the same address.
+      const requests = [];
+      const record = request => { if (request.isNavigationRequest()) requests.push(new URL(request.url())); };
+      plain.on('request', record);
+      assert.deepEqual(await form.evaluate(el => Array.from(new FormData(el))), [],
+        'native submission has zero fields to serialize');
+      await form.getByRole('button', { name: target.button }).press('Enter');
+      await plain.waitForLoadState('domcontentloaded');
+      plain.off('request', record);
+      for (const request of requests) {
+        assert.equal(request.origin + request.pathname, origin + target.path);
+        assert.equal(request.searchParams.size, 0, 'no fields in any native navigation request');
+      }
+      const result = new URL(plain.url());
+      assert.equal(result.origin + result.pathname, origin + target.path);
+      assert.equal(result.searchParams.size, 0, 'without JavaScript no field is serialized into the URL');
+      assert(await plain.getByRole('link', { name: 'comercial@praia.digital', exact: true }).isVisible());
+    }
+    assert.deepEqual(offline.sideEffects, [], 'no external navigation or non-GET requests without JavaScript');
+  } finally { await offline.context.close(); }
+}
+
 async function appCatalog(browser, page, width) {
   await page.goto(origin + '/apps/');
   assert.equal(await page.locator('main').count(), 1);
@@ -432,9 +487,10 @@ async function houseListing(page,width){
         await houseListing(page,width);
         await appCatalog(browser, page, width);
         await blackFriday(page, width);
+        await contactPrivacy(browser, page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
+        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'Black Friday focus, disclosure, names and seven anchors', 'contact validation and no-JS field privacy', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });

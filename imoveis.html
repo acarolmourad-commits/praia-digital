@@ -41,7 +41,7 @@
       "name": "Como solicitar mais informações?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
+        "text": "Pelo WhatsApp ou pelo formulário abaixo, que abre um rascunho no seu aplicativo de e-mail."
       }
     },    {
       "@type": "Question",
@@ -176,7 +176,7 @@
       <h2>Perguntas frequentes</h2>
       <details style="margin-bottom:10px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px">
         <summary style="font-weight:600;cursor:pointer">Como solicitar mais informações?</summary>
-        <p style="margin-top:8px;color:#64748B">Pelo WhatsApp ou formulário na página para atendimento rápido.</p>
+        <p style="margin-top:8px;color:#64748B">Pelo WhatsApp ou pelo formulário abaixo, que abre um rascunho no seu aplicativo de e-mail.</p>
       </details>
       <details style="margin-bottom:10px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px">
         <summary style="font-weight:600;cursor:pointer">Em quais cidades há imóveis no catálogo?</summary>
@@ -192,7 +192,7 @@
       <h2>Fale Conosco</h2>
       <p>Tem um imóvel para vender ou alugar? Fale com a Praia Digital e publique com alcance qualificado.</p>
       
-      <form id="contato-form" class="contact-form" aria-label="Contato sobre imóveis">
+      <form id="contato-form" class="contact-form" aria-label="Contato sobre imóveis" aria-describedby="aviso-contato-email">
         <label class="sr-only" for="nome">Seu nome</label>
         <input type="text" id="nome" placeholder="Seu nome" autocomplete="name" required>
         <label class="sr-only" for="email">Seu e-mail</label>
@@ -208,8 +208,9 @@
         </select>
         <label class="sr-only" for="mensagem">Sua mensagem</label>
         <textarea id="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
-        <button type="submit">Enviar Mensagem</button>
+        <button type="submit">Abrir rascunho de e-mail</button>
       </form>
+      <p id="aviso-contato-email">Revise o rascunho no seu aplicativo de e-mail e envie por lá. Nada é enviado à equipe automaticamente. Se não abrir, escreva diretamente para <a href="mailto:comercial@praia.digital">comercial@praia.digital</a>.</p>
     </section>
   </main>
 
@@ -222,7 +223,7 @@
 <meta name="pd-shared-footer">
 
   <script src="js/property-search.js?v=20261116-issue177" defer></script>
-  <script src="js/main.js?v=20261122-sobrado-indaia" defer ></script>
+  <script src="js/main.js?v=20261123-contato" defer ></script>
   <a class="whatsapp-fab" href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="#fff" style="vertical-align:middle"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
