@@ -44,7 +44,7 @@ p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-inv
 <a class="pd-skip" href="#pd-app-title">Pular para o aplicativo</a><nav class="pd-network-nav" aria-label="Navegação dos aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 <header><h1 id="pd-app-title" tabindex="-1">🎯 Planejador de Entrada</h1><p>Transforme o sonho do imóvel no litoral em uma meta mensal concreta</p></header>
 <main class="wrap">
-<div class="card">
+<form class="card" id="form-entrada" aria-labelledby="pd-app-title" novalidate>
 <p>Exemplo editável, não proposta bancária ou recomendação de investimento. O rendimento mensal é uma hipótese constante, não uma taxa de mercado. O padrão é 0%.</p>
 <label for="valor">Valor do imóvel desejado (R$)</label><input id="valor" type="number" min="0.01" max="1000000000" step="0.01" value="450000">
 <label for="pct">Percentual de entrada (%)</label><input id="pct" type="number" min="0" max="100" step="0.01" value="20">
@@ -52,7 +52,7 @@ p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-inv
 <label for="mensal">Aporte ao final de cada mês (R$)</label><input id="mensal" type="number" min="0" max="1000000000" step="0.01" value="2500">
 <label for="rend">Rendimento efetivo mensal hipotético (% a.m.)</label><input id="rend" type="number" min="0" max="100" step="0.01" value="0">
 <p>Limites técnicos: valores monetários até R$ 1 bilhão, entrada de 0% a 100%, rendimento de 0% a 100% ao mês e horizonte de 1.200 meses. Esses limites não representam condições de mercado. Este modelo não simula perdas ou taxas negativas.</p>
-<button type="button" id="calcular">Planejar minha entrada</button><p id="erro" role="alert" hidden></p>
+<button type="submit" id="calcular">Planejar minha entrada</button><p id="erro" role="alert" hidden></p>
 <noscript><p>Ative JavaScript para calcular. Nenhum resultado é produzido sem ele.</p></noscript>
 <div class="res" id="res" aria-live="polite" hidden>
 <table><caption>Projeção nas premissas informadas</caption><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>
@@ -63,7 +63,12 @@ p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-inv
 <tr><th scope="row">Saldo inicial + aportes no período</th><td id="guard"></td></tr>
 <tr><th scope="row">Rendimento simulado no período</th><td id="juros"></td></tr>
 <tr><th scope="row">Saldo projetado ao fim do período</th><td id="saldo"></td></tr></table>
-<p id="dica" style="font-weight:700"></p></div></div>
+<p id="dica" style="font-weight:700"></p></div></form>
+<section class="card" aria-labelledby="comparar-aportes">
+<h2 id="comparar-aportes">Compare dois aportes mensais</h2>
+<p>Calcule com o exemplo inicial e anote o prazo. Depois dobre apenas o aporte mensal e pressione Enter no campo para recalcular. Com o rendimento em zero, o prazo do exemplo passa de 30 para 15 meses.</p>
+<p>Para comparar seus cenários, mantenha a mesma meta e o mesmo saldo inicial. Anote o aporte e o prazo de cada tentativa. Se for avaliar também as despesas de fechamento, abra <a href="/apps/custo-de-compra/">Custos de compra</a>.</p>
+</section>
 <div class="card"><h2>Como o cálculo funciona</h2>
 <p>Meta = valor do imóvel × percentual de entrada/100. Partindo do saldo já reservado, a cada mês: novo saldo = saldo anterior × (1 + rendimento mensal/100) + aporte. O aporte entra no final do mês, sem rendimento nesse primeiro mês. O prazo é o primeiro mês completo em que o saldo alcança a meta.</p>
 <p>Com rendimento zero, o saldo aumenta apenas pelos aportes. Aporte zero é permitido: o saldo inicial pode crescer com o rendimento hipotético. Se a reserva já cobre a meta, o prazo é zero. Uma meta de entrada zero não significa que um banco financiará todo o imóvel.</p>
@@ -75,7 +80,7 @@ p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-inv
 <p>Continue com o <a href="/apps/calculadora-financiamento/">simulador SAC e Price</a> e os <a href="/apps/custo-de-compra/">custos de compra</a>. Para outro tipo de planejamento, consulte a <a href="/apps/calculadora-consorcio/">calculadora de consórcio</a>, sem presumir data de contemplação.</p>
 <p>Explore também o <a href="/bairros/">índice de bairros</a>, <a href="/bairros/santos/index.html">Santos</a>, <a href="/bairros/guaruja/index.html">Guarujá</a> e <a href="/bairros/sao-sebastiao/index.html">São Sebastião</a>.</p>
 </div></main>
-<script src="/apps/planejador-entrada/calculadora.js"></script>
+<script src="/apps/planejador-entrada/calculadora.js?v=7bf3a5955bba"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 

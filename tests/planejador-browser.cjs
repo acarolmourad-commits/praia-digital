@@ -9,7 +9,22 @@ await page.route('**/*',async route=>{const u=new URL(route.request().url());if(
 await page.goto('http://local.test/apps/planejador-entrada/');
 const click=()=>page.locator('#calcular').click();
 assert(await page.locator('#res').isHidden());assert.equal(await page.locator('#rend').inputValue(),'0');
-await click();assert.equal(await page.locator('#tempo').textContent(),'30 mês(es)');
+const aporte = page.locator('#mensal');
+const initialUrl = page.url();
+await aporte.press('Enter');
+assert.equal(await page.locator('#tempo').textContent(), '30 mês(es)');
+await aporte.fill('5000');
+assert(await page.locator('#res').isHidden());
+await aporte.press('Enter');
+assert.equal(await page.locator('#tempo').textContent(), '15 mês(es)');
+await aporte.fill('');
+await aporte.press('Enter');
+assert(await page.locator('#erro').isVisible());
+assert.equal(await aporte.evaluate(el => el === document.activeElement), true);
+assert.equal(page.url(), initialUrl);
+await aporte.fill('2500');
+await click();
+assert.equal(await page.locator('#tempo').textContent(), '30 mês(es)');
 for(const id of ['valor','pct','guardado','mensal','rend']){const old=await page.locator('#'+id).inputValue();await page.locator('#'+id).fill('');assert(await page.locator('#res').isHidden());await click();assert(await page.locator('#erro').isVisible());assert.equal(await page.locator('#'+id).getAttribute('aria-invalid'),'true');await page.locator('#'+id).fill(old);await click();assert(await page.locator('#res').isVisible());}
 await page.locator('#mensal').fill('-1');await click();assert(await page.locator('#erro').isVisible());await page.locator('#mensal').fill('0');await page.locator('#guardado').fill('90000');await click();assert((await page.locator('#tempo').textContent()).includes('0 meses'));
 await page.locator('#guardado').fill('100');await page.locator('#valor').fill('121');await page.locator('#pct').fill('100');await page.locator('#rend').fill('10');await click();assert.equal(await page.locator('#tempo').textContent(),'2 mês(es)');
