@@ -21,7 +21,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=20261124-compartilhar\">",
+      "<script defer src=\"/js/app-catalog.js?v=20261124-copiar-objetivo\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [

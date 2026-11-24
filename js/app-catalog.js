@@ -23,18 +23,9 @@
     }))
   }));
   const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
-  // Read only the catalog filters. Keep the canonical page and all app URLs unchanged.
-  const params = new URLSearchParams(window.location.search);
-  if (params.has('busca')) query.value = params.get('busca').slice(0, 100);
-  if (params.has('objetivo')) {
-    const requested = params.get('objetivo');
-    goal.value = groups.some(group => group.id === requested) ? requested : '';
-  }
-  function selectionUrl() {
+  function objectiveUrl() {
     const url = new URL('/apps/', window.location.origin);
-    const term = query.value.trim().slice(0, 100);
-    if (term) url.searchParams.set('busca', term);
-    if (goal.value) url.searchParams.set('objetivo', goal.value);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
     url.hash = 'buscar-apps';
     return url.href;
   }
@@ -54,12 +45,26 @@
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
     empty.hidden = count !== 0;
     if (printSelection) printSelection.disabled = count === 0;
-    if (shareLink) shareLink.value = selectionUrl();
+    if (shareLink) shareLink.value = objectiveUrl();
     if (copyStatus) copyStatus.textContent = '';
   }
+  function readObjective() {
+    const name = new URLSearchParams(window.location.search).get('objetivo');
+    const id = 'grupo-' + name;
+    goal.value = groups.some(group => group.id === id) ? id : '';
+  }
+
+  function saveObjective() {
+    const url = new URL(window.location.href);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    else url.searchParams.delete('objetivo');
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url);
+  }
+
   function reset() {
     query.value = '';
     goal.value = '';
+    saveObjective();
     filter();
   }
   if (printSelection) printSelection.addEventListener('click', () => window.print());
@@ -71,11 +76,14 @@
     } catch (_) {
       shareLink.focus();
       shareLink.select();
-      copyStatus.textContent = 'Selecione e copie o endereço no campo Link desta seleção.';
+      copyStatus.textContent = 'Selecione e copie o endereço no campo Link deste objetivo.';
     }
   });
   query.addEventListener('input', filter);
-  goal.addEventListener('change', filter);
+  goal.addEventListener('change', () => {
+    saveObjective();
+    filter();
+  });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
   const objectives = document.getElementById('objetivos-apps');
@@ -94,7 +102,15 @@
     if (groups.some(group => '#' + group.id === window.location.hash)) reset();
   });
   // Browsers may restore form values when returning from an app.
-  window.addEventListener('pageshow', filter);
+  window.addEventListener('pageshow', () => {
+    readObjective();
+    filter();
+  });
+  window.addEventListener('popstate', () => {
+    readObjective();
+    filter();
+  });
+  readObjective();
   form.hidden = false;
   filter();
 })();

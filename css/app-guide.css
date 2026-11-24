@@ -6,3 +6,5 @@
 
 /* Keep skip-link and route targets below the shared fixed header. */
 #conteudo.guide-width,.guide-route{scroll-margin-top:6rem}
+#guide-actions,#registro-checklist{scroll-margin-top:6rem}
+#guide-download-status:empty{display:none}
