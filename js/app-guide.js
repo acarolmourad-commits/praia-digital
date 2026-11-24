@@ -13,6 +13,53 @@
     update();
   });
   document.getElementById('guide-print').addEventListener('click', () => window.print());
+  document.getElementById('guide-download').addEventListener('click', () => {
+    const now = new Date();
+    const timestamp = new Intl.DateTimeFormat('pt-BR', {
+      dateStyle: 'short', timeStyle: 'short', timeZone: 'America/Sao_Paulo'
+    }).format(now);
+    const fileDate = new Intl.DateTimeFormat('sv-SE', {
+      timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit'
+    }).format(now);
+    const lines = [
+      'Praia Digital — checklist dos aplicativos',
+      `Exportado em ${timestamp} (America/Sao_Paulo).`,
+      'https://praia.digital/apps/guia-de-uso.html',
+      '',
+      'As marcações registram esta consulta. Não comprovam aprovação, execução ou resultado.',
+      'Um item não marcado pode não ter sido analisado. Confirme seu estado antes de encaminhar.',
+      ''
+    ];
+    document.querySelectorAll('.guide-route').forEach(route => {
+      lines.push(route.querySelector('h2').textContent.trim());
+      lines.push(`https://praia.digital/apps/guia-de-uso.html#${route.id}`);
+      route.querySelectorAll('input[type="checkbox"]').forEach(box => {
+        const text = box.closest('label').textContent.trim();
+        lines.push(`${box.checked ? '[x] Marcado nesta consulta' : '[ ] A conferir (não marcado)'} — ${text}`);
+      });
+      lines.push('Fonte e data: não informado', 'Responsável: não identificado',
+        'Próxima ação e prazo combinado: não informado', '');
+    });
+    lines.push('Revise o arquivo antes de compartilhar. Complete os campos somente com informações confirmadas.',
+      'Os dados não são transferidos automaticamente entre os aplicativos.');
+    const status = document.getElementById('guide-download-status');
+    let url;
+    let anchor;
+    try {
+      url = URL.createObjectURL(new Blob(['\uFEFF' + lines.join('\n') + '\n'], {type: 'text/plain;charset=utf-8'}));
+      anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = `praia-digital-checklist-${fileDate}.txt`;
+      document.body.appendChild(anchor);
+      anchor.click();
+      status.textContent = 'Arquivo preparado. Confira os downloads do navegador antes de fechar esta página.';
+    } catch {
+      status.textContent = 'Não foi possível preparar o arquivo. Use Imprimir ou salvar em PDF para guardar suas marcações.';
+    } finally {
+      anchor?.remove();
+      if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+  });
   document.getElementById('guide-actions').hidden = false;
   update();
 })();
