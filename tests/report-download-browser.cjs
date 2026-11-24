@@ -25,6 +25,25 @@ const deadline = setTimeout(() => { console.error('Report download test timed ou
       page.on('pageerror', e => errors.push(e.message));
       await page.goto('https://praia.digital/apps/relatorio-imovel/#guardar-relatorio');
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.locator('#pauta-de-retorno summary').click();
+      const copy = page.getByRole('button', {name:'Copiar pauta completa'});
+      assert.ok(await copy.isDisabled());
+      await page.locator('#pending').fill('A vaga atende à unidade em visita?');
+      await page.locator('#contact').fill('Contato de teste');
+      const pdf = await page.pdf({preferCSSPageSize:true});
+      assert.equal((pdf.toString('latin1').match(/\/Type \/Page\b/g) || []).length,1);
+      await context.grantPermissions(['clipboard-read','clipboard-write']);
+      await copy.focus();
+      await copy.press('Enter');
+      await page.waitForFunction(()=>document.getElementById('agenda-copy-status').textContent === 'Pauta copiada.');
+      assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'Pauta de retorno\n\nPontos a confirmar\nA vaga atende à unidade em visita?');
+      await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{value:undefined,configurable:true}));
+      await copy.click();
+      assert.equal(await page.locator('#agenda-text').evaluate(el=>el===document.activeElement && el.selectionEnd-el.selectionStart===el.value.length),true);
+      await page.locator('#pending').fill('');
+      assert.ok(await copy.isDisabled());
+      assert.equal(await page.locator('#agenda-copy-status').textContent(),'');
+      page.once('dialog',dialog=>dialog.accept());
       await page.locator('#load-example').click();
       await page.locator('#pending').fill('Confirmar área privativa\nResponsável: equipe fictícia');
       const downloadText = async () => {
