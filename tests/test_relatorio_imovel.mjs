@@ -26,12 +26,12 @@ const outputs = [...html.matchAll(/<[^>]+\bdata-field="([^"]+)"([^>]*)>/g)].map(
 });
 nodes['report-form'].elements=controls;
 nodes['report-form'].reset=()=>controls.forEach(control=>control.value='');
-let allowConfirm=true,printed=0;
-const context={document:{getElementById:id=>nodes[id],querySelectorAll:()=>outputs},window:{location:{hash:"#pauta-de-retorno"},confirm:()=>allowConfirm,print:()=>printed++,addEventListener:(type,handler)=>handlers.set(`window:${type}`,handler)}};
+let allowConfirm=true,printed=0,downloadedBlob,downloadedName,downloadFailure=false;
+const context={Blob,URL:{createObjectURL(blob){if(downloadFailure)throw new Error('Download indisponível');downloadedBlob=blob;return 'blob:test';},revokeObjectURL(){}},setTimeout(){},document:{getElementById:id=>nodes[id],querySelectorAll:()=>outputs,createElement(){return {click(){downloadedName=this.download;}};}},window:{location:{hash:"#pauta-de-retorno"},confirm:()=>allowConfirm,print:()=>printed++,addEventListener:(type,handler)=>handlers.set(`window:${type}`,handler)}};
 // Disabled markup is the fallback when scripts are off or initialization fails.
 assert.match(formMarkup, /method="dialog"/);
 const initialControls = [...formMarkup.matchAll(/<(?:input|textarea|select|button)\b[^>]*>/g)];
-assert.equal(initialControls.length, 20);
+assert.equal(initialControls.length, 21);
 assert.ok(initialControls.every(([tag]) => /\bdisabled\b/.test(tag)));
 assert.match(html, /<noscript>[\s\S]*?Ative o JavaScript/);
 assert.throws(() => vm.runInNewContext(script, {
@@ -70,6 +70,16 @@ assert.match(nodes['agenda-text'].value, /^Pauta de retorno — exemplo fictíci
 assert.match(nodes['agenda-text'].value, /Próximos passos/);
 assert.equal(output('purpose'),'Locação mensal');
 input('objective','Objetivo editado');assert.equal(nodes['example-notice'].hidden,false);
+nodes.pending.value='Pergunta alterada antes do download: área privativa?';
+click('download-report');
+let text = await downloadedBlob.text();
+assert.equal(downloadedBlob.type,'text/plain;charset=utf-8');
+assert.equal(downloadedName,'relatorio-imovel-exemplo-ficticio.txt');
+assert.match(text,/EXEMPLO FICTÍCIO/);
+assert.match(text,/Pergunta alterada antes do download: área privativa\?/);
+assert.match(text,/America\/Sao_Paulo/);
+assert.match(text,/exportação não comprova validação/);
+assert.match(text,/https:\/\/praia.digital\/apps\/revisor-anuncios\//);
 nodes.objective.value='Texto atualizado imediatamente antes de imprimir';
 handlers.get('window:beforeprint')();
 assert.equal(output('objective'),'Texto atualizado imediatamente antes de imprimir');
@@ -82,6 +92,19 @@ assert.equal(output('purpose'),'A confirmar');
 assert.equal(nodes['example-notice'].hidden,true);
 assert.equal(nodes.partner.focused,true);
 assert.equal(nodes['agenda-text'].value, '');
+click('download-report');
+text = await downloadedBlob.text();
+assert.equal(downloadedName,'relatorio-imovel.txt');
+assert.doesNotMatch(text,/EXEMPLO FICTÍCIO|Objetivo editado|Pergunta alterada/);
+assert.equal((text.match(/\nA confirmar/g)||[]).length,17);
+input('partner','Parceiro <script>fictício</script>');
+input('sources','Fonte A\nFonte B com acentuação');
+click('download-report');
+text = await downloadedBlob.text();
+assert.match(text,/Parceiro <script>fictício<\/script>/);
+assert.match(text,/Fonte A\nFonte B com acentuação/);
+downloadFailure=true;click('download-report');
+assert.match(nodes.status.textContent,/Não foi possível iniciar o download/);
 assert.doesNotMatch(script,/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|innerHTML\s*=/);
 // Verify discovery and accessibility wiring in the generated production page.
 assert.doesNotMatch(html,/<meta\b[^>]+name=["']robots["'][^>]+noindex/i);
