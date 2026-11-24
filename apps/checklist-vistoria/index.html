@@ -48,14 +48,27 @@
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
-    @media print{header,.actions,.links,.card:last-child,footer{display:none}.card{box-shadow:none;border:none}}
+    @media print {
+      body[data-pd-app="checklist-vistoria"] { background: white; color: black; }
+      body[data-pd-app="checklist-vistoria"] > :not(.visit-heading, .wrap),
+      .actions, .visit-links, #storage-status, .prog, #groups .opts { display: none !important; }
+      .visit-heading { background: white; color: black; padding: 0 0 8pt; }
+      .wrap { max-width: none; padding: 0; }
+      .card { box-shadow: none; border: 0; padding: 4pt 0; margin-bottom: 8pt; }
+      .card h2 { break-after: avoid; }
+      #groups .item { break-inside: avoid; color: black; padding: 3pt 0; }
+      #groups .item > span { color: black; text-decoration: none; }
+      #groups .item::after { content: "Sem marcação"; font-weight: bold; }
+      #groups .item.ok::after { content: "OK"; }
+      #groups .item.bad::after { content: "Problema"; }
+    }
   #storage-status{padding:12px;border:1px solid #CBD5E1;border-radius:8px;margin:12px 0;line-height:1.5} .item>span{min-width:0;overflow-wrap:anywhere}
 </style>
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="checklist-vistoria">
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
-<header>
+<header class="visit-heading">
   <h1 id="pd-app-title" tabindex="-1">📋 Checklist de Vistoria de Imóvel</h1>
   <p>Registro de observações do imóvel — com progresso e impressão • Praia Digital</p>
 </header>
@@ -72,7 +85,7 @@
     </div>
   </div>
   <p id="storage-status" role="status" aria-live="polite"></p>
-  <p>O percentual mostra apenas itens marcados, não qualidade, segurança ou aprovação do imóvel. As marcações não substituem inspeção ou laudo profissional. Imprima ou salve uma cópia antes de sair, especialmente no modo sessão.</p>
+  <p>O percentual mostra apenas itens marcados, não qualidade, segurança ou aprovação do imóvel. As marcações não substituem inspeção ou laudo profissional. Ao imprimir ou salvar em PDF, os 26 itens aparecem com a situação de cada um. Guarde uma cópia antes de sair, especialmente no modo sessão.</p>
   <noscript><p>Ative JavaScript para marcar itens. Nenhuma marcação é registrada sem ele.</p></noscript>
   <div id="groups"></div>
   <p>Terminou a visita? <a href="/apps/guia-de-uso.html#vistoria-para-relatorio">Veja como levar suas observações para o relatório do imóvel</a> e acompanhar os itens que ficaram em aberto. Se já tiver suas anotações, <a href="/apps/relatorio-imovel/">abra o Relatório do imóvel</a>.</p>
@@ -89,7 +102,7 @@
     <p style="margin-top:12px;font-size:13px">Correção editorial: retiramos a referência à Súmula 605 do STJ como fundamento de cobrança de vistoria. Ela trata de medidas socioeducativas, não de locação. <a href="https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2018/2018-03-19_10-02_Terceira-Secao-aprova-sumula-sobre-maioridade-penal.aspx">Esclarecimento oficial do STJ</a>. Também retiramos faixas de preço e prazos técnicos sem fonte verificada para este contexto.</p>
   </div>
 
-  <div class="card">
+  <div class="card visit-links">
     <h2>🔗 Explore mais</h2>
     <div class="links">
       <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>

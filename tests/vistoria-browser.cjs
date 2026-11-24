@@ -7,6 +7,26 @@ for(const width of [390,1280]){
 const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname!=='local.test')return route.abort();let p=path.join(root,u.pathname);if(u.pathname.endsWith('/'))p=path.join(p,'index.html');if(!fs.existsSync(p)||!fs.statSync(p).isFile())return route.abort();if(p.endsWith('shared.js')||p.endsWith('related-ads.js'))return route.fulfill({body:''});await route.fulfill({path:p});});
 await page.goto('http://local.test/apps/checklist-vistoria/');
+// Print must keep the final group and identify states even in black and white.
+const distance=page.locator('#vistoria-4_0-ok');
+const parking=page.locator('#vistoria-4_3-bad');
+await distance.press('Enter');
+await parking.press('Space');
+await page.emulateMedia({media:'print'});
+const printed=page.locator('#groups .item:visible');
+assert.equal(await printed.count(),26);
+assert.equal(await page.locator('#groups .card:visible').count(),5);
+for (const [label,state] of [
+  ['Distância real da praia conferida','OK'],
+  ['Vagas de garagem conforme anúncio','Problema'],
+  ['Comércio e serviços próximos','Sem marcação']
+]) {
+  const item=printed.filter({hasText:label});
+  assert.equal(await item.evaluate(el=>getComputedStyle(el,'::after').content),JSON.stringify(state));
+}
+await page.emulateMedia({media:'screen'});
+await distance.press('Enter');
+await parking.press('Space');
 const key='pd-vistoria-v1',first=()=>page.locator('#groups button').first();
 // Keep keyboard focus on the same control after updates, including repeated toggles.
 const focused=()=>page.evaluate(()=>document.activeElement?.outerHTML);
