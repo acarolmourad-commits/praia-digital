@@ -20,18 +20,59 @@
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
           <meta itemprop="price" content="${priceNumber(p.price)}">
-          <link itemprop="availability" href="https://schema.org/InStock">
+          ${p.availabilityUnconfirmed ? '' : '<link itemprop="availability" href="https://schema.org/InStock">'}
           <span>${escapeHtml(p.price)}</span>
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${p.title} — ${p.price} — ${p.locationLabel || p.city}. ${new URL(detailUrl(p), 'https://praia.digital/').href} Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
+        ${p.detailsOnly ? '' : (p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${p.title} — ${p.price} — ${p.locationLabel || p.city}. ${new URL(detailUrl(p), 'https://praia.digital/').href} Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`)}
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
   
   const properties = [
+{
+  "id": 22,
+  "title": "Apartamento de 2 dormitórios no Vicente de Carvalho II (SAOC)",
+  "slug": "apartamento-vicente-carvalho-ii-saoc-45m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Vicente de Carvalho II (SAOC)",
+  "type": "Venda",
+  "price": "R$ 235.000",
+  "bedrooms": "2",
+  "area": "45 m² de área útil",
+  "image": "https://praia.digital/assets/apartamento-vicente-carvalho-ii-saoc-45m2/01-ambiente-duas-janelas.webp",
+  "tags": [
+    "2 dormitórios",
+    "1 banheiro",
+    "Sala integrada à cozinha",
+    "Sem financiamento bancário"
+  ],
+  "description": "Apartamento à venda por R$ 235.000 no Vicente de Carvalho II (SAOC), em Bertioga. 45 m² de área útil, 2 dormitórios, 1 banheiro e sala integrada à cozinha. Não aceita financiamento bancário.",
+  "availabilityUnconfirmed": true,
+  "detailsOnly": true
+},
+{
+  "id": 21,
+  "title": "Casa tipo sobrado com 2 dormitórios no Indaiá",
+  "slug": "sobrado-indaia-94m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.500.000",
+  "bedrooms": "2",
+  "area": "94,36 m² construídos",
+  "image": "https://praia.digital/assets/sobrado-indaia-94m2/01-varanda-terrea-jardim.webp",
+  "tags": [
+    "Sobrado",
+    "1 banheiro e 1 lavabo",
+    "Varanda com churrasqueira",
+    "Quintal"
+  ],
+  "description": "Sobrado à venda em Indaiá, Bertioga, por R$ 1.500.000. São 2 dormitórios, 94,36 m² construídos, 92,96 m² de terreno e varanda com churrasqueira.",
+  "availabilityUnconfirmed": true
+},
 {
   "id": 20,
   "title": "Casa com edícula no Indaiá: 7 quartos e 5 suítes",

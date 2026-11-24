@@ -52,10 +52,16 @@ summary{cursor:pointer;font-weight:700;color:#0f172a}
 details[open] summary{color:#0e7c7b}
 .how{margin:.5rem 0;padding-left:1.2rem}
 .how li{margin-bottom:.4rem}
+#orcamento {display:grid;gap:.9rem;max-width:44rem}
+#orcamento label {display:grid;gap:.25rem;font-weight:600}
+#orcamento input,#orcamento select,#orcamento button {min-width:0;box-sizing:border-box;width:100%;padding:.65rem;font:inherit}
+#orcamento button {background:#075c5b;color:white;border:0;border-radius:.4rem}
+#orcamento button:disabled {opacity:.65}
+#orcamento :focus-visible {outline:3px solid #075c5b;outline-offset:3px}
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Planejamento de crédito imobiliário | Praia Digital">
-<meta property="og:description" content="Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista.">
+<meta property="og:description" content="Compare parcelas SAC e Price e estime a renda com suas premissas. As ferramentas não consultam nem aprovam crédito.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -64,7 +70,7 @@ details[open] summary{color:#0e7c7b}
 <meta property="og:url" content="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Planejamento de crédito imobiliário | Praia Digital">
-<meta name="twitter:description" content="Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista.">
+<meta name="twitter:description" content="Compare parcelas SAC e Price e estime a renda com suas premissas. As ferramentas não consultam nem aprovam crédito.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
 <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,11 +117,35 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <p>Escolha qual conta quer fazer. Os simuladores usam as condições que você informar, não consultam o banco e não fazem análise ou aprovação de crédito.</p>
     <ul class="how">
       <li><a href="/apps/calculadora-financiamento/"><strong>Compare parcelas SAC e Price</strong></a> com o mesmo valor, entrada, taxa e prazo.</li>
-      <li><a href="/apps/renda-para-financiar/"><strong>Estime a renda para financiar</strong></a> com a parcela e a fração da renda que você quer reservar. A sugestão inicial de 30% é ajustável e serve como referência de orçamento.</li>
+      <li><a href="/apps/renda-para-financiar/"><strong>Estime a renda para financiar</strong></a> informando preço do imóvel, entrada em percentual, taxa, prazo e a fração da renda que pretende reservar. A sugestão inicial de 30% é ajustável e serve como referência de orçamento.</li>
       <li><a href="/apps/custo-de-compra/"><strong>Organize os custos de compra</strong></a> em separado, com os valores de ITBI, escritura e registro aplicáveis à sua operação.</li>
     </ul>
     <p><a href="/blog/fgts-financiamento-sbpe-mcmv-imovel-litoral-2026.html">Entenda SBPE, FGTS e Minha Casa, Minha Vida</a> antes de escolher uma linha de crédito.</p>
   </div>
+
+  <section class="card" aria-labelledby="titulo-orcamento">
+    <h2 id="titulo-orcamento">Organize o orçamento da compra</h2>
+    <p>Confira quanto falta após a entrada e quanto da renda você pretende reservar por mês. Nome e cidade são opcionais e não entram no cálculo.</p>
+    <form id="orcamento">
+      <label>Nome (opcional)<input id="nome" autocomplete="off"></label>
+      <label>Cidade do imóvel (opcional)<input id="cidade" autocomplete="off"></label>
+      <label>Valor do imóvel (R$)<input id="preco" type="number" min="0.01" max="1000000000" step="0.01" required></label>
+      <label>Entrada disponível (R$)<input id="entrada" type="number" min="0" max="1000000000" step="0.01" required></label>
+      <label>Renda mensal da família (R$)<input id="renda" type="number" min="0.01" max="1000000000" step="0.01" required></label>
+      <label>Parcela da renda a reservar (%)<input id="percentual" type="number" min="0.01" max="100" step="0.01" value="30" required></label>
+      <label>Modalidade a estudar<select id="tipo">
+        <option value="sbpe">Financiamento com recursos da poupança (SBPE)</option>
+        <option value="fgts">Financiamento com uso do saldo pessoal do FGTS</option>
+        <option value="mcmv">Minha Casa, Minha Vida financiado</option>
+        <option value="consorcio">Consórcio</option>
+      </select></label>
+      <button type="submit" disabled>Calcular orçamento</button>
+      <output id="result" role="status" aria-live="polite"></output>
+    </form>
+    <noscript><p>Para fazer a conta à mão, subtraia a entrada do preço. Multiplique a renda pelo percentual escolhido e divida por 100 para encontrar a reserva mensal.</p></noscript>
+    <p>O valor a cobrir e a reserva mensal não incluem juros, seguros, tarifas ou tributos. Consulte o <a href="/apps/calculadora-consorcio/">simulador de consórcio</a> para estudar parcelas e lance.</p>
+  </section>
+  <script src="/js/orcamento-moradia.js" defer></script>
 
   <div class="card">
     <h2>Perguntas frequentes</h2>

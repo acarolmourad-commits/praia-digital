@@ -51,7 +51,7 @@ city_links = {
         ('../blog/como-escolher-imovel-litoral.html', 'Como escolher imóvel', 'Checklist e custos ocultos.'),
         ('../blog/financiamento-imovel-litoral.html', 'Financiamento', 'Passo a passo para aprovar.'),
         ('../blog/mapas-bairros-seo-imobiliarias-litoral-2026.html', 'SEO por bairro', 'Estratégia local por bairro.'),
-        ('../blog/rentabilidade-imoveis-praia.html', 'Rentabilidade na praia', 'Números e cidades.'),
+        ('../blog/rentabilidade-imoveis-praia-2026.html', 'Rentabilidade na praia', 'Números e cidades.'),
         ('../cases/case-imobiliaria-porto-da-lua-35-leads-2026.html', 'Case real', '35 leads qualificados em 30 dias.'),
     ],
     'itanhaém': [
@@ -79,7 +79,7 @@ city_links = {
         ('../blog/aluguel-por-temporada-dicas-proprietarios-2026.html', 'Aluguel temporada', 'Dicas para proprietários.'),
         ('../blog/investir-imoveis-litoral-paulista-2026.html', 'Investir no litoral', 'O que analisar antes de comprar.'),
         ('../blog/seo-local-imobiliaria-litoral-passo-a-passo-2026-08-11.html', 'SEO local', 'Passo a passo para imobiliárias.'),
-        ('../blog/rentabilidade-imoveis-praia.html', 'Rentabilidade na praia', 'Números e cidades.'),
+        ('../blog/rentabilidade-imoveis-praia-2026.html', 'Rentabilidade na praia', 'Números e cidades.'),
         ('../cases/case-imobiliaria-porto-da-lua-35-leads-2026.html', 'Case real', '35 leads qualificados em 30 dias.'),
     ],
 }

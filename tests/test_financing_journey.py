@@ -53,14 +53,20 @@ class FinancingJourney(unittest.TestCase):
         formatted = f"{first_sac:,.2f}".translate(str.maketrans(",.", ".,"))
         self.assertIn(f"R$ {formatted}", example)
 
-    def test_legacy_is_static_decision_page_not_credit_scoring(self):
+    def test_legacy_keeps_local_planning_fields_without_credit_scoring(self):
         html = read(LEGACY)
         self.assertIn('id="main"', html)
         for marker in ("sugestão inicial de 30% é ajustável", "não fazem análise ou aprovação",
                        "https://wa.me/5511954346288", ARTICLE):
             self.assertIn(marker, html)
-        for obsolete in ("Selic 15%", "Escore de elegibilidade", "Perfil compatível", "<input", "parcelaPrice", "onclick="):
+        for obsolete in ("Selic 15%", "Escore de elegibilidade", "Perfil compatível", "Verifique sua elegabilidade", "parcelaPrice", "onclick="):
             self.assertNotIn(obsolete, html)
+
+        for field in ("nome", "cidade", "entrada", "preco", "renda", "tipo", "percentual"):
+            self.assertIn(f'id="{field}"', html)
+        for tag in ("description", "og:description", "twitter:description"):
+            self.assertRegex(html, rf'(?:name|property)="{tag}" content="Compare parcelas SAC e Price')
+        self.assertIn("entrada em percentual", html)
 
     def test_canonicals_faq_and_links_match_visible_content(self):
         for route in (ARTICLE, LEGACY):
@@ -68,6 +74,12 @@ class FinancingJourney(unittest.TestCase):
                 html = read(route)
                 self.assertIn(f'<link rel="canonical" href="https://praia.digital{route}">', html)
                 docs = [json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', html, re.S)]
+                if route == ARTICLE:
+                    article, = [d for d in docs if d["@type"] in ("Article", "BlogPosting")]
+                    self.assertEqual(article["author"]["name"], "Praia Digital")
+                    self.assertEqual(article["datePublished"], "2026-08-21")
+                    self.assertIn("titular ou coobrigado", html)
+                    self.assertIn("<strong>outro imóvel</strong>", html)
                 faq, = [d for d in docs if d["@type"] == "FAQPage"]
                 visible = re.findall(r"<details><summary>(.*?)</summary><p>(.*?)</p></details>", html)
                 self.assertEqual(visible, [(item["name"], item["acceptedAnswer"]["text"]) for item in faq["mainEntity"]])

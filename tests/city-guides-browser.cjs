@@ -51,13 +51,13 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    }
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
    if(c.slug==='bertioga'){
-    assert.equal(cards,12);
+    assert.equal(cards,14);
     assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
     await page.locator('#tipo-filtro').selectOption('Aluguel');
     assert.equal(await page.locator('.property-card').count(),0);
     assert(await page.locator('.imoveis-empty').isVisible());
     await page.locator('#tipo-filtro').selectOption('Venda');
-    assert.equal(await page.locator('.property-card').count(),12);
+    assert.equal(await page.locator('.property-card').count(),14);
    }
    results.push({city:c.name,width,cards,passed:true});
    console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
@@ -72,6 +72,41 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
   assert((await page.locator('.price').textContent()).includes('690.000'));
   await page.screenshot({path:path.join(output,`rio-praia-${width}.png`),fullPage:true});
   results.push({listing:'casa-rio-da-praia-100m2',width,photos:14,passed:true});
+  await page.goto(origin+'/imoveis.html?cidade=Bertioga&finalidade=Venda&tipo=casa');
+  const listingCard=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/sobrado-indaia-94m2.html"]')});
+  assert.equal(await listingCard.count(),1);
+  assert.equal(await listingCard.locator('[itemprop="availability"]').count(),0);
+  await listingCard.getByRole('link',{name:'Ver detalhes',exact:true}).click();
+  assert.equal(new URL(page.url()).pathname,'/imoveis/sobrado-indaia-94m2.html');
+  assert.match(await page.locator('h1').textContent(),/2 dormitórios.*Indaiá/);
+  assert.match(await page.locator('.price').textContent(),/1\.500\.000/);
+  assert.equal(await page.locator('.gallery:not([aria-labelledby="mapas-galeria"]) figure').count(),9);
+  assert.equal(await page.locator('.gallery[aria-labelledby="mapas-galeria"] figure').count(),2);
+  assert.match(await page.locator('.cover img').getAttribute('src'),/01-varanda-terrea-jardim\.webp$/);
+  await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Sobrado Indaiá overflow');
+  results.push({listing:'sobrado-indaia-94m2',width,photos:9,passed:true});
+  await page.goto(origin+'/imoveis.html?cidade=Bertioga&finalidade=Venda&tipo=apartamento');
+  const saocSlug='apartamento-vicente-carvalho-ii-saoc-45m2';
+  const saocCard=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/'+saocSlug+'.html"]')});
+  assert.equal(await saocCard.count(),1);
+  assert.equal(await saocCard.getByRole('link').count(),1);
+  await saocCard.getByRole('link',{name:'Ver detalhes',exact:true}).click();
+  assert.equal(new URL(page.url()).pathname,'/imoveis/'+saocSlug+'.html');
+  assert.match(await page.locator('h1').textContent(),/Apartamento de 2 dormitórios.*Vicente de Carvalho II/);
+  assert.match(await page.locator('.price').textContent(),/235\.000/);
+  assert.match(await page.locator('.hero').textContent(),/Corretora de imóveis · CRECI-SP 303939-F/);
+  assert.equal(await page.locator('a[href*="wa.me"],a[href*="whatsapp"]').count(),0);
+  const mailto=await page.getByRole('link',{name:'Consultar por e-mail'}).getAttribute('href');
+  assert.equal(new URL(mailto).pathname,'comercial@praia.digital');
+  assert.equal(new URL(mailto).searchParams.has('body'),false);
+  assert.equal(await page.locator('.gallery figure').count(),6);
+  assert.equal(await page.locator('.gallery figure').nth(2).locator('img').getAttribute('alt'),'Dormitório com janela');
+  await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Apartamento SAOC overflow');
+  results.push({listing:saocSlug,width,photos:6,passed:true});
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await page.screenshot({path:path.join(output,`index-${width}.png`),fullPage:true});
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);await ctx.close();
@@ -88,3 +123,5 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
  fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({results,noJavaScript:true},null,2));console.log(`${results.length} city/viewport flows and no-JavaScript guides passed.`);
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
+
+

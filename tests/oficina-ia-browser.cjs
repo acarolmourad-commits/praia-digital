@@ -163,9 +163,15 @@ async function assertCurrentExports(browser, width) {
       assert.equal(await page.evaluate(() => window.testCopies.length), count);
       assert.match(await status.textContent(), /foram alterados/);
     }
+    const generatedEmail = await output.inputValue();
+    page.once('dialog', dialog => dialog.dismiss());
+    await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
+    assert.equal(await output.inputValue(), generatedEmail);
+    page.once('dialog', dialog => dialog.accept());
     await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
     assert.equal(await output.inputValue(), '');
     assert.equal(await page.locator('#result-kind').textContent(), 'Nenhum resultado gerado');
+    assert(await page.getByLabel('Tipo do imóvel', { exact: true }).evaluate(element => element === document.activeElement));
     await output.fill('   ');
     await download.click();
     assert.match(await status.textContent(), /Gere um resultado antes de baixar/);
@@ -228,10 +234,12 @@ async function assertCurrentExports(browser, width) {
       await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
       assert.match(await page.locator('#output').inputValue(), /NÃO ENVIADO/);
       assert.match(await page.locator('#output').inputValue(), /não enviar novas mensagens/);
+      page.once('dialog', dialog => dialog.accept());
       await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
       assert.equal(await page.locator('#output').inputValue(), '');
       assert.equal(await page.getByLabel('Cidade', { exact: true }).inputValue(), '');
       assert.equal(await page.getByLabel('Contexto confirmado', { exact: true }).inputValue(), '');
+      assert(await page.getByLabel('Tipo do imóvel', { exact: true }).evaluate(element => element === document.activeElement));
       assert.equal(await page.locator('[data-oficina-control]:disabled').count(), 0);
       await assertNoNavigation(page, documents, unexpected);
       console.log('PASS: initialized app — briefing, literal rendering, missing fields, follow-up draft, focus and reset stay local');
@@ -244,6 +252,7 @@ async function assertCurrentExports(browser, width) {
       await legacy.page.getByLabel('Finalidade', { exact: true }).fill('Venda fictícia');
       await legacy.page.getByRole('button', { name: 'Montar briefing e prompt', exact: true }).click();
       assert.match(await legacy.page.locator('#status').textContent(), /Resultado pronto/);
+      legacy.page.once('dialog', dialog => dialog.accept());
       await legacy.page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
       assert.equal(await legacy.page.locator('#output').inputValue(), '');
       await assertNoNavigation(legacy.page, legacy.documents, legacy.unexpected);
