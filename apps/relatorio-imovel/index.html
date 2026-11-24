@@ -39,7 +39,7 @@
 <main class="layout" id="main-content">
   <aside class="editor" aria-labelledby="editor-title">
     <h2 id="editor-title">Preencha o relatório</h2>
-    <p class="hint">Os dados ficam apenas nesta página e não são enviados. Campos vazios aparecem como “A confirmar”. Ao fechar ou recarregar, o preenchimento será perdido; imprima ou salve em PDF antes.</p>
+    <p class="hint">Os dados ficam apenas nesta página e não são enviados. Campos vazios aparecem como “A confirmar”. Ao fechar ou recarregar, o preenchimento será perdido; imprima, salve em PDF ou baixe em texto antes.</p>
     <p class="hint">Tem versões diferentes do anúncio? <a href="/apps/revisor-anuncios/">Compare os anúncios com a ficha de referência</a>. Anote as divergências ainda abertas em “Pontos a confirmar” e registre a fonte e a data dos dados conferidos.</p>
     <p class="hint">Vai analisar uma locação por temporada? Antes de preencher, <a href="/apps/simulador-roi-temporada/">simule receitas, despesas e retorno</a> e anote as premissas separadas dos fatos confirmados. Os dados não passam de um app para o outro.</p>
     <a class="preview-jump" href="#report">Ir para a prévia do relatório</a>
@@ -80,7 +80,8 @@
         <label class="field"><span>Contato para retorno</span><textarea disabled id="contact" name="contact" maxlength="400" placeholder="Nome, e-mail profissional e canal de contato autorizado."></textarea></label>
       </fieldset>
       </div>
-      <div class="actions"><button disabled class="primary" type="button" id="print-report">Imprimir / salvar PDF</button></div>
+      <div class="actions" id="guardar-relatorio"><button disabled class="primary" type="button" id="print-report">Imprimir / salvar PDF</button><button disabled type="button" id="download-report" aria-describedby="download-help">Baixar relatório em texto</button></div>
+      <p class="hint" id="download-help">O arquivo TXT inclui todos os campos preenchidos, as fontes e as pendências. Revise e retire dados pessoais ou informações confidenciais antes de encaminhar. O download não envia o relatório nem permite restaurar o formulário.</p>
       <div class="actions secondary-actions"><button disabled type="button" id="load-example">Ver exemplo fictício</button><button disabled type="button" id="clear-report">Limpar tudo</button></div>
       <p class="status" id="status" role="status" aria-live="polite"></p>
     </form>
@@ -180,6 +181,42 @@
   form.addEventListener('input', () => { render(); status.textContent = 'Prévia atualizada. Revise as informações antes de compartilhar.'; });
   form.addEventListener('change', render);
   document.getElementById('print-report').addEventListener('click', () => { render(); window.print(); });
+  document.getElementById('download-report').addEventListener('click', () => {
+    render();
+    const fields = [
+      ['partner', 'Imobiliária ou parceiro'], ['responsible', 'Responsável pela revisão'],
+      ['referenceDate', 'Data de referência'], ['reference', 'Código do imóvel'],
+      ['objective', 'Objetivo do relatório'], ['propertyType', 'Tipo do imóvel'],
+      ['location', 'Localização'], ['area', 'Área e tipo da medida'],
+      ['rooms', 'Quartos e suítes'], ['parking', 'Vagas'], ['purpose', 'Modalidade'],
+      ['price', 'Preço informado e periodicidade'],
+      ['confirmed', 'Despesas, condições e características confirmadas'],
+      ['sources', 'Fontes e datas de confirmação'], ['pending', 'Pontos a confirmar'],
+      ['nextSteps', 'Próximos passos'], ['contact', 'Contato para retorno']
+    ];
+    const sections = [usingExample ? 'Relatório do imóvel — EXEMPLO FICTÍCIO' : 'Relatório do imóvel'];
+    sections.push('Exportado em ' + new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'}) + ' (America/Sao_Paulo).');
+    sections.push('Conteúdo informado por quem preencheu. A exportação não comprova validação, aprovação ou conclusão. Campos vazios: A confirmar.');
+    for (const [name, label] of fields) {
+      const raw = form.elements.namedItem(name).value.trim();
+      sections.push(label + '\n' + (raw ? (name === 'referenceDate' ? displayDate(raw) : raw) : 'A confirmar'));
+    }
+    sections.push('Revise o conteúdo antes de compartilhar. Retire dados pessoais e informações confidenciais desnecessárias.');
+    sections.push('Ferramenta: https://praia.digital/apps/relatorio-imovel/\nPróxima etapa: https://praia.digital/apps/revisor-anuncios/\nTodos os aplicativos: https://praia.digital/apps/');
+    let url;
+    try {
+      url = URL.createObjectURL(new Blob(['\uFEFF' + sections.join('\n\n') + '\n'], {type: 'text/plain;charset=utf-8'}));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'relatorio-imovel' + (usingExample ? '-exemplo-ficticio' : '') + '.txt';
+      link.click();
+      status.textContent = 'Download solicitado. Confira o arquivo TXT nos downloads do navegador antes de fechar a página.';
+    } catch (_) {
+      status.textContent = 'Não foi possível iniciar o download. Use Imprimir / salvar PDF ou copie os trechos da prévia.';
+    } finally {
+      if (url) setTimeout(() => URL.revokeObjectURL(url), 60000);
+    }
+  });
   document.getElementById('clear-report').addEventListener('click', () => {
     if ([...form.elements].some(field => 'value' in field && field.value) && !window.confirm('Apagar todo o preenchimento deste relatório?')) return;
     form.reset(); usingExample = false; render(); status.textContent = 'Relatório limpo. Nenhum dado foi enviado ou armazenado.'; document.getElementById('partner').focus();

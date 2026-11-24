@@ -302,7 +302,7 @@
   "apps/relatorio-imovel/index.html": {
     "heading_id": null,
     "scripts": [
-      "<script> sha256:0c81e16900767df04412f873b45af9e5c17c4a39070afbadeedc296da41b8714"
+      "<script> sha256:57c4b089be4f25aeb03cc23168e8e20ac8b4a86f7e4f7456b070ecca972fdc4f"
     ],
     "controls": [
       "<input disabled id=\"partner\" name=\"partner\" maxlength=\"100\" placeholder=\"Nome comercial\">",
@@ -323,6 +323,7 @@
       "<textarea disabled id=\"nextSteps\" name=\"nextSteps\" maxlength=\"1000\" placeholder=\"Ação, responsável e prazo combinado, quando houver.\">",
       "<textarea disabled id=\"contact\" name=\"contact\" maxlength=\"400\" placeholder=\"Nome, e-mail profissional e canal de contato autorizado.\">",
       "<button disabled class=\"primary\" type=\"button\" id=\"print-report\">",
+      "<button disabled type=\"button\" id=\"download-report\" aria-describedby=\"download-help\">",
       "<button disabled type=\"button\" id=\"load-example\">",
       "<button disabled type=\"button\" id=\"clear-report\">",
       "<textarea id=\"agenda-text\" readonly rows=\"7\" aria-describedby=\"agenda-help\" placeholder=\"A pauta aparece quando você registra uma fonte, uma dúvida ou um próximo passo.\">"
