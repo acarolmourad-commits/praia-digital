@@ -132,6 +132,17 @@
     if (includeQuery) includeQuery.checked = false;
     filter();
   });
+  function clearSearch() {
+    query.value = '';
+    removeIncomingQuery();
+    filter();
+    query.focus();
+  }
+  query.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || event.isComposing || !query.value) return;
+    event.preventDefault();
+    clearSearch();
+  });
   includeQuery?.addEventListener('change', filter);
   goal.addEventListener('change', () => {
     saveObjective();
@@ -139,12 +150,7 @@
   });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
-  if (keepGoal) keepGoal.addEventListener('click', () => {
-    query.value = '';
-    removeIncomingQuery();
-    filter();
-    query.focus();
-  });
+  if (keepGoal) keepGoal.addEventListener('click', clearSearch);
   if (broaden) broaden.addEventListener('click', () => {
     goal.value = '';
     saveObjective();

@@ -95,6 +95,26 @@ try{for(const width of [360,768,1280]){
   assert.equal(new URL(page.url()).search, '?origem=guia&objetivo=planejar');
   assert.equal(new URL(page.url()).hash, '#buscar-apps');
   assert.ok(await keepGoal.isHidden());
+  // Escape clears an incoming search and its sharing consent, preserving the goal.
+  await page.goto(origin + '/apps/?origem=guia&objetivo=planejar&busca=entrada#buscar-apps');
+  const search = page.locator('#app-query');
+  assert.equal(await visibleCards.count(), 1);
+  await page.locator('#app-share-query').check();
+  await search.press('Escape');
+  assert.equal(await search.inputValue(), '');
+  assert.equal(await goal.inputValue(), 'grupo-planejar');
+  assert.equal(await visibleCards.count(), 6);
+  assert.equal(new URL(page.url()).search, '?origem=guia&objetivo=planejar');
+  assert.equal(await page.locator('#app-share-query').isChecked(), false);
+  assert.equal(await page.locator('#app-share-link').inputValue(), origin + '/apps/?objetivo=planejar#buscar-apps');
+  assert.ok(await search.evaluate(el => el === document.activeElement));
+  await search.press('Escape');
+  assert.equal(await goal.inputValue(), 'grupo-planejar');
+  await search.fill('ITBI');
+  await search.dispatchEvent('keydown', {key: 'Escape', isComposing: true});
+  assert.equal(await search.inputValue(), 'ITBI');
+  assert.equal(await visibleCards.count(), 1);
+  assert.equal(await page.locator('#app-only-result').getAttribute('href'), origin + costPath);
   // Copying the objective excludes search words and unrelated URL parameters.
   await page.goto(origin+'/apps/?objetivo=preparar&origem=reuniao#buscar-apps');
   await page.locator('#app-query').fill('vistoria');
