@@ -3,6 +3,7 @@ import json
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('app_network', ROOT/'scripts/build_app_network.py')
@@ -80,8 +81,13 @@ class CompleteAppNetworkTests(unittest.TestCase):
             if href.startswith('#'):
                 self.assertIn(href[1:], page.ids)
             elif href.startswith('/'):
-                dest = ROOT / href.split('#')[0].lstrip('/')
-                self.assertTrue(dest.exists(), href)
+                target = urlsplit(href)
+                dest = ROOT / target.path.lstrip('/')
+                if dest.is_dir():
+                    dest = dest / 'index.html'
+                self.assertTrue(dest.is_file(), href)
+                if target.fragment and dest.suffix == '.html':
+                    self.assertIn(target.fragment, Links(dest.read_text(encoding='utf-8')).ids, href)
         for source in ['index.html', 'apps/index.html']:
             self.assertIn('/apps/guia-de-uso.html', Links((ROOT/source).read_text(encoding='utf-8')).links)
 
