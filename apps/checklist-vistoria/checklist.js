@@ -53,10 +53,16 @@ const store=createStore(()=>root.localStorage),get=id=>root.document.getElementB
 function render(){
  const focusedId=root.document.activeElement?.id;
  const {state,total,status}=store.snapshot();
+ const problemLinks = [];
  get('groups').innerHTML=GROUPS.map((g,gi)=>`<div class="card"><h2>${g.nome}</h2>${g.items.map((t,ii)=>{
   const key=gi+'_'+ii,value=state[key];
-  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
+  if (value === 'bad') {
+    problemLinks.push(`<li><a href="#vistoria-${key}-bad">${t}</a></li>`);
+  }
+  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span id="vistoria-${key}-label" style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-labelledby="vistoria-${key}-ok vistoria-${key}-label" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-labelledby="vistoria-${key}-bad vistoria-${key}-label" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
  }).join('')}</div>`).join('');
+ get('visit-problems-list').innerHTML = problemLinks.join('');
+ get('visit-problems-empty').hidden = problemLinks.length > 0;
  const done=Object.keys(state).length,ok=Object.values(state).filter(v=>v==='ok').length,pct=Math.round(done/total*100);
  get('bar').style.width=pct+'%';get('score').textContent=pct+'%';get('score').style.color='#0369a1';
  get('verdict').textContent=`${done}/${total} itens registrados: ${ok} marcados OK, ${done-ok} com problema e ${total-done} sem marcação. Não é avaliação de segurança.`;
