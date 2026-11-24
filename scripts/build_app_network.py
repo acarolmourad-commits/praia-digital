@@ -1,5 +1,6 @@
 """Render the same complete app directory on every app. No data or calculations change."""
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -43,6 +44,7 @@ def render(groups, current=None, guidance=None):
             '<p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>')
 
 def build(root=ROOT, check=False):
+    stylesheet = '/css/app-network.css?v=' + hashlib.sha256((root / 'css/app-network.css').read_bytes()).hexdigest()[:12]
     groups = json.loads((root / 'data/app-network.json').read_text(encoding='utf-8'))
     guidance = json.loads((root / 'data/app-guidance.json').read_text(encoding='utf-8'))
     slugs = [a['slug'] for g in groups for a in g['apps']]
@@ -66,8 +68,11 @@ def build(root=ROOT, check=False):
             updated = re.sub(pattern, lambda _: network, text, count=1)
         else:
             updated = text.replace('</body>', '\n' + network + '\n</body>')
-        if '/css/app-network.css' not in updated:
-            updated = updated.replace('</head>', '<link rel="stylesheet" href="/css/app-network.css">\n</head>')
+        stylesheet_pattern = r'href="/css/app-network\.css(?:\?[^\"]*)?"'
+        if re.search(stylesheet_pattern, updated):
+            updated = re.sub(stylesheet_pattern, lambda _: 'href="' + stylesheet + '"', updated)
+        else:
+            updated = updated.replace('</head>', '<link rel="stylesheet" href="' + stylesheet + '">\n</head>')
         if updated != text:
             changed.append(str(path.relative_to(root)))
             if not check:
