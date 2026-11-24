@@ -21,7 +21,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=baab3ca7788c\">",
+      "<script defer src=\"/js/app-catalog.js?v=2c7a5740b5b3\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
@@ -29,6 +29,7 @@
       "<select id=\"app-goal\" aria-controls=\"catalogo-apps\">",
       "<button id=\"app-clear\" type=\"button\">",
       "<button type=\"button\" id=\"app-print\">",
+      "<input id=\"app-share-query\" type=\"checkbox\" disabled>",
       "<input id=\"app-share-link\" type=\"url\" readonly aria-describedby=\"app-share-help\">",
       "<button type=\"button\" id=\"app-copy\">",
       "<button id=\"app-search-all\" type=\"button\" hidden>"
