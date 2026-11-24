@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'compras/black-friday.html'
       - 'apps/**'
       - 'tests/app-catalog-browser.cjs'
       - 'tests/consorcio-regression.cjs'
