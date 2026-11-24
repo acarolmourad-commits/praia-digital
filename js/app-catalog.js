@@ -10,6 +10,9 @@
   const status = document.getElementById('app-results');
   const empty = document.getElementById('app-empty');
   const printSelection = document.getElementById('app-print');
+  const shareLink = document.getElementById('app-share-link');
+  const copySelection = document.getElementById('app-copy');
+  const copyStatus = document.getElementById('app-copy-status');
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]+/g, ' ').trim();
   const groups = Array.from(catalog.querySelectorAll('.pd-catalog-group')).map(section => ({
     section,
@@ -20,6 +23,12 @@
     }))
   }));
   const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
+  function objectiveUrl() {
+    const url = new URL('/apps/', window.location.origin);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    url.hash = 'buscar-apps';
+    return url.href;
+  }
   function filter() {
     const terms = normalize(query.value).split(' ').filter(Boolean);
     let count = 0;
@@ -36,6 +45,8 @@
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
     empty.hidden = count !== 0;
     if (printSelection) printSelection.disabled = count === 0;
+    if (shareLink) shareLink.value = objectiveUrl();
+    if (copyStatus) copyStatus.textContent = '';
   }
   function readObjective() {
     const name = new URLSearchParams(window.location.search).get('objetivo');
@@ -57,6 +68,17 @@
     filter();
   }
   if (printSelection) printSelection.addEventListener('click', () => window.print());
+  if (copySelection && shareLink && copyStatus) copySelection.addEventListener('click', async () => {
+    const value = shareLink.value;
+    try {
+      await navigator.clipboard.writeText(value);
+      if (shareLink.value === value) copyStatus.textContent = 'Link copiado. Cole na conversa ou guarde para depois.';
+    } catch (_) {
+      shareLink.focus();
+      shareLink.select();
+      copyStatus.textContent = 'Selecione e copie o endereço no campo Link deste objetivo.';
+    }
+  });
   query.addEventListener('input', filter);
   goal.addEventListener('change', () => {
     saveObjective();

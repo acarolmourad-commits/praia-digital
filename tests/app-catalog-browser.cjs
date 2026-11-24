@@ -43,6 +43,26 @@ try{for(const width of [360,768,1280]){
   assert.equal(new URL(page.url()).hash, '#buscar-apps');
   await page.goto(origin + '/apps/?objetivo=desconhecido#buscar-apps');
   assert.equal(await visibleCards.count(), 16);
+  // Copying the objective excludes search words and unrelated URL parameters.
+  await page.goto(origin+'/apps/?objetivo=preparar&origem=reuniao#buscar-apps');
+  await page.locator('#app-query').fill('vistoria');
+  assert.equal(await visibleCards.count(),1);
+  const sharedUrl=await page.locator('#app-share-link').inputValue();
+  assert.equal(sharedUrl,origin+'/apps/?objetivo=preparar#buscar-apps');
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{document.body.dataset.copiedLink=text;}}}));
+  await page.getByRole('button',{name:'Copiar link do objetivo'}).press('Enter');
+  await page.locator('#app-copy-status').getByText(/Link copiado/).waitFor();
+  assert.equal(await page.locator('body').getAttribute('data-copied-link'),sharedUrl);
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('Clipboard denied');}}}));
+  await page.getByRole('button',{name:'Copiar link do objetivo'}).click();
+  await page.locator('#app-copy-status').getByText(/Selecione e copie/).waitFor();
+  assert.equal(await page.locator('#app-share-link').evaluate(el=>el===document.activeElement),true,'Manual copy remains available');
+  await page.goto(sharedUrl);
+  assert.equal(await visibleCards.count(),4,'The recipient sees all tools in the objective');
+  assert.equal(await page.locator('#app-query').inputValue(),'','Search words are not transferred');
+  await page.locator('#app-clear').click();
+  assert.equal(await page.locator('#app-share-link').inputValue(),origin+'/apps/#buscar-apps');
+  assert.equal(await page.locator('#app-copy-status').innerText(),'');
   await page.locator('#app-query').fill('ANÚNCIO');
   assert.equal(await visibleCards.count(),4,'Search matches the accented objective');
   await page.locator('#app-query').fill('shópee');

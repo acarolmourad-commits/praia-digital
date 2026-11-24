@@ -111,3 +111,8 @@
     display: block; font-size: 9pt; color: #333; overflow-wrap: anywhere;
   }
 }
+
+.pd-catalog-share { grid-column: 1 / -1; border-top: 1px solid #bbd8d1; padding-top: 16px; }
+.pd-catalog-share p { margin: 0 0 10px; }
+#catalog-search-form #app-copy { width: auto; margin-top: 10px; }
+#app-copy-status:not(:empty) { margin-top: 10px; }
