@@ -70,6 +70,9 @@
     @media print { #visit-next:not([hidden]) { display: none; } }
     #entrega-das-chaves, #retomar-vistoria, #pendencias-da-vistoria, .opts button { scroll-margin-top: 7rem; }
     #visit-problems-list { padding-inline-start: 1.4rem; }
+    #visit-copy { min-height:44px; border:1px solid #075b5c; border-radius:8px; padding:.5rem .9rem; background:white; color:#075b5c; font:inherit; cursor:pointer; }
+    #visit-copy:focus-visible { outline:3px solid #0369a1; outline-offset:2px; }
+    #visit-copy-text { width:100%; box-sizing:border-box; font:inherit; }
     #visit-problems-list li { margin-block: .4rem; }
     #pendencias-da-vistoria a { color: #075b5c; text-decoration: underline; }
     #pendencias-da-vistoria p:last-child { margin-top: .65rem; }
@@ -105,7 +108,10 @@
     <h2 id="visit-problems-title">Itens marcados como problema</h2>
     <p id="visit-problems-empty">Nenhum item marcado como problema.</p>
     <ul id="visit-problems-list"></ul>
-    <p>Selecione um item da lista para voltar à marcação. Nos <a href="/apps/relatorio-imovel/#evidencias-da-visita">campos de evidências do Relatório do imóvel</a>, transcreva a observação e indique quem pode esclarecer a dúvida. Depois, abra a pauta de retorno para conferir o texto.</p>
+    <button type="button" id="visit-copy" hidden>Copiar itens a conferir</button>
+    <div id="visit-copy-manual" hidden><label for="visit-copy-text">Itens para copiar</label><textarea id="visit-copy-text" rows="4" readonly></textarea></div>
+    <p id="visit-copy-status" role="status"></p>
+    <p>Selecione um item da lista para voltar à marcação. Nos <a href="/apps/relatorio-imovel/#evidencias-da-visita">campos de evidências do Relatório do imóvel</a>, cole os critérios que copiou, acrescente a observação de cada item e indique quem pode esclarecer a dúvida. Depois, abra a pauta de retorno para conferir o texto.</p>
   </section>
   <div id="groups" aria-label="Itens da vistoria" role="region"></div>
   <p>Terminou a visita? <a href="/apps/guia-de-uso.html#vistoria-para-relatorio">Veja como levar suas observações para o relatório do imóvel</a> e acompanhar os itens que ficaram em aberto. Se já tiver suas anotações, <a href="/apps/relatorio-imovel/">abra o Relatório do imóvel</a>.</p>
@@ -134,7 +140,7 @@
   </div>
 </div>
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
-<script src="/apps/checklist-vistoria/checklist.js?v=d60163a6af97"></script>
+<script src="/apps/checklist-vistoria/checklist.js?v=cde2a5d2c3b2"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">

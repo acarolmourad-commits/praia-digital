@@ -246,13 +246,15 @@
   "apps/checklist-vistoria/index.html": {
     "heading_id": "pd-app-title",
     "scripts": [
-      "<script src=\"/apps/checklist-vistoria/checklist.js?v=d60163a6af97\">",
+      "<script src=\"/apps/checklist-vistoria/checklist.js?v=cde2a5d2c3b2\">",
       "<script defer src=\"/js/shared.js\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
       "<button onclick=\"window.print()\">",
-      "<button type=\"button\" id=\"reset\" class=\"ghost\" onclick=\"resetAll()\">"
+      "<button type=\"button\" id=\"reset\" class=\"ghost\" onclick=\"resetAll()\">",
+      "<button type=\"button\" id=\"visit-copy\" hidden>",
+      "<textarea id=\"visit-copy-text\" rows=\"4\" readonly>"
     ]
   },
   "apps/oficina-ia-imobiliaria/index.html": {
@@ -289,7 +291,8 @@
     "heading_id": "title",
     "scripts": [
       "<script src=\"core.js\" defer>",
-      "<script src=\"app.js\" defer>"
+      "<script src=\"app.js\" defer>",
+      "<script src=\"accommodation.js\" defer>"
     ],
     "controls": [
       "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
@@ -300,11 +303,18 @@
       "<button id=\"copy\" type=\"button\" class=\"button secondary\" disabled>",
       "<button id=\"print\" type=\"button\" class=\"button primary\" disabled>",
       "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">",
+      "<input id=\"accommodation-name\" type=\"text\" maxlength=\"120\" placeholder=\"Ex.: Suíte jardim\">",
+      "<input id=\"accommodation-source-one\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
+      "<input id=\"accommodation-source-two\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
-      "<button type=\"reset\" class=\"button secondary\">"
+      "<textarea id=\"accommodation-notes\" rows=\"3\" maxlength=\"2000\" placeholder=\"O que falta confirmar, com qual responsável ou equipe e em qual canal? Evite dados pessoais.\">",
+      "<button id=\"accommodation-generate\" type=\"button\" class=\"button primary\" disabled>",
+      "<button type=\"reset\" class=\"button secondary\">",
+      "<textarea id=\"accommodation-text\" rows=\"12\" readonly>",
+      "<button id=\"accommodation-copy\" type=\"button\" class=\"button secondary\">"
     ]
   },
   "apps/relatorio-imovel/index.html": {
