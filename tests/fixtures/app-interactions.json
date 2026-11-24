@@ -21,7 +21,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=20261124-copiar-objetivo\">",
+      "<script defer src=\"/js/app-catalog.js?v=baab3ca7788c\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
@@ -30,7 +30,8 @@
       "<button id=\"app-clear\" type=\"button\">",
       "<button type=\"button\" id=\"app-print\">",
       "<input id=\"app-share-link\" type=\"url\" readonly aria-describedby=\"app-share-help\">",
-      "<button type=\"button\" id=\"app-copy\">"
+      "<button type=\"button\" id=\"app-copy\">",
+      "<button id=\"app-search-all\" type=\"button\" hidden>"
     ]
   },
   "apps/alugar-ou-comprar/index.html": {
