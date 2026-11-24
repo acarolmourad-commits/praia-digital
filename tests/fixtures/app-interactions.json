@@ -21,11 +21,11 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=7bc5eb98151a\">",
+      "<script defer src=\"/js/app-catalog.js?v=7c4874a90f72\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
-      "<input id=\"app-query\" type=\"search\" maxlength=\"100\" placeholder=\"Ex.: revisar anúncio\" aria-controls=\"catalogo-apps\" autocomplete=\"off\">",
+      "<input id=\"app-query\" type=\"search\" maxlength=\"100\" placeholder=\"Ex.: revisar anúncio\" aria-controls=\"catalogo-apps\" aria-describedby=\"app-query-help\" autocomplete=\"off\">",
       "<select id=\"app-goal\" aria-controls=\"catalogo-apps\">",
       "<button id=\"app-clear\" type=\"button\">",
       "<button type=\"button\" id=\"app-print\">",
