@@ -82,6 +82,18 @@ try{for(const width of [360,768,1280]){
   assert.equal(await printButton.isDisabled(),true);
   assert.equal(await visibleCards.count(),0,'Search and objective combine');
   assert.ok(await page.locator('#app-empty').isVisible());
+  const broaden = page.getByRole('button',{name:'Buscar em todos os objetivos'});
+  assert.ok(await broaden.isVisible());
+  await broaden.press('Enter');
+  assert.equal(await goal.inputValue(),'');
+  assert.equal(await page.locator('#app-query').inputValue(),'shópee');
+  assert.ok(await page.locator('#app-query').evaluate(el => el === document.activeElement));
+  assert.equal(await visibleCards.count(),1);
+  assert.equal(new URL(page.url()).searchParams.has('objetivo'),false);
+  assert.equal(await printButton.isEnabled(),true);
+  await page.locator('#app-query').fill('zzzinexistente');
+  assert.ok(await page.locator('#app-empty').isVisible());
+  assert.equal(await broaden.isVisible(),false);
   await page.locator('#app-query').press('Enter');
   assert.equal(new URL(page.url()).pathname,'/apps/','Enter does not submit or navigate');
   await page.locator('#app-clear').click();
