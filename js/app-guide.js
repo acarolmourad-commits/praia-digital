@@ -32,6 +32,8 @@
   });
   document.getElementById('guide-print').addEventListener('click', () => window.print());
   document.getElementById('guide-download').addEventListener('click', () => {
+    const selected = document.getElementById('guide-export-route').value;
+    const routes = [...document.querySelectorAll('.guide-route')].filter(route => !selected || route.id === selected);
     const now = new Date();
     const timestamp = new Intl.DateTimeFormat('pt-BR', {
       dateStyle: 'short', timeStyle: 'short', timeZone: 'America/Sao_Paulo'
@@ -48,7 +50,7 @@
       'Um item não marcado pode não ter sido analisado. Confirme seu estado antes de encaminhar.',
       ''
     ];
-    document.querySelectorAll('.guide-route').forEach(route => {
+    routes.forEach(route => {
       lines.push(route.querySelector('h2').textContent.trim());
       lines.push(`https://praia.digital/apps/guia-de-uso.html#${route.id}`);
       route.querySelectorAll('input[type="checkbox"]').forEach(box => {
@@ -67,10 +69,10 @@
       url = URL.createObjectURL(new Blob(['\uFEFF' + lines.join('\n') + '\n'], {type: 'text/plain;charset=utf-8'}));
       anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = `praia-digital-checklist-${fileDate}.txt`;
+      anchor.download = `praia-digital-checklist${selected ? `-${selected}` : ''}-${fileDate}.txt`;
       document.body.appendChild(anchor);
       anchor.click();
-      status.textContent = 'Arquivo preparado. Confira os downloads do navegador antes de fechar esta página.';
+      status.textContent = `${selected ? 'Arquivo do roteiro “' + routes[0].querySelector('h2').textContent.trim() + '” preparado.' : 'Arquivo dos quatro roteiros preparado.'} Confira os downloads do navegador antes de fechar esta página.`;
     } catch {
       status.textContent = 'Não foi possível preparar o arquivo. Use Imprimir ou salvar em PDF para guardar suas marcações.';
     } finally {
