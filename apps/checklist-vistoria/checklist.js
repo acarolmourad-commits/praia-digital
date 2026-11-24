@@ -55,7 +55,7 @@ function render(){
  const {state,total,status}=store.snapshot();
  get('groups').innerHTML=GROUPS.map((g,gi)=>`<div class="card"><h2>${g.nome}</h2>${g.items.map((t,ii)=>{
   const key=gi+'_'+ii,value=state[key];
-  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
+  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span id="item-${key}" style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-labelledby="vistoria-${key}-ok item-${key}" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-labelledby="vistoria-${key}-bad item-${key}" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
  }).join('')}</div>`).join('');
  const done=Object.keys(state).length,ok=Object.values(state).filter(v=>v==='ok').length,pct=Math.round(done/total*100);
  get('bar').style.width=pct+'%';get('score').textContent=pct+'%';get('score').style.color='#0369a1';
