@@ -17,7 +17,14 @@
 .pd-guide li { margin:8px 0; }
 [data-pd-app] :focus-visible,.pd-network :focus-visible,.pd-guide :focus-visible,.pd-network-nav :focus-visible { outline:3px solid #0e7c7b; outline-offset:4px; }
 @media(prefers-reduced-motion:reduce) { [data-pd-app] * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
-@media print { .pd-skip,.pd-network-nav,.pd-network { display:none; } }
+a.pd-next-shortcut, [data-pd-app] > header a.pd-next-shortcut {
+  display:inline-flex; align-items:center; box-sizing:border-box; min-height:44px;
+  margin:.4rem 0; padding:.3rem .8rem; border:1px solid #647b7b; border-radius:.5rem;
+  background:#fff; color:#075b5c; font-size:1rem; text-decoration:underline; text-underline-offset:.2em;
+}
+a.pd-next-shortcut:focus-visible { outline:3px solid #df8c08; outline-offset:2px; }
+#pd-network-title { scroll-margin-top:6rem; }
+@media print { .pd-skip,.pd-network-nav,.pd-network,.pd-next-shortcut { display:none; } }
 
 /* Home journeys: explicit responsive two-column grid. */
 #jornadas-apps .grid.g2 { grid-template-columns:repeat(2,minmax(0,1fr)); }

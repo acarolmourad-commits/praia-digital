@@ -38,7 +38,7 @@ def render(groups, current=None, guidance=None):
         if links:
             sections.append(f'<div class="pd-network-group"><h3>{esc(group["title"])}</h3><ul class="pd-network-grid">{"".join(links)}</ul></div>')
     return ('<section class="pd-network" aria-labelledby="pd-network-title">'
-            '<h2 id="pd-network-title">Continue com o próximo aplicativo</h2>'
+            '<h2 id="pd-network-title" tabindex="-1">Continue com o próximo aplicativo</h2>'
             '<p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p>'
             + practical + '<details><summary>Explorar a rede completa de aplicativos</summary>' + ''.join(sections) + '</details>'
             '<p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p>'
