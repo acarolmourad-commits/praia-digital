@@ -12,6 +12,7 @@
   const broaden = document.getElementById('app-search-all');
   const printSelection = document.getElementById('app-print');
   const shareLink = document.getElementById('app-share-link');
+  const includeQuery = document.getElementById('app-share-query');
   const copySelection = document.getElementById('app-copy');
   const copyStatus = document.getElementById('app-copy-status');
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -24,9 +25,10 @@
     }))
   }));
   const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
-  function objectiveUrl() {
+  function shareUrl() {
     const url = new URL('/apps/', window.location.origin);
     if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    if (includeQuery?.checked) url.searchParams.set('busca', query.value.trim());
     url.hash = 'buscar-apps';
     return url.href;
   }
@@ -57,13 +59,25 @@
       }
     }
     if (printSelection) printSelection.disabled = count === 0;
-    if (shareLink) shareLink.value = objectiveUrl();
+    if (includeQuery) {
+      includeQuery.disabled = terms.length === 0;
+      if (includeQuery.disabled) includeQuery.checked = false;
+    }
+    if (shareLink) shareLink.value = shareUrl();
+    if (copySelection) copySelection.textContent = includeQuery?.checked ? 'Copiar link da busca' : 'Copiar link do objetivo';
     if (copyStatus) copyStatus.textContent = '';
   }
   function readObjective() {
     const name = new URLSearchParams(window.location.search).get('objetivo');
     const id = 'grupo-' + name;
     goal.value = groups.some(group => group.id === id) ? id : '';
+  }
+
+  function removeIncomingQuery() {
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('busca')) return;
+    url.searchParams.delete('busca');
+    window.history.replaceState(window.history.state, '', url);
   }
 
   function saveObjective() {
@@ -75,6 +89,8 @@
 
   function reset() {
     query.value = '';
+    if (includeQuery) includeQuery.checked = false;
+    removeIncomingQuery();
     goal.value = '';
     saveObjective();
     filter();
@@ -86,12 +102,18 @@
       await navigator.clipboard.writeText(value);
       if (shareLink.value === value) copyStatus.textContent = 'Link copiado. Cole na conversa ou guarde para depois.';
     } catch (_) {
+      if (shareLink.value !== value) return;
       shareLink.focus();
       shareLink.select();
-      copyStatus.textContent = 'Selecione e copie o endereço no campo Link deste objetivo.';
+      copyStatus.textContent = 'Selecione e copie o endereço no campo Link para compartilhar.';
     }
   });
-  query.addEventListener('input', filter);
+  query.addEventListener('input', () => {
+    removeIncomingQuery();
+    if (includeQuery) includeQuery.checked = false;
+    filter();
+  });
+  includeQuery?.addEventListener('change', filter);
   goal.addEventListener('change', () => {
     saveObjective();
     filter();
@@ -129,6 +151,8 @@
     filter();
   });
   readObjective();
+  const incomingQuery = new URLSearchParams(window.location.search).get('busca');
+  if (incomingQuery) query.value = incomingQuery.slice(0, query.maxLength);
   form.hidden = false;
   filter();
 })();

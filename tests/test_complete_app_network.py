@@ -65,6 +65,26 @@ class CompleteAppNetworkTests(unittest.TestCase):
             self.assertIn('/apps/guia-de-uso.html', page.links)
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
+
+    def test_each_app_opens_the_checklist_for_its_task(self):
+        expected = {
+            'comprar': {'alugar-ou-comprar', 'calculadora-financiamento', 'calculadora-consorcio',
+                        'custo-de-compra', 'planejador-entrada', 'renda-para-financiar',
+                        'comparador-cidades', 'valor-imovel', 'calculadora-valorizacao'},
+            'locar': {'simulador-roi-temporada', 'temporada-ou-anual'},
+            'anunciar': {'checklist-vistoria', 'oficina-ia-imobiliaria', 'revisor-anuncios', 'relatorio-imovel'},
+            'vender': {'calculadora-precificacao-shopee'},
+        }
+        guide = Links((ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8'))
+        self.assertEqual(set.union(*expected.values()), self.slugs)
+        for anchor, slugs in expected.items():
+            self.assertEqual(guide.ids.count(anchor), 1)
+            for slug in slugs:
+                text = (ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8')
+                workflow = text.split('class="pd-workflow"', 1)[1].split('</div><details>', 1)[0]
+                self.assertEqual(Links(workflow).links.count('/apps/guia-de-uso.html#'+anchor), 1, slug)
+                self.assertIn('Abrir roteiro:', workflow)
+
     def test_home_and_catalog_promote_every_app_and_shortcuts_resolve(self):
         for path in ['index.html','apps/index.html']:
             page=Links((ROOT/path).read_text(encoding='utf-8'))
@@ -112,7 +132,7 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertFalse(any('github.io/asf-app' in href for href in page.links))
                 for href in hrefs:
                     self.assertIn(href, explore.links)
-                    self.assertEqual(page.links.count(href), 1, href)
+                    self.assertEqual(explore.links.count(href), 1, href)
                     path, anchor = href.split('#')
                     target = Links((ROOT/path.lstrip('/')).read_text(encoding='utf-8'))
                     self.assertEqual(target.ids.count(anchor), 1, href)
