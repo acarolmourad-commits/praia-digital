@@ -62,6 +62,8 @@
 .pd-workflow dt{font-weight:700;margin-bottom:.4rem}.pd-workflow dd{margin:0;line-height:1.6}
 .pd-next-links{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;padding-left:1.25rem}
 .pd-next-links a,.pd-practice a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+.pd-workflow .pd-route-link a{display:inline-flex;align-items:center;box-sizing:border-box;max-width:100%;min-height:44px;padding:8px 12px;border:1px solid #14665b;border-radius:8px;background:#fff;font-weight:700;line-height:1.5}
+.pd-workflow .pd-route-link a:hover{background:#e4f2ed}
 .pd-practice li{margin:.7rem 0;line-height:1.6}
 @media(max-width:639px){.pd-workflow dl{grid-template-columns:1fr}.pd-workflow,.pd-practice{padding:1rem}}
 
