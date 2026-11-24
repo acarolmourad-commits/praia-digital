@@ -14,7 +14,8 @@ function element(id) {
     addEventListener(type,handler){handlers.set(`${id}:${type}`,handler);},
     focus(){this.focused=true;},classList:{toggle(){}}};
 }
-const controls = [...html.matchAll(/<(?:input|textarea|select)\b[^>]*\bid="([^"]+)"/g)].map(m=>element(m[1]));
+const formMarkup = html.match(/<form id="report-form"[\s\S]*?<\/form>/)[0];
+const controls = [...formMarkup.matchAll(/<(?:input|textarea|select)\b[^>]*\bid="([^"]+)"/g)].map(m=>element(m[1]));
 controls.namedItem = name => controls.find(control=>control.id===name);
 const nodes = Object.fromEntries([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],element(m[1])]));
 for(const control of controls) nodes[control.id]=control;
@@ -26,9 +27,8 @@ const outputs = [...html.matchAll(/<[^>]+\bdata-field="([^"]+)"([^>]*)>/g)].map(
 nodes['report-form'].elements=controls;
 nodes['report-form'].reset=()=>controls.forEach(control=>control.value='');
 let allowConfirm=true,printed=0;
-const context={document:{getElementById:id=>nodes[id],querySelectorAll:()=>outputs},window:{confirm:()=>allowConfirm,print:()=>printed++,addEventListener:(type,handler)=>handlers.set(`window:${type}`,handler)}};
+const context={document:{getElementById:id=>nodes[id],querySelectorAll:()=>outputs},window:{location:{hash:"#pauta-de-retorno"},confirm:()=>allowConfirm,print:()=>printed++,addEventListener:(type,handler)=>handlers.set(`window:${type}`,handler)}};
 // Disabled markup is the fallback when scripts are off or initialization fails.
-const formMarkup = html.match(/<form id="report-form"[\s\S]*?<\/form>/)[0];
 assert.match(formMarkup, /method="dialog"/);
 const initialControls = [...formMarkup.matchAll(/<(?:input|textarea|select|button)\b[^>]*>/g)];
 assert.equal(initialControls.length, 20);
@@ -44,6 +44,17 @@ assert.equal(nodes['startup-status'].hidden, true);
 const output=id=>outputs.find(o=>o.dataset.field===id).textContent;
 const click=id=>handlers.get(`${id}:click`)();
 const input=(id,value)=>{nodes[id].value=value;handlers.get('report-form:input')();};
+assert.equal(nodes['pauta-de-retorno'].open, true);
+assert.equal(nodes['agenda-fields'].hidden, false);
+assert.equal(nodes['agenda-text'].value, '');
+input('reference','V-14');
+assert.equal(nodes['agenda-text'].value, '');
+input('contact','Contato privado fictício');
+input('price','Valor privado fictício');
+input('sources','Ficha datada');
+input('pending','Vaga privativa?');
+assert.equal(nodes['agenda-text'].value, 'Pauta de retorno\n\nReferência: V-14\n\nFontes e datas\nFicha datada\n\nPontos a confirmar\nVaga privativa?');
+input('price','');
 assert.equal(output('partner'),'Nome do parceiro');
 assert.equal(output('price'),'A confirmar');
 assert.equal(nodes['example-notice'].hidden,true);
@@ -55,6 +66,8 @@ allowConfirm=false;click('load-example');assert.equal(output('partner'),'<img sr
 allowConfirm=true;click('load-example');
 assert.equal(nodes['example-notice'].hidden,false);
 assert.match(output('sources'),/fictícia/);
+assert.match(nodes['agenda-text'].value, /^Pauta de retorno — exemplo fictício/);
+assert.match(nodes['agenda-text'].value, /Próximos passos/);
 assert.equal(output('purpose'),'Locação mensal');
 input('objective','Objetivo editado');assert.equal(nodes['example-notice'].hidden,false);
 nodes.objective.value='Texto atualizado imediatamente antes de imprimir';
@@ -68,6 +81,7 @@ assert.ok(controls.every(control=>control.value===''));
 assert.equal(output('purpose'),'A confirmar');
 assert.equal(nodes['example-notice'].hidden,true);
 assert.equal(nodes.partner.focused,true);
+assert.equal(nodes['agenda-text'].value, '');
 assert.doesNotMatch(script,/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|innerHTML\s*=/);
 // Verify discovery and accessibility wiring in the generated production page.
 assert.doesNotMatch(html,/<meta\b[^>]+name=["']robots["'][^>]+noindex/i);
