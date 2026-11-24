@@ -66,6 +66,26 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         assert.ok(exported.includes(`https://praia.digital/apps/guia-de-uso.html#${anchor}`));
       }
       assert.equal((exported.match(/Responsável: não identificado/g) || []).length, 4);
+      // A focused export contains just that route, while preserving all page markings.
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        await page.getByLabel('Roteiros no arquivo de texto').selectOption(anchor);
+        const focusedPromise = page.waitForEvent('download');
+        await page.locator('#guide-download').press('Enter');
+        const focusedDownload = await focusedPromise;
+        assert.ok(focusedDownload.suggestedFilename().startsWith(`praia-digital-checklist-${anchor}-`));
+        await focusedDownload.saveAs(exportedPath);
+        const focused = fs.readFileSync(exportedPath, 'utf8');
+        assert.equal((focused.match(/Responsável: não identificado/g) || []).length, 1);
+        for (const other of ['comprar','locar','anunciar','vender']) {
+          assert.equal(focused.includes(`guia-de-uso.html#${other}`), other === anchor);
+        }
+        assert.equal((focused.match(/Marcado nesta consulta/g) || []).length, anchor === 'comprar' ? 2 : 0);
+        assert.equal((focused.match(/A conferir \(não marcado\)/g) || []).length, anchor === 'comprar' ? 1 : 3);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.ok((await page.locator('#guide-download-status').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
+      }
+      await page.getByLabel('Roteiros no arquivo de texto').selectOption('');
+
       await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
       await page.locator('#guide-reset').click();
