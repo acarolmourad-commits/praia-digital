@@ -11,6 +11,7 @@
   const onlyResult = document.getElementById('app-only-result');
   const empty = document.getElementById('app-empty');
   const broaden = document.getElementById('app-search-all');
+  const keepGoal = document.getElementById('app-keep-goal');
   const printSelection = document.getElementById('app-print');
   const shareLink = document.getElementById('app-share-link');
   const includeQuery = document.getElementById('app-share-query');
@@ -67,6 +68,7 @@
       }
     }
     empty.hidden = count !== 0;
+    if (keepGoal) keepGoal.hidden = count !== 0 || !goal.value;
     if (broaden) {
       broaden.hidden = count !== 0 || otherMatches === 0;
       if (!broaden.hidden) {
@@ -137,6 +139,12 @@
   });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
+  if (keepGoal) keepGoal.addEventListener('click', () => {
+    query.value = '';
+    removeIncomingQuery();
+    filter();
+    query.focus();
+  });
   if (broaden) broaden.addEventListener('click', () => {
     goal.value = '';
     saveObjective();

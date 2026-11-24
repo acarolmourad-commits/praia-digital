@@ -63,6 +63,20 @@ try{for(const width of [360,768,1280]){
   assert.equal(new URL(page.url()).hash, '#buscar-apps');
   await page.goto(origin + '/apps/?objetivo=desconhecido#buscar-apps');
   assert.equal(await visibleCards.count(), 16);
+  // Recover from an empty search without losing the selected objective.
+  await page.goto(origin + '/apps/?origem=guia&objetivo=planejar&busca=vistoria#buscar-apps');
+  const keepGoal = page.getByRole('button', {name: 'Ver todos deste objetivo'});
+  assert.equal(await visibleCards.count(), 0);
+  await page.locator('#app-share-query').check();
+  await keepGoal.press('Enter');
+  assert.equal(await goal.inputValue(), 'grupo-planejar');
+  assert.equal(await visibleCards.count(), 6);
+  assert.equal(await page.locator('#app-query').inputValue(), '');
+  assert.ok(await page.locator('#app-query').evaluate(el => el === document.activeElement));
+  assert.equal(await page.locator('#app-share-query').isChecked(), false);
+  assert.equal(new URL(page.url()).search, '?origem=guia&objetivo=planejar');
+  assert.equal(new URL(page.url()).hash, '#buscar-apps');
+  assert.ok(await keepGoal.isHidden());
   // Copying the objective excludes search words and unrelated URL parameters.
   await page.goto(origin+'/apps/?objetivo=preparar&origem=reuniao#buscar-apps');
   await page.locator('#app-query').fill('vistoria');
