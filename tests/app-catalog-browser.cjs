@@ -24,6 +24,21 @@ try{for(const width of [360,768,1280]){
   const visibleCards = page.locator('.pd-catalog-group .card:visible');
   assert.equal(await visibleCards.count(),16);
   const goal = page.locator('#app-goal');
+  const costPath = '/apps/custo-de-compra/';
+  for (const term of ['ITBI', 'escritura', 'registro']) {
+    await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
+    assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [costPath], term);
+    assert.equal(await page.locator('#app-only-result').getAttribute('href'), costPath);
+  }
+  for (const term of ['SAC', 'Price']) {
+    await page.locator('#app-query').fill(term);
+    assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [
+      '/apps/alugar-ou-comprar/', '/apps/calculadora-financiamento/'
+    ], term);
+    assert.ok(await page.locator('#app-only-result').isHidden());
+  }
+  await page.locator('#app-clear').click();
+  assert.equal(await visibleCards.count(), 16);
   await goal.selectOption('grupo-comparar');
   await page.locator('#app-query').fill('noites');
   assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.getAttribute('href'))), [
