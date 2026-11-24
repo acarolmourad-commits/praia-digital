@@ -2,15 +2,33 @@
   'use strict';
   const boxes = [...document.querySelectorAll('.guide-route input[type="checkbox"]')];
   const progress = document.getElementById('guide-progress');
+  const reset = document.getElementById('guide-reset');
+  const undo = document.createElement('button');
+  undo.type = 'button';
+  undo.textContent = 'Desfazer limpeza';
+  reset.after(undo);
+  let cleared = [];
+
   const update = () => {
-    progress.textContent = `${boxes.filter(box => box.checked).length} de ${boxes.length} conferências marcadas`;
+    const count = boxes.filter(box => box.checked).length;
+    if (count) cleared = [];
+    undo.hidden = cleared.length === 0;
+    reset.disabled = count === 0;
+    progress.textContent = `${count} de ${boxes.length} conferências marcadas`;
   };
   boxes.forEach(box => box.addEventListener('change', update));
   // Back/forward navigation can restore checkbox state without firing change.
   window.addEventListener('pageshow', update);
-  document.getElementById('guide-reset').addEventListener('click', () => {
-    boxes.forEach(box => { box.checked = false; });
+  reset.addEventListener('click', () => {
+    cleared = boxes.filter(box => box.checked);
+    cleared.forEach(box => { box.checked = false; });
     update();
+    undo.focus();
+  });
+  undo.addEventListener('click', () => {
+    cleared.forEach(box => { box.checked = true; });
+    update();
+    reset.focus();
   });
   document.getElementById('guide-print').addEventListener('click', () => window.print());
   document.getElementById('guide-download').addEventListener('click', () => {

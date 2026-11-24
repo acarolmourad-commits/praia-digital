@@ -78,6 +78,20 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       const resetExport = fs.readFileSync(exportedPath, 'utf8');
       assert.equal((resetExport.match(/\[x\]/g) || []).length, 0);
       assert.equal((resetExport.match(/\[ \] A conferir/g) || []).length, 12);
+      const undo = page.getByRole('button', {name: 'Desfazer limpeza'});
+      await undo.press('Enter');
+      assert.equal(await page.locator('#guide-reset').evaluate(el => el === document.activeElement), true);
+      const checkedIndices = () => page.locator('.guide-route input[type=checkbox]').evaluateAll(
+        boxes => boxes.flatMap((box, i) => box.checked ? [i] : [])
+      );
+      assert.deepEqual(await checkedIndices(), [1, 2]);
+      assert.equal(await undo.isVisible(), false);
+      await page.locator('#guide-reset').press('Enter');
+      assert.equal(await undo.evaluate(el => el === document.activeElement), true);
+      await page.locator('.guide-route input[type=checkbox]').first().check();
+      assert.equal(await undo.isVisible(), false);
+      assert.deepEqual(await checkedIndices(), [0]);
+      await page.locator('#guide-reset').click();
       await page.evaluate(() => {window.print = () => {window.printCalled = true;};});
       await page.locator('#guide-print').click();
       assert.equal(await page.evaluate(() => window.printCalled), true);
