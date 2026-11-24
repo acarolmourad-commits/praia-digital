@@ -65,7 +65,10 @@
       #groups .item.ok::after { content: "OK"; }
       #groups .item.bad::after { content: "Problema"; }
     }
-    #pendencias-da-vistoria, .opts button { scroll-margin-top: 7rem; }
+    #visit-next:not([hidden]) { display: inline-flex; align-items: center; min-height: 44px; margin-top: .5rem; color: #075b5c; font-weight: 600; }
+    #visit-next:focus-visible { outline: 3px solid #0369a1; outline-offset: 2px; }
+    @media print { #visit-next:not([hidden]) { display: none; } }
+    #retomar-vistoria, #pendencias-da-vistoria, .opts button { scroll-margin-top: 7rem; }
     #visit-problems-list { padding-inline-start: 1.4rem; }
     #visit-problems-list li { margin-block: .4rem; }
     #pendencias-da-vistoria a { color: #075b5c; text-decoration: underline; }
@@ -85,9 +88,10 @@
 
 <div class="wrap">
   <div class="card">
-    <h2>Progresso do registro</h2>
+    <h2 id="retomar-vistoria" tabindex="-1">Progresso do registro</h2>
     <div class="scorebox"><div class="s" id="score">—</div><div id="verdict" style="font-size:13px;color:#64748B">Registre suas observações nos itens abaixo</div></div>
     <div class="prog"><i id="bar" style="width:0%;background:#0EA5E9"></i></div>
+    <a id="visit-next" hidden>Ir ao primeiro item sem marcação</a>
     <div class="actions">
       <button onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
       <button type="button" id="reset" class="ghost" onclick="resetAll()">↺ Recomeçar</button>
@@ -129,7 +133,7 @@
   </div>
 </div>
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
-<script src="/apps/checklist-vistoria/checklist.js?v=b1ab411ffd91"></script>
+<script src="/apps/checklist-vistoria/checklist.js?v=d60163a6af97"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
