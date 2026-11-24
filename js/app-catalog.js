@@ -9,6 +9,7 @@
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
   const empty = document.getElementById('app-empty');
+  const printSelection = document.getElementById('app-print');
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]+/g, ' ').trim();
   const groups = Array.from(catalog.querySelectorAll('.pd-catalog-group')).map(section => ({
     section,
@@ -34,12 +35,14 @@
     }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
     empty.hidden = count !== 0;
+    if (printSelection) printSelection.disabled = count === 0;
   }
   function reset() {
     query.value = '';
     goal.value = '';
     filter();
   }
+  if (printSelection) printSelection.addEventListener('click', () => window.print());
   query.addEventListener('input', filter);
   goal.addEventListener('change', filter);
   form.addEventListener('submit', event => event.preventDefault());

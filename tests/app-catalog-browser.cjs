@@ -28,7 +28,18 @@ try{for(const width of [360,768,1280]){
   await page.locator('#app-query').fill('shópee');
   assert.equal(await visibleCards.count(),1,'Search ignores case and accents');
   assert.match(await page.locator('#app-results').innerText(),/^1 de 16/);
+  const printButton = page.getByRole('button',{name:'Imprimir seleção ou salvar em PDF'});
+  await page.evaluate(() => { window.print = () => { document.body.dataset.printRequested = 'yes'; }; });
+  await printButton.press('Enter');
+  assert.equal(await page.locator('body').getAttribute('data-print-requested'),'yes');
+  await page.emulateMedia({media:'print'});
+  assert.equal(await visibleCards.count(),1,'Only the filtered app is printed');
+  assert.equal(await printButton.isVisible(),false);
+  assert.equal(await page.locator('#app-results').isVisible(),true);
+  assert.match(await visibleCards.first().evaluate(el=>getComputedStyle(el,'::after').content),/praia\.digital/);
+  await page.emulateMedia({media:'screen'});
   await page.locator('#app-goal').selectOption('grupo-planejar');
+  assert.equal(await printButton.isDisabled(),true);
   assert.equal(await visibleCards.count(),0,'Search and objective combine');
   assert.ok(await page.locator('#app-empty').isVisible());
   await page.locator('#app-query').press('Enter');
@@ -36,6 +47,9 @@ try{for(const width of [360,768,1280]){
   await page.locator('#app-clear').click();
   assert.equal(await visibleCards.count(),16);
   assert.equal(await page.locator('#app-query').evaluate(el=>el===document.activeElement),true);
+  await page.emulateMedia({media:'print'});
+  assert.equal(await visibleCards.count(),16,'Clearing the filters prints the full directory');
+  await page.emulateMedia({media:'screen'});
   await page.locator('#app-goal').selectOption('grupo-planejar');
   assert.equal(await visibleCards.count(),6);
   await page.locator('#objetivos-apps a[href="#grupo-marketplaces"]').click();

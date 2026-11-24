@@ -80,4 +80,34 @@
 #catalog-search-form[hidden],#app-empty[hidden],.pd-catalog-group[hidden],.pd-catalog-cards .card[hidden]{display:none!important}
 @media(max-width:880px){.pd-catalog-search{margin:24px 16px 0}}
 @media(max-width:639px){.pd-catalog-search{padding:16px}#catalog-search-form{grid-template-columns:minmax(0,1fr)}}
-@media print{.pd-catalog-search{display:none}.pd-catalog-group[hidden]{display:block!important}.pd-catalog-cards .card[hidden]{display:flex!important}}
+#catalog-search-form #app-print {
+  grid-column: 1 / -1;
+  justify-self: start;
+  width: auto;
+}
+#app-print:disabled { opacity: .6; cursor: default; }
+
+@media print {
+  .pd-app-directory { background: white; color: black; }
+  .pd-app-directory > :not(.catalog-heading, #buscar-apps, #catalogo-apps),
+  .catalog-heading svg, .catalog-heading p,
+  #buscar-apps > :not(form), #catalog-search-form > :not(#app-results),
+  #catalogo-apps > :not(.pd-catalog-group), #catalogo-apps .catalog-return,
+  #catalogo-apps .thumb, #catalogo-apps .chev, #catalogo-apps .badge { display: none !important; }
+  .catalog-heading, #buscar-apps, #catalogo-apps {
+    background: white; color: black; padding: 0; margin: 0; max-width: none; border: 0;
+  }
+  .catalog-heading h1 { justify-content: start; font-size: 18pt; }
+  #catalog-search-form { display: block; margin: 4pt 0; }
+  #catalogo-apps .pd-catalog-group { margin: 12pt 0; }
+  #catalogo-apps h2 { break-after: avoid; }
+  #catalogo-apps .pd-catalog-cards { display: block; }
+  #catalogo-apps .card {
+    display: block; break-inside: avoid; margin: 0 0 6pt; padding: 4pt 0;
+    box-shadow: none; border: 0; border-bottom: 1px solid #ccc; border-radius: 0;
+  }
+  #catalogo-apps .card::after {
+    content: "praia.digital" attr(href);
+    display: block; font-size: 9pt; color: #333; overflow-wrap: anywhere;
+  }
+}
