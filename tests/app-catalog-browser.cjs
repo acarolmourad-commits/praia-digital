@@ -24,6 +24,25 @@ try{for(const width of [360,768,1280]){
   const visibleCards = page.locator('.pd-catalog-group .card:visible');
   assert.equal(await visibleCards.count(),16);
   const goal = page.locator('#app-goal');
+  const costPath = '/apps/custo-de-compra/';
+  for (const term of ['ITBI', 'escritura', 'registro']) {
+    await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
+    assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [costPath], term);
+    const result = page.locator('#app-only-result');
+    assert.ok(await result.isVisible(), term);
+    await result.click();
+    assert.equal(page.url(), new URL(costPath, origin).href, term);
+  }
+  await page.goto(origin + '/apps/#buscar-apps');
+  for (const term of ['SAC', 'Price']) {
+    await page.locator('#app-query').fill(term);
+    assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [
+      '/apps/alugar-ou-comprar/', '/apps/calculadora-financiamento/'
+    ], term);
+    assert.ok(await page.locator('#app-only-result').isHidden());
+  }
+  await page.locator('#app-clear').click();
+  assert.equal(await visibleCards.count(), 16);
   await goal.selectOption('grupo-comparar');
   await page.locator('#app-query').fill('noites');
   assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.getAttribute('href'))), [
