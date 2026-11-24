@@ -67,6 +67,13 @@ function render(){
   list.innerHTML = problemLinks.join('');
   empty.hidden = problemLinks.length > 0;
  }
+ const resume = get('visit-next');
+ if (resume) {
+   const next = [...ALLOWED].find(key => !state[key]);
+   resume.hidden = next === undefined;
+   if (next !== undefined) resume.href = '#vistoria-' + next + '-ok';
+   else resume.removeAttribute('href');
+ }
  const done=Object.keys(state).length,ok=Object.values(state).filter(v=>v==='ok').length,pct=Math.round(done/total*100);
  get('bar').style.width=pct+'%';get('score').textContent=pct+'%';get('score').style.color='#0369a1';
  get('verdict').textContent=`${done}/${total} itens registrados: ${ok} marcados OK, ${done-ok} com problema e ${total-done} sem marcação. Não é avaliação de segurança.`;

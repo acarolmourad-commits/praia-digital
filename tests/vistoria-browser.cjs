@@ -19,6 +19,26 @@ for(const item of await items.all()){
     assert(box.width>=44 && box.height>=44);
   }
 }
+// Resuming moves focus without marking the item, including after a reload.
+const resume = page.getByRole('link', {name:'Ir ao primeiro item sem marcação'});
+await resume.press('Enter');
+assert.equal(await page.evaluate(() => document.activeElement.id), 'vistoria-0_0-ok');
+assert.equal(await page.locator('#groups [aria-pressed="true"]').count(), 0);
+await page.keyboard.press('Enter');
+await page.reload();
+await resume.press('Enter');
+assert.equal(await page.evaluate(() => document.activeElement.id), 'vistoria-0_1-ok');
+await page.locator('#vistoria-0_0-ok').press('Enter');
+assert.equal(await resume.getAttribute('href'), '#vistoria-0_0-ok');
+const allMarked = Object.fromEntries(await items.evaluateAll(rows => rows.map(row =>
+  [row.querySelector('span').id.slice('item-'.length), 'bad'])));
+await page.evaluate(state => localStorage.setItem('pd-vistoria-v1',JSON.stringify(state)),allMarked);
+await page.reload();
+assert.equal(await resume.count(), 0);
+assert.match(await page.locator('#verdict').innerText(), /26 com problema e 0 sem marcação/);
+page.once('dialog', dialog=>dialog.accept());
+await page.locator('#reset').click();
+assert.equal(await resume.getAttribute('href'), '#vistoria-0_0-ok');
 // Print must keep the final group and identify states even in black and white.
 const distance=page.locator('#vistoria-4_0-ok');
 const parking=page.locator('#vistoria-4_3-bad');
@@ -36,6 +56,7 @@ await page.emulateMedia({media:'print'});
 const printed=page.locator('#groups .item:visible');
 assert.equal(await printed.count(),26);
 assert.equal(await problems.isVisible(), false);
+assert.equal(await resume.isVisible(), false);
 assert.equal(await page.locator('#groups .card:visible').count(),5);
 for (const [label,state] of [
   ['Distância real da praia conferida','OK'],
