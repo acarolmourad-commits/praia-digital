@@ -114,5 +114,19 @@
 
 .pd-catalog-share { grid-column: 1 / -1; border-top: 1px solid #bbd8d1; padding-top: 16px; }
 .pd-catalog-share p { margin: 0 0 10px; }
+.pd-catalog-search .pd-catalog-share-choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.pd-catalog-share-choice input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-height: 0;
+  margin: 0;
+  accent-color: #006c67;
+  flex: 0 0 auto;
+}
 #catalog-search-form #app-copy { width: auto; margin-top: 10px; }
 #app-copy-status:not(:empty) { margin-top: 10px; }
