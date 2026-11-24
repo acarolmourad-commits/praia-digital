@@ -409,7 +409,11 @@ async function houseListing(page,width){
   assert(wa.startsWith('https://wa.me/5511954346288?text='));
   await page.screenshot({path:path.join(output,`house-${width}.png`)});
   await page.locator('a.back').click();
-  const card=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/casa-terrea-bertioga-675m2.html"]')});
+  await page.waitForURL(url => url.pathname === '/imoveis.html');
+  const card = page.locator('#lista-imoveis .property-card').filter({
+    has: page.locator('a[href="imoveis/casa-terrea-bertioga-675m2.html"]')
+  });
+  await card.first().waitFor({ state: 'visible' });
   assert.equal(await card.count(),1);assert.match(await card.innerText(),/1\.800\.000/);
 }
 
