@@ -193,8 +193,11 @@ async function homepage(page, width) {
   await page.locator('#academy').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(output,`academy-${width}.png`)});
   assert.equal(await page.locator('#analise a[href="/apps/"]').count(), 1);
-  assert.match(await page.locator('#produtos-comparacao').innerText(), /39\s*\/\s*imóvel\s*\/\s*mês/);
-  assert.match(await page.locator('#produtos-comparacao').innerText(), /499\s*\/\s*anúncio\s*\/\s*plataforma/);
+  const products = page.locator('#produtos-comparacao');
+  assert.doesNotMatch(await products.innerText(), /R\$\s*\d/);
+  for (const href of ['/entrega-kit-temporada.html', '/entrega-descricoes-ia.html', '/servicos/anuncios-airbnb-booking.html', '/planos.html']) {
+    assert(await products.locator(`a[href="${href}"]`).isVisible(), href);
+  }
   await noOverflow(page, `home ${width}px`);
   await page.locator('footer').scrollIntoViewIfNeeded();
   await noOverflow(page, `footer ${width}px`);
