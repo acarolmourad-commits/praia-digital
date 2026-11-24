@@ -159,11 +159,36 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
     console.log('320px initial layout unchanged; baseline anchor hidden and candidate anchor clear after scrolling settles.');
     const nojs = await browser.newContext({javaScriptEnabled:false});
     const page = await nojs.newPage();
-    await page.goto('file://' + path.join(root,'apps/guia-de-uso.html'));
-    assert.equal(await page.locator('.guide-route').count(),4);
-    assert.equal(await page.locator('#guide-actions').isVisible(),false);
-    await page.locator('input[type=checkbox]').first().check();
-    assert.equal(await page.locator('input:checked').count(),1);
+    const templatePath = '/downloads/ficha-acomodacao.txt';
+    const guidePath = '/apps/guia-de-uso.html';
+    const server = require('node:http').createServer((request, response) => {
+      const file = request.url;
+      if (file !== templatePath && file !== guidePath) {
+        response.writeHead(404).end();
+        return;
+      }
+      response.setHeader('Content-Type', file === templatePath ? 'text/plain;charset=utf-8' : 'text/html;charset=utf-8');
+      response.end(fs.readFileSync(path.join(root, file)));
+    });
+    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+    try {
+      await page.goto(`http://127.0.0.1:${server.address().port}${guidePath}#qual-arquivo-guardar`);
+      const files = page.locator('#qual-arquivo-guardar');
+      const downloadReady = page.waitForEvent('download');
+      await files.getByRole('link',{name:'baixe a ficha em branco em TXT'}).press('Enter');
+      const template = await downloadReady;
+      assert.equal(template.suggestedFilename(),'ficha-acomodacao.txt');
+      assert.deepEqual(fs.readFileSync(await template.path()),fs.readFileSync(path.join(root,'downloads/ficha-acomodacao.txt')));
+      await files.getByRole('link',{name:'opções de impressão e download'}).press('Enter');
+      assert.equal(new URL(page.url()).hash,'#salvar-conferencias');
+      assert.equal(await page.locator('#salvar-conferencias').isVisible(),true);
+      assert.equal(await page.locator('.guide-route').count(),4);
+      assert.equal(await page.locator('#guide-actions').isVisible(),false);
+      await page.locator('input[type=checkbox]').first().check();
+      assert.equal(await page.locator('input:checked').count(),1);
+    } finally {
+      server.close();
+    }
     await nojs.close();
     console.log('Guide passed at 320,390,1280px: links to 16 apps, anchors, checklist/reset, keyboard, print, no-JS.');
   } finally { await browser.close(); }
