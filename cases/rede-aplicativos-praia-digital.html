@@ -25,6 +25,7 @@
     <summary>Encontrar um exemplo por tarefa</summary>
     <ul>
       <li><a href="#cidade-sem-pontuacao">Comparar cidades com dados incompletos</a></li>
+      <li><a href="#prazo-da-entrada">Recalcular o prazo da entrada pelo teclado</a></li>
       <li><a href="#compartilhar-objetivo">Compartilhar ferramentas para uma reunião</a></li>
       <li><a href="#buscar-noites">Escolher o simulador de locação pelas noites do calendário</a></li>
       <li><a href="#ampliar-busca">Encontrar uma ferramenta em outro objetivo</a></li>
@@ -47,6 +48,12 @@
   <p>Para reproduzir, alterne entre “Investidor”, “Renda de temporada” e “Morar bem” e leia a última linha da tabela. A posição de Caraguatatuba indica quais dados ainda é preciso buscar para comparar a cidade com as demais.</p>
   <p>Se estiver avaliando uma hospedagem específica, abra o <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>. Em “Pontos a confirmar”, anote, por exemplo, “Quantas noites ficaram disponíveis no período analisado?”. Quando receber a informação, registre a origem e o período em “Fontes e datas de confirmação”. Assim a comparação municipal e a apuração sobre o imóvel ficam identificadas no relatório.</p>
   <p><a href="https://github.com/acarolmourad-commits/praia-digital/blob/6d95560701f342f2fd034b04a6beccea23b46412/tests/test_city_comparator.cjs">Ver o teste dos três perfis e dos indicadores ausentes</a>.</p>
+</section>
+<section aria-labelledby="prazo-da-entrada">
+  <h2 id="prazo-da-entrada">O que muda no prazo quando o aporte dobra?</h2>
+  <p>No exemplo inicial do <a href="/apps/planejador-entrada/#comparar-aportes">Planejador de Entrada</a>, a meta é atingida em 30 meses. Com o dobro do aporte e as demais premissas mantidas, o resultado passa a 15 meses. Esses prazos pertencem ao exemplo com rendimento zero.</p>
+  <p>Para repetir, calcule uma vez, edite o campo de aporte e pressione Enter. O prazo anterior desaparece ao editar. Se o campo ficar vazio, o aplicativo indica o que falta e leva o foco ao campo. Depois de corrigir, pressione Enter para obter o novo prazo.</p>
+  <p>Para continuar o orçamento, leve as despesas de escritura e registro ao <a href="/apps/custo-de-compra/">aplicativo de custos de compra</a>.</p>
 </section>
 <section aria-labelledby="compartilhar-objetivo">
 <h2 id="compartilhar-objetivo">Uma seleção que a equipe pode reabrir</h2>
@@ -202,6 +209,9 @@
 <h2 id="imprimir-selecao">Do catálogo à folha de vistoria</h2>
 <p>Ao pesquisar “vistoria”, o catálogo mostrava as ferramentas correspondentes na tela, mas a impressão incluía os 16 aplicativos. Ajustamos a folha impressa para respeitar os filtros e mostrar o endereço de cada ferramenta selecionada.</p>
 <p>Na próxima visita, <a href="/apps/#buscar-apps">busque “vistoria” no catálogo</a> e escolha “Imprimir seleção ou salvar em PDF”. Na folha, use o endereço do <a href="/apps/checklist-vistoria/">Checklist de Vistoria</a> para abrir a ferramenta. Depois da visita, o <a href="/apps/relatorio-imovel/">Relatório do Imóvel</a> ajuda a registrar as observações e as perguntas que ficaram em aberto.</p>
+<h3 id="busca-entrega-das-chaves">Quando a visita é para entregar as chaves</h3>
+<p>Uma pessoa pode chegar ao catálogo sabendo qual é a tarefa, sem conhecer o nome da ferramenta. As buscas por “entrega das chaves” e “vistoria de saída” agora encontram o Checklist de Vistoria. <a href="/apps/?busca=entrega%20das%20chaves#buscar-apps">Abra a busca por entrega das chaves</a> ou vá direto ao <a href="/apps/checklist-vistoria/#entrega-das-chaves">roteiro para comparar as duas visitas</a>.</p>
+<p>Experimente com a janela de um quarto. Guarde o PDF de entrada, faça a segunda observação e confira o nome e a data de cada cópia antes de registrar a pergunta no relatório.</p>
 </section>
 <section aria-labelledby="contato-na-ficha">
 <h2 id="contato-na-ficha">Dois botões para falar sobre o mesmo apartamento</h2>
