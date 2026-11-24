@@ -93,7 +93,9 @@ const deadline = setTimeout(() => {
         assert.equal(stablePilotSamples, 3, 'Pilot link must stabilize before click');
         await pilotLink.click();
         await page.waitForURL('**/ia/marketplaces/piloto/');
-        await page.locator('a[href="/apps/guia-de-uso.html#vender"]').click();
+        const returnToPricing = page.getByRole('link', { name: 'Voltar ao roteiro de precificação', exact: true });
+        assert.equal(await returnToPricing.getAttribute('href'), '/apps/guia-de-uso.html#vender');
+        await returnToPricing.click();
         await page.waitForURL('**/apps/guia-de-uso.html#vender');
         assert.equal(await page.locator('input[type=checkbox]').count(), 12);
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
