@@ -6,6 +6,12 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+ROUTES = {
+    'comprar': 'Planejar uma compra',
+    'locar': 'Comparar locações',
+    'anunciar': 'Preparar um anúncio',
+    'vender': 'Precificar um produto',
+}
 
 def render(groups, current=None, guidance=None):
     esc = html.escape
@@ -18,6 +24,7 @@ def render(groups, current=None, guidance=None):
             '<h3 id="pd-workflow-title">Use este resultado na sua rotina</h3>'
             '<dl><div><dt>Antes de começar</dt><dd>' + esc(guide['prepare']) + '</dd></div>'
             '<div><dt>O que registrar</dt><dd>' + esc(guide['record']) + '</dd></div></dl>'
+            + '<p class="pd-route-link"><a href="/apps/guia-de-uso.html#' + esc(guide['route']) + '">Abrir roteiro: ' + esc(ROUTES[guide['route']]) + '</a></p>'
             + ('<p><strong>Continue sua análise</strong></p><ul class="pd-next-links">' + next_links + '</ul>' if next_links else '<p>Explore outras ferramentas no catálogo ao final desta seção.</p>') + '</div>')
     sections = []
     for group in groups:
@@ -47,6 +54,8 @@ def build(root=ROOT, check=False):
     for slug, guide in guidance.items():
         if not guide['prepare'].strip() or not guide['record'].strip() or any(s not in slugs or s == slug for s in guide['next']):
             raise ValueError('Invalid practical guidance: ' + slug)
+        if guide.get('route') not in ROUTES:
+            raise ValueError('Invalid guide route: ' + slug)
     changed = []
     for slug in [None] + slugs:
         path = root / 'apps' / (slug or '') / 'index.html'
