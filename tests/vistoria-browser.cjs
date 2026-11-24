@@ -7,6 +7,18 @@ for(const width of [390,1280]){
 const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname!=='local.test')return route.abort();let p=path.join(root,u.pathname);if(u.pathname.endsWith('/'))p=path.join(p,'index.html');if(!fs.existsSync(p)||!fs.statSync(p).isFile())return route.abort();if(p.endsWith('shared.js')||p.endsWith('related-ads.js'))return route.fulfill({body:''});await route.fulfill({path:p});});
 await page.goto('http://local.test/apps/checklist-vistoria/');
+// Every toggle has a unique accessible name that includes its observation.
+const items=page.locator('#groups .item');
+assert.equal(await items.count(),26);
+for(const item of await items.all()){
+  const label=await item.locator('span').innerText();
+  for(const action of ['✓ OK','✗ Problema']){
+    const toggle=page.getByRole('button',{name:action+' '+label,exact:true});
+    assert.equal(await toggle.count(),1);
+    const box=await toggle.boundingBox();
+    assert(box.width>=44 && box.height>=44);
+  }
+}
 // Print must keep the final group and identify states even in black and white.
 const distance=page.locator('#vistoria-4_0-ok');
 const parking=page.locator('#vistoria-4_3-bad');

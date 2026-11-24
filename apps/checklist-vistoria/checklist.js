@@ -59,7 +59,7 @@ function render(){
   if (value === 'bad') {
     problemLinks.push(`<li><a href="#vistoria-${key}-bad">${t}</a></li>`);
   }
-  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span id="vistoria-${key}-label" style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-labelledby="vistoria-${key}-ok vistoria-${key}-label" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-labelledby="vistoria-${key}-bad vistoria-${key}-label" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
+  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span id="item-${key}" style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-labelledby="vistoria-${key}-ok item-${key}" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-labelledby="vistoria-${key}-bad item-${key}" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
  }).join('')}</div>`).join('');
  get('visit-problems-list').innerHTML = problemLinks.join('');
  get('visit-problems-empty').hidden = problemLinks.length > 0;
