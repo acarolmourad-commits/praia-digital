@@ -50,11 +50,34 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true}));
       });
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
+      // Export the actual restored state, including unchecked items and route links.
+      const downloadPromise = page.waitForEvent('download');
+      await page.getByRole('button', {name:'Baixar checklist em texto'}).press('Enter');
+      const download = await downloadPromise;
+      assert.match(download.suggestedFilename(), /^praia-digital-checklist-\d{4}-\d{2}-\d{2}\.txt$/);
+      const exportedPath = path.join(output, `checklist-${width}.txt`);
+      await download.saveAs(exportedPath);
+      const exported = fs.readFileSync(exportedPath, 'utf8');
+      assert.equal((exported.match(/\[x\] Marcado nesta consulta/g) || []).length, 2);
+      assert.equal((exported.match(/\[ \] A conferir \(não marcado\)/g) || []).length, 10);
+      assert.match(exported, /America\/Sao_Paulo/);
+      assert.match(exported, /Não comprovam aprovação, execução ou resultado/);
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        assert.ok(exported.includes(`https://praia.digital/apps/guia-de-uso.html#${anchor}`));
+      }
+      assert.equal((exported.match(/Responsável: não identificado/g) || []).length, 4);
       await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
       await page.locator('#guide-reset').click();
       assert.equal(await page.locator('input:checked').count(), 0);
       assert.match(await page.locator('#guide-progress').innerText(), /^0 de 12/);
+      const resetDownloadPromise = page.waitForEvent('download');
+      await page.locator('#guide-download').click();
+      const resetDownload = await resetDownloadPromise;
+      await resetDownload.saveAs(exportedPath);
+      const resetExport = fs.readFileSync(exportedPath, 'utf8');
+      assert.equal((resetExport.match(/\[x\]/g) || []).length, 0);
+      assert.equal((resetExport.match(/\[ \] A conferir/g) || []).length, 12);
       await page.evaluate(() => {window.print = () => {window.printCalled = true;};});
       await page.locator('#guide-print').click();
       assert.equal(await page.evaluate(() => window.printCalled), true);
