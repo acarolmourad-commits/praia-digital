@@ -9,6 +9,7 @@
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
   const empty = document.getElementById('app-empty');
+  const broaden = document.getElementById('app-search-all');
   const printSelection = document.getElementById('app-print');
   const shareLink = document.getElementById('app-share-link');
   const copySelection = document.getElementById('app-copy');
@@ -32,10 +33,13 @@
   function filter() {
     const terms = normalize(query.value).split(' ').filter(Boolean);
     let count = 0;
+    let otherMatches = 0;
     for (const group of groups) {
       let visible = 0;
       for (const item of group.cards) {
-        const match = (!goal.value || group.id === goal.value) && terms.every(term => item.text.includes(term));
+        const matchesText = terms.every(term => item.text.includes(term));
+        const match = matchesText && (!goal.value || group.id === goal.value);
+        if (matchesText && !match) otherMatches++;
         item.card.hidden = !match;
         if (match) visible++;
       }
@@ -44,6 +48,14 @@
     }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
     empty.hidden = count !== 0;
+    if (broaden) {
+      broaden.hidden = count !== 0 || otherMatches === 0;
+      if (!broaden.hidden) {
+        status.textContent += otherMatches === 1
+          ? ' Há uma ferramenta correspondente em outro objetivo.'
+          : ' Há ' + otherMatches + ' ferramentas correspondentes em outros objetivos.';
+      }
+    }
     if (printSelection) printSelection.disabled = count === 0;
     if (shareLink) shareLink.value = objectiveUrl();
     if (copyStatus) copyStatus.textContent = '';
@@ -86,6 +98,12 @@
   });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
+  if (broaden) broaden.addEventListener('click', () => {
+    goal.value = '';
+    saveObjective();
+    filter();
+    query.focus();
+  });
   const objectives = document.getElementById('objetivos-apps');
   let handledHash = window.location.hash;
   if (objectives) objectives.addEventListener('click', event => {

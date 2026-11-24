@@ -21,7 +21,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=20261124-copiar-objetivo\">",
+      "<script defer src=\"/js/app-catalog.js?v=baab3ca7788c\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
@@ -30,7 +30,8 @@
       "<button id=\"app-clear\" type=\"button\">",
       "<button type=\"button\" id=\"app-print\">",
       "<input id=\"app-share-link\" type=\"url\" readonly aria-describedby=\"app-share-help\">",
-      "<button type=\"button\" id=\"app-copy\">"
+      "<button type=\"button\" id=\"app-copy\">",
+      "<button id=\"app-search-all\" type=\"button\" hidden>"
     ]
   },
   "apps/alugar-ou-comprar/index.html": {
@@ -296,7 +297,12 @@
       "<button class=\"button secondary\" id=\"clear\" type=\"button\">",
       "<button id=\"copy\" type=\"button\" class=\"button secondary\" disabled>",
       "<button id=\"print\" type=\"button\" class=\"button primary\" disabled>",
-      "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">"
+      "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<button type=\"reset\" class=\"button secondary\">"
     ]
   },
   "apps/relatorio-imovel/index.html": {
