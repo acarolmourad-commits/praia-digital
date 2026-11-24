@@ -191,6 +191,11 @@ try{for(const width of [360,768,1280]){
   await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});
   for(const link of links){
     await page.goto(origin+link);
+    const shortcut = page.getByRole('link', {name: 'Ver aplicativos relacionados', exact: true});
+    assert.ok(await shortcut.isVisible(), link);
+    assert.ok((await shortcut.boundingBox()).height >= 44, link);
+    await shortcut.press('Enter');
+    assert.equal(await page.evaluate(() => document.activeElement.id), 'pd-network-title', link);
     assert.equal(await page.locator('.pd-workflow h3').count(),1,link);
     assert.equal(await page.locator('.pd-workflow dd').count(),2,link);
     assert.ok(await page.locator('.pd-workflow').isVisible(),link);

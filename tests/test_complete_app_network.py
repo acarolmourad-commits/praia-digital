@@ -63,6 +63,7 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertIn('/apps/'+other+'/', page.links, slug+' -> '+other)
             self.assertIn('/#rede-apps', page.links)
             self.assertIn('/apps/guia-de-uso.html', page.links)
+            self.assertEqual(page.links.count('#pd-network-title'), 1, slug)
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
 
