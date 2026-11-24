@@ -30,10 +30,15 @@ def repair_heading(path, text):
                   text, count=1, flags=re.I)
 
 def header_for_page(path, header):
-    """Keep the IA proposal journey consistent without changing other site journeys."""
+    """Use the contact action configured for this page."""
     targets = {
         'servicos-ia.html': ('/solicitar-servico.html?servico=Projeto%20personalizado', 'Solicitar proposta'),
         'solicitar-servico.html': ('#brief-form', 'Preencher solicitação'),
+        'imoveis/apartamento-vicente-carvalho-ii-saoc-45m2.html': (
+            'mailto:comercial@praia.digital?subject=Interesse%3A%20Apartamento%20de%202%20'
+            'dormit%C3%B3rios%20no%20Vicente%20de%20Carvalho%20II%20(SAOC)',
+            'E-mail da corretora',
+        ),
     }
     if path not in targets:
         return header
