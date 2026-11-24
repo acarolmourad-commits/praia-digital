@@ -35,6 +35,19 @@ test('render restores only the focused checklist button without scrolling or ste
  doc.activeElement={id:'reset'};ctx.resetAll();assert.equal(doc.activeElement.id,'reset');assert.equal(focusCalls,2);
 });
 
+test('HTML references the current script and legacy markup still supports marking items', () => {
+ const script = fs.readFileSync(require.resolve('../apps/checklist-vistoria/checklist.js'), 'utf8');
+ const revision = require('node:crypto').createHash('sha256').update(script).digest('hex').slice(0, 12);
+ const html = fs.readFileSync(require.resolve('../apps/checklist-vistoria/index.html'), 'utf8');
+ assert.ok(html.includes('/apps/checklist-vistoria/checklist.js?v=' + revision + '"'));
+ const elements = {};
+ for (const id of ['groups', 'bar', 'score', 'verdict', 'storage-status']) elements[id] = {style: {}};
+ const ctx = {document: {getElementById: id => elements[id]}, localStorage: storage()};
+ vm.runInNewContext(script, ctx);
+ ctx.mark('4_3', 'bad');
+ assert.match(elements.verdict.textContent, /1 com problema/);
+});
+
 test('orientação editorial usa fontes primárias e não promete conformidade ou preço de laudo',()=>{
  const html=fs.readFileSync(require.resolve('../apps/checklist-vistoria/index.html'),'utf8');
  assert.match(html,/quando solicitado/);assert.match(html,/desgaste do uso normal/);
