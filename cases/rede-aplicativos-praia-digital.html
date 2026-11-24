@@ -98,6 +98,12 @@
 <p>Experimente com este cenário fictício: o visitante deixa o carro com a equipe na entrada e o veículo segue para um estacionamento parceiro. Na vistoria, confirme onde o hóspede deve parar. No relatório, registre a fonte e deixe em aberto qualquer horário que ainda dependa de confirmação. Leia a descrição publicada com o <a href="/apps/revisor-anuncios/#editorial-title">checklist editorial do Revisor</a> e confira se a diferença entre entrada e estacionamento fica clara.</p>
 </section>
 
+<section aria-labelledby="conferencia-categoria">
+<h2 id="conferencia-categoria">Uma foto de varanda na categoria errada</h2>
+<p>Neste exemplo fictício, o site mostra duas categorias e o canal de reservas exibe a mesma foto de varanda nas duas. A equipe confirma que apenas uma dispõe de varanda privativa. A ficha guarda essa confirmação e identifica a página que precisa de ajuste.</p>
+<p>No <a href="/apps/guia-de-uso.html#conferencia-reservas">roteiro de conferência entre canais</a>, a Oficina organiza a informação confirmada, o Revisor orienta a leitura da galeria e o Relatório registra a alteração solicitada. Depois da correção, abra os dois anúncios e confira se a foto e a descrição associam a varanda à categoria certa.</p>
+</section>
+
 <section aria-labelledby="conferir-repasse">
 <h2 id="conferir-repasse">A margem simulada e o repasse do pedido</h2>
 <p>Uma loja termina uma campanha e recebe menos do que esperava por um pedido. Para descobrir de onde vem a diferença, vale guardar a simulação original e conferir o extrato em três passos.</p>
@@ -122,9 +128,10 @@
 <section aria-labelledby="pauta-de-visita">
   <h2 id="pauta-de-visita">Da visita às perguntas para o proprietário</h2>
   <p>Uma vaga identificada na visita pode deixar uma dúvida prática. Ela é privativa ou precisa permanecer livre para outro carro? Use o <a href="/apps/checklist-vistoria/">Checklist de vistoria</a> para registrar o que observou e leve a pergunta ao <a href="/apps/relatorio-imovel/#pauta-de-retorno">Relatório do imóvel</a>.</p>
-  <p>No relatório, anote a ficha consultada e sua data em “Fontes e datas de confirmação”. Em “Pontos a confirmar”, escreva a pergunta sobre a vaga. Em “Próximos passos”, registre quem vai consultar o proprietário. Abra a pauta e copie apenas o que deseja encaminhar.</p>
-  <p>Para experimentar com dados fictícios, carregue o exemplo do relatório e abra a pauta. A identificação do exemplo acompanha o texto. Ao limpar o formulário, a pauta também é apagada.</p>
+  <p>No relatório, anote a ficha consultada e sua data em “Fontes e datas de confirmação”. Em “Pontos a confirmar”, escreva a pergunta sobre a vaga. Em “Próximos passos”, registre quem vai consultar o proprietário. Abra a pauta e selecione “Copiar pauta completa”. Ao colar em um documento em branco, confira a referência, a fonte, a pergunta e o próximo passo. Os campos de preço e contato têm outro lugar no relatório e ficam fora da pauta. Para encaminhar só a pergunta, selecione o trecho no campo de texto.</p>
+  <p>Para experimentar com dados fictícios, carregue o exemplo do relatório e abra a pauta. A identificação do exemplo acompanha o texto. Ao limpar o formulário, a pauta também é apagada. Para guardar uma cópia em papel, experimente imprimir o relatório com apenas uma pergunta preenchida. Em A4, o rodapé acompanha a pergunta na mesma folha. Relatórios mais longos podem ocupar várias páginas.</p>
   <p>Para guardar a revisão completa, use <a href="/apps/relatorio-imovel/#guardar-relatorio">Baixar relatório em texto</a>. O arquivo reúne os 17 campos, mantém as perguntas em aberto e identifica o exemplo fictício. Experimente alterar uma pergunta antes de baixar: a cópia deve refletir o texto atual. Confira os dados que deseja compartilhar e a data de referência registrada por quem preencheu. O horário da exportação indica quando o arquivo foi gerado. <a href="https://github.com/acarolmourad-commits/praia-digital/pull/344">Veja a implementação e a verificação do download</a>.</p>
+  <p>Na verificação da pauta, a equipe preencheu uma pergunta fictícia sobre a vaga e um contato de teste. Ao acionar “Copiar pauta completa” pelo teclado, a cópia continha a pergunta e deixava de fora o contato. O <a href="https://github.com/acarolmourad-commits/praia-digital/blob/d8a01e83690ed4d53595c4c678b1b87d8505be16/tests/report-download-browser.cjs">teste público da cópia e da impressão</a> registra esse resultado. Para aplicar o mesmo cuidado a outros documentos, consulte <a href="/apps/guia-de-uso.html#qual-arquivo-guardar">qual arquivo guardar em cada etapa</a>.</p>
 </section>
 <section aria-labelledby="marcacao-por-teclado">
   <h2 id="marcacao-por-teclado">Como identificar a vaga de garagem na lista de botões</h2>
