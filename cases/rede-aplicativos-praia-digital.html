@@ -43,6 +43,11 @@
   <p>Se estiver avaliando uma hospedagem específica, abra o <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>. Em “Pontos a confirmar”, anote, por exemplo, “Quantas noites ficaram disponíveis no período analisado?”. Quando receber a informação, registre a origem e o período em “Fontes e datas de confirmação”. Assim a comparação municipal e a apuração sobre o imóvel ficam identificadas no relatório.</p>
   <p><a href="https://github.com/acarolmourad-commits/praia-digital/blob/6d95560701f342f2fd034b04a6beccea23b46412/tests/test_city_comparator.cjs">Ver o teste dos três perfis e dos indicadores ausentes</a>.</p>
 </section>
+<section aria-labelledby="compartilhar-objetivo">
+<h2 id="compartilhar-objetivo">Uma seleção que a equipe pode reabrir</h2>
+<p>Quem escolhia um objetivo no catálogo e encaminhava o endereço da página enviava a lista completa de 16 aplicativos. Agora o endereço guarda o objetivo escolhido. Uma pessoa pode preparar a reunião e outra pode abrir o mesmo grupo de ferramentas no celular.</p>
+<p>Experimente com <a href="/apps/?objetivo=planejar#buscar-apps">Planejar a compra</a>. O catálogo exibe seis ferramentas. Digite “entrada” para encontrar o <a href="/apps/planejador-entrada/">Planejador de Entrada</a>. Quem abrir o endereço em uma nova aba verá as seis ferramentas do objetivo. A busca por “entrada” vale só na aba em que foi feita. Use “Limpar filtros” para voltar aos 16 aplicativos.</p>
+</section>
 <section aria-labelledby="desafio"><h2 id="desafio">O desafio de organização</h2><p>Uma pessoa pode começar comparando cidades, precisar revisar o orçamento de compra e terminar organizando uma ficha do imóvel. Um catálogo com ferramentas isoladas não explica sozinho o que levar de uma etapa para a seguinte.</p><p>O trabalho documentado aqui pertence à própria Praia Digital. Ele demonstra uma implementação de conteúdo e navegação; não apresenta depoimento de cliente, receita, ganho de conversão ou resultado comercial.</p></section>
 <section aria-labelledby="implementacao"><h2 id="implementacao">O que está implementado</h2><ul><li><strong>Catálogo com 16 aplicativos:</strong> o registro do projeto organiza ferramentas de compra, comparação, revisão de anúncios e custos de marketplaces.</li><li><strong>Navegação compartilhada:</strong> cada aplicativo apresenta links para os outros aplicativos, para o catálogo e para os roteiros da página inicial.</li><li><strong>Orientação por etapa:</strong> os blocos explicam o que preparar, o que registrar e qual ferramenta pode ser usada em seguida.</li><li><strong>Verificações de manutenção:</strong> testes conferem a cobertura dos links, a ausência de IDs repetidos e a correspondência entre o registro e a navegação gerada.</li></ul><p>O código dessas características pode ser consultado nas referências abaixo, fixadas em uma versão do repositório.</p></section>
 <section aria-labelledby="visita-com-animais">
@@ -113,10 +118,10 @@
   <p>No relatório, anote a ficha consultada e sua data em “Fontes e datas de confirmação”. Em “Pontos a confirmar”, escreva a pergunta sobre a vaga. Em “Próximos passos”, registre quem vai consultar o proprietário. Abra a pauta e copie apenas o que deseja encaminhar.</p>
   <p>Para experimentar com dados fictícios, carregue o exemplo do relatório e abra a pauta. A identificação do exemplo acompanha o texto. Ao limpar o formulário, a pauta também é apagada.</p>
 </section>
-<section aria-labelledby="compartilhar-objetivo">
-<h2 id="compartilhar-objetivo">Uma seleção que a equipe pode reabrir</h2>
-<p>Quem escolhia um objetivo no catálogo e encaminhava o endereço da página enviava a lista completa de 16 aplicativos. Agora o endereço guarda o objetivo escolhido. Uma pessoa pode preparar a reunião e outra pode abrir o mesmo grupo de ferramentas no celular.</p>
-<p>Experimente com <a href="/apps/?objetivo=planejar#buscar-apps">Planejar a compra</a>. O catálogo exibe seis ferramentas. Digite “entrada” para encontrar o <a href="/apps/planejador-entrada/">Planejador de Entrada</a>. Quem abrir o endereço em uma nova aba verá as seis ferramentas do objetivo. A busca por “entrada” vale só na aba em que foi feita. Use “Limpar filtros” para voltar aos 16 aplicativos.</p>
+<section aria-labelledby="entorno-no-pdf">
+<h2 id="entorno-no-pdf">A vaga de garagem também precisa aparecer na cópia da vistoria</h2>
+<p>O Checklist de Vistoria mostrava 26 itens na tela, mas quatro perguntas sobre o entorno desapareciam ao imprimir. Entre elas estava a conferência das vagas de garagem. A causa era uma regra de impressão que ocultava o último grupo da lista.</p>
+<p>Para repetir a conferência, abra o <a href="/apps/checklist-vistoria/">Checklist de Vistoria</a>, marque a distância da praia como “OK” e a vaga como “Problema”. No PDF, procure essas duas linhas no grupo Entorno. Os cinco grupos e os 26 itens aparecem, inclusive os que ficaram sem marcação. Depois, use o <a href="/apps/relatorio-imovel/">Relatório do Imóvel</a> para registrar o que precisa ser esclarecido com o responsável.</p>
 </section>
 <section aria-labelledby="imprimir-selecao">
 <h2 id="imprimir-selecao">Do catálogo à folha de vistoria</h2>
