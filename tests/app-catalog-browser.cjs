@@ -73,7 +73,7 @@ try{for(const width of [360,768,1280]){
   assert.equal(await visibleCards.count(),1);
   assert.equal(await includeTerm.isChecked(),false);
   await page.locator('#app-query').fill('anúncio');
-  assert.equal(new URL(page.url()).searchParams.has('busca'),false);
+  await page.waitForURL(url => !url.searchParams.has('busca'));
   assert.equal(await includeTerm.isChecked(),false);
   await page.goto(filteredUrl.href);
   await page.locator('#app-clear').click();
