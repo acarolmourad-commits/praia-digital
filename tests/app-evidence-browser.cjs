@@ -175,6 +175,20 @@ const deadline = setTimeout(() => {
         await page.waitForURL('**' + guide);
         await page.locator('main a[href="' + study + '"]').click();
         await page.waitForURL('**' + study);
+        phase = `${width}px js=${javaScriptEnabled} pauta de retorno`;
+        await page.locator('a[href="/apps/relatorio-imovel/#pauta-de-retorno"]').click();
+        await page.waitForURL('**/apps/relatorio-imovel/#pauta-de-retorno');
+        const panel = page.locator('#pauta-de-retorno');
+        if (javaScriptEnabled) {
+          assert.ok(await page.locator('#agenda-text').isVisible());
+          await page.locator('#pending').fill('A vaga é privativa?');
+          await page.locator('#contact').fill('Contato privado fictício');
+          assert.equal(await page.locator('#agenda-text').inputValue(), 'Pauta de retorno\n\nPontos a confirmar\nA vaga é privativa?');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+        } else {
+          if (!await panel.evaluate(node => node.open)) await panel.locator('summary').press('Enter');
+          assert.match(await panel.innerText(), /montar a pauta manualmente/);
+        }
         await context.close();
       }
     }
