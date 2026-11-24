@@ -26,7 +26,8 @@ def render(groups, current=None, guidance=None):
             '<dl><div><dt>Antes de começar</dt><dd>' + esc(guide['prepare']) + '</dd></div>'
             '<div><dt>O que registrar</dt><dd>' + esc(guide['record']) + '</dd></div></dl>'
             + '<p class="pd-route-link"><a href="/apps/guia-de-uso.html#' + esc(guide['route']) + '">Abrir roteiro: ' + esc(ROUTES[guide['route']]) + '</a></p>'
-            + ('<p><strong>Continue sua análise</strong></p><ul class="pd-next-links">' + next_links + '</ul>' if next_links else '<p>Explore outras ferramentas no catálogo ao final desta seção.</p>') + '</div>')
+            + '<p>Antes de abrir outra ferramenta, <a href="/apps/guia-de-uso.html#qual-arquivo-guardar">guarde uma cópia do que conferiu</a>. Os dados preenchidos não acompanham o link.</p>'
+            + ('<p><strong>Continue sua análise</strong></p><ul class="pd-next-links" role="list">' + next_links + '</ul>' if next_links else '<p>Explore outras ferramentas no catálogo ao final desta seção.</p>') + '</div>')
     sections = []
     for group in groups:
         links = []
