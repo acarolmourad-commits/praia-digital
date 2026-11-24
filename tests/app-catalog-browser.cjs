@@ -24,6 +24,20 @@ try{for(const width of [360,768,1280]){
   const visibleCards = page.locator('.pd-catalog-group .card:visible');
   assert.equal(await visibleCards.count(),16);
   const goal = page.locator('#app-goal');
+  const inspectionPath = '/apps/checklist-vistoria/';
+  for (const term of ['entrega das chaves', 'vistoria de saída']) {
+    await page.goto(origin + '/apps/?busca=' + encodeURIComponent(term) + '#buscar-apps');
+    assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [inspectionPath], term);
+    await page.locator('#app-only-result').press('Enter');
+    assert.equal(new URL(page.url()).pathname, inspectionPath);
+  }
+  await page.goto(origin + '/');
+  await page.locator('a[href="/apps/checklist-vistoria/#entrega-das-chaves"]').press('Enter');
+  assert.equal(new URL(page.url()).hash, '#entrega-das-chaves');
+  const handover = page.getByRole('region', {name: 'Como comparar a vistoria de entrada com a de saída'});
+  assert.ok(await handover.isVisible());
+  await handover.getByRole('link', {name:'Relatório do imóvel'}).press('Enter');
+  assert.ok(await page.locator('#evidencias-da-visita').isVisible());
   const costPath = '/apps/custo-de-compra/';
   for (const term of ['ITBI', 'escritura', 'registro']) {
     await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
