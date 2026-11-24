@@ -22,7 +22,7 @@
   const d=root.document,get=id=>d.getElementById(id),ids=Object.keys(fields);
   function clear(){get('res').hidden=true;get('erro').hidden=true;get('erro').textContent='';ids.forEach(id=>get(id).removeAttribute('aria-invalid'));}
   ids.forEach(id=>{get(id).addEventListener('input',clear);get(id).addEventListener('change',clear);});
-  get('calcular').addEventListener('click',()=>{
+  function mostrarResultado(){
     clear();const r=calculate(Object.fromEntries(ids.map(id=>[id,get(id).value])));
     if(r.error){get('erro').textContent=r.error;get('erro').hidden=false;get(r.field).setAttribute('aria-invalid','true');get(r.field).focus();return;}
     const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
@@ -31,5 +31,15 @@
     get('periodo').textContent=r.elapsed+' mês(es)';
     get('dica').textContent=!r.reached?'O horizonte terminou sem atingir a meta. Não foi calculada uma data de conclusão.':r.months===0?'A reserva informada já cobre a meta de entrada, não necessariamente os demais custos.':'Meta atingida apenas na projeção com estas premissas, sem garantia de resultado futuro.';
     get('res').hidden=false;
-  });
+  }
+  const form = get('form-entrada');
+  if (form) {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      mostrarResultado();
+    });
+  } else {
+    // A previously cached page uses a standalone button.
+    get('calcular').addEventListener('click', mostrarResultado);
+  }
 })(typeof window==='undefined'?globalThis:window);
