@@ -28,6 +28,23 @@ try{for(const width of [360,768,1280]){
   await page.locator('#app-query').fill('shópee');
   assert.equal(await visibleCards.count(),1,'Search ignores case and accents');
   assert.match(await page.locator('#app-results').innerText(),/^1 de 16/);
+  // A shared selection restores the visible tools, not data entered in any app.
+  await page.locator('#app-goal').selectOption('grupo-marketplaces');
+  const sharedUrl=await page.locator('#app-share-link').inputValue();
+  const receivedUrl=new URL(sharedUrl);receivedUrl.searchParams.set('utm_source','ignored');
+  await page.goto(receivedUrl.href);
+  assert.equal(await page.locator('#app-query').inputValue(),'shópee');
+  assert.equal(await page.locator('#app-goal').inputValue(),'grupo-marketplaces');
+  assert.equal(await visibleCards.count(),1,'Reopening the link restores both filters');
+  assert.equal(await page.locator('#app-share-link').inputValue(),sharedUrl,'Unrelated parameters are not shared');
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{document.body.dataset.copiedLink=text;}}}));
+  await page.getByRole('button',{name:'Copiar link da seleção'}).press('Enter');
+  await page.locator('#app-copy-status').getByText(/Link copiado/).waitFor();
+  assert.equal(await page.locator('body').getAttribute('data-copied-link'),sharedUrl);
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('Clipboard denied');}}}));
+  await page.getByRole('button',{name:'Copiar link da seleção'}).click();
+  await page.locator('#app-copy-status').getByText(/Selecione e copie/).waitFor();
+  assert.equal(await page.locator('#app-share-link').evaluate(el=>el===document.activeElement),true,'Manual copy remains available');
   const printButton = page.getByRole('button',{name:'Imprimir seleção ou salvar em PDF'});
   await page.evaluate(() => { window.print = () => { document.body.dataset.printRequested = 'yes'; }; });
   await printButton.press('Enter');
@@ -47,6 +64,8 @@ try{for(const width of [360,768,1280]){
   await page.locator('#app-clear').click();
   assert.equal(await visibleCards.count(),16);
   assert.equal(await page.locator('#app-query').evaluate(el=>el===document.activeElement),true);
+  assert.equal(await page.locator('#app-share-link').inputValue(),origin+'/apps/#buscar-apps');
+  assert.equal(await page.locator('#app-copy-status').innerText(),'');
   await page.emulateMedia({media:'print'});
   assert.equal(await visibleCards.count(),16,'Clearing the filters prints the full directory');
   await page.emulateMedia({media:'screen'});
@@ -57,6 +76,11 @@ try{for(const width of [360,768,1280]){
   await page.locator('#app-query').fill('<img src=x onerror=alert(1)>');
   assert.equal(await visibleCards.count(),0);
   assert.equal(await page.locator('#app-results img').count(),0,'Search stays text only');
+  await page.locator('#app-clear').click();
+  await page.goto(origin+'/apps/?objetivo=not-a-group&busca=%3Cimg%20src%3Dx%3E');
+  assert.equal(await page.locator('#app-goal').inputValue(),'');
+  assert.equal(await page.locator('#app-query').inputValue(),'<img src=x>');
+  assert.equal(await page.locator('#app-results img').count(),0,'URL filters remain plain text');
   await page.locator('#app-clear').click();
   const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
   const overflow=async()=>{

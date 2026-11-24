@@ -10,6 +10,8 @@ on:
       - 'css/app-network.css'
       - 'css/app-guide.css'
       - 'js/app-guide.js'
+      - 'js/app-catalog.js'
+      - 'tests/app-catalog-browser.cjs'
       - 'tests/app-guide-browser.cjs'
       - 'tests/screenshot.cjs'
       - 'data/app-network.json'
@@ -42,6 +44,7 @@ jobs:
           "$RUNNER_TEMP/app-guide/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-guide-browser.cjs
           NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-evidence-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-catalog-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
