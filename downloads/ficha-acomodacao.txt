@@ -1,0 +1,62 @@
+PRAIA DIGITAL — FICHA DE ACOMODAÇÃO
+Modelo em branco | versão 24/11/2026
+
+Preencha uma cópia por categoria/unidade. Campo vazio = A CONFIRMAR.
+Este modelo não comprova disponibilidade, não publica anúncios e não transfere dados entre aplicativos.
+Não inclua documentos de hóspedes, credenciais, preços negociados ou informações de pagamento.
+
+IDENTIFICAÇÃO
+Empreendimento:
+Categoria e unidade (nome igual ao usado no canal):
+Modalidade da oferta:
+Versão da ficha:
+Responsável pela revisão:
+Data e horário (informe o fuso):
+
+FATOS DA ACOMODAÇÃO
+Para CADA item registre: informação | fonte | data | responsável | confirmado ou a confirmar.
+Camas (tipos e quantidades):
+Capacidade autorizada e condições para hóspedes adicionais:
+Banheiro e equipamentos privativos:
+Copa/cozinha (equipamentos realmente disponíveis):
+Ar-condicionado/ventilação (por categoria):
+Áreas compartilhadas, horários e condições:
+Serviços incluídos nesta oferta e itens opcionais:
+Andar, escadas e condições factuais de acesso:
+Regras aplicáveis (incluindo pets, quando pertinente):
+Outras limitações confirmadas:
+
+FOTOS
+Imagem/arquivo | categoria representada | origem | autorização | data:
+Legendas ou diferenças que precisam de esclarecimento:
+
+VERSÕES E REVISÃO
+Canal e URL atual:
+Versão anterior:
+Versão proposta:
+Campos comparados no Revisor (somente os campos que a ferramenta oferece):
+Descrição, fotos e regras conferidas manualmente:
+Divergência encontrada:
+Fonte consultada para resolver:
+Decisão e responsável:
+
+PENDÊNCIAS
+Pergunta | responsável | próximo passo | prazo combinado:
+
+APROVAÇÃO E CONFERÊNCIA PÚBLICA
+Estado: rascunho / aguardando confirmação / aprovado / publicado e conferido
+Responsável pela aprovação:
+Data da aprovação e escopo autorizado:
+Responsável pela publicação:
+URL pública conferida:
+Data/hora da conferência:
+Versão encontrada e diferenças restantes:
+Próxima revisão:
+
+FERRAMENTAS E ORIENTAÇÕES
+Guia: https://praia.digital/blog/uma-ficha-tres-anuncios-imobiliarios.html#modelo-acomodacao
+Oficina: https://praia.digital/apps/oficina-ia-imobiliaria/
+Revisor: https://praia.digital/apps/revisor-anuncios/
+Relatório: https://praia.digital/apps/relatorio-imovel/
+Catálogo: https://praia.digital/apps/?objetivo=preparar#buscar-apps
+Transcreva os dados manualmente. Salve o arquivo preenchido em local autorizado pela equipe.
