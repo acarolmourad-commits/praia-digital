@@ -20,7 +20,9 @@ class HomepageContent(unittest.TestCase):
         ids={a['id'] for t,a in self.tags if 'id' in a}
         for ident in ['imoveis','analise','central-airbnb-booking','produtos-comparacao']: self.assertIn(ident,ids)
         for slug in ['airbnb-booking','pricelabs']: self.assertIn('/interesse.html?produto='+slug,self.html)
-        for price in ['R$ 39 / imóvel / mês','R$ 97 / pacote','R$ 499 / anúncio / plataforma','R$ 79/mês','R$ 249/mês','R$ 799/mês']: self.assertIn(price,self.html)
+        self.assertNotRegex(self.html, r'R\$\s*\d')
+        for path in ['/entrega-kit-temporada.html', '/entrega-descricoes-ia.html', '/servicos/anuncios-airbnb-booking.html', '/planos.html']:
+            self.assertIn(f'href="{path}"', self.html)
         self.assertNotIn('Resultados de quem já usa',self.html)
         catalog=(ROOT/'imoveis.html').read_text()
         self.assertNotIn('<h3>Case real</h3>',catalog)

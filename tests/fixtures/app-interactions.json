@@ -13,7 +13,7 @@
       "<button type=\"button\" aria-haspopup=\"true\">",
       "<button type=\"button\" aria-haspopup=\"true\">",
       "<select id=\"finalidade\" name=\"finalidade\" required>",
-      "<input type=\"search\" name=\"q\" id=\"q\" aria-label=\"Busca inteligente de imóveis\" placeholder=\"Ex.: apartamento de 2 quartos até R$ 700 mil em Bertioga, perto da praia, com potencial para temporada\">",
+      "<input type=\"search\" name=\"q\" id=\"q\" aria-label=\"Busca inteligente de imóveis\" placeholder=\"Ex.: apartamento de 2 quartos em Bertioga, perto da praia, com potencial para temporada\">",
       "<button class=\"btn\" type=\"submit\">"
     ]
   },
