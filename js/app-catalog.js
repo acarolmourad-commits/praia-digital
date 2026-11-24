@@ -8,6 +8,7 @@
   const goal = document.getElementById('app-goal');
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
+  const onlyResult = document.getElementById('app-only-result');
   const empty = document.getElementById('app-empty');
   const broaden = document.getElementById('app-search-all');
   const printSelection = document.getElementById('app-print');
@@ -36,6 +37,7 @@
     const terms = normalize(query.value).split(' ').filter(Boolean);
     let count = 0;
     let otherMatches = 0;
+    let matchedCard;
     for (const group of groups) {
       let visible = 0;
       for (const item of group.cards) {
@@ -43,12 +45,27 @@
         const match = matchesText && (!goal.value || group.id === goal.value);
         if (matchesText && !match) otherMatches++;
         item.card.hidden = !match;
-        if (match) visible++;
+        if (match) {
+          visible++;
+          matchedCard = item.card;
+        }
       }
       group.section.hidden = visible === 0;
       count += visible;
     }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
+    if (onlyResult) {
+      onlyResult.hidden = count !== 1;
+      if (count === 1) {
+        onlyResult.href = matchedCard.href;
+        const title = matchedCard.querySelector('.info b').cloneNode(true);
+        title.querySelector('.badge')?.remove();
+        onlyResult.textContent = 'Abrir ' + title.textContent.trim();
+      } else {
+        onlyResult.removeAttribute('href');
+        onlyResult.textContent = '';
+      }
+    }
     empty.hidden = count !== 0;
     if (broaden) {
       broaden.hidden = count !== 0 || otherMatches === 0;
