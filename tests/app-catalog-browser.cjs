@@ -28,8 +28,12 @@ try{for(const width of [360,768,1280]){
   for (const term of ['ITBI', 'escritura', 'registro']) {
     await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
     assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [costPath], term);
-    assert.equal(await page.locator('#app-only-result').getAttribute('href'), costPath);
+    const result = page.locator('#app-only-result');
+    assert.ok(await result.isVisible(), term);
+    await result.click();
+    assert.equal(page.url(), new URL(costPath, origin).href, term);
   }
+  await page.goto(origin + '/apps/#buscar-apps');
   for (const term of ['SAC', 'Price']) {
     await page.locator('#app-query').fill(term);
     assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [
