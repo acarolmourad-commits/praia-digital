@@ -296,7 +296,12 @@
       "<button class=\"button secondary\" id=\"clear\" type=\"button\">",
       "<button id=\"copy\" type=\"button\" class=\"button secondary\" disabled>",
       "<button id=\"print\" type=\"button\" class=\"button primary\" disabled>",
-      "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">"
+      "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<button type=\"reset\" class=\"button secondary\">"
     ]
   },
   "apps/relatorio-imovel/index.html": {

@@ -19,6 +19,18 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#different-count').textContent(),'3');
  assert.equal(await page.locator('#pending-count').textContent(),'2');
  assert.equal(await page.locator('#report').isVisible(),true);
+ const accommodation = page.getByRole('region', {name:'Conferência por acomodação'});
+ const checks = accommodation.getByRole('checkbox');
+ assert.equal(await checks.count(),4);
+ await checks.first().focus();
+ await checks.first().press('Space');
+ await checks.last().check();
+ assert.equal(await checks.first().isChecked(),true);
+ assert.equal(await checks.last().isChecked(),true);
+ await accommodation.getByRole('button',{name:'Limpar marcações da acomodação'}).click();
+ assert.equal(await accommodation.locator('input:checked').count(),0);
+ assert.equal(await page.locator('#report').isVisible(),true);
+ assert.equal(await page.locator('#different-count').textContent(),'3');
  page.once('dialog',d=>d.dismiss());await page.locator('#clear').click();
  assert.equal(await page.locator('#ref-price').inputValue(),'600.000,00');assert.equal(await page.locator('#report').isVisible(),true);
  page.once('dialog',d=>d.dismiss());await page.locator('#example').click();assert.equal(await page.locator('#report').isVisible(),true);
