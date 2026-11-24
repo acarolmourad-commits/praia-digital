@@ -45,7 +45,7 @@ for(const width of [390,1280]){
  await page.locator('#accommodation-generate').click();
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return new Promise(resolve=>{window.finishAccommodationCopy=resolve;});}}}));
  await page.locator('#accommodation-copy').click();
- await accommodation.getByRole('button',{name:'Limpar marcações da acomodação'}).click();
+ await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();
  await page.evaluate(()=>window.finishAccommodationCopy());
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
  assert.equal(await page.locator('#accommodation-text').inputValue(),'');
