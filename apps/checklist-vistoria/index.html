@@ -65,6 +65,12 @@
       #groups .item.ok::after { content: "OK"; }
       #groups .item.bad::after { content: "Problema"; }
     }
+    #pendencias-da-vistoria, .opts button { scroll-margin-top: 7rem; }
+    #visit-problems-list { padding-inline-start: 1.4rem; }
+    #visit-problems-list li { margin-block: .4rem; }
+    #pendencias-da-vistoria a { color: #075b5c; text-decoration: underline; }
+    #pendencias-da-vistoria p:last-child { margin-top: .65rem; }
+    @media print { #pendencias-da-vistoria { display: none; } }
   #storage-status{padding:12px;border:1px solid #CBD5E1;border-radius:8px;margin:12px 0;line-height:1.5} .item>span{min-width:0;overflow-wrap:anywhere}
 </style>
 <link rel="stylesheet" href="/css/app-network.css">
@@ -90,6 +96,12 @@
   <p id="storage-status" role="status" aria-live="polite"></p>
   <p>O percentual mostra apenas itens marcados, não qualidade, segurança ou aprovação do imóvel. As marcações não substituem inspeção ou laudo profissional. Ao imprimir ou salvar em PDF, os 26 itens aparecem com a situação de cada um. Guarde uma cópia antes de sair, especialmente no modo sessão.</p>
   <noscript><p>Ative JavaScript para marcar itens. Nenhuma marcação é registrada sem ele.</p></noscript>
+  <section class="card" id="pendencias-da-vistoria" aria-labelledby="visit-problems-title">
+    <h2 id="visit-problems-title">Itens marcados como problema</h2>
+    <p id="visit-problems-empty">Nenhum item marcado como problema.</p>
+    <ul id="visit-problems-list"></ul>
+    <p>Selecione um item da lista para voltar à marcação. No <a href="/apps/relatorio-imovel/#pauta-de-retorno">Relatório do imóvel</a>, anote a dúvida e quem pode esclarecê-la. O preenchimento do relatório é manual.</p>
+  </section>
   <div id="groups" aria-label="Itens da vistoria" role="region"></div>
   <p>Terminou a visita? <a href="/apps/guia-de-uso.html#vistoria-para-relatorio">Veja como levar suas observações para o relatório do imóvel</a> e acompanhar os itens que ficaram em aberto. Se já tiver suas anotações, <a href="/apps/relatorio-imovel/">abra o Relatório do imóvel</a>.</p>
 

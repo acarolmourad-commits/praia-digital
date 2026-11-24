@@ -178,7 +178,8 @@ const deadline = setTimeout(() => {
         await page.locator('main a[href="' + study + '"]').click();
         await page.waitForURL('**' + study);
         phase = `${width}px js=${javaScriptEnabled} pauta de retorno`;
-        await page.locator('a[href="/apps/relatorio-imovel/#pauta-de-retorno"]').click();
+        await page.getByRole('region', { name: 'Da visita às perguntas para o proprietário' })
+          .getByRole('link', { name: 'Relatório do imóvel', exact: true }).click();
         await page.waitForURL('**/apps/relatorio-imovel/#pauta-de-retorno');
         const panel = page.locator('#pauta-de-retorno');
         if (javaScriptEnabled) {

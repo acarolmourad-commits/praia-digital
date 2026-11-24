@@ -24,9 +24,18 @@ const distance=page.locator('#vistoria-4_0-ok');
 const parking=page.locator('#vistoria-4_3-bad');
 await distance.press('Enter');
 await parking.press('Space');
+const problems = page.locator('#visit-problems-list');
+const parkingLink = problems.getByRole('link', {name: 'Vagas de garagem conforme anúncio'});
+assert.equal(await problems.getByRole('link').count(), 1);
+await parkingLink.press('Enter');
+assert.equal(await parking.evaluate(el => el === document.activeElement), true);
+assert.equal(await page.getByRole('button', {name: '✗ Problema Vagas de garagem conforme anúncio', exact: true}).count(), 1);
+await page.reload();
+assert.equal(await parkingLink.count(), 1);
 await page.emulateMedia({media:'print'});
 const printed=page.locator('#groups .item:visible');
 assert.equal(await printed.count(),26);
+assert.equal(await problems.isVisible(), false);
 assert.equal(await page.locator('#groups .card:visible').count(),5);
 for (const [label,state] of [
   ['Distância real da praia conferida','OK'],
@@ -38,7 +47,10 @@ for (const [label,state] of [
 }
 await page.emulateMedia({media:'screen'});
 await distance.press('Enter');
-await parking.press('Space');
+await page.locator('#vistoria-4_3-ok').press('Enter');
+assert.equal(await problems.getByRole('link').count(), 0);
+assert.equal(await page.locator('#visit-problems-empty').isVisible(), true);
+await page.locator('#vistoria-4_3-ok').press('Enter');
 const key='pd-vistoria-v1',first=()=>page.locator('#groups button').first();
 // Keep keyboard focus on the same control after updates, including repeated toggles.
 const focused=()=>page.evaluate(()=>document.activeElement?.outerHTML);
