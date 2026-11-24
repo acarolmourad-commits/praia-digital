@@ -37,14 +37,31 @@
     empty.hidden = count !== 0;
     if (printSelection) printSelection.disabled = count === 0;
   }
+  function readObjective() {
+    const name = new URLSearchParams(window.location.search).get('objetivo');
+    const id = 'grupo-' + name;
+    goal.value = groups.some(group => group.id === id) ? id : '';
+  }
+
+  function saveObjective() {
+    const url = new URL(window.location.href);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    else url.searchParams.delete('objetivo');
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url);
+  }
+
   function reset() {
     query.value = '';
     goal.value = '';
+    saveObjective();
     filter();
   }
   if (printSelection) printSelection.addEventListener('click', () => window.print());
   query.addEventListener('input', filter);
-  goal.addEventListener('change', filter);
+  goal.addEventListener('change', () => {
+    saveObjective();
+    filter();
+  });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
   const objectives = document.getElementById('objetivos-apps');
@@ -63,7 +80,15 @@
     if (groups.some(group => '#' + group.id === window.location.hash)) reset();
   });
   // Browsers may restore form values when returning from an app.
-  window.addEventListener('pageshow', filter);
+  window.addEventListener('pageshow', () => {
+    readObjective();
+    filter();
+  });
+  window.addEventListener('popstate', () => {
+    readObjective();
+    filter();
+  });
+  readObjective();
   form.hidden = false;
   filter();
 })();
