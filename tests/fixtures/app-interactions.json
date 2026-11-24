@@ -243,7 +243,7 @@
   "apps/checklist-vistoria/index.html": {
     "heading_id": "pd-app-title",
     "scripts": [
-      "<script src=\"/apps/checklist-vistoria/checklist.js\">",
+      "<script src=\"/apps/checklist-vistoria/checklist.js?v=b1ab411ffd91\">",
       "<script defer src=\"/js/shared.js\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
