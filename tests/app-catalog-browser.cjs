@@ -24,6 +24,11 @@ try{for(const width of [360,768,1280]){
   const visibleCards = page.locator('.pd-catalog-group .card:visible');
   assert.equal(await visibleCards.count(),16);
   const goal = page.locator('#app-goal');
+  await goal.selectOption('grupo-comparar');
+  await page.locator('#app-query').fill('noites');
+  assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.getAttribute('href'))), [
+    '/apps/simulador-roi-temporada/', '/apps/temporada-ou-anual/'
+  ]);
   await page.goto(origin + '/apps/?origem=reuniao&objetivo=planejar#buscar-apps');
   assert.equal(await goal.inputValue(), 'grupo-planejar');
   assert.equal(await visibleCards.count(), 6);
