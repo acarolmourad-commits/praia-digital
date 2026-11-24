@@ -246,13 +246,15 @@
   "apps/checklist-vistoria/index.html": {
     "heading_id": "pd-app-title",
     "scripts": [
-      "<script src=\"/apps/checklist-vistoria/checklist.js?v=d60163a6af97\">",
+      "<script src=\"/apps/checklist-vistoria/checklist.js?v=cde2a5d2c3b2\">",
       "<script defer src=\"/js/shared.js\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
       "<button onclick=\"window.print()\">",
-      "<button type=\"button\" id=\"reset\" class=\"ghost\" onclick=\"resetAll()\">"
+      "<button type=\"button\" id=\"reset\" class=\"ghost\" onclick=\"resetAll()\">",
+      "<button type=\"button\" id=\"visit-copy\" hidden>",
+      "<textarea id=\"visit-copy-text\" rows=\"4\" readonly>"
     ]
   },
   "apps/oficina-ia-imobiliaria/index.html": {

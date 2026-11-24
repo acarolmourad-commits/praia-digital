@@ -67,6 +67,13 @@ function render(){
   list.innerHTML = problemLinks.join('');
   empty.hidden = problemLinks.length > 0;
  }
+ const copy = get('visit-copy');
+ if (copy) {
+   copy.hidden = problemLinks.length === 0;
+   get('visit-copy-status').textContent = '';
+   get('visit-copy-manual').hidden = true;
+   get('visit-copy-text').value = '';
+ }
  const resume = get('visit-next');
  if (resume) {
    const next = [...ALLOWED].find(key => !state[key]);
@@ -81,6 +88,23 @@ function render(){
  // Replacing the groups detaches the active control. Restore only its equivalent.
  if(focusedId?.startsWith('vistoria-'))get(focusedId)?.focus({preventScroll:true});
 }
+get('visit-copy')?.addEventListener('click', async () => {
+ const labels = Array.from(get('visit-problems-list').querySelectorAll('a'), link => link.textContent);
+ if (!labels.length) return;
+ const text = ['Itens a conferir na vistoria', ...labels.map(label => '• ' + label)].join('\n');
+ const field = get('visit-copy-text');
+ field.value = text;
+ try {
+   await root.navigator.clipboard.writeText(text);
+   if (field.value === text) get('visit-copy-status').textContent = 'Itens copiados. Cole no relatório e acrescente o que observou.';
+ } catch {
+   if (field.value !== text) return;
+   get('visit-copy-manual').hidden = false;
+   field.focus();
+   field.select();
+   get('visit-copy-status').textContent = 'Texto selecionado. Use o comando Copiar do dispositivo.';
+ }
+});
 root.mark=(key,value)=>{store.mark(key,value);render();};
 root.resetAll=()=>{if(root.confirm('Limpar todas as marcações desta página e remover o registro salvo neste navegador, inclusive dados inválidos? Esta ação não pode ser desfeita.')){store.reset();render();}};
 render();
