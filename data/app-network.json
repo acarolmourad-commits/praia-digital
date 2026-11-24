@@ -59,12 +59,12 @@
       {
         "slug": "simulador-roi-temporada",
         "title": "ROI de temporada",
-        "description": "Simule receita, despesas e retorno com suas premissas."
+        "description": "Estime o retorno pelas noites disponíveis, ocupação, diária e despesas."
       },
       {
         "slug": "temporada-ou-anual",
         "title": "Temporada ou aluguel anual",
-        "description": "Compare os dois modelos com custos e ocupação informados."
+        "description": "Compare o saldo mensal das noites alugadas com o de um contrato anual."
       }
     ]
   },
