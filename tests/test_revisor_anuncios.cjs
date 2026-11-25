@@ -205,6 +205,44 @@ test('limpeza e exemplo funcionam após confirmação explícita', () => {
   assert.equal(page.ids.get('report').hidden, true);
 });
 
+test('alterar qualquer dado de referência exige nova confirmação antes de comparar', () => {
+  const changes = { mode: 'mensal', area: '80', rooms: '3', parking: '2', price: '700.000,00' };
+  for (const type of ['input', 'change']) {
+    for (const [key, value] of Object.entries(changes)) {
+      const page = loadPage(); page.init();
+      page.ids.get('example').listeners.click[0](); page.submit();
+      const target = page.ids.get(`ref-${key}`); target.value = value;
+      page.ids.get('review-form').listeners[type][0]({ target });
+      assert.equal(page.ids.get('confirmed').checked, false, `${type}: ${key}`);
+      assert.equal(page.ids.get('report').hidden, true);
+      assert.equal(page.ids.get('report-text').value, '');
+      assert.match(page.ids.get('live-status').textContent, /confirme a ficha novamente/);
+      page.submit();
+      assert.equal(page.ids.get('errors').hidden, false);
+      assert.equal(page.ids.get('confirmed').attrs['aria-invalid'], 'true');
+      assert.equal(page.ids.get('report').hidden, true);
+      assert.equal(target.value, value, 'a nova conferência não apaga o dado alterado');
+      page.ids.get('confirmed').checked = true; page.submit();
+      assert.equal(page.ids.get('errors').hidden, true);
+      assert.equal(page.ids.get('report').hidden, false);
+    }
+  }
+});
+
+test('editar identificação ou anúncios preserva a confirmação da ficha e invalida só o relatório', () => {
+  for (const id of ['property', 'v1-name', 'v1-price', 'v2-mode']) {
+    const page = loadPage(); page.init();
+    page.ids.get('example').listeners.click[0](); page.submit();
+    const target = page.ids.get(id);
+    target.value = id === 'v1-price' ? '550.000,00' : id === 'v2-mode' ? 'venda' : 'Versão revisada';
+    page.ids.get('review-form').listeners.input[0]({ target });
+    assert.equal(page.ids.get('confirmed').checked, true, id);
+    assert.equal(page.ids.get('report').hidden, true);
+    page.submit();
+    assert.equal(page.ids.get('report').hidden, false);
+  }
+});
+
 test('resposta atrasada de cópia não confirma relatório alterado nem reabre texto limpo', async () => {
   let resolve, reject, calls = 0;
   const page = loadPage({confirm:()=>true,navigator:{clipboard:{writeText:()=>{calls++;return new Promise((yes,no)=>{resolve=yes;reject=no;});}}}});

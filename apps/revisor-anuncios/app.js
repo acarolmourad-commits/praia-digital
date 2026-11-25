@@ -63,9 +63,13 @@
     document.querySelectorAll('[aria-invalid]').forEach(e => e.removeAttribute('aria-invalid'));
   }
 
-  function invalidate() {
+  function invalidate(event) {
     copyRequest++; $('copy').disabled = false;
-    if (!$('report').hidden) $('live-status').textContent = 'Os campos mudaram. Compare novamente para gerar um relatório atualizado.';
+    const referenceChanged = FIELDS.some(field => event?.target?.id === `ref-${field.key}`);
+    if (referenceChanged) {
+      $('confirmed').checked = false;
+      $('live-status').textContent = 'A ficha de referência mudou. Confira os dados e confirme a ficha novamente antes de comparar.';
+    } else if (!$('report').hidden) $('live-status').textContent = 'Os campos mudaram. Compare novamente para gerar um relatório atualizado.';
     $('report').hidden = true; currentText = ''; $('report-text').value = '';
     $('copy-status').textContent = ''; removeErrors();
   }
