@@ -48,17 +48,25 @@ try{for(const width of [360,768,1280]){
     assert.equal(page.url(), new URL(costPath, origin).href, term);
   }
   await page.goto(origin + '/apps/#buscar-apps');
+  const jump = page.getByRole('button', {name: 'Ir ao primeiro resultado'});
+  assert.ok(await jump.isHidden());
   for (const term of ['SAC', 'Price']) {
     await page.locator('#app-query').fill(term);
     assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.pathname)), [
       '/apps/alugar-ou-comprar/', '/apps/calculadora-financiamento/'
     ], term);
     assert.ok(await page.locator('#app-only-result').isHidden());
+    await jump.press('Enter');
+    assert.equal(await page.locator(':focus').getAttribute('href'), '/apps/alugar-ou-comprar/');
+    await page.keyboard.press('Tab');
+    assert.equal(await page.locator(':focus').getAttribute('href'), '/apps/calculadora-financiamento/');
   }
   await page.locator('#app-clear').click();
   assert.equal(await visibleCards.count(), 16);
   await goal.selectOption('grupo-comparar');
   await page.locator('#app-query').fill('noites');
+  await jump.click();
+  assert.equal(await page.locator(':focus').getAttribute('href'), '/apps/simulador-roi-temporada/');
   assert.deepEqual(await visibleCards.evaluateAll(cards => cards.map(card => card.getAttribute('href'))), [
     '/apps/simulador-roi-temporada/', '/apps/temporada-ou-anual/'
   ]);
