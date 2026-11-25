@@ -6,6 +6,7 @@
   const money = value => Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
   function summary(profile) {
     const budget = Number(profile.budget);
+    const visit = clean(profile.visit, 350);
     return ['Olá! Gostaria de orientação para comprar um imóvel.',
       'Cidade/bairro: ' + (clean(profile.city, 100) || 'a definir'),
       'Orçamento máximo: ' + (Number.isFinite(budget) && budget >= 1 && budget <= 1e9 ? money(budget) : 'a definir'),
@@ -14,6 +15,7 @@
       'Financiamento: ' + (clean(profile.payment, 100) || 'a definir'),
       'Prazo: ' + (clean(profile.time, 100) || 'a definir'),
       'Preferências: ' + (clean(profile.notes, 600) || 'a definir'),
+      ...(visit ? ['Pergunta para a visita: ' + visit] : []),
       'Quero confirmar disponibilidade e condições antes de agendar uma visita.'].join('\n');
   }
   function guidance(question) {
@@ -36,11 +38,11 @@
   const d = root.document, get = id => d.getElementById(id);
   if (!get('buyer-profile')) return;
   const status = text => { get('buyer-status').textContent = text; };
-  const fields = ['city', 'budget', 'type', 'goal', 'payment', 'time', 'notes'];
+  const fields = ['city', 'budget', 'type', 'goal', 'payment', 'time', 'notes', 'visit'];
   get('buyer-profile').addEventListener('submit', event => {
     event.preventDefault();
     if (!get('buyer-profile').reportValidity()) return;
-    get('buyer-summary').value = summary(Object.fromEntries(fields.map(key => [key, get('buyer-' + key).value])));
+    get('buyer-summary').value = summary(Object.fromEntries(fields.map(key => [key, get('buyer-' + key)?.value])));
     get('buyer-preview').hidden = false;
     status('Resumo preparado. Revise antes de compartilhar; nada foi enviado.');
     get('buyer-summary').focus();
