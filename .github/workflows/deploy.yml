@@ -43,6 +43,7 @@ jobs:
       - name: Prepare customer email links
         run: |
           python3 -m unittest discover -s tests -p 'test_contact_email.py'
+          node --test tests/contact-email-form.test.cjs
           python3 scripts/build_contact_email.py --report "$RUNNER_TEMP/contact-email-pages.json"
 
       - name: Validate sitemap before publication
