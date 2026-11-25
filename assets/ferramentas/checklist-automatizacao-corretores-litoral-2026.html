@@ -1,87 +1,33 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-        {
-      "@type": "Question",
-      "name": "Como solicitar mais informações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quais cidades são atendidas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quanto tempo para retorno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Em até 24 horas após o contato, com atendimento humanizado."
-      }
-    }
-  ]
-}
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="robots" content="index, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita</title>
-  <link rel="preconnect" href="https://praia.digital">
-<meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita">
-  <meta name="twitter:description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
-  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
-  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checklist de automação para corretores do litoral | Praia Digital</title>
+  <meta name="description" content="Confira 16 etapas de captação, atendimento, pós-venda e medição. Escolha uma pendência e prepare seu atendimento na Oficina ou no Revisor de Anúncios.">
+  <link rel="canonical" href="https://praia.digital/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html">
+  <meta property="og:type" content="website">
   <meta property="og:site_name" content="Praia Digital">
-  <meta name="keywords" content="Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita, Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
-  <link rel="canonical" href="https://praia.digital/checklist-automatizacao-corretores-litoral-2026.html">
+  <meta property="og:title" content="Checklist de automação para corretores do litoral">
+  <meta property="og:description" content="Confira 16 etapas de captação, atendimento, pós-venda e medição. Escolha uma pendência e prepare seu atendimento na Oficina ou no Revisor de Anúncios.">
+  <meta property="og:url" content="https://praia.digital/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; color: #222; }
-    h1 { color: #0b4f6c; }
-    .checklist { list-style: none; padding: 0; }
-    .checklist li { margin: 8px 0; padding: 10px; border-bottom: 1px solid #eee; display:flex; align-items:center; gap:10px; }
-    .checklist input[type="checkbox"] { transform: scale(1.3); }
-    .progress { font-weight: bold; color: #0b4f6c; margin-bottom: 12px; }
-    a { color: #1a73e8; }
-    .btn { display:inline-block; margin-top:14px; padding:10px 16px; background:#0b4f6c; color:#fff; text-decoration:none; border-radius:6px; }
+    * { box-sizing: border-box; }
+    body { max-width: 52rem; margin: auto; padding: 1rem clamp(1rem, 4vw, 2.5rem) 3rem; color: #163b36; background: white; font: 1rem/1.6 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.2; }
+    h2 { margin: 2rem 0 .75rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+    nav a { padding: .5rem 0; }
+    a { color: #075b5c; text-underline-offset: .16em; }
+    :focus-visible { outline: 3px solid #075b5c; outline-offset: 3px; }
+    .progress { border-inline-start: .25rem solid #167369; padding: .6rem 1rem; background: #edf7f3; font-weight: bold; }
+    .checklist { padding: 0; list-style: none; }
+    .checklist li { border-bottom: 1px solid #cbdad6; }
+    .checklist label { display: flex; align-items: baseline; gap: .75rem; min-height: 2.75rem; padding: .7rem .25rem; cursor: pointer; }
+    .checklist input { flex: none; width: 1.1rem; height: 1.1rem; accent-color: #075b5c; }
   </style>
-  <script>
-    function atualizarProgresso() {
-      const checks = document.querySelectorAll('.checklist input[type="checkbox"]');
-      const checked = Array.from(checks).filter(c => c.checked).length;
-      document.getElementById('progress').textContent = checked + ' de ' + checks.length + ' itens concluídos';
-    }
-    window.addEventListener('load', atualizarProgresso);
-  </script>
-<meta name="description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
-<meta name="keywords" content="Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita, Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-<link rel="canonical" href="https://praia.digital/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita">
-<meta property="og:description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita">
-<meta name="twitter:description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
-<meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
-<meta name="robots" content="index, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
 <script>
@@ -92,51 +38,60 @@ gtag('config', '', { anonymize_ip: true });
 </script>
 </head>
 <body>
-  <h1>Checklist de Automação para Corretores do Litoral Paulista</h1>
-  <p class="progress" id="progress">0 de 0 itens concluídos</p>
-
+<nav aria-label="Navegação"><a href="/">Página inicial</a><a href="/apps/">Catálogo de aplicativos</a></nav>
+<main>
+  <h1>Checklist de automação para corretores do litoral</h1>
+  <p>Marque o que sua equipe já faz. Para escolher a próxima tarefa, comece pelo primeiro item em aberto que atrasa o atendimento a um interessado.</p>
+  <p class="progress" id="progress" role="status" aria-live="polite" aria-atomic="true" hidden></p>
   <h2>Captação e Leads</h2>
   <ul class="checklist">
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Cadastrar imóveis com título, descrição completa, fotos e preço atualizado</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Publicar anúncios automáticos em pelo menos 3 portais</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Ativar notificações de novos leads por e-mail e WhatsApp</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Configurar respostas automáticas para primeiros contatos</li>
+    <li><label><input type="checkbox"> Cadastrar imóveis com título, descrição completa, fotos e preço atualizado</label></li>
+    <li><label><input type="checkbox"> Publicar anúncios automáticos em pelo menos 3 portais</label></li>
+    <li><label><input type="checkbox"> Ativar notificações de novos leads por e-mail e WhatsApp</label></li>
+    <li><label><input type="checkbox"> Configurar respostas automáticas para primeiros contatos</label></li>
   </ul>
 
   <h2>Atendimento e Relacionamento</h2>
   <ul class="checklist">
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Usar modelo de qualificação inicial por mensagem</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Registrar preferências de cada lead em CRM simples</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Enviar conteúdo relevante semanal para leads quentes</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Agendar visitas automaticamente com confirmação</li>
+    <li><label><input type="checkbox"> Usar modelo de qualificação inicial por mensagem</label></li>
+    <li><label><input type="checkbox"> Registrar preferências de cada lead em CRM simples</label></li>
+    <li><label><input type="checkbox"> Enviar conteúdo relevante semanal para leads quentes</label></li>
+    <li><label><input type="checkbox"> Agendar visitas automaticamente com confirmação</label></li>
   </ul>
 
   <h2>Fechamento e Pós-venda</h2>
   <ul class="checklist">
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Disparar follow-up 3 e 7 dias após primeira apresentação</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Enviar proposta automática com termos claros e prazo de validade</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Coletar depoimento e avaliação do cliente após fechamento</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Manter base de ex-clientes para indicações e recompra</li>
+    <li><label><input type="checkbox"> Disparar follow-up 3 e 7 dias após primeira apresentação</label></li>
+    <li><label><input type="checkbox"> Enviar proposta automática com termos claros e prazo de validade</label></li>
+    <li><label><input type="checkbox"> Coletar depoimento e avaliação do cliente após fechamento</label></li>
+    <li><label><input type="checkbox"> Manter base de ex-clientes para indicações e recompra</label></li>
   </ul>
 
   <h2>Métricas e Otimização</h2>
   <ul class="checklist">
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Medir taxa de resposta por canal e horário</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Medir tempo médio de fechamento por cidade</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> A/B de títulos e descrições de anúncios</li>
-    <li><input type="checkbox" onchange="atualizarProgresso()"> Revisar custo por lead e por venda quinzenalmente</li>
+    <li><label><input type="checkbox"> Medir taxa de resposta por canal e horário</label></li>
+    <li><label><input type="checkbox"> Medir tempo médio de fechamento por cidade</label></li>
+    <li><label><input type="checkbox"> A/B de títulos e descrições de anúncios</label></li>
+    <li><label><input type="checkbox"> Revisar custo por lead e por venda quinzenalmente</label></li>
   </ul>
 
-  <h2>Ferramentas Gratuitas para Começar</h2>
-  <p>Além desta checklist, você pode usar gratuitamente:</p>
-  <ul>
-    <li>Geração de descrições automáticas com IA</li>
-    <li>Avaliação de preço de mercado</li>
-    <li>Assistente virtual para compradores</li>
-    <li>Recomendação automática de imóveis</li>
-  </ul>
-  <p>Acesse agora em <a href="https://praia.digital">https://praia.digital</a>.</p>
-  <p>Conheça mais soluções em <a href="https://praia.digital/">nosso site</a>.</p>
-  <a class="btn" href="https://praia.digital">Usar ferramentas gratuitas</a>
+  <section aria-labelledby="proximo-passo">
+    <h2 id="proximo-passo">Trabalhe uma pendência da lista</h2>
+    <p>Se faltam dados para cadastrar o imóvel, abra a <a href="/apps/oficina-ia-imobiliaria/">Oficina de IA Imobiliária</a> e prepare o briefing com as informações já confirmadas. Se a ficha está pronta e o anúncio já existe, abra o <a href="/apps/revisor-anuncios/">Revisor de Anúncios</a> para comparar o texto com a ficha.</p>
+    <p><a href="/apps/?objetivo=preparar#buscar-apps">Ver as ferramentas de preparação de anúncios</a></p>
+  </section>
+</main>
+<script>
+  const items = document.querySelectorAll('.checklist input');
+  const progress = document.getElementById('progress');
+  function updateProgress() {
+    const checked = Array.from(items).filter(item => item.checked).length;
+    progress.textContent = checked + ' de ' + items.length + ' itens concluídos';
+  }
+  items.forEach(item => item.addEventListener('change', updateProgress));
+  window.addEventListener('pageshow', updateProgress);
+  updateProgress();
+  progress.hidden = false;
+</script>
 </body>
 </html>
