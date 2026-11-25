@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="core.js" defer></script>
   <script src="app.js" defer></script>
-  <script src="accommodation.js" defer></script>
+  <script src="accommodation.js?v=20261125-txt" defer></script>
 <link rel="stylesheet" href="/css/app-network.css?v=a95b210c1ee3">
 </head>
 <body>
@@ -89,7 +89,10 @@
       <div id="accommodation-result" hidden>
         <label for="accommodation-text">Resumo da conferência manual</label>
         <textarea id="accommodation-text" rows="12" readonly></textarea>
-        <button id="accommodation-copy" type="button" class="button secondary">Copiar resumo da acomodação</button>
+        <div class="actions">
+          <button id="accommodation-copy" type="button" class="button secondary">Copiar resumo da acomodação</button>
+          <a id="accommodation-download" class="button secondary" download="resumo-acomodacao.txt" hidden>Baixar resumo em TXT</a>
+        </div>
       </div>
       <p id="accommodation-status" class="helper" role="status" aria-live="polite"></p>
       <p><a href="/apps/guia-de-uso.html#conferencia-reservas">Voltar ao roteiro de conferência</a> · <a href="/apps/relatorio-imovel/#pauta-de-retorno">Registrar pendências no Relatório do imóvel</a></p>

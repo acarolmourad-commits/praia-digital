@@ -293,7 +293,7 @@
     "scripts": [
       "<script src=\"core.js\" defer>",
       "<script src=\"app.js\" defer>",
-      "<script src=\"accommodation.js\" defer>"
+      "<script src=\"accommodation.js?v=20261125-txt\" defer>"
     ],
     "controls": [
       "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
