@@ -8,5 +8,12 @@
 #conteudo.guide-width,.guide-route{scroll-margin-top:6rem}
 #guide-actions,#registro-checklist{scroll-margin-top:6rem}
 #guide-download-status:empty{display:none}
+.guide-print-scope{display:none}
+@media print{
+  .guide-print-scope{display:block;font-weight:700;color:#000}
+  .guide-print-scope:empty{display:none}
+  body[data-guide-print-scope="single"] .guide-route:not([data-guide-print-selected]),
+  body[data-guide-print-scope="single"] main>.guide-example{display:none!important}
+}
 
 .guide-export{flex-basis:100%;max-width:42rem;display:grid;gap:8px;margin-bottom:8px}.guide-export label{font-weight:650}.guide-select{position:relative;display:block}.guide-select::after{content:"";position:absolute;right:18px;top:18px;width:8px;height:8px;border-right:2px solid #0b5145;border-bottom:2px solid #0b5145;transform:rotate(45deg);pointer-events:none}.guide-export select{appearance:none;width:100%;max-width:100%;min-height:46px;padding:10px 42px 10px 12px;border:1px solid #0b5145;border-radius:8px;background:#fff;color:#173c35;font:inherit}.guide-export select:focus-visible{outline:3px solid #075b5c;outline-offset:3px}.guide-export p{font-size:.9rem;margin:0}

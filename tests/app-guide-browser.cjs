@@ -68,7 +68,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       assert.equal((exported.match(/Responsável: não identificado/g) || []).length, 4);
       // A focused export contains just that route, while preserving all page markings.
       for (const anchor of ['comprar','locar','anunciar','vender']) {
-        await page.getByLabel('Roteiros no arquivo de texto').selectOption(anchor);
+        await page.getByLabel('Roteiros para salvar').selectOption(anchor);
         const focusedPromise = page.waitForEvent('download');
         await page.locator('#guide-download').press('Enter');
         const focusedDownload = await focusedPromise;
@@ -84,7 +84,28 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         assert.equal(await page.locator('input:checked').count(), 2);
         assert.ok((await page.locator('#guide-download-status').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
       }
-      await page.getByLabel('Roteiros no arquivo de texto').selectOption('');
+      // Print each selected route without losing marks in the other routes.
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        await page.getByLabel('Roteiros para salvar').selectOption(anchor);
+        await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
+        await page.emulateMedia({media:'print'});
+        assert.equal(await page.locator('.guide-route:visible').count(), 1);
+        assert.equal(await page.locator(`#${anchor}`).isVisible(), true);
+        assert.equal(await page.locator('main > .guide-example:visible').count(), 0);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.ok((await page.locator('.guide-print-scope').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
+        if (width === 1280) {
+          const pdf = await page.pdf({path:path.join(output, `roteiro-${anchor}.pdf`), format:'A4'});
+          assert.equal(pdf.subarray(0,4).toString(), '%PDF');
+          assert.ok(pdf.length > 1000);
+        }
+        await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
+        await page.emulateMedia({media:'screen'});
+        assert.equal(await page.locator('.guide-route:visible').count(), 4);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.equal(await page.locator('.guide-print-scope').isVisible(), false);
+      }
+      await page.getByLabel('Roteiros para salvar').selectOption('');
 
       await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
