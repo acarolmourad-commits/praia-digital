@@ -216,14 +216,17 @@ try{for(const width of [360,768,1280]){
   assert.equal(await visibleCards.count(),0);
   assert.equal(await page.locator('#app-results img').count(),0,'Search stays text only');
   await page.locator('#app-clear').click();
-  const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
+  const links = await page.locator('.pd-catalog-group .card').evaluateAll(nodes => nodes.map(card => ({
+    link: card.getAttribute('href'),
+    group: card.closest('.pd-catalog-group').getAttribute('aria-labelledby'),
+  })));
   const overflow=async()=>{
     const spill=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,elements:[...document.querySelectorAll('body *')].filter(el=>{const b=el.getBoundingClientRect();return b.width>0&&(b.left< -1||b.right>innerWidth+1)&&getComputedStyle(el).position!=='absolute';}).slice(0,8).map(el=>({tag:el.tagName,id:el.id,cls:el.className,width:el.getBoundingClientRect().width}))}));
     if(spill.scroll>width+1){problems.push({url:page.url(),...spill});console.log(JSON.stringify(problems.at(-1)));}
   };
   await overflow();
   await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});
-  for(const link of links){
+  for (const {link, group} of links) {
     await page.goto(origin+link);
     const shortcut = page.getByRole('link', {name: 'Ver aplicativos relacionados', exact: true});
     assert.ok(await shortcut.isVisible(), link);
@@ -241,8 +244,13 @@ try{for(const width of [360,768,1280]){
     await menu.locator('summary').click();
     assert.equal(await menu.locator('li').count(),15,link);
     await overflow();
-    await page.locator('.pd-network a[href="/apps/"]').click();
-    assert.equal(new URL(page.url()).pathname,'/apps/');
+    assert.ok(await page.locator('.pd-network a[href="/apps/"]').isVisible(), link);
+    const objective = group.slice('grupo-'.length);
+    await page.locator(`.pd-network a[href="/apps/?objetivo=${objective}#${group}"]`).press('Enter');
+    assert.equal(new URL(page.url()).hash, '#' + group);
+    assert.equal(await goal.inputValue(), group);
+    assert.equal(await page.locator('.pd-catalog-group:visible').count(), 1);
+    assert.ok(await page.locator('#' + group).isVisible());
   }
   const dailyPath='/ferramentas/calculadora-diaria-ideal-airbnb-2026.html';
   const dailyCard=page.getByRole('navigation',{name:'Outros recursos'}).getByRole('link',{name:/Calculadora de diária de temporada/});
