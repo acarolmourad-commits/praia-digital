@@ -77,6 +77,8 @@ jobs:
         if: always()
         with:
           name: site-inspection-report
-          path: site_inspection_report.json
+          path: |
+            site_inspection_report.json
+            site_inspection_links.json
           if-no-files-found: error
           retention-days: 30

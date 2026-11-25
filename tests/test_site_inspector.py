@@ -198,6 +198,8 @@ class InspectorTests(unittest.TestCase):
             self.assertEqual(inspector.main(['--root', str(self.root), '--no-publish']), 0)
             publish.assert_not_called()
         report = json.loads((self.root / 'site_inspection_report.json').read_text())
+        complete = json.loads((self.root / report['all_internal_findings']).read_text())
+        self.assertEqual(len(complete), report['totals']['broken'])
         self.assertTrue(report['coverage_ok'])
         self.assertEqual(report['totals']['broken'], 1)
         self.assertEqual(report['external']['status'], 'not_run')

@@ -281,6 +281,10 @@ def main(argv=None):
                            'rendered_javascript_checked': False},
               'status': 'needs_review' if broken or outdated else 'static_checks_passed',
               'advisory': True, 'detail_limit': DETAIL_LIMIT}
+    # Keep the issue and summary bounded; the downloadable evidence is complete.
+    (args.root / 'site_inspection_links.json').write_text(
+        json.dumps(broken, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    report['all_internal_findings'] = 'site_inspection_links.json'
     (args.root / 'site_inspection_report.json').write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     summary = (f"RESUMO: {counts['pages_scanned']} paginas | {counts['references_extracted']} referencias | "
