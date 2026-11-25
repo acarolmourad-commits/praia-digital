@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/calculadora-valorizacao/**'
       - 'tests/valorizacao-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/valorizacao-calculator.cjs'
       - '.github/workflows/valorizacao-checks.yml'
 permissions:

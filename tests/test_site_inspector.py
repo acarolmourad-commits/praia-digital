@@ -192,6 +192,15 @@ class InspectorTests(unittest.TestCase):
         self.assertEqual(report['selected_without_response'], report['selected'])
         self.assertEqual(report['selected'] + report['pending'], 85)
 
+    def test_artifact_keeps_full_list_of_missing_internal_references(self):
+        links = [f'/missing-{i}' for i in range(inspector.DETAIL_LIMIT + 1)]
+        self.write('index.html', ''.join(f'<a href="{link}">page</a>' for link in links))
+        with redirect_stdout(io.StringIO()):
+            inspector.main(['--root', str(self.root), '--no-publish'])
+        report = json.loads((self.root / 'site_inspection_report.json').read_text())
+        self.assertCountEqual([r['link'] for r in report['broken_links']], links)
+        self.assertEqual(report['totals']['broken'], len(report['broken_links']))
+
     def test_main_writes_report_without_publishing_and_marks_empty_coverage_failed(self):
         self.write('index.html', '<a href="/missing">x</a><a href="https://example.org/a">external</a>')
         with patch.object(inspector, 'publish_issue') as publish, patch.dict(os.environ, {}, clear=True), redirect_stdout(io.StringIO()):

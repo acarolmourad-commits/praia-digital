@@ -1,3 +1,4 @@
+const {checkAppLinkTargets} = require('./check-app-link-targets.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
@@ -17,7 +18,7 @@ await page.locator('#cdi').fill('-100');await click();assert((await page.locator
 await page.locator('#cenario').selectOption('0');await page.locator('#cdi').fill('0');await click();await click();assert((await page.locator('#dica').textContent()).includes('mesmo valor'));assert(!/NaN|Infinity/.test(await page.locator('#res').innerText()));
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
 const body=await page.locator('body').innerText();for(const text of ['15,2%','Médio litoral','13,5%','Faixa típica','Regra prática:','maior valorização 12m'])assert(!body.includes(text));
-const links=await page.locator('a[href^="/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href').split('#')[0]));for(const l of links){let p=path.join(root,l);if(l.endsWith('/'))p=path.join(p,'index.html');assert(fs.existsSync(p),l);}
+await checkAppLinkTargets(page, root);
 await page.close();
 }await browser.close();console.log('PASS valorizacao desktop/mobile, negative/zero rates, tie, presets, invalid/stale results and links');
 })().catch(e=>{console.error(e);process.exit(1)});
