@@ -3,6 +3,7 @@
   const $ = id => document.getElementById(id);
   const form = $('accommodation-form');
   const download = $('accommodation-download');
+  const pending = $('accommodation-pending');
   let revision = 0;
   function invalidate() {
     revision++;
@@ -15,6 +16,11 @@
     $('accommodation-result').hidden = true;
     $('accommodation-text').value = '';
     $('accommodation-copy').disabled = false;
+    if (pending) {
+      pending.value = '';
+      $('accommodation-pending-panel').hidden = true;
+      $('accommodation-copy-pending').disabled = false;
+    }
     $('accommodation-status').textContent = hadResult ? 'A conferência mudou. Gere um novo resumo antes de compartilhar.' : '';
   }
   form.addEventListener('submit', event => event.preventDefault());
@@ -43,25 +49,47 @@
       download.href = URL.createObjectURL(file);
       download.hidden = false;
     }
+    if (pending) {
+      const items = [];
+      if (!$('accommodation-source-one').value.trim()) items.push('Identificar a primeira fonte.');
+      if (!$('accommodation-source-two').value.trim()) items.push('Identificar a segunda fonte.');
+      for (const input of checks.filter(input => !input.checked)) {
+        const label = input.closest('label').querySelector('span').textContent.trim();
+        items.push('Confirmar se ' + label.charAt(0).toLowerCase() + label.slice(1));
+      }
+      if (items.length) {
+        const category = $('accommodation-name').value.trim();
+        if (category) items.unshift('Categoria: ' + category);
+        pending.value = items.join('\n');
+        $('accommodation-pending-panel').hidden = false;
+      }
+    }
     $('accommodation-result').hidden = false;
     $('accommodation-text').focus();
     $('accommodation-status').textContent = 'Resumo gerado. Confira as fontes antes de compartilhar.';
   });
-  $('accommodation-copy').addEventListener('click', async () => {
-    if ($('accommodation-result').hidden || $('accommodation-copy').disabled) return;
+  async function copyText(field, button, confirmation) {
+    if ($('accommodation-result').hidden || button.disabled || !field.value) return;
     const request = revision;
-    $('accommodation-copy').disabled = true;
+    button.disabled = true;
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText($('accommodation-text').value);
-      if (request === revision) $('accommodation-status').textContent = 'Resumo da acomodação copiado.';
+      await navigator.clipboard.writeText(field.value);
+      if (request === revision) $('accommodation-status').textContent = confirmation;
     } catch {
       if (request !== revision) return;
-      $('accommodation-text').focus(); $('accommodation-text').select();
+      field.focus();
+      field.select();
       $('accommodation-status').textContent = 'Texto selecionado. Use o comando Copiar do seu dispositivo (Ctrl+C ou ⌘C no computador).';
     } finally {
-      if (request === revision) $('accommodation-copy').disabled = false;
+      if (request === revision) button.disabled = false;
     }
+  }
+  $('accommodation-copy').addEventListener('click', event => {
+    copyText($('accommodation-text'), event.currentTarget, 'Resumo da acomodação copiado.');
+  });
+  $('accommodation-copy-pending')?.addEventListener('click', event => {
+    copyText(pending, event.currentTarget, 'Pendências copiadas. Cole os itens desejados no relatório.');
   });
   $('accommodation-generate').disabled = false;
 })();

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="core.js" defer></script>
   <script src="app.js" defer></script>
-  <script src="accommodation.js?v=20261125-txt" defer></script>
+  <script src="accommodation.js?v=20261125-pendencias" defer></script>
 <link rel="stylesheet" href="/css/app-network.css?v=a95b210c1ee3">
 </head>
 <body>
@@ -94,6 +94,15 @@
         <div class="actions">
           <button id="accommodation-copy" type="button" class="button secondary">Copiar resumo da acomodação</button>
           <a id="accommodation-download" class="button secondary" download="resumo-acomodacao.txt" hidden>Baixar resumo em TXT</a>
+        </div>
+        <div id="accommodation-pending-panel" hidden>
+          <label for="accommodation-pending">Itens e fontes que faltam conferir</label>
+          <textarea id="accommodation-pending" rows="5" readonly></textarea>
+          <p class="helper">As anotações livres ficam no resumo completo. Para preparar o retorno, copie esta lista e cole os itens desejados no relatório.</p>
+          <div class="actions">
+            <button id="accommodation-copy-pending" type="button" class="button secondary">Copiar pendências da lista</button>
+            <a class="button secondary" href="/apps/relatorio-imovel/#pending">Abrir pontos a confirmar no relatório</a>
+          </div>
         </div>
       </div>
       <p id="accommodation-status" class="helper" role="status" aria-live="polite"></p>

@@ -293,7 +293,7 @@
     "scripts": [
       "<script src=\"core.js\" defer>",
       "<script src=\"app.js\" defer>",
-      "<script src=\"accommodation.js?v=20261125-txt\" defer>"
+      "<script src=\"accommodation.js?v=20261125-pendencias\" defer>"
     ],
     "controls": [
       "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
@@ -316,7 +316,9 @@
       "<button id=\"accommodation-generate\" type=\"button\" class=\"button primary\" disabled>",
       "<button type=\"reset\" class=\"button secondary\">",
       "<textarea id=\"accommodation-text\" rows=\"12\" readonly>",
-      "<button id=\"accommodation-copy\" type=\"button\" class=\"button secondary\">"
+      "<button id=\"accommodation-copy\" type=\"button\" class=\"button secondary\">",
+      "<textarea id=\"accommodation-pending\" rows=\"5\" readonly>",
+      "<button id=\"accommodation-copy-pending\" type=\"button\" class=\"button secondary\">"
     ]
   },
   "apps/relatorio-imovel/index.html": {
