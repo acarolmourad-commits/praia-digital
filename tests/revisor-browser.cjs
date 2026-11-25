@@ -84,7 +84,7 @@ for(const width of [390,1280]){
  assert.doesNotMatch(revisedSummary, /Confirmar foto do banheiro/);
  await page.locator('#accommodation-date-one').fill('2026-11-25');
  assert.equal(await page.locator('#accommodation-result').isVisible(), false);
- assert.equal(await downloadLink.getAttribute('href'), null);
+ assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
  await page.locator('#accommodation-generate').click();
  assert.match(await readDownload(), /Consulta à fonte 1: 25\/11\/2026/);
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return new Promise(resolve=>{window.finishAccommodationCopy=resolve;});}}}));
