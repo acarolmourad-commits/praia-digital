@@ -16,11 +16,16 @@ assert.equal(selectCourse([{...course,path:'/education/\\evil.test'}], '?course=
 assert.match(messageFor(course), /29,00/);
 assert.match(messageFor(course), /100% digital/);
 assert.ok(!messageFor(null).includes('Valor anunciado'));
-assert.equal(decodeURIComponent(contactLinks(course).whatsapp.split('text=')[1]),messageFor(course));
+const request = new URL(contactLinks(course).email);
+assert.equal(request.searchParams.get('subject'), 'Solicitação Academy — catálogo anterior — ' + course.title);
+assert.equal(request.searchParams.get('body').replace(/\r\n/g, '\n'), messageFor(course));
+assert.ok(request.searchParams.get('body').includes(course.slug));
 assert.ok(contactLinks(course).email.startsWith('mailto:comercial@praia.digital?'));
 const checkout = fs.readFileSync(path.join(__dirname,'../education/checkout.html'),'utf8');
 assert.ok(!checkout.includes('src="/education/assets/js/checkout.js'));
 assert.ok(checkout.includes('enrollment.js'));
+assert.doesNotMatch(checkout, /wa\.me/);
+assert.match(checkout, /id="contact-email" href="mailto:comercial@praia\.digital/);
 const login = fs.readFileSync(path.join(__dirname,'../education/aluno/login.html'),'utf8');
 assert.match(login,/errorEl.hidden = false/);
 assert.match(login,/role="alert"/);
@@ -56,7 +61,7 @@ if (process.env.ACADEMY_BROWSER_TEST === '1') (async () => {
       await page.locator('#selected-course').waitFor({state:'visible'});
       assert.match(await page.locator('#course-price').innerText(),/29,00/);
       assert.equal(await page.locator('#course-title').innerText(),course.title);
-      assert.match(decodeURIComponent(await page.locator('#contact-whatsapp').getAttribute('href')),/Airbnb do Zero/);
+      assert.match(decodeURIComponent(await page.locator('#contact-email').getAttribute('href')),/Airbnb do Zero/);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
       await page.goto('https://praia.digital/education/checkout.html?course=unknown&title=Fake&price=1');
       await page.waitForFunction(()=>document.querySelector('#selection-status').textContent.includes('Nenhum'));

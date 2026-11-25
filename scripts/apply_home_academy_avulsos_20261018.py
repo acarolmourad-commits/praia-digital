@@ -44,28 +44,7 @@ if 'Matrícula assistida neste momento' not in v:
     v = once(v, a, a + n, 'vendas')
 wr(p, v)
 
-# 4) education/checkout.html - pagina segura de matricula assistida
-checkout = """<!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matrícula assistida — Praia Digital Academy</title><meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://praia.digital/education/checkout.html">
-<meta name="description" content="Matrícula assistida da Praia Digital Academy. Escolha o curso e fale com a equipe para receber as instruções de pagamento e acesso.">
-<style>*{box-sizing:border-box}body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0;padding:32px 20px;line-height:1.65}.wrap{max-width:900px;margin:0 auto}.card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:22px;margin:18px 0}.cta{display:inline-block;background:#00B4D8;color:#fff;padding:.75rem 1.25rem;border-radius:999px;font-weight:700;text-decoration:none;margin:.35rem}.secondary{background:#023047}.muted{color:#41525f}.notice{background:#fff8e6;border-left:5px solid #f2b705;padding:16px;border-radius:10px}</style></head>
-<body><div class="wrap"><main id="main"><p><a href="/education/vendas.html">← Voltar para os cursos</a></p>
-<h1>Matrícula assistida — Praia Digital Academy</h1>
-<p>A Academy está em fase de matrícula assistida. A equipe confirma o curso ideal para o seu objetivo antes de enviar as instruções finais de pagamento e acesso.</p>
-<div class="card"><h2>Como funciona</h2><ol><li>Escolha o curso no catálogo da Academy.</li><li>Fale com a equipe informando o curso desejado.</li><li>Receba a confirmação do valor, as instruções de pagamento e o próximo passo para acessar o conteúdo.</li></ol>
-<p><a class="cta" href="https://wa.me/5511954346288?text=Quero%20fazer%20minha%20matr%C3%ADcula%20na%20Praia%20Digital%20Academy" target="_blank" rel="noopener">Solicitar matrícula no WhatsApp</a>
-<a class="cta secondary" href="mailto:comercial@praia.digital?subject=Matr%C3%ADcula%20assistida%20%E2%80%94%20Praia%20Digital%20Academy&body=Ol%C3%A1%2C%20equipe%20Praia%20Digital!%0A%0AQuero%20fazer%20minha%20matr%C3%ADcula%20na%20Academy.%0A%0ACurso%20desejado%3A%0ANome%3A%0AWhatsApp%3A%0AObjetivo%20com%20o%20curso%3A%0A%0AObrigado(a).">Solicitar matrícula por e-mail</a></p></div>
-<div class="notice"><strong>Importante:</strong> esta página não processa pagamentos automaticamente. Não informe dados de cartão aqui. O pagamento só deve ser feito após a confirmação da equipe Praia Digital.</div>
-<h2>Perguntas frequentes</h2><div class="card">
-<p><strong>Como acesso o curso após a matrícula?</strong><br><span class="muted">Após a confirmação da matrícula pela equipe, você recebe as instruções de acesso à área do aluno e ao conteúdo contratado.</span></p>
-<p><strong>Emite certificado?</strong><br><span class="muted">Os cursos e formações indicam no catálogo quando há certificado após a conclusão.</span></p>
-<p><strong>Quais formas de pagamento estão disponíveis?</strong><br><span class="muted">A equipe confirma as opções disponíveis no momento da matrícula, antes de qualquer pagamento.</span></p></div>
-<p><a href="/education/index.html">Conhecer a Academy</a> · <a href="/education/cursos/index.html">Ver catálogo de cursos</a> · <a href="/planos.html">Ver planos Praia Digital</a></p>
-</main></div></body></html>
-"""
-wr('education/checkout.html', checkout)
+# A página de matrícula é mantida diretamente em education/checkout.html.
 
 # 5) Paginas pos-compra dos avulsos
 STYLE = 'body{font-family:Arial,sans-serif;max-width:900px;margin:0 auto;padding:28px;line-height:1.65;color:#17202b}a{color:#0969da}.cta{display:inline-block;background:#0969da;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold}.box{background:#f4f7fb;padding:18px;border-radius:10px;margin:18px 0}.warn{background:#fff8e6;padding:16px;border-left:5px solid #f2b705}'
@@ -99,7 +78,7 @@ block('entrega-relatorio-avaliacao.html', '<div class="box"><h2>Após o pagament
 block('entrega-descricoes-ia.html', '<div class="box"><h2>Após o pagamento</h2><p>Você será direcionado para a página de confirmação com o checklist de intake. Envie os dados de até 20 imóveis para <strong>comercial@praia.digital</strong> para produzirmos os textos. Se o botão de confirmação não abrir, acesse <a href="obrigado-pacote-descricoes.html">obrigado-pacote-descricoes.html</a>.</p></div>')
 block('entrega-kit-temporada.html', '<div class="box"><h2>Após a assinatura</h2><p>Você será direcionado para a página de confirmação com o checklist de cadastro dos imóveis. Envie os dados para <strong>comercial@praia.digital</strong> para ativarmos o acompanhamento. Se o botão de confirmação não abrir, acesse <a href="obrigado-kit-temporada.html">obrigado-kit-temporada.html</a>.</p></div>')
 
-for rel, needle in [('js/shared.js', 'insertBefore(sec, footer)'), ('partials/header.html', '/planos.html'), ('education/vendas.html', 'Matrícula assistida neste momento'), ('education/checkout.html', 'não processa pagamentos automaticamente'), ('obrigado-relatorio-avaliacao.html', 'mailto:comercial@praia.digital'), ('obrigado-kit-temporada.html', 'mailto:comercial@praia.digital'), ('obrigado-pacote-descricoes.html', 'mailto:comercial@praia.digital')]:
+for rel, needle in [('js/shared.js', 'insertBefore(sec, footer)'), ('partials/header.html', '/planos.html'), ('education/vendas.html', 'Matrícula assistida neste momento'), ('education/checkout.html', 'id="contact-email"'), ('obrigado-relatorio-avaliacao.html', 'mailto:comercial@praia.digital'), ('obrigado-kit-temporada.html', 'mailto:comercial@praia.digital'), ('obrigado-pacote-descricoes.html', 'mailto:comercial@praia.digital')]:
     t = rd(rel)
     if needle not in t or len(t.encode('utf-8')) < 500:
         raise SystemExit('ERRO validacao ' + rel)

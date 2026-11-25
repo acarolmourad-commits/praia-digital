@@ -26,10 +26,18 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
   assert.ok((await page.locator('body').innerText()).includes('antes do pagamento'));
   await page.keyboard.press('Tab');assert.equal(await page.locator(':focus').getAttribute('href'),'#main');
   await page.screenshot({path:path.join(out,'catalog-'+width+'.png'),fullPage:false});
+  const references = new Set();
   for(const a of await page.locator('[data-kit] a,[data-bundle] a').all()){
    const href=await a.getAttribute('href');assert.ok(href.startsWith('mailto:comercial@praia.digital?'));
    const url=new URL(href);assert.ok(url.searchParams.get('subject').startsWith('Solicitar compra'));
-   assert.ok(url.searchParams.get('body').includes('Antes do pagamento'));
+   assert.ok(!href.includes('+'), 'Spaces in mailto headers must use percent encoding');
+   const body = url.searchParams.get('body');
+   assert.ok(body.includes('Antes do pagamento'));
+   const match = body.match(/Referência do material: ([a-z0-9-]+)\./);
+   assert.ok(match, 'Missing offer reference');
+   const sku = match[1];
+   assert.ok(!references.has(sku), 'Duplicate offer reference');
+   references.add(sku);
   }
   await page.locator('#kit-search').fill('PriceLabs');assert.equal(await page.locator('[data-kit]:visible').count(),1);
   assert.equal(await page.locator('#kit-count').innerText(),'1 kit encontrado');
