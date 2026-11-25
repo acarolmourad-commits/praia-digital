@@ -40,6 +40,11 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_listing_retirements.py'
           python3 scripts/enforce_listing_retirements.py
 
+      - name: Prepare customer email links
+        run: |
+          python3 -m unittest discover -s tests -p 'test_contact_email.py'
+          python3 scripts/build_contact_email.py --report "$RUNNER_TEMP/contact-email-pages.json"
+
       - name: Validate sitemap before publication
         run: python3 scripts/validate_sitemap_targets.py
 

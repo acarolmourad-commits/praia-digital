@@ -503,7 +503,7 @@
             if (!response.ok) throw new Error('Envio não confirmado');
             status.textContent = 'O serviço de atendimento aceitou sua solicitação. Este contato não reserva o imóvel.';
           } catch (_) {
-            status.textContent = 'Não foi possível confirmar o envio. Use o link abaixo para revisar e enviar sua mensagem no WhatsApp.';
+            status.textContent = 'Não foi possível confirmar o envio. Use o link abaixo para revisar e enviar sua mensagem por e-mail.';
             fallback.hidden = false;
           } finally {
             clearTimeout(timeout);

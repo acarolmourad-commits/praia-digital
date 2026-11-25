@@ -14,20 +14,20 @@
 </head>
 <body><main class="wrap">
 <header class="hero"><a href="/" aria-label="Voltar à página inicial da Praia Digital">← Praia Digital</a><div class="eyebrow">Para proprietários no litoral paulista</div><h1>Seu imóvel merece uma estratégia melhor.</h1><p>Quer vender, alugar por contrato anual ou trabalhar com temporada? Conte um pouco sobre seu imóvel e inicie uma conversa com a Praia Digital sobre divulgação, anúncios e precificação.</p><p class="muted">O cadastro inicia um atendimento, sem garantia de venda, reservas ou faturamento. Condições e serviços são avaliados conforme a necessidade.</p></header>
-<section aria-labelledby="como-funciona"><h2 id="como-funciona">Como funciona</h2><div class="steps"><div class="step"><strong>1. Informe seus dados</strong>Descreva seu imóvel e seu objetivo.</div><div class="step"><strong>2. Revise a mensagem</strong>Enviaremos as informações para o WhatsApp, onde você confirma o envio.</div><div class="step"><strong>3. Converse com a equipe</strong>A Praia Digital poderá avaliar suas necessidades e apresentar opções de atendimento.</div></div></section>
-<section class="panel" aria-labelledby="form-title"><h2 id="form-title">Cadastre seu imóvel</h2><p class="muted">Campos com * são obrigatórios. Os dados não são enviados automaticamente: você confirma a mensagem no WhatsApp.</p>
+<section aria-labelledby="como-funciona"><h2 id="como-funciona">Como funciona</h2><div class="steps"><div class="step"><strong>1. Informe seus dados</strong>Descreva seu imóvel e seu objetivo.</div><div class="step"><strong>2. Revise a mensagem</strong>Revise as informações no seu aplicativo de e-mail e confirme o envio.</div><div class="step"><strong>3. Converse com a equipe</strong>A Praia Digital poderá avaliar suas necessidades e apresentar opções de atendimento.</div></div></section>
+<section class="panel" aria-labelledby="form-title"><h2 id="form-title">Cadastre seu imóvel</h2><p class="muted">Campos com * são obrigatórios. Os dados não são enviados automaticamente: você confirma a mensagem por e-mail.</p>
 <form id="imovel-form">
 <fieldset><legend>Qual é seu objetivo? *</legend><label><input type="radio" name="objetivo" value="Locação por temporada" required> Alugar por temporada</label><label><input type="radio" name="objetivo" value="Venda"> Vender meu imóvel</label><label><input type="radio" name="objetivo" value="Locação anual"> Alugar por contrato anual</label></fieldset>
-<div class="two"><label>Nome completo *<input name="nome" autocomplete="name" maxlength="120" required></label><label>WhatsApp *<input name="telefone" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="(11) 99999-9999" required></label></div>
+<div class="two"><label>Nome completo *<input name="nome" autocomplete="name" maxlength="120" required></label><label>Telefone (opcional)<input name="telefone" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="(11) 99999-9999"></label></div>
 <label>E-mail *<input name="email" type="email" autocomplete="email" maxlength="180" required></label>
 <div class="two"><label>Cidade do imóvel *<input name="cidade" maxlength="90" placeholder="Ex.: Bertioga" required></label><label>Bairro<input name="bairro" maxlength="90" placeholder="Ex.: Riviera de São Lourenço"></label></div>
 <div class="two"><label>Tipo de imóvel *<select name="tipo" required><option value="">Selecione</option><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Flat</option><option>Comercial</option><option>Outro</option></select></label><label>Valor estimado (R$), se souber<input name="valor" inputmode="decimal" maxlength="35" placeholder="Ex.: 500.000"></label></div>
 <label>Informações adicionais (opcional)<textarea name="observacoes" rows="3" maxlength="600" placeholder="Ex.: quartos, localização, anúncio atual ou dúvidas"></textarea></label>
-<label class="privacy"><input type="checkbox" name="consentimento" required> Concordo em compartilhar as informações preenchidas com a Praia Digital via WhatsApp para atendimento à minha solicitação. *</label>
-<p class="muted">Ao continuar, o WhatsApp será aberto com uma mensagem preenchida. Confira o destinatário e o conteúdo antes de enviar. Consulte também a <a href="/politica-de-privacidade.html">política de privacidade</a>.</p>
-<button class="button" type="submit">Continuar no WhatsApp</button><p id="feedback" role="status" aria-live="polite"></p>
+<label class="privacy"><input type="checkbox" name="consentimento" required> Concordo em compartilhar as informações preenchidas com a Praia Digital por e-mail para atendimento à minha solicitação. *</label>
+<p class="muted">Ao continuar, um e-mail será preparado com uma mensagem preenchida. Confira o destinatário e o conteúdo antes de enviar. Consulte também a <a href="/politica-de-privacidade.html">política de privacidade</a>.</p>
+<button class="button" type="submit">Continuar por e-mail</button><p id="feedback" role="status" aria-live="polite"></p>
 </form></section>
-<footer><p>Prefere falar diretamente? <a href="https://wa.me/5511954346288?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20meu%20im%C3%B3vel" target="_blank" rel="noopener noreferrer">Converse com a equipe pelo WhatsApp</a>.</p></footer>
+<footer><p>Prefere falar diretamente? <a href="mailto:comercial@praia.digital?subject=Contato%20%E2%80%94%20Cadastre%20seu%20im%C3%B3vel%20no%20litoral%20paulista%20%7C%20Praia%20Digital&amp;body=Ol%C3%A1%2C%20quero%20falar%20sobre%20meu%20im%C3%B3vel" rel="noopener noreferrer">Converse com a equipe por e-mail</a>.</p></footer>
 </main>
 <script>
 (function(){
@@ -37,12 +37,12 @@ event.preventDefault();
 if(!form.reportValidity())return;
 const data=new FormData(form), get=(key)=>String(data.get(key)||'').trim();
 const phone=get('telefone').replace(/\D/g,'');
-if(phone.length<10||phone.length>13){feedback.textContent='Confira o número de WhatsApp com DDD.';return;}
-const lines=['Olá! Gostaria de cadastrar um imóvel na Praia Digital.','', 'Objetivo: '+get('objetivo'),'Nome: '+get('nome'),'WhatsApp: '+get('telefone'),'E-mail: '+get('email'),'Cidade: '+get('cidade'),'Bairro: '+(get('bairro')||'Não informado'),'Tipo: '+get('tipo'),'Valor estimado: '+(get('valor')||'Não informado'),'Observações: '+(get('observacoes')||'Nenhuma'),'','Envio autorizado pelo titular dos dados para atendimento.'];
-const url='https://wa.me/5511954346288?text='+encodeURIComponent(lines.join('\n'));
-feedback.textContent='Abrindo WhatsApp. Revise e envie a mensagem para concluir o contato.';
+if(phone && (phone.length<10||phone.length>13)){feedback.textContent='Confira o telefone com DDD.';return;}
+const lines=['Olá! Gostaria de cadastrar um imóvel na Praia Digital.','', 'Objetivo: '+get('objetivo'),'Nome: '+get('nome'),'Telefone: '+(get('telefone')||'Não informado'),'E-mail: '+get('email'),'Cidade: '+get('cidade'),'Bairro: '+(get('bairro')||'Não informado'),'Tipo: '+get('tipo'),'Valor estimado: '+(get('valor')||'Não informado'),'Observações: '+(get('observacoes')||'Nenhuma'),'','Envio autorizado pelo titular dos dados para atendimento.'];
+const url='mailto:comercial@praia.digital?subject=Contato%20%E2%80%94%20Cadastre%20seu%20im%C3%B3vel%20no%20litoral%20paulista%20%7C%20Praia%20Digital&body='+encodeURIComponent(lines.join('\n'));
+feedback.textContent='Preparando o e-mail. Revise e envie a mensagem para concluir o contato.';
 const opened=window.open(url,'_blank','noopener,noreferrer');
-if(!opened){feedback.textContent='Se o WhatsApp não abriu, use o link abaixo para continuar.';let a=document.getElementById('fallback-wa');if(!a){a=document.createElement('a');a.id='fallback-wa';a.textContent='Abrir mensagem no WhatsApp';a.target='_blank';a.rel='noopener noreferrer';feedback.after(a);}a.href=url;}
+if(!opened){feedback.textContent='Se o aplicativo de e-mail não abriu, use o link abaixo para continuar.';let a=document.getElementById('fallback-wa');if(!a){a=document.createElement('a');a.id='fallback-wa';a.textContent='Abrir mensagem por e-mail';a.target='_blank';a.rel='noopener noreferrer';feedback.after(a);}a.href=url;}
 });
 })();
 </script></body></html>

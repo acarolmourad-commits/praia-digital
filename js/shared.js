@@ -200,7 +200,7 @@
     wrap.style.cssText = 'max-width:860px;margin:2rem auto 0;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);';
     wrap.innerHTML =
       '<h3 style="margin:0 0 0.25rem;font-size:1.15rem;color:#0A3D2E;">Não encontrou o padrão que procura?</h3>' +
-      '<p style="margin:0 0 1rem;font-size:0.9rem;color:#555;">Conte o que você busca e a gente filtra as melhores opções para você no WhatsApp.</p>' +
+      '<p style="margin:0 0 1rem;font-size:0.9rem;color:#555;">Conte o que você busca e a gente filtra as melhores opções para você por e-mail.</p>' +
       '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;">' +
         '<select id="pdLeadTipo" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
           '<option value="">Tipo de imóvel</option><option>Casa</option><option>Apartamento</option><option>Terreno</option><option>Pousada</option><option>Comercial</option>' +
@@ -217,9 +217,9 @@
       '</div>' +
       '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;margin-top:0.75rem;">' +
         '<input id="pdLeadNome" placeholder="Seu nome" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
-        '<input id="pdLeadFone" placeholder="Seu WhatsApp (opcional)" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+        '<input id="pdLeadFone" placeholder="Seu telefone (opcional)" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
       '</div>' +
-      '<button id="pdLeadBtn" style="margin-top:1rem;background:#0A3D2E;color:#fff;border:none;padding:0.8rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;">Receber opções no WhatsApp</button>';
+      '<button id="pdLeadBtn" style="margin-top:1rem;background:#0A3D2E;color:#fff;border:none;padding:0.8rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;">Receber opções por e-mail</button>';
     if (grid.parentNode) grid.parentNode.appendChild(wrap);
     document.getElementById('pdLeadBtn').addEventListener('click', function () {
       var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
@@ -230,8 +230,8 @@
       if (v('pdLeadDorms')) partes.push('com ' + v('pdLeadDorms') + ' dormitórios');
       var msg = 'Olá! Quero receber opções de imóveis' + (partes.length ? ': ' + partes.join(', ') : ' no litoral de SP') + '.';
       if (v('pdLeadNome')) msg += ' Meu nome é ' + v('pdLeadNome') + '.';
-      if (v('pdLeadFone')) msg += ' Meu WhatsApp: ' + v('pdLeadFone') + '.';
-      window.open('https://wa.me/5511954346288?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      if (v('pdLeadFone')) msg += ' Meu telefone: ' + v('pdLeadFone') + '.';
+      window.open('mailto:comercial@praia.digital?subject=Pesquisa%20de%20im%C3%B3vel&body=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   }
   function run() {
