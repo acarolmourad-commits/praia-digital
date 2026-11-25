@@ -256,6 +256,8 @@ try{for(const width of [360,768,1280]){
     assert.ok(await page.locator('.pd-network a[href="/apps/"]').isVisible(), link);
     const objective = group.slice('grupo-'.length);
     await page.locator(`.pd-network a[href="/apps/?objetivo=${objective}#${group}"]`).press('Enter');
+    await page.waitForURL(origin + '/apps/?objetivo=' + objective + '#' + group);
+    await page.waitForFunction(expected => document.getElementById('app-goal')?.value === expected, group);
     assert.equal(new URL(page.url()).hash, '#' + group);
     assert.equal(await goal.inputValue(), group);
     assert.equal(await page.locator('.pd-catalog-group:visible').count(), 1);
