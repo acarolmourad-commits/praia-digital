@@ -9,6 +9,7 @@
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
   const onlyResult = document.getElementById('app-only-result');
+  const jumpToResults = document.getElementById('app-jump-results');
   const empty = document.getElementById('app-empty');
   const broaden = document.getElementById('app-search-all');
   const keepGoal = document.getElementById('app-keep-goal');
@@ -55,6 +56,7 @@
       count += visible;
     }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
+    if (jumpToResults) jumpToResults.hidden = count < 2 || (!goal.value && terms.length === 0);
     if (onlyResult) {
       onlyResult.hidden = count !== 1;
       if (count === 1) {
@@ -115,6 +117,9 @@
     filter();
   }
   if (printSelection) printSelection.addEventListener('click', () => window.print());
+  jumpToResults?.addEventListener('click', () => {
+    catalog.querySelector('.pd-catalog-group:not([hidden]) a.card:not([hidden])')?.focus();
+  });
   if (copySelection && shareLink && copyStatus) copySelection.addEventListener('click', async () => {
     const value = shareLink.value;
     try {
