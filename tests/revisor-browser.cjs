@@ -48,6 +48,20 @@ for(const width of [390,1280]){
   return fs.readFileSync(await download.path(), 'utf8');
  }
  assert.equal(await readDownload(), summary);
+ const pendingBox = page.locator('#accommodation-pending');
+ const pendingText = await pendingBox.inputValue();
+ assert.match(pendingText, /Identificar a segunda fonte/);
+ assert.match(pendingText, /Confirmar se o percurso/);
+ assert.doesNotMatch(pendingText, /configuração das camas|foto do banheiro/);
+ assert.ok(pendingText.length <= 1000);
+ await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(text){window.pendingTextCopied = text;return Promise.resolve();}}}));
+ await page.getByRole('button',{name:'Copiar pendências da lista'}).click();
+ assert.equal(await page.evaluate(()=>window.pendingTextCopied), pendingText);
+ const target = await page.getByRole('link',{name:'Abrir pontos a confirmar no relatório'}).getAttribute('href');
+ const reportPage = await context.newPage();
+ await reportPage.goto(new URL(target,page.url()).href);
+ assert.equal(await reportPage.locator('#pending').isEditable(),true);
+ await reportPage.close();
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return Promise.reject(new Error('denied'));}}}));
  await page.locator('#accommodation-copy').click();
  assert.match(await page.locator('#accommodation-status').textContent(),/Texto selecionado/);
@@ -69,6 +83,13 @@ for(const width of [390,1280]){
  await page.evaluate(()=>window.finishAccommodationCopy());
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
  assert.equal(await page.locator('#accommodation-text').inputValue(),'');
+ assert.equal(await pendingBox.inputValue(), '');
+ for (const check of await checks.all()) await check.check();
+ await page.locator('#accommodation-source-one').fill('Site');
+ await page.locator('#accommodation-source-two').fill('Canal de reservas');
+ await page.locator('#accommodation-generate').click();
+ assert.equal(await page.locator('#accommodation-pending-panel').isVisible(), false);
+ await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();
  assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
  assert.doesNotMatch(await page.locator('#accommodation-status').textContent(),/copiado/);
  assert.equal(await accommodation.locator('input:checked').count(),0);
