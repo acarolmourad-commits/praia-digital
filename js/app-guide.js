@@ -30,7 +30,30 @@
     update();
     reset.focus();
   });
-  document.getElementById('guide-print').addEventListener('click', () => window.print());
+  const routeChoice = document.getElementById('guide-export-route');
+  const printScope = document.createElement('p');
+  printScope.className = 'guide-print-scope';
+  document.querySelector('.guide-hero .guide-width').appendChild(printScope);
+  const preparePrint = () => {
+    const selected = routeChoice.value;
+    const routes = [...document.querySelectorAll('.guide-route')];
+    const chosen = routes.find(route => route.id === selected);
+    document.body.dataset.guidePrintScope = chosen ? 'single' : 'all';
+    routes.forEach(route => route.toggleAttribute('data-guide-print-selected', route === chosen));
+    printScope.textContent = chosen ? `Roteiro: ${chosen.querySelector('h2').textContent.trim()}` : 'Todos os quatro roteiros';
+  };
+  const finishPrint = () => {
+    delete document.body.dataset.guidePrintScope;
+    document.querySelectorAll('[data-guide-print-selected]').forEach(route => route.removeAttribute('data-guide-print-selected'));
+    printScope.textContent = '';
+  };
+  // Also honor the selection when printing from the browser menu or keyboard.
+  window.addEventListener('beforeprint', preparePrint);
+  window.addEventListener('afterprint', finishPrint);
+  document.getElementById('guide-print').addEventListener('click', () => {
+    preparePrint();
+    window.print();
+  });
   document.getElementById('guide-download').addEventListener('click', () => {
     const selected = document.getElementById('guide-export-route').value;
     const routes = [...document.querySelectorAll('.guide-route')].filter(route => !selected || route.id === selected);
