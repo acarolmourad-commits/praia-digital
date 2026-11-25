@@ -32,6 +32,20 @@ class Page(HTMLParser):
 
 
 class BlogDiscoveryTests(unittest.TestCase):
+    def test_riviera_cross_links_use_published_paths(self):
+        recommendations = [
+            ('guia-equipamentos-praia-premium-acessorios-luxo-riviera-2026', 'guia-pet-friendly-riviera-sao-lourenco-bertioga-2026'),
+            ('guia-adega-bar-em-casa-vinhos-mixologia-riviera-2026', 'guia-sushi-gastronomia-japonesa-delivery-riviera-bertioga-2026'),
+            ('guia-sushi-gastronomia-japonesa-delivery-riviera-bertioga-2026', 'onde-comer-na-riviera-de-sao-lourenco-restaurantes-2026'),
+        ]
+        for source, destination in recommendations:
+            with self.subTest(source=source):
+                links = [attrs.get('href', '') for tag, attrs in Page((ROOT / 'blog' / f'{source}.html').read_text()).tags if tag == 'a']
+                target = f'/blog/{destination}.html'
+                self.assertIn(target, links)
+                self.assertTrue((ROOT / target.lstrip('/')).is_file())
+                self.assertFalse(any(link.startswith('blog/') for link in links))
+
     def test_links_assets_and_fragments_resolve(self):
         for file in PAGES:
             for tag, attrs in Page((ROOT / file).read_text()).tags:
