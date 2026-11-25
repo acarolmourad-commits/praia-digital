@@ -292,13 +292,13 @@
     "heading_id": "title",
     "scripts": [
       "<script src=\"core.js\" defer>",
-      "<script src=\"app.js\" defer>",
+      "<script src=\"app.js?v=aa994c35015e\" defer>",
       "<script src=\"accommodation.js?v=20261125-pendencias\" defer>"
     ],
     "controls": [
       "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
       "<input id=\"property\" type=\"text\" maxlength=\"120\" placeholder=\"Ex.: código interno do imóvel\" autocomplete=\"off\">",
-      "<input id=\"confirmed\" type=\"checkbox\">",
+      "<input id=\"confirmed\" type=\"checkbox\" aria-describedby=\"reconfirmar-ficha\">",
       "<button class=\"button primary\" type=\"submit\">",
       "<button class=\"button secondary\" id=\"clear\" type=\"button\">",
       "<button id=\"copy\" type=\"button\" class=\"button secondary\" disabled>",
