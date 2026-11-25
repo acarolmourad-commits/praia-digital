@@ -253,6 +253,22 @@ try{for(const width of [360,768,1280]){
     await page.locator('.pd-network a[href="/apps/"]').click();
     assert.equal(new URL(page.url()).pathname,'/apps/');
   }
+  // The checklist works by keyboard and label, with a single live canonical.
+  const checklistPath = '/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html';
+  await page.getByRole('link', {name: 'checklist de automação para corretores'}).click();
+  assert.equal(new URL(page.url()).pathname, checklistPath);
+  assert.deepEqual(await page.locator('link[rel="canonical"]').evaluateAll(nodes => nodes.map(n => n.href)), [origin + checklistPath]);
+  const firstTask = page.getByRole('checkbox', {name: /Cadastrar imóveis/});
+  assert.equal(await page.getByRole('checkbox').count(), 16);
+  await firstTask.focus();
+  await firstTask.press('Space');
+  assert.equal(await page.locator('#progress').textContent(), '1 de 16 itens concluídos');
+  await page.getByText(/Cadastrar imóveis com título/, {exact: false}).click();
+  assert.equal(await page.locator('#progress').textContent(), '0 de 16 itens concluídos');
+  await overflow();
+  await page.getByRole('link', {name: 'Revisor de Anúncios', exact: true}).click();
+  assert.equal(new URL(page.url()).pathname, '/apps/revisor-anuncios/');
+  await page.goto(origin + '/apps/');
   const dailyPath='/ferramentas/calculadora-diaria-ideal-airbnb-2026.html';
   const dailyCard=page.getByRole('navigation',{name:'Outros recursos'}).getByRole('link',{name:/Calculadora de diária de temporada/});
   await dailyCard.press('Enter');
