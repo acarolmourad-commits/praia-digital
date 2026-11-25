@@ -154,7 +154,8 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await page.keyboard.press('Tab');
       assert.equal(await page.evaluate(() => document.activeElement.matches('a.pd-skip[href="#conteudo"]')), true);
       await page.keyboard.press('Enter');
-      assert.equal(new URL(page.url()).hash, '#conteudo');
+      await page.waitForURL('**/apps/guia-de-uso.html#conteudo');
+      assert.equal(await page.locator('#conteudo').count(), 1);
       await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
       await context.close();
     }
