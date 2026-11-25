@@ -1,3 +1,4 @@
+from urllib.parse import quote
 from pathlib import Path
 import json
 
@@ -54,7 +55,7 @@ for slug, item in data.items():
     <div class="hero">
       <h1>{title}</h1>
       <p>{description}</p>
-      <a class="cta" href="https://wa.me/5511954346288?text={whatsapp.replace(' ', '%20')}" target="_blank" rel="noopener">Quero receber o guia</a>
+      <a class="cta" href="mailto:comercial@praia.digital?subject=Solicita%C3%A7%C3%A3o%20de%20guia%20%E2%80%94%20{quote(title, safe='')}">Pedir guia por e-mail</a>
     </div>
 
     <div class="card">

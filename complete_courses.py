@@ -503,7 +503,7 @@ vendas_html = """<!DOCTYPE html>
         <p><strong>Carga horária:</strong> 4 horas</p>
         <p><strong>Acesso:</strong> vitalício + atualizações</p>
         <p class="price">R$ 297</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20o%20curso%20{nome_slug}">Quero garantir minha vaga</a>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20{slug}">Consultar por e-mail</a>
       </div>
 
       <div class="grid">

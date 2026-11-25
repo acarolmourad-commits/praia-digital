@@ -97,7 +97,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <div class="hero">
       <h1>Guia de Imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário</h1>
       <p>Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Peruíbe, incluindo Centro, Jardim São Paulo e Balneário. Quer receber gratuitamente?</p>
-      <a class="cta" href="https://wa.me/5511954346288?text=Olá!%20Tenho%20interesse%20no%20Guia%20de%20Imóveis%20em%20Peruíbe.%20Pode%20me%20enviar%20mais%20detalhes?" target="_blank" rel="noopener">Quero receber o guia</a>
+      <a class="cta" href="mailto:comercial@praia.digital?subject=Solicita%C3%A7%C3%A3o%20de%20guia%20%E2%80%94%20Guia%20de%20Im%C3%B3veis%20em%20Peru%C3%ADbe%20%E2%80%94%20Centro%2C%20Jardim%20S%C3%A3o%20Paulo%20e%20Balne%C3%A1rio&amp;body=Ol%C3%A1%21%20Gostaria%20de%20receber%20o%20guia%20Guia%20de%20Im%C3%B3veis%20em%20Peru%C3%ADbe%20%E2%80%94%20Centro%2C%20Jardim%20S%C3%A3o%20Paulo%20e%20Balne%C3%A1rio%20por%20e-mail.">Pedir guia por e-mail</a>
     </div>
 
     <img src="https://praia.digital/img/per-sobrado.webp" alt="peruibe" style="max-width:100%;border-radius:12px;margin-top:18px;">
@@ -146,18 +146,10 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </section>
 <div id="lm-form" style="margin-top:18px">
   <h2>Quero receber este guia</h2>
-  <form id="leadForm">
-    <input type="text" id="name" placeholder="Seu nome" required />
-    <input type="email" id="email" placeholder="Seu e-mail" />
-    <input type="tel" id="phone" placeholder="Seu WhatsApp" />
-    <input type="hidden" id="city" value="Peruíbe" />
-    <input type="hidden" id="source" value="lead-magnet" />
-    <input type="hidden" id="magnet" value="Peruíbe" />
-    <button type="submit">Enviar</button>
-  </form>
-  <p id="formStatus"></p>
+  <p><a class="cta" href="mailto:comercial@praia.digital?subject=Solicita%C3%A7%C3%A3o%20de%20guia%20%E2%80%94%20Guia%20de%20Im%C3%B3veis%20em%20Peru%C3%ADbe%20%E2%80%94%20Centro%2C%20Jardim%20S%C3%A3o%20Paulo%20e%20Balne%C3%A1rio&amp;body=Ol%C3%A1%21%20Gostaria%20de%20receber%20o%20guia%20Guia%20de%20Im%C3%B3veis%20em%20Peru%C3%ADbe%20%E2%80%94%20Centro%2C%20Jardim%20S%C3%A3o%20Paulo%20e%20Balne%C3%A1rio%20por%20e-mail.">Pedir guia por e-mail</a></p>
+<p>Envie a mensagem para registrar seu interesse. Você também pode escrever para comercial@praia.digital com o título do material.</p>
 </div>
-<script>(function(){var form=document.getElementById("leadForm");if(!form)return;var WA="5511954346288";function collect(){var d={};var els=form.querySelectorAll("input,select,textarea");for(var i=0;i<els.length;i++){var el=els[i];if(!el.id)continue;var v=(el.value||"").trim();if(v)d[el.id]=v;}return d;}function send(data){var st=document.getElementById("formStatus");try{var leads=JSON.parse(localStorage.getItem("pd_leads")||"[]");leads.push(Object.assign({ts:new Date().toISOString(),page:location.pathname},data));localStorage.setItem("pd_leads",JSON.stringify(leads));}catch(e){}try{window.dispatchEvent(new CustomEvent("lead_pre_qualificado",{detail:data}));}catch(e){}var ctrl=new AbortController();var to=setTimeout(function(){ctrl.abort();},3500);fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),signal:ctrl.signal}).then(function(r){clearTimeout(to);if(r.status===200){if(st)st.textContent="Recebido! Entraremos em contato.";return;}throw new Error("st");}).catch(function(){clearTimeout(to);var rot={"name":"Nome","email":"E-mail","phone":"WhatsApp","city":"Cidade","magnet":"Interesse","faixa_preco":"Faixa de preco","prazo_interesse":"Prazo","source":"Origem"};var partes=[];for(var k in data){if(k==="source")continue;partes.push((rot[k]||k)+": "+data[k]);}var msg="Ola! Quero receber informacoes."+(partes.length?" "+partes.join(" | "):"");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener");if(st)st.textContent="Abrindo seu WhatsApp para concluir o envio. Se preferir, fale conosco: (11) 95434-6288.";});}form.addEventListener("submit",function(e){e.preventDefault();send(collect());});})();</script>
+
 
 
   <script type="application/ld+json">
