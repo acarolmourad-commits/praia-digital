@@ -88,6 +88,9 @@ a:hover{text-decoration:underline}
         <div><label for="buyer-time">Prazo desejado</label><select id="buyer-time"><option value="">Ainda não definido</option><option>Até 3 meses</option><option>De 3 a 6 meses</option><option>Mais de 6 meses</option><option>Apenas pesquisando</option></select></div>
       </div>
       <label for="buyer-notes">Preferências do imóvel</label><textarea id="buyer-notes" rows="2" maxlength="600" placeholder="Ex.: 2 quartos, vaga coberta, perto da praia"></textarea>
+      <label for="buyer-visit">Pergunta para a visita (opcional)</label>
+      <textarea id="buyer-visit" rows="2" maxlength="350" placeholder="Ex.: A vaga do anúncio comporta um carro alto? Posso conferir na visita?"></textarea>
+      <p class="note">Se quiser identificar o imóvel, inclua a referência pública do anúncio. <a href="/apps/checklist-vistoria/#perguntas-da-visita">Consultar perguntas do checklist</a>.</p>
       <div class="actions"><button class="btn" type="submit">Preparar resumo</button><button class="btn secondary" type="button" id="buyer-clear">Limpar tudo</button><a class="btn secondary" href="/imoveis.html">Consultar catálogo</a></div>
     </form>
     <p class="note">O perfil é montado neste navegador, sem gravação pelo orientador. Consulte a <a href="/politica-de-privacidade.html">política de privacidade do site</a>. O catálogo abre separadamente, sem aplicar estes campos como filtros.</p>
@@ -144,6 +147,6 @@ a:hover{text-decoration:underline}
 <script src="https://praia.digital/js/shared.js?v=2.1"></script>
 </div>
 </main>
-<script src="/js/assistente-compradores.js?v=1" defer></script>
+<script src="/js/assistente-compradores.js?v=20261125-visita" defer></script>
 </body>
 </html>

@@ -25,3 +25,21 @@ test('Clear deletes local profile, question, summary and chat',()=>{const {w,get
 test('Copy failure provides manual fallback',async()=>{const {w,get}=load();get('buyer-summary').value='Meu resumo';get('buyer-copy').click();await new Promise(r=>setTimeout(r,0));assert.match(get('buyer-status').textContent,/manualmente/);w.close();});
 test('All in-page references exist; single footer marker',()=>{const {w}=load();for(const a of w.document.querySelectorAll('a[href^="#"]'))assert.ok(w.document.querySelector(a.getAttribute('href')),a.href);assert.equal(w.document.querySelectorAll('meta[name="pd-shared-footer"]').length,1);assert.equal(w.document.querySelectorAll('h1').length,1);w.close();});
 test('Local transcript stays bounded',()=>{const {w,get}=load();for(let i=0;i<30;i++){get('msg').value='Bertioga temporada';get('buyer-ask').click();}assert.ok(get('chat').children.length<=36);w.close();});
+
+test('a reviewed visit question reaches the addressed email once', () => {
+  const {w, get} = load();
+  let destination;
+  w.open = href => { destination = new URL(href); };
+  get('buyer-visit').value = 'A vaga A&B está disponível?';
+  get('buyer-profile').dispatchEvent(new w.Event('submit', {cancelable: true}));
+  const summary = get('buyer-summary');
+  assert.equal(summary.value.split('Pergunta para a visita:').length, 2);
+  assert.ok(summary.value.includes(get('buyer-visit').value));
+  summary.value = summary.value.replace('disponível', 'coberta');
+  get('buyer-whatsapp').click();
+  assert.equal(destination.pathname, 'comercial@praia.digital');
+  assert.equal(destination.searchParams.get('body'), summary.value);
+  get('buyer-clear').click();
+  assert.equal(get('buyer-visit').value, '');
+  w.close();
+});
