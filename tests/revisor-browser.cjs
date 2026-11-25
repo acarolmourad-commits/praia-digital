@@ -21,7 +21,8 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#report').isVisible(),true);
  const accommodation = page.getByRole('region', {name:'Conferência por acomodação'});
  const checks = accommodation.getByRole('checkbox');
- assert.equal(await checks.count(),4);
+ assert.equal(await checks.count(),5);
+ const access = accommodation.getByRole('checkbox',{name:/O percurso até a acomodação/});
  await checks.first().focus();
  await checks.first().press('Space');
  await checks.last().check();
@@ -35,11 +36,16 @@ for(const width of [390,1280]){
  assert.match(summary, /Categoria: Suíte jardim/);
  assert.match(summary, /Canal \/ fonte 2: Não informado/);
  assert.equal(summary.split('MARCADO COMO CONFERIDO:').length-1,2);
- assert.equal(summary.split('PENDENTE:').length-1,2);
+ assert.equal(summary.split('PENDENTE:').length-1,3);
+ assert.match(summary, /PENDENTE: O percurso até a acomodação/);
  assert.match(summary, /Confirmar foto do banheiro/);
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return Promise.reject(new Error('denied'));}}}));
  await page.locator('#accommodation-copy').click();
  assert.match(await page.locator('#accommodation-status').textContent(),/Texto selecionado/);
+ await access.press('Space');
+ assert.equal(await page.locator('#accommodation-result').isVisible(),false);
+ await page.locator('#accommodation-generate').click();
+ assert.match(await page.locator('#accommodation-text').inputValue(), /MARCADO COMO CONFERIDO: O percurso até a acomodação/);
  await page.locator('#accommodation-notes').fill('Conferir capacidade.');
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
  await page.locator('#accommodation-generate').click();
