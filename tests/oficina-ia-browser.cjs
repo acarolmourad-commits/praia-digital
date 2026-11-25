@@ -100,6 +100,11 @@ async function assertCurrentExports(browser, width) {
     await output.fill('Revisão manual fictícia');
     await copy.click();
     assert.deepEqual(await page.evaluate(() => window.testCopies), []);
+    page.once('dialog', dialog => dialog.dismiss());
+    await generate.click();
+    assert.equal(await output.inputValue(), 'Revisão manual fictícia');
+    assert.match(await status.textContent(), /foram alterados/);
+    page.once('dialog', dialog => dialog.accept());
     await generate.click();
     assert.match(await output.inputValue(), /R\$ 700\.000/);
     assert.doesNotMatch(await output.inputValue(), /R\$ 600\.000/);
@@ -135,7 +140,13 @@ async function assertCurrentExports(browser, width) {
     await price.fill('R$ 700.000 — teste');
     await copy.click();
     assert.equal(await page.evaluate(() => window.testCopies.at(-1)), edited);
-    await page.getByRole('button', { name: 'Conferir campos faltantes', exact: true }).click();
+    const checklist = page.getByRole('button', { name: 'Conferir campos faltantes', exact: true });
+    page.once('dialog', dialog => dialog.dismiss());
+    await checklist.click();
+    assert.equal(await output.inputValue(), edited);
+    assert.equal(await page.locator('#result-kind').textContent(), 'Briefing e prompt');
+    page.once('dialog', dialog => dialog.accept());
+    await checklist.click();
     const checklistEvent = page.waitForEvent('download');
     await download.click();
     const checklistFile = await checklistEvent;
@@ -147,9 +158,16 @@ async function assertCurrentExports(browser, width) {
 
     // Each valid email stage still generates a draft; switching stages invalidates it.
     const stages = ['primeiro', 'retorno', 'interesse', 'encerrar'];
+    const email = page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true });
+    await output.fill('Conferência manual fictícia.');
+    page.once('dialog', dialog => dialog.dismiss());
+    await email.click();
+    assert.equal(await output.inputValue(), 'Conferência manual fictícia.');
+    assert.equal(await page.locator('#result-kind').textContent(), 'Checklist de completude');
+    page.once('dialog', dialog => dialog.accept());
     for (const stage of stages) {
       await page.locator('#followup select').selectOption(stage);
-      await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
+      await email.click();
       assert.match(await output.inputValue(), /MODELO PARA REVISAR — NÃO ENVIADO/);
       assert.match(await page.locator('#result-kind').textContent(), /^Modelo de e-mail:/);
       const emailEvent = page.waitForEvent('download');
@@ -181,7 +199,7 @@ async function assertCurrentExports(browser, width) {
     assert.equal(downloads.length, 6);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `no horizontal overflow at ${width}px`);
     await assertNoNavigation(page, documents, unexpected);
-    console.log(`PASS: ${width}px — stale drafts blocked, fresh/edited TXT and copy work, source isolation, clipboard fallback, four stages and reset`);
+    console.log(`PASS: ${width}px — stale drafts blocked, manual edits protected, TXT and copy work, source isolation, clipboard fallback, four stages and reset`);
   } finally { await context.close(); }
 }
 

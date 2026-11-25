@@ -261,7 +261,7 @@
   "apps/oficina-ia-imobiliaria/index.html": {
     "heading_id": null,
     "scripts": [
-      "<script type=\"module\" src=\"./app.mjs?v=af79b518ae9f\">"
+      "<script type=\"module\" src=\"./app.mjs?v=e85ddad480c0\">"
     ],
     "controls": [
       "<input data-oficina-control disabled name=\"tipo\" maxlength=\"500\" placeholder=\"Apartamento, casa, sala comercial…\" required>",
