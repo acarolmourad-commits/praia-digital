@@ -16,11 +16,44 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
    if(u.origin!=='https://academy-preview.test'){unexpected.push(u.origin);return route.abort();}
    const rel=decodeURIComponent(u.pathname).replace(/^\//,''),file=path.resolve(root,rel);
    if(!file.startsWith(root+path.sep)||!fs.existsSync(file))return route.fulfill({status:404,body:'Missing local fixture'});
-   await route.fulfill({status:200,contentType:file.endsWith('.css')?'text/css':'text/html',body:fs.readFileSync(file)});
+   await route.fulfill({status:200,contentType:file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':'text/html',body:fs.readFileSync(file)});
   });
   await page.goto('https://academy-preview.test/'+publicPath);
   assert.equal(await page.locator('[data-kit]').count(),62);
   assert.equal(await page.locator('[data-bundle]').count(),8);
+  assert.equal(await page.locator('.copy-order').count(),70);
+  // Every copied request must preserve the original mailto, including accents,
+  // line breaks and its unique material reference. No message is sent here.
+  await page.evaluate(async () => {
+   window.copiedRequests=[];
+   Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>window.copiedRequests.push(text)}});
+   for(const button of document.querySelectorAll('.copy-order')){
+    button.click();
+    await Promise.resolve();
+   }
+  });
+  const copied=await page.evaluate(()=>window.copiedRequests);
+  const expected=await page.locator('[data-kit] a.cta,[data-bundle] a.cta').evaluateAll(links=>links.map(a=>{
+   const u=new URL(a.href);return `Para: comercial@praia.digital\nAssunto: ${u.searchParams.get('subject')}\n\n${u.searchParams.get('body')}`;
+  }));
+  assert.deepEqual(copied,expected);
+  assert.equal(await page.locator('.order-status:visible').count(),70);
+  assert.ok((await page.locator('.order-status').first().innerText()).includes('O pedido ainda não foi enviado'));
+  // Cover both unavailable API and rejected permission, then retry successfully.
+  await page.evaluate(width=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:width===390?undefined:{writeText:async()=>{throw new Error('Permission denied');}}}),width);
+  const copyButton=page.locator('.copy-order').first();
+  await copyButton.focus();await page.keyboard.press('Enter');
+  const fallback=page.locator('.order-copy-text').first();await fallback.waitFor({state:'visible'});
+  assert.equal(await fallback.inputValue(),expected[0]);
+  assert.equal(await fallback.getAttribute('readonly'),'');
+  assert.ok(await fallback.evaluate(el=>document.activeElement===el&&el.selectionStart===0&&el.selectionEnd===el.value.length));
+  assert.ok((await page.locator('.order-status').first().innerText()).includes('A cópia automática não está disponível'));
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+  await page.screenshot({path:path.join(out,'copy-fallback-'+width+'.png'),fullPage:false});
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{}}}));
+  await copyButton.click();await fallback.waitFor({state:'hidden'});
+  // Reset focus to exercise the page's original skip link from the start.
+  await page.reload();
   assert.equal(await page.locator('a[href*="stripe"]').count(),0);
   assert.ok((await page.locator('body').innerText()).includes('não instantâneas'));
   assert.ok((await page.locator('body').innerText()).includes('antes do pagamento'));
@@ -59,5 +92,5 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
  }
  }finally{await browser.close();}
  fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({state:'passed',page:publicPath,sha256:crypto.createHash('sha256').update(html).digest('hex'),viewports:[390,1280],count:62,bundles:8,scope:'Contact only; no mail sent, payment, or private content'},null,2));
- console.log('PASS62 contact-only offers,390/1280,search/empty/recovery,keyboard,contextual mailto,no overflow/no checkout');
+ console.log('PASS70 contact-only offers,390/1280,copy exact requests,clipboard denied/unavailable/retry,search,keyboard,no overflow/no checkout');
 })().catch(e=>{console.error(e);process.exit(1)});

@@ -7,6 +7,7 @@ on:
       - 'education/cursos/index.html'
       - 'education/kits-2026.html'
       - 'education/assets/academy.css'
+      - 'education/assets/js/order-email.js'
       - 'tests/academy-contact-preview.spec.cjs'
       - '.github/workflows/academy-contact-preview.yml'
   push:
@@ -16,6 +17,7 @@ on:
       - 'education/cursos/index.html'
       - 'education/kits-2026.html'
       - 'education/assets/academy.css'
+      - 'education/assets/js/order-email.js'
       - 'tests/academy-contact-preview.spec.cjs'
       - '.github/workflows/academy-contact-preview.yml'
 permissions:
