@@ -193,8 +193,11 @@ async function homepage(page, width) {
   await page.locator('#academy').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(output,`academy-${width}.png`)});
   assert.equal(await page.locator('#analise a[href="/apps/"]').count(), 1);
-  assert.match(await page.locator('#produtos-comparacao').innerText(), /39\s*\/\s*imóvel\s*\/\s*mês/);
-  assert.match(await page.locator('#produtos-comparacao').innerText(), /499\s*\/\s*anúncio\s*\/\s*plataforma/);
+  const products = page.locator('#produtos-comparacao');
+  assert.doesNotMatch(await products.innerText(), /R\$\s*\d/);
+  for (const href of ['/entrega-kit-temporada.html', '/entrega-descricoes-ia.html', '/servicos/anuncios-airbnb-booking.html', '/planos.html']) {
+    assert(await products.locator(`a[href="${href}"]`).isVisible(), href);
+  }
   await noOverflow(page, `home ${width}px`);
   await page.locator('footer').scrollIntoViewIfNeeded();
   await noOverflow(page, `footer ${width}px`);
@@ -409,7 +412,11 @@ async function houseListing(page,width){
   assert(wa.startsWith('https://wa.me/5511954346288?text='));
   await page.screenshot({path:path.join(output,`house-${width}.png`)});
   await page.locator('a.back').click();
-  const card=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/casa-terrea-bertioga-675m2.html"]')});
+  await page.waitForURL(url => url.pathname === '/imoveis.html');
+  const card = page.locator('#lista-imoveis .property-card').filter({
+    has: page.locator('a[href="imoveis/casa-terrea-bertioga-675m2.html"]')
+  });
+  await card.first().waitFor({ state: 'visible' });
   assert.equal(await card.count(),1);assert.match(await card.innerText(),/1\.800\.000/);
 }
 

@@ -53,10 +53,34 @@ const store=createStore(()=>root.localStorage),get=id=>root.document.getElementB
 function render(){
  const focusedId=root.document.activeElement?.id;
  const {state,total,status}=store.snapshot();
+ const problemLinks = [];
  get('groups').innerHTML=GROUPS.map((g,gi)=>`<div class="card"><h2>${g.nome}</h2>${g.items.map((t,ii)=>{
   const key=gi+'_'+ii,value=state[key];
-  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
+  if (value === 'bad') {
+    problemLinks.push(`<li><a href="#vistoria-${key}-bad">${t}</a></li>`);
+  }
+  return `<div class="item ${value==='ok'?'ok':value==='bad'?'bad':''}"><span id="item-${key}" style="flex:1">${t}</span><div class="opts"><button type="button" id="vistoria-${key}-ok" aria-labelledby="vistoria-${key}-ok item-${key}" aria-pressed="${value==='ok'}" onclick="mark('${key}','ok')">✓ OK</button><button type="button" id="vistoria-${key}-bad" aria-labelledby="vistoria-${key}-bad item-${key}" aria-pressed="${value==='bad'}" onclick="mark('${key}','bad')">✗ Problema</button></div></div>`;
  }).join('')}</div>`).join('');
+ // A visitor may still have the previous HTML cached during deployment.
+ const list = get('visit-problems-list'), empty = get('visit-problems-empty');
+ if (list && empty) {
+  list.innerHTML = problemLinks.join('');
+  empty.hidden = problemLinks.length > 0;
+ }
+ const copy = get('visit-copy');
+ if (copy) {
+   copy.hidden = problemLinks.length === 0;
+   get('visit-copy-status').textContent = '';
+   get('visit-copy-manual').hidden = true;
+   get('visit-copy-text').value = '';
+ }
+ const resume = get('visit-next');
+ if (resume) {
+   const next = [...ALLOWED].find(key => !state[key]);
+   resume.hidden = next === undefined;
+   if (next !== undefined) resume.href = '#vistoria-' + next + '-ok';
+   else resume.removeAttribute('href');
+ }
  const done=Object.keys(state).length,ok=Object.values(state).filter(v=>v==='ok').length,pct=Math.round(done/total*100);
  get('bar').style.width=pct+'%';get('score').textContent=pct+'%';get('score').style.color='#0369a1';
  get('verdict').textContent=`${done}/${total} itens registrados: ${ok} marcados OK, ${done-ok} com problema e ${total-done} sem marcação. Não é avaliação de segurança.`;
@@ -64,6 +88,23 @@ function render(){
  // Replacing the groups detaches the active control. Restore only its equivalent.
  if(focusedId?.startsWith('vistoria-'))get(focusedId)?.focus({preventScroll:true});
 }
+get('visit-copy')?.addEventListener('click', async () => {
+ const labels = Array.from(get('visit-problems-list').querySelectorAll('a'), link => link.textContent);
+ if (!labels.length) return;
+ const text = ['Itens a conferir na vistoria', ...labels.map(label => '• ' + label)].join('\n');
+ const field = get('visit-copy-text');
+ field.value = text;
+ try {
+   await root.navigator.clipboard.writeText(text);
+   if (field.value === text) get('visit-copy-status').textContent = 'Itens copiados. Cole no relatório e acrescente o que observou.';
+ } catch {
+   if (field.value !== text) return;
+   get('visit-copy-manual').hidden = false;
+   field.focus();
+   field.select();
+   get('visit-copy-status').textContent = 'Texto selecionado. Use o comando Copiar do dispositivo.';
+ }
+});
 root.mark=(key,value)=>{store.mark(key,value);render();};
 root.resetAll=()=>{if(root.confirm('Limpar todas as marcações desta página e remover o registro salvo neste navegador, inclusive dados inválidos? Esta ação não pode ser desfeita.')){store.reset();render();}};
 render();

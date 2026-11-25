@@ -7,12 +7,12 @@
       {
         "slug": "alugar-ou-comprar",
         "title": "Alugar ou comprar",
-        "description": "Compare cenários com os custos e o prazo que você informar."
+        "description": "Compare aluguel e compra pelo patrimônio final. Na compra, escolha SAC ou Price."
       },
       {
         "slug": "calculadora-financiamento",
         "title": "Financiamento SAC e Price",
-        "description": "Compare sistemas de amortização usando as mesmas premissas."
+        "description": "Compare a amortização e as parcelas de SAC e Price com os mesmos dados."
       },
       {
         "slug": "calculadora-consorcio",
@@ -22,7 +22,7 @@
       {
         "slug": "custo-de-compra",
         "title": "Custos de compra",
-        "description": "Inclua tributos e despesas a confirmar para a sua operação."
+        "description": "Some os valores informados de ITBI, escritura, registro e tarifas."
       },
       {
         "slug": "planejador-entrada",
@@ -59,12 +59,12 @@
       {
         "slug": "simulador-roi-temporada",
         "title": "ROI de temporada",
-        "description": "Simule receita, despesas e retorno com suas premissas."
+        "description": "Estime o retorno pelas noites disponíveis, ocupação, diária e despesas."
       },
       {
         "slug": "temporada-ou-anual",
         "title": "Temporada ou aluguel anual",
-        "description": "Compare os dois modelos com custos e ocupação informados."
+        "description": "Compare o saldo mensal das noites alugadas com o de um contrato anual."
       }
     ]
   },

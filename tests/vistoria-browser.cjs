@@ -1,3 +1,4 @@
+const {checkAppLinkTargets} = require('./check-app-link-targets.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
@@ -7,6 +8,87 @@ for(const width of [390,1280]){
 const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname!=='local.test')return route.abort();let p=path.join(root,u.pathname);if(u.pathname.endsWith('/'))p=path.join(p,'index.html');if(!fs.existsSync(p)||!fs.statSync(p).isFile())return route.abort();if(p.endsWith('shared.js')||p.endsWith('related-ads.js'))return route.fulfill({body:''});await route.fulfill({path:p});});
 await page.goto('http://local.test/apps/checklist-vistoria/');
+// Every toggle has a unique accessible name that includes its observation.
+const items=page.locator('#groups .item');
+assert.equal(await items.count(),26);
+for(const item of await items.all()){
+  const label=await item.locator('span').innerText();
+  for(const action of ['✓ OK','✗ Problema']){
+    const toggle=page.getByRole('button',{name:action+' '+label,exact:true});
+    assert.equal(await toggle.count(),1);
+    const box=await toggle.boundingBox();
+    assert(box.width>=44 && box.height>=44);
+  }
+}
+// Resuming moves focus without marking the item, including after a reload.
+const resume = page.getByRole('link', {name:'Ir ao primeiro item sem marcação'});
+await resume.press('Enter');
+assert.equal(await page.evaluate(() => document.activeElement.id), 'vistoria-0_0-ok');
+assert.equal(await page.locator('#groups [aria-pressed="true"]').count(), 0);
+await page.keyboard.press('Enter');
+await page.reload();
+await resume.press('Enter');
+assert.equal(await page.evaluate(() => document.activeElement.id), 'vistoria-0_1-ok');
+await page.locator('#vistoria-0_0-ok').press('Enter');
+assert.equal(await resume.getAttribute('href'), '#vistoria-0_0-ok');
+const allMarked = Object.fromEntries(await items.evaluateAll(rows => rows.map(row =>
+  [row.querySelector('span').id.slice('item-'.length), 'bad'])));
+await page.evaluate(state => localStorage.setItem('pd-vistoria-v1',JSON.stringify(state)),allMarked);
+await page.reload();
+assert.equal(await resume.count(), 0);
+assert.match(await page.locator('#verdict').innerText(), /26 com problema e 0 sem marcação/);
+page.once('dialog', dialog=>dialog.accept());
+await page.locator('#reset').click();
+assert.equal(await resume.getAttribute('href'), '#vistoria-0_0-ok');
+// Print must keep the final group and identify states even in black and white.
+const distance=page.locator('#vistoria-4_0-ok');
+const parking=page.locator('#vistoria-4_3-bad');
+await distance.press('Enter');
+await parking.press('Space');
+const problems = page.locator('#visit-problems-list');
+const parkingLink = problems.getByRole('link', {name: 'Vagas de garagem conforme anúncio'});
+assert.equal(await problems.getByRole('link').count(), 1);
+const copy = page.getByRole('button', {name:'Copiar itens a conferir'});
+await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {configurable:true, value:{
+  writeText: async text => { window.copiedCriteria = text; }
+}}));
+await copy.press('Enter');
+const expected = 'Itens a conferir na vistoria\n• Vagas de garagem conforme anúncio';
+await page.waitForFunction(() => document.getElementById('visit-copy-status').textContent.includes('copiados'));
+assert.equal(await page.evaluate(() => window.copiedCriteria), expected);
+await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {value:undefined}));
+await copy.click();
+const manual = page.locator('#visit-copy-text');
+assert.equal(await manual.inputValue(), expected);
+assert.equal(await manual.evaluate(el => el === document.activeElement && el.selectionEnd === el.value.length), true);
+await parkingLink.press('Enter');
+assert.equal(await parking.evaluate(el => el === document.activeElement), true);
+assert.equal(await page.getByRole('button', {name: '✗ Problema Vagas de garagem conforme anúncio', exact: true}).count(), 1);
+await page.reload();
+assert.equal(await parkingLink.count(), 1);
+await page.emulateMedia({media:'print'});
+const printed=page.locator('#groups .item:visible');
+assert.equal(await printed.count(),26);
+assert.equal(await problems.isVisible(), false);
+assert.equal(await resume.isVisible(), false);
+assert.equal(await page.locator('#groups .card:visible').count(),5);
+for (const [label,state] of [
+  ['Distância real da praia conferida','OK'],
+  ['Vagas de garagem conforme anúncio','Problema'],
+  ['Comércio e serviços próximos','Sem marcação']
+]) {
+  const item=printed.filter({hasText:label});
+  assert.equal(await item.evaluate(el=>getComputedStyle(el,'::after').content),JSON.stringify(state));
+}
+await page.emulateMedia({media:'screen'});
+await distance.press('Enter');
+await page.locator('#vistoria-4_3-ok').press('Enter');
+assert.equal(await problems.getByRole('link').count(), 0);
+assert.equal(await copy.count(), 0);
+assert.equal(await manual.isVisible(), false);
+assert.equal(await manual.inputValue(), '');
+assert.equal(await page.locator('#visit-problems-empty').isVisible(), true);
+await page.locator('#vistoria-4_3-ok').press('Enter');
 const key='pd-vistoria-v1',first=()=>page.locator('#groups button').first();
 // Keep keyboard focus on the same control after updates, including repeated toggles.
 const focused=()=>page.evaluate(()=>document.activeElement?.outerHTML);
@@ -44,7 +126,7 @@ await page.evaluate(()=>{Storage.prototype.setItem=function(){throw new Error('q
 await page.evaluate(()=>{Storage.prototype.removeItem=function(){throw new Error('denied');};});page.once('dialog',d=>d.accept());await page.locator('#reset').click();assert((await page.locator('#storage-status').textContent()).includes('Não foi possível remover'));assert.equal(await page.locator('#score').textContent(),'0%');
 await page.reload();await page.evaluate(()=>localStorage.clear());await page.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('denied')}});});await page.reload();assert((await page.locator('#storage-status').textContent()).includes('não foi possível ler'));await first().click();assert((await page.locator('#verdict').textContent()).includes('1/26'));
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);assert(!(await page.locator('#verdict').textContent()).includes('pode avançar'));
-const links=await page.locator('a[href^="/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href').split('#')[0]));for(const l of links){let p=path.join(root,l);if(l.endsWith('/'))p=path.join(p,'index.html');assert(fs.existsSync(p),l);}
+await checkAppLinkTargets(page, root);
 await page.close();
 }await browser.close();console.log('PASS checklist mobile/desktop, reload, corrupt/null/unknown, storage exceptions and reset cancel/confirm');
 })().catch(e=>{console.error(e);process.exit(1)});

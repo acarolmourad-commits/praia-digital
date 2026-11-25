@@ -50,7 +50,7 @@ EXCLUDE_PATTERNS = [
 
 FOOTER_NEW = '''<footer aria-label="Rodapé">
   <p>© Litoral Prime Imóveis • <a href="https://wa.me/5511954346288">WhatsApp</a> • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
-  <p><a href="sitemap.xml">Sitemap</a> · <a href="sitemap.html">Mapa do site</a></p>
+  <p><a href="{map_root}/sitemap.xml">Sitemap</a> · <a href="{map_root}/sitemap.html">Mapa do site</a></p>
 </footer>'''
 
 def should_exclude(rel):
@@ -61,10 +61,13 @@ def should_exclude(rel):
 
 def process(path: Path):
     txt = path.read_text(encoding='utf-8', errors='ignore')
-    if FOOTER_NEW in txt:
+    section = path.absolute().relative_to(REPO).parts[0]
+    map_root = '/litoral-prime-imoveis' if section == 'litoral-prime-imoveis' else ''
+    footer = FOOTER_NEW.format(map_root=map_root)
+    if footer in txt:
         return False
     # Replace from <footer ...> to </footer>
-    new_txt = re.sub(r'<footer\b[^>]*>.*?</footer>', FOOTER_NEW, txt, count=1, flags=re.I|re.S)
+    new_txt = re.sub(r'<footer\b[^>]*>.*?</footer>', footer, txt, count=1, flags=re.I|re.S)
     if new_txt == txt:
         return False
     path.write_text(new_txt, encoding='utf-8')

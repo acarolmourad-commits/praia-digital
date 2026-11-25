@@ -1,0 +1,369 @@
+{
+  "index.html": {
+    "heading_id": null,
+    "scripts": [
+      "<script src=\"/js/property-search.js\" defer>",
+      "<script src=\"/js/home-search.js\" defer>",
+      "<script src=\"https://praia.digital/js/shared.js?v=2.0\" defer>"
+    ],
+    "controls": [
+      "<button type=\"button\" aria-haspopup=\"true\">",
+      "<button type=\"button\" aria-haspopup=\"true\">",
+      "<button type=\"button\" aria-haspopup=\"true\">",
+      "<button type=\"button\" aria-haspopup=\"true\">",
+      "<button type=\"button\" aria-haspopup=\"true\">",
+      "<select id=\"finalidade\" name=\"finalidade\" required>",
+      "<input type=\"search\" name=\"q\" id=\"q\" aria-label=\"Busca inteligente de imóveis\" placeholder=\"Ex.: apartamento de 2 quartos em Bertioga, perto da praia, com potencial para temporada\">",
+      "<button class=\"btn\" type=\"submit\">"
+    ]
+  },
+  "apps/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/js/app-catalog.js?v=be4366bb22df\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"app-query\" type=\"search\" maxlength=\"100\" placeholder=\"Ex.: revisar anúncio\" aria-controls=\"catalogo-apps\" aria-describedby=\"app-query-help\" autocomplete=\"off\">",
+      "<select id=\"app-goal\" aria-controls=\"catalogo-apps\">",
+      "<button id=\"app-clear\" type=\"button\">",
+      "<button id=\"app-jump-results\" type=\"button\" aria-controls=\"catalogo-apps\" hidden>",
+      "<button type=\"button\" id=\"app-print\">",
+      "<input id=\"app-share-query\" type=\"checkbox\" disabled>",
+      "<input id=\"app-share-link\" type=\"url\" readonly aria-describedby=\"app-share-help\">",
+      "<button type=\"button\" id=\"app-copy\">",
+      "<button id=\"app-search-all\" type=\"button\" hidden>",
+      "<button id=\"app-keep-goal\" type=\"button\" hidden>"
+    ]
+  },
+  "apps/alugar-ou-comprar/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9562601722232986\" crossorigin=\"anonymous\">",
+      "<script defer src=\"/js/alugar-comprar-core.js\">",
+      "<script defer src=\"/js/alugar-comprar-ui.js\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" inputmode=\"decimal\" min=\"1\" max=\"100000000\" step=\"0.01\" required value=\"595000\" aria-describedby=\"valor-hint valor-error\">",
+      "<input id=\"aluguel\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"1000000\" step=\"0.01\" required value=\"2800\" aria-describedby=\"aluguel-hint aluguel-error\">",
+      "<input id=\"entrada\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"100000000\" step=\"0.01\" required value=\"120000\" aria-describedby=\"entrada-hint entrada-error\">",
+      "<input id=\"taxa\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"100\" step=\"0.01\" required value=\"11.19\" aria-describedby=\"taxa-hint taxa-error\">",
+      "<input id=\"anos\" type=\"number\" inputmode=\"numeric\" min=\"1\" max=\"50\" step=\"1\" required value=\"20\" aria-describedby=\"anos-hint anos-error\">",
+      "<input id=\"horizonte\" type=\"number\" inputmode=\"numeric\" min=\"1\" max=\"50\" step=\"1\" required value=\"10\" aria-describedby=\"horizonte-hint horizonte-error\">",
+      "<input id=\"valoriz\" type=\"number\" inputmode=\"decimal\" min=\"-50\" max=\"100\" step=\"0.01\" required value=\"4\" aria-describedby=\"valoriz-hint valoriz-error\">",
+      "<input id=\"reajAluguel\" type=\"number\" inputmode=\"decimal\" min=\"-50\" max=\"100\" step=\"0.01\" required value=\"4\" aria-describedby=\"reajAluguel-hint reajAluguel-error\">",
+      "<input id=\"rendimento\" type=\"number\" inputmode=\"decimal\" min=\"-50\" max=\"100\" step=\"0.01\" required value=\"6\" aria-describedby=\"rendimento-hint rendimento-error\">",
+      "<select id=\"tipoTaxa\" aria-describedby=\"tipoTaxa-hint tipoTaxa-error\">",
+      "<select id=\"sistema\" aria-describedby=\"sistema-hint sistema-error\">",
+      "<input id=\"indexador\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"30\" step=\"0.01\" required value=\"0\" aria-describedby=\"indexador-hint indexador-error\">",
+      "<input id=\"seguros\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"1000000\" step=\"0.01\" required value=\"0\" aria-describedby=\"seguros-hint seguros-error\">",
+      "<input id=\"custoCompra\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"30\" step=\"0.01\" required value=\"4\" aria-describedby=\"custoCompra-hint custoCompra-error\">",
+      "<input id=\"custoVenda\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"30\" step=\"0.01\" required value=\"6\" aria-describedby=\"custoVenda-hint custoVenda-error\">",
+      "<input id=\"impostoVenda\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"1000000000\" step=\"0.01\" required value=\"0\" aria-describedby=\"impostoVenda-hint impostoVenda-error\">",
+      "<input id=\"manutencao\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"20\" step=\"0.01\" required value=\"1\" aria-describedby=\"manutencao-hint manutencao-error\">",
+      "<input id=\"custoProprietario\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"1000000\" step=\"0.01\" required value=\"0\" aria-describedby=\"custoProprietario-hint custoProprietario-error\">",
+      "<input id=\"custoInquilino\" type=\"number\" inputmode=\"decimal\" min=\"0\" max=\"1000000\" step=\"0.01\" required value=\"0\" aria-describedby=\"custoInquilino-hint custoInquilino-error\">",
+      "<input id=\"reajCustos\" type=\"number\" inputmode=\"decimal\" min=\"-50\" max=\"100\" step=\"0.01\" required value=\"4\" aria-describedby=\"reajCustos-hint reajCustos-error\">",
+      "<button class=\"rb-button\" type=\"submit\" disabled>",
+      "<button class=\"rb-button rb-secondary\" type=\"button\" id=\"restore-example\">"
+    ]
+  },
+  "apps/calculadora-financiamento/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script defer src=\"/js/investir-tools-core.js?v=20261112\">",
+      "<script defer src=\"/js/financiamento-ui.js?v=20261124\">",
+      "<script defer src=\"/js/shared.js\">"
+    ],
+    "controls": [
+      "<input\n              id=\"valor\"\n              name=\"valor\"\n              type=\"number\"\n              value=\"200000\"\n              min=\"1\"\n              max=\"100000000\"\n              step=\"any\"\n              required\n              aria-describedby=\"valor-help valor-error\"\n            />",
+      "<input\n              id=\"entrada\"\n              name=\"entrada\"\n              type=\"number\"\n              value=\"40000\"\n              min=\"0\"\n              max=\"100000000\"\n              step=\"any\"\n              required\n              aria-describedby=\"entrada-help entrada-error\"\n            />",
+      "<input\n              id=\"taxa\"\n              name=\"taxa\"\n              type=\"number\"\n              value=\"11.19\"\n              min=\"0\"\n              max=\"100\"\n              step=\"any\"\n              required\n              aria-describedby=\"taxa-help taxa-error\"\n            />",
+      "<select id=\"tipo\" name=\"tipo\" aria-describedby=\"tipo-help\">",
+      "<input\n              id=\"meses\"\n              name=\"meses\"\n              type=\"number\"\n              value=\"240\"\n              min=\"1\"\n              max=\"600\"\n              step=\"1\"\n              required\n              aria-describedby=\"meses-help meses-error\"\n            />",
+      "<input\n              id=\"seguros\"\n              name=\"seguros\"\n              type=\"number\"\n              value=\"0\"\n              min=\"0\"\n              max=\"1000000\"\n              step=\"any\"\n              required\n              aria-describedby=\"seguros-help seguros-error\"\n            />",
+      "<input\n              id=\"comprometimento\"\n              name=\"comprometimento\"\n              type=\"number\"\n              value=\"30\"\n              min=\"1\"\n              max=\"100\"\n              step=\"any\"\n              required\n              aria-describedby=\"comprometimento-help comprometimento-error\"\n            />",
+      "<button type=\"submit\" disabled>"
+    ]
+  },
+  "apps/calculadora-consorcio/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script> sha256:54aa284f35aecceb0ba085c034d88cceea0e424105b384559d29c5a451282095",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input type=\"number\" id=\"credito\" min=\"0.01\" max=\"1000000000\" step=\"0.01\" value=\"500000\">",
+      "<input type=\"number\" id=\"prazo\" min=\"1\" max=\"600\" step=\"1\" value=\"180\">",
+      "<input type=\"number\" id=\"taxa\" min=\"0\" max=\"100\" step=\"0.01\" value=\"18\">",
+      "<input type=\"number\" id=\"lance\" min=\"0\" max=\"100\" step=\"0.01\" value=\"0\">",
+      "<input type=\"number\" id=\"taxaFin\" min=\"0\" max=\"100\" step=\"0.01\" value=\"11.19\">",
+      "<button type=\"button\" id=\"calcular\" onclick=\"calcular()\">"
+    ]
+  },
+  "apps/custo-de-compra/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/custo-de-compra/calculadora.js\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" min=\"0.01\" max=\"1000000000\" step=\"0.01\">",
+      "<input id=\"itbi\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\">",
+      "<input id=\"escritura\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\">",
+      "<input id=\"registro\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\">",
+      "<input id=\"banco\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\">",
+      "<input id=\"outros\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\">",
+      "<button type=\"button\" id=\"calcular\">"
+    ]
+  },
+  "apps/planejador-entrada/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/planejador-entrada/calculadora.js?v=7bf3a5955bba\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" min=\"0.01\" max=\"1000000000\" step=\"0.01\" value=\"450000\">",
+      "<input id=\"pct\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"20\">",
+      "<input id=\"guardado\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"15000\">",
+      "<input id=\"mensal\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"2500\">",
+      "<input id=\"rend\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"0\">",
+      "<button type=\"submit\" id=\"calcular\">"
+    ]
+  },
+  "apps/renda-para-financiar/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/renda-para-financiar/calculadora.js\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" min=\"0.01\" max=\"1000000000\" step=\"0.01\" value=\"450000\">",
+      "<input id=\"entrada\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"20\">",
+      "<input id=\"taxa\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"10.5\">",
+      "<select id=\"tipoTaxa\">",
+      "<input id=\"prazo\" type=\"number\" min=\"1\" max=\"600\" step=\"1\" value=\"360\">",
+      "<input id=\"pct\" type=\"number\" min=\"0.01\" max=\"100\" step=\"0.01\" value=\"30\">",
+      "<button type=\"button\" id=\"calcular\">"
+    ]
+  },
+  "apps/comparador-cidades/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script> sha256:ae9fe69a0386625468decd02e65626dec43d444d5125d41e7dbadc836f13edef",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<button class=\"prof on\" type=\"button\" data-p=\"investidor\" aria-pressed=\"true\" aria-controls=\"comparison-table\" onclick=\"setProfile(this)\">",
+      "<button class=\"prof\" type=\"button\" data-p=\"temporada\" aria-pressed=\"false\" aria-controls=\"comparison-table\" onclick=\"setProfile(this)\">",
+      "<button class=\"prof\" type=\"button\" data-p=\"morar\" aria-pressed=\"false\" aria-controls=\"comparison-table\" onclick=\"setProfile(this)\">"
+    ]
+  },
+  "apps/valor-imovel/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script> sha256:e6702723c7840d3d06d94eafb61cae4d3783930d3866e7c774efa537d30b1416",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<select id=\"cidade\">",
+      "<input type=\"number\" id=\"area\" value=\"105\">",
+      "<select id=\"quartos\">",
+      "<select id=\"estado\">",
+      "<input type=\"checkbox\" id=\"frente\">",
+      "<input type=\"checkbox\" id=\"perto\">",
+      "<input type=\"checkbox\" id=\"cond\">",
+      "<input type=\"checkbox\" id=\"mobilia\">",
+      "<input type=\"checkbox\" id=\"vaga\">",
+      "<button onclick=\"calc()\">"
+    ]
+  },
+  "apps/calculadora-valorizacao/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/calculadora-valorizacao/calculadora.js\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" min=\"0.01\" max=\"1000000000\" step=\"0.01\" value=\"500000\">",
+      "<select id=\"cenario\">",
+      "<input id=\"taxa\" type=\"number\" min=\"-100\" max=\"100\" step=\"0.01\" value=\"0\">",
+      "<input id=\"anos\" type=\"number\" min=\"1\" max=\"50\" step=\"1\" value=\"10\">",
+      "<input id=\"cdi\" type=\"number\" min=\"-100\" max=\"100\" step=\"0.01\" value=\"0\">",
+      "<button type=\"button\" id=\"calcular\">"
+    ]
+  },
+  "apps/simulador-roi-temporada/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script defer src=\"/js/roi-temporada-core.js?v=20261111-1\">",
+      "<script defer src=\"/js/roi-temporada-ui.js?v=20261111-1\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input type=\"number\" inputmode=\"decimal\" id=\"valor\" value=\"595000\" min=\"0.01\" step=\"0.01\" required aria-describedby=\"valor-help valor-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"adr\" value=\"750\" min=\"0\" step=\"0.01\" required aria-describedby=\"adr-help adr-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"ocup\" value=\"55\" min=\"0\" max=\"100\" step=\"any\" required aria-describedby=\"ocup-help ocup-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"noites\" value=\"200\" min=\"0\" max=\"365\" step=\"1\" required aria-describedby=\"noites-help noites-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"custos\" value=\"38000\" min=\"0\" step=\"0.01\" required aria-describedby=\"custos-help custos-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"plataforma\" value=\"15.5\" min=\"0\" max=\"100\" step=\"any\" required aria-describedby=\"plataforma-help plataforma-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"iptu\" value=\"2400\" min=\"0\" step=\"0.01\" required aria-describedby=\"iptu-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"cond\" value=\"7200\" min=\"0\" step=\"0.01\" required aria-describedby=\"cond-error\">",
+      "<input type=\"number\" inputmode=\"decimal\" id=\"ir\" value=\"15\" min=\"0\" max=\"100\" step=\"any\" required aria-describedby=\"ir-help ir-error\">",
+      "<select id=\"cidade\" aria-describedby=\"cidade-help\">",
+      "<button class=\"roi-button\" type=\"submit\">"
+    ]
+  },
+  "apps/temporada-ou-anual/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/temporada-ou-anual/calculadora.js\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<input id=\"valor\" type=\"number\" min=\"0.01\" max=\"1000000000\" step=\"0.01\" value=\"450000\">",
+      "<input id=\"diaria\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"450\">",
+      "<input id=\"noites\" type=\"number\" min=\"0\" max=\"31\" step=\"1\" value=\"12\">",
+      "<input id=\"taxa\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"25\">",
+      "<input id=\"custos\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"1200\">",
+      "<input id=\"anual\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"2800\">",
+      "<input id=\"custosAnual\" type=\"number\" min=\"0\" max=\"1000000000\" step=\"0.01\" value=\"400\">",
+      "<button type=\"button\" id=\"calcular\">"
+    ]
+  },
+  "apps/checklist-vistoria/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script src=\"/apps/checklist-vistoria/checklist.js?v=cde2a5d2c3b2\">",
+      "<script defer src=\"/js/shared.js\">",
+      "<script defer src=\"/assets/js/related-ads.js\">"
+    ],
+    "controls": [
+      "<button onclick=\"window.print()\">",
+      "<button type=\"button\" id=\"reset\" class=\"ghost\" onclick=\"resetAll()\">",
+      "<button type=\"button\" id=\"visit-copy\" hidden>",
+      "<textarea id=\"visit-copy-text\" rows=\"4\" readonly>"
+    ]
+  },
+  "apps/oficina-ia-imobiliaria/index.html": {
+    "heading_id": null,
+    "scripts": [
+      "<script type=\"module\" src=\"./app.mjs?v=af79b518ae9f\">"
+    ],
+    "controls": [
+      "<input data-oficina-control disabled name=\"tipo\" maxlength=\"500\" placeholder=\"Apartamento, casa, sala comercial…\" required>",
+      "<input data-oficina-control disabled name=\"cidade\" maxlength=\"500\" placeholder=\"Ex.: Bertioga\" required>",
+      "<input data-oficina-control disabled name=\"bairro\" maxlength=\"500\" placeholder=\"Somente a localização confirmada\" >",
+      "<input data-oficina-control disabled name=\"finalidade\" maxlength=\"500\" placeholder=\"Venda, locação mensal ou temporada\" required>",
+      "<input data-oficina-control disabled name=\"area\" maxlength=\"500\" placeholder=\"Ex.: 70 m² de área privativa\" >",
+      "<input data-oficina-control disabled name=\"quartos\" maxlength=\"500\" placeholder=\"Informe 0 para studio, se confirmado\" >",
+      "<input data-oficina-control disabled name=\"preco\" maxlength=\"500\" placeholder=\"Ex.: R$ 3.500/mês; confirmar data\" >",
+      "<input data-oficina-control disabled name=\"custos\" maxlength=\"500\" placeholder=\"Condomínio, IPTU, taxas ou pendências\" >",
+      "<input data-oficina-control disabled name=\"diferenciais\" maxlength=\"500\" placeholder=\"O que as fotos e a ficha comprovam?\" >",
+      "<input data-oficina-control disabled name=\"restricoes\" maxlength=\"500\" placeholder=\"Pets, ocupação, condomínio ou confirmar\" >",
+      "<input data-oficina-control disabled name=\"disponibilidade\" maxlength=\"500\" placeholder=\"Status e data reais; não presuma\" >",
+      "<input data-oficina-control disabled name=\"fonte\" maxlength=\"500\" placeholder=\"Ficha do responsável, data; sem dados pessoais\" >",
+      "<button data-oficina-control disabled type=\"submit\">",
+      "<button data-oficina-control disabled type=\"button\" class=\"secondary\" id=\"diagnose\">",
+      "<input data-oficina-control disabled name=\"empresa\" maxlength=\"100\" placeholder=\"Nome comercial\">",
+      "<select data-oficina-control disabled name=\"etapa\">",
+      "<textarea data-oficina-control disabled name=\"contexto\" maxlength=\"1500\" required placeholder=\"Ex.: Vocês pediram informações sobre revisão de descrições para o catálogo.\">",
+      "<button data-oficina-control disabled type=\"submit\">",
+      "<textarea data-oficina-control disabled id=\"output\" aria-describedby=\"result-kind result-help status\" spellcheck=\"true\" placeholder=\"O briefing, checklist ou modelo aparecerá aqui.\">",
+      "<button data-oficina-control disabled id=\"copy\" type=\"button\">",
+      "<button data-oficina-control disabled id=\"download\" type=\"button\" class=\"secondary\">",
+      "<button data-oficina-control disabled id=\"clear\" type=\"button\" class=\"secondary\">"
+    ]
+  },
+  "apps/revisor-anuncios/index.html": {
+    "heading_id": "title",
+    "scripts": [
+      "<script src=\"core.js\" defer>",
+      "<script src=\"app.js\" defer>",
+      "<script src=\"accommodation.js?v=20261125-txt\" defer>"
+    ],
+    "controls": [
+      "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
+      "<input id=\"property\" type=\"text\" maxlength=\"120\" placeholder=\"Ex.: código interno do imóvel\" autocomplete=\"off\">",
+      "<input id=\"confirmed\" type=\"checkbox\">",
+      "<button class=\"button primary\" type=\"submit\">",
+      "<button class=\"button secondary\" id=\"clear\" type=\"button\">",
+      "<button id=\"copy\" type=\"button\" class=\"button secondary\" disabled>",
+      "<button id=\"print\" type=\"button\" class=\"button primary\" disabled>",
+      "<textarea id=\"report-text\" readonly rows=\"12\" aria-label=\"Texto do relatório para copiar\">",
+      "<input id=\"accommodation-name\" type=\"text\" maxlength=\"120\" placeholder=\"Ex.: Suíte jardim\">",
+      "<input id=\"accommodation-source-one\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
+      "<input id=\"accommodation-source-two\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
+      "<textarea id=\"accommodation-notes\" rows=\"3\" maxlength=\"2000\" placeholder=\"O que falta confirmar, com qual responsável ou equipe e em qual canal? Evite dados pessoais.\">",
+      "<button id=\"accommodation-generate\" type=\"button\" class=\"button primary\" disabled>",
+      "<button type=\"reset\" class=\"button secondary\">",
+      "<textarea id=\"accommodation-text\" rows=\"12\" readonly>",
+      "<button id=\"accommodation-copy\" type=\"button\" class=\"button secondary\">"
+    ]
+  },
+  "apps/relatorio-imovel/index.html": {
+    "heading_id": null,
+    "scripts": [
+      "<script> sha256:b25f0df34274af5bbbd326d225d7aa067ba9e26e95fe56433184aa1376d9159f"
+    ],
+    "controls": [
+      "<input disabled id=\"partner\" name=\"partner\" maxlength=\"100\" placeholder=\"Nome comercial\">",
+      "<input disabled id=\"responsible\" name=\"responsible\" maxlength=\"100\" placeholder=\"Nome e função\">",
+      "<input disabled id=\"referenceDate\" name=\"referenceDate\" type=\"date\">",
+      "<input disabled id=\"reference\" name=\"reference\" maxlength=\"60\" placeholder=\"Código interno\">",
+      "<textarea disabled id=\"objective\" name=\"objective\" maxlength=\"650\" placeholder=\"Ex.: reunir as informações necessárias para preparar um anúncio de locação.\">",
+      "<input disabled id=\"propertyType\" name=\"propertyType\" maxlength=\"80\" placeholder=\"Ex.: apartamento\">",
+      "<input disabled id=\"location\" name=\"location\" maxlength=\"160\" placeholder=\"Cidade e bairro; endereço completo só se necessário\">",
+      "<input disabled id=\"area\" name=\"area\" maxlength=\"80\" placeholder=\"Ex.: 70 m² de área privativa\">",
+      "<input disabled id=\"rooms\" name=\"rooms\" maxlength=\"80\" placeholder=\"Ex.: 2 quartos, 1 suíte\">",
+      "<input disabled id=\"parking\" name=\"parking\" maxlength=\"80\" placeholder=\"Ex.: 1 vaga coberta\">",
+      "<select disabled id=\"purpose\" name=\"purpose\">",
+      "<input disabled id=\"price\" name=\"price\" maxlength=\"120\" placeholder=\"Informe moeda, valor e se é total, mensal ou por diária\">",
+      "<textarea disabled id=\"confirmed\" name=\"confirmed\" maxlength=\"1200\" placeholder=\"Registre apenas o que foi confirmado, incluindo limites e condições relevantes.\">",
+      "<textarea disabled id=\"sources\" name=\"sources\" maxlength=\"1200\" placeholder=\"Ex.: ficha aprovada pelo proprietário em DD/MM/AAAA; URL do anúncio e data de consulta. Não inclua documentos pessoais.\">",
+      "<textarea disabled id=\"pending\" name=\"pending\" maxlength=\"1000\" placeholder=\"Uma dúvida por linha. Não complete dados por suposição.\">",
+      "<textarea disabled id=\"nextSteps\" name=\"nextSteps\" maxlength=\"1000\" placeholder=\"Ação, responsável e prazo combinado, quando houver.\">",
+      "<textarea disabled id=\"contact\" name=\"contact\" maxlength=\"400\" placeholder=\"Nome, e-mail profissional e canal de contato autorizado.\">",
+      "<button disabled class=\"primary\" type=\"button\" id=\"print-report\">",
+      "<button disabled type=\"button\" id=\"download-report\" aria-describedby=\"download-help\">",
+      "<button disabled type=\"button\" id=\"load-example\">",
+      "<button disabled type=\"button\" id=\"clear-report\">",
+      "<input type=\"checkbox\" id=\"only-pending\">",
+      "<textarea id=\"agenda-text\" readonly rows=\"7\" aria-describedby=\"agenda-help\" placeholder=\"A pauta aparece quando você registra uma fonte, uma dúvida ou um próximo passo.\">",
+      "<button id=\"copy-agenda\" type=\"button\" disabled>"
+    ]
+  },
+  "apps/calculadora-precificacao-shopee/index.html": {
+    "heading_id": "pd-app-title",
+    "scripts": [
+      "<script> sha256:e6aecc4c0479d4977e3804b7dabca597f00824b39e9c600f0a500935c540028c"
+    ],
+    "controls": [
+      "<select id=\"plat\">",
+      "<input id=\"custo\" type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"41.00\">",
+      "<input id=\"preco\" type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"69.90\">",
+      "<input id=\"afiliado\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"0\" aria-describedby=\"tt-input-note\">",
+      "<input id=\"margemAlvo\" type=\"number\" min=\"0\" max=\"99.99\" step=\"0.01\" value=\"15\">",
+      "<input id=\"frete\" type=\"number\" min=\"0\" step=\"0.01\" value=\"0\">",
+      "<button class=\"btn\" onclick=\"calc()\">"
+    ]
+  }
+}

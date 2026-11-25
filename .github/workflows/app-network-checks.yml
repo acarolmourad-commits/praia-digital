@@ -10,12 +10,16 @@ on:
       - 'css/app-network.css'
       - 'css/app-guide.css'
       - 'js/app-guide.js'
+      - 'js/app-catalog.js'
+      - 'tests/app-catalog-browser.cjs'
       - 'tests/app-guide-browser.cjs'
       - 'tests/screenshot.cjs'
       - 'data/app-network.json'
       - 'data/app-guidance.json'
       - 'scripts/build_app_network.py'
       - 'tests/test_complete_app_network.py'
+      - 'tests/test_app_network.py'
+      - 'tests/fixtures/app-interactions.json'
       - '.github/workflows/app-network-checks.yml'
   workflow_dispatch:
 permissions:
@@ -30,6 +34,8 @@ jobs:
           python-version: '3.12'
       - name: Verify links, coverage, anchors and generated navigation
         run: python3 -m unittest discover -s tests -p 'test_complete_app_network.py' -v
+      - name: Verify reviewed scripts and controls
+        run: python3 -m unittest discover -s tests -p 'test_app_network.py' -v
       - name: Prepare shared navigation
         run: python3 scripts/build-navigation.py
       - name: Verify guide in desktop and mobile browsers
@@ -38,6 +44,7 @@ jobs:
           "$RUNNER_TEMP/app-guide/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-guide-browser.cjs
           NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-evidence-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-catalog-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

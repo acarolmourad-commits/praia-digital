@@ -3,6 +3,7 @@ import json
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('app_network', ROOT/'scripts/build_app_network.py')
@@ -62,8 +63,42 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertIn('/apps/'+other+'/', page.links, slug+' -> '+other)
             self.assertIn('/#rede-apps', page.links)
             self.assertIn('/apps/guia-de-uso.html', page.links)
+            self.assertEqual(page.links.count('#pd-network-title'), 1, slug)
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
+
+    def test_apps_return_to_their_catalog_group(self):
+        catalog = Links((ROOT / 'apps/index.html').read_text(encoding='utf-8'))
+        groups = json.loads((ROOT / 'data/app-network.json').read_text(encoding='utf-8'))
+        for group in groups:
+            group_id = group['id']
+            anchor = 'grupo-' + group_id
+            self.assertEqual(catalog.ids.count(anchor), 1)
+            for app in group['apps']:
+                with self.subTest(app=app['slug']):
+                    page = ROOT / 'apps' / app['slug'] / 'index.html'
+                    links = Links(page.read_text(encoding='utf-8')).links
+                    self.assertEqual(links.count(f'/apps/?objetivo={group_id}#{anchor}'), 1)
+
+    def test_each_app_opens_the_checklist_for_its_task(self):
+        expected = {
+            'comprar': {'alugar-ou-comprar', 'calculadora-financiamento', 'calculadora-consorcio',
+                        'custo-de-compra', 'planejador-entrada', 'renda-para-financiar',
+                        'comparador-cidades', 'valor-imovel', 'calculadora-valorizacao'},
+            'locar': {'simulador-roi-temporada', 'temporada-ou-anual'},
+            'anunciar': {'checklist-vistoria', 'oficina-ia-imobiliaria', 'revisor-anuncios', 'relatorio-imovel'},
+            'vender': {'calculadora-precificacao-shopee'},
+        }
+        guide = Links((ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8'))
+        self.assertEqual(set.union(*expected.values()), self.slugs)
+        for anchor, slugs in expected.items():
+            self.assertEqual(guide.ids.count(anchor), 1)
+            for slug in slugs:
+                text = (ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8')
+                workflow = text.split('class="pd-workflow"', 1)[1].split('</div><details>', 1)[0]
+                self.assertEqual(Links(workflow).links.count('/apps/guia-de-uso.html#'+anchor), 1, slug)
+                self.assertIn('Abrir roteiro:', workflow)
+
     def test_home_and_catalog_promote_every_app_and_shortcuts_resolve(self):
         for path in ['index.html','apps/index.html']:
             page=Links((ROOT/path).read_text(encoding='utf-8'))
@@ -80,8 +115,13 @@ class CompleteAppNetworkTests(unittest.TestCase):
             if href.startswith('#'):
                 self.assertIn(href[1:], page.ids)
             elif href.startswith('/'):
-                dest = ROOT / href.split('#')[0].lstrip('/')
-                self.assertTrue(dest.exists(), href)
+                target = urlsplit(href)
+                dest = ROOT / target.path.lstrip('/')
+                if dest.is_dir():
+                    dest = dest / 'index.html'
+                self.assertTrue(dest.is_file(), href)
+                if target.fragment and dest.suffix == '.html':
+                    self.assertIn(target.fragment, Links(dest.read_text(encoding='utf-8')).ids, href)
         for source in ['index.html', 'apps/index.html']:
             self.assertIn('/apps/guia-de-uso.html', Links((ROOT/source).read_text(encoding='utf-8')).links)
 
@@ -106,7 +146,7 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertFalse(any('github.io/asf-app' in href for href in page.links))
                 for href in hrefs:
                     self.assertIn(href, explore.links)
-                    self.assertEqual(page.links.count(href), 1, href)
+                    self.assertEqual(explore.links.count(href), 1, href)
                     path, anchor = href.split('#')
                     target = Links((ROOT/path.lstrip('/')).read_text(encoding='utf-8'))
                     self.assertEqual(target.ids.count(anchor), 1, href)

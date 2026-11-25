@@ -10,6 +10,16 @@ class Tags(HTMLParser):
     def handle_starttag(self,tag,attrs): self.tags.append((tag,dict(attrs)))
 class HomepageContent(unittest.TestCase):
     def setUp(self): self.html=(ROOT/'index.html').read_text(); self.tags=Tags(self.html).tags
+    def test_profile_demo_destinations(self):
+        demo = ROOT / 'assets/ferramentas/recomendacao-automatica-imoveis-litoral-2026.html'
+        links = {attrs.get('href') for tag, attrs in Tags(demo.read_text()).tags if tag == 'a'}
+        self.assertTrue({'/imoveis.html', '/parcerias-litoral-paulista.html', '/apps/',
+                         '/apps/comparador-cidades/#ranking-title'} <= links)
+        for broken in ('imoveis', 'parcerias-litoral-paulista.html'):
+            self.assertNotIn(broken, links)
+        comparator = Tags((ROOT / 'apps/comparador-cidades/index.html').read_text())
+        self.assertTrue(any(attrs.get('id') == 'ranking-title' for _, attrs in comparator.tags))
+
     def test_search_and_landmark(self):
         form=next(a for t,a in self.tags if t=='form' and a.get('id')=='smartsearch')
         self.assertEqual(form['action'],'/imoveis.html'); self.assertEqual(form['method'],'get')
@@ -20,7 +30,9 @@ class HomepageContent(unittest.TestCase):
         ids={a['id'] for t,a in self.tags if 'id' in a}
         for ident in ['imoveis','analise','central-airbnb-booking','produtos-comparacao']: self.assertIn(ident,ids)
         for slug in ['airbnb-booking','pricelabs']: self.assertIn('/interesse.html?produto='+slug,self.html)
-        for price in ['R$ 39 / imóvel / mês','R$ 97 / pacote','R$ 499 / anúncio / plataforma','R$ 79/mês','R$ 249/mês','R$ 799/mês']: self.assertIn(price,self.html)
+        self.assertNotRegex(self.html, r'R\$\s*\d')
+        for path in ['/entrega-kit-temporada.html', '/entrega-descricoes-ia.html', '/servicos/anuncios-airbnb-booking.html', '/planos.html']:
+            self.assertIn(f'href="{path}"', self.html)
         self.assertNotIn('Resultados de quem já usa',self.html)
         catalog=(ROOT/'imoveis.html').read_text()
         self.assertNotIn('<h3>Case real</h3>',catalog)

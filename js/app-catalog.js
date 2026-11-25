@@ -8,7 +8,16 @@
   const goal = document.getElementById('app-goal');
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
+  const onlyResult = document.getElementById('app-only-result');
+  const jumpToResults = document.getElementById('app-jump-results');
   const empty = document.getElementById('app-empty');
+  const broaden = document.getElementById('app-search-all');
+  const keepGoal = document.getElementById('app-keep-goal');
+  const printSelection = document.getElementById('app-print');
+  const shareLink = document.getElementById('app-share-link');
+  const includeQuery = document.getElementById('app-share-query');
+  const copySelection = document.getElementById('app-copy');
+  const copyStatus = document.getElementById('app-copy-status');
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]+/g, ' ').trim();
   const groups = Array.from(catalog.querySelectorAll('.pd-catalog-group')).map(section => ({
     section,
@@ -19,31 +28,140 @@
     }))
   }));
   const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
+  function shareUrl() {
+    const url = new URL('/apps/', window.location.origin);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    if (includeQuery?.checked) url.searchParams.set('busca', query.value.trim());
+    url.hash = 'buscar-apps';
+    return url.href;
+  }
   function filter() {
     const terms = normalize(query.value).split(' ').filter(Boolean);
     let count = 0;
+    let otherMatches = 0;
+    let matchedCard;
     for (const group of groups) {
       let visible = 0;
       for (const item of group.cards) {
-        const match = (!goal.value || group.id === goal.value) && terms.every(term => item.text.includes(term));
+        const matchesText = terms.every(term => item.text.includes(term));
+        const match = matchesText && (!goal.value || group.id === goal.value);
+        if (matchesText && !match) otherMatches++;
         item.card.hidden = !match;
-        if (match) visible++;
+        if (match) {
+          visible++;
+          matchedCard = item.card;
+        }
       }
       group.section.hidden = visible === 0;
       count += visible;
     }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
+    if (jumpToResults) jumpToResults.hidden = count < 2 || (!goal.value && terms.length === 0);
+    if (onlyResult) {
+      onlyResult.hidden = count !== 1;
+      if (count === 1) {
+        onlyResult.href = matchedCard.href;
+        const title = matchedCard.querySelector('.info b').cloneNode(true);
+        title.querySelector('.badge')?.remove();
+        onlyResult.textContent = 'Abrir ' + title.textContent.trim();
+      } else {
+        onlyResult.removeAttribute('href');
+        onlyResult.textContent = '';
+      }
+    }
     empty.hidden = count !== 0;
+    if (keepGoal) keepGoal.hidden = count !== 0 || !goal.value;
+    if (broaden) {
+      broaden.hidden = count !== 0 || otherMatches === 0;
+      if (!broaden.hidden) {
+        status.textContent += otherMatches === 1
+          ? ' Há uma ferramenta correspondente em outro objetivo.'
+          : ' Há ' + otherMatches + ' ferramentas correspondentes em outros objetivos.';
+      }
+    }
+    if (printSelection) printSelection.disabled = count === 0;
+    if (includeQuery) {
+      includeQuery.disabled = terms.length === 0;
+      if (includeQuery.disabled) includeQuery.checked = false;
+    }
+    if (shareLink) shareLink.value = shareUrl();
+    if (copySelection) copySelection.textContent = includeQuery?.checked ? 'Copiar link da busca' : 'Copiar link do objetivo';
+    if (copyStatus) copyStatus.textContent = '';
   }
+  function readObjective() {
+    const name = new URLSearchParams(window.location.search).get('objetivo');
+    const id = 'grupo-' + name;
+    goal.value = groups.some(group => group.id === id) ? id : '';
+  }
+
+  function removeIncomingQuery() {
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('busca')) return;
+    url.searchParams.delete('busca');
+    window.history.replaceState(window.history.state, '', url);
+  }
+
+  function saveObjective() {
+    const url = new URL(window.location.href);
+    if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
+    else url.searchParams.delete('objetivo');
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url);
+  }
+
   function reset() {
     query.value = '';
+    if (includeQuery) includeQuery.checked = false;
+    removeIncomingQuery();
     goal.value = '';
+    saveObjective();
     filter();
   }
-  query.addEventListener('input', filter);
-  goal.addEventListener('change', filter);
+  if (printSelection) printSelection.addEventListener('click', () => window.print());
+  jumpToResults?.addEventListener('click', () => {
+    catalog.querySelector('.pd-catalog-group:not([hidden]) a.card:not([hidden])')?.focus();
+  });
+  if (copySelection && shareLink && copyStatus) copySelection.addEventListener('click', async () => {
+    const value = shareLink.value;
+    try {
+      await navigator.clipboard.writeText(value);
+      if (shareLink.value === value) copyStatus.textContent = 'Link copiado. Cole na conversa ou guarde para depois.';
+    } catch (_) {
+      if (shareLink.value !== value) return;
+      shareLink.focus();
+      shareLink.select();
+      copyStatus.textContent = 'Selecione e copie o endereço no campo Link para compartilhar.';
+    }
+  });
+  query.addEventListener('input', () => {
+    removeIncomingQuery();
+    if (includeQuery) includeQuery.checked = false;
+    filter();
+  });
+  function clearSearch() {
+    query.value = '';
+    removeIncomingQuery();
+    filter();
+    query.focus();
+  }
+  query.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || event.isComposing || !query.value) return;
+    event.preventDefault();
+    clearSearch();
+  });
+  includeQuery?.addEventListener('change', filter);
+  goal.addEventListener('change', () => {
+    saveObjective();
+    filter();
+  });
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
+  if (keepGoal) keepGoal.addEventListener('click', clearSearch);
+  if (broaden) broaden.addEventListener('click', () => {
+    goal.value = '';
+    saveObjective();
+    filter();
+    query.focus();
+  });
   const objectives = document.getElementById('objetivos-apps');
   let handledHash = window.location.hash;
   if (objectives) objectives.addEventListener('click', event => {
@@ -60,7 +178,17 @@
     if (groups.some(group => '#' + group.id === window.location.hash)) reset();
   });
   // Browsers may restore form values when returning from an app.
-  window.addEventListener('pageshow', filter);
+  window.addEventListener('pageshow', () => {
+    readObjective();
+    filter();
+  });
+  window.addEventListener('popstate', () => {
+    readObjective();
+    filter();
+  });
+  readObjective();
+  const incomingQuery = new URLSearchParams(window.location.search).get('busca');
+  if (incomingQuery) query.value = incomingQuery.slice(0, query.maxLength);
   form.hidden = false;
   filter();
 })();

@@ -50,11 +50,89 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true}));
       });
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
+      // Export the actual restored state, including unchecked items and route links.
+      const downloadPromise = page.waitForEvent('download');
+      await page.getByRole('button', {name:'Baixar checklist em texto'}).press('Enter');
+      const download = await downloadPromise;
+      assert.match(download.suggestedFilename(), /^praia-digital-checklist-\d{4}-\d{2}-\d{2}\.txt$/);
+      const exportedPath = path.join(output, `checklist-${width}.txt`);
+      await download.saveAs(exportedPath);
+      const exported = fs.readFileSync(exportedPath, 'utf8');
+      assert.equal((exported.match(/\[x\] Marcado nesta consulta/g) || []).length, 2);
+      assert.equal((exported.match(/\[ \] A conferir \(não marcado\)/g) || []).length, 10);
+      assert.match(exported, /America\/Sao_Paulo/);
+      assert.match(exported, /Não comprovam aprovação, execução ou resultado/);
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        assert.ok(exported.includes(`https://praia.digital/apps/guia-de-uso.html#${anchor}`));
+      }
+      assert.equal((exported.match(/Responsável: não identificado/g) || []).length, 4);
+      // A focused export contains just that route, while preserving all page markings.
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        await page.getByLabel('Roteiros para salvar').selectOption(anchor);
+        const focusedPromise = page.waitForEvent('download');
+        await page.locator('#guide-download').press('Enter');
+        const focusedDownload = await focusedPromise;
+        assert.ok(focusedDownload.suggestedFilename().startsWith(`praia-digital-checklist-${anchor}-`));
+        await focusedDownload.saveAs(exportedPath);
+        const focused = fs.readFileSync(exportedPath, 'utf8');
+        assert.equal((focused.match(/Responsável: não identificado/g) || []).length, 1);
+        for (const other of ['comprar','locar','anunciar','vender']) {
+          assert.equal(focused.includes(`guia-de-uso.html#${other}`), other === anchor);
+        }
+        assert.equal((focused.match(/Marcado nesta consulta/g) || []).length, anchor === 'comprar' ? 2 : 0);
+        assert.equal((focused.match(/A conferir \(não marcado\)/g) || []).length, anchor === 'comprar' ? 1 : 3);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.ok((await page.locator('#guide-download-status').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
+      }
+      // Print each selected route without losing marks in the other routes.
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        await page.getByLabel('Roteiros para salvar').selectOption(anchor);
+        await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
+        await page.emulateMedia({media:'print'});
+        assert.equal(await page.locator('.guide-route:visible').count(), 1);
+        assert.equal(await page.locator(`#${anchor}`).isVisible(), true);
+        assert.equal(await page.locator('main > .guide-example:visible').count(), 0);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.ok((await page.locator('.guide-print-scope').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
+        if (width === 1280) {
+          const pdf = await page.pdf({path:path.join(output, `roteiro-${anchor}.pdf`), format:'A4'});
+          assert.equal(pdf.subarray(0,4).toString(), '%PDF');
+          assert.ok(pdf.length > 1000);
+        }
+        await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
+        await page.emulateMedia({media:'screen'});
+        assert.equal(await page.locator('.guide-route:visible').count(), 4);
+        assert.equal(await page.locator('input:checked').count(), 2);
+        assert.equal(await page.locator('.guide-print-scope').isVisible(), false);
+      }
+      await page.getByLabel('Roteiros para salvar').selectOption('');
+
       await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
       await page.locator('#guide-reset').click();
       assert.equal(await page.locator('input:checked').count(), 0);
       assert.match(await page.locator('#guide-progress').innerText(), /^0 de 12/);
+      const resetDownloadPromise = page.waitForEvent('download');
+      await page.locator('#guide-download').click();
+      const resetDownload = await resetDownloadPromise;
+      await resetDownload.saveAs(exportedPath);
+      const resetExport = fs.readFileSync(exportedPath, 'utf8');
+      assert.equal((resetExport.match(/\[x\]/g) || []).length, 0);
+      assert.equal((resetExport.match(/\[ \] A conferir/g) || []).length, 12);
+      const undo = page.getByRole('button', {name: 'Desfazer limpeza'});
+      await undo.press('Enter');
+      assert.equal(await page.locator('#guide-reset').evaluate(el => el === document.activeElement), true);
+      const checkedIndices = () => page.locator('.guide-route input[type=checkbox]').evaluateAll(
+        boxes => boxes.flatMap((box, i) => box.checked ? [i] : [])
+      );
+      assert.deepEqual(await checkedIndices(), [1, 2]);
+      assert.equal(await undo.isVisible(), false);
+      await page.locator('#guide-reset').press('Enter');
+      assert.equal(await undo.evaluate(el => el === document.activeElement), true);
+      await page.locator('.guide-route input[type=checkbox]').first().check();
+      assert.equal(await undo.isVisible(), false);
+      assert.deepEqual(await checkedIndices(), [0]);
+      await page.locator('#guide-reset').click();
       await page.evaluate(() => {window.print = () => {window.printCalled = true;};});
       await page.locator('#guide-print').click();
       assert.equal(await page.evaluate(() => window.printCalled), true);
@@ -76,7 +154,8 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await page.keyboard.press('Tab');
       assert.equal(await page.evaluate(() => document.activeElement.matches('a.pd-skip[href="#conteudo"]')), true);
       await page.keyboard.press('Enter');
-      assert.equal(new URL(page.url()).hash, '#conteudo');
+      await page.waitForURL('**/apps/guia-de-uso.html#conteudo');
+      assert.equal(await page.locator('#conteudo').count(), 1);
       await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
       await context.close();
     }
@@ -136,11 +215,36 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
     console.log('320px initial layout unchanged; baseline anchor hidden and candidate anchor clear after scrolling settles.');
     const nojs = await browser.newContext({javaScriptEnabled:false});
     const page = await nojs.newPage();
-    await page.goto('file://' + path.join(root,'apps/guia-de-uso.html'));
-    assert.equal(await page.locator('.guide-route').count(),4);
-    assert.equal(await page.locator('#guide-actions').isVisible(),false);
-    await page.locator('input[type=checkbox]').first().check();
-    assert.equal(await page.locator('input:checked').count(),1);
+    const templatePath = '/downloads/ficha-acomodacao.txt';
+    const guidePath = '/apps/guia-de-uso.html';
+    const server = require('node:http').createServer((request, response) => {
+      const file = request.url;
+      if (file !== templatePath && file !== guidePath) {
+        response.writeHead(404).end();
+        return;
+      }
+      response.setHeader('Content-Type', file === templatePath ? 'text/plain;charset=utf-8' : 'text/html;charset=utf-8');
+      response.end(fs.readFileSync(path.join(root, file)));
+    });
+    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+    try {
+      await page.goto(`http://127.0.0.1:${server.address().port}${guidePath}#qual-arquivo-guardar`);
+      const files = page.locator('#qual-arquivo-guardar');
+      const downloadReady = page.waitForEvent('download');
+      await files.getByRole('link',{name:'baixe a ficha em branco em TXT'}).press('Enter');
+      const template = await downloadReady;
+      assert.equal(template.suggestedFilename(),'ficha-acomodacao.txt');
+      assert.deepEqual(fs.readFileSync(await template.path()),fs.readFileSync(path.join(root,'downloads/ficha-acomodacao.txt')));
+      await files.getByRole('link',{name:'opções de impressão e download'}).press('Enter');
+      assert.equal(new URL(page.url()).hash,'#salvar-conferencias');
+      assert.equal(await page.locator('#salvar-conferencias').isVisible(),true);
+      assert.equal(await page.locator('.guide-route').count(),4);
+      assert.equal(await page.locator('#guide-actions').isVisible(),false);
+      await page.locator('input[type=checkbox]').first().check();
+      assert.equal(await page.locator('input:checked').count(),1);
+    } finally {
+      server.close();
+    }
     await nojs.close();
     console.log('Guide passed at 320,390,1280px: links to 16 apps, anchors, checklist/reset, keyboard, print, no-JS.');
   } finally { await browser.close(); }

@@ -6,5 +6,31 @@
 .form-controls{border:0;padding:0;margin:0;min-width:0}.button:disabled{cursor:not-allowed;opacity:.6}
 @media print{body > .pd-site-header,body > .pd-preserved-intro{display:none!important}}
 
+#conferencia-hospedagem {
+  scroll-margin-top: 100px;
+}
+
+.accommodation-checklist {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.accommodation-checklist legend {
+  padding: 0;
+  font-weight: 700;
+}
+
+.accommodation-checklist .confirmation {
+  min-height: 44px;
+  margin: 0;
+  align-items: center;
+}
+
+.accommodation-checklist .confirmation input {
+  margin: 0;
+}
+
 /* Guided review and editorial support, scoped to this app. */
 .quick-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:24px 0}.guide,.editorial,.faq{margin:32px 0}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style-position:inside;padding:0;counter-reset:steps}.steps li{list-style:none;padding:20px;background:#e8f1ee;border:1px solid var(--line);border-radius:12px}.steps strong{display:block;color:var(--navy)}.steps strong:before{counter-increment:steps;content:counter(steps) " · ";color:var(--teal)}.steps p{color:var(--muted);font-size:.92rem;margin:10px 0 0}.editorial{padding:26px;border:1px solid var(--line);border-radius:14px;background:var(--white)}.editorial ul{padding-left:22px}.editorial li{margin:12px 0}.faq details{padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--white);margin:12px 0}.faq p{color:var(--muted);max-width:850px}#input-heading,#how-it-works{scroll-margin-top:100px}@media(max-width:850px){.steps{grid-template-columns:1fr}}@media print{.guide,.quick-actions{display:none!important}}

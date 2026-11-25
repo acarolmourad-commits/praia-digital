@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '..');
 const origin = 'https://oficina.test';
 const appUrl = `${origin}/apps/oficina-ia-imobiliaria/`;
 const moduleVersion = '?v=' + createHash('sha256').update(fs.readFileSync(path.join(root, 'apps/oficina-ia-imobiliaria/app.mjs'))).digest('hex').slice(0, 12);
+const networkStyleVersion = '?v=' + createHash('sha256').update(fs.readFileSync(path.join(root, 'css/app-network.css'))).digest('hex').slice(0, 12);
 
 async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390, legacyMarkup = false } = {}) {
   const context = await browser.newContext({ javaScriptEnabled, viewport: { width, height: 844 } });
@@ -20,7 +21,8 @@ async function fixture(browser, { javaScriptEnabled = true, failModule = false, 
   await page.route('**/*', route => {
     const url = new URL(route.request().url());
     const versionedModule = url.pathname === '/apps/oficina-ia-imobiliaria/app.mjs' && url.search === moduleVersion;
-    if (url.origin !== origin || (url.search && !versionedModule) || route.request().method() !== 'GET') {
+    const versionedStyle = url.pathname === '/css/app-network.css' && url.search === networkStyleVersion;
+    if (url.origin !== origin || (url.search && !versionedModule && !versionedStyle) || route.request().method() !== 'GET') {
       unexpected.push({ url: url.href, method: route.request().method() });
       return route.abort();
     }
@@ -41,6 +43,7 @@ async function fixture(browser, { javaScriptEnabled = true, failModule = false, 
     return route.fulfill({ contentType, body });
   });
   await page.goto(appUrl, { waitUntil: 'networkidle' });
+  assert.equal(await page.locator('.pd-route-link a').evaluate(el => getComputedStyle(el).minHeight), '44px', 'The current shared style must load for the route link.');
   return { context, page, documents, unexpected };
 }
 
