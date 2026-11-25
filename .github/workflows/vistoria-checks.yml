@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/checklist-vistoria/**'
       - 'tests/vistoria-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/vistoria-storage.cjs'
       - '.github/workflows/vistoria-checks.yml'
 permissions:

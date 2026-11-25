@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/temporada-ou-anual/**'
       - 'tests/temporada-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/temporada-calculator.cjs'
       - '.github/workflows/temporada-checks.yml'
 permissions:

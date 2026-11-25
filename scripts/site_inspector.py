@@ -269,7 +269,7 @@ def main(argv=None):
     external = external_report(urls, args.external, day)
     coverage_ok = bool(counts['pages_scanned'] and counts['references_extracted']) and not errors
     report = {'date': day.isoformat(), **dict(counts), 'ignored': dict(ignored),
-              'broken_links': broken[:DETAIL_LIMIT], 'outdated_mentions': outdated[:DETAIL_LIMIT],
+              'broken_links': broken, 'outdated_mentions': outdated[:DETAIL_LIMIT],
               'totals': {'broken': len(broken), 'outdated': len(outdated)},
               'read_errors': errors[:DETAIL_LIMIT], 'read_error_count': len(errors),
               'coverage_ok': coverage_ok, 'external': external,
@@ -280,11 +280,8 @@ def main(argv=None):
                            'external_unique': len(urls), 'fragments_checked': False,
                            'rendered_javascript_checked': False},
               'status': 'needs_review' if broken or outdated else 'static_checks_passed',
-              'advisory': True, 'detail_limit': DETAIL_LIMIT}
-    # Keep the issue and summary bounded; the downloadable evidence is complete.
-    (args.root / 'site_inspection_links.json').write_text(
-        json.dumps(broken, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    report['all_internal_findings'] = 'site_inspection_links.json'
+              'advisory': True, 'detail_limit': DETAIL_LIMIT,
+              'detail_limited_fields': ['outdated_mentions', 'read_errors']}
     (args.root / 'site_inspection_report.json').write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     summary = (f"RESUMO: {counts['pages_scanned']} paginas | {counts['references_extracted']} referencias | "

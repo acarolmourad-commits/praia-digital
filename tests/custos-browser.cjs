@@ -1,3 +1,4 @@
+const {checkAppLinkTargets} = require('./check-app-link-targets.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
@@ -16,7 +17,7 @@ for(const [id,value] of [['valor','0'],['itbi','-1'],['registro','1000000001']])
 for(const id of Object.keys(values).filter(id=>id!=='valor'))await page.locator('#'+id).fill('0');await click();await click();assert((await page.locator('#total').textContent()).includes('0,00'));assert(!/NaN|Infinity/.test(await page.locator('#res').innerText()));
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
 assert.equal(await page.locator('#cidade, #financ, #faq').count(),0);const body=await page.locator('body').innerText();for(const text of ['Alíquota típica','~R$3.000','prevalecendo o maior','sem surpresas'])assert(!body.includes(text));
-const links=await page.locator('a[href^="/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href').split('#')[0]));for(const l of links){let p=path.join(root,l);if(l.endsWith('/'))p=path.join(p,'index.html');assert(fs.existsSync(p),l);}
+await checkAppLinkTargets(page, root);
 await page.close();
 }await browser.close();console.log('PASS purchase budget mobile/desktop, blank/zero inputs, limits, error recovery and stale results');
 })().catch(e=>{console.error(e);process.exit(1)});
