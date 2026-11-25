@@ -58,7 +58,7 @@ def analyze_formacao(slug: str) -> dict:
         priority += 1
 
     # Check CTA
-    has_cta = 'wa.me' in html or 'whatsapp' in html.lower()
+    has_cta = 'mailto:comercial@praia.digital' in html or '/education/checkout.html' in html
     if not has_cta:
         needs.append('cta')
         priority += 2

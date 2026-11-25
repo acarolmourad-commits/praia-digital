@@ -43,7 +43,7 @@ def analyze_formacao(slug: str) -> dict:
         needs.append('artigos_relacionados')
         priority += 1
 
-    if 'wa.me' not in html and 'whatsapp' not in html.lower():
+    if 'mailto:comercial@praia.digital' not in html and '/education/checkout.html' not in html:
         needs.append('cta')
         priority += 2
 

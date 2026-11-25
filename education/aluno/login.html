@@ -9,8 +9,8 @@
 <form id="loginForm"><div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="username" required></div>
 <div><label for="password">Senha</label><input id="password" name="password" type="password" autocomplete="current-password" required minlength="6"></div>
 <button id="login-submit" type="submit">Entrar</button><p id="error" role="alert" tabindex="-1" hidden></p></form>
-<noscript><p>O login precisa de JavaScript. Se preferir, solicite orientação pelos contatos abaixo.</p></noscript></section>
-<section class="card"><h2>Precisa de ajuda?</h2><p>Para recuperar o acesso, esclarecer a entrega ou informar uma dificuldade, fale com a equipe. Não envie sua senha ou dados de cartão.</p><p><a href="https://wa.me/5511954346288?text=Preciso%20de%20ajuda%20com%20o%20acesso%20ao%20material%20digital%20da%20Academy" target="_blank" rel="noopener">Ajuda no WhatsApp (nova aba)</a> · <a href="mailto:comercial@praia.digital?subject=Ajuda%20com%20acesso%20Academy">Ajuda por e-mail</a></p><a href="/education/checkout.html">Informações sobre matrícula assistida</a></section></main>
+<noscript><p>O login precisa de JavaScript. Se preferir, solicite orientação pelo e-mail abaixo.</p></noscript></section>
+<section class="card"><h2>Precisa de ajuda?</h2><p>Para recuperar o acesso, esclarecer a entrega ou informar uma dificuldade, fale com a equipe. Não envie sua senha ou dados de cartão.</p><p><a href="mailto:comercial@praia.digital?subject=Ajuda%20com%20acesso%20Academy">Ajuda por e-mail</a></p><a href="/education/checkout.html">Informações sobre matrícula assistida</a></section></main>
 <script>
 (function () {
   'use strict';
@@ -44,12 +44,12 @@
       } else {
         errorEl.textContent = response.status === 401 || response.status === 403
           ? 'Não foi possível validar seu acesso. Confira os dados ou solicite ajuda à equipe.'
-          : 'O acesso não foi concluído. Solicite orientação à equipe pelos contatos abaixo.';
+          : 'O acesso não foi concluído. Solicite orientação à equipe pelo e-mail abaixo.';
         errorEl.hidden = false;
         errorEl.focus();
       }
     } catch (_) {
-      errorEl.textContent = 'O serviço de acesso está indisponível ou não respondeu. Solicite ajuda à equipe pelos contatos abaixo; não refaça o pagamento.';
+      errorEl.textContent = 'O serviço de acesso está indisponível ou não respondeu. Solicite ajuda à equipe pelo e-mail abaixo; não refaça o pagamento.';
       errorEl.hidden = false;
       errorEl.focus();
     } finally {

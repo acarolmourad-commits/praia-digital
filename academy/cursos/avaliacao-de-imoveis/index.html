@@ -70,7 +70,7 @@
         <p><strong>Nível:</strong> Iniciante → Intermediário</p>
         <p><strong>Acesso:</strong> vitalício + atualizações</p>
         <p class="price">R$ 347</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20o%20curso%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3veis">Consultar pelo WhatsApp</a> | <a class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3veis%20no%20Litoral%20%E2%80%94%20Praia%20Digital%20Academy">Consultar disponibilidade</a>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3veis%20no%20Litoral%20%E2%80%94%20Praia%20Digital%20Academy">Consultar disponibilidade</a>
         <p class="academy-purchase-paused" role="note"><strong>Novas compras pausadas.</strong> A venda deste curso está suspensa enquanto a entrega protegida do conteúdo é preparada. Consulte a disponibilidade antes de qualquer pagamento; o contato não reserva vaga nem conclui uma compra. Os acessos e materiais de alunos existentes não são alterados por este aviso.</p>
         </div>
 
@@ -106,18 +106,11 @@
 </ul>
 <div style="margin-top:18px"><a href="/education/cursos/avaliacao-de-imoveis/vendas.html">Ver página de vendas</a></div>
 <section style="margin-top:28px">
-<h2>Comece agora</h2>
-<form id="courseLeadForm">
-<input type="text" id="name" placeholder="Seu nome" required />
-<input type="email" id="email" placeholder="Seu e-mail" />
-<input type="tel" id="phone" placeholder="Seu WhatsApp" />
-<input type="hidden" id="course" value="avaliacao-de-imoveis" />
-<input type="hidden" id="source" value="curso" />
-<button type="submit">Quero começar</button>
-</form>
-<p id="courseFormStatus"></p>
+<h2>Atendimento por e-mail</h2>
+<p><a class="cta" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3veis%20no%20Litoral%20%E2%80%94%20Praia%20Digital%20Academy&amp;body=Ol%C3%A1%21%20Gostaria%20de%20receber%20por%20e-mail%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis%20para%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3veis%20no%20Litoral%20%E2%80%94%20Praia%20Digital%20Academy%2C%20com%20conte%C3%BAdo%2C%20valores%2C%20links%20de%20pagamento%20e%20previs%C3%A3o%20de%20entrega.">Pedir opções por e-mail</a></p>
+<p>Envie a mensagem para registrar seu interesse. Você também pode escrever para comercial@praia.digital com o título do material.</p>
 </section>
-<script>(function(){var form=document.getElementById("leadForm");if(!form)return;var WA="5511954346288";function collect(){var d={};var els=form.querySelectorAll("input,select,textarea");for(var i=0;i<els.length;i++){var el=els[i];if(!el.id)continue;var v=(el.value||"").trim();if(v)d[el.id]=v;}return d;}function send(data){var st=document.getElementById("formStatus");try{var leads=JSON.parse(localStorage.getItem("pd_leads")||"[]");leads.push(Object.assign({ts:new Date().toISOString(),page:location.pathname},data));localStorage.setItem("pd_leads",JSON.stringify(leads));}catch(e){}try{window.dispatchEvent(new CustomEvent("lead_pre_qualificado",{detail:data}));}catch(e){}var ctrl=new AbortController();var to=setTimeout(function(){ctrl.abort();},3500);fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),signal:ctrl.signal}).then(function(r){clearTimeout(to);if(r.status===200){if(st)st.textContent="Recebido! Entraremos em contato.";return;}throw new Error("st");}).catch(function(){clearTimeout(to);var rot={"name":"Nome","email":"E-mail","phone":"WhatsApp","city":"Cidade","magnet":"Interesse","faixa_preco":"Faixa de preco","prazo_interesse":"Prazo","source":"Origem"};var partes=[];for(var k in data){if(k==="source")continue;partes.push((rot[k]||k)+": "+data[k]);}var msg="Ola! Quero receber informacoes."+(partes.length?" "+partes.join(" | "):"");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener");if(st)st.textContent="Abrindo seu WhatsApp para concluir o envio. Se preferir, fale conosco: (11) 95434-6288.";});}form.addEventListener("submit",function(e){e.preventDefault();send(collect());});})();</script>
+
 
 </main>
 

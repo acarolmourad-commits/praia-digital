@@ -21,6 +21,22 @@ class LegacyAcademyPurchaseGate(unittest.TestCase):
             with self.subTest(page=page.name, course=page.parent.name):
                 self.assertNotIn('buy.stripe.com', page.read_text())
 
+    def test_academy_contact_links_and_forms(self):
+        pages = [*(ROOT / 'academy/cursos').glob('*/*.html'),
+                 *(ROOT / 'education').rglob('*.html')]
+        for page in pages:
+            source = page.read_text()
+            with self.subTest(page=page.relative_to(ROOT)):
+                self.assertNotRegex(source, r'(?i)(?:wa\.me/|(?:api|web)\.whatsapp\.com/send|whatsapp://send)')
+                self.assertNotRegex(source, r'<form\b[^>]*\bid="(?:courseLeadForm|leadForm)"')
+                if 'Pedir opções por e-mail' in source or 'Pedir guia por e-mail' in source:
+                    hrefs = re.findall(r'href="(mailto:[^"]+)"', source)
+                    self.assertTrue(hrefs)
+                    for href in hrefs:
+                        target = urlsplit(html.unescape(href))
+                        self.assertEqual(target.path, 'comercial@praia.digital')
+                        self.assertTrue(parse_qs(target.query).get('subject'))
+
     def test_paused_sales_have_course_specific_contact(self):
         count = 0
         for page in self.pages:
@@ -56,7 +72,7 @@ class LegacyAcademyPurchaseGate(unittest.TestCase):
         self.assertEqual(count, 61)
 
     def test_student_destinations_and_price_labels_preserved(self):
-        # Before-change snapshots: all 910 non-Stripe hrefs and 61 price labels.
+        # Before-change snapshots: all 849 non-contact hrefs and 61 price labels.
         links, prices = [], []
         for page in self.pages:
             source = page.read_text()
@@ -66,8 +82,8 @@ class LegacyAcademyPurchaseGate(unittest.TestCase):
             prices.extend((relative, value) for value in re.findall(r'<p class="price">(.*?)</p>', source, re.S))
         def digest(values):
             return hashlib.sha256(json.dumps(values, ensure_ascii=False).encode()).hexdigest()
-        self.assertEqual(len(links), 910)
-        self.assertEqual(digest(links), '8b87e2fca9b9c907b5465381ff22e1f6b0e94567965e44f9342926eaae5d9e35')
+        self.assertEqual(len(links), 849)
+        self.assertEqual(digest(links), 'af490932aad5e133a380b8b9219eddcc9586f6260c6338fea225e8385d5faee0')
         self.assertEqual(digest(prices), 'e7ba9d14e2c42e188118c3b82c3d2288bbfc4bd4b22d5a8f37d31382a03da271')
 
 

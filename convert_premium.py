@@ -1,3 +1,4 @@
+from urllib.parse import quote
 import os
 from pathlib import Path
 
@@ -705,7 +706,7 @@ CTAs: Baixar guia, Ver curso, Quero aprender
         <p><strong>Carga horária:</strong> {hours}</p>
         <p><strong>Acesso:</strong> vitalício + atualizações</p>
         <p class="price">{price}</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20{slug.replace('-', '%20')}">Quero garantir minha vaga</a>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20{quote(nome, safe='')}">Consultar por e-mail</a>
       </div>
       <div class="grid">
         <div class="card">

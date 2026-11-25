@@ -1,3 +1,4 @@
+from urllib.parse import quote
 import os
 import re
 from pathlib import Path
@@ -491,7 +492,7 @@ def vendas_html(curso, nome, valor):
         <p><strong>Carga horária:</strong> {default_carga}</p>
         <p><strong>Acesso:</strong> vitalício + atualizações</p>
         <p class="price">{valor}</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20o%20curso%20{curso}">Quero garantir minha vaga</a>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20{quote(nome, safe='')}">Consultar por e-mail</a>
       </div>
       <div class="grid">
         <div class="card">
