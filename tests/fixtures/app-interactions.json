@@ -354,13 +354,13 @@
   "apps/calculadora-precificacao-shopee/index.html": {
     "heading_id": "pd-app-title",
     "scripts": [
-      "<script> sha256:1c4a2c1f1cdbb5bfc3fbec4b2ed85e8ccda1adfebff8b7c09738208778a022e6"
+      "<script> sha256:e6aecc4c0479d4977e3804b7dabca597f00824b39e9c600f0a500935c540028c"
     ],
     "controls": [
       "<select id=\"plat\">",
       "<input id=\"custo\" type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"41.00\">",
       "<input id=\"preco\" type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"69.90\">",
-      "<input id=\"afiliado\" type=\"number\" min=\"0\" max=\"100\" step=\"0.1\" value=\"10\">",
+      "<input id=\"afiliado\" type=\"number\" min=\"0\" max=\"100\" step=\"0.01\" value=\"0\" aria-describedby=\"tt-input-note\">",
       "<input id=\"margemAlvo\" type=\"number\" min=\"0\" max=\"99.99\" step=\"0.01\" value=\"15\">",
       "<input id=\"frete\" type=\"number\" min=\"0\" step=\"0.01\" value=\"0\">",
       "<button class=\"btn\" onclick=\"calc()\">"

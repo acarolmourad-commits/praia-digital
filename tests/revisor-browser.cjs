@@ -110,15 +110,37 @@ for(const width of [390,1280]){
  assert.deepEqual(errors,[]);await context.close();
 }
 // Marketplace results must never survive changed or invalid pricing inputs.
-for(const width of [390,1280]){
+for(const width of [360,1280]){
  const page=await browser.newPage({viewport:{width,height:900}});
  await page.route('**/*',route=>{const u=new URL(route.request().url());if(u.origin!=='https://praia.digital')return route.abort();const f=path.resolve(root,'.'+u.pathname+(u.pathname.endsWith('/')?'index.html':''));if(!f.startsWith(root+path.sep)||!fs.existsSync(f))return route.fulfill({status:404,body:''});return route.fulfill({path:f});});
  await page.goto('https://praia.digital/apps/calculadora-precificacao-shopee/');
  const calc=()=>page.getByRole('button',{name:'Calcular',exact:true}).click();
  await page.locator('#custo').fill('40');await page.locator('#preco').fill('70');await calc();assert(await page.locator('#res').isVisible());
  await page.locator('#preco').fill('50');assert(!(await page.locator('#res').isVisible()));await calc();assert.match(await page.locator('#kLucro').textContent(),/-4,50/);
- await page.locator('#plat').selectOption('tiktok');assert(!(await page.locator('#res').isVisible()));assert(await page.locator('#afWrap').isVisible());await calc();assert.match(await page.locator('#kTaxa').textContent(),/10,00/);
- await page.locator('#afiliado').fill('20');assert(!(await page.locator('#res').isVisible()));await calc();assert.match(await page.locator('#kTaxa').textContent(),/15,00/);
+ await page.locator('#plat').selectOption('tiktok');
+ assert(!(await page.locator('#res').isVisible()));
+ assert(await page.locator('#afWrap').isVisible());
+ assert.equal(await page.locator('#afiliado').inputValue(),'0');
+ assert.equal(await page.locator('#tt-lower-fee').textContent(),'10% + R$ 4,00 por item vendido');
+ assert.equal(await page.locator('#tt-upper-fee').textContent(),'6% + R$ 6,00 por item vendido');
+ await calc();
+ assert.equal(await page.locator('#kTaxa').textContent(),'R$ 9,00');
+ assert.equal(await page.locator('#kLucro').textContent(),'R$ 1,00');
+ assert.equal(await page.getByRole('row',{name:/Comissão de afiliado/}).count(),0);
+ await page.locator('#afiliado').fill('20');
+ assert(!(await page.locator('#res').isVisible()));
+ await calc();
+ assert.equal(await page.locator('#kTaxa').textContent(),'R$ 9,00');
+ assert.equal(await page.locator('#kLucro').textContent(),'R$ -9,00');
+ assert.match(await page.getByRole('row',{name:/Comissão de afiliado/}).textContent(),/R\$ 10,00/);
+ await page.locator('#afiliado').fill('0');
+ await page.locator('#custo').fill('38');
+ await page.locator('#preco').fill('45');
+ assert(!(await page.locator('#res').isVisible()));
+ await calc();
+ assert.equal(await page.locator('#kTaxa').textContent(),'R$ 8,50');
+ assert.equal(await page.locator('#kLucro').textContent(),'R$ -1,50');
+ assert.match(await page.locator('#sugestao').textContent(),/R\$ 55,70/);
  await page.locator('#preco').fill('');page.once('dialog',d=>d.accept());await calc();assert(!(await page.locator('#res').isVisible()));assert.equal(await page.locator('#detalheBody').textContent(),'');
  await page.locator('#preco').fill('70');await calc();assert(await page.locator('#res').isVisible());
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.close();
