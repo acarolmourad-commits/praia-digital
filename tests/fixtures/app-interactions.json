@@ -293,7 +293,7 @@
     "scripts": [
       "<script src=\"core.js\" defer>",
       "<script src=\"app.js?v=aa994c35015e\" defer>",
-      "<script src=\"accommodation.js?v=20261125-pendencias\" defer>"
+      "<script src=\"accommodation.js?v=20261125-datas-fontes\" defer>"
     ],
     "controls": [
       "<button id=\"example\" type=\"button\" class=\"button secondary\" disabled>",
@@ -307,6 +307,8 @@
       "<input id=\"accommodation-name\" type=\"text\" maxlength=\"120\" placeholder=\"Ex.: Suíte jardim\">",
       "<input id=\"accommodation-source-one\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
       "<input id=\"accommodation-source-two\" type=\"text\" maxlength=\"500\" placeholder=\"Nome do canal, link ou referência\">",
+      "<input id=\"accommodation-date-one\" type=\"date\" aria-describedby=\"accommodation-dates-help\">",
+      "<input id=\"accommodation-date-two\" type=\"date\" aria-describedby=\"accommodation-dates-help\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
