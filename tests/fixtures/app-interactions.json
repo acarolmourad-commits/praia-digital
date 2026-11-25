@@ -311,6 +311,7 @@
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
       "<input type=\"checkbox\">",
+      "<input type=\"checkbox\">",
       "<textarea id=\"accommodation-notes\" rows=\"3\" maxlength=\"2000\" placeholder=\"O que falta confirmar, com qual responsável ou equipe e em qual canal? Evite dados pessoais.\">",
       "<button id=\"accommodation-generate\" type=\"button\" class=\"button primary\" disabled>",
       "<button type=\"reset\" class=\"button secondary\">",
