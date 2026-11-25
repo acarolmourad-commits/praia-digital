@@ -18,6 +18,13 @@ def render(groups, current=None, guidance=None):
     esc = html.escape
     titles = {a['slug']: a['title'] for g in groups for a in g['apps']}
     guide = (guidance or {}).get(current)
+    catalog_link = '<a href="/apps/">Catálogo de aplicativos</a>'
+    if current:
+        group = next(group for group in groups if any(app['slug'] == current for app in group['apps']))
+        group_id = esc(group['id'])
+        catalog_link = (f'<a href="/apps/?objetivo={group_id}#grupo-{group_id}">'
+                        f'Catálogo de aplicativos · {esc(group["title"])}</a> · '
+                        '<a href="/apps/">Ver o catálogo completo</a>')
     practical = ''
     if guide:
         next_links = ''.join(f'<li><a href="/apps/{esc(slug)}/">{esc(titles[slug])}</a></li>' for slug in guide['next'])
@@ -41,7 +48,7 @@ def render(groups, current=None, guidance=None):
             '<h2 id="pd-network-title" tabindex="-1">Continue com o próximo aplicativo</h2>'
             '<p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p>'
             + practical + '<details><summary>Explorar a rede completa de aplicativos</summary>' + ''.join(sections) + '</details>'
-            '<p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p>'
+            '<p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · ' + catalog_link + ' · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p>'
             '<p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>')
 
 def build(root=ROOT, check=False):

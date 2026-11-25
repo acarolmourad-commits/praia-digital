@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/renda-para-financiar/**'
       - 'tests/renda-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/renda-calculator.cjs'
       - '.github/workflows/renda-checks.yml'
 permissions:

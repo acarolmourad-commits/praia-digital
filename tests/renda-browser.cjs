@@ -1,3 +1,4 @@
+const {checkAppLinkTargets} = require('./check-app-link-targets.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
@@ -17,7 +18,7 @@ for(const [id,value] of [['prazo','1.5'],['valor',''],['pct','0']]){const old=aw
 await click();assert(await page.locator('#res').isVisible());assert(!/NaN|Infinity/.test(await page.locator('#res').innerText()));
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
 const body=await page.locator('body').innerText();for(const text of ['11,19','13,75','Na prática, sim','Renda mínima por faixa'])assert(!body.includes(text));
-const links=await page.locator('a[href^="/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href').split('#')[0]));for(const l of links){let p=path.join(root,l);if(l.endsWith('/'))p=path.join(p,'index.html');assert(fs.existsSync(p),l);}
+await checkAppLinkTargets(page, root);
 await page.close();
 }await browser.close();console.log('PASS renda desktop/mobile validation, repeated flow, zero rates, full entry, stale-results and internal links');
 })().catch(e=>{console.error(e);process.exit(1)});

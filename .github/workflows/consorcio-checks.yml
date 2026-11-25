@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/calculadora-consorcio/**'
       - 'tests/consorcio-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/consorcio-regression.cjs'
       - '.github/workflows/consorcio-checks.yml'
 permissions:

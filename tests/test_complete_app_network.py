@@ -67,6 +67,19 @@ class CompleteAppNetworkTests(unittest.TestCase):
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
 
+    def test_apps_return_to_their_catalog_group(self):
+        catalog = Links((ROOT / 'apps/index.html').read_text(encoding='utf-8'))
+        groups = json.loads((ROOT / 'data/app-network.json').read_text(encoding='utf-8'))
+        for group in groups:
+            group_id = group['id']
+            anchor = 'grupo-' + group_id
+            self.assertEqual(catalog.ids.count(anchor), 1)
+            for app in group['apps']:
+                with self.subTest(app=app['slug']):
+                    page = ROOT / 'apps' / app['slug'] / 'index.html'
+                    links = Links(page.read_text(encoding='utf-8')).links
+                    self.assertEqual(links.count(f'/apps/?objetivo={group_id}#{anchor}'), 1)
+
     def test_each_app_opens_the_checklist_for_its_task(self):
         expected = {
             'comprar': {'alugar-ou-comprar', 'calculadora-financiamento', 'calculadora-consorcio',
