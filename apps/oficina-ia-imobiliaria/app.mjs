@@ -7,12 +7,15 @@ const resultKind=byId('result-kind');
 let resultFile='praia-digital-texto-revisado.txt';
 let resultSource=null;
 let resultSnapshot='';
+let generatedText='';
 const snapshot=form=>JSON.stringify([...new FormData(form)]);
 const isOutdated=()=>resultSource!==null && snapshot(resultSource)!==resultSnapshot;
 const outdatedMessage='Os dados usados neste resultado foram alterados. Gere o resultado novamente antes de copiar ou baixar. O texto anterior foi preservado para revisão.';
 
 function show(value,source,kind,file){
+  if(output.value.trim() && output.value!==generatedText && !window.confirm('Substituir o texto que você editou? Se quiser guardá-lo, cancele e guarde sua revisão antes de gerar outro resultado.')) return;
   output.value=value;
+  generatedText=output.value;
   if(resultKind) resultKind.textContent=kind;
   resultFile=file;
   resultSource=source;
@@ -80,6 +83,7 @@ byId('clear').addEventListener('click',()=>{
   resultFile='praia-digital-texto-revisado.txt';
   resultSource=null;
   resultSnapshot='';
+  generatedText='';
   status.textContent='Campos e resultado limpos.';
   listing.querySelector('[name="tipo"]').focus();
 });
