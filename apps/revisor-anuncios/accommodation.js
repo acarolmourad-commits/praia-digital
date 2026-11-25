@@ -30,18 +30,25 @@
   $('accommodation-generate').addEventListener('click', () => {
     invalidate();
     const value = id => $(id).value.trim() || 'Não informado';
+    const date = id => {
+      const iso = $(id).value;
+      return iso ? iso.split('-').reverse().join('/') : 'Não informada';
+    };
     const checks = [...form.querySelectorAll('input[type="checkbox"]')];
     $('accommodation-text').value = [
       'PRAIA DIGITAL — CONFERÊNCIA MANUAL DA ACOMODAÇÃO',
       `Resumo gerado em ${new Date().toLocaleString('pt-BR')}`,
       `Categoria: ${value('accommodation-name')}`,
       `Canal / fonte 1: ${value('accommodation-source-one')}`,
+      `Consulta à fonte 1: ${date('accommodation-date-one')}`,
       `Canal / fonte 2: ${value('accommodation-source-two')}`,
+      `Consulta à fonte 2: ${date('accommodation-date-two')}`,
       '',
       ...checks.map(input => `${input.checked ? 'MARCADO COMO CONFERIDO' : 'PENDENTE'}: ${input.closest('label').querySelector('span').textContent.trim()}`),
       '', `Pendências e próximo passo: ${value('accommodation-notes')}`, '',
       'Registro das marcações do usuário; não é verificação automática dos canais nem aprovação para publicar.',
       'Fontes não informadas continuam pendentes. Dados não enviados nem salvos entre sessões.',
+      'Datas de consulta informadas pelo usuário; não confirmam disponibilidade atual.',
       'https://praia.digital/apps/revisor-anuncios/#conferencia-hospedagem'
     ].join('\n');
     if (download && typeof URL.createObjectURL === 'function') {
@@ -53,6 +60,8 @@
       const items = [];
       if (!$('accommodation-source-one').value.trim()) items.push('Identificar a primeira fonte.');
       if (!$('accommodation-source-two').value.trim()) items.push('Identificar a segunda fonte.');
+      if (!$('accommodation-date-one').value) items.push('Registrar quando a primeira fonte foi consultada.');
+      if (!$('accommodation-date-two').value) items.push('Registrar quando a segunda fonte foi consultada.');
       for (const input of checks.filter(input => !input.checked)) {
         const label = input.closest('label').querySelector('span').textContent.trim();
         items.push('Confirmar se ' + label.charAt(0).toLowerCase() + label.slice(1));

@@ -30,11 +30,14 @@ for(const width of [390,1280]){
  assert.equal(await checks.last().isChecked(),true);
  await page.locator('#accommodation-name').fill('Suíte jardim — exemplo fictício');
  await page.locator('#accommodation-source-one').fill('Ficha da equipe');
+ await page.locator('#accommodation-date-one').fill('2026-11-24');
  await page.locator('#accommodation-notes').fill('Confirmar foto do banheiro com a recepção.');
  await page.locator('#accommodation-generate').click();
  let summary = await page.locator('#accommodation-text').inputValue();
  assert.match(summary, /Categoria: Suíte jardim/);
  assert.match(summary, /Canal \/ fonte 2: Não informado/);
+ assert.match(summary, /Consulta à fonte 1: 24\/11\/2026/);
+ assert.match(summary, /Consulta à fonte 2: Não informada/);
  assert.equal(summary.split('MARCADO COMO CONFERIDO:').length-1,2);
  assert.equal(summary.split('PENDENTE:').length-1,3);
  assert.match(summary, /PENDENTE: O percurso até a acomodação/);
@@ -51,6 +54,8 @@ for(const width of [390,1280]){
  const pendingBox = page.locator('#accommodation-pending');
  const pendingText = await pendingBox.inputValue();
  assert.match(pendingText, /Identificar a segunda fonte/);
+ assert.match(pendingText, /Registrar quando a segunda fonte/);
+ assert.doesNotMatch(pendingText, /Registrar quando a primeira fonte/);
  assert.match(pendingText, /Confirmar se o percurso/);
  assert.doesNotMatch(pendingText, /configuração das camas|foto do banheiro/);
  assert.ok(pendingText.length <= 1000);
@@ -77,6 +82,11 @@ for(const width of [390,1280]){
  assert.equal(revisedSummary, await page.locator('#accommodation-text').inputValue());
  assert.match(revisedSummary, /Conferir capacidade/);
  assert.doesNotMatch(revisedSummary, /Confirmar foto do banheiro/);
+ await page.locator('#accommodation-date-one').fill('2026-11-25');
+ assert.equal(await page.locator('#accommodation-result').isVisible(), false);
+ assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
+ await page.locator('#accommodation-generate').click();
+ assert.match(await readDownload(), /Consulta à fonte 1: 25\/11\/2026/);
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return new Promise(resolve=>{window.finishAccommodationCopy=resolve;});}}}));
  await page.locator('#accommodation-copy').click();
  await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();
@@ -84,9 +94,12 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
  assert.equal(await page.locator('#accommodation-text').inputValue(),'');
  assert.equal(await pendingBox.inputValue(), '');
+ assert.equal(await page.locator('#accommodation-date-one').inputValue(), '');
  for (const check of await checks.all()) await check.check();
  await page.locator('#accommodation-source-one').fill('Site');
  await page.locator('#accommodation-source-two').fill('Canal de reservas');
+ await page.locator('#accommodation-date-one').fill('2026-11-24');
+ await page.locator('#accommodation-date-two').fill('2026-11-25');
  await page.locator('#accommodation-generate').click();
  assert.equal(await page.locator('#accommodation-pending-panel').isVisible(), false);
  await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="core.js" defer></script>
   <script src="app.js?v=aa994c35015e" defer></script>
-  <script src="accommodation.js?v=20261125-pendencias" defer></script>
+  <script src="accommodation.js?v=20261125-datas-fontes" defer></script>
 <link rel="stylesheet" href="/css/app-network.css?v=a95b210c1ee3">
 </head>
 <body>
@@ -77,6 +77,11 @@
           <label>Primeiro canal e fonte consultada<input id="accommodation-source-one" type="text" maxlength="500" placeholder="Nome do canal, link ou referência"></label>
           <label>Segundo canal e fonte consultada<input id="accommodation-source-two" type="text" maxlength="500" placeholder="Nome do canal, link ou referência"></label>
         </div>
+        <div class="record-grid">
+          <label>Data da consulta à primeira fonte<input id="accommodation-date-one" type="date" aria-describedby="accommodation-dates-help"></label>
+          <label>Data da consulta à segunda fonte<input id="accommodation-date-two" type="date" aria-describedby="accommodation-dates-help"></label>
+        </div>
+        <p id="accommodation-dates-help" class="helper">Informe quando você consultou cada fonte. Deixe em branco o que não souber. Essas datas são diferentes da geração do resumo e não confirmam disponibilidade atual.</p>
         <fieldset class="accommodation-checklist">
           <legend>O que conferir</legend>
           <label class="confirmation"><input type="checkbox"> <span>O nome da categoria e a configuração das camas identificam a mesma acomodação.</span></label>
