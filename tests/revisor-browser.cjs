@@ -39,6 +39,15 @@ for(const width of [390,1280]){
  assert.equal(summary.split('PENDENTE:').length-1,3);
  assert.match(summary, /PENDENTE: O percurso até a acomodação/);
  assert.match(summary, /Confirmar foto do banheiro/);
+ const downloadLink = page.getByRole('link', {name:'Baixar resumo em TXT'});
+ async function readDownload() {
+  const pending = page.waitForEvent('download');
+  await downloadLink.press('Enter');
+  const download = await pending;
+  assert.equal(download.suggestedFilename(), 'resumo-acomodacao.txt');
+  return fs.readFileSync(await download.path(), 'utf8');
+ }
+ assert.equal(await readDownload(), summary);
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return Promise.reject(new Error('denied'));}}}));
  await page.locator('#accommodation-copy').click();
  assert.match(await page.locator('#accommodation-status').textContent(),/Texto selecionado/);
@@ -48,13 +57,19 @@ for(const width of [390,1280]){
  assert.match(await page.locator('#accommodation-text').inputValue(), /MARCADO COMO CONFERIDO: O percurso até a acomodação/);
  await page.locator('#accommodation-notes').fill('Conferir capacidade.');
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
+ assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
  await page.locator('#accommodation-generate').click();
+ const revisedSummary = await readDownload();
+ assert.equal(revisedSummary, await page.locator('#accommodation-text').inputValue());
+ assert.match(revisedSummary, /Conferir capacidade/);
+ assert.doesNotMatch(revisedSummary, /Confirmar foto do banheiro/);
  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(){return new Promise(resolve=>{window.finishAccommodationCopy=resolve;});}}}));
  await page.locator('#accommodation-copy').click();
  await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();
  await page.evaluate(()=>window.finishAccommodationCopy());
  assert.equal(await page.locator('#accommodation-result').isVisible(),false);
  assert.equal(await page.locator('#accommodation-text').inputValue(),'');
+ assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
  assert.doesNotMatch(await page.locator('#accommodation-status').textContent(),/copiado/);
  assert.equal(await accommodation.locator('input:checked').count(),0);
  assert.equal(await page.locator('#report').isVisible(),true);

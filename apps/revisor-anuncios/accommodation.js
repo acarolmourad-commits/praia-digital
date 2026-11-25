@@ -2,9 +2,15 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const form = $('accommodation-form');
+  const download = $('accommodation-download');
   let revision = 0;
   function invalidate() {
     revision++;
+    if (download?.hasAttribute('href')) {
+      URL.revokeObjectURL(download.href);
+      download.removeAttribute('href');
+      download.hidden = true;
+    }
     const hadResult = !$('accommodation-result').hidden;
     $('accommodation-result').hidden = true;
     $('accommodation-text').value = '';
@@ -32,9 +38,14 @@
       'Fontes não informadas continuam pendentes. Dados não enviados nem salvos entre sessões.',
       'https://praia.digital/apps/revisor-anuncios/#conferencia-hospedagem'
     ].join('\n');
+    if (download && typeof URL.createObjectURL === 'function') {
+      const file = new Blob([$('accommodation-text').value], { type: 'text/plain;charset=utf-8' });
+      download.href = URL.createObjectURL(file);
+      download.hidden = false;
+    }
     $('accommodation-result').hidden = false;
     $('accommodation-text').focus();
-    $('accommodation-status').textContent = 'Resumo gerado. Confira as fontes e copie para guardar ou incluir no Relatório do imóvel.';
+    $('accommodation-status').textContent = 'Resumo gerado. Confira as fontes antes de compartilhar.';
   });
   $('accommodation-copy').addEventListener('click', async () => {
     if ($('accommodation-result').hidden || $('accommodation-copy').disabled) return;
