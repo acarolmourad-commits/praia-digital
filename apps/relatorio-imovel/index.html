@@ -19,7 +19,7 @@
 @media(max-width:600px){.app-header{padding:22px 18px}.layout{padding:20px 12px;gap:22px}.report{padding:24px 18px}.report .report-name{font-size:29px}.report-columns,.form-grid{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact.wide{grid-column:span 2}.report-meta{grid-template-columns:1fr}.preview-title{display:block}.actions button{flex:1}.two{gap:10px}.report-columns{gap:0}}
 .return-agenda{margin-top:20px;border-top:1px solid var(--line);padding-top:12px;scroll-margin-top:6rem}.return-agenda summary{color:var(--teal);font-weight:700;cursor:pointer;padding:10px 0}.return-agenda summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.return-agenda label{display:block;font-weight:650;margin-bottom:6px}.return-agenda p{font-size:14px;color:var(--muted)}
 #evidencias-da-visita{scroll-margin-top:6rem}
-.agenda-actions{margin-top:8px}.agenda-actions button{min-height:44px}.agenda-actions .status{margin:6px 0 0}
+.agenda-scope{display:flex;align-items:center;gap:.6rem;min-height:44px;scroll-margin-top:6rem;cursor:pointer}.agenda-scope input{width:1.2rem;height:1.2rem;flex:none}.agenda-actions{margin-top:8px}.agenda-actions button{min-height:44px}.agenda-actions .status{margin:6px 0 0}
 @page{size:A4;margin:16mm}
 @media print{body{background:white;font-size:11pt}body > .pd-site-header,body > .pd-preserved-intro{display:none!important}.app-header,.editor,.preview-title,.screen-note,.skip-link{display:none!important}.layout{display:block;padding:0;margin:0;max-width:none}.report{padding:0;border:0;box-shadow:none;color:#152d30;print-color-adjust:exact;-webkit-print-color-adjust:exact}.report .report-name{font-size:27pt}.report-header{padding-bottom:8px}.report section{margin-top:10px}.report-meta{margin-top:8px}.facts{gap:6px}.fact{padding:6px;min-height:0}.fact dd,.body-text{font-size:10pt}.report h3{font-size:12pt}.contact{margin-top:10px}.report-footer{font-size:8pt;margin-top:10px;padding-top:8px}.report section,.report-header,.contact{break-inside:avoid}.report-columns{display:block}.report a{color:inherit;text-decoration:none}.notice{margin-top:14px}.report .links{gap:12px}h3{break-after:avoid}}
 </style>
@@ -95,6 +95,7 @@
       <noscript><p>Para montar a pauta manualmente, anote a referência do imóvel, a fonte com a data, a pergunta pendente e quem fará o retorno.</p></noscript>
       <div id="agenda-fields" hidden>
       <p id="agenda-help">Preencha as fontes, as dúvidas ou os próximos passos no formulário. Revise os trechos que deseja compartilhar e copie o texto abaixo.</p>
+      <label class="agenda-scope" id="perguntas-para-encaminhar"><input type="checkbox" id="only-pending"> Mostrar apenas os pontos a confirmar</label>
       <label for="agenda-text">Texto da pauta</label>
       <textarea id="agenda-text" readonly rows="7" aria-describedby="agenda-help" placeholder="A pauta aparece quando você registra uma fonte, uma dúvida ou um próximo passo."></textarea>
       <div class="agenda-actions"><button id="copy-agenda" type="button" disabled>Copiar pauta completa</button><p id="agenda-copy-status" class="status" role="status"></p></div>
@@ -157,6 +158,7 @@
   const notice = document.getElementById('example-notice');
   const agenda = document.getElementById('agenda-text');
   const copyAgenda = document.getElementById('copy-agenda');
+  const onlyPending = document.getElementById('only-pending');
   const copyStatus = document.getElementById('agenda-copy-status');
   let usingExample = false;
   function displayDate(value) {
@@ -177,24 +179,28 @@
       const value = form.elements.namedItem(name).value.trim();
       if (value) sections.push(label + '\n' + value);
     }
-    if (sections.length) {
+    if (sections.length && !onlyPending.checked) {
       const reference = form.elements.namedItem('reference').value.trim();
       if (reference) sections.unshift('Referência: ' + reference);
       sections.unshift(usingExample ? 'Pauta de retorno — exemplo fictício' : 'Pauta de retorno');
     }
-    const text = sections.join('\n\n');
+    const pending = form.elements.namedItem('pending').value.trim();
+    const questions = usingExample && pending ? 'Exemplo fictício\n\n' + pending : pending;
+    const text = onlyPending.checked ? questions : sections.join('\n\n');
+    copyAgenda.textContent = onlyPending.checked ? 'Copiar pendências' : 'Copiar pauta completa';
     if (agenda.value !== text) {
       agenda.value = text;
       copyStatus.textContent = '';
     }
     copyAgenda.disabled = !text;
   }
+  onlyPending.addEventListener('change', render);
   copyAgenda.addEventListener('click', async () => {
     const text = agenda.value;
     if (!text) return;
     try {
       await navigator.clipboard.writeText(text);
-      if (agenda.value === text) copyStatus.textContent = 'Pauta copiada.';
+      if (agenda.value === text) copyStatus.textContent = onlyPending.checked ? 'Pendências copiadas.' : 'Pauta copiada.';
     } catch {
       if (agenda.value !== text) return;
       agenda.focus();
@@ -264,7 +270,12 @@
   const agendaPanel = document.getElementById('pauta-de-retorno');
   document.getElementById('agenda-fields').hidden = false;
   function openLinkedAgenda() {
-    if (window.location.hash === '#pauta-de-retorno') agendaPanel.open = true;
+    const hash = window.location.hash;
+    if (hash === '#pauta-de-retorno' || hash === '#perguntas-para-encaminhar') {
+      onlyPending.checked = hash === '#perguntas-para-encaminhar';
+      render();
+      agendaPanel.open = true;
+    }
   }
   openLinkedAgenda();
   window.addEventListener('hashchange', openLinkedAgenda);
