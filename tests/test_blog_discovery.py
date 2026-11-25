@@ -32,6 +32,32 @@ class Page(HTMLParser):
 
 
 class BlogDiscoveryTests(unittest.TestCase):
+    def test_historical_blog_links_open_the_published_guides(self):
+        guides = {
+            'guia-pet-friendly-riviera-de-sao-lourenco-bertioga-2026.html': 'guia-pet-friendly-riviera-sao-lourenco-bertioga-2026.html',
+            'guia-gastronomia-japonesa-delivery-riviera-bertioga-2026.html': 'guia-sushi-gastronomia-japonesa-delivery-riviera-bertioga-2026.html',
+            'gastronomia-e-restaurantes-na-riviera-de-sao-lourenco-2026.html': 'onde-comer-na-riviera-de-sao-lourenco-restaurantes-2026.html',
+        }
+        for old, current in guides.items():
+            with self.subTest(old=old):
+                tags = Page((ROOT / 'blog/blog' / old).read_text()).tags
+                path = '/blog/' + current
+                canonical = 'https://praia.digital' + path
+                self.assertIn(('link', {'rel': 'canonical', 'href': canonical}), tags)
+                self.assertIn(('meta', {'http-equiv': 'refresh', 'content': '0; url=' + canonical}), tags)
+                self.assertIn(('meta', {'name': 'robots', 'content': 'noindex, follow'}), tags)
+                self.assertIn(('a', {'href': path}), tags)
+                self.assertIn(('link', {'rel': 'canonical', 'href': canonical}),
+                              Page((ROOT / 'blog' / current).read_text()).tags)
+
+    def test_historical_stylesheets_load_the_shared_design(self):
+        paths = ['assets/css/style.css', 'assets/css/main.css', 'styles.css',
+                 'css/main.css', 'primeiro-imovel-litoral-sp-2026/css/style.css']
+        self.assertTrue((ROOT / 'css/style.css').is_file())
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertIn('@import url("/css/style.css")', (ROOT / path).read_text())
+
     def test_links_assets_and_fragments_resolve(self):
         for file in PAGES:
             for tag, attrs in Page((ROOT / file).read_text()).tags:
