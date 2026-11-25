@@ -72,6 +72,34 @@ const routes=['/ferramentas/index.html','/apps/simulador-roi-temporada/'];
    await page.screenshot({path:path.join(out,`${route.includes('/apps/')?'roi':'hub'}-top-${width}.png`)});
    assert.deepEqual(errors,[]);await page.close();
   }
+  const calendar = await context.newPage();
+  await calendar.goto('https://praia.digital/anfitrioes/central-priceplabs.html#ocupacao-do-periodo');
+  const total = calendar.getByLabel('Noites do período', {exact:true});
+  const blocked = calendar.getByLabel('Noites bloqueadas', {exact:true});
+  const booked = calendar.getByLabel('Noites reservadas', {exact:true});
+  const result = calendar.locator('#periodo-resultado');
+  const calculate = calendar.getByRole('button', {name:'Calcular ocupação do período'});
+  await total.fill('30'); await blocked.fill('6'); await booked.fill('12');
+  await calculate.press('Enter');
+  assert.match(await result.innerText(), /venda: 24.*50%/);
+  await blocked.fill('0');
+  assert.equal(await result.innerText(), '');
+  await calculate.click();
+  assert.match(await result.innerText(), /40%/);
+  await blocked.fill('31'); await calculate.click();
+  assert.equal(await blocked.evaluate(el=>el.validity.customError), true);
+  await blocked.fill('30'); await calculate.click();
+  assert.equal(await booked.evaluate(el=>el.validity.customError), true);
+  await booked.fill('0'); await calculate.click();
+  assert.match(await result.innerText(), /sem base de cálculo/);
+  await blocked.fill('0'); await calculate.click();
+  assert.match(await result.innerText(), /período: 0%/);
+  await total.fill('0'); await calculate.click();
+  assert.equal(await result.innerText(), '');
+  await calendar.locator('#ocupacao-do-periodo a[href*="simulador-roi"]').click();
+  await calendar.waitForURL('**/apps/simulador-roi-temporada/#ocup');
+  assert.ok(await calendar.locator('#ocup').isEditable());
+  await calendar.close();
   assert.deepEqual(sideEffects,[]);await context.close();console.log(`PASS hub and ROI ${width}px: inputs, navigation, semantics, axe, no overflow and screenshots`);
  }
  }finally{await browser.close();}

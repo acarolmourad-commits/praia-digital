@@ -108,11 +108,28 @@ footer{text-align:center;color:var(--muted);padding:2rem 1rem;border-top:1px sol
 <div class="section-heading"><h2>Quatro indicadores que vale acompanhar</h2><p>Use sempre a mesma definição e compare períodos com contexto semelhante.</p></div>
 <div class="metric-grid">
 <div class="metric"><strong>Diária média (ADR)</strong><p>Receita de hospedagem dividida pelo número de noites efetivamente vendidas, conforme a definição adotada no seu relatório.</p></div>
-<div class="metric"><strong>Taxa de ocupação</strong><p>Noites reservadas divididas pelas noites disponíveis para venda no período. Registre bloqueios e indisponibilidades.</p></div>
+<div class="metric"><strong>Taxa de ocupação</strong><p>Noites reservadas divididas pelas noites disponíveis para venda no período. Registre bloqueios e indisponibilidades. <a href="#ocupacao-do-periodo">Calcular com meu calendário</a>.</p></div>
 <div class="metric"><strong>RevPAR</strong><p>Receita de hospedagem por noite disponível. Ajuda a relacionar preço e ocupação, em vez de olhar apenas para a diária.</p></div>
 <div class="metric"><strong>Ritmo de reservas</strong><p>Como as reservas entram ao longo do tempo, comparadas com períodos equivalentes e com a antecedência de reserva.</p></div>
 </div>
 </section>
+
+<section class="section" id="ocupacao-do-periodo" aria-labelledby="ocupacao-do-periodo-titulo">
+<div class="section-heading"><h2 id="ocupacao-do-periodo-titulo">Qual foi a ocupação do período?</h2>
+<p>Escolha uma acomodação e um intervalo de até 366 noites. Conte cada noite uma vez, mesmo que o imóvel apareça em mais de um canal. Inclua em bloqueios o uso próprio e a manutenção.</p></div>
+<div class="card">
+<form class="booking-form" id="form-ocupacao-periodo">
+  <div><label for="periodo-total">Noites do período</label><input id="periodo-total" type="number" inputmode="numeric" min="1" max="366" step="1" required></div>
+  <div><label for="periodo-bloqueadas">Noites bloqueadas</label><input id="periodo-bloqueadas" type="number" inputmode="numeric" min="0" max="366" step="1" required></div>
+  <div><label for="periodo-reservadas">Noites reservadas</label><input id="periodo-reservadas" type="number" inputmode="numeric" min="0" max="366" step="1" required></div>
+  <div><button class="btn btn-blue" id="periodo-calcular" type="submit" disabled>Calcular ocupação do período</button></div>
+</form>
+<p><output id="periodo-resultado" for="periodo-total periodo-bloqueadas periodo-reservadas" aria-live="polite" aria-atomic="true"></output></p>
+<noscript><p>Para fazer a conta, subtraia as noites bloqueadas do total. Divida as noites reservadas pelas disponíveis e multiplique por 100. Se todas estavam bloqueadas, a porcentagem fica indefinida.</p></noscript>
+<p>Guarde as datas junto com o resultado. Para estimar um ano, escolha uma ocupação que considere também os outros meses no <a href="/apps/simulador-roi-temporada/#ocup">Simulador de ROI</a>. Para outra pergunta, use a <a href="/ferramentas/calculadora-ocupacao-airbnb-2026.html">calculadora de ocupação necessária para uma meta</a>.</p>
+</div>
+</section>
+<script src="/js/ocupacao-periodo.js" defer></script>
 
 <section class="section" id="checklist">
 <div class="section-heading"><h2>Checklist semanal do anfitrião</h2><p>Marque os itens concluídos. Você pode baixar a lista para guardar seu registro; as marcações ficam apenas nesta página enquanto ela estiver aberta.</p></div>
