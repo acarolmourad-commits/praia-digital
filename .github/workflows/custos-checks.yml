@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/custo-de-compra/**'
       - 'tests/custos-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/custos-calculator.cjs'
       - '.github/workflows/custos-checks.yml'
 permissions:
