@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://praia.digital/apps/revisor-anuncios/">
   <link rel="stylesheet" href="styles.css">
   <script src="core.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=aa994c35015e" defer></script>
   <script src="accommodation.js?v=20261125-pendencias" defer></script>
 <link rel="stylesheet" href="/css/app-network.css?v=a95b210c1ee3">
 </head>
@@ -45,7 +45,8 @@
         <label class="property-label" for="property">Identificação do imóvel <span>(opcional; evite dados pessoais)</span></label>
         <input id="property" type="text" maxlength="120" placeholder="Ex.: código interno do imóvel" autocomplete="off">
         <div id="record-fields" class="record-grid"></div>
-        <label class="confirmation"><input id="confirmed" type="checkbox"><span>Conferi a ficha de referência com a fonte responsável. No exemplo fictício, considero os dados de demonstração apenas para testar a ferramenta.</span></label>
+        <label class="confirmation"><input id="confirmed" type="checkbox" aria-describedby="reconfirmar-ficha"><span>Conferi a ficha de referência com a fonte responsável. No exemplo fictício, considero os dados de demonstração apenas para testar a ferramenta.</span></label>
+        <p id="reconfirmar-ficha" class="helper">Alterou um dado da ficha de referência? Confira esse dado com a fonte e marque a confirmação novamente. Se editou apenas uma versão do anúncio, basta comparar outra vez.</p>
         <div id="errors" class="errors" role="alert" hidden></div>
         <div class="actions"><button class="button primary" type="submit">Comparar as versões</button><button class="button secondary" id="clear" type="button">Limpar tudo</button></div>
         </fieldset>
