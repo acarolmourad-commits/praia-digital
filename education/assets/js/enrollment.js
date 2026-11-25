@@ -11,23 +11,21 @@
       typeof item.path === 'string' && item.path.startsWith('/education/') && !item.path.includes('\\')) || null;
   }
   function messageFor(course) {
-    const intro = 'Olá! Quero informações para matrícula assistida na Praia Digital Academy.';
-    const selection = course ? '\nMaterial: ' + course.title + '\nValor anunciado: ' + money(course.price) + '\nPágina: https://praia.digital' + course.path : '\nGostaria de ajuda para escolher um material no catálogo.';
+    const intro = 'Olá! Quero solicitar um material do catálogo anterior da Praia Digital Academy.';
+    const selection = course ? '\nMaterial: ' + course.title + '\nReferência do catálogo anterior: ' + course.slug + '\nValor anunciado: ' + money(course.price) + '\nPágina: https://praia.digital' + course.path : '\nTítulo ou assunto de interesse: ';
     return intro + selection + '\nEntendo que o conteúdo é 100% digital, para estudo autônomo. Por favor, confirmem os materiais incluídos, a forma e o prazo de entrega e as condições de pagamento antes da contratação.';
   }
   function contactLinks(course) {
-    const body = messageFor(course);
-    return { whatsapp: 'https://wa.me/5511954346288?text=' + encodeURIComponent(body),
-      email: 'mailto:comercial@praia.digital?subject=' + encodeURIComponent('Matrícula assistida — Praia Digital Academy') + '&body=' + encodeURIComponent(body) };
+    const subject = 'Solicitação Academy — catálogo anterior' + (course ? ' — ' + course.title : '');
+    const body = messageFor(course).replace(/\n/g, '\r\n');
+    return { email: 'mailto:comercial@praia.digital?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body) };
   }
   async function init() {
     const status = document.getElementById('selection-status');
     const details = document.getElementById('selected-course');
-    const whatsapp = document.getElementById('contact-whatsapp');
     const email = document.getElementById('contact-email');
     function apply(course) {
       const links = contactLinks(course);
-      whatsapp.href = links.whatsapp;
       email.href = links.email;
       if (course) {
         document.getElementById('course-title').textContent = course.title;
