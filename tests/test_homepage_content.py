@@ -10,6 +10,16 @@ class Tags(HTMLParser):
     def handle_starttag(self,tag,attrs): self.tags.append((tag,dict(attrs)))
 class HomepageContent(unittest.TestCase):
     def setUp(self): self.html=(ROOT/'index.html').read_text(); self.tags=Tags(self.html).tags
+    def test_profile_demo_destinations(self):
+        demo = ROOT / 'assets/ferramentas/recomendacao-automatica-imoveis-litoral-2026.html'
+        links = {attrs.get('href') for tag, attrs in Tags(demo.read_text()).tags if tag == 'a'}
+        self.assertTrue({'/imoveis.html', '/parcerias-litoral-paulista.html', '/apps/',
+                         '/apps/comparador-cidades/#ranking-title'} <= links)
+        for broken in ('imoveis', 'parcerias-litoral-paulista.html'):
+            self.assertNotIn(broken, links)
+        comparator = Tags((ROOT / 'apps/comparador-cidades/index.html').read_text())
+        self.assertTrue(any(attrs.get('id') == 'ranking-title' for _, attrs in comparator.tags))
+
     def test_search_and_landmark(self):
         form=next(a for t,a in self.tags if t=='form' and a.get('id')=='smartsearch')
         self.assertEqual(form['action'],'/imoveis.html'); self.assertEqual(form['method'],'get')

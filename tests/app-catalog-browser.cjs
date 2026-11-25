@@ -33,11 +33,12 @@ try{for(const width of [360,768,1280]){
   }
   await page.goto(origin + '/');
   await page.locator('a[href="/apps/checklist-vistoria/#entrega-das-chaves"]').press('Enter');
-  assert.equal(new URL(page.url()).hash, '#entrega-das-chaves');
+  await page.waitForURL(origin + inspectionPath + '#entrega-das-chaves');
   const handover = page.getByRole('region', {name: 'Como comparar a vistoria de entrada com a de saída'});
-  assert.ok(await handover.isVisible());
+  await handover.waitFor({state: 'visible'});
   await handover.getByRole('link', {name:'Relatório do imóvel'}).press('Enter');
-  assert.ok(await page.locator('#evidencias-da-visita').isVisible());
+  await page.waitForURL(origin + '/apps/relatorio-imovel/#evidencias-da-visita');
+  await page.locator('#evidencias-da-visita').waitFor({state: 'visible'});
   const costPath = '/apps/custo-de-compra/';
   for (const term of ['ITBI', 'escritura', 'registro']) {
     await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
