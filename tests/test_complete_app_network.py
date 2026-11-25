@@ -3,6 +3,7 @@ import json
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('app_network', ROOT/'scripts/build_app_network.py')
@@ -32,6 +33,29 @@ class CompleteAppNetworkTests(unittest.TestCase):
         self.assertEqual(guide.count('type="checkbox"'), 12)
         self.assertEqual(len(self.slugs), 16)
 
+    def test_portfolio_case_keeps_lab_and_pricing_journey_discoverable(self):
+        home = (ROOT/'index.html').read_text(encoding='utf-8')
+        portfolio = (ROOT/'cases.html').read_text(encoding='utf-8')
+        guide = (ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        pilot = (ROOT/'ia/marketplaces/piloto/index.html').read_text(encoding='utf-8')
+        case_id = 'caso-estoque-vivo'
+        self.assertEqual(Links(portfolio).ids.count(case_id), 1)
+        self.assertLess(portfolio.index('id="evolucao-aplicativos"'), portfolio.index(f'id="{case_id}"'))
+        self.assertLess(portfolio.index(f'id="{case_id}"'), portfolio.index('id="guia-checklist-acessivel"'))
+        case = portfolio.split(f'id="{case_id}"', 1)[1].split('</section>', 1)[0]
+        self.assertIn('aria-labelledby="caso-estoque-vivo-titulo"', case)
+        for claim in ('dados fictícios em memória', 'não transferem dados', 'não comprova integração nem resultado comercial'):
+            self.assertIn(claim, case)
+        self.assertEqual(Links(case).links, [
+            '/apps/guia-de-uso.html#vender', '/ia/marketplaces/piloto/#laboratorio',
+            'https://github.com/acarolmourad-commits/praia-digital/pull/241',
+        ])
+        self.assertEqual(Links(guide).ids.count('vender'), 1)
+        self.assertEqual(Links(pilot).ids.count('laboratorio'), 1)
+        home_discovery = home.split('aria-labelledby="guia-apps-home"', 1)[1].split('</aside>', 1)[0]
+        self.assertEqual(Links(home_discovery).links.count('/ia/marketplaces/piloto/'), 1)
+        self.assertEqual(Links(home_discovery).links.count('/cases.html#' + case_id), 1)
+
     def test_each_app_reaches_every_other_app_without_javascript(self):
         for slug in self.slugs:
             page = Links((ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8'))
@@ -39,8 +63,42 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertIn('/apps/'+other+'/', page.links, slug+' -> '+other)
             self.assertIn('/#rede-apps', page.links)
             self.assertIn('/apps/guia-de-uso.html', page.links)
+            self.assertEqual(page.links.count('#pd-network-title'), 1, slug)
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
+
+    def test_apps_return_to_their_catalog_group(self):
+        catalog = Links((ROOT / 'apps/index.html').read_text(encoding='utf-8'))
+        groups = json.loads((ROOT / 'data/app-network.json').read_text(encoding='utf-8'))
+        for group in groups:
+            group_id = group['id']
+            anchor = 'grupo-' + group_id
+            self.assertEqual(catalog.ids.count(anchor), 1)
+            for app in group['apps']:
+                with self.subTest(app=app['slug']):
+                    page = ROOT / 'apps' / app['slug'] / 'index.html'
+                    links = Links(page.read_text(encoding='utf-8')).links
+                    self.assertEqual(links.count(f'/apps/?objetivo={group_id}#{anchor}'), 1)
+
+    def test_each_app_opens_the_checklist_for_its_task(self):
+        expected = {
+            'comprar': {'alugar-ou-comprar', 'calculadora-financiamento', 'calculadora-consorcio',
+                        'custo-de-compra', 'planejador-entrada', 'renda-para-financiar',
+                        'comparador-cidades', 'valor-imovel', 'calculadora-valorizacao'},
+            'locar': {'simulador-roi-temporada', 'temporada-ou-anual'},
+            'anunciar': {'checklist-vistoria', 'oficina-ia-imobiliaria', 'revisor-anuncios', 'relatorio-imovel'},
+            'vender': {'calculadora-precificacao-shopee'},
+        }
+        guide = Links((ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8'))
+        self.assertEqual(set.union(*expected.values()), self.slugs)
+        for anchor, slugs in expected.items():
+            self.assertEqual(guide.ids.count(anchor), 1)
+            for slug in slugs:
+                text = (ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8')
+                workflow = text.split('class="pd-workflow"', 1)[1].split('</div><details>', 1)[0]
+                self.assertEqual(Links(workflow).links.count('/apps/guia-de-uso.html#'+anchor), 1, slug)
+                self.assertIn('Abrir roteiro:', workflow)
+
     def test_home_and_catalog_promote_every_app_and_shortcuts_resolve(self):
         for path in ['index.html','apps/index.html']:
             page=Links((ROOT/path).read_text(encoding='utf-8'))
@@ -57,8 +115,13 @@ class CompleteAppNetworkTests(unittest.TestCase):
             if href.startswith('#'):
                 self.assertIn(href[1:], page.ids)
             elif href.startswith('/'):
-                dest = ROOT / href.split('#')[0].lstrip('/')
-                self.assertTrue(dest.exists(), href)
+                target = urlsplit(href)
+                dest = ROOT / target.path.lstrip('/')
+                if dest.is_dir():
+                    dest = dest / 'index.html'
+                self.assertTrue(dest.is_file(), href)
+                if target.fragment and dest.suffix == '.html':
+                    self.assertIn(target.fragment, Links(dest.read_text(encoding='utf-8')).ids, href)
         for source in ['index.html', 'apps/index.html']:
             self.assertIn('/apps/guia-de-uso.html', Links((ROOT/source).read_text(encoding='utf-8')).links)
 
@@ -83,7 +146,7 @@ class CompleteAppNetworkTests(unittest.TestCase):
                 self.assertFalse(any('github.io/asf-app' in href for href in page.links))
                 for href in hrefs:
                     self.assertIn(href, explore.links)
-                    self.assertEqual(page.links.count(href), 1, href)
+                    self.assertEqual(explore.links.count(href), 1, href)
                     path, anchor = href.split('#')
                     target = Links((ROOT/path.lstrip('/')).read_text(encoding='utf-8'))
                     self.assertEqual(target.ids.count(anchor), 1, href)
@@ -103,6 +166,21 @@ class CompleteAppNetworkTests(unittest.TestCase):
         ])
         self.assertIn('Os dados não passam automaticamente', next_steps)
         self.assertIn('scroll-margin-top:100px', daily.split('#form-calculo,', 1)[1].split('}', 1)[0])
+
+    def test_marketplace_calculator_promotes_pricing_guide_not_hosting_services(self):
+        calculator = (ROOT/'apps/calculadora-precificacao-shopee/index.html').read_text(encoding='utf-8')
+        page = Links(calculator)
+        self.assertNotIn('/gestao-marketplaces.html', page.links)
+        self.assertEqual(page.ids.count('roteiro-precificacao-titulo'), 1)
+        cta = calculator.split('aria-labelledby="roteiro-precificacao-titulo"', 1)[1].split('</section>', 1)[0]
+        self.assertEqual(Links(cta).links, ['/apps/guia-de-uso.html#vender'])
+        self.assertIn('Abrir roteiro de precificação', cta)
+        self.assertIn('conferir os custos e as regras da sua conta', cta)
+        self.assertNotIn('Gestão completa', cta)
+        guide = (ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        self.assertEqual(Links(guide).ids.count('vender'), 1)
+        route = guide.split('id="vender"', 1)[1].split('</section>', 1)[0]
+        self.assertIn('/apps/calculadora-precificacao-shopee/', Links(route).links)
 
     def test_registry_and_generated_navigation_are_current(self):
         self.assertEqual(builder.build(check=True),[])

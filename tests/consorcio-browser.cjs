@@ -1,3 +1,4 @@
+const {checkAppLinkTargets} = require('./check-app-link-targets.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
@@ -16,7 +17,7 @@ await page.locator('#taxaFin').fill('0.000000000001');await click();assert.equal
 for(const [id,value] of [['prazo','1.5'],['lance','101'],['credito','0'],['taxa','-1'],['taxaFin','101']]){const old=await page.locator('#'+id).inputValue();await page.locator('#'+id).fill(value);await click();assert(await page.locator('#result').isHidden());assert(await page.locator('#erro').isVisible());await page.locator('#'+id).fill(old);await click();}
 await click();assert(await page.locator('#result').isVisible());assert(!/NaN|Infinity/.test(await page.locator('#result').innerText()));
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
-const links=await page.locator('a[href^="/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href').split('#')[0]));for(const l of links){let p=path.join(root,l);if(l.endsWith('/'))p=path.join(p,'index.html');assert(fs.existsSync(p),l);}
+await checkAppLinkTargets(page, root);
 await page.close();
 }await browser.close();console.log('PASS consorcio desktop/mobile validation, zero/tiny rates, optional bid, stale results and internal links');
 })().catch(e=>{console.error(e);process.exit(1)});

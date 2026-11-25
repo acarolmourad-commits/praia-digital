@@ -5,7 +5,8 @@
     "next": [
       "calculadora-financiamento",
       "custo-de-compra"
-    ]
+    ],
+    "route": "comprar"
   },
   "calculadora-financiamento": {
     "prepare": "Tenha valor do imóvel, entrada, prazo e condições informadas pela instituição.",
@@ -13,7 +14,8 @@
     "next": [
       "renda-para-financiar",
       "custo-de-compra"
-    ]
+    ],
+    "route": "comprar"
   },
   "calculadora-consorcio": {
     "prepare": "Consulte prazo, taxas e regras de lance no contrato da administradora.",
@@ -21,7 +23,8 @@
     "next": [
       "planejador-entrada",
       "calculadora-financiamento"
-    ]
+    ],
+    "route": "comprar"
   },
   "custo-de-compra": {
     "prepare": "Separe o valor da compra e consulte tributos e emolumentos aplicáveis ao município.",
@@ -29,7 +32,8 @@
     "next": [
       "planejador-entrada",
       "checklist-vistoria"
-    ]
+    ],
+    "route": "comprar"
   },
   "planejador-entrada": {
     "prepare": "Defina a meta, o valor já reservado, o prazo e quanto pode guardar por mês.",
@@ -37,7 +41,8 @@
     "next": [
       "custo-de-compra",
       "calculadora-financiamento"
-    ]
+    ],
+    "route": "comprar"
   },
   "renda-para-financiar": {
     "prepare": "Reúna renda comprovável, compromissos mensais e condições simuladas do financiamento.",
@@ -45,7 +50,8 @@
     "next": [
       "calculadora-financiamento",
       "alugar-ou-comprar"
-    ]
+    ],
+    "route": "comprar"
   },
   "comparador-cidades": {
     "prepare": "Defina prioridades de moradia ou investimento e consulte fontes atuais sobre cada local.",
@@ -53,7 +59,8 @@
     "next": [
       "valor-imovel",
       "checklist-vistoria"
-    ]
+    ],
+    "route": "comprar"
   },
   "valor-imovel": {
     "prepare": "Reúna área, características e referências comparáveis com fonte e data.",
@@ -61,7 +68,8 @@
     "next": [
       "comparador-cidades",
       "relatorio-imovel"
-    ]
+    ],
+    "route": "comprar"
   },
   "calculadora-valorizacao": {
     "prepare": "Informe valor inicial, período e uma hipótese explícita de valorização.",
@@ -69,7 +77,8 @@
     "next": [
       "alugar-ou-comprar",
       "relatorio-imovel"
-    ]
+    ],
+    "route": "comprar"
   },
   "simulador-roi-temporada": {
     "prepare": "Separe diária, ocupação, despesas e investimento para o mesmo período.",
@@ -77,7 +86,8 @@
     "next": [
       "temporada-ou-anual",
       "relatorio-imovel"
-    ]
+    ],
+    "route": "locar"
   },
   "temporada-ou-anual": {
     "prepare": "Compare o mesmo período e inclua vacância, gestão, manutenção e custos de cada modalidade.",
@@ -85,7 +95,8 @@
     "next": [
       "simulador-roi-temporada",
       "oficina-ia-imobiliaria"
-    ]
+    ],
+    "route": "locar"
   },
   "checklist-vistoria": {
     "prepare": "Organize documentos, acesso ao imóvel e autorização para registrar fotos.",
@@ -93,7 +104,8 @@
     "next": [
       "relatorio-imovel",
       "revisor-anuncios"
-    ]
+    ],
+    "route": "anunciar"
   },
   "oficina-ia-imobiliaria": {
     "prepare": "Reúna uma ficha com características confirmadas, público e objetivo da comunicação.",
@@ -101,7 +113,8 @@
     "next": [
       "revisor-anuncios",
       "relatorio-imovel"
-    ]
+    ],
+    "route": "anunciar"
   },
   "revisor-anuncios": {
     "prepare": "Tenha a ficha de referência e os textos que deseja comparar.",
@@ -109,7 +122,8 @@
     "next": [
       "oficina-ia-imobiliaria",
       "relatorio-imovel"
-    ]
+    ],
+    "route": "anunciar"
   },
   "relatorio-imovel": {
     "prepare": "Separe informações verificadas, fontes, datas e limitações da análise.",
@@ -117,11 +131,13 @@
     "next": [
       "checklist-vistoria",
       "revisor-anuncios"
-    ]
+    ],
+    "route": "anunciar"
   },
   "calculadora-precificacao-shopee": {
     "prepare": "Reúna custo do produto, embalagem, logística e taxas vigentes do seu canal.",
     "record": "Anote a margem estimada, promoções e taxas usadas. Confira as regras atuais da plataforma.",
-    "next": []
+    "next": [],
+    "route": "vender"
   }
 }

@@ -4,6 +4,7 @@ on:
     paths:
       - 'apps/planejador-entrada/**'
       - 'tests/planejador-browser.cjs'
+      - 'tests/check-app-link-targets.cjs'
       - 'tests/planejador-calculator.cjs'
       - '.github/workflows/planejador-checks.yml'
 permissions:

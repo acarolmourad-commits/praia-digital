@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Blog Praia Digital</title>
+    <link>https://praia.digital/blog/index.html</link>
+    <description>Guias e artigos em destaque sobre imóveis e hospedagem no litoral.</description>
+    <language>pt-BR</language>
+    <atom:link href="https://praia.digital/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uma ficha, três anúncios: venda, aluguel e temporada | Praia Digital</title>
+      <link>https://praia.digital/blog/uma-ficha-tres-anuncios-imobiliarios.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/uma-ficha-tres-anuncios-imobiliarios.html</guid>
+    </item>
+    <item>
+      <title>Tabelas de homogeneização: como usar sem transformar coeficientes em preços universais | Praia Digital</title>
+      <link>https://praia.digital/blog/fatores-homogeneizacao-avaliacao-imobiliaria.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/fatores-homogeneizacao-avaliacao-imobiliaria.html</guid>
+    </item>
+    <item>
+      <title>Fator de oferta e localização: duas perguntas diferentes | Praia Digital</title>
+      <link>https://praia.digital/blog/fator-oferta-localizacao-avaliacao-imoveis.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/fator-oferta-localizacao-avaliacao-imoveis.html</guid>
+    </item>
+    <item>
+      <title>Área, frente e profundidade: por que não basta multiplicar fatores | Praia Digital</title>
+      <link>https://praia.digital/blog/fator-area-frente-profundidade-terrenos.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/fator-area-frente-profundidade-terrenos.html</guid>
+    </item>
+    <item>
+      <title>Idade e conservação: como evitar descontar a mesma perda duas vezes | Praia Digital</title>
+      <link>https://praia.digital/blog/idade-conservacao-homogeneizacao-imoveis.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/idade-conservacao-homogeneizacao-imoveis.html</guid>
+    </item>
+    <item>
+      <title>Como estudar coeficientes com estatística sem fabricar certeza | Praia Digital</title>
+      <link>https://praia.digital/blog/coeficientes-avaliacao-imoveis-estatistica.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/coeficientes-avaliacao-imoveis-estatistica.html</guid>
+    </item>
+    <item>
+      <title>Ross-Heidecke: fórmulas, conservação e valor residual | Praia Digital</title>
+      <link>https://praia.digital/blog/ross-heidecke-formulas-valor-residual.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/ross-heidecke-formulas-valor-residual.html</guid>
+    </item>
+    <item>
+      <title>Tabela Ross-Heidecke: o que ela mede e como ler sem confundir os números | Praia Digital</title>
+      <link>https://praia.digital/blog/tabela-ross-heidecke-como-ler.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/tabela-ross-heidecke-como-ler.html</guid>
+    </item>
+    <item>
+      <title>Um imóvel pode valorizar enquanto a construção deprecia? | Praia Digital</title>
+      <link>https://praia.digital/blog/valorizacao-imovel-depreciacao-construcao.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/valorizacao-imovel-depreciacao-construcao.html</guid>
+    </item>
+    <item>
+      <title>Automação para pequenas empresas: por onde começar | Praia Digital</title>
+      <link>https://praia.digital/blog/automacao-rotinas-pequenas-empresas.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/automacao-rotinas-pequenas-empresas.html</guid>
+    </item>
+    <item>
+      <title>Automação de processos em grandes empresas: como planejar | Praia Digital</title>
+      <link>https://praia.digital/blog/automacao-processos-grandes-empresas.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/automacao-processos-grandes-empresas.html</guid>
+    </item>
+    <item>
+      <title>Quanto custa uma automação com IA personalizada? | Praia Digital</title>
+      <link>https://praia.digital/blog/quanto-custa-automacao-ia-personalizada.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/quanto-custa-automacao-ia-personalizada.html</guid>
+    </item>
+    <item>
+      <title>Como medir a economia de tempo com automação | Praia Digital</title>
+      <link>https://praia.digital/blog/como-medir-economia-tempo-automacao.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/como-medir-economia-tempo-automacao.html</guid>
+    </item>
+    <item>
+      <title>Automação de atendimento e leads: organize cada oportunidade | Praia Digital</title>
+      <link>https://praia.digital/blog/automacao-atendimento-comercial-leads.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/automacao-atendimento-comercial-leads.html</guid>
+    </item>
+    <item>
+      <title>Airbnb com poucas reservas: como diagnosticar seu anúncio | Praia Digital</title>
+      <link>https://praia.digital/blog/diagnostico-anuncio-temporada-litoral-2026.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/diagnostico-anuncio-temporada-litoral-2026.html</guid>
+    </item>
+    <item>
+      <title>Calendário Airbnb e Booking: como conferir o iCal | Praia Digital</title>
+      <link>https://praia.digital/blog/sincronizar-calendario-airbnb-booking-ical.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/sincronizar-calendario-airbnb-booking-ical.html</guid>
+    </item>
+    <item>
+      <title>Briefing para criar anúncios no Airbnb e Booking | Praia Digital</title>
+      <link>https://praia.digital/blog/briefing-criacao-anuncio-airbnb-booking.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/briefing-criacao-anuncio-airbnb-booking.html</guid>
+    </item>
+    <item>
+      <title>Briefing imobiliário para IA: da ficha ao anúncio confiável | Praia Digital</title>
+      <link>https://praia.digital/blog/briefing-imobiliario-para-ia.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/briefing-imobiliario-para-ia.html</guid>
+    </item>
+    <item>
+      <title>SEO local para imobiliárias: conteúdo útil por bairro | Praia Digital</title>
+      <link>https://praia.digital/blog/seo-local-imobiliarias-conteudo-util.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/seo-local-imobiliarias-conteudo-util.html</guid>
+    </item>
+    <item>
+      <title>Follow-up imobiliário por e-mail: contexto, proposta e próximo passo | Praia Digital</title>
+      <link>https://praia.digital/blog/follow-up-imobiliario-por-email.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/follow-up-imobiliario-por-email.html</guid>
+    </item>
+    <item>
+      <title>Planilha para imobiliária no Google Sheets | Praia Digital</title>
+      <link>https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html</guid>
+    </item>
+    <item>
+      <title>Origem dos contatos da imobiliária: UTMs e visitas | Praia Digital</title>
+      <link>https://praia.digital/blog/mensuracao-attribution-marketing-imobiliario-local-litoral-2026.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/mensuracao-attribution-marketing-imobiliario-local-litoral-2026.html</guid>
+    </item>
+    <item>
+      <title>Como pedir avaliações reais para sua imobiliária: link, QR code e mensagens | Praia Digital</title>
+      <link>https://praia.digital/blog/como-gerar-avaliacoes-google-imobiliarias-litoral-2026.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/como-gerar-avaliacoes-google-imobiliarias-litoral-2026.html</guid>
+    </item>
+    <item>
+      <title>Anúncio pet friendly no litoral: regras e checklist para anfitriões | Praia Digital</title>
+      <link>https://praia.digital/blog/locacao-temporada-pet-friendly-litoral-2026.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/locacao-temporada-pet-friendly-litoral-2026.html</guid>
+    </item>
+    <item>
+      <title>PriceLabs: como definir mínimo, base e máximo sem ignorar custos | Praia Digital</title>
+      <link>https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html</link>
+      <guid isPermaLink="true">https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html</guid>
+    </item>
+  </channel>
+</rss>

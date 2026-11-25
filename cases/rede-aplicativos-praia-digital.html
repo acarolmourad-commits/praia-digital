@@ -5,14 +5,270 @@
 <meta name="description" content="Veja como a Praia Digital organiza 16 aplicativos por objetivo, conecta etapas e testa a navegação. Estudo do próprio projeto, com referências públicas e limites claros.">
 <meta name="robots" content="index, follow"><link rel="canonical" href="https://praia.digital/cases/rede-aplicativos-praia-digital.html">
 <meta property="og:title" content="Estudo técnico: a rede de aplicativos Praia Digital"><meta property="og:description" content="Um exemplo real de organização de ferramentas, navegação compartilhada e verificação técnica, documentado no repositório público."><meta property="og:type" content="article"><meta property="og:url" content="https://praia.digital/cases/rede-aplicativos-praia-digital.html"><meta property="og:image" content="https://praia.digital/img/default-home.jpg"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Praia Digital">
-<link rel="stylesheet" href="/assets/css/oficina-ia.css"><style>article a,article li{overflow-wrap:anywhere}.sources{padding-left:22px}.sources li{margin-bottom:15px}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Estudo técnico: a rede de aplicativos Praia Digital","datePublished":"2026-11-17","dateModified":"2026-11-17","inLanguage":"pt-BR","mainEntityOfPage":"https://praia.digital/cases/rede-aplicativos-praia-digital.html","author":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"},"publisher":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"}}</script>
+<link rel="stylesheet" href="/assets/css/oficina-ia.css">
+<style>
+  article a, article li { overflow-wrap: anywhere; }
+  .sources { padding-left: 22px; }
+  .sources li { margin-bottom: 15px; }
+  .case-index { margin: 1.5rem 0; padding: 1rem 1.25rem; border: 1px solid #b6cfca; border-radius: 12px; background: #fff; }
+  .case-index summary { padding: .5rem 0; cursor: pointer; font-weight: 700; }
+  .case-index ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 0 1rem; margin: .5rem 0 0; padding: 0; list-style: none; }
+  .case-index a { display: block; padding: .5rem 0; }
+  article h2[id] { scroll-margin-top: 7rem; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Estudo técnico: a rede de aplicativos Praia Digital","datePublished":"2026-11-17","dateModified":"2026-11-24","inLanguage":"pt-BR","mainEntityOfPage":"https://praia.digital/cases/rede-aplicativos-praia-digital.html","author":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"},"publisher":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"}}</script>
 </head><body><a class="skip-link skip" href="#conteudo">Pular para o conteúdo</a><meta name="pd-shared-nav"><main id="conteudo">
 <nav class="crumb" aria-label="Caminho da página"><a href="/">Praia Digital</a> / <a href="/apps/">Aplicativos</a> / Estudo técnico</nav>
 <article><div class="hero"><span class="eyebrow">Projeto próprio · Evidência pública</span><h1>Uma rede de ferramentas com um próximo passo claro.</h1><p class="lead">Como a Praia Digital organiza seus aplicativos por objetivo e mantém caminhos para continuar a análise.</p><p>Registro técnico em <time datetime="2026-11-17">17 de novembro de 2026</time>.</p></div>
+<nav aria-label="Exemplos por tarefa" class="case-index">
+  <details>
+    <summary>Encontrar um exemplo por tarefa</summary>
+    <ul>
+      <li><a href="#checklist-automacao">Conferir a rotina antes de automatizar</a></li>
+      <li><a href="#cidade-sem-pontuacao">Comparar cidades com dados incompletos</a></li>
+      <li><a href="#prazo-da-entrada">Recalcular o prazo da entrada pelo teclado</a></li>
+      <li><a href="#compartilhar-objetivo">Compartilhar ferramentas para uma reunião</a></li>
+      <li><a href="#buscar-noites">Escolher o simulador de locação pelas noites do calendário</a></li>
+      <li><a href="#ampliar-busca">Encontrar uma ferramenta em outro objetivo</a></li>
+      <li><a href="#rotina-captacao">Escolher a próxima tarefa de captação</a></li>
+      <li><a href="#perfil-para-visita">Planejar a visita ao bairro</a></li>
+      <li><a href="#pendencias-da-vistoria">Reencontrar um problema marcado na vistoria</a></li>
+      <li><a href="#pauta-de-visita">Preparar perguntas para uma visita</a></li>
+      <li><a href="#galeria-conferida">Conferir as fotos do anúncio</a></li>
+      <li><a href="#contato-na-ficha">Testar o contato de uma ficha</a></li>
+      <li><a href="#marcacao-por-teclado">Registrar uma vistoria pelo teclado</a></li>
+      <li><a href="#ficha-ou-checklist">Escolher entre a ficha em branco e o checklist preenchido</a></li>
+      <li><a href="#hospedagem-e-traslado">Conferir hospedagem e traslado de um grupo</a></li>
+      <li><a href="#diagnostico-hospedagem">Preparar a vistoria da hospedagem</a></li>
+      <li><a href="#noites-disponiveis">Comparar calendários de temporada</a></li>
+      <li><a href="#conferir-repasse">Conferir o repasse de um pedido</a></li>
+    </ul>
+  </details>
+</nav>
+<section aria-labelledby="rotina-captacao">
+  <h2 id="rotina-captacao">Da rotina do corretor à revisão de uma ficha</h2>
+  <p>O <a href="/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html">checklist de automação</a> reúne 16 tarefas. Comece com a lista vazia, marque o primeiro item de captação e confira o contador: ele passa de zero para um. Você pode marcar pelo texto ou usar Tab e a barra de espaço. Desmarcar o item atualiza a contagem novamente.</p>
+  <p>Se a equipe ainda precisa reunir os dados de um imóvel, o passo seguinte é preparar o briefing na <a href="/apps/oficina-ia-imobiliaria/">Oficina</a>. Se já tem a ficha e um texto de anúncio, pode conferir, por exemplo, se o bairro informado nos dois coincide usando o <a href="/apps/revisor-anuncios/">Revisor de Anúncios</a>.</p>
+</section>
+<section aria-labelledby="conferencia-do-catalogo"><h2 id="conferencia-do-catalogo">Como conferimos a navegação entre as ferramentas</h2><p>Em 25 de novembro de 2026, comparamos o HTML publicado da página inicial, do catálogo e do guia dos aplicativos, dos 16 apps, das duas entradas do catálogo de imóveis e das 14 fichas então ativas. As 35 páginas abriram, e as 2.634 referências internas verificadas encontraram um arquivo no pacote publicado.</p><p>A conferência cobriu links e recursos declarados no HTML. O <a href="/apps/guia-de-uso.html#reserva-em-revisao">roteiro de disponibilidade</a> mostra um percurso que o visitante pode experimentar. <a href="https://github.com/acarolmourad-commits/praia-digital/actions/runs/45513811784">Consultar o deploy que serviu de base à verificação</a>.</p></section>
+<section aria-labelledby="cidade-sem-pontuacao">
+  <h2 id="cidade-sem-pontuacao">Por que uma cidade pode aparecer sem pontuação?</h2>
+  <p>Em <time datetime="2026-11-24">24 de novembro de 2026</time>, testamos os três perfis do <a href="/apps/comparador-cidades/#ranking-title">Comparador de cidades</a>. A ferramenta exibiu 12 cidades em cada perfil. Onze receberam pontuação. Na linha de Caraguatatuba apareceu “Sem score”, porque faltavam indicadores na base histórica usada no cálculo.</p>
+  <p>Para reproduzir, alterne entre “Investidor”, “Renda de temporada” e “Morar bem” e leia a última linha da tabela. A posição de Caraguatatuba indica quais dados ainda é preciso buscar para comparar a cidade com as demais.</p>
+  <p>Se estiver avaliando uma hospedagem específica, abra o <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>. Em “Pontos a confirmar”, anote, por exemplo, “Quantas noites ficaram disponíveis no período analisado?”. Quando receber a informação, registre a origem e o período em “Fontes e datas de confirmação”. Assim a comparação municipal e a apuração sobre o imóvel ficam identificadas no relatório.</p>
+  <p><a href="https://github.com/acarolmourad-commits/praia-digital/blob/6d95560701f342f2fd034b04a6beccea23b46412/tests/test_city_comparator.cjs">Ver o teste dos três perfis e dos indicadores ausentes</a>.</p>
+</section>
+<section aria-labelledby="prazo-da-entrada">
+  <h2 id="prazo-da-entrada">O que muda no prazo quando o aporte dobra?</h2>
+  <p>No exemplo inicial do <a href="/apps/planejador-entrada/#comparar-aportes">Planejador de Entrada</a>, a meta é atingida em 30 meses. Com o dobro do aporte e as demais premissas mantidas, o resultado passa a 15 meses. Esses prazos pertencem ao exemplo com rendimento zero.</p>
+  <p>Para repetir, calcule uma vez, edite o campo de aporte e pressione Enter. O prazo anterior desaparece ao editar. Se o campo ficar vazio, o aplicativo indica o que falta e leva o foco ao campo. Depois de corrigir, pressione Enter para obter o novo prazo.</p>
+  <p>Para continuar o orçamento, leve as despesas de escritura e registro ao <a href="/apps/custo-de-compra/">aplicativo de custos de compra</a>.</p>
+</section>
+<section aria-labelledby="compartilhar-objetivo">
+<h2 id="compartilhar-objetivo">Uma seleção que a equipe pode reabrir</h2>
+<p>Quem escolhia um objetivo no catálogo e encaminhava o endereço da página enviava a lista completa de 16 aplicativos. Agora o endereço guarda o objetivo escolhido. Uma pessoa pode preparar a reunião e outra pode abrir o mesmo grupo de ferramentas no celular.</p>
+<p>Experimente com <a href="/apps/?objetivo=planejar#buscar-apps">Planejar a compra</a>. O catálogo exibe seis ferramentas. Digite “entrada” para encontrar o <a href="/apps/planejador-entrada/">Planejador de Entrada</a>. Quem abrir o endereço em uma nova aba verá as seis ferramentas do objetivo. Para destacar o Planejador, marque “Incluir o termo da busca no link” e copie o endereço. Ao <a href="/apps/?objetivo=planejar&amp;busca=entrada#buscar-apps">abrir esse exemplo compartilhado</a>, o catálogo já exibe o resultado da busca. Use “Limpar filtros” para voltar aos 16 aplicativos.</p>
+</section>
+<section aria-labelledby="buscar-noites">
+<h2 id="buscar-noites">Uma busca, duas perguntas sobre as noites do imóvel</h2>
+<p>Abra a <a href="/apps/?objetivo=comparar&amp;busca=noites#buscar-apps">busca por noites</a>. O catálogo mostra duas ferramentas. Escolha “Ir ao primeiro resultado” para chegar ao simulador de ROI. Pelo teclado, pressione Tab para chegar ao comparador de locação. Cada descrição indica qual dado do calendário usar.</p>
+<p>Suponha que você tenha aberto 20 noites para reserva e alugado 12 delas. A ocupação nesse período foi de 60%. No <a href="/apps/simulador-roi-temporada/">Simulador de ROI de temporada</a>, confira as premissas anuais antes de usar esse percentual. No <a href="/apps/temporada-ou-anual/">Temporada ou Aluguel Anual?</a>, use as 12 noites alugadas para comparar o saldo daquele mês com o aluguel anual no mesmo período.</p>
+<p>Guarde junto aos números o mês consultado e anote quais noites ficaram bloqueadas para uso próprio ou manutenção. Isso permite repetir a comparação quando outro mês terminar.</p>
+</section>
+<section aria-labelledby="ampliar-busca">
+<h2 id="ampliar-busca">Como encontrar a vistoria quando a busca começa em outro objetivo</h2>
+<p>Abra <a href="/apps/?objetivo=planejar#buscar-apps">Planejar a compra no catálogo</a> e digite “vistoria”. A lista fica vazia nesse grupo. Antes, limpar os filtros também apagava a palavra e trazia de volta os 16 aplicativos.</p>
+<p>Escolha “Buscar em todos os objetivos”. A palavra continua no campo e a lista mostra o <a href="/apps/checklist-vistoria/">Checklist de vistoria</a>. Para continuar planejando a compra, <a href="/apps/?objetivo=planejar&amp;busca=vistoria#buscar-apps">reabra o mesmo exemplo</a> e escolha “Ver todos deste objetivo”. As seis ferramentas do grupo voltam à tela, incluindo o <a href="/apps/planejador-entrada/">Planejador de Entrada</a>. O campo de busca fica pronto para outra palavra, e o endereço conserva o objetivo.</p>
+</section>
+<section aria-labelledby="checklist-automacao">
+<h2 id="checklist-automacao">Conferir o atendimento antes de automatizar</h2>
+<p>O <a href="/assets/ferramentas/checklist-automatizacao-corretores-litoral-2026.html">Checklist de automação</a> organiza 16 conferências de anúncio, atendimento, retorno e revisão. Cada caixa tem um rótulo acionável, e o contador registra quantos pontos foram marcados. A marcação não executa tarefas nem comprova resultados de clientes.</p>
+<p>Para experimentar, marque a conferência da fonte de uma informação e a definição do responsável. O contador passa a dois pontos. No exemplo fictício de uma vaga ainda não confirmada como coberta, abra a <a href="/apps/relatorio-imovel/#pauta-de-retorno">pauta de retorno</a>, registre a pergunta e só depois da confirmação compare a descrição no <a href="/apps/revisor-anuncios/">Revisor</a>. A transferência de anotações é manual.</p>
+<p>Use “Imprimir / salvar PDF” antes de fechar a página. As marcações não são gravadas em um CRM. A página agora aponta para um único endereço canônico existente e conecta esse roteiro às ferramentas atuais.</p>
+</section>
 <section aria-labelledby="desafio"><h2 id="desafio">O desafio de organização</h2><p>Uma pessoa pode começar comparando cidades, precisar revisar o orçamento de compra e terminar organizando uma ficha do imóvel. Um catálogo com ferramentas isoladas não explica sozinho o que levar de uma etapa para a seguinte.</p><p>O trabalho documentado aqui pertence à própria Praia Digital. Ele demonstra uma implementação de conteúdo e navegação; não apresenta depoimento de cliente, receita, ganho de conversão ou resultado comercial.</p></section>
 <section aria-labelledby="implementacao"><h2 id="implementacao">O que está implementado</h2><ul><li><strong>Catálogo com 16 aplicativos:</strong> o registro do projeto organiza ferramentas de compra, comparação, revisão de anúncios e custos de marketplaces.</li><li><strong>Navegação compartilhada:</strong> cada aplicativo apresenta links para os outros aplicativos, para o catálogo e para os roteiros da página inicial.</li><li><strong>Orientação por etapa:</strong> os blocos explicam o que preparar, o que registrar e qual ferramenta pode ser usada em seguida.</li><li><strong>Verificações de manutenção:</strong> testes conferem a cobertura dos links, a ausência de IDs repetidos e a correspondência entre o registro e a navegação gerada.</li></ul><p>O código dessas características pode ser consultado nas referências abaixo, fixadas em uma versão do repositório.</p></section>
+<section aria-labelledby="visita-com-animais">
+<h2 id="visita-com-animais">Do anúncio à confirmação de uma estadia com animais</h2>
+<p>O <a href="/apps/guia-de-uso.html#visita-pet-friendly">roteiro de visita com animais</a>, publicado em 23 de novembro de 2026, conecta três ferramentas já disponíveis: Checklist de vistoria, Relatório do imóvel e Revisor de anúncios. O visitante pode registrar observações, respostas do responsável e perguntas ainda pendentes sem apresentar uma condição não confirmada como certa.</p>
+<p>Para repetir o percurso, abra o <a href="/blog/guia-pet-friendly-riviera-sao-lourenco-bertioga-2026.html#registro-confirmacoes">guia da Riviera com pets</a>, copie o exemplo de anotação e substitua os campos apenas quando tiver uma resposta. No Relatório do imóvel, preserve a fonte e a data; no Revisor, compare a ficha confirmada com o anúncio. O preenchimento entre ferramentas é manual.</p>
+<p>A entrega demonstrada é o caminho de navegação e a orientação de uso. Não representa aprovação de uma acomodação nem resultado comercial de cliente. Consulte o <a href="https://github.com/acarolmourad-commits/praia-digital/pull/303">PR que publicou o roteiro e seu acesso pela homepage</a>.</p>
+</section>
 <section aria-labelledby="aplicacao"><h2 id="aplicacao">Uma aplicação prática</h2><p>Para preparar um anúncio, o visitante pode montar um briefing na <a href="/apps/oficina-ia-imobiliaria/">Oficina de IA</a>, comparar versões no <a href="/apps/revisor-anuncios/">Revisor de anúncios</a> e organizar fontes e pendências no <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>.</p><p>A ligação é feita por navegação. Os dados não são transferidos automaticamente entre aplicativos, e cada resultado precisa ser revisado antes do uso. O <a href="/guias/usar-apps-com-evidencias.html">guia de uso com evidências</a> mostra o que registrar durante o percurso.</p></section>
+<section aria-labelledby="galeria-conferida">
+  <h2 id="galeria-conferida">Como conferir a foto certa na posição certa</h2>
+  <p>Em 23 de novembro de 2026, a Praia Digital publicou uma ficha de apartamento em Bertioga com cinco fotos. Depois, acrescentou a foto do dormitório com janela na terceira posição. A revisão do código registra a ordem das seis imagens e a retirada de metadados da nova foto.</p>
+  <p>Para repetir a conferência, abra a galeria como visitante. Conte as fotos, avance até a terceira e compare o cômodo com a descrição. No <a href="/apps/checklist-vistoria/">Checklist de vistoria</a>, anote o que viu. Use o <a href="/apps/revisor-anuncios/">Revisor de anúncios</a> para conferir os dados da ficha e leve a URL, a posição da foto e a data da consulta ao <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>. A conferência das imagens é visual.</p>
+  <p><a href="https://github.com/acarolmourad-commits/praia-digital/pull/310">Publicação inicial com cinco fotos</a> · <a href="https://github.com/acarolmourad-commits/praia-digital/pull/311">Inclusão da foto do dormitório e verificação da ordem</a></p>
+</section>
+<section aria-labelledby="noites-disponiveis">
+<h2 id="noites-disponiveis">Como os bloqueios do calendário entram na simulação</h2>
+<p>Em <time datetime="2026-11-23">23 de novembro de 2026</time>, conferimos um percurso para anfitriões. A <a href="/ferramentas/calculadora-diaria-ideal-airbnb-2026.html">calculadora de diária</a> permite informar quantas noites a acomodação pode receber reservas. Assim, quem usa o imóvel parte do ano consegue descontar uso próprio e manutenção antes de aplicar a ocupação.</p>
+<p>Experimente com 200 noites disponíveis e ocupação de 50%. O resultado mostra 100 noites ocupadas estimadas. Mude a disponibilidade para 120 noites e recalcule com a mesma ocupação. A estimativa passa para 60 noites. O resumo para download acompanha o novo cálculo.</p>
+<p>Para comparar o efeito no ano, leve manualmente a disponibilidade, a ocupação e a diária do cenário ao <a href="/apps/simulador-roi-temporada/">simulador de retorno da temporada</a>. Use o calendário real de cada acomodação quando aplicar o exercício à sua operação.</p>
+<p>Confira a <a href="https://github.com/acarolmourad-commits/praia-digital/pull/254">mudança no cálculo e no resumo</a> e a <a href="https://github.com/acarolmourad-commits/praia-digital/pull/261">ligação entre as ferramentas</a>.</p>
+</section>
+<section aria-labelledby="alta-e-baixa-temporada">
+  <h2 id="alta-e-baixa-temporada">A comparação muda quando o mês muda</h2>
+  <p>Abra <a href="/apps/temporada-ou-anual/">Temporada ou aluguel anual</a> e mantenha os demais campos do exemplo. Calcule primeiro com 18 noites ocupadas e depois com 6. O saldo mensal da temporada muda, enquanto o saldo do contrato anual permanece igual nesse exercício.</p>
+  <p>O <a href="/apps/guia-de-uso.html#meses-de-temporada">roteiro para comparar meses</a> mostra onde registrar as premissas e como retomar a análise anual com o histórico do imóvel. Os dois meses do exercício são hipotéticos.</p>
+</section>
+<section aria-labelledby="diagnostico-hospedagem">
+  <h2 id="diagnostico-hospedagem">Da autoavaliação à vistoria da hospedagem</h2>
+  <p>Quando faltam poucos dias para a chegada de hóspedes, por onde começar a preparação? Em <time datetime="2026-11-24">24 de novembro de 2026</time>, testamos o <a href="/anfitrioes/central-stays.html#diagnostico">diagnóstico da Central Stays</a> a partir do roteiro de uso do imóvel da página inicial.</p>
+  <ol>
+    <li>No campo “Checklist de limpeza e vistoria”, escolha “Não tenho um checklist definido” e mantenha as outras cinco respostas iniciais.</li>
+    <li>Selecione “Gerar minhas recomendações”. No teste, “Limpeza e vistoria” apareceu nos próximos passos sugeridos.</li>
+    <li>Abra o <a href="/anfitrioes/central-stays.html#checklist">checklist de preparação do imóvel</a> e confira o que se aplica à sua próxima entrada, da roupa de cama ao procedimento de acesso.</li>
+  </ol>
+  <p>Se a vistoria exigir bloquear o imóvel, desconte essas noites do calendário antes de usar o <a href="/apps/simulador-roi-temporada/">simulador de retorno da temporada</a>. A <a href="/apps/temporada-ou-anual/">comparação com o aluguel anual</a> pede as noites ocupadas de um mês. O exemplo usa respostas fictícias. A entrega verificada é o percurso entre as ferramentas, documentado no <a href="https://github.com/acarolmourad-commits/praia-digital/pull/313">PR da Central Stays</a>.</p>
+</section>
+<section aria-labelledby="conferir-alteracao">
+  <h2 id="conferir-alteracao">Como conferir uma alteração de preço anunciado</h2>
+  <p>Um anúncio reaparece em outro portal com um valor diferente. Para decidir se houve mudança, a equipe precisa identificar a unidade, a modalidade e as condições que valiam em cada data. Duas ofertas simultâneas com valores diferentes deixam uma divergência a esclarecer.</p>
+  <ol>
+    <li><strong>Identifique a oferta.</strong> Confira a referência da unidade, o bairro e a modalidade nas duas fichas. Preserve qualificadores como “a partir de”. Em locações, registre se o valor é mensal ou por diária e se inclui despesas.</li>
+    <li><strong>Compare as versões.</strong> Abra o <a href="/apps/revisor-anuncios/">Revisor de anúncios</a> e preencha a ficha de referência e as versões consultadas. Se a referência ainda aguarda confirmação, deixe a comparação pendente. O exemplo fictício da ferramenta permite experimentar essa etapa.</li>
+    <li><strong>Guarde a evidência.</strong> No <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>, copie os links e as datas em “Fontes e datas de confirmação”. Em “Pontos a confirmar”, anote qualquer diferença de unidade ou condição. Se as consultas só comprovarem quando cada valor foi visto, registre essas duas datas.</li>
+  </ol>
+  <p>A entrega técnica é verificável: o <a href="https://github.com/acarolmourad-commits/praia-digital/blob/2f8f0e9c7b5e2a8e988dbd7756db14fc27e28555/apps/revisor-anuncios/index.html">formulário de comparação</a> e os <a href="https://github.com/acarolmourad-commits/praia-digital/blob/2f8f0e9c7b5e2a8e988dbd7756db14fc27e28555/apps/relatorio-imovel/index.html">campos de evidência do relatório</a> podem ser conferidos na versão publicada do projeto. O preenchimento entre as duas ferramentas é manual.</p>
+</section>
+<section aria-labelledby="entrada-hospedagem">
+<h2 id="entrada-hospedagem">Do estacionamento à porta da hospedagem</h2>
+<p>O <a href="/apps/guia-de-uso.html#ficha-de-chegada">roteiro de chegada em duas etapas</a> liga três tarefas que o anfitrião pode repetir: percorrer o caminho, registrar a origem de cada orientação e comparar o texto do anúncio com o percurso observado. A passagem de uma ferramenta para a outra é manual.</p>
+<p>Experimente com este cenário fictício: o visitante deixa o carro com a equipe na entrada e o veículo segue para um estacionamento parceiro. Na vistoria, confirme onde o hóspede deve parar. No relatório, registre a fonte e deixe em aberto qualquer horário que ainda dependa de confirmação. Leia a descrição publicada com o <a href="/apps/revisor-anuncios/#editorial-title">checklist editorial do Revisor</a> e confira se a diferença entre entrada e estacionamento fica clara.</p>
+</section>
+
+<section aria-labelledby="retirada-de-anuncios">
+  <h2 id="retirada-de-anuncios">Como mantivemos a URL útil ao retirar anúncios do catálogo</h2>
+  <p>Em novembro de 2026, a Praia Digital retirou anúncios ilustrativos e registros gerados por fórmula que não correspondiam a ofertas confirmadas. Para quem chegasse a uma URL antiga, as fichas retiradas passaram a mostrar um aviso com acesso ao catálogo atual.</p>
+  <p>Os testes do projeto conferem o conjunto exato de retiradas, a preservação de registros fora desse conjunto e a exclusão dos endereços retirados do sitemap. Uma URL com o aviso de retirada pode continuar acessível por um link antigo, enquanto o catálogo segue apresentando suas fichas atuais.</p>
+  <p><a href="https://github.com/acarolmourad-commits/praia-digital/blob/8ed7b8932c7eb9d49a4573e6006033e7a87f4579/tests/test_listing_retirements.py">Consultar os testes de retirada e preservação no GitHub</a> · <a href="/apps/guia-de-uso.html#retirada-de-anuncio">Aplicar o roteiro ao seu catálogo</a></p>
+</section>
+
+<section aria-labelledby="hospedagem-e-traslado">
+<h2 id="hospedagem-e-traslado">A hospedagem confirmou. Quem confirma o traslado?</h2>
+<p>Neste exemplo fictício, a recepção confirmou os quartos para um grupo. O organizador solicitou o transporte e ainda aguarda o retorno da operadora. Na <a href="/downloads/ficha-acomodacao.txt" download>ficha de acomodação</a>, a hospedagem fica como confirmada e o traslado como aguardando resposta. A próxima providência cabe ao organizador, que já conhece o canal do prestador.</p>
+<p>Para reproduzir o exercício, abra o <a href="/apps/guia-de-uso.html#reservas-separadas">roteiro de reservas separadas</a>. Compare o que os dois canais dizem sobre o transporte no <a href="/apps/revisor-anuncios/#conferencia-hospedagem">Revisor</a> e guarde a pergunta pendente no <a href="/apps/relatorio-imovel/#pauta-de-retorno">Relatório do imóvel</a>.</p>
+</section>
+
+<section aria-labelledby="cozinha-por-categoria">
+<h2 id="cozinha-por-categoria">A cozinha é do loft ou da hospedagem?</h2>
+<p>Neste exercício fictício, um loft tem cozinha privativa e os demais quartos usam uma copa compartilhada. Abra a descrição de cada categoria e confira se a foto da cozinha aparece junto da categoria que a oferece.</p>
+<p>Use o <a href="/apps/guia-de-uso.html#comodidade-por-categoria">roteiro de comodidades por categoria</a> para anotar a fonte e o que falta confirmar. Se houver divergência, registre a página a corrigir e volte a ela após a atualização.</p>
+</section>
+
+<section aria-labelledby="conferencia-categoria">
+<h2 id="conferencia-categoria">Uma foto de varanda na categoria errada</h2>
+<p>Neste exemplo fictício, o site mostra duas categorias e o canal de reservas exibe a mesma foto de varanda nas duas. A equipe confirma que apenas uma dispõe de varanda privativa. A ficha guarda essa confirmação e identifica a página que precisa de ajuste.</p>
+<p>No <a href="/apps/guia-de-uso.html#conferencia-reservas">roteiro de conferência entre canais</a>, a Oficina organiza a informação confirmada, a <a href="/apps/revisor-anuncios/#conferencia-hospedagem">lista do Revisor</a> orienta a conferência entre canais e o Relatório registra a alteração solicitada. Depois da correção, abra os dois anúncios e confira se a foto e a descrição associam a varanda à categoria certa.</p>
+</section>
+
+<section aria-labelledby="conferir-repasse">
+<h2 id="conferir-repasse">A margem simulada e o repasse do pedido</h2>
+<p>Uma loja termina uma campanha e recebe menos do que esperava por um pedido. Para descobrir de onde vem a diferença, vale guardar a simulação original e conferir o extrato em três passos.</p>
+<ol>
+  <li><strong>Separe os registros do mesmo pedido.</strong> Anote para uso interno a plataforma, a data, o valor da venda após descontos da loja e quem assumiu o frete. No extrato, veja se o repasse já foi liquidado ou se o valor exibido ainda é uma previsão.</li>
+  <li><strong>Compare as cobranças linha a linha.</strong> Na <a href="/apps/calculadora-precificacao-shopee/">calculadora de precificação</a>, confira quais despesas entraram na simulação. No extrato, identifique comissão, frete e eventuais ajustes. Se uma cobrança já estiver incluída em outro lançamento, conte-a uma única vez.</li>
+  <li><strong>Registre o que explica a diferença.</strong> A margem estimada considera o custo do produto. O repasse é o valor creditado pela plataforma. Guarde a origem e a data de cada ajuste e use os custos conferidos na próxima simulação.</li>
+</ol>
+<p>Na própria <a href="/suporte-marketplaces.html">central de vendedores da Praia Digital</a>, a busca por “comissão” leva à orientação sobre taxas e à calculadora. O <a href="/apps/guia-de-uso.html#vender">roteiro para vendedores</a> reúne o checklist. A equipe verificou essa navegação com teclado e as 13 perguntas com JavaScript desativado no <a href="https://github.com/acarolmourad-commits/praia-digital/pull/295">registro público da melhoria</a>.</p>
+</section>
+<section aria-labelledby="acesso-compras">
+<h2 id="acesso-compras">Do pedido de um leitor ao atalho de compras</h2>
+<p>Um leitor procurou a seleção da Amazon na página inicial e teve dificuldade para encontrá-la. Em 23 de novembro de 2026, a Praia Digital acrescentou o botão “Compras na Amazon” junto às ações iniciais, antes da busca de imóveis. O atalho abre o guia permanente, inclusive fora das campanhas de Black Friday.</p>
+<p>Quem prepara uma hospedagem pode começar pelo <a href="/apps/checklist-vistoria/">Checklist de vistoria</a>. Por exemplo, percorra a cozinha e anote os utensílios que já existem. No <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>, separe o que precisa de reposição do que ainda depende de conferência. Com essa lista em mãos, consulte o <a href="/compras/#lista-de-reposicao">roteiro de reposição no guia de compras</a>, que identifica os links de afiliados.</p>
+<p><a href="https://github.com/acarolmourad-commits/praia-digital/commit/5f6088dbbc35e5a3a43f5d4fed97527613eda932">Ver a alteração do botão no GitHub</a></p>
+</section>
+<section aria-labelledby="pendencias-da-vistoria">
+  <h2 id="pendencias-da-vistoria">Como reencontrar uma pendência entre os 26 itens da vistoria</h2>
+  <p>O checklist mostrava quantos itens tinham problemas. Para saber quais eram, era preciso percorrer a ficha. O <a href="/apps/checklist-vistoria/#pendencias-da-vistoria">resumo de problemas da vistoria</a> reúne os critérios marcados e oferece um caminho de volta para cada um.</p>
+  <p>Se a visita for interrompida, volte ao <a href="/apps/checklist-vistoria/#retomar-vistoria">progresso da vistoria</a> no mesmo navegador. Quando as marcações estiverem salvas, “Ir ao primeiro item sem marcação” leva ao próximo critério a conferir. O item só muda de estado quando você seleciona OK ou Problema. Se todos já estiverem marcados, o resumo mostra a contagem final.</p>
+  <p>Experimente com uma visita fictícia. No grupo Entorno, marque “Vagas de garagem conforme anúncio” como problema. No resumo, escolha “Copiar itens a conferir” e cole o texto no relatório. A cópia traz o critério da vaga. Acrescente o que viu durante a visita, por exemplo que o número da vaga estava ilegível. Para voltar à marcação, escolha o nome do item no resumo. Depois de esclarecer a situação, altere o estado para OK e confira a lista novamente. Para registrar o que foi confirmado e por quem, abra a <a href="/apps/relatorio-imovel/#pauta-de-retorno">pauta de retorno do relatório</a>.</p>
+</section>
+<section aria-labelledby="ficha-ou-checklist">
+  <h2 id="ficha-ou-checklist">Qual arquivo levar para revisar dois chalés?</h2>
+  <p>Imagine uma equipe que vai conferir as fotos de dois chalés. Ela precisa de uma ficha para descrever cada unidade e de um registro do que já revisou. Os dois arquivos são de texto, mas guardam informações diferentes.</p>
+  <ol>
+    <li>Abra <a href="/apps/guia-de-uso.html#qual-arquivo-guardar">Qual arquivo guardar?</a> e baixe a ficha em branco. Guarde uma cópia por chalé. Em cada uma, anote a origem das fotos e as características confirmadas para aquela unidade.</li>
+    <li>No <a href="/apps/guia-de-uso.html#anunciar">roteiro de preparação do anúncio</a>, marque uma conferência e baixe o checklist do guia. Ao abrir o TXT, localize a linha marcada com <code>[x]</code>. As demais ficam disponíveis para a próxima revisão.</li>
+  </ol>
+  <p>No teste do guia, duas das 12 conferências estavam marcadas. Ao desmarcar o checklist, o texto baixado passou a mostrar 12 itens a conferir. A opção “Desfazer limpeza” recupera a seleção anterior. Para repetir, marque dois itens diferentes, abra os <a href="/apps/guia-de-uso.html#salvar-conferencias">controles do checklist</a> e use a tecla Enter para desmarcar e depois desfazer. Confira o contador antes de baixar a versão que vai compartilhar.</p>
+  <p>A ficha em branco tem download direto, inclusive com JavaScript desativado. O checklist gerado inclui as marcações do guia no momento do download. Depois de esclarecer uma dúvida, a equipe pode registrar a fonte e a data no <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>.</p>
+</section>
+<section aria-labelledby="pauta-de-visita">
+  <h2 id="pauta-de-visita">Da visita às perguntas para o proprietário</h2>
+  <p>Uma vaga identificada na visita pode deixar uma dúvida prática. Ela é privativa ou precisa permanecer livre para outro carro? Use o <a href="/apps/checklist-vistoria/">Checklist de vistoria</a> para registrar o que observou e leve a pergunta ao <a href="/apps/relatorio-imovel/#pauta-de-retorno">Relatório do imóvel</a>.</p>
+  <p>Quem chega pela pauta pode seguir o link de volta aos campos de evidências. Ao receber uma resposta, registre a fonte e a data, reformule a pendência se ainda houver dúvida e abra a pauta atualizada pelo atalho abaixo do formulário. O <a href="/apps/guia-de-uso.html#vistoria-para-relatorio">guia da vistoria ao relatório</a> mostra o percurso com o exemplo de uma janela que não abriu.</p>
+  <p>No relatório, anote a ficha consultada e sua data em “Fontes e datas de confirmação”. Em “Pontos a confirmar”, escreva a pergunta sobre a vaga. Em “Próximos passos”, registre quem vai consultar o proprietário. Abra a pauta e selecione “Copiar pauta completa”. Ao colar em um documento em branco, confira a referência, a fonte, a pergunta e o próximo passo. Os campos de preço e contato têm outro lugar no relatório e ficam fora da pauta. Para encaminhar só a pergunta, selecione o trecho no campo de texto.</p>
+  <p>Para experimentar com dados fictícios, carregue o exemplo do relatório e abra a pauta. A identificação do exemplo acompanha o texto. Ao limpar o formulário, a pauta também é apagada. Para guardar uma cópia em papel, experimente imprimir o relatório com apenas uma pergunta preenchida. Em A4, o rodapé acompanha a pergunta na mesma folha. Relatórios mais longos podem ocupar várias páginas.</p>
+  <p>Para guardar a revisão completa, use <a href="/apps/relatorio-imovel/#guardar-relatorio">Baixar relatório em texto</a>. O arquivo reúne os 17 campos, mantém as perguntas em aberto e identifica o exemplo fictício. Experimente alterar uma pergunta antes de baixar: a cópia deve refletir o texto atual. Confira os dados que deseja compartilhar e a data de referência registrada por quem preencheu. O horário da exportação indica quando o arquivo foi gerado. <a href="https://github.com/acarolmourad-commits/praia-digital/pull/344">Veja a implementação e a verificação do download</a>.</p>
+  <p>Na verificação da pauta, a equipe preencheu uma pergunta fictícia sobre a vaga e um contato de teste. Ao acionar “Copiar pauta completa” pelo teclado, a cópia continha a pergunta e deixava de fora o contato. O <a href="https://github.com/acarolmourad-commits/praia-digital/blob/d8a01e83690ed4d53595c4c678b1b87d8505be16/tests/report-download-browser.cjs">teste público da cópia e da impressão</a> registra esse resultado. Para aplicar o mesmo cuidado a outros documentos, consulte <a href="/apps/guia-de-uso.html#qual-arquivo-guardar">qual arquivo guardar em cada etapa</a>.</p>
+</section>
+<section aria-labelledby="marcacao-por-teclado">
+  <h2 id="marcacao-por-teclado">Como identificar a vaga de garagem na lista de botões</h2>
+  <p>Na lista de controles de acessibilidade do Checklist de Vistoria, “OK” se repetia 26 vezes, uma para cada observação. Os 26 botões “Problema” também tinham nomes idênticos. Agora o nome de cada botão inclui a observação correspondente.</p>
+  <p>Abra os <a href="/apps/checklist-vistoria/#groups">itens da vistoria</a> e vá até “Vagas de garagem conforme anúncio”. Com o foco em “Problema”, pressione a barra de espaço. O botão passa ao estado pressionado e mantém o foco. Pressione a mesma tecla outra vez para desfazer a marcação. No celular, os controles têm pelo menos 44 pixels CSS de altura.</p>
+  <p>Se a vaga depender de confirmação do condomínio, registre a pergunta em “Pontos a confirmar” no <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>.</p>
+</section>
+<section aria-labelledby="entorno-no-pdf">
+<h2 id="entorno-no-pdf">A vaga de garagem também precisa aparecer na cópia da vistoria</h2>
+<p>O Checklist de Vistoria mostrava 26 itens na tela, mas quatro perguntas sobre o entorno desapareciam ao imprimir. Entre elas estava a conferência das vagas de garagem. A causa era uma regra de impressão que ocultava o último grupo da lista.</p>
+<p>Para repetir a conferência, abra o <a href="/apps/checklist-vistoria/">Checklist de Vistoria</a>, marque a distância da praia como “OK” e a vaga como “Problema”. No PDF, procure essas duas linhas no grupo Entorno. Os cinco grupos e os 26 itens aparecem, inclusive os que ficaram sem marcação. Depois, use o <a href="/apps/relatorio-imovel/">Relatório do Imóvel</a> para registrar o que precisa ser esclarecido com o responsável.</p>
+</section>
+<section aria-labelledby="custos-e-parcelas">
+<h2 id="custos-e-parcelas">Onde registrar o ITBI e onde comparar as parcelas</h2>
+<p>Quem tem em mãos uma guia de ITBI e um orçamento de escritura pode <a href="/apps/?busca=ITBI#buscar-apps">buscar ITBI no catálogo</a>. O atalho leva a <a href="/apps/custo-de-compra/">Custos de Compra</a>. A ferramenta soma os valores que a pessoa informa para montar seu orçamento de fechamento.</p>
+<p>Ao <a href="/apps/?busca=SAC#buscar-apps">buscar SAC</a>, aparecem duas ferramentas. O <a href="/apps/calculadora-financiamento/">Simulador de Financiamento</a> compara as parcelas de SAC e Price com os mesmos dados. Em <a href="/apps/alugar-ou-comprar/">Alugar ou Comprar?</a>, a pessoa escolhe um dos sistemas para comparar o patrimônio ao fim do prazo com o de quem aluga e investe. Os três cartões descrevem a decisão que cada ferramenta ajuda a tomar.</p>
+</section>
+<section aria-labelledby="atalho-resultado-unico">
+<h2 id="atalho-resultado-unico">Encontrar a calculadora pelo nome</h2>
+<p>Na <a href="/apps/?busca=Shopee#buscar-apps">busca por Shopee</a>, o catálogo encontra uma ferramenta entre as 16 e exibe o link “Abrir Precificação Shopee e TikTok Shop” junto à contagem. Quem usa o teclado pode abrir a calculadora ali mesmo. Ao limpar a busca, os 16 cartões voltam a aparecer.</p>
+<p>Para repetir a conferência, escolha o objetivo de planejar uma compra e procure por Shopee. O catálogo informa que existe uma correspondência em outro objetivo. Use “Buscar em todos os objetivos” para voltar à ferramenta.</p>
+</section>
+<section aria-labelledby="imprimir-selecao">
+<h2 id="imprimir-selecao">Do catálogo à folha de vistoria</h2>
+<p>Ao pesquisar “vistoria”, o catálogo mostrava as ferramentas correspondentes na tela, mas a impressão incluía os 16 aplicativos. Ajustamos a folha impressa para respeitar os filtros e mostrar o endereço de cada ferramenta selecionada.</p>
+<p>Na próxima visita, <a href="/apps/#buscar-apps">busque “vistoria” no catálogo</a> e escolha “Imprimir seleção ou salvar em PDF”. Na folha, use o endereço do <a href="/apps/checklist-vistoria/">Checklist de Vistoria</a> para abrir a ferramenta. Depois da visita, o <a href="/apps/relatorio-imovel/">Relatório do Imóvel</a> ajuda a registrar as observações e as perguntas que ficaram em aberto.</p>
+<h3 id="busca-entrega-das-chaves">Quando a visita é para entregar as chaves</h3>
+<p>Uma pessoa pode chegar ao catálogo sabendo qual é a tarefa, sem conhecer o nome da ferramenta. As buscas por “entrega das chaves” e “vistoria de saída” agora encontram o Checklist de Vistoria. <a href="/apps/?busca=entrega%20das%20chaves#buscar-apps">Abra a busca por entrega das chaves</a> ou vá direto ao <a href="/apps/checklist-vistoria/#entrega-das-chaves">roteiro para comparar as duas visitas</a>.</p>
+<p>Experimente com a janela de um quarto. Guarde o PDF de entrada, faça a segunda observação e confira o nome e a data de cada cópia antes de registrar a pergunta no relatório.</p>
+</section>
+<section aria-labelledby="contato-na-ficha">
+<h2 id="contato-na-ficha">Dois botões para falar sobre o mesmo apartamento</h2>
+<p>Na ficha de um apartamento em Bertioga, o botão do anúncio abria um e-mail para a corretora. Já o botão do cabeçalho levava ao formulário geral do portal. Quem chegava pelo mesmo anúncio encontrava dois caminhos de atendimento.</p>
+<p>Em 24 de novembro de 2026, a Praia Digital conferiu os dois links na página publicada. “E-mail da corretora”, no cabeçalho, e “Consultar por e-mail”, no anúncio, passaram a abrir uma mensagem com o mesmo destinatário e o mesmo assunto. A verificação anterior à publicação também comparou o cabeçalho das 13 fichas que já faziam parte do catálogo.</p>
+<p><a href="/apps/guia-de-uso.html#contato-do-anuncio">Aplicar a conferência a outro anúncio</a> · <a href="/imoveis/apartamento-vicente-carvalho-ii-saoc-45m2.html">Ver os dois botões na ficha</a> · <a href="https://github.com/acarolmourad-commits/praia-digital/pull/312">Consultar a alteração e os testes</a></p>
+</section>
+<section aria-labelledby="verificacao-dos-aplicativos">
+  <h2 id="verificacao-dos-aplicativos">Como conferimos os 16 aplicativos após mudanças no site</h2>
+  <p>Em <time datetime="2026-11-24">24 de novembro de 2026</time>, os testes da rede passaram a comparar os scripts e os controles de cada aplicativo com uma referência revisada. A conferência também inclui a página inicial e o catálogo. Uma troca no endereço de um script, na ordem de carregamento ou nos atributos de um campo passa a aparecer na revisão.</p>
+  <p>Para experimentar a navegação como visitante, escolha uma tarefa no <a href="/apps/">catálogo de aplicativos</a>, abra a ferramenta e percorra seus campos com Tab. Depois, siga um dos <a href="/apps/guia-de-uso.html">roteiros do guia</a> até a próxima ferramenta. Repita as mesmas premissas manualmente quando o exercício pedir uma comparação.</p>
+  <p>O controle automatizado verifica a estrutura dessas páginas. Uma revisão de cálculo, de leitura em aparelho real ou de acessibilidade completa exige testes próprios. <a href="https://github.com/acarolmourad-commits/praia-digital/pull/328">Consulte a alteração e as verificações no GitHub</a>.</p>
+</section>
+<section aria-labelledby="perfil-para-visita">
+<h2 id="perfil-para-visita">Do comparador de cidades à visita ao bairro</h2>
+<p>No <a href="/apps/comparador-cidades/#comparador">Comparador de cidades</a>, selecione “Morar bem”. A tabela muda os pesos usados para ordenar as cidades. As referências são históricas e a amostra original carece de documentação. Use a lista para decidir onde pesquisar primeiro.</p>
+<p>Em cada endereço escolhido, abra a <a href="/guias/ficha-comparacao-bairros-litoral.html#ficha">ficha de comparação de bairros</a>. Por exemplo, se a ida ao trabalho depende de ônibus, anote a data da visita, o ponto que você encontrou e o trecho que percorreu a pé. Deixe o horário de fim de semana em aberto até consultar a operadora.</p>
+<p>Leve as dúvidas que dependem da unidade para o <a href="/apps/checklist-vistoria/#perguntas-da-visita">checklist de vistoria</a>. Assim você consegue distinguir o que observou no bairro do que ainda precisa perguntar sobre o imóvel.</p>
+</section>
+<section aria-labelledby="roteiro-do-aplicativo">
+<h2 id="roteiro-do-aplicativo">Do aplicativo ao checklist do objetivo</h2>
+<p>Quem começa pela ferramenta nem sempre sabe quais informações reunir na etapa seguinte. Cada um dos 16 aplicativos agora oferece um link direto para o roteiro de compra, locação, anúncio ou precificação correspondente, dentro do bloco “Use este resultado na sua rotina”.</p>
+<p>Experimente no <a href="/apps/checklist-vistoria/#pd-workflow-title">Checklist de vistoria</a>: depois de registrar uma pergunta sobre o imóvel, escolha “Abrir roteiro: Preparar um anúncio”. O link abre o <a href="/apps/guia-de-uso.html#anunciar">checklist de revisão do anúncio</a>, com caminhos para a Oficina de IA, o Revisor e o Relatório do imóvel. Leve as observações manualmente e mantenha em aberto o que ainda não foi confirmado.</p>
+<p>Para continuar direto no <a href="/apps/relatorio-imovel/">Relatório do imóvel</a>, escolha o cartão dessa ferramenta em “Continue sua análise”. Antes de sair, consulte <a href="/apps/guia-de-uso.html#qual-arquivo-guardar">qual arquivo guardar</a> e confira a cópia. Por exemplo, registre “confirmar medida da vaga” como pergunta em aberto, sem preencher uma medida presumida. O aplicativo de destino abre seu próprio formulário: transfira apenas as anotações necessárias, depois de revisá-las.</p>
+<p>Os atalhos também funcionam sem JavaScript. O resultado verificável é a navegação entre as ferramentas e seus roteiros; não representa transferência automática de dados nem resultado comercial de cliente.</p>
+</section>
+<section aria-labelledby="atalho-entre-apps">
+<h2 id="atalho-entre-apps">Da entrada do imóvel aos custos da compra</h2>
+<p>Abra o <a href="/apps/planejador-entrada/">Planejador de Entrada</a> e escolha “Ver aplicativos relacionados” logo abaixo do título. Com o teclado, use Tab para chegar ao link e pressione Enter. O foco passa ao título “Continue com o próximo aplicativo”.</p>
+<p>Entre as ferramentas sugeridas, escolha <a href="/apps/custo-de-compra/">Custos de compra</a> para reunir os valores de escritura, registro e ITBI. Os dados são preenchidos em cada ferramenta. O mesmo atalho aparece nos 16 aplicativos e funciona com JavaScript desativado.</p>
+</section>
+<section aria-labelledby="catalogo-por-objetivo">
+<h2 id="catalogo-por-objetivo">Da simulação de entrada às outras ferramentas de compra</h2>
+<p>Ao terminar uma simulação no <a href="/apps/planejador-entrada/">Planejador de Entrada</a>, o visitante podia voltar ao catálogo, mas precisava localizar de novo o grupo de compra. Agora o link no fim do aplicativo abre o <a href="/apps/?objetivo=planejar#grupo-planejar">grupo Planejar a compra</a>. Nele, a <a href="/apps/renda-para-financiar/">calculadora de renda</a> ajuda a preparar a próxima pergunta para a instituição financeira.</p>
+<p>A Praia Digital aplicou o mesmo critério aos 16 aplicativos. Cada link aponta para o título do grupo correspondente. Com JavaScript ativo, o catálogo também seleciona o objetivo na busca. Sem JavaScript, o endereço continua levando ao título do grupo na página completa.</p>
+</section>
 <section aria-labelledby="limites"><h2 id="limites">O que esta evidência permite concluir</h2><p>O catálogo, a navegação e os testes existem no projeto público. Isso permite verificar a estrutura implementada e repetir verificações técnicas.</p><p>Essas evidências não demonstram aumento de vendas, redução de custos ou sucesso de uma operação de terceiros. Também não substituem testes de cada cálculo, avaliação em um aparelho real ou revisão das informações inseridas pelo usuário. Uma publicação posterior pode mudar o conteúdo; confira a data e a versão da referência.</p></section>
 <section aria-labelledby="fontes"><h2 id="fontes">Referências públicas</h2><p>Consulta registrada em 17/11/2026. As referências de código usam a revisão <code>7f659405</code>.</p><ul class="sources">
 <li><a href="https://github.com/acarolmourad-commits/praia-digital/blob/7f659405449f30d9a5d91c1549efa54d021f845d/data/app-network.json">Registro dos aplicativos e grupos</a>.</li>

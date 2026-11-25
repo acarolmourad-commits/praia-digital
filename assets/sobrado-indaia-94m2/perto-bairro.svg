@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="t d">
+<title id="t">Indaiá no litoral de Bertioga</title><desc id="d">Esquema sem escala. A Praia da Enseada vai da região central ao Indaiá; a Avenida Anchieta conecta Vista Linda, Indaiá e o acesso à Riviera.</desc>
+<rect width="960" height="720" rx="26" fill="#f7f6ee"/>
+<g font-family="system-ui, sans-serif">
+<text x="48" y="61" font-size="23" font-weight="700" fill="#14665e" letter-spacing="2">BERTIOGA · VISÃO DO BAIRRO</text>
+<text x="48" y="124" font-size="49" font-weight="750" fill="#11383c">Indaiá e arredores</text>
+<rect x="48" y="167" width="864" height="448" rx="24" fill="#e5ede0"/>
+<path d="M48 443C183 421 272 419 355 430S517 462 608 429 753 376 912 419V591q0 24-24 24H72q-24 0-24-24Z" fill="#d6eeeb"/>
+<path d="M48 443C183 421 272 419 355 430S517 462 608 429 753 376 912 419" fill="none" stroke="#f2d792" stroke-width="13"/>
+<path d="M85 327C274 294 403 319 537 303S733 268 870 289" fill="none" stroke="#216960" stroke-width="10" stroke-linecap="round"/>
+<text x="101" y="378" fill="#174b49" font-size="27" font-weight="650">Avenida Anchieta</text>
+<g fill="#fff" stroke="#216960" stroke-width="5"><circle cx="238" cy="311" r="12"/><circle cx="792" cy="282" r="12"/></g>
+<circle cx="550" cy="301" r="27" fill="#c8e2d3"/><circle cx="550" cy="301" r="15" fill="#14665e" stroke="#fff" stroke-width="5"/>
+<g fill="#11383c" font-size="27" font-weight="700" text-anchor="middle">
+<text x="238" y="273">Vista Linda</text><text x="550" y="257" font-size="34">Indaiá</text>
+<text x="792" y="226"><tspan x="792">Acesso à</tspan><tspan x="792" dy="31">Riviera</tspan></text>
+</g>
+<text x="101" y="509" font-size="34" font-weight="750" fill="#145e66">Praia da Enseada</text>
+<text x="101" y="550" font-size="26" fill="#254e50">A Praia do Indaiá fica no extremo da Enseada.</text>
+<text x="48" y="662" font-size="22" font-weight="650" fill="#254e50">Esquema ilustrativo, sem escala.</text>
+<text x="48" y="692" font-size="20" fill="#254e50">Referências: Prefeitura de Bertioga · Arte: Praia Digital</text>
+</g></svg>

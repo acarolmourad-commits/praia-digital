@@ -9,6 +9,7 @@ on:
       - 'tests/test_revisor_anuncios.cjs'
       - 'tests/revisor-browser.cjs'
       - 'tests/test_relatorio_imovel.mjs'
+      - 'tests/report-download-browser.cjs'
       - '.github/workflows/professional-tools-checks.yml'
   workflow_dispatch:
 permissions:
@@ -29,6 +30,7 @@ jobs:
           npm install --prefix "$RUNNER_TEMP/revisor-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/revisor-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/revisor-browser/node_modules" node tests/revisor-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/revisor-browser/node_modules" node tests/report-download-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

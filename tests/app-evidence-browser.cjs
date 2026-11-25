@@ -93,7 +93,9 @@ const deadline = setTimeout(() => {
         assert.equal(stablePilotSamples, 3, 'Pilot link must stabilize before click');
         await pilotLink.click();
         await page.waitForURL('**/ia/marketplaces/piloto/');
-        await page.locator('a[href="/apps/guia-de-uso.html#vender"]').click();
+        const returnToPricing = page.getByRole('link', { name: 'Voltar ao roteiro de precificação', exact: true });
+        assert.equal(await returnToPricing.getAttribute('href'), '/apps/guia-de-uso.html#vender');
+        await returnToPricing.click();
         await page.waitForURL('**/apps/guia-de-uso.html#vender');
         assert.equal(await page.locator('input[type=checkbox]').count(), 12);
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
@@ -134,6 +136,38 @@ const deadline = setTimeout(() => {
           await page.goBack();
           assert.equal(new URL(page.url()).pathname, source);
         }
+        if (width === 390) {
+          phase = `${width}px js=${javaScriptEnabled} homepage/portfolio discovery`;
+          console.log(phase);
+          const casePath = '/cases.html#caso-estoque-vivo';
+          await page.goto('https://praia.digital/');
+          const portfolioLink = page.locator('#apps a[href="' + casePath + '"]');
+          assert.equal(await portfolioLink.count(), 1);
+          await portfolioLink.click();
+          await page.waitForURL('**' + casePath);
+          const portfolioCase = page.locator('#caso-estoque-vivo');
+          assert.match(await portfolioCase.locator('h2').innerText(), /estoque fictício/);
+          assert.match(await portfolioCase.innerText(), /não comprova integração nem resultado comercial/);
+          assert.equal(await portfolioCase.getByRole('link', { name: 'roteiro de precificação' }).getAttribute('href'), '/apps/guia-de-uso.html#vender');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Portfolio overflow at 390 px');
+          const laboratoryLink = portfolioCase.getByRole('link', { name: 'Experimentar o laboratório com estoque fictício' });
+          // The incoming fragment can still be scrolling when the assertions above pass.
+          // Use Node-side geometry checks, which also run when page JS is disabled.
+          let lastLaboratoryBox = null;
+          let stableLaboratorySamples = 0;
+          const laboratoryDeadline = Date.now() + 5000;
+          while (stableLaboratorySamples < 3 && Date.now() < laboratoryDeadline) {
+            const current = await laboratoryLink.boundingBox();
+            assert.ok(current, 'Portfolio laboratory link must have a layout box');
+            stableLaboratorySamples = lastLaboratoryBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(current[key] - lastLaboratoryBox[key]) < 0.5) ? stableLaboratorySamples + 1 : 0;
+            lastLaboratoryBox = current;
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+          assert.equal(stableLaboratorySamples, 3, 'Portfolio laboratory link must stabilize before click');
+          await laboratoryLink.click();
+          await page.waitForURL('**/ia/marketplaces/piloto/#laboratorio');
+          assert.equal(await page.locator('#laboratorio').count(), 1);
+        }
         await page.goto('https://praia.digital/');
         await page.locator('#apps a[href="' + guide + '"]').click();
         await page.waitForURL('**' + guide);
@@ -143,6 +177,21 @@ const deadline = setTimeout(() => {
         await page.waitForURL('**' + guide);
         await page.locator('main a[href="' + study + '"]').click();
         await page.waitForURL('**' + study);
+        phase = `${width}px js=${javaScriptEnabled} pauta de retorno`;
+        await page.getByRole('region', { name: 'Da visita às perguntas para o proprietário' })
+          .getByRole('link', { name: 'Relatório do imóvel', exact: true }).click();
+        await page.waitForURL('**/apps/relatorio-imovel/#pauta-de-retorno');
+        const panel = page.locator('#pauta-de-retorno');
+        if (javaScriptEnabled) {
+          assert.ok(await page.locator('#agenda-text').isVisible());
+          await page.locator('#pending').fill('A vaga é privativa?');
+          await page.locator('#contact').fill('Contato privado fictício');
+          assert.equal(await page.locator('#agenda-text').inputValue(), 'Pauta de retorno\n\nPontos a confirmar\nA vaga é privativa?');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+        } else {
+          if (!await panel.evaluate(node => node.open)) await panel.locator('summary').press('Enter');
+          assert.match(await panel.innerText(), /montar a pauta manualmente/);
+        }
         await context.close();
       }
     }

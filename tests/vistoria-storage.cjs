@@ -8,14 +8,17 @@ test('storage getter/read exceptions keep functioning in session',()=>{for(const
 test('write denied preserves current state and old stored data',()=>{const mem=storage('{"0_0":"ok"}');mem.setItem=()=>{throw Error('quota')};const s=createStore(()=>mem);s.mark('0_1','bad');assert.equal(s.snapshot().state['0_1'],'bad');assert.equal(mem.raw,'{"0_0":"ok"}');assert.match(s.snapshot().status,/não foi possível salvar/i);});
 test('explicit reset recovers corrupt data or warns on removal failure',()=>{const mem=storage('{'),s=createStore(()=>mem);s.mark('0_0','ok');s.reset();assert.equal(mem.raw,null);assert.equal(s.snapshot().session,false);s.mark('0_1','bad');assert.equal(mem.writes,1);mem.removeItem=()=>{throw Error('denied')};s.reset();assert.deepEqual(s.snapshot().state,{});assert(s.snapshot().session);assert.match(s.snapshot().status,/podem reaparecer/);});
 test('UI neutral progress, reset cancel/confirm and no exception on blocked access',()=>{
- const mem=storage('{"0_0":"ok"}'),es={};for(const id of ['groups','bar','score','verdict','storage-status'])es[id]={innerHTML:'',textContent:'',style:{}};
+ const mem=storage('{"0_0":"ok"}'),es={};for(const id of ['groups','bar','score','verdict','storage-status','visit-problems-list','visit-problems-empty'])es[id]={innerHTML:'',textContent:'',style:{}};
  let yes=false;const ctx={document:{getElementById:id=>es[id]},localStorage:mem,confirm:()=>yes};vm.runInNewContext(fs.readFileSync(require.resolve('../apps/checklist-vistoria/checklist.js'),'utf8'),ctx);
  assert.match(es.verdict.textContent,/1\/26/);ctx.resetAll();assert.equal(mem.removes,0);assert.match(es.verdict.textContent,/1\/26/);yes=true;ctx.resetAll();assert.equal(mem.removes,1);assert.match(es.verdict.textContent,/0\/26/);
- for(let g=0;g<GROUPS.length;g++)for(let i=0;i<GROUPS[g].items.length;i++)ctx.mark(g+'_'+i,'bad');assert.equal(es.score.textContent,'100%');assert.match(es.verdict.textContent,/26 com problema/);assert(!/pode avançar|ótimo estado|negocie/.test(es.verdict.textContent));
+ for(let g=0;g<GROUPS.length;g++)for(let i=0;i<GROUPS[g].items.length;i++)ctx.mark(g+'_'+i,'bad');assert.equal(es.score.textContent,'100%');assert.match(es.verdict.textContent,/26 com problema/);
+ assert.equal((es['visit-problems-list'].innerHTML.match(/<li>/g)||[]).length,26);
+ assert.equal(es['visit-problems-empty'].hidden,true);
+ assert(!/pode avançar|ótimo estado|negocie/.test(es.verdict.textContent));
 });
 
 test('render restores only the focused checklist button without scrolling or stealing outside focus',()=>{
- const mem=storage(),es={};for(const id of ['groups','bar','score','verdict','storage-status'])es[id]={innerHTML:'',textContent:'',style:{}};
+ const mem=storage(),es={};for(const id of ['groups','bar','score','verdict','storage-status','visit-problems-list','visit-problems-empty'])es[id]={innerHTML:'',textContent:'',style:{}};
  const doc={activeElement:null,getElementById:id=>es[id]};
  let focusCalls=0;
  Object.defineProperty(es.groups,'innerHTML',{set(html){
@@ -30,6 +33,19 @@ test('render restores only the focused checklist button without scrolling or ste
  ctx.mark('0_0','ok');assert.equal(doc.activeElement.id,'vistoria-0_0-ok');assert.equal(focusCalls,1);
  ctx.mark('0_0','ok');assert.equal(doc.activeElement.id,'vistoria-0_0-ok');assert.equal(focusCalls,2);
  doc.activeElement={id:'reset'};ctx.resetAll();assert.equal(doc.activeElement.id,'reset');assert.equal(focusCalls,2);
+});
+
+test('HTML references the current script and legacy markup still supports marking items', () => {
+ const script = fs.readFileSync(require.resolve('../apps/checklist-vistoria/checklist.js'), 'utf8');
+ const revision = require('node:crypto').createHash('sha256').update(script).digest('hex').slice(0, 12);
+ const html = fs.readFileSync(require.resolve('../apps/checklist-vistoria/index.html'), 'utf8');
+ assert.ok(html.includes('/apps/checklist-vistoria/checklist.js?v=' + revision + '"'));
+ const elements = {};
+ for (const id of ['groups', 'bar', 'score', 'verdict', 'storage-status']) elements[id] = {style: {}};
+ const ctx = {document: {getElementById: id => elements[id]}, localStorage: storage()};
+ vm.runInNewContext(script, ctx);
+ ctx.mark('4_3', 'bad');
+ assert.match(elements.verdict.textContent, /1 com problema/);
 });
 
 test('orientação editorial usa fontes primárias e não promete conformidade ou preço de laudo',()=>{
