@@ -99,6 +99,19 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#ref-price').inputValue(),'600.000,00');assert.equal(await page.locator('#report').isVisible(),true);
  page.once('dialog',d=>d.dismiss());await page.locator('#example').click();assert.equal(await page.locator('#report').isVisible(),true);
  await page.locator('#ref-price').fill('700.000,00');assert.equal(await page.locator('#report').isVisible(),false);
+ assert.equal(await page.locator('#confirmed').isChecked(),false);
+ assert.match(await page.locator('#live-status').textContent(),/confirme a ficha novamente/);
+ await page.getByRole('button',{name:'Comparar as versões'}).click();
+ assert.equal(await page.locator('#errors').isVisible(),true);
+ assert.equal(await page.locator('#report').isVisible(),false);
+ assert.equal(await page.locator('#confirmed').evaluate(el=>el===document.activeElement),true);
+ await page.locator('#confirmed').press('Space');
+ await page.getByRole('button',{name:'Comparar as versões'}).click();
+ assert.equal(await page.locator('#report').isVisible(),true);
+ await page.locator('#v1-name').fill('Portal A revisado');
+ assert.equal(await page.locator('#confirmed').isChecked(),true);
+ await page.locator('#ref-mode').selectOption('mensal');
+ assert.equal(await page.locator('#confirmed').isChecked(),false);
  page.once('dialog',d=>d.dismiss());await page.locator('#example').click();assert.equal(await page.locator('#ref-price').inputValue(),'700.000,00');
  page.once('dialog',d=>d.accept());await page.locator('#example').click();assert.equal(await page.locator('#ref-price').inputValue(),'600.000,00');
  await page.getByRole('button',{name:'Comparar as versões'}).click();
@@ -110,6 +123,7 @@ for(const width of [390,1280]){
  await page.evaluate(()=>window.pendingCopy.resolve());
  assert.equal(await page.locator('#copy-status').textContent(),'');
  assert.equal(await page.locator('#ref-price').evaluate(el=>el===document.activeElement),true);
+ await page.locator('#confirmed').check();
  await page.getByRole('button',{name:'Comparar as versões'}).click();
  await page.locator('#copy').click();
  page.once('dialog',d=>d.accept());await page.locator('#clear').click();
