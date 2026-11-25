@@ -1,5 +1,5 @@
 PRAIA DIGITAL — FICHA DE ACOMODAÇÃO
-Modelo em branco | versão 24/11/2026
+Modelo em branco | versão 25/11/2026
 
 Preencha uma cópia por categoria/unidade. Campo vazio = A CONFIRMAR.
 Este modelo não comprova disponibilidade, não publica anúncios e não transfere dados entre aplicativos.
@@ -25,6 +25,12 @@ Serviços incluídos nesta oferta e itens opcionais:
 Andar, escadas e condições factuais de acesso:
 Regras aplicáveis (incluindo pets, quando pertinente):
 Outras limitações confirmadas:
+
+SERVIÇOS COM RESERVA PRÓPRIA
+Preencha uma linha para cada serviço que o viajante precisa combinar separadamente.
+Serviço | quem agenda | quem confirma | canal institucional | situação | próximo passo:
+Data e fonte da última confirmação:
+Orientação que a recepção pode repassar ao viajante:
 
 FOTOS
 Imagem/arquivo | categoria representada | origem | autorização | data:
