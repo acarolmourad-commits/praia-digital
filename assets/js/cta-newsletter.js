@@ -18,8 +18,8 @@ PD_LEADS.injectCTA = function ({ selector = 'article', every = 4 } = {}) {
   cta.innerHTML = `
     <div class="pd-cta-native__inner">
       <p class="pd-cta-native__title">Quer vender ou alugar seu imóvel no litoral?</p>
-      <p class="pd-cta-native__text">Fale agora com um especialista pelo WhatsApp.</p>
-      <a class="pd-cta-native__button" href="https://wa.me/5511954346288?text=Ol%C3%A1,%20tenho%20interesse%20em%20${encodeURIComponent(document.title || 'Blog')}" target="_blank" rel="noopener">Atendimento pelo WhatsApp</a>
+      <p class="pd-cta-native__text">Fale agora com um especialista por e-mail.</p>
+      <a class="pd-cta-native__button" href="mailto:comercial@praia.digital?subject=Atendimento%20Praia%20Digital&body=Ol%C3%A1,%20tenho%20interesse%20em%20${encodeURIComponent(document.title || 'Blog')}" rel="noopener">Atendimento por e-mail</a>
     </div>
   `;
 
@@ -52,10 +52,9 @@ PD_LEADS.injectFloatingWhatsApp = function () {
   const btn = document.createElement('a');
   btn.className = 'pd-whatsapp-float';
   btn.setAttribute('data-pd-whatsapp-float', '');
-  btn.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent('Olá, tenho interesse em ' + (document.title || 'Blog'));
-  btn.target = '_blank';
+  btn.href = 'mailto:comercial@praia.digital?subject=Atendimento%20Praia%20Digital&body=' + encodeURIComponent('Olá, tenho interesse em ' + (document.title || 'Blog'));
   btn.rel = 'noopener';
-  btn.innerHTML = 'WhatsApp';
+  btn.textContent = 'E-mail';
   document.body.appendChild(btn);
   return btn;
 };

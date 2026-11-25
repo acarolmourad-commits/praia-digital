@@ -12,7 +12,7 @@
       "name": "Como solicitar mais informações?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
+        "text": "Por e-mail ou pelo formulário na página para atendimento rápido."
       }
     },    {
       "@type": "Question",
@@ -108,12 +108,12 @@ gtag('config', '', { anonymize_ip: true });
     <div class="kpi"><b id="kOcup">0%</b><span>Ocupação</span></div>
     <div class="kpi"><b id="kAdr">R$0</b><span>Diária</span></div>
   </div>
-  <button class="btn" id="leadBtn" onclick="mostrarForm()">📩 Receber relatório no WhatsApp</button>
+  <button class="btn" id="leadBtn" onclick="mostrarForm()">📩 Solicitar relatório por e-mail</button>
 </div>
 
 <div class="form" id="leadForm">
   <label>Nome <span class="badge">obrigatório</span></label><input id="lnome" placeholder="Seu nome">
-  <label>WhatsApp <span class="badge">obrigatório</span></label><input id="lwhats" placeholder="(11) 99999-9999">
+  <label>E-mail <span class="badge">obrigatório</span></label><input id="lwhats" type="email" required placeholder="Seu e-mail">
   <label class="consent"><input type="checkbox" id="lgpd" style="width:auto;margin-top:.15rem"> <span>Autorizo contato p/ gestão de temporada (LGPD Art. 7º, VIII).</span></label>
   <button class="btn" onclick="enviar()">Enviar →</button>
   <div id="err2" class="err"></div>
@@ -125,18 +125,17 @@ gtag('config', '', { anonymize_ip: true });
 <script>
 // --- Config tenant (white-label) via ?tenant= e query params ---
 const TENANTS = {
-  padrao:{nome:"Praia Digital", cor:"#22d3ee", whats:"11954346288"},
-  "santos-ancora":{nome:"Prime Imóveis Santos", cor:"#f59e0b", whats:"11954346288"},
-  demo:{nome:"Imobiliária Parceira", cor:"#4ade80", whats:"11954346288"}
+  padrao:{nome:"Praia Digital", cor:"#22d3ee"},
+  "santos-ancora":{nome:"Prime Imóveis Santos", cor:"#f59e0b"},
+  demo:{nome:"Imobiliária Parceira", cor:"#4ade80"}
 };
 const params = new URLSearchParams(location.search);
-const tenantKey = params.get("tenant")  "padrao";
-const T = TENANTS[tenantKey]  TENANTS.padrao;
+const tenantKey = params.get("tenant") || "padrao";
+const T = TENANTS[tenantKey] || TENANTS.padrao;
 document.documentElement.style.setProperty("--ciano", T.cor);
 document.getElementById("brandName").textContent = T.nome;
 document.getElementById("footer").textContent = T.nome + " · Gestão de temporada";
 
-const API = "https://praia.digital";
 function fmt(n){return "R$ "+Math.round(n).toLocaleString('pt-BR');}
 
 // motor de calculo (mesma logica do backend)
@@ -175,25 +174,21 @@ async function calcular(){
 
 function mostrarForm(){document.getElementById("leadForm").style.display="block";document.getElementById("leadForm").scrollIntoView({behavior:"smooth"});}
 
-async function enviar(){
-  const nome=document.getElementById("lnome").value.trim();
-  const whats=document.getElementById("lwhats").value.trim();
-  const lgpd=document.getElementById("lgpd").checked;
-  document.getElementById("err2").textContent="";
-  if(!nome!whats){document.getElementById("err2").textContent="Nome e WhatsApp obrigatórios.";return;}
-  if(!lgpd){document.getElementById("err2").textContent="É preciso autorizar o contato (LGPD).";return;}
-  const isWhiteLabel = !tenantKey.startsWith("pd-") && tenantKey!=="padrao";
-  const payload={nome,whatsapp:whats,cidade:window._cidade"",cep:document.getElementById("cep").value,
-    yield_estimado:window._last?window._last.yieldA:null,consentimento_lgpd:true,
-    parceiro_id: isWhiteLabel ? tenantKey : undefined};
-  try{
-    const r=await fetch(API+"/api/v1/lead/capture",{method:"POST",headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(r.ok){document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Pronto! Enviamos no WhatsApp.";return;}
-  }catch(e){/* backend offline -> mailto fallback */}
-  // fallback: abre WhatsApp do parceiro com resumo
-  const msg=encodeURIComponent(`Olá! Simulei o yield do meu imóvel em ${window._cidade''} pela calculadora da ${T.nome}: ${window._last?(window._last.yieldA*100).toFixed(1):''}% a.a. Quero saber mais sobre gestão.`);
-  window.open(`https://wa.me/55${T.whats}?text=${msg}`,"_blank");
-  document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Abrimos seu WhatsApp pra falar com a "+T.nome+".";
+function enviar(){
+  const nome = document.getElementById("lnome").value.trim();
+  const email = document.getElementById("lwhats");
+  const status = document.getElementById("err2");
+  if (!nome || !email.reportValidity()) { status.textContent = "Informe seu nome e um e-mail válido."; return; }
+  if (!document.getElementById("lgpd").checked) { status.textContent = "Autorize o contato para continuar."; return; }
+  status.textContent = "";
+  const cidade = window._cidade || "";
+  const resultado = window._last ? (window._last.yieldA * 100).toFixed(1) + "% a.a." : "";
+  const mensagem = ["Olá! Gostaria de conversar sobre a simulação de temporada.", "Nome: " + nome,
+    "E-mail de retorno: " + email.value, "Cidade: " + cidade, "Estimativa: " + resultado, "Página: " + T.nome].join("\r\n");
+  window.location.href = "mailto:comercial@praia.digital?subject=Simula%C3%A7%C3%A3o%20de%20temporada&body=" + encodeURIComponent(mensagem);
+  const feedback = document.getElementById("ok2");
+  feedback.style.display = "block";
+  feedback.textContent = "Revise e envie sua mensagem no aplicativo de e-mail.";
 }
 
 document.getElementById("cep").addEventListener("input",e=>{let v=e.target.value.replace(/\D/g,"");if(v.length>5)v=v.slice(0,5)+"-"+v.slice(5,8);e.target.value=v;});

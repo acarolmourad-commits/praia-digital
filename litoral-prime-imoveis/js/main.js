@@ -1,9 +1,8 @@
-/* Litoral Prime Imóveis — dataset inicial + busca + CTA WhatsApp */
+/* Litoral Prime Imóveis — dataset inicial + busca + contato por e-mail */
 (function () {
-  const WHATSAPP_NUMBER = '5511954346288';
 
-  function waLink(message) {
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message || '')}`;
+  function contactEmailLink(message) {
+    return `mailto:comercial@praia.digital?subject=Consulta%20sobre%20im%C3%B3vel&body=${encodeURIComponent(message || '')}`;
   }
 
   propertyCardTemplate = (p) => `
@@ -21,7 +20,7 @@
         </p>
         <p class="property-meta">${escapeHtml(p.bedrooms)} quartos · ${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a class="btn-whatsapp" href="${contactEmailLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Consultar por e-mail</a>
         <a class="btn-secondary" href="imoveis/${p.slug}.html" target="_blank" rel="noopener">Ver detalhes</a>
       </div>
     </article>

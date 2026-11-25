@@ -54,9 +54,9 @@
   });
   get('buyer-whatsapp').addEventListener('click', () => {
     const text = clean(get('buyer-summary').value, 2400);
-    if (!text) { status('Preencha o resumo antes de abrir o WhatsApp.'); return; }
-    root.open('https://wa.me/5511954346288?text=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
-    status('Abertura do WhatsApp solicitada. Confirme o destinatário e envie pelo aplicativo; o site não confirma entrega.');
+    if (!text) { status('Preencha o resumo antes de preparar o e-mail.'); return; }
+    root.open('mailto:comercial@praia.digital?subject=Perfil%20de%20compra&body=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
+    status('Revise e envie o e-mail para comercial@praia.digital. O site não confirma entrega.');
   });
   get('buyer-copy').addEventListener('click', async () => {
     const text = clean(get('buyer-summary').value, 2400);

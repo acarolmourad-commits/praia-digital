@@ -99,11 +99,11 @@ test('suite queries display limitation and never present unverified matches, inc
   assert.match(h.els['search-status'].textContent,/^1 imóvel/);
   h.els['limpar-busca'].fire('click');assert.match(h.els['lista-imoveis'].innerHTML,/property-card/);
 });
-test('catalogue and detail WhatsApp handoffs include title, price, URL and correct destination',()=>{
+test('catalogue and detail email drafts include title, price, URL and correct destination',()=>{
   const {ctx}=catalogueHarness();const p=ctx.catalogue.properties.find(p=>p.id===9);
   const card=ctx.catalogue.propertyCardTemplate(p);const cardLink=card.match(/class="btn-whatsapp" href="([^"]+)"/)[1];
   const detailLink=house.match(/class="btn-whatsapp" href="([^"]+)"/)[1];
-  for(const link of [cardLink,detailLink]){const url=new URL(link);assert.equal(url.pathname,'/5511954346288');const message=url.searchParams.get('text');assert(message.includes(houseUrl));assert(message.includes(p.title));assert(message.includes(p.price));}
+  for(const link of [cardLink,detailLink]){const url=new URL(link.replaceAll('&amp;', '&'));assert.equal(url.protocol,'mailto:');assert.equal(url.pathname,'comercial@praia.digital');const message=url.searchParams.get('body');assert(message.includes(houseUrl));assert(message.includes(p.title));assert(message.includes(p.price));}
 });
 
 function formHarness(fetchImpl){
@@ -126,11 +126,11 @@ test('interest submission carries property context and only confirms service acc
   const body=JSON.parse(request.body);assert.equal(request.url,'https://academy.praia.digital/leads');assert.equal(body.property_url,houseUrl);assert.equal(body.property_price,'R$ 595.000');assert.equal(body.property_title,'Casa com 2 quartos em condomínio fechado em Bertioga');
   respond({ok:true});await pending;assert.match(h.status.textContent,/aceitou/);assert.equal(h.button.disabled,false);assert.equal(h.fallback.hidden,true);assert.equal(h.timers.size,0);
 });
-for(const mode of ['http-error','network-error','timeout'])test('interest '+mode+' preserves reviewable WhatsApp alternative without claiming receipt',async()=>{
+for(const mode of ['http-error','network-error','timeout'])test('interest '+mode+' preserves reviewable email alternative without claiming receipt',async()=>{
   const h=formHarness((_url,opts)=>mode==='http-error'?Promise.resolve({ok:false}):mode==='network-error'?Promise.reject(new Error('offline')):new Promise((_,reject)=>opts.signal.addEventListener('abort',()=>reject(new Error('timeout')))));
   const pending=h.submit();if(mode==='timeout')for(const fn of [...h.timers.values()])fn();await pending;
   assert.equal(h.fallback.hidden,false);assert.match(h.status.textContent,/Não foi possível confirmar/);assert.doesNotMatch(h.status.textContent,/aceitou|Recebido/);
-  const message=new URL(h.fallback.href).searchParams.get('text');assert(message.includes(houseUrl));assert(message.includes('R$ 595.000'));assert(message.includes('Teste local'));assert.equal(h.button.disabled,false);
+  const message=new URL(h.fallback.href).searchParams.get('body');assert(message.includes(houseUrl));assert(message.includes('R$ 595.000'));assert(message.includes('Teste local'));assert.equal(h.button.disabled,false);
 });
 test('invalid interest form cannot submit',async()=>{let calls=0;const h=formHarness(()=>{calls++;return Promise.resolve({ok:true});});h.form.valid=false;await h.submit();assert.equal(calls,0);});
 test('modified HTML has parseable JSON-LD and JavaScript; guide describes actual controls',()=>{

@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://praia.digital/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preconnect" href="https://wa.me" crossorigin>
+
 
   <!-- Schema: RealEstateListing -->
   <script type="application/ld+json">
@@ -154,7 +154,7 @@
         "name": "Como fazer uma visita ao imóvel?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Agende sua visita pelo WhatsApp: wa.me/5511954346288. Atendimento humanizado na Bertioga Digital, com horários flexíveis."
+          "text": "Agende sua visita por e-mail: comercial@praia.digital. Atendimento humanizado na Bertioga Digital, com horários flexíveis."
         }
       }
     ]
@@ -229,8 +229,8 @@
       </script>
 
 
-      <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Casa%20com%202%20quartos%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20%E2%80%94%20R%24%20595.000.%20https%3A%2F%2Fpraia.digital%2Fcasa-condominio-fechado-bertioga.html%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20e%20de%20consultar%20a%20possibilidade%20de%20uma%20visita.&amp;utm_source=site&amp;utm_medium=whatsapp&amp;utm_campaign=imovel-bertioga" target="_blank" rel="noopener">📲 Conversar sobre esta casa no WhatsApp</a>
-      <p>O WhatsApp será aberto com uma mensagem sobre este imóvel. Revise e envie para iniciar o contato. Consulte disponibilidade, medidas, valores e condições antes de negociar.</p>
+      <a class="btn-whatsapp" href="mailto:comercial@praia.digital?subject=Contato%20%E2%80%94%20Casa%20com%202%20quartos%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20%E2%80%94%20R%24595.000%20%7C%20Praia%20Digital&amp;body=Ol%C3%A1%21%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Casa%20com%202%20quartos%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20%E2%80%94%20R%24%20595.000.%20https%3A%2F%2Fpraia.digital%2Fcasa-condominio-fechado-bertioga.html%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20e%20de%20consultar%20a%20possibilidade%20de%20uma%20visita." rel="noopener">📲 Conversar sobre esta casa por e-mail</a>
+      <p>Seu aplicativo de e-mail será aberto com uma mensagem sobre este imóvel. Revise e envie para iniciar o contato. Consulte disponibilidade, medidas, valores e condições antes de negociar.</p>
     </section>
 
     <!-- Galeria de Fotos -->
@@ -436,7 +436,7 @@
         <form id="leadForm" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:10px">
           <label for="name" style="width:100%;">Nome*</label>
           <input type="text" id="name" autocomplete="name" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid #94a3b8;background:#fff;color:#173c46">
-          <label for="phone" style="width:100%;">WhatsApp com DDD*</label>
+          <label for="phone" style="width:100%;">Telefone com DDD*</label>
           <input type="tel" id="phone" autocomplete="tel" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid #94a3b8;background:#fff;color:#173c46">
           <input type="hidden" id="source" value="imovel-bertioga-casa-condominio" />
           <input type="hidden" id="property_title" value="Casa com 2 quartos em condomínio fechado em Bertioga">
@@ -460,9 +460,9 @@
           </select>
           <button type="submit" class="cta" style="width:100%;margin-top:10px;">Enviar meu interesse</button>
         </form>
-        <p>Ao enviar, você compartilha os dados preenchidos com a equipe Praia Digital para atender esta solicitação. <a href="/politica-de-privacidade.html">Política de Privacidade</a>. Se o envio não for confirmado, use o link para revisar e enviar a mensagem no WhatsApp.</p>
+        <p>Ao enviar, você compartilha os dados preenchidos com a equipe Praia Digital para atender esta solicitação. <a href="/politica-de-privacidade.html">Política de Privacidade</a>. Se o envio não for confirmado, use o link para revisar e enviar a mensagem por e-mail.</p>
         <p id="formStatus" role="status" aria-live="polite" style="margin-top:10px;"></p>
-        <a id="interestFallback" hidden target="_blank" rel="noopener">Revisar e enviar no WhatsApp</a>
+        <a id="interestFallback" hidden>Revisar e enviar por e-mail</a>
       </div>
       <script>
       (function () {
@@ -478,11 +478,11 @@
           form.querySelectorAll('input,select,textarea').forEach(function (el) {
             if (el.id && el.value.trim()) data[el.id] = el.value.trim();
           });
-          const labels = {name:'Nome', phone:'WhatsApp', faixa_orcamento:'Orçamento', prazo_interesse:'Prazo', property_title:'Imóvel', property_price:'Preço anunciado', property_url:'Anúncio'};
+          const labels = {name:'Nome', phone:'Telefone', faixa_orcamento:'Orçamento', prazo_interesse:'Prazo', property_title:'Imóvel', property_price:'Preço anunciado', property_url:'Anúncio'};
           const message = 'Olá! Tenho interesse nesta casa. ' + Object.entries(data)
             .filter(([key]) => key !== 'source')
             .map(([key, value]) => (labels[key] || key) + ': ' + value).join(' | ');
-          fallback.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent(message);
+          fallback.href = 'mailto:comercial@praia.digital?subject=Contato%20%E2%80%94%20Casa%20com%202%20quartos%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20%E2%80%94%20R%24595.000%20%7C%20Praia%20Digital&body=' + encodeURIComponent(message);
           fallback.hidden = true;
           sending = true;
           button.disabled = true;
@@ -503,7 +503,7 @@
             if (!response.ok) throw new Error('Envio não confirmado');
             status.textContent = 'O serviço de atendimento aceitou sua solicitação. Este contato não reserva o imóvel.';
           } catch (_) {
-            status.textContent = 'Não foi possível confirmar o envio. Use o link abaixo para revisar e enviar sua mensagem no WhatsApp.';
+            status.textContent = 'Não foi possível confirmar o envio. Use o link abaixo para revisar e enviar sua mensagem por e-mail.';
             fallback.hidden = false;
           } finally {
             clearTimeout(timeout);
@@ -711,7 +711,7 @@
       </div>
 
       <div style="margin-top:30px;text-align:center;">
-        <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20consultoria%20de%20investimento%20ou%20gest%C3%A3o%20de%20temporada%20para%20meu%20im%C3%B3vel%20em%20Bertioga.&utm_source=site&utm_medium=whatsapp&utm_campaign=servicos-bertioga" target="_blank" rel="noopener">💼 Solicitar Consultoria de Investimento</a>
+        <a class="btn-whatsapp" href="mailto:comercial@praia.digital?subject=Contato%20%E2%80%94%20Casa%20com%202%20quartos%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20%E2%80%94%20R%24595.000%20%7C%20Praia%20Digital&amp;body=Ol%C3%A1%21%20Quero%20consultoria%20de%20investimento%20ou%20gest%C3%A3o%20de%20temporada%20para%20meu%20im%C3%B3vel%20em%20Bertioga." rel="noopener">💼 Solicitar Consultoria de Investimento</a>
       </div>
     </section>
 

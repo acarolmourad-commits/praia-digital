@@ -442,7 +442,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <div class="rental-rev-summary" id="rentalRevSummary"></div>
         <div class="rental-rev-breakdown" id="rentalRevBreakdown"></div>
         <div class="rental-rev-cta">
-          <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="rental-rev-whatsapp" target="_blank" rel="noopener">💬 Falar sobre gestão completa</a>
+          <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="rental-rev-whatsapp" rel="noopener">💬 Falar sobre gestão completa</a>
         </div>
       </div>
     </div>
@@ -452,7 +452,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <h3 class="rental-cta-title"></h3>
       <p class="rental-cta-text">Cadastre-se gratuitamente e receba uma análise completa do potencial de rendimento do seu imóvel. Sem compromisso.</p>
       <div class="rental-cta-buttons">
-        <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="rental-cta-whatsapp" target="_blank" rel="noopener">💬 Cadastrar pelo WhatsApp</a>
+        <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="rental-cta-whatsapp" rel="noopener">💬 Cadastrar por e-mail</a>
         <a href="mailto:comercial@praiadigital.com?subject=Cadastro de imóvel para locação" class="rental-cta-email">📧 Enviar por e-mail</a>
       </div>
     </div>
@@ -503,7 +503,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
         
         <div class="listing-creation-cta">
-          <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="listing-creation-btn whatsapp" target="_blank" rel="noopener">💬 Contratar via WhatsApp</a>
+          <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="listing-creation-btn whatsapp" rel="noopener">💬 Contratar por e-mail</a>
           <a href="mailto:comercial@praiadigital.com?subject=Contratação: Criação de Anúncio Airbnb/Booking - R$ 497" class="listing-creation-btn email">✉️ Contratar por E-mail</a>
         </div>
         
@@ -1071,7 +1071,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <a href="#nl-search" class="btn btn-outline">✨ Busca inteligente</a>
   </div>
   <p style="margin-top:1.5rem;font-size:0.95rem;opacity:0.85;">
-    📞 WhatsApp: <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">(11) 95434-6288</a>
+    E-mail: <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" rel="noopener" style="color:#fff;text-decoration:underline;">comercial@praia.digital</a>
     &nbsp;|&nbsp; ✉️ <a href="mailto:comercial@praiadigital.com" style="color:#fff;text-decoration:underline;">comercial@praiadigital.com</a>
   </p>
 </section>
@@ -1783,7 +1783,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <div class="realtor-card"><div class="realtor-icon">🤝</div><h3></h3><p>Atendimento humanizado com equipe local. Fale direto com um especialista que conhece o mercado.</p></div>
   </div>
   <div class="realtors-cta">
-    <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="btn-realtor-whatsapp">💬 Quero anunciar</a>
+    <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" rel="noopener" class="btn-realtor-whatsapp">💬 Quero anunciar</a>
     <a href="mailto:comercial@praiadigital.com?subject=Proposta de parceria - Corretor" class="btn-realtor-email">✉️ Proposta por e-mail</a>
     <a href="cases.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.4);color:#fff;margin-left:0.5rem;">📊 Cases</a>
     <a href="blog/assinatura-profissional-corretores-litoral-2026.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.4);color:#fff;margin-left:0.5rem;">🧾 Planos</a>
@@ -2191,7 +2191,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <h2></h2>
     <p>Quer anunciar seu imóvel ou precisa de ajuda? Entre em contato.</p>
     <div class="contact-cta-buttons">
-      <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="contact-cta-btn btn-whatsapp">💬 WhatsApp — Resposta rápida</a>
+      <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" rel="noopener" class="contact-cta-btn btn-whatsapp">💬 E-mail — Resposta rápida</a>
       <a href="mailto:comercial@praiadigital.com" class="contact-cta-btn btn-email">✉️ Enviar e-mail</a>
     </div>
     <form class="contact-form" id="contactForm" onsubmit="handleContact(event)" aria-label="Contact form">
@@ -2644,7 +2644,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <section class="servicos-section" style="background: linear-gradient(135deg, #0ea5e9, #0a3a6b); padding: 2.5rem 1rem; text-align: center; color: #fff; border-radius: 12px; margin: 1.5rem auto; max-width: 900px;">
       <h2 style="color: #fff; margin-bottom: 0.5rem;"></h2>
       <p style="margin-bottom: 1rem; font-size: 1.05rem; color: #e2e8f0;">Fale agora com um consultor especializado e receba uma avaliação sem compromisso.</p>
-      <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" style="display: inline-block; background: linear-gradient(90deg, #25D366, #128C7E); color: #fff; font-weight: 800; padding: 0.9rem 1.6rem; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.25);">Falar no WhatsApp agora</a>
+      <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" rel="noopener" style="display: inline-block; background: linear-gradient(90deg, #25D366, #128C7E); color: #fff; font-weight: 800; padding: 0.9rem 1.6rem; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.25);">Falar por e-mail agora</a>
       <p style="margin-top: 0.75rem; font-size: 0.9rem; color: #cbd5e1;">Atendimento rápido e humanizado • (11) 95434-6288</p>
     </section>
 <meta name="pd-shared-footer">
@@ -3783,7 +3783,7 @@ function showCreditDetail(type) {
             <li>Correção pelo IPCA ou TR (pode variar)</li>
           </ul>
         </div>
-        <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="credit-detail-cta" target="_blank" rel="noopener">💬 Simular com FGTS</a>
+        <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="credit-detail-cta" rel="noopener">💬 Simular com FGTS</a>
       `
     },
     mcmv: {
@@ -3824,7 +3824,7 @@ function showCreditDetail(type) {
             <li>Também é possível participar pelo portal Caixa Minha Casa</li>
           </ul>
         </div>
-        <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="credit-detail-cta" target="_blank" rel="noopener">💬 Tirar dúvidas sobre MCMV</a>
+        <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="credit-detail-cta" rel="noopener">💬 Tirar dúvidas sobre MCMV</a>
       `
     },
     sbpe: {
@@ -3872,7 +3872,7 @@ function showCreditDetail(type) {
             <li>Parcela não pode ultrapassar 30% da renda mensal bruta</li>
           </ul>
         </div>
-        <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="credit-detail-cta" target="_blank" rel="noopener">💬 Simular financiamento SBPE</a>
+        <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="credit-detail-cta" rel="noopener">💬 Simular financiamento SBPE</a>
       `
     },
     par: {
@@ -3907,7 +3907,7 @@ function showCreditDetail(type) {
             <li>Já tem financiamento e quer transferir para taxa menor</li>
           </ul>
         </div>
-        <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" class="credit-detail-cta" target="_blank" rel="noopener">💬 Falar sobre ofertas especiais</a>
+        <a href="mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital" class="credit-detail-cta" rel="noopener">💬 Falar sobre ofertas especiais</a>
       `
     }
   };
@@ -3973,7 +3973,7 @@ function submitRentalForm() {
   const success = document.getElementById('rentalFormSuccess');
   if (success) success.style.display = 'block';
 
-  window.open(`https://wa.me/5511954346288?text=${msg}`, '_blank');
+  window.open(`mailto:comercial@praia.digital?subject=Atendimento%20%E2%80%94%20Praia%20Digital&body=${msg}`, '_blank');
 }
 
 function calcRentalRevenue() {
