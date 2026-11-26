@@ -23,7 +23,7 @@ for (const value of ['', 'avaliacao', 'comprar', 'investir', 'outro']) {
   assert.equal(elements['pagamento-opcional'].hidden, true);
   assert.equal(elements.pagto.disabled, true);
 }
-for (const value of ['airbnb-booking', 'pricelabs', 'anunciar', 'temporada', 'planos', 'automacao']) {
+for (const value of ['airbnb-booking', 'implantacao-airbnb', 'pricelabs', 'anunciar', 'temporada', 'planos', 'automacao']) {
   const { elements } = setup('?produto=' + value);
   assert.equal(elements.produto.value, value);
   assert.equal(elements['pagamento-opcional'].hidden, false);
