@@ -80,3 +80,17 @@ assert(!matchesSaoc({cidade:'Bertioga',finalidade:'Venda',tipo:'casa'}));
 assert(!matchesSaoc({cidade:'Bertioga',finalidade:'Aluguel'}));
 assert(!matchesSaoc({cidade:'Bertioga',finalidade:'Venda',preco_max:'234999'}));
 console.log('Withdrawn Bertioga rental absent; fourteen real sale offers and the empty rental filter checked.');
+
+const accessibleGuides=data.cities.filter(c=>c.accessibleBeachService);
+assert.deepEqual(accessibleGuides.map(c=>c.slug),['caraguatatuba']);
+const caragua=read('cidades/caraguatatuba.html');
+const visitorSection=caragua.match(/<section id="visita">([\s\S]*?)<\/section>/)?.[1];
+assert(visitorSection,'public visitor section is required');
+assert.equal((caragua.match(/id="praia-acessivel"/g)||[]).length,1);
+assert(visitorSection.includes('<article class="card" id="praia-acessivel" aria-labelledby="praia-acessivel-titulo">'));
+assert(visitorSection.includes('<h3 id="praia-acessivel-titulo">Praia Acessível na Praia do Centro</h3>'));
+for(const term of ['Praça da Cultura','banho de mar assistido e gratuito','pessoas com deficiência ou pessoas idosas','sábados e domingos, das 9h às 16h','cadastro simples no local','agendar com antecedência na SEPEDI','condições no dia'])
+ assert(visitorSection.includes(term),'missing Praia Acessível visitor detail: '+term);
+assert(visitorSection.includes('href="https://www.caraguatatuba.sp.gov.br/pmc/2025/06/praia-acessivel/"'));
+assert(!/29\/11|Navegar Experience/i.test(visitorSection));
+console.log('Praia Acessível municipal guidance present in Caraguatatuba visitor section only.');

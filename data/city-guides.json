@@ -23,6 +23,16 @@
       "check": "Teste os deslocamentos entre a moradia, o trabalho e os serviços que utiliza. Uma visita à orla não substitui a avaliação da rua e do prédio.",
       "source": "https://www.caraguatatuba.sp.gov.br/pmc/2022/02/prefeitura-de-caraguatatuba-revitaliza-arcos-da-martim-de-sa/",
       "sourceLabel": "Prefeitura de Caraguatatuba — referências urbanas de Martim de Sá",
+      "accessibleBeachService": {
+        "title": "Praia Acessível na Praia do Centro",
+        "summary": "Ao lado da Praça da Cultura, na Avenida Arthur Costa Filho, a Prefeitura oferece banho de mar assistido e gratuito para pessoas com deficiência ou pessoas idosas, com cadeira de rodas aquática adaptada e equipe de apoio.",
+        "access": "Para atendimento individual aos sábados e domingos, das 9h às 16h, faça um cadastro simples no local. Grupos devem agendar com antecedência na SEPEDI; a sexta-feira é reservada prioritariamente a grupos institucionais agendados.",
+        "planning": "Antes de sair, confirme os horários e as condições de atendimento com a Prefeitura. O acesso ao mar depende das condições no dia e da orientação da equipe.",
+        "source": [
+          "https://www.caraguatatuba.sp.gov.br/pmc/2025/06/praia-acessivel/",
+          "Carta de Serviços da Prefeitura de Caraguatatuba"
+        ]
+      },
       "trafficNotice": {
         "id": "tamoios-2026-11-29",
         "title": "Tamoios: operação prevista para 29/11/2026",
