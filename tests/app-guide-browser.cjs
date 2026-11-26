@@ -91,9 +91,11 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         assert.equal((focused.match(/Marcado nesta consulta/g) || []).length, anchor === 'comprar' ? 2 : 0);
         assert.equal((focused.match(/A conferir \(não marcado\)/g) || []).length, anchor === 'comprar' ? 1 : 3);
         assert.equal(await page.locator('input:checked').count(), 2);
+        assert.match(await page.locator('#guide-selection-status').innerText(), new RegExp(`${anchor === 'comprar' ? 2 : 0} de 3 conferências marcadas para salvar`));
         assert.ok((await page.locator('#guide-download-status').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
       }
       // Print each selected route without losing marks in the other routes.
+      await page.clock.setFixedTime(new Date('2026-11-26T02:30:00Z'));
       for (const anchor of ['comprar','locar','anunciar','vender']) {
         await page.getByLabel('Roteiros para salvar').selectOption(anchor);
         await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
@@ -103,6 +105,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         assert.equal(await page.locator('main > .guide-example:visible').count(), 0);
         assert.equal(await page.locator('input:checked').count(), 2);
         assert.ok((await page.locator('.guide-print-scope').innerText()).includes(await page.locator(`#${anchor} h2`).innerText()));
+        assert.match(await page.locator('.guide-print-scope').innerText(), /25\/11\/2026, 23:30 \(America\/Sao_Paulo\)/);
         if (width === 1280) {
           const pdf = await page.pdf({path:path.join(output, `roteiro-${anchor}.pdf`), format:'A4'});
           assert.equal(pdf.subarray(0,4).toString(), '%PDF');
@@ -115,12 +118,14 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         assert.equal(await page.locator('.guide-print-scope').isVisible(), false);
       }
       await page.getByLabel('Roteiros para salvar').selectOption('');
+      assert.match(await page.locator('#guide-selection-status').innerText(), /2 de 12 conferências marcadas para salvar/);
 
       await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
       assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
       await page.locator('#guide-reset').click();
       assert.equal(await page.locator('input:checked').count(), 0);
       assert.match(await page.locator('#guide-progress').innerText(), /^0 de 12/);
+      assert.match(await page.locator('#guide-selection-status').innerText(), /0 de 12 conferências marcadas para salvar/);
       const resetDownloadPromise = page.waitForEvent('download');
       await page.locator('#guide-download').click();
       const resetDownload = await resetDownloadPromise;
