@@ -3,6 +3,8 @@
   const boxes = [...document.querySelectorAll('.guide-route input[type="checkbox"]')];
   const progress = document.getElementById('guide-progress');
   const reset = document.getElementById('guide-reset');
+  const routeChoice = document.getElementById('guide-export-route');
+  const selectionStatus = document.getElementById('guide-selection-status');
   const undo = document.createElement('button');
   undo.type = 'button';
   undo.textContent = 'Desfazer limpeza';
@@ -15,6 +17,10 @@
     undo.hidden = cleared.length === 0;
     reset.disabled = count === 0;
     progress.textContent = `${count} de ${boxes.length} conferências marcadas`;
+    const route = document.getElementById(routeChoice.value);
+    const selectedBoxes = route ? [...route.querySelectorAll('input[type="checkbox"]')] : boxes;
+    const selectedCount = selectedBoxes.filter(box => box.checked).length;
+    selectionStatus.textContent = `${route ? route.querySelector('h2').textContent.trim() : 'Todos os quatro roteiros'}: ${selectedCount} de ${selectedBoxes.length} conferências marcadas para salvar. As demais marcações permanecem na página.`;
   };
   boxes.forEach(box => box.addEventListener('change', update));
   // Back/forward navigation can restore checkbox state without firing change.
@@ -30,7 +36,7 @@
     update();
     reset.focus();
   });
-  const routeChoice = document.getElementById('guide-export-route');
+  routeChoice.addEventListener('change', update);
   const printScope = document.createElement('p');
   printScope.className = 'guide-print-scope';
   document.querySelector('.guide-hero .guide-width').appendChild(printScope);
@@ -40,7 +46,10 @@
     const chosen = routes.find(route => route.id === selected);
     document.body.dataset.guidePrintScope = chosen ? 'single' : 'all';
     routes.forEach(route => route.toggleAttribute('data-guide-print-selected', route === chosen));
-    printScope.textContent = chosen ? `Roteiro: ${chosen.querySelector('h2').textContent.trim()}` : 'Todos os quatro roteiros';
+    const timestamp = new Intl.DateTimeFormat('pt-BR', {
+      dateStyle: 'short', timeStyle: 'short', timeZone: 'America/Sao_Paulo'
+    }).format(new Date());
+    printScope.textContent = `${chosen ? `Roteiro: ${chosen.querySelector('h2').textContent.trim()}` : 'Todos os quatro roteiros'} — Preparado em ${timestamp} (America/Sao_Paulo).`;
   };
   const finishPrint = () => {
     delete document.body.dataset.guidePrintScope;
