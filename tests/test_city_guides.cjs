@@ -94,3 +94,16 @@ for(const term of ['Praça da Cultura','banho de mar assistido e gratuito','pess
 assert(visitorSection.includes('href="https://www.caraguatatuba.sp.gov.br/pmc/2025/06/praia-acessivel/"'));
 assert(!/29\/11|Navegar Experience/i.test(visitorSection));
 console.log('Praia Acessível municipal guidance present in Caraguatatuba visitor section only.');
+
+const historicTourCities=data.cities.filter(c=>c.historicCenterTour);
+assert.deepEqual(historicTourCities.map(c=>c.slug),['sao-sebastiao']);
+const saoSebastiao=read('cidades/sao-sebastiao.html');
+const saoSebastiaoVisit=saoSebastiao.match(/<section id="visita">([\s\S]*?)<\/section>/)?.[1];
+assert(saoSebastiaoVisit,'public visitor section is required');
+assert.equal((saoSebastiao.match(/id="visitas-centro-historico"/g)||[]).length,1);
+for(const term of ['Visitas monitoradas ao Centro Histórico','gratuitas para grupos de turistas','Igreja Matriz','Casa da Cultura','Confirme os horários e a disponibilidade'])
+ assert(saoSebastiaoVisit.includes(term),'missing Centro Histórico visitor detail: '+term);
+assert(saoSebastiaoVisit.includes('href="tel:+551238924604">(12) 3892-4604'));
+assert(saoSebastiaoVisit.includes('href="https://www.turismosaosebastiao.com.br/noticias/prefeitura-de-sao-sebastiao-oferece-visitas-monitoradas-pelo-centro-historico-para-estudantes-e-turistas"'));
+assert(!/escolar|Seduc|(?:\d{1,2}h\b)/i.test(saoSebastiaoVisit.slice(saoSebastiaoVisit.indexOf('id="visitas-centro-historico"'))));
+console.log('São Sebastião Centro Histórico visitor guidance present once with the official source and phone.');

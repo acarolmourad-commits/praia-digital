@@ -68,6 +68,20 @@
     {
       "slug": "sao-sebastiao",
       "name": "São Sebastião",
+      "historicCenterTour": {
+        "title": "Visitas monitoradas ao Centro Histórico",
+        "summary": "A Secretaria de Turismo oferece visitas monitoradas gratuitas para grupos de turistas no Centro Histórico. O roteiro passa por referências como a Igreja Matriz e a Casa da Cultura.",
+        "help": "Para saber como participar, procure a Casa da Cultura, no Centro Histórico, ou ligue para",
+        "phone": [
+          "tel:+551238924604",
+          "(12) 3892-4604"
+        ],
+        "planning": "Confirme os horários e a disponibilidade antes de planejar a visita.",
+        "source": [
+          "https://www.turismosaosebastiao.com.br/noticias/prefeitura-de-sao-sebastiao-oferece-visitas-monitoradas-pelo-centro-historico-para-estudantes-e-turistas",
+          "Orientações do Turismo de São Sebastião"
+        ]
+      },
       "region": "Litoral Norte",
       "intro": "Escolher a praia e o trecho da costa é parte da escolha do imóvel. Maresias é uma das referências locais, mas não representa toda a cidade.",
       "local": "Maresias fica entre Boiçucanga e Paúba, no eixo da Rio–Santos. O portal de turismo destaca a ligação da praia com o surf e os serviços de hospedagem e alimentação.",

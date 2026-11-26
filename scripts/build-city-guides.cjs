@@ -42,6 +42,10 @@ function accessibleBeachService(service) {
   if (!service) return '';
   return `<article class="card" id="praia-acessivel" aria-labelledby="praia-acessivel-titulo"><h3 id="praia-acessivel-titulo">${esc(service.title)}</h3><p>${esc(service.summary)}</p><p>${esc(service.access)}</p><p>${esc(service.planning)} ${link(...service.source)}.</p></article>`;
 }
+function historicCenterTour(tour) {
+  if (!tour) return '';
+  return `<article class="card" id="visitas-centro-historico" aria-labelledby="visitas-centro-historico-titulo"><h3 id="visitas-centro-historico-titulo">${esc(tour.title)}</h3><p>${esc(tour.summary)}</p><p>${esc(tour.help)} ${link(...tour.phone)}. ${esc(tour.planning)} ${link(...tour.source)}.</p></article>`;
+}
 function city(c) {
   const url = `/cidades/${c.slug}.html`, search = '/imoveis.html?cidade='+encodeURIComponent(c.name);
   const cta = link(search, `Ver imóveis em ${c.name}`, 'btn');
@@ -61,7 +65,7 @@ function city(c) {
   body += section('bairros',`Bairros e regiões de ${c.name}`,neighborhoods(c),true);
   const related={bertioga:['/blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html','Riviera de São Lourenço: infraestrutura e critérios de análise'],'praia-grande':['/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html','Praia Grande: cenários de locação para apartamentos de 1 e 2 dormitórios']}[c.slug];
   if(related) body += section('leitura','Aprofunde a pesquisa',`<article class="card"><h3>${link(...related)}</h3><p>Conteúdo já publicado e revisado na Praia Digital. Consulte suas fontes e limitações antes de aplicar qualquer cenário ao seu imóvel.</p></article>`);
-  body += section('visita',c.slug==='cubatao'?'Paisagem e patrimônio de Cubatão':`Praias e referências locais de ${c.name}`,p(c.visit)+accessibleBeachService(c.accessibleBeachService));
+  body += section('visita',c.slug==='cubatao'?'Paisagem e patrimônio de Cubatão':`Praias e referências locais de ${c.name}`,p(c.visit)+accessibleBeachService(c.accessibleBeachService)+historicCenterTour(c.historicCenterTour));
   body += section('analise','Acesso, rotina e pontos de atenção',`<div class="proscons"><div class="pc pos"><h3>Na visita</h3><p>${esc(c.check)}</p></div><div class="pc att"><h3>Na comparação</h3><p>Peça documentos, despesas e informações de conservação do imóvel. Confirme serviços e deslocamentos no endereço, em vez de presumir condições iguais em toda a cidade.</p></div></div>${trafficNotice(c.trafficNotice)}`,true);
   body += section('ferramentas',`Ferramentas para pesquisar em ${c.name}`,`<div class="grid g3">${[
     ['/apps/custo-de-compra/','Custos da compra','Organize despesas e confira as alíquotas aplicáveis ao seu caso.'],
