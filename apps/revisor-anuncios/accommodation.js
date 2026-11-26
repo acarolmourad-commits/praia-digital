@@ -5,8 +5,10 @@
   const download = $('accommodation-download');
   const pending = $('accommodation-pending');
   let revision = 0;
+  let firstPendingField;
   function invalidate() {
     revision++;
+    firstPendingField = null;
     if (download?.hasAttribute('href')) {
       URL.revokeObjectURL(download.href);
       download.removeAttribute('href');
@@ -58,13 +60,22 @@
     }
     if (pending) {
       const items = [];
-      if (!$('accommodation-source-one').value.trim()) items.push('Identificar a primeira fonte.');
-      if (!$('accommodation-source-two').value.trim()) items.push('Identificar a segunda fonte.');
-      if (!$('accommodation-date-one').value) items.push('Registrar quando a primeira fonte foi consultada.');
-      if (!$('accommodation-date-two').value) items.push('Registrar quando a segunda fonte foi consultada.');
+      function addPending(field, message) {
+        if (!firstPendingField) firstPendingField = field;
+        items.push(message);
+      }
+      for (const [id, message] of [
+        ['accommodation-source-one', 'Identificar a primeira fonte.'],
+        ['accommodation-source-two', 'Identificar a segunda fonte.'],
+        ['accommodation-date-one', 'Registrar quando a primeira fonte foi consultada.'],
+        ['accommodation-date-two', 'Registrar quando a segunda fonte foi consultada.']
+      ]) {
+        const field = $(id);
+        if (!field.value.trim()) addPending(field, message);
+      }
       for (const input of checks.filter(input => !input.checked)) {
         const label = input.closest('label').querySelector('span').textContent.trim();
-        items.push('Confirmar se ' + label.charAt(0).toLowerCase() + label.slice(1));
+        addPending(input, 'Confirmar se ' + label.charAt(0).toLowerCase() + label.slice(1));
       }
       if (items.length) {
         const category = $('accommodation-name').value.trim();
@@ -94,6 +105,9 @@
       if (request === revision) button.disabled = false;
     }
   }
+  $('accommodation-first-pending')?.addEventListener('click', () => {
+    firstPendingField?.focus();
+  });
   $('accommodation-copy').addEventListener('click', event => {
     copyText($('accommodation-text'), event.currentTarget, 'Resumo da acomodação copiado.');
   });
