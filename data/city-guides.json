@@ -22,7 +22,38 @@
       "visit": "Inclua a orla da Martim de Sá e o Camaroeiro na visita de reconhecimento. Observe a distância entre esses pontos e o imóvel, sem usar a localização turística como promessa de retorno.",
       "check": "Teste os deslocamentos entre a moradia, o trabalho e os serviços que utiliza. Uma visita à orla não substitui a avaliação da rua e do prédio.",
       "source": "https://www.caraguatatuba.sp.gov.br/pmc/2022/02/prefeitura-de-caraguatatuba-revitaliza-arcos-da-martim-de-sa/",
-      "sourceLabel": "Prefeitura de Caraguatatuba — referências urbanas de Martim de Sá"
+      "sourceLabel": "Prefeitura de Caraguatatuba — referências urbanas de Martim de Sá",
+      "trafficNotice": {
+        "id": "tamoios-2026-11-29",
+        "title": "Tamoios: operação prevista para 29/11/2026",
+        "date": "2026-11-29",
+        "dateLabel": "domingo, 29 de novembro de 2026",
+        "entries": [
+          [
+            "Às 3h:",
+            " fechamento dos túneis da Serra Nova e dos Contornos Norte e Sul. Até 9h30, a Serra Antiga fica com uma faixa em cada sentido."
+          ],
+          [
+            "A partir das 9h30:",
+            " reabertura anunciada da Serra Nova apenas no sentido São José dos Campos, com acesso pela região do Hospital Regional, em Caraguatatuba."
+          ],
+          [
+            "Até as 12h:",
+            " ambos os Contornos permanecem fechados. A alternativa indicada para São Sebastião e para a Serrinha de Massaguaçu, no sentido Ubatuba, é a Rio-Santos (SP-055)."
+          ]
+        ],
+        "dateLimit": "29/11/2026",
+        "sources": [
+          [
+            "https://www23.concessionariatamoios.com.br/noticias/show/2228/contornos-e-serra-nova-serao-bloqueados-para-nova-prova-de-ciclismo-domingo-(29-nov)",
+            "Concessionária Tamoios"
+          ],
+          [
+            "https://www.caraguatatuba.sp.gov.br/pmc/2026/11/contornos-norte-e-sul-e-serra-nova-da-tamoios-terao-bloqueios-no-domingo-para-prova-de-ciclismo/",
+            "Prefeitura de Caraguatatuba"
+          ]
+        ]
+      }
     },
     {
       "slug": "sao-sebastiao",
