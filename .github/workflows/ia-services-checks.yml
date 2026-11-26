@@ -17,7 +17,7 @@ jobs:
       - run: python3 tests/test_ia_services.py
       - run: python3 -m unittest discover -s tests -p 'test_navigation.py'
       - run: node --check js/solicitar-servico.js
-      - run: node --test workers/livebridge-leads/worker.test.mjs
+      - run: node --test workers/livebridge-leads/*.test.mjs
       - name: Browser checks
         run: |
           npm install --prefix "$RUNNER_TEMP/ia-qa" playwright@1.63.0 --no-audit --no-fund

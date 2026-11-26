@@ -1,5 +1,6 @@
 import {crm} from './crm.mjs';
 import {sendPending} from './notifications.mjs';
+import {enqueueReceipts, sendReceipts} from './receipts.mjs';
 const ORIGINS = new Set(['https://praia.digital', 'https://www.praia.digital']);
 const SOURCES = ['Ainda não faço lives', 'Celular / câmera', 'OBS ou outro estúdio', 'TikTok Shop', 'Shopee', 'Outra plataforma'];
 const CHANNELS = ['Instagram', 'Facebook', 'TikTok'];
@@ -69,6 +70,12 @@ export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get('Origin');
     const path = new URL(request.url).pathname;
+    // Isolated QA is private and cannot be used as a public mail relay or CRM.
+    if (env.QA_MODE === 'true') {
+      if (!env.QA_ACCESS_TOKEN || request.headers.get('Authorization') !== `Bearer ${env.QA_ACCESS_TOKEN}`)
+        return response(404, {ok:false}, origin);
+      if (!['/health','/leads'].includes(path)) return response(404, {ok:false}, origin);
+    }
     if (path === '/' && new URL(request.url).hostname === 'crm.praia.digital') return Response.redirect(new URL('/crm/',request.url),302);
     if (path === '/crm' || path.startsWith('/crm/')) return crm(request,env);
     if (path === '/health' && request.method === 'GET') return response(200, { ok: true, service: 'livebridge-leads' }, origin);
@@ -82,24 +89,39 @@ export default {
       if (!limit.success) return response(429, { ok: false, error: 'Muitas tentativas. Aguarde um minuto e tente novamente.' }, origin, { 'Retry-After': '60' });
       const body = await readBody(request);
       const lead = validate(body);
+      if (env.QA_MODE === 'true' && (body.submission_id !== env.QA_SUBMISSION_ID || lead.email !== 'comercial@praia.digital'))
+        throw new InputError('Use somente o cadastro de teste autorizado.');
       const service = body.service || 'LiveBridge AI';
       if (!SERVICES.includes(service)) throw new InputError('Selecione um serviço válido.');
       if (body.service) lead.service = service;
       const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(lead))))].map(b => b.toString(16).padStart(2, '0')).join('');
       const id = body.submission_id.toLowerCase();
-      const saved = await env.LEADS_DB.prepare(`INSERT INTO leads
+      const savedBatch = await env.LEADS_DB.batch([env.LEADS_DB.prepare(`INSERT INTO leads
         (id, created_at, name, email, phone, business, live_source, marketplaces, destinations, goal, page_url, utm, consent_version, consent_at, payload_hash, status)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'novo')
-        ON CONFLICT(id) DO NOTHING`).bind(id, new Date().toISOString(), lead.name, lead.email, lead.phone, lead.business, lead.source, JSON.stringify(lead.marketplaces), JSON.stringify(lead.destinations), lead.goal, PAGE, JSON.stringify(lead.utm), CONSENT_VERSION, new Date().toISOString(), hash).run();
+        ON CONFLICT(id) DO NOTHING`).bind(id, new Date().toISOString(), lead.name, lead.email, lead.phone, lead.business, lead.source, JSON.stringify(lead.marketplaces), JSON.stringify(lead.destinations), lead.goal, PAGE, JSON.stringify(lead.utm), CONSENT_VERSION, new Date().toISOString(), hash),
+        env.LEADS_DB.prepare(`INSERT INTO service_requests (lead_id, service)
+          SELECT id, ? FROM leads WHERE id=? AND payload_hash=?
+          ON CONFLICT(lead_id) DO NOTHING`).bind(service, id, hash)
+      ]);
+      const saved = savedBatch[0];
+      if (savedBatch.some(item => item.success !== true)) throw new Error('storage_failed');
       if (saved.success !== true) throw new Error('storage_failed');
       const receipt = await env.LEADS_DB.prepare('SELECT payload_hash FROM leads WHERE id = ?').bind(id).first();
       if (!receipt) throw new Error('receipt_missing');
       if (receipt.payload_hash !== hash) return response(409, { ok: false, error: 'O formulário mudou. Revise as informações e envie novamente.' }, origin);
-      await env.LEADS_DB.prepare('INSERT INTO service_requests (lead_id, service) VALUES (?, ?) ON CONFLICT(lead_id) DO NOTHING').bind(id, service).run();
+      // The lead, consent, service and trigger-created outbox commit together.
+      // Email setup or delivery failure must never turn an accepted lead into a 503.
+      let emailStatus = 'pending_setup';
+      try { emailStatus = await enqueueReceipts(env, id); } catch {
+        console.error(JSON.stringify({event:'receipt_queue_failed'}));
+      }
       const notify = sendPending(env, id).catch(() => console.error(JSON.stringify({event:'team_notification_queue_failed'})));
-      if (ctx?.waitUntil) ctx.waitUntil(notify); else await notify;
+      const receiptNotify = sendReceipts(env, id).catch(() => console.error(JSON.stringify({event:'receipt_queue_failed'})));
+      if (ctx?.waitUntil) { ctx.waitUntil(notify); ctx.waitUntil(receiptNotify); }
+      else await Promise.all([notify, receiptNotify]);
       // No personal data in logs, URLs, responses or a public read endpoint.
-      return response(saved.meta?.changes ? 201 : 200, { ok: true, id, email_status: 'pending_setup', team_notification: env.EMAIL_NOTIFICATIONS_ENABLED === 'true' ? 'queued' : 'pending_setup' }, origin);
+      return response(saved.meta?.changes ? 201 : 200, { ok: true, id, email_status: emailStatus, team_notification: env.EMAIL_NOTIFICATIONS_ENABLED === 'true' ? 'queued' : 'pending_setup' }, origin);
     } catch (error) {
       if (error instanceof InputError) return response(error.status, { ok: false, error: error.message }, origin);
       console.error(JSON.stringify({ event: 'lead_capture_failed' }));
@@ -107,6 +129,7 @@ export default {
     }
   },
   async scheduled(event, env, ctx) {
+    ctx.waitUntil(enqueueReceipts(env).then(() => sendReceipts(env)).catch(() => console.error(JSON.stringify({event:'receipt_queue_failed'}))));
     ctx.waitUntil(sendPending(env).catch(() => console.error(JSON.stringify({event:'team_notification_queue_failed'}))));
   }
 };

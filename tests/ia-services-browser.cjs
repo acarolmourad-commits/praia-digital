@@ -37,7 +37,13 @@ async function noOverflow(page){assert.ok(await page.evaluate(()=>document.docum
   }}}}}
  };
 
- const browser=await chromium.launch({headless:true});
+  env.LEADS_DB.batch = async statements => {
+    db.exec('BEGIN');
+    try { const results=[]; for (const stmt of statements) results.push(await stmt.run()); db.exec('COMMIT'); return results; }
+    catch (error) { db.exec('ROLLBACK'); throw error; }
+  };
+
+ const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? {executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH} : {})});
  let mode='normal',requests=[],external=[];
  async function route(r){
   const req=r.request(),u=new URL(req.url());
@@ -48,6 +54,7 @@ async function noOverflow(page){assert.ok(await page.evaluate(()=>document.docum
    if(mode==='unconfirmed')return r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true,id:'wrong-id'})});
    const response=await worker.fetch(new Request(req.url(),{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify(body)}),env);
    if(mode==='lost-receipt')return r.abort('failed');
+   if(mode.startsWith('email:')){const body=await response.json();body.email_status=mode.slice(6);return r.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:JSON.stringify(body)})}
    return r.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:await response.text()});
   }
   if(req.method()!=='GET'||u.origin!==origin){external.push(req.url());return r.abort()}
@@ -92,6 +99,14 @@ async function noOverflow(page){assert.ok(await page.evaluate(()=>document.docum
   mode='lost-receipt';await page.locator('#lead-submit').click();await page.locator('#lead-submit').waitFor({state:'visible'});await page.waitForFunction(()=>document.getElementById('lead-submit').disabled===false);const id=requests.at(-1).submission_id;const messageCount=messages.length;
   mode='normal';await page.locator('#lead-submit').click();await page.locator('#brief-result').waitFor({state:'visible'});assert.equal(requests.at(-1).submission_id,id);assert.equal(db.prepare('SELECT count(*) n FROM leads WHERE id=?').get(id).n,1);assert.equal(messages.length,messageCount);
   await page.context().grantPermissions(['clipboard-read','clipboard-write']);await page.locator('#copy-receipt').click();await page.waitForFunction(()=>document.getElementById('copy-status').textContent.includes('copiado'));assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),id);
+  for(const [state,expected] of [['queued','fila de envio'],['sending','processada'],['accepted','não comprova a entrega'],['review_required','não é necessário reenviar'],['quota_hold','aguardando disponibilidade'],['__proto__','Não foi possível confirmar a situação']]) {
+    mode='email:'+state;await page.goto(formURL('Projeto personalizado'));await fillContact(page);
+    await page.locator('#lead-submit').click();await page.locator('#brief-result').waitFor({state:'visible'});
+    assert.ok((await page.locator('#lead-email-status').innerText()).includes(expected));
+    assert.ok((await page.locator('#lead-receipt').innerText()).length===36);
+  }
+  mode='normal';
+  console.log('PASS separate registration/email statuses and untrusted status fallback.');
   await context.close();
   const nojs=await browser.newContext({javaScriptEnabled:false});await nojs.route('**/*',route);const plain=await nojs.newPage();await plain.goto(formURL('Projeto personalizado'));assert.equal(await plain.locator('#lead-submit').isDisabled(),true);assert.equal(await plain.locator('noscript').isVisible(),true);await nojs.close();
   assert.deepEqual(external,[]);console.log('PASS LiveBridge and stock compatibility; validation, rejected receipt, retry without duplicate, copy and no-JS fallback. No live writes or emails.');

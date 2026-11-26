@@ -25,6 +25,11 @@
       "type": "plain_text",
       "name": "EMAIL_NOTIFICATIONS_ENABLED",
       "text": "true"
+    },
+    {
+      "type": "plain_text",
+      "name": "RECEIPTS_MODE",
+      "text": "off"
     }
   ],
   "observability": {
