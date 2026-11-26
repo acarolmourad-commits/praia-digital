@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';import {createHmac,webcrypto} from 'node:crypto';import {Composio} from './composio.mjs';import {verifiedEvent} from './signature.mjs';
+let n=0;async function test(name,fn){await fn();n++;console.log('PASS',name);}
+const env={STRIPE_CONNECTION_ID:'ca_test',DRIVE_CONNECTION_ID:'ca_drive',GMAIL_CONNECTION_ID:'ca_gmail',COMPOSIO_API_KEY:'unit-test-placeholder',COMPOSIO_USER_ID:'test',SENDER_EMAIL:'owner@example.invalid'};
+await test('fixed API schema and connection pin',async()=>{let captured;const c=new Composio(env,async(u,o)=>{captured={u,p:JSON.parse(o.body)};return Response.json({status:200,data:{id:'cs_test'}});});await c.session('cs_test');assert.equal(captured.p.connected_account_id,'ca_test');assert.equal(captured.p.endpoint,'https://api.stripe.com/v1/checkout/sessions/cs_test');assert.ok(captured.p.parameters.some(x=>x.name==='Stripe-Version'));});
+await test('arbitrary URL and refund write rejected',async()=>{const c=new Composio(env);await assert.rejects(()=>c.call('stripe','GET','https://evil.example/'),/DISALLOWED/);await assert.rejects(()=>c.call('stripe','POST','/v1/refunds'),/DISALLOWED/);});
+await test('missing connection never chooses default',async()=>{const c=new Composio({});await assert.rejects(()=>c.session('cs_test'),/NOT_CONFIGURED/);});
+await test('provider failure inside HTTP200 rejected',async()=>{const c=new Composio(env,async()=>Response.json({status:403,data:{}}));await assert.rejects(()=>c.session('cs_test'),/PROVIDER_HTTP/);});
+await test('domain shared Drive blocks download precondition',async()=>{const c=new Composio(env,async()=>Response.json({status:200,data:{owners:[{emailAddress:env.SENDER_EMAIL}],permissions:[{type:'domain',role:'reader'}]}}));await assert.rejects(()=>c.privateMetadata('example'),/NOT_OWNER_ONLY/);});
+await test('Gmail ambiguous call never retried by transport',async()=>{let calls=0;const c=new Composio(env,async()=>{calls++;throw Error('timeout');});await assert.rejects(()=>c.sendDraft('draft_test'),/timeout/);assert.equal(calls,1);});
+const secret='whsec_unit_test';const text=JSON.stringify({id:'evt_test'});const signature='t=1000,v1='+createHmac('sha256',secret).update('1000.'+text).digest('hex');
+await test('exact signed bytes accepted',async()=>{const r=new Request('https://example.invalid',{method:'POST',headers:{'stripe-signature':signature},body:text});assert.equal((await verifiedEvent(r,secret,1000,webcrypto)).id,'evt_test');});
+await test('modified signed bytes rejected',async()=>{const r=new Request('https://example.invalid',{method:'POST',headers:{'stripe-signature':signature},body:text+' '});await assert.rejects(()=>verifiedEvent(r,secret,1000,webcrypto),/SIGNATURE/);});
+console.log(n+' adapter tests passed');

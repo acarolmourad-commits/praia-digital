@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+import {buildMessage,verifyRaw,GmailDelivery,decodeRaw,encodeRaw} from './gmail.mjs';
+const zip=new Uint8Array([80,75,3,4,1,2,3,4]);
+const order={id:'cs_test_fake',email:'buyer@example.invalid',sku:'example-kit',edition:'2026-private-kit-v2',title:'Kit de exercício fictício',sha256:createHash('sha256').update(zip).digest('hex'),bytes:zip.length};
+const row={payload:JSON.stringify(order),draft_id:'draft_fake'};
+const options={senderEmail:'owner@example.invalid',messageDomain:'example.invalid',now:0};
+const built=await buildMessage(row,zip,options);
+let n=0;async function test(name,fn){await fn();n++;console.log('PASS',name);}
+function edit(change){return encodeRaw(change(decodeRaw(built.raw)));}
+await test('owned MIME round-trip validates recipient intent and ZIP',async()=>assert.equal(await verifyRaw(row,built.raw,options),true));
+await test('canonical aliases supported',async()=>{const alternate={payload:{...order,sha256:undefined,bytes:undefined,package_sha256:order.sha256,package_bytes:order.bytes}};assert.equal(await verifyRaw(alternate,built.raw,options),true);});
+await test('conflicting package aliases rejected',async()=>await assert.rejects(()=>buildMessage({payload:{...order,package_sha256:'a'.repeat(64)}},zip,options),/CONFLICTING/));
+await test('stable ID independent of creation time',async()=>{const later=await buildMessage(row,zip,{...options,now:1000000});assert.equal(later.messageId,built.messageId);assert.ok(!built.messageId.includes(order.email));});
+await test('different session produces different ID',async()=>assert.notEqual((await buildMessage({payload:{...order,id:'cs_test_other'}},zip,options)).messageId,built.messageId));
+await test('wrong zip rejected before create',async()=>await assert.rejects(()=>buildMessage(row,new Uint8Array([1,2]),options),/ATTACHMENT_HASH/));
+await test('To injection rejected',async()=>await assert.rejects(()=>buildMessage({payload:{...order,email:'buyer@example.invalid\r\nBcc:evil@example.invalid'}},zip,options),/INVALID_EMAIL/));
+await test('added CC rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace('To:','Cc: other@example.invalid\r\nTo:')),options),/EXTRA_RECIPIENT/));
+await test('added BCC rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace('To:','Bcc: other@example.invalid\r\nTo:')),options),/EXTRA_RECIPIENT/));
+await test('duplicate To rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace('To:','To: other@example.invalid\r\nTo:')),options),/DUPLICATE/));
+await test('changed recipient rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace(order.email,'other@example.invalid')),options),/INTENT/));
+await test('changed sender rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace(options.senderEmail,'other@example.invalid')),options),/INTENT/));
+await test('changed attachment rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>s.replace('UEsDBAECAwQ=','UEsDBAECAwU=')),options),/HASH/));
+await test('transport headers do not invalidate exact owned content',async()=>assert.equal(await verifyRaw(row,edit(s=>'Received: by test.example.invalid; test\r\n'+s),options),true));
+await test('malformed extra MIME part rejected',async()=>{const s=decodeRaw(built.raw),boundary=/boundary="([^"]+)"/.exec(s)[1];await assert.rejects(()=>verifyRaw(row,encodeRaw(s.replace('--'+boundary+'--','--'+boundary+'\r\nContent-Type: text/plain\r\n\r\nextra\r\n--'+boundary+'--')),options),/PART_COUNT/);});
+let calls=[];
+const fake={draft:async raw=>{calls.push(['draft',raw]);return{id:'draft_fake'};},sendDraft:async id=>{calls.push(['send',id]);return{id:'sent_fake'};},call:async(k,m,path)=>{
+ calls.push(['call',path]);
+ if(path.includes('/drafts/'))return{data:{id:'draft_fake',message:{raw:built.raw}}};
+ if(path.includes('/messages?'))return{data:{messages:[{id:'sent_fake'}]}};
+ return{data:{id:'sent_fake',labelIds:['SENT'],raw:built.raw}};
+}};
+const adapter=new GmailDelivery(fake,options);
+await test('create draft returns only verified draft ID',async()=>assert.deepEqual(await adapter.createExactDraft(row,{zipBytes:zip}),{id:'draft_fake'}));
+await test('draft raw verification uses expected draft ID',async()=>assert.equal(await adapter.verifyExactDraft(row),true));
+await test('Sent search fetches and validates actual raw message',async()=>{assert.deepEqual(await adapter.findVerifiedSent(row),[{id:'sent_fake'}]);const path=calls.find(x=>x[0]==='call'&&x[1].includes('/messages?'))[1];assert.ok(path.includes('labelIds=SENT'));assert.ok(path.includes('rfc822msgid'));});
+await test('empty Sent list is not proof of send',async()=>{const a=new GmailDelivery({...fake,call:async()=>({data:{}})},options);assert.deepEqual(await a.findVerifiedSent(row),[]);});
+await test('pagination must not truncate Sent verification',async()=>{const a=new GmailDelivery({...fake,call:async()=>({data:{messages:[],nextPageToken:'next'}})},options);await assert.rejects(()=>a.findVerifiedSent(row),/INCOMPLETE/);});
+await test('matching search but different content throws not false success',async()=>{const a=new GmailDelivery({...fake,call:async(k,m,path)=>path.includes('/messages?')?{data:{messages:[{id:'sent_fake'}]}}:{data:{id:'sent_fake',labelIds:['SENT'],raw:edit(s=>s.replace(order.email,'other@example.invalid'))}}},options);await assert.rejects(()=>a.findVerifiedSent(row),/INTENT/);});
+await test('non-Sent message rejected even if search returns it',async()=>{const a=new GmailDelivery({...fake,call:async(k,m,path)=>path.includes('/messages?')?{data:{messages:[{id:'sent_fake'}]}}:{data:{id:'sent_fake',labelIds:['DRAFT'],raw:built.raw}}},options);await assert.rejects(()=>a.findVerifiedSent(row),/SENT_MESSAGE/);});
+await test('send timeout propagated and never retried',async()=>{let tries=0;const a=new GmailDelivery({...fake,sendDraft:async()=>{tries++;throw Error('timeout');}},options);await assert.rejects(()=>a.sendExistingDraft('draft_fake'),/timeout/);assert.equal(tries,1);});
+await test('reply-to redirection rejected',async()=>await assert.rejects(()=>verifyRaw(row,edit(s=>'Reply-To: other@example.invalid\r\n'+s),options),/EXTRA_RECIPIENT/));
+await test('duplicate exact Sent messages returned for ledger hold',async()=>{const a=new GmailDelivery({...fake,call:async(k,m,path)=>path.includes('/messages?')?{data:{messages:[{id:'sent_one'},{id:'sent_two'}]}}:{data:{id:path.includes('sent_one')?'sent_one':'sent_two',labelIds:['SENT'],raw:built.raw}}},options);assert.equal((await a.findVerifiedSent(row)).length,2);});
+console.log(n+' Gmail adapter tests passed');
