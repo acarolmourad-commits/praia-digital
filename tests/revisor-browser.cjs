@@ -52,6 +52,9 @@ for(const width of [390,1280]){
  }
  assert.equal(await readDownload(), summary);
  const pendingBox = page.locator('#accommodation-pending');
+ const firstPending = page.getByRole('button',{name:'Ir à primeira pendência'});
+ await firstPending.press('Enter');
+ assert.equal(await page.evaluate(()=>document.activeElement.id),'accommodation-source-two');
  const pendingText = await pendingBox.inputValue();
  assert.match(pendingText, /Identificar a segunda fonte/);
  assert.match(pendingText, /Registrar quando a segunda fonte/);
@@ -99,9 +102,18 @@ for(const width of [390,1280]){
  await page.locator('#accommodation-source-one').fill('Site');
  await page.locator('#accommodation-source-two').fill('Canal de reservas');
  await page.locator('#accommodation-date-one').fill('2026-11-24');
+ await page.locator('#accommodation-generate').click();
+ await firstPending.press('Enter');
+ assert.equal(await page.evaluate(()=>document.activeElement.id),'accommodation-date-two');
  await page.locator('#accommodation-date-two').fill('2026-11-25');
  await page.locator('#accommodation-generate').click();
  assert.equal(await page.locator('#accommodation-pending-panel').isVisible(), false);
+ assert.equal(await firstPending.isVisible(), false);
+ await access.uncheck();
+ await page.locator('#accommodation-generate').click();
+ await firstPending.press('Enter');
+ assert.equal(await access.evaluate(el=>el===document.activeElement),true);
+ assert.equal(await access.isChecked(),false);
  await accommodation.getByRole('button',{name:'Limpar ficha da acomodação'}).click();
  assert.equal(await page.locator('#accommodation-download').getAttribute('href'), null);
  assert.doesNotMatch(await page.locator('#accommodation-status').textContent(),/copiado/);
