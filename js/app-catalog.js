@@ -165,6 +165,8 @@
   const objectives = document.getElementById('objetivos-apps');
   let handledHash = window.location.hash;
   if (objectives) objectives.addEventListener('click', event => {
+    // Preserve the current tab when opening a group in another tab/window.
+    if (event.defaultPrevented || event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
     const link = event.target.closest('a[href^="#grupo-"]');
     if (link) {
       reset();
@@ -191,4 +193,10 @@
   if (incomingQuery) query.value = incomingQuery.slice(0, query.maxLength);
   form.hidden = false;
   filter();
+  // A direct group fragment must still locate its heading after applying filters.
+  const initialGroup = groups.find(group => '#' + group.id === window.location.hash);
+  if (initialGroup?.section.hidden) {
+    reset();
+    initialGroup.section.querySelector('h2')?.scrollIntoView();
+  }
 })();

@@ -21,7 +21,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=be4366bb22df\">",
+      "<script defer src=\"/js/app-catalog.js?v=88d9a713aef9\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [

@@ -219,8 +219,29 @@ try{for(const width of [360,768,1280]){
   await page.emulateMedia({media:'screen'});
   await page.locator('#app-goal').selectOption('grupo-planejar');
   assert.equal(await visibleCards.count(),6);
-  await page.locator('#objetivos-apps a[href="#grupo-marketplaces"]').click();
+  const marketplaceNav = page.locator('#objetivos-apps a[href="#grupo-marketplaces"]');
+  await page.locator('#app-query').fill('entrada');
+  const originalUrl = page.url();
+  for (const modifier of ['ctrlKey','metaKey','shiftKey','altKey']) {
+    await marketplaceNav.evaluate((link,key)=>{
+      document.addEventListener('click',event=>event.preventDefault(),{once:true});
+      link.dispatchEvent(new MouseEvent('click',{[key]:true,bubbles:true,cancelable:true}));
+    }, modifier);
+    assert.equal(page.url(), originalUrl, modifier);
+    assert.equal(await goal.inputValue(), 'grupo-planejar', modifier);
+    assert.equal(await page.locator('#app-query').inputValue(), 'entrada', modifier);
+  }
+  await marketplaceNav.click();
   assert.equal(await visibleCards.count(),16,'Objective links restore hidden targets');
+  await page.goto(origin + '/apps/?origem=guia&objetivo=planejar&busca=entrada#grupo-marketplaces');
+  await page.locator('#grupo-marketplaces').waitFor({state:'visible'});
+  assert.equal(await visibleCards.count(),16,'Direct conflicting group fragments still reveal the heading');
+  assert.equal(new URL(page.url()).search,'?origem=guia');
+  assert.equal(new URL(page.url()).hash,'#grupo-marketplaces');
+  await page.goto(origin + '/apps/?origem=guia&objetivo=planejar&busca=entrada#grupo-planejar');
+  assert.equal(await visibleCards.count(),1,'Matching direct group fragments keep the intentional filter');
+  assert.equal(await goal.inputValue(),'grupo-planejar');
+  assert.equal(await page.locator('#app-query').inputValue(),'entrada');
   await page.locator('#app-query').fill('<img src=x onerror=alert(1)>');
   assert.equal(await visibleCards.count(),0);
   assert.equal(await page.locator('#app-results img').count(),0,'Search stays text only');
