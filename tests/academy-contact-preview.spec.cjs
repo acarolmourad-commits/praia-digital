@@ -90,10 +90,10 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
   assert.deepEqual(await page.locator('[data-kit]:visible h2,[data-bundle]:visible h3').allTextContents(),accented);
   // A multi-word query matches only when all its words occur in the offer.
   await page.locator('#kit-search').fill('trilha   avaliação');
-  assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.equal(await page.locator('[data-bundle]:visible').count(),1);
+  assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.equal(await page.locator('[data-bundle]:visible').count(),2);
   assert.ok(await page.locator('#empty').isHidden());
   // Operational copy-status text must not become searchable editorial content.
-  await page.locator('[data-bundle]:visible .copy-order').click();
+  await page.locator('[data-bundle]:visible .copy-order').first().click();
   await page.locator('#kit-search').fill('Pedido ainda não foi enviado');
   assert.equal(await page.locator('[data-kit]:visible,[data-bundle]:visible').count(),0);
   await page.locator('#catalog-clear').click();
