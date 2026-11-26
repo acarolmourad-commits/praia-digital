@@ -4,6 +4,8 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const expected=['ubatuba','caraguatatuba','sao-sebastiao','ilhabela','bertioga','guaruja','santos','sao-vicente','cubatao','praia-grande','mongagua','itanhaem','peruibe','iguape','ilha-comprida','cananeia'];
 assert.deepEqual(data.cities.map(c=>c.slug).sort(),expected.sort());
 assert.deepEqual(Object.values(Object.groupBy(data.cities,c=>c.region)).map(v=>v.length),[4,9,3]);
+const accessCities = ['guaruja', 'praia-grande', 'santos'];
+assert.deepEqual([...data.accessNotice.citySlugs].sort(), accessCities);
 const titles=new Set(),descriptions=new Set();let checkedLinks=0;
 const catalog=JSON.parse(read('js/main.js').match(/const properties = (\[[\s\S]*?\]);/)[1]);
 for(const c of data.cities){
@@ -11,6 +13,17 @@ for(const c of data.cities){
  assert.equal((html.match(/<h1\b/g)||[]).length,1,rel);
  assert.equal((html.match(/<main\b/g)||[]).length,1,rel);
  assert(!html.includes('\ufffd'),rel+' invalid encoding');
+ const visit = html.match(/<section id="visita">([\s\S]*?)<\/section>/)[1];
+ if (accessCities.includes(c.slug)) {
+   assert(visit.includes("Se o trajeto passar pelo Sistema Anchieta–Imigrantes"));
+   assert(visit.includes("anunciou para 1º de dezembro de 2026"));
+   assert(visit.includes("cobrança nos dois sentidos"));
+   assert(visit.includes("Para veículos sujeitos à tarifa, uma tag ativa permite a cobrança automática"));
+   assert(visit.includes("pela placa e pague em até 30 dias após cada passagem"));
+   assert(visit.includes(`href="${data.accessNotice.source}"`));
+ } else {
+   assert(!html.includes("pedágio eletrônico Siga Fácil"), rel);
+ }
  const title=html.match(/<title>(.*?)<\/title>/)[1],desc=html.match(/name="description" content="([^"]+)"/)[1];
  assert(!titles.has(title));assert(!descriptions.has(desc));titles.add(title);descriptions.add(desc);
  assert(html.includes(`rel="canonical" href="https://praia.digital/${rel}"`));
