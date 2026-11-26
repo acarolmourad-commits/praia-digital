@@ -56,6 +56,30 @@ class CompleteAppNetworkTests(unittest.TestCase):
         self.assertEqual(Links(home_discovery).links.count('/ia/marketplaces/piloto/'), 1)
         self.assertEqual(Links(home_discovery).links.count('/cases.html#' + case_id), 1)
 
+    def test_public_access_editorial_case_distinguishes_source_from_inspection(self):
+        case_id = 'praia-acessivel-fonte-e-pendencias'
+        case_path = 'cases/rede-aplicativos-praia-digital.html'
+        study = (ROOT / case_path).read_text(encoding='utf-8')
+        self.assertEqual(Links(study).ids.count(case_id), 1)
+        self.assertEqual(Links(study).links.count('#' + case_id), 1)
+        passage = study.split(f'<section aria-labelledby="{case_id}">', 1)[1].split('</section>', 1)[0]
+        self.assertEqual(Links(passage).links, [
+            'https://www.caraguatatuba.sp.gov.br/pmc/2025/06/praia-acessivel/',
+            '/cidades/caraguatatuba.html#praia-acessivel',
+            '/apps/relatorio-imovel/#evidencias-da-visita',
+            '/apps/guia-de-uso.html#vistoria-para-relatorio',
+        ])
+        for mark in ('Trabalho editorial da Praia Digital', '2026-11-26',
+                     'não confirma as condições do mar no dia', 'Não vistoriamos o local',
+                     'Fontes e datas de confirmação', 'Pontos a confirmar'):
+            self.assertIn(mark, passage)
+        for route, anchor in (('cidades/caraguatatuba.html', 'praia-acessivel'),
+                              ('apps/relatorio-imovel/index.html', 'evidencias-da-visita')):
+            self.assertEqual(Links((ROOT / route).read_text(encoding='utf-8')).ids.count(anchor), 1)
+        guide = (ROOT / 'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        instructions = guide.split('id="vistoria-para-relatorio"', 1)[1].split('</aside>', 1)[0]
+        self.assertEqual(Links(instructions).links.count('/' + case_path + '#' + case_id), 1)
+
     def test_each_app_reaches_every_other_app_without_javascript(self):
         for slug in self.slugs:
             page = Links((ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8'))
