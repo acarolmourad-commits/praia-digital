@@ -46,6 +46,7 @@ a{color:#0EA5E9}
       <option value="avaliacao">Avaliação do meu imóvel (gratuita)</option>
       <option value="anunciar">Anunciar meu imóvel</option>
       <option value="airbnb-booking">Criação ou edição de anúncio Airbnb / Booking</option>
+      <option value="implantacao-airbnb">Implantação do Airbnb com treinamento para autogestão</option>
       <option value="pricelabs">Gestão de precificação com PriceLabs — consultar escopo</option>
       <option value="temporada">Gestão de aluguel de temporada</option>
       <option value="planos">Plano profissional (corretor/imobiliária)</option>
@@ -74,10 +75,11 @@ a{color:#0EA5E9}
 const produtoSelect=document.getElementById('produto');
 const contextos={
   'airbnb-booking':'Criação ou edição por anúncio e plataforma. Consulte entregas e condições antes de contratar.',
+  'implantacao-airbnb':'Para receber uma proposta em pagamento único, conte a cidade e UF, quantas unidades quer preparar, quando recebe as chaves, se já tem fotos e quem fará a recepção e a limpeza.',
   'pricelabs':'Vamos entender seu imóvel e a operação para definir o escopo de apoio à precificação com PriceLabs. Esta consulta não confirma preço, contratação ou resultado.',
   'avaliacao':'Solicitação de avaliação gratuita. Não é necessário escolher pagamento.'
 };
-const pagos=['anunciar','airbnb-booking','pricelabs','temporada','planos','automacao'];
+const pagos=['anunciar','airbnb-booking','implantacao-airbnb','pricelabs','temporada','planos','automacao'];
 function atualizarProduto(){
   const opcional=document.getElementById('pagamento-opcional');
   opcional.hidden=!pagos.includes(produtoSelect.value);
