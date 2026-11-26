@@ -36,6 +36,15 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         return Boolean(target && header && target.getBoundingClientRect().top >= header.getBoundingClientRect().bottom
           && target.getBoundingClientRect().top < innerHeight);
       });
+      await page.goto('https://praia.digital/#rede-apps');
+      await page.getByRole('link', {name: 'Separe as comodidades de cada categoria das áreas comuns'}).press('Enter');
+      assert.equal(new URL(page.url()).hash, '#comodidades-por-categoria');
+      await page.waitForFunction(() => {
+        const target = document.getElementById('comodidades-por-categoria');
+        const header = document.querySelector('.pd-site-header');
+        return Boolean(target && header && target.getBoundingClientRect().top >= header.getBoundingClientRect().bottom
+          && target.getBoundingClientRect().top < innerHeight);
+      });
       await page.goto('https://praia.digital/apps/guia-de-uso.html');
       assert.equal(await page.locator('.guide-route').count(), 4);
       assert.equal(await page.locator('input[type=checkbox]').count(), 12);
