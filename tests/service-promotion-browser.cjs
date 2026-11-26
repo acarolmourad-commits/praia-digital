@@ -4,6 +4,27 @@ const {screenshot}=require('./screenshot.cjs');
 (async()=>{const browser=await chromium.launch({headless:true});const root=path.resolve(__dirname,'..');const output=path.join(process.env.RUNNER_TEMP||'/tmp','service-promotion-qa');fs.mkdirSync(output,{recursive:true});
 try{for(const width of [390,1280]){const context=await browser.newContext({viewport:{width,height:900}});
 await context.route('**/*',async route=>{const url=new URL(route.request().url());if(route.request().method()!=='GET')throw Error('Unexpected mutation');if(url.hostname!=='praia.digital')return route.abort();const file=path.resolve(root,'.'+url.pathname);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile())return route.abort();return route.fulfill({body:fs.readFileSync(file),contentType:file.endsWith('.js')?'application/javascript':file.endsWith('.css')?'text/css':'text/html'});});
+const journey=await context.newPage();
+await journey.goto('https://praia.digital/index.html');
+await journey.getByRole('link',{name:'Ver escopo e entregas →',exact:true}).press('Enter');
+await journey.waitForURL('**/servicos/anuncios-airbnb-booking.html');
+assert.match(await journey.locator('#investimento').innerText(), /R\$ 499,00/);
+assert.match(await journey.locator('#investimento').innerText(), /R\$ 998,00/);
+const free=journey.getByRole('link',{name:'Simular a diária gratuitamente →',exact:true});
+await free.press('Enter');
+await journey.waitForURL('**/ferramentas/calculadora-diaria-ideal-airbnb-2026.html');
+assert.match(await journey.locator('h1').innerText(),/Calculadora de Diária Ideal/);
+await journey.goBack();
+await journey.getByRole('link',{name:'Veja como funciona a cobrança da precificação contínua',exact:true}).press('Enter');
+await journey.waitForURL('**/anfitrioes/central-priceplabs.html#cobranca-precificacao');
+const charging=journey.locator('#cobranca-precificacao');
+assert.match(await charging.innerText(), /5% somente sobre o valor das diárias efetivamente alugadas/);
+assert.match(await charging.innerText(), /Taxa de limpeza e cobranças fixas ficam fora da base/);
+assert.match(await charging.innerText(), /Esse mecanismo do Airbnb não se aplica ao Booking/);
+assert.equal(await charging.getByRole('link',{name:'Veja as regras de cotas do Airbnb'}).getAttribute('href'),'https://www.airbnb.com.br/help/article/3389');
+await charging.getByRole('link',{name:'serviço avulso de criação ou edição de anúncios'}).press('Enter');
+await journey.waitForURL('**/servicos/anuncios-airbnb-booking.html#investimento');
+await journey.close();
 for(const [name,url] of [['listing','/servicos/anuncios-airbnb-booking.html'],['editing','/servicos/edicao-anuncios-airbnb-booking.html'],['pricelabs','/anfitrioes/central-priceplabs.html']]){const page=await context.newPage();await page.goto('https://praia.digital'+url);await page.waitForLoadState('domcontentloaded');if(name==='listing')assert.match(await page.locator('section.cta').evaluate(el=>getComputedStyle(el).backgroundImage),/linear-gradient/);if(name==='pricelabs')assert.equal(await page.locator('.hero .btn-secondary').first().evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(21, 56, 91)');const overflow=await page.evaluate(()=>[...document.querySelectorAll('body *')].filter(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right>innerWidth+1}).map(el=>({tag:el.tagName,cls:el.className,width:el.getBoundingClientRect().width,text:el.textContent.slice(0,80)})).slice(0,12));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),name+' overflow '+JSON.stringify(overflow));{const map=JSON.parse(fs.readFileSync(path.join(root,'assets/data/service-payment-links.json'),'utf8'));const allowed=Object.values(map.services).map(v=>v.url);for(const href of await page.locator('a[href*="buy.stripe.com"]').evaluateAll(els=>els.map(e=>e.href)))assert.ok(allowed.includes(href));}assert.ok((await page.locator('body').innerText()).includes('499'));await screenshot(page,{path:path.join(output,`${name}-${width}.png`),fullPage:true});if(name==='editing'){await page.locator('a[href="/education/cursos/airbnb-do-zero/amostra.html"]').click();await page.waitForURL('**/amostra.html');assert.match(await page.locator('body').innerText(),/amostra/i);await page.goBack();assert.ok(page.url().endsWith(url));}await page.close();}
 for(const [name,url] of [['legacy-academy','/academy/cursos/airbnb-do-zero/index.html?status=success'],['services-index','/servicos.html'],['pricing-diagnostics','/anfitrioes/diagnosticos-anfitrioes.html']]){
  const page=await context.newPage();await page.goto('https://praia.digital'+url);await page.waitForLoadState('domcontentloaded');
