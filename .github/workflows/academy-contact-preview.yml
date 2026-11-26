@@ -8,6 +8,7 @@ on:
       - 'education/kits-2026.html'
       - 'education/assets/academy.css'
       - 'education/assets/js/order-email.js'
+      - 'education/assets/js/catalog-filter.js'
       - 'tests/academy-contact-preview.spec.cjs'
       - '.github/workflows/academy-contact-preview.yml'
   push:
@@ -18,6 +19,7 @@ on:
       - 'education/kits-2026.html'
       - 'education/assets/academy.css'
       - 'education/assets/js/order-email.js'
+      - 'education/assets/js/catalog-filter.js'
       - 'tests/academy-contact-preview.spec.cjs'
       - '.github/workflows/academy-contact-preview.yml'
 permissions:

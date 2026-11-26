@@ -73,11 +73,30 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
    references.add(sku);
   }
   await page.locator('#kit-search').fill('PriceLabs');assert.equal(await page.locator('[data-kit]:visible').count(),1);
-  assert.equal(await page.locator('#kit-count').innerText(),'1 kit encontrado');
+  assert.equal(await page.locator('#kit-count').innerText(),'Resultados: 1 kit e 0 trilhas.');
   await page.locator('[data-kit]:visible').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(out,'selected-'+width+'.png'),fullPage:false});
-  await page.locator('#kit-search').fill('zzznothing');assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.ok(await page.locator('#empty').isVisible());
-  await page.locator('#kit-search').fill('');assert.equal(await page.locator('[data-kit]:visible').count(),62);
+  await page.locator('#kit-search').fill('zzznothing');assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.equal(await page.locator('[data-bundle]:visible').count(),0);assert.ok(await page.locator('#empty').isVisible());
+  await page.locator('#catalog-clear').focus();await page.keyboard.press('Enter');
+  assert.equal(await page.locator('[data-kit]:visible').count(),62);assert.equal(await page.locator('[data-bundle]:visible').count(),8);
+  assert.equal(await page.locator(':focus').getAttribute('id'),'kit-search');
+  assert.equal(await page.locator('#kit-count').innerText(),'Resultados: 62 kits e 8 trilhas.');
+  assert.ok(await page.locator('#catalog-clear').isHidden());
+  await page.locator('#kit-search').fill('marketing');
+  assert.ok(await page.locator('[data-kit]:visible').count()>0);assert.ok(await page.locator('[data-bundle]:visible').count()>0);
+  await page.locator('#kit-search').fill('documentação');
+  const accented=await page.locator('[data-kit]:visible h2,[data-bundle]:visible h3').allTextContents();assert.ok(accented.length>0);
+  await page.locator('#kit-search').fill('  DOCUMENTACAO  ');
+  assert.deepEqual(await page.locator('[data-kit]:visible h2,[data-bundle]:visible h3').allTextContents(),accented);
+  // A multi-word query matches only when all its words occur in the offer.
+  await page.locator('#kit-search').fill('trilha   avaliação');
+  assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.equal(await page.locator('[data-bundle]:visible').count(),2);
+  assert.ok(await page.locator('#empty').isHidden());
+  // Operational copy-status text must not become searchable editorial content.
+  await page.locator('[data-bundle]:visible .copy-order').first().click();
+  await page.locator('#kit-search').fill('Pedido ainda não foi enviado');
+  assert.equal(await page.locator('[data-kit]:visible,[data-bundle]:visible').count(),0);
+  await page.locator('#catalog-clear').click();
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   const bundle=page.locator('[data-bundle]').first();
   assert.ok((await bundle.innerText()).includes('mesmos kits vendidos individualmente'));
