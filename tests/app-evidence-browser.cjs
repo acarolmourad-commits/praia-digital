@@ -21,7 +21,7 @@ async function verifyValueEstimator(page, width) {
   const onError = error => errors.push(error.message);
   page.on('pageerror', onError);
   await page.goto('https://praia.digital/apps/?objetivo=comparar#grupo-comparar');
-  await page.locator('#grupo-comparar a.card[href="/apps/valor-imovel/"]').press('Enter');
+  await page.locator('[aria-labelledby=grupo-comparar] a.card[href="/apps/valor-imovel/"]').press('Enter');
   await page.waitForURL('**/apps/valor-imovel/');
   const area = page.getByRole('spinbutton', { name: 'Área construída (m²)' });
   const city = page.getByLabel('Cidade', { exact: true });
