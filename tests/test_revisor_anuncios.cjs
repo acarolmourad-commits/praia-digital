@@ -68,12 +68,13 @@ test('nomes de versões são dados de texto, limitados sem interpretação de HT
 
 // Minimal DOM fixture built from the shipped markup, used to exercise the real
 // bootstrap without relying on a browser or duplicating the comparison logic.
-function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '', confirm = () => false, navigator = {} } = {}) {
+function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '', confirm = () => false, navigator = {}, downloadFailure = false } = {}) {
   const html = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/index.html'), 'utf8');
   const code = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/app.js'), 'utf8');
   const ids = new Map();
   const nodes = [];
   const unlocks = [];
+  const downloads = [], revoked = [], timers = [];
   class Element {
     constructor(tag, attrs = {}) {
       this.tagName = tag;
@@ -96,12 +97,14 @@ function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '
         unlocks.push({ id: this.id, submitHandlers: (ids.get('review-form')?.listeners.submit || []).length,
           exampleReady: !!ids.get('example')?.listeners.click?.length,
           copyReady: !!ids.get('copy')?.listeners.click?.length,
-          printReady: !!ids.get('print')?.listeners.click?.length });
+          printReady: !!ids.get('print')?.listeners.click?.length, downloadReady: !!ids.get('download-report')?.listeners.click?.length });
       }
       this._disabled = value;
     }
     get disabled() { return this._disabled; }
     append(...items) { for (const item of items) { item.parent = this; this.children.push(item); } }
+    before(node) { node.parent = this.parent; this.parent.children.splice(this.parent.children.indexOf(this), 0, node); }
+    click() { if (this.tagName === 'a') downloads.push({ name: this.download, href: this.href }); }
     replaceChildren(...items) { this.children = []; this.append(...items); }
     addEventListener(type, handler) {
       if (this.id === failListenerAt) throw new Error('simulated late initialization failure');
@@ -145,8 +148,9 @@ function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '
     for (const handler of ids.get('review-form').listeners.submit || []) handler(event);
     return event;
   }
-  return { ids, nodes, unlocks, disabled, submit,
-    init() { vm.runInNewContext(code, { document, window: { confirm, PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator }); } };
+  const blobs = [];
+  return { ids, nodes, unlocks, disabled, submit, downloads, blobs, revoked, timers,
+    init() { vm.runInNewContext(code, { document, window: { confirm, PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator, Blob, URL: {createObjectURL(blob) { if (downloadFailure) throw new Error('Download unavailable'); blobs.push(blob); return 'blob:test-' + blobs.length; }, revokeObjectURL(url) { revoked.push(url); }}, setTimeout(fn, ms) { timers.push({fn, ms}); } }); } };
 }
 
 test('sem JavaScript, campos e ações permanecem inertes e não há campo nomeado para GET', () => {
@@ -163,10 +167,10 @@ test('sem JavaScript, campos e ações permanecem inertes e não há campo nomea
 test('inicialização completa habilita controles só depois dos handlers e cancela submissão nativa', () => {
   const page = loadPage();
   page.init();
-  assert.equal(page.unlocks.length, 4);
+  assert.equal(page.unlocks.length, 5);
   for (const state of page.unlocks) {
     assert.ok(state.submitHandlers >= 1, state.id);
-    assert.ok(state.exampleReady && state.copyReady && state.printReady, state.id);
+    assert.ok(state.exampleReady && state.copyReady && state.printReady && state.downloadReady, state.id);
   }
   assert.equal(page.disabled(page.ids.get('property')), false);
   assert.equal(page.disabled(page.ids.get('ref-price')), false);
@@ -256,4 +260,40 @@ test('resposta atrasada de cópia não confirma relatório alterado nem reabre t
   assert.equal(status.textContent,'');assert.equal(page.ids.get('report-text').value,'');
   page.ids.get('example').listeners.click[0]();page.submit();const success=copy.listeners.click[0]();resolve();await success;
   assert.equal(status.textContent,'Relatório copiado.');assert.equal(copy.disabled,false);
+});
+
+
+test('TXT guarda a comparação vigente e não exporta relatório invalidado ou limpo', async () => {
+  const page = loadPage({confirm:()=>true}); page.init();
+  const download = () => page.ids.get('download-report').listeners.click[0]();
+  download(); assert.equal(page.downloads.length, 0);
+  page.ids.get('example').listeners.click[0](); page.submit(); download();
+  assert.equal(page.downloads[0].name, 'revisor-anuncios-exemplo-ficticio.txt');
+  assert.equal(page.blobs[0].type, 'text/plain;charset=utf-8');
+  assert.equal(await page.blobs[0].text(), page.ids.get('report-text').value + '\n');
+  assert.match(await page.blobs[0].text(), /DEMONSTRAÇÃO COM DADOS FICTÍCIOS/);
+  assert.match(await page.blobs[0].text(), /Coincidência não comprova/);
+  assert.equal(page.revoked.length, 0);
+  page.timers[0].fn(); assert.equal(page.revoked[0], page.downloads[0].href);
+  const target = page.ids.get('v1-price'); target.value = '590.000,00';
+  page.ids.get('review-form').listeners.input[0]({target}); download();
+  assert.equal(page.downloads.length, 1);
+  page.submit(); download();
+  assert.match(await page.blobs[1].text(), /590.000,00/);
+  assert.doesNotMatch(await page.blobs[1].text(), /595.000,00/);
+  page.ids.get('clear').listeners.click[0](); download();
+  assert.equal(page.downloads.length, 2);
+  page.ids.get('confirmed').checked = true; page.submit(); download();
+  assert.equal(page.downloads[2].name, 'revisor-anuncios.txt');
+  assert.doesNotMatch(await page.blobs[2].text(), /FICTÍCIOS|590.000,00/);
+  assert.match(await page.blobs[2].text(), /Não informado/);
+});
+
+test('falha de download orienta alternativas sem anunciar arquivo baixado', () => {
+  const page = loadPage({downloadFailure:true}); page.init();
+  page.ids.get('example').listeners.click[0](); page.submit();
+  page.ids.get('download-report').listeners.click[0]();
+  assert.equal(page.downloads.length, 0);
+  assert.match(page.ids.get('copy-status').textContent, /Não foi possível iniciar o download/);
+  assert.match(page.ids.get('copy-status').textContent, /Copiar relatório/);
 });

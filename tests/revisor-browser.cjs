@@ -19,6 +19,16 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#different-count').textContent(),'3');
  assert.equal(await page.locator('#pending-count').textContent(),'2');
  assert.equal(await page.locator('#report').isVisible(),true);
+ const reportDownload = page.getByRole('button', {name:'Baixar relatório em TXT', exact:true});
+ async function readReportDownload() {
+  const pending = page.waitForEvent('download');
+  await reportDownload.focus(); await reportDownload.press('Enter');
+  const download = await pending;
+  assert.equal(download.suggestedFilename(), 'revisor-anuncios-exemplo-ficticio.txt');
+  return fs.readFileSync(await download.path(), 'utf8').replace(/^\uFEFF/, '');
+ }
+ assert.equal(await readReportDownload(), (await page.locator('#report-text').inputValue()) + '\n');
+ assert.match(await page.locator('#copy-status').textContent(), /Download solicitado/);
  const accommodation = page.getByRole('region', {name:'Conferência por acomodação'});
  const checks = accommodation.getByRole('checkbox');
  assert.equal(await checks.count(),5);
@@ -124,6 +134,7 @@ for(const width of [390,1280]){
  assert.equal(await page.locator('#ref-price').inputValue(),'600.000,00');assert.equal(await page.locator('#report').isVisible(),true);
  page.once('dialog',d=>d.dismiss());await page.locator('#example').click();assert.equal(await page.locator('#report').isVisible(),true);
  await page.locator('#ref-price').fill('700.000,00');assert.equal(await page.locator('#report').isVisible(),false);
+ assert.equal(await reportDownload.isVisible(),false);
  assert.equal(await page.locator('#confirmed').isChecked(),false);
  assert.match(await page.locator('#live-status').textContent(),/confirme a ficha novamente/);
  await page.getByRole('button',{name:'Comparar as versões'}).click();
@@ -133,6 +144,7 @@ for(const width of [390,1280]){
  await page.locator('#confirmed').press('Space');
  await page.getByRole('button',{name:'Comparar as versões'}).click();
  assert.equal(await page.locator('#report').isVisible(),true);
+ assert.match(await readReportDownload(), /700.000,00/);
  await page.locator('#v1-name').fill('Portal A revisado');
  assert.equal(await page.locator('#confirmed').isChecked(),true);
  await page.locator('#ref-mode').selectOption('mensal');
