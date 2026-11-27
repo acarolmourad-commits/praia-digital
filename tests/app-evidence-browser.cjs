@@ -16,6 +16,57 @@ const deadline = setTimeout(() => {
   process.exit(1);
 }, 300000);
 
+async function verifyValueEstimator(page, width) {
+  const errors = [];
+  const onError = error => errors.push(error.message);
+  page.on('pageerror', onError);
+  await page.goto('https://praia.digital/apps/?objetivo=comparar#grupo-comparar');
+  await page.locator('#grupo-comparar a.card[href="/apps/valor-imovel/"]').press('Enter');
+  await page.waitForURL('**/apps/valor-imovel/');
+  const area = page.getByRole('spinbutton', { name: 'Área construída (m²)' });
+  const city = page.getByLabel('Cidade', { exact: true });
+  const result = page.locator('#res');
+  const error = page.locator('#area-erro[role="alert"]');
+  assert.match(await city.locator('option:checked').innerText(), /Bertioga/);
+  assert.equal(await city.getByRole('option', { name: /Caraguatatuba/ }).count(), 0);
+  assert.match(await page.locator('#tabela-nota').innerText(), /Caraguatatuba aparece só nesta tabela/);
+  assert.equal(await result.isVisible(), false);
+
+  await area.press('Enter');
+  assert.equal(await page.locator('#valor').innerText(), 'R$ 352.800');
+  assert.equal(await page.locator('#range').innerText(), 'Faixa ilustrativa (±7%): R$ 328.104 — R$ 377.496');
+  assert.equal(await result.evaluate(node => node === document.activeElement), true);
+
+  for (const [input, message] of [
+    ['', /maior que zero/], ['0', /maior que zero/], ['-1', /maior que zero/],
+    ['1e308', /não permite calcular/], ['3e12', /não permite calcular/], ['1e-20', /não permite calcular/],
+  ]) {
+    // Recalculate successfully before each error to expose stale output.
+    await area.fill('105');
+    await area.press('Enter');
+    assert.ok(await result.isVisible());
+    await area.fill(input);
+    await area.press('Enter');
+    assert.equal(await result.isVisible(), false);
+    assert.equal(await result.locator('#valor, #range, #bd').allTextContents().then(text => text.join('')), '');
+    assert.match(await error.innerText(), message);
+    assert.equal(await area.getAttribute('aria-invalid'), 'true');
+    assert.equal(await area.evaluate(node => node === document.activeElement), true);
+  }
+
+  await area.fill('105.5');
+  await page.getByRole('checkbox', { name: /Frente para o mar/ }).check();
+  await page.getByRole('checkbox', { name: /A até 200m da praia/ }).check();
+  await page.getByRole('button', {name: /Estimar valor/}).press('Enter');
+  assert.equal(await area.getAttribute('aria-invalid'), null);
+  assert.equal(await error.textContent(), '');
+  assert.equal(await page.locator('#valor').innerText(), 'R$ 535.974');
+  assert.match(await page.locator('#bd').innerText(), /Frente mar \+35%/);
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Estimator overflow at ${width}px`);
+  assert.deepEqual(errors, []);
+  page.off('pageerror', onError);
+}
+
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
@@ -191,6 +242,11 @@ const deadline = setTimeout(() => {
         } else {
           if (!await panel.evaluate(node => node.open)) await panel.locator('summary').press('Enter');
           assert.match(await panel.innerText(), /montar a pauta manualmente/);
+        }
+        if (javaScriptEnabled && [390, 1280].includes(width)) {
+          phase = `${width}px Estimador de Valor – catalog, calculation, validation and recovery`;
+          console.log(phase);
+          await verifyValueEstimator(page, width);
         }
         await context.close();
       }
