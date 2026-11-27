@@ -52,6 +52,10 @@ function ilhaDianaVisit(visit) {
 }
 function city(c) {
   const url = `/cidades/${c.slug}.html`, search = '/imoveis.html?cidade='+encodeURIComponent(c.name);
+  const advice = c.visitAdvice;
+  const visitAdvice = advice
+    ? `<p class="src"><strong>Antes de ir de veículo:</strong> ${esc(advice.text)} ${link(advice.source,advice.label)}.</p>`
+    : '';
   const cta = link(search, `Ver imóveis em ${c.name}`, 'btn');
   const faq = [
     [`Em qual região fica ${c.name}?`, `${c.name} integra ${c.region} no recorte regional deste guia. A classificação segue os setores litorâneos apresentados pela Semil.`],
@@ -80,7 +84,7 @@ function city(c) {
   if(c.slug==='bertioga') listings += `<div class="card city-listings"><h3>Imóveis cadastrados em Bertioga</h3><p>Ofertas publicadas na Praia Digital. Consulte as fichas para os dados de cada imóvel; imagens identificadas como renders e cenários financeiros continuam ilustrativos.</p><ul><li>${link('/casa-condominio-fechado-bertioga.html','Casa em condomínio fechado')}</li><li>${link('/imoveis/casas-lancamento-sao-lourenco.html','Lançamento de casas em São Lourenço')}</li></ul></div>`;
   body += section('imoveis',`Consultar imóveis em ${c.name}`,listings,true);
   body += section('perguntas',`Perguntas frequentes sobre ${c.name}`,faq.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join(''));
-  body += section('fontes','Fontes e atualização',`<p>Revisão editorial: <time datetime="${data.reviewed}">02/11/2026</time>. Fontes para localização, paisagem e referências de visita:</p><ul><li>${link(data.regionalSource,'Semil — setores do gerenciamento costeiro paulista')}</li><li>${link(c.source,c.sourceLabel)}</li></ul><p class="src">As orientações de comparação são editoriais. Fontes turísticas não comprovam preços, segurança, disponibilidade ou rendimento de imóveis. Operação de atrativos e condições de acesso devem ser consultadas antes da visita.</p>`,true);
+  body += section('fontes','Fontes e atualização',`<p>Revisão editorial: <time datetime="${data.reviewed}">02/11/2026</time>. Fontes para localização, paisagem e referências de visita:</p><ul><li>${link(data.regionalSource,'Semil — setores do gerenciamento costeiro paulista')}</li><li>${link(c.source,c.sourceLabel)}</li></ul>${visitAdvice}<p class="src">As orientações de comparação são editoriais. Fontes turísticas não comprovam preços, segurança, disponibilidade ou rendimento de imóveis. Operação de atrativos e condições de acesso devem ser consultadas antes da visita.</p>`,true);
   fs.writeFileSync(path.join(root,url),shell(`Imóveis em ${c.name}: bairros e guia local`,c.intro,url,body,schema));
 }
 function index() {

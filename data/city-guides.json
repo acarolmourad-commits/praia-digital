@@ -98,6 +98,11 @@
       "local": "A Praia do Perequê fica entre a balsa e a Vila, próxima ao centro comercial. Seu entorno reúne restaurantes, quiosques e uma ciclovia acompanhando a orla.",
       "visit": "Perequê é uma referência para reconhecer a faixa urbana. Se o imóvel estiver em outra região da ilha, confira o trajeto completo antes de usar essa estrutura como parâmetro.",
       "check": "Inclua a travessia no planejamento quando houver viagens ao continente. Consulte a operação vigente e não considere um tempo fixo de espera para todos os dias.",
+      "visitAdvice": {
+        "text": "Para veículos sujeitos à cobrança, a taxa municipal é por entrada em Ilhabela, não por dia.",
+        "source": "https://www.ilhabela.sp.gov.br/taxa-de-preservacao-ambiental/",
+        "label": "Consulte as regras da Taxa de Preservação Ambiental (TPA) na Prefeitura de Ilhabela"
+      },
       "source": "https://turismoilhabela.com/praias/praia-do-pereque/",
       "sourceLabel": "Turismo Ilhabela — Praia do Perequê"
     },
