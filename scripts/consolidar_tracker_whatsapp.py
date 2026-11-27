@@ -14,7 +14,9 @@ registrados (identificados por Lote+Nome) e apenas adiciona leads novos.
 import csv, os, glob, re
 from datetime import date
 
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 WHATS_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 PAD = re.compile(r"lote-whatsapp-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 TRACKER = os.path.join(WHATS_DIR, "tracker-whatsapp-proprietarios.csv")

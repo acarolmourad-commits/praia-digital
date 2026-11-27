@@ -7,7 +7,9 @@ Preserva Status/Resposta/Valor/Obs dos leads ja registrados (Lote+Nome).
 import csv, os, glob, re
 from datetime import date
 
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 EMAIL_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 PAD = re.compile(r"lote-email-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 TRACKER = os.path.join(EMAIL_DIR, "tracker-email-proprietarios.csv")

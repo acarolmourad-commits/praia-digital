@@ -5,7 +5,9 @@ Lista leads que responderam (acao: enviar Msg2.5 + landing) e que fecharam
 Le os trackers WPP+e-mail (coluna Acao_Conversao)."""
 import csv, os
 from datetime import date
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 TRACKERS = {"WhatsApp": os.path.join(DIR,"tracker-whatsapp-proprietarios.csv"),
             "E-mail": os.path.join(DIR,"tracker-email-proprietarios.csv")}

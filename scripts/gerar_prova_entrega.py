@@ -10,7 +10,9 @@ import csv, os, json, glob, re
 from collections import defaultdict
 from datetime import date
 
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 JSON_OUT = os.path.join(REPO, "docs/sales", "prova-entrega-outbound.json")
 HTML_OUT = os.path.join(REPO, "docs/sales", "prova-entrega-outbound.html")
