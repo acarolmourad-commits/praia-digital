@@ -58,3 +58,21 @@ assert.equal(s.fromParams(new URLSearchParams('q=2+su%C3%ADtes&quartos=2')).unsu
 assert.equal(s.parse('2 quartos').unsupportedSuites,false);
 assert.equal(s.matches(p,s.parse('2 quartos')),true);
 console.log('Issue #177 suite limitation assertions passed');
+
+const {readFileSync}=require('node:fs');
+const page=readFileSync(require.resolve('../encontrar-imovel.html'),'utf8');
+const guidePath='/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html';
+const market=page.match(/<section aria-labelledby="mercado-referencia"[\s\S]*?<\/section>/)[0];
+assert.equal(market.split(guidePath).length,2);
+assert.match(market,/anúncios de apartamentos prontos nas cidades monitoradas/);
+assert.match(market,/não informa o preço que foi pago numa transação/);
+assert.match(market,/não substitui a avaliação/);
+assert.match(market,/mês de referência/);
+assert.doesNotMatch(market,/<table|R\$|2 (?:dorms|dormitórios)|\d+%|out\/2026/);
+for(const href of ['/apps/valor-imovel/','/apps/comparador-cidades/','/apps/renda-para-financiar/','/bairros/']){
+  assert(market.includes('href="'+href+'"'),href);
+}
+assert.match(page,/rel="canonical" href="https:\/\/praia\.digital\/encontrar-imovel\.html"/);
+const guide=readFileSync(require.resolve('..'+guidePath),'utf8');
+assert(guide.includes('rel="canonical" href="https://praia.digital'+guidePath+'"'));
+console.log('Buyer page links to dated market methodology without publishing unsupported prices');

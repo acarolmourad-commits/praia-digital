@@ -269,6 +269,17 @@ async function searchJourney(page, width) {
   assert((await page.locator('#lista-imoveis .property-card').count()) >= positiveCount);
   await page.locator('#limpar-busca').click();
   await noOverflow(page, `catalog ${width}px`);
+  await page.goto(origin + '/encontrar-imovel.html', { waitUntil: 'load' });
+  const market = page.locator('section[aria-labelledby="mercado-referencia"]');
+  assert.equal(await market.locator('table').count(), 0, 'no market-price table in buyer entry');
+  assert(await market.evaluate(el => el.scrollWidth <= el.clientWidth + 1), `Market reference overflows at ${width}px`);
+  const method = market.getByRole('link', { name: 'Consultar o índice de preços e a metodologia' });
+  assert(await method.isVisible());
+  await method.focus();
+  assert(await method.evaluate(el => el.ownerDocument.activeElement === el), 'methodology link accepts keyboard focus');
+  await page.keyboard.press('Enter');
+  await page.waitForURL(origin + '/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html');
+  assert.match(await page.locator('h1').innerText(), /Preço do m² no litoral paulista/);
   const legacyQuery = '?q=casa%20em%20Bertioga&preco_max=3000000';
   await page.goto(origin + '/encontrar-imovel.html' + legacyQuery, { waitUntil: 'load' });
   await page.waitForURL(url => url.pathname === '/imoveis.html');
