@@ -20,8 +20,10 @@ import urllib.request
 
 try:
     from .link_inventory import HOSTS, Links as References
+    from .external_link_plan import page_priority, plan_external
 except ImportError:  # Direct execution: python scripts/site_inspector.py
     from link_inventory import HOSTS, Links as References
+    from external_link_plan import page_priority, plan_external
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://praia.digital/'
@@ -100,7 +102,11 @@ def scan(root=ROOT):
                 ignored[target] += 1
             elif kind == 'external':
                 counts['external_references'] += 1
-                external.setdefault(target, {'page': rel})
+                meta = external.setdefault(target, {'page': rel, 'priority_page': rel,
+                                                    'priority': page_priority(rel), 'references': 0})
+                meta['references'] += 1
+                if page_priority(rel) > meta['priority']:
+                    meta.update(priority=page_priority(rel), priority_page=rel)
             else:
                 counts['internal_checked'] += 1
                 if not local_exists(target, root):
@@ -145,16 +151,21 @@ class PublicRedirects(urllib.request.HTTPRedirectHandler):
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         public_url(newurl)
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected is not None and req.get_method() == 'HEAD':
+            redirected.method = 'HEAD'
+        return redirected
 
 
 def classify_status(status, redirected=False):
     if status in (404, 410):
         return 'broken'
-    if status in (401, 403, 429):
-        return 'restricted'
+    if status in (401, 403):
+        return 'access_blocked'
+    if status == 429:
+        return 'rate_limited'
     if status == 408 or status >= 500:
-        return 'transient'
+        return 'transient_http'
     if 200 <= status < 300:
         return 'redirect' if redirected else 'ok'
     if 300 <= status < 400:
@@ -176,6 +187,8 @@ def check_external(url):
                 break  # Do not read the response body.
             except HTTPError as exc:
                 status, final = exc.code, exc.geturl()
+                if exc.headers and exc.headers.get('Retry-After'):
+                    result['retry_after'] = exc.headers.get('Retry-After')[:200]
                 exc.close()
                 if method == 'HEAD' and status in (405, 501):
                     continue
@@ -185,7 +198,8 @@ def check_external(url):
     except ValueError as exc:
         result.update(category='not_checked', reason=str(exc))
     except (URLError, OSError) as exc:
-        result.update(category='transient', reason=type(exc).__name__)
+        cause = getattr(exc, 'reason', exc)
+        result.update(category='network_error', reason=type(cause).__name__)
     return result
 
 
@@ -261,11 +275,25 @@ def publish_issue(day, pages, broken, outdated):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
-    parser.add_argument('--external', action='store_true', help='Opt-in bounded HTTP sample')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--external', action='store_true', help='Opt-in bounded HTTP sample')
+    mode.add_argument('--plan-external', action='store_true', help='Offline batch plan; no HTTP or issue writes')
+    parser.add_argument('--external-history', type=Path, help='Explicit version-1 history for offline planning')
     parser.add_argument('--no-publish', action='store_true', help='Do not create/update issues')
     args = parser.parse_args(argv)
     day = datetime.datetime.now(datetime.timezone.utc).date()
     counts, ignored, broken, outdated, errors, urls = scan(args.root)
+    if args.plan_external:
+        history = (json.loads(args.external_history.read_text(encoding='utf-8'))
+                   if args.external_history else {'version': 1, 'urls': {}, 'hosts': {}})
+        plan = plan_external(urls, history, datetime.datetime.now(datetime.timezone.utc))
+        plan['history_source'] = str(args.external_history) if args.external_history else 'explicit_bootstrap'
+        plan['read_error_count'] = len(errors)
+        plan['inventory_complete'] = not errors and bool(counts['pages_scanned'] and counts['references_extracted'])
+        (args.root / 'external_inspection_plan.json').write_text(
+            json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8')
+        print(f"OFFLINE PLAN: {plan['selected']} URLs; no HTTP or issue publication")
+        return 0 if plan['inventory_complete'] else 1
     external = external_report(urls, args.external, day)
     coverage_ok = bool(counts['pages_scanned'] and counts['references_extracted']) and not errors
     report = {'date': day.isoformat(), **dict(counts), 'ignored': dict(ignored),
