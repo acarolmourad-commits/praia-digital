@@ -21,12 +21,12 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/shared.js\">",
-      "<script defer src=\"/js/app-catalog.js?v=88d9a713aef9\">",
+      "<script defer src=\"/js/app-catalog.js?v=c010e25e21b9\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
-      "<input id=\"app-query\" type=\"search\" maxlength=\"100\" placeholder=\"Ex.: revisar anúncio\" aria-controls=\"catalogo-apps\" aria-describedby=\"app-query-help\" autocomplete=\"off\">",
-      "<select id=\"app-goal\" aria-controls=\"catalogo-apps\">",
+      "<input id=\"app-query\" type=\"search\" maxlength=\"100\" placeholder=\"Ex.: revisar anúncio\" aria-controls=\"catalogo-apps app-resource-results\" aria-describedby=\"app-query-help\" autocomplete=\"off\">",
+      "<select id=\"app-goal\" aria-controls=\"catalogo-apps app-resource-results\">",
       "<button id=\"app-clear\" type=\"button\">",
       "<button id=\"app-jump-results\" type=\"button\" aria-controls=\"catalogo-apps\" hidden>",
       "<button type=\"button\" id=\"app-print\">",

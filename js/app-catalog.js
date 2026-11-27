@@ -8,6 +8,8 @@
   const goal = document.getElementById('app-goal');
   const clear = document.getElementById('app-clear');
   const status = document.getElementById('app-results');
+  const resourceResults = document.getElementById('app-resource-results');
+  const resourceList = document.getElementById('app-resource-list');
   const onlyResult = document.getElementById('app-only-result');
   const jumpToResults = document.getElementById('app-jump-results');
   const empty = document.getElementById('app-empty');
@@ -28,6 +30,14 @@
     }))
   }));
   const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
+  const resources = resourceResults && resourceList
+    ? Array.from(document.querySelectorAll('a[data-catalog-resource]'), link => {
+      const title = link.querySelector('.info b')?.textContent.trim() || link.textContent.trim();
+      const description = link.querySelector('.info small')?.textContent || '';
+      return {title, href: link.getAttribute('href'), group: link.dataset.catalogResource,
+        text: normalize(title + ' ' + description)};
+    })
+    : [];
   function shareUrl() {
     const url = new URL('/apps/', window.location.origin);
     if (goal.value) url.searchParams.set('objetivo', goal.value.slice('grupo-'.length));
@@ -55,7 +65,28 @@
       group.section.hidden = visible === 0;
       count += visible;
     }
+    const related = [];
+    let otherResources = 0;
+    for (const resource of resources) {
+      if (!terms.length || !terms.every(term => resource.text.includes(term))) continue;
+      if (!goal.value || resource.group === goal.value) related.push(resource);
+      else otherResources++;
+    }
+    if (resourceResults && resourceList) {
+      resourceResults.hidden = related.length === 0;
+      resourceList.replaceChildren(...related.map(resource => {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = resource.href;
+        link.textContent = resource.title;
+        item.append(link);
+        return item;
+      }));
+    }
     status.textContent = count === 1 ? '1 de ' + total + ' aplicativos encontrado.' : count + ' de ' + total + ' aplicativos encontrados.';
+    if (related.length) status.textContent += related.length === 1
+      ? ' 1 recurso complementar encontrado.'
+      : ' ' + related.length + ' recursos complementares encontrados.';
     if (jumpToResults) jumpToResults.hidden = count < 2 || (!goal.value && terms.length === 0);
     if (onlyResult) {
       onlyResult.hidden = count !== 1;
@@ -69,14 +100,18 @@
         onlyResult.textContent = '';
       }
     }
-    empty.hidden = count !== 0;
-    if (keepGoal) keepGoal.hidden = count !== 0 || !goal.value;
+    const noMatches = count === 0 && related.length === 0;
+    empty.hidden = !noMatches;
+    if (keepGoal) keepGoal.hidden = !noMatches || !goal.value;
     if (broaden) {
-      broaden.hidden = count !== 0 || otherMatches === 0;
+      broaden.hidden = !noMatches || otherMatches + otherResources === 0;
       if (!broaden.hidden) {
-        status.textContent += otherMatches === 1
+        if (otherMatches) status.textContent += otherMatches === 1
           ? ' Há uma ferramenta correspondente em outro objetivo.'
           : ' Há ' + otherMatches + ' ferramentas correspondentes em outros objetivos.';
+        if (otherResources) status.textContent += otherResources === 1
+          ? ' Há um recurso complementar em outro objetivo.'
+          : ' Há ' + otherResources + ' recursos complementares em outros objetivos.';
       }
     }
     if (printSelection) printSelection.disabled = count === 0;

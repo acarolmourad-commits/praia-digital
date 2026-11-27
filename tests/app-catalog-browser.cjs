@@ -7,7 +7,7 @@ const problems=[];
 (async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||undefined,args:['--no-sandbox']});
 try{for(const width of [360,768,1280]){
   const context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'block'});
-  await context.route('**/*',async route=>{
+  const routeSite=async route=>{
     const req=route.request(),url=new URL(req.url());
     if(url.origin!==origin||req.method()!=='GET')return route.abort();
     let file=path.join(root,decodeURIComponent(url.pathname));
@@ -15,7 +15,8 @@ try{for(const width of [360,768,1280]){
     if(!fs.existsSync(file))return route.fulfill({status:404,body:''});
     const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'};
     return route.fulfill({body:fs.readFileSync(file),contentType:mime[path.extname(file)]||'application/octet-stream'});
-  });
+  };
+  await context.route('**/*',routeSite);
   const page=await context.newPage();
   await page.goto(origin+'/apps/');
   assert.equal(await page.locator('.pd-site-header').count(),1);
@@ -39,6 +40,52 @@ try{for(const width of [360,768,1280]){
   await handover.getByRole('link', {name:'Relatório do imóvel'}).press('Enter');
   await page.waitForURL(origin + '/apps/relatorio-imovel/#evidencias-da-visita');
   await page.locator('#evidencias-da-visita').waitFor({state: 'visible'});
+  const roiPath = '/apps/simulador-roi-temporada/';
+  const marketPath = '/apps/calculadora-precificacao-shopee/';
+  const dailyResource = '/ferramentas/calculadora-diaria-ideal-airbnb-2026.html#form-calculo';
+  const bookingResource = '/blog/novidades-airbnb-booking.html';
+  await page.goto(origin+'/apps/#buscar-apps');
+  const finder = page.getByRole('searchbox', {name:'O que você quer fazer?'});
+  const related = page.locator('#app-resource-results');
+  const relatedLinks = related.getByRole('link');
+  const appPaths = () => visibleCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
+  const resourcePaths = () => relatedLinks.evaluateAll(links => links.map(link => link.getAttribute('href')));
+  for (const word of ['rentabilidade','  RENTABILIDÁDE  ','taxa da plataforma']) {
+    await finder.fill(word);
+    assert.deepEqual(await appPaths(),[roiPath],word);
+    assert.match(await page.locator('#app-results').innerText(),/^1 de 16/);
+    assert.ok(await related.isHidden());
+  }
+  await finder.fill('taxa');
+  assert.deepEqual(await appPaths(),[roiPath, marketPath]);
+  await finder.fill('temporada');
+  assert.deepEqual(await appPaths(),[roiPath, '/apps/temporada-ou-anual/']);
+  assert.deepEqual(await resourcePaths(),[dailyResource]);
+  await finder.fill('Airbnb');
+  assert.deepEqual(await appPaths(),[]);
+  assert.deepEqual(await resourcePaths(),[dailyResource,bookingResource]);
+  assert.match(await page.locator('#app-results').innerText(),/0 de 16.*2 recursos complementares/);
+  assert.ok(await page.locator('#app-empty').isHidden());
+  assert.ok(await page.locator('#app-only-result').isHidden());
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await related.getByRole('link',{name:/Calculadora de diária/}).press('Enter');
+  await page.waitForURL(origin+dailyResource);
+  assert.ok(await page.locator('#form-calculo').isVisible());
+  await page.goto(origin+'/apps/?objetivo=planejar&busca=Booking#buscar-apps');
+  assert.ok(await related.isHidden());
+  assert.match(await page.locator('#app-results').innerText(),/recurso complementar em outro objetivo/);
+  await page.getByRole('button',{name:'Buscar em todos os objetivos'}).press('Enter');
+  assert.equal(await finder.inputValue(),'Booking');
+  assert.ok(await finder.evaluate(el=>el===document.activeElement));
+  assert.deepEqual(await resourcePaths(),[bookingResource]);
+  await finder.press('Escape');
+  assert.ok(await related.isHidden());
+  assert.equal(await visibleCards.count(),16);
+  await finder.fill('Booking');
+  await related.getByRole('link',{name:'Novidades Airbnb e Booking'}).press('Enter');
+  await page.waitForURL(origin+bookingResource);
+  assert.ok(await page.getByRole('heading',{name:'Novidades Airbnb e Booking',exact:true}).isVisible());
+  await page.goto(origin+'/apps/#buscar-apps');
   const costPath = '/apps/custo-de-compra/';
   for (const term of ['ITBI', 'escritura', 'registro']) {
     await page.goto(origin + '/apps/?busca=' + term + '#buscar-apps');
@@ -321,7 +368,17 @@ try{for(const width of [360,768,1280]){
     assert.equal(new URL(page.url()).pathname,target);
     assert.ok(await page.locator('h1').isVisible(), target);
   }
-  await context.close();console.log(`Catalog, 16 return journeys and seasonal paths passed at ${width}px`);
+  await context.close();
+  const noJs=await browser.newContext({javaScriptEnabled:false,viewport:{width,height:900}});
+  await noJs.route('**/*',routeSite);
+  const plain=await noJs.newPage();
+  await plain.goto(origin+'/apps/?busca=Airbnb#buscar-apps');
+  assert.equal(await plain.locator('.pd-catalog-group .card:visible').count(),16);
+  assert.ok(await plain.locator('#catalog-search-form').isHidden());
+  assert.ok(await plain.getByRole('navigation',{name:'Outros recursos'}).getByRole('link',{name:/Calculadora de diária de temporada para Airbnb/}).isVisible());
+  assert.ok(await plain.getByRole('link',{name:'Novidades Airbnb e Booking',exact:true}).isVisible());
+  await noJs.close();
+  console.log(`Catalog, 16 return journeys and seasonal paths passed at ${width}px`);
 }assert.deepEqual(problems,[],'All app pages must fit the viewport');}
 finally{await browser.close();}})().catch(error=>{console.error(error);process.exit(1);});
 
