@@ -119,3 +119,15 @@ for(const term of ['passeios agendados','conduzidos por moradores','manguezais',
 assert.deepEqual([...ilhaDiana.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.turismosantos.com.br/pt-br/ilhadiana','https://www.santos.sp.gov.br/?q=node/163190']);
 assert(!/\bR\$|\b\d{1,2}h\b|festival|gratuit|tel:|wa\.me|cetsantos\.com/i.test(ilhaDiana));
 console.log('Ilha Diana visitor guidance present only in Santos, with stable official source links.');
+
+assert.deepEqual(data.cities.filter(c=>c.localEntrepreneursCatalog).map(c=>c.slug),['ilhabela']);
+const ilhabela=read('cidades/ilhabela.html');
+const ilhabelaVisit=ilhabela.match(/<section id="visita">([\s\S]*?)<\/section>/)?.[1];
+assert(ilhabelaVisit?.includes('Perequê é uma referência'));
+const localCatalog=ilhabelaVisit.match(/<article class="card" id="o-negocio-delas"[\s\S]*?<\/article>/)?.[0];
+assert(localCatalog,'Ilhabela public visitor section should include the local catalog');
+assert.equal((ilhabela.match(/id="o-negocio-delas"/g)||[]).length,1);
+assert(localCatalog.includes('aria-labelledby="o-negocio-delas-titulo"'));
+for(const term of ['catálogo digital gratuito','produtos e serviços','liderados por mulheres','Organizado por município','Sebrae em parceria com a Prefeitura de Ilhabela']) assert(localCatalog.includes(term),term);
+assert.deepEqual([...localCatalog.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.ilhabela.sp.gov.br/portal/noticias/0/3/18642/ilhabela-lanca-catalogo-digital-de-empreendedoras-da-regiao']);
+console.log('O Negócio Delas visitor guidance is present only in Ilhabela, with municipal source.');

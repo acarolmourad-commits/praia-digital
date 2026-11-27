@@ -92,6 +92,14 @@
     },
     {
       "slug": "ilhabela",
+      "localEntrepreneursCatalog": {
+        "title": "O Negócio Delas: catálogo de empreendedoras",
+        "summary": "O catálogo digital gratuito reúne produtos e serviços de negócios liderados por mulheres do Litoral Norte e região. Organizado por município, o material é uma iniciativa do Sebrae em parceria com a Prefeitura de Ilhabela.",
+        "source": [
+          "https://www.ilhabela.sp.gov.br/portal/noticias/0/3/18642/ilhabela-lanca-catalogo-digital-de-empreendedoras-da-regiao",
+          "Conheça o catálogo no anúncio da Prefeitura de Ilhabela"
+        ]
+      },
       "name": "Ilhabela",
       "region": "Litoral Norte",
       "intro": "A localização na ilha e os deslocamentos fazem parte da decisão. Compare a rotina pretendida com o acesso ao imóvel e aos serviços.",
