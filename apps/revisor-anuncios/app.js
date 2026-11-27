@@ -169,6 +169,25 @@
     $('live-status').textContent = 'Exemplo fictício carregado. Clique em Comparar as versões para ver o resultado.';
   });
   $('print').addEventListener('click', () => { if (currentText) window.print(); });
+  const download = element('button', 'Baixar relatório em TXT', 'button secondary');
+  download.id = 'download-report'; download.type = 'button'; download.disabled = true;
+  $('print').before(download);
+  download.addEventListener('click', () => {
+    if (!currentText || $('report').hidden) return;
+    let url;
+    try {
+      url = URL.createObjectURL(new Blob(['\uFEFF' + currentText + '\n'], { type: 'text/plain;charset=utf-8' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'revisor-anuncios' + (isDemo ? '-exemplo-ficticio' : '') + '.txt';
+      link.click();
+      $('copy-status').textContent = 'Download solicitado. Confira o arquivo TXT nos downloads do navegador antes de fechar a página.';
+    } catch {
+      $('copy-status').textContent = 'Não foi possível iniciar o download. Use Copiar relatório ou Imprimir / salvar PDF.';
+    } finally {
+      if (url) setTimeout(() => URL.revokeObjectURL(url), 60000);
+    }
+  });
   $('copy').addEventListener('click', async () => {
     if (!currentText || $('copy').disabled) return;
     const text = currentText, request = ++copyRequest;
@@ -191,5 +210,6 @@
   $('example').disabled = false;
   $('copy').disabled = false;
   $('print').disabled = false;
+  download.disabled = false;
   $('review-controls').disabled = false;
 })();
