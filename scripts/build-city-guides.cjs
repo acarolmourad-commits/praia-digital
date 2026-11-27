@@ -50,6 +50,10 @@ function ilhaDianaVisit(visit) {
   if (!visit) return '';
   return `<article class="card" id="ilha-diana" aria-labelledby="ilha-diana-titulo"><h3 id="ilha-diana-titulo">${esc(visit.title)}</h3><p>${esc(visit.summary)}</p><p>${esc(visit.access)}</p><p>${link(...visit.source)} · ${link(...visit.pier)}</p></article>`;
 }
+function localEntrepreneursCatalog(catalog) {
+  if (!catalog) return '';
+  return `<article class="card" id="o-negocio-delas" aria-labelledby="o-negocio-delas-titulo"><h3 id="o-negocio-delas-titulo">${esc(catalog.title)}</h3><p>${esc(catalog.summary)}</p><p>${link(...catalog.source)}</p></article>`;
+}
 function city(c) {
   const url = `/cidades/${c.slug}.html`, search = '/imoveis.html?cidade='+encodeURIComponent(c.name);
   const cta = link(search, `Ver imóveis em ${c.name}`, 'btn');
@@ -69,7 +73,7 @@ function city(c) {
   body += section('bairros',`Bairros e regiões de ${c.name}`,neighborhoods(c),true);
   const related={bertioga:['/blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html','Riviera de São Lourenço: infraestrutura e critérios de análise'],'praia-grande':['/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html','Praia Grande: cenários de locação para apartamentos de 1 e 2 dormitórios']}[c.slug];
   if(related) body += section('leitura','Aprofunde a pesquisa',`<article class="card"><h3>${link(...related)}</h3><p>Conteúdo já publicado e revisado na Praia Digital. Consulte suas fontes e limitações antes de aplicar qualquer cenário ao seu imóvel.</p></article>`);
-  body += section('visita',c.slug==='cubatao'?'Paisagem e patrimônio de Cubatão':`Praias e referências locais de ${c.name}`,p(c.visit)+accessibleBeachService(c.accessibleBeachService)+historicCenterTour(c.historicCenterTour)+ilhaDianaVisit(c.ilhaDianaVisit));
+  body += section('visita',c.slug==='cubatao'?'Paisagem e patrimônio de Cubatão':`Praias e referências locais de ${c.name}`,p(c.visit)+accessibleBeachService(c.accessibleBeachService)+historicCenterTour(c.historicCenterTour)+ilhaDianaVisit(c.ilhaDianaVisit)+localEntrepreneursCatalog(c.localEntrepreneursCatalog));
   body += section('analise','Acesso, rotina e pontos de atenção',`<div class="proscons"><div class="pc pos"><h3>Na visita</h3><p>${esc(c.check)}</p></div><div class="pc att"><h3>Na comparação</h3><p>Peça documentos, despesas e informações de conservação do imóvel. Confirme serviços e deslocamentos no endereço, em vez de presumir condições iguais em toda a cidade.</p></div></div>${trafficNotice(c.trafficNotice)}`,true);
   body += section('ferramentas',`Ferramentas para pesquisar em ${c.name}`,`<div class="grid g3">${[
     ['/apps/custo-de-compra/','Custos da compra','Organize despesas e confira as alíquotas aplicáveis ao seu caso.'],
