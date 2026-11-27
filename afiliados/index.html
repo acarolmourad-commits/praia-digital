@@ -51,8 +51,12 @@
     .commission-field input, .commission-field select { width: 100%; padding: .65rem 1rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; background: #fff; color: #0b1220; }
     .commission-field label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: .35rem; color: #0b1220; }
     .commission-result { background: #eef2ff; border: 1px solid #c7d2fe; color: #1e3a8a; padding: .9rem 1rem; border-radius: 12px; margin-top: .75rem; }
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-    .feature-grid label { display: flex; align-items: center; gap: .5rem; background: #f8fafc; border: 1px solid #e2e8f0; padding: .6rem .8rem; border-radius: 12px; font-weight: 600; cursor: pointer; }
+    .referral-fields { min-inline-size: 0; border: 0; margin: 0; padding: 0; display: grid; gap: .75rem; }
+    .referral-fields label, .referral-preview label { display: block; }
+    .referral-fields input, .referral-fields select, .referral-fields textarea, .referral-preview textarea { display: block; width: 100%; min-width: 0; box-sizing: border-box; font-size: 1rem; }
+    .referral-preview { margin-block: 1rem; overflow-wrap: anywhere; }
+    .referral-preview[hidden] { display: none; }
+    #referral-draft:focus-visible { outline: 2px solid #1e3a8a; outline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -111,7 +115,7 @@
           <article class="card">
             <h2>Como funciona</h2>
             <ol>
-              <li>Você indica um imóvel com dados do proprietário e do bem.</li>
+              <li>Você inicia a indicação com um resumo do imóvel e apenas um contato seu para retorno.</li>
               <li>Um corretor credenciado assume a captação, visita e negociação.</li>
               <li>Se houver fechamento, você recebe comissão sobre a indicação.</li>
             </ol>
@@ -129,8 +133,8 @@
           <article class="card">
             <h2>Critérios básicos</h2>
             <ul>
-              <li>Informações reais e verificáveis do proprietário.</li>
-              <li>Localização clara: cidade, bairro e referência.</li>
+              <li>Informe apenas cidade, tipo de imóvel e um resumo verdadeiro, sem identificar ninguém.</li>
+              <li>Não inclua o endereço nem os contatos do proprietário.</li>
               <li>Sem indicações duplicadas ou sem intenção real.</li>
             </ul>
           </article>
@@ -140,76 +144,36 @@
       <section class="section">
         <div class="card">
           <h2>Formulário de indicação</h2>
-          <p class="muted">Preencha com os dados do proprietário e do imóvel. Quanto mais completo, maior a chance de avançar para captação profissional.</p>
-          <form action="mailto:comercial@praia.digital?subject=Indica%C3%A7%C3%A3o%20de%20im%C3%B3vel%20-%20Afiliado" method="post" enctype="text/plain" target="_blank">
-            <h3 class="form-divider">Seus dados</h3>
-            <label>Nome<br><input type="text" name="afiliado_nome" required placeholder="Ex: Maria Oliveira"></label>
-            <label>WhatsApp<br><input type="tel" name="afiliado_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
-            <label>E-mail<br><input type="email" name="afiliado_email" placeholder="Ex: maria@email.com"></label>
-            <label>Chave PIX para recebimento<br><input type="text" name="afiliado_pix" required placeholder="CPF, e-mail ou chave aleatória"></label>
-
-            <h3 class="form-divider">Dados do proprietário</h3>
-            <label>Nome do proprietário<br><input type="text" name="proprietario_nome" required placeholder="Ex: José Silva"></label>
-            <label>WhatsApp do proprietário<br><input type="tel" name="proprietario_telefone" required placeholder="Ex: (13) 9xxxx-xxxx"></label>
-            <label>E-mail do proprietário<br><input type="email" name="proprietario_email" placeholder="Ex: jose@email.com"></label>
-
-            <h3 class="form-divider">Dados do imóvel</h3>
-            <label>Endereço/Condomínio<br><input type="text" name="endereco" required placeholder="Ex: Riviera de São Lourenço, Condomínio X"></label>
-            <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Bertioga"></label>
-            <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Riviera"></label>
-            <label>Tipo de imóvel<br>
-              <select name="tipo" required>
+          <p id="referral-instructions">Use um contato seu e um resumo do imóvel. A página só prepara um rascunho. Para enviá-lo, você precisa abrir um aplicativo de e-mail, revisar a mensagem e escolher enviar.</p>
+          <p id="referral-minimum">Não inclua CPF, chave Pix, dados bancários ou de pagamento, endereço exato, condomínio, nome ou contato do proprietário nem outros dados de terceiros.</p>
+          <p>Se o imóvel é seu, você pode falar diretamente com a Praia Digital pela <a href="/meu-imovel.html">Central do proprietário</a>. Se você está indicando o imóvel de outra pessoa, compartilhe esse link para que ela mesma possa entrar em contato.</p>
+          <form id="property-referral" aria-describedby="referral-instructions referral-minimum">
+            <fieldset class="referral-fields" id="referral-fields" disabled>
+              <legend>Dados para o primeiro contato</legend>
+              <label for="referral-channel">Como prefere receber retorno?</label>
+              <select id="referral-channel"><option value="email">E-mail</option><option value="whatsapp">WhatsApp</option></select>
+              <label for="referral-contact" id="referral-contact-label">Seu e-mail</label>
+              <input id="referral-contact" type="email" autocomplete="email" required maxlength="160">
+              <label for="referral-city">Cidade</label>
+              <input id="referral-city" type="text" required maxlength="60" placeholder="Ex.: Bertioga">
+              <label for="referral-type">Tipo de imóvel</label>
+              <select id="referral-type" required>
                 <option value="">Selecione</option>
-                <option>Apartamento</option>
-                <option>Casa</option>
-                <option>Cobertura</option>
-                <option>Flat</option>
-                <option>Comercial</option>
-                <option>Terreno</option>
-                <option>Chácara</option>
+                <option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Flat</option>
+                <option>Comercial</option><option>Terreno</option><option>Chácara</option><option>Outro</option>
               </select>
-            </label>
-            <label>Tipo de negócio<br>
-              <select name="negocio" required>
-                <option value="">Selecione</option>
-                <option>Venda</option>
-                <option>Aluguel por Temporada</option>
-                <option>Locação Anual</option>
-                <option>Híbrido</option>
-              </select>
-            </label>
-            <label>Valor estimado (R$)<br><input type="text" name="valor" required placeholder="Ex: 720.000"></label>
-
-            <h3 class="form-divider">Características</h3>
-            <div class="feature-grid">
-              <label><input type="checkbox" name="caracteristicas" value="piscina"> Piscina</label>
-              <label><input type="checkbox" name="caracteristicas" value="churrasqueira"> Churrasqueira</label>
-              <label><input type="checkbox" name="caracteristicas" value="pe_na_areia"> Pé na Areia</label>
-              <label><input type="checkbox" name="caracteristicas" value="vista_mar"> Vista para o Mar</label>
-              <label><input type="checkbox" name="caracteristicas" value="ar_condicionado"> Ar-Condicionado</label>
-              <label><input type="checkbox" name="caracteristicas" value="mobiliado"> Mobiliado</label>
-              <label><input type="checkbox" name="caracteristicas" value="varanda_gourmet"> Varanda Gourmet</label>
-              <label><input type="checkbox" name="caracteristicas" value="seguranca_24h"> Segurança 24h</label>
-              <label><input type="checkbox" name="caracteristicas" value="aceita_pet"> Aceita Pet</label>
-            </div>
-
-            <h3 class="form-divider">Status do primeiro contato</h3>
-            <label>
-              <select name="status_contato" required>
-                <option value="">Selecione</option>
-                <option>Proprietário já sabe que vou indicar</option>
-                <option>Precisa de contato inicial</option>
-                <option>Aguardando retorno do proprietário</option>
-                <option>Indicação com acesso ao imóvel</option>
-              </select>
-            </label>
-
-            <h3 class="form-divider">Detalhes adicionais</h3>
-            <label>Observações<br><textarea name="observacoes" rows="4" placeholder="Disponibilidade de visita, urgência, relação com o proprietário, perfil do imóvel."></textarea></label>
-
-            <button type="submit">Enviar indicação</button>
+              <label for="referral-summary">Resumo sem identificação</label>
+              <textarea id="referral-summary" required maxlength="200" rows="3" aria-describedby="referral-minimum" placeholder="Ex.: Casa para venda, com dois quartos."></textarea>
+              <button class="btn btn-primary" type="submit">Preparar rascunho de e-mail</button>
+            </fieldset>
           </form>
-          <p class="muted">Enviando a indicação, você confirma que os dados são reais e concorda com a política de privacidade.</p>
+          <p id="referral-status" role="status"></p>
+          <div class="referral-preview" id="referral-preview" hidden>
+            <a class="btn btn-primary" id="referral-draft" aria-describedby="referral-instructions referral-fallback">Abrir rascunho no app de e-mail</a>
+            <label for="referral-body">Mensagem para revisar ou copiar</label>
+            <textarea id="referral-body" rows="6" readonly></textarea>
+          </div>
+          <p id="referral-fallback"><strong>Sem app configurado, se o link não abrir ou se o formulário não estiver disponível:</strong> escreva pelo serviço de e-mail que você usa para <strong>comercial@praia.digital</strong>, com o assunto <strong>Indicação de imóvel - Afiliado</strong>. Inclua apenas seu contato escolhido, cidade, tipo de imóvel e um resumo sem identificação. Você pode preparar a mensagem sem conexão, mas precisa de conexão para enviá-la.</p>
         </div>
 
         <aside class="card">
@@ -220,11 +184,11 @@
             <dt>Preciso ser corretor para indicar?</dt>
             <dd>Não. O programa é aberto a afiliados e indicadores, mas exige dados reais e intenção verdadeira de venda ou locação.</dd>
             <dt>Como acompanhar o status?</dt>
-            <dd>Após o envio, o time da Praia Digital vai atualizar o andamento por WhatsApp ou e-mail.</dd>
+            <dd>Acompanhe pelo contato que você escolheu. Abrir o rascunho não envia a indicação nem confirma seu recebimento.</dd>
             <dt>Como recebo a comissão?</dt>
-            <dd>Informe sua chave PIX no formulário. O pagamento é processado após confirmação de fechamento pelo corretor credenciado.</dd>
+            <dd>Não informe dados de pagamento na primeira indicação. O pagamento é processado após confirmação de fechamento pelo corretor credenciado.</dd>
           </dl>
-          <p><a href="https://praia.digital/termos-de-uso.html" target="_blank" rel="noopener">Termos de uso</a> · <a href="https://praia.digital/politica-privacidade.html" target="_blank" rel="noopener">Privacidade</a></p>
+          <p><a href="https://praia.digital/termos-de-uso.html" target="_blank" rel="noopener">Termos de uso</a> · <a href="https://praia.digital/politica-de-privacidade.html" target="_blank" rel="noopener">Privacidade</a></p>
         </aside>
       </section>
     </main>
@@ -234,6 +198,7 @@
       <p><a href="https://praia.digital/sitemap.html">Mapa do site</a></p>
     </footer>
     <script src="https://praia.digital/js/shared.js?v=2.0"></script>
+    <script defer src="/js/affiliate-referral.js"></script>
     <script>
       (function(){
         const valor = document.getElementById('commValor');
