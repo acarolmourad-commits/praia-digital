@@ -8,6 +8,12 @@ for(const width of [390,1280]){
 const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname!=='local.test')return route.abort();let p=path.join(root,u.pathname);if(u.pathname.endsWith('/'))p=path.join(p,'index.html');if(!fs.existsSync(p)||!fs.statSync(p).isFile())return route.abort();if(p.endsWith('shared.js')||p.endsWith('related-ads.js'))return route.fulfill({body:''});await route.fulfill({path:p});});
 await page.goto('http://local.test/apps/checklist-vistoria/');
+const handoff = page.locator('section[aria-labelledby="entrega-das-chaves"]');
+assert.equal(await handoff.locator('#entrega-das-chaves').count(), 1);
+assert.equal(await handoff.getByRole('heading', {name:'O que registrar na entrega das chaves', level:3}).count(), 1);
+assert.equal(await handoff.locator('.pd-key-handoff li').count(), 4);
+assert.equal(await handoff.locator('a[href="/apps/relatorio-imovel/#evidencias-da-visita"]').count(), 1);
+assert.equal(await handoff.locator('.pd-key-handoff :is(input, textarea, button)').count(), 0);
 // Every toggle has a unique accessible name that includes its observation.
 const items=page.locator('#groups .item');
 assert.equal(await items.count(),26);
