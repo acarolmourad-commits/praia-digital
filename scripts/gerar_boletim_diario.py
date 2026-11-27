@@ -84,6 +84,17 @@ def validate(edition, as_of=None):
         if url.scheme != 'https' or not url.netloc or url.username or url.password:
             raise ValueError('Editorial note source must use HTTPS')
         datetime.strptime(note['related_edition'], '%Y-%m-%d')
+        if 'follow_up' in note:
+            follow_up = note['follow_up']
+            checked_on = datetime.strptime(follow_up['checked_on'], '%Y-%m-%d').date()
+            today = (as_of or datetime.now(timezone.utc)).astimezone(ZoneInfo('America/Sao_Paulo')).date()
+            if not reviewed.astimezone(ZoneInfo('America/Sao_Paulo')).date() <= checked_on <= today:
+                raise ValueError('Invalid editorial note follow-up date')
+            if not follow_up.get('text', '').strip():
+                raise ValueError('Editorial follow-up requires text')
+            url = urlparse(follow_up.get('source_url', ''))
+            if url.scheme != 'https' or not url.netloc or url.username or url.password:
+                raise ValueError('Editorial follow-up source must use HTTPS')
     return edition
 
 def page(root, title, path, body, description, edition=None):
@@ -114,7 +125,12 @@ def render_edition(root, edition, path, latest_date=None):
     archive_notice = ''
     if latest_date and edition['date'] != latest_date:
         archive_notice = f'<aside class="bulletin-update"><strong>Edição arquivada de {human_date(edition["date"])}.</strong> O texto registra o que estava publicado naquela data. Notas posteriores estão identificadas junto à notícia. <a href="boletim-diario.html">Ler a edição mais recente</a>.</aside>'
-    notes = ''.join(f'<section class="bulletin-card bulletin-update"><h2>{esc(note["title"])}</h2><p>{esc(note["text"])}</p><a href="{esc(note["source_url"])}">Conferir a fonte oficial</a> · <a href="boletim-{esc(note["related_edition"])}.html">Consultar a edição anterior com a nota</a></section>' for note in edition.get('notes', []))
+    notes = ''
+    for note in edition.get('notes', []):
+        follow_up_html = ''
+        if follow_up := note.get('follow_up'):
+            follow_up_html = f'<aside aria-label="Acompanhamento posterior"><h3>Acompanhamento posterior · conferido em {time_tag(follow_up["checked_on"])}</h3><p>{esc(follow_up["text"])}</p><a href="{esc(follow_up["source_url"])}">Ler o comunicado na fonte oficial</a></aside>'
+        notes += f'<section class="bulletin-card bulletin-update"><h2>{esc(note["title"])}</h2><p>{esc(note["text"])}</p><a href="{esc(note["source_url"])}">Conferir a fonte oficial</a> · <a href="boletim-{esc(note["related_edition"])}.html">Consultar a edição anterior com a nota</a>{follow_up_html}</section>'
     sources = '<li><a href="https://news.airbnb.com/">Airbnb Newsroom</a></li><li><a href="https://partner.booking.com/en-us">Booking Partner Hub</a></li><li><a href="https://www.bcb.gov.br/">Banco Central</a></li><li><a href="https://www.ibge.gov.br/">IBGE</a></li><li><a href="https://www.agenciasp.sp.gov.br/">Agência SP</a></li>'
     review_label = 'Revisão original desta edição' if stamp(modified_at(edition)) > stamp(edition['reviewed_at']) else 'Última revisão desta edição'
     update_label = f' · Nota posterior: {time_tag(modified_at(edition))}' if stamp(modified_at(edition)) > stamp(edition['reviewed_at']) else ''

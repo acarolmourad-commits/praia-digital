@@ -113,6 +113,38 @@ class BulletinTests(unittest.TestCase):
         self.assertEqual(report['days_since_last_review'],expected)
         report=queue.prepare(ROOT,datetime(2026,11,21,tzinfo=timezone.utc))['editorial']
         self.assertTrue(next(i for i in report['deadlines'] if i['item_id']=='praia-grande-exposicoes')['needs_review'])
+    def test_bertioga_follow_up_keeps_original_deadline_and_feed(self):
+        original_path = ROOT / 'data/boletim/edicoes/2026-11-11.json'
+        edition = json.loads(original_path.read_text())
+        note = edition['notes'][0]
+        follow_up = note['follow_up']
+        archived_older = (ROOT / 'docs/inteligencia/boletim-2026-11-02.html').read_text()
+        self.assertNotIn('A Praia é de Todos', archived_older)
+        filenames = ['boletim-2026-11-11.html']
+        if max(original_path.parent.glob('*.json')) == original_path:
+            filenames.append('boletim-diario.html')
+        for filename in filenames:
+            html = (ROOT / 'docs/inteligencia' / filename).read_text()
+            start = html.index(note['title'])
+            sub = html.index('Acompanhamento posterior', start)
+            close = html.index('</section>', sub)
+            self.assertLess(html.index('10/11/2026', start), sub)
+            self.assertIn('datetime="2026-11-21">21/11/2026', html[sub:close])
+            self.assertIn(follow_up['source_url'], html[sub:close])
+            self.assertIn('não reabre', html[sub:close])
+            self.assertIn('não informa prazo', html[sub:close])
+            self.assertEqual(html.count('class="bulletin-card news-item"'), len(edition['items']))
+        without_follow_up = copy.deepcopy(edition)
+        del without_follow_up['notes'][0]['follow_up']
+        self.assertEqual(builder.modified_at(edition), builder.modified_at(without_follow_up))
+        rss = ET.parse(ROOT / 'docs/inteligencia/feed.xml')
+        self.assertNotIn('A Praia é de Todos', ET.tostring(rss.getroot(), encoding='unicode'))
+        for key, value in [('checked_on', '2026-11-10'), ('checked_on', '2099-01-01'),
+                           ('source_url', 'javascript:alert(1)'), ('text', '')]:
+            invalid = copy.deepcopy(edition)
+            invalid['notes'][0]['follow_up'][key] = value
+            with self.assertRaises(ValueError):
+                builder.validate(invalid)
     def test_newsletter_cannot_claim_signup(self):
         html=(ROOT/'newsletter/assinatura.html').read_text()
         self.assertNotIn('subscribeForm',html);self.assertNotIn('Confira sua caixa de entrada',html)
