@@ -107,3 +107,15 @@ assert(saoSebastiaoVisit.includes('href="tel:+551238924604">(12) 3892-4604'));
 assert(saoSebastiaoVisit.includes('href="https://www.turismosaosebastiao.com.br/noticias/prefeitura-de-sao-sebastiao-oferece-visitas-monitoradas-pelo-centro-historico-para-estudantes-e-turistas"'));
 assert(!/escolar|Seduc|(?:\d{1,2}h\b)/i.test(saoSebastiaoVisit.slice(saoSebastiaoVisit.indexOf('id="visitas-centro-historico"'))));
 console.log('São Sebastião Centro Histórico visitor guidance present once with the official source and phone.');
+
+const ilhaDianaCities=data.cities.filter(c=>c.ilhaDianaVisit);
+assert.deepEqual(ilhaDianaCities.map(c=>c.slug),['santos']);
+const santos=read('cidades/santos.html');
+const ilhaDiana=santos.match(/<section id="visita">[\s\S]*?(<article class="card" id="ilha-diana"[\s\S]*?<\/article>)/)?.[1];
+assert(ilhaDiana,'Ilha Diana card in public visitor section');
+assert.equal((santos.match(/id="ilha-diana"/g)||[]).length,1);
+for(const term of ['passeios agendados','conduzidos por moradores','manguezais','educação ambiental','atrás da Alfândega','Praça da República','confirme a ida e a volta'])
+ assert(ilhaDiana.includes(term),'missing Ilha Diana detail: '+term);
+assert.deepEqual([...ilhaDiana.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.turismosantos.com.br/pt-br/ilhadiana','https://www.santos.sp.gov.br/?q=node/163190']);
+assert(!/\bR\$|\b\d{1,2}h\b|festival|gratuit|tel:|wa\.me|cetsantos\.com/i.test(ilhaDiana));
+console.log('Ilha Diana visitor guidance present only in Santos, with stable official source links.');

@@ -126,6 +126,19 @@
     {
       "slug": "santos",
       "name": "Santos",
+      "ilhaDianaVisit": {
+        "title": "Ilha Diana: turismo de base comunitária",
+        "summary": "Na parte continental de Santos, a comunidade caiçara da Ilha Diana recebe visitantes em passeios agendados, conduzidos por moradores, com manguezais e educação ambiental como parte da experiência.",
+        "access": "O embarque no Centro Histórico fica atrás da Alfândega, junto à Praça da República. Antes de sair, combine o passeio e confirme a ida e a volta pelos canais indicados pelo portal municipal de turismo.",
+        "source": [
+          "https://www.turismosantos.com.br/pt-br/ilhadiana",
+          "Planejar a visita pelo Turismo Santos"
+        ],
+        "pier": [
+          "https://www.santos.sp.gov.br/?q=node/163190",
+          "Prefeitura de Santos: acesso à Ilha Diana"
+        ]
+      },
       "region": "Baixada Santista",
       "intro": "A orla e seus jardins são referências para localizar bairros, mas a pesquisa de moradia deve incluir os trajetos e os serviços usados durante a semana.",
       "local": "Os jardins da orla acompanham o trecho entre José Menino e Ponta da Praia. Além da paisagem, reúnem monumentos e uma ciclovia, conforme o portal municipal de turismo.",
