@@ -65,6 +65,26 @@ class NetworkTests(unittest.TestCase):
                     self.assertIn('pd-network-title',page.ids)
                     for slug in SLUGS:
                         if path!='apps/'+slug+'/index.html':self.assertIn('/apps/'+slug+'/',page.links)
+    def test_consolidated_navigation_keeps_the_search_route(self):
+        preserved = {
+            'calculadora-consorcio': 'comprar', 'custo-de-compra': 'comprar',
+            'renda-para-financiar': 'comprar', 'comparador-cidades': 'comprar',
+            'valor-imovel': 'comprar', 'calculadora-valorizacao': 'comprar',
+            'temporada-ou-anual': 'locar', 'checklist-vistoria': 'anunciar',
+        }
+        search = '/encontrar-imovel.html'
+        self.assertTrue((ROOT / search.lstrip('/')).is_file())
+        for slug, route in preserved.items():
+            with self.subTest(slug=slug):
+                source = (ROOT / 'apps' / slug / 'index.html').read_text(encoding='utf-8')
+                page = Page(source)
+                self.assertNotIn('Explore todos os apps gratuitos da Praia Digital', source)
+                self.assertEqual(page.ids.count('pd-network-title'), 1)
+                self.assertEqual(page.links.count('#pd-network-title'), 1)
+                self.assertIn('/apps/guia-de-uso.html#' + route, page.links)
+                self.assertIn('/#rede-apps', page.links)
+                self.assertIn(search, page.links)
+
     def test_interactions_match_reviewed_pages(self):
         expected = json.loads(FIXTURE.read_text(encoding='utf-8'))
         self.assertEqual(set(expected), set(PAGES))
