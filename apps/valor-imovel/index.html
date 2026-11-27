@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quanto Vale Meu Imóvel no Litoral? — Estimador Gratuito | Praia Digital</title>
-  <meta name="description" content="Estime o valor do seu imóvel no litoral de SP: preço por m² por cidade, ajustes por frente-mar, mobília e estado de conservação. Gratuito, Praia Digital.">
+  <meta name="description" content="Simule um valor ilustrativo para imóveis no litoral paulista com referências históricas por cidade e faixa fixa de ±7%. Não é cotação nem laudo.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://praia.digital/apps/valor-imovel/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Quanto Vale Meu Imóvel no Litoral? | Praia Digital">
-  <meta property="og:description" content="Estimativa instantânea de valor por cidade, m² e características.">
+  <meta property="og:description" content="Simulação com referências históricas do litoral paulista e faixa ilustrativa de ±7%. Não é cotação nem laudo.">
   <meta property="og:url" content="https://praia.digital/apps/valor-imovel/">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <script type="application/ld+json">
@@ -19,6 +19,7 @@
     "name": "Quanto Vale Meu Imóvel no Litoral?",
     "url": "https://praia.digital/apps/valor-imovel/",
     "applicationCategory": "FinanceApplication",
+    "description": "Simule um valor ilustrativo para imóveis no litoral paulista com referências históricas por cidade e faixa fixa de ±7%. Não é cotação nem laudo.",
     "operatingSystem": "Web",
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
     "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
@@ -39,11 +40,15 @@
     .checks label{display:flex;gap:8px;align-items:center;font-weight:500;font-size:14px}
     .checks input{width:auto}
     button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
-    .result{display:none;margin-top:16px;text-align:center}
+    .field-help{font-size:13px;color:#475569;margin-top:4px}
+    .field-error{font-size:14px;font-weight:600;color:#991B1B}
+    .field-error:not(:empty){margin-top:10px}
+    input[aria-invalid="true"]{border-color:#991B1B}
+    .result{margin-top:16px;text-align:center;overflow-wrap:anywhere}
     .big{font-size:2.4rem;font-weight:800;color:#0A3D2E}
     .range{font-size:14px;color:#64748B;margin-top:4px}
     .breakdown{text-align:left;margin-top:14px;font-size:13px}
-    .breakdown div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F1F5F9}
+    .breakdown div{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #F1F5F9}
     .links{display:grid;gap:10px;margin-top:8px}
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
@@ -66,11 +71,11 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Como é calculada a estimativa de valor do imóvel?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplicamos a média de preço por m² da cidade (dados de mercado de setembro de 2026) pela área construída, e aplicamos ajustes por número de quartos, estado de conservação, proximidade do mar, mobília, condomínio e vagas de garagem. O resultado é uma faixa de ±7%."}},
-      {"@type": "Question", "name": "Qual cidade do litoral tem o metro quadrado mais caro?", "acceptedAnswer": {"@type": "Answer", "text": "Santos lidera com média de R$ 8.000/m², chegando a R$ 12 mil/m² em bairros frente ao mar como Gonzaga e Boqueirão. Na sequência vêm Ilhabela (R$ 7.200/m²) e São Sebastião (R$ 6.500/m²)."}},
-      {"@type": "Question", "name": "Imóvel frente ao mar valoriza quanto a mais?", "acceptedAnswer": {"@type": "Answer", "text": "No litoral paulista, a frente para o mar adiciona em média 35% ao valor do m². Estar a até 200 metros da praia agrega cerca de 12%."}},
-      {"@type": "Question", "name": "A estimativa substitui uma avaliação profissional?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A ferramenta dá uma faixa inicial baseada em médias de mercado. Para precificar de fato, recomenda-se avaliação profissional que considera andar, vista, documentação e comparáveis reais do bairro."}},
-      {"@type": "Question", "name": "Qual cidade do litoral de SP tem o imóvel mais barato?", "acceptedAnswer": {"@type": "Answer", "text": "Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores valores médios por m² do litoral paulista, com boa liquidez para temporada."}}
+      {"@type": "Question", "name": "Como funciona o cálculo?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplicamos a referência histórica por m² da cidade selecionada pela área construída e aplicamos os fatores de quartos, conservação e características marcadas. A simulação não usa anúncios ou transações em tempo real."}},
+      {"@type": "Question", "name": "O que significa a faixa ilustrativa de ±7%?", "acceptedAnswer": {"@type": "Answer", "text": "É uma regra fixa: mostramos 7% abaixo e 7% acima do valor simulado. A faixa não indica probabilidade de venda, intervalo de confiança nem margem de erro estatística."}},
+      {"@type": "Question", "name": "Como a ferramenta trata a frente para o mar?", "acceptedAnswer": {"@type": "Answer", "text": "Marcar frente para o mar multiplica o valor por 1,35; marcar até 200 metros da praia multiplica por 1,12. São hipóteses do cálculo, não valorizações comprovadas. Se as duas opções forem marcadas, os fatores se multiplicam."}},
+      {"@type": "Question", "name": "Por que Caraguatatuba não aparece na lista de cidades?", "acceptedAnswer": {"@type": "Answer", "text": "A cidade consta apenas na tabela histórica, para consulta. O simulador não calcula um valor para Caraguatatuba."}},
+      {"@type": "Question", "name": "A simulação substitui avaliação profissional?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É um ponto de partida ilustrativo. Uma avaliação individual considera fatores como andar, vista, documentação e imóveis comparáveis do bairro."}}
     ]
   }
   </script>
@@ -81,16 +86,18 @@
 <header>
   <h1 id="pd-app-title" tabindex="-1">💰 Quanto Vale Meu Imóvel no Litoral?</h1>
 <a class="pd-next-shortcut" href="#pd-network-title">Ver aplicativos relacionados</a>
-  <p>Estimativa instantânea por cidade, tamanho e diferenciais • Praia Digital</p>
+  <p>Simulação ilustrativa por cidade, área e características • Não é avaliação profissional</p>
 </header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
 <div class="wrap">
   <div class="card">
+    <form id="estimador" novalidate>
+    <p class="field-help" id="referencia-ajuda">As cidades usam referências históricas identificadas como set/2026, sem fonte ou atualização confirmadas. Os percentuais abaixo são hipóteses da simulação, não médias comprovadas.</p>
     <div class="grid">
-      <div><label>Cidade</label>
-        <select id="cidade">
-          <option value="8000">Santos (R$8.000/m² — frente ao mar: R$8–12 mil)</option>
+      <div><label for="cidade">Cidade</label>
+        <select id="cidade" aria-describedby="referencia-ajuda">
+          <option value="8000">Santos (R$8.000/m²)</option>
           <option value="6500">São Sebastião (R$6.500/m²)</option>
           <option value="7200">Ilhabela (R$7.200/m²)</option>
           <option value="4100">Ubatuba (R$4.100/m²)</option>
@@ -102,10 +109,10 @@
           <option value="2100">Mongaguá (R$2.100/m²)</option>
           <option value="1900">Peruíbe (R$1.900/m²)</option>
         </select></div>
-      <div><label>Área construída (m²)</label><input type="number" id="area" value="105"></div>
-      <div><label>Quartos</label>
+      <div><label for="area">Área construída (m²)</label><input type="number" id="area" value="105" required step="any" aria-describedby="area-ajuda area-erro"><p class="field-help" id="area-ajuda">Informe uma área maior que zero. Casas decimais são aceitas.</p></div>
+      <div><label for="quartos">Quartos</label>
         <select id="quartos"><option value="1.0">1</option><option value="1.05" selected>2</option><option value="1.12">3</option><option value="1.2">4+</option></select></div>
-      <div><label>Estado de conservação</label>
+      <div><label for="estado">Estado de conservação</label>
         <select id="estado"><option value="0.85">Precisa reforma</option><option value="1.0" selected>Bom</option><option value="1.15">Reformado/novo</option></select></div>
     </div>
     <div class="checks">
@@ -115,19 +122,22 @@
       <label><input type="checkbox" id="mobilia"> 🛋️ Mobiliado (+7%)</label>
       <label><input type="checkbox" id="vaga"> 🚗 Vaga de garagem (+4%)</label>
     </div>
-    <button onclick="calc()">Estimar valor 💰</button>
-    <div class="result" id="res">
+    <p class="field-error" id="area-erro" role="alert"></p>
+    <button type="submit">Estimar valor 💰</button>
+    </form>
+    <section class="result" id="res" tabindex="-1" aria-labelledby="valor" aria-describedby="range" hidden>
       <div class="big" id="valor"></div>
       <div class="range" id="range"></div>
       <div class="breakdown" id="bd"></div>
-      <p class="note">⚠️ Estimativa automatizada com base em médias de mercado do litoral SP (coletadas em set/2026). Santos frente ao mar recalibrado para R$8–12 mil/m². Para avaliação profissional precisa, fale com nossa equipe.</p>
-    </div>
+      <p class="note">A faixa é fixa: 7% abaixo e 7% acima do valor simulado. Não é intervalo de confiança, margem de erro estatística nem preço provável de venda.</p>
+    </section>
   </div>
 
   <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📊 Preço médio por m² no litoral de SP <span class="tag">set/2026</span></h2>
-    <div class="pd-table-scroll" role="region" aria-label="Referências de valor" tabindex="0"><table>
-      <tr><th>Cidade</th><th>Média R$/m²</th><th>Frente mar</th><th>Guia</th></tr>
+    <h2 style="font-size:17px;margin-bottom:10px">📊 Referências históricas por m² <span class="tag">set/2026</span></h2>
+    <p class="note" id="tabela-nota">Referências mantidas na ferramenta, identificadas como setembro de 2026. A origem e a atualização dos números não foram verificadas; eles não comprovam preços atuais nem valores de transações. A coluna de frente ao mar é apenas informativa e não entra no cálculo. Caraguatatuba aparece só nesta tabela e não pode ser selecionada no simulador.</p>
+    <div class="pd-table-scroll" role="region" aria-label="Referências históricas de valor" aria-describedby="tabela-nota" tabindex="0"><table>
+      <tr><th scope="col">Cidade</th><th scope="col">Referência (R$/m²)</th><th scope="col">Frente ao mar (referência)</th><th scope="col">Guia</th></tr>
       <tr><td>Santos</td><td>R$ 8.000</td><td>R$ 8–12 mil</td><td><a href="/bairros/santos/index.html">15 bairros</a></td></tr>
       <tr><td>Ilhabela</td><td>R$ 7.200</td><td>até R$ 10 mil</td><td><a href="/bairros/ilhabela/index.html">10 bairros</a></td></tr>
       <tr><td>São Sebastião</td><td>R$ 6.500</td><td>R$ 7–9 mil (Maresias/Juquehy)</td><td><a href="/bairros/sao-sebastiao/index.html">8 bairros</a></td></tr>
@@ -141,21 +151,20 @@
       <tr><td>Mongaguá</td><td>R$ 2.100</td><td>até R$ 3,5 mil</td><td><a href="/bairros/mongagua/index.html">10 bairros</a></td></tr>
       <tr><td>Peruíbe</td><td>R$ 1.900</td><td>até R$ 3 mil</td><td><a href="/bairros/peruibe/index.html">10 bairros</a></td></tr>
     </table></div>
-    <p class="note">Fontes: médias de anúncios ativos, transações recentes e índices de mercado coletados pela Praia Digital em setembro/2026. Valores de frente mar variam por bairro — consulte o guia da cidade para o detalhe.</p>
   </div>
 
   <div class="card faq">
     <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Como é calculada a estimativa?</summary><p>Multiplicamos a média de R$/m² da cidade (set/2026) pela área construída e aplicamos ajustes por quartos, conservação, proximidade do mar, mobília, condomínio e vagas. O resultado é uma faixa de ±7%.</p></details>
-    <details><summary>Qual cidade tem o m² mais caro do litoral?</summary><p>Santos, com média de R$ 8.000/m² e até R$ 12 mil/m² frente ao mar (Gonzaga, Boqueirão). Depois vêm Ilhabela (R$ 7.200) e São Sebastião (R$ 6.500). O condomínio Riviera, em Bertioga, é caso à parte: R$ 8–15 mil/m².</p></details>
-    <details><summary>Frente para o mar vale quanto a mais?</summary><p>Em média +35% sobre o valor base. Estar a até 200 m da praia agrega ~12%. Condomínio com lazer completo soma ~8%.</p></details>
-    <details><summary>Onde o imóvel é mais barato?</summary><p>Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) — boas opções de entrada com demanda de temporada.</p></details>
-    <details><summary>A estimativa substitui avaliação profissional?</summary><p>Não. Ela dá uma faixa inicial. A precificação real depende de andar, vista, sol, documentação e comparáveis do bairro. <a href="/cadastrar-imovel.html" style="color:#0EA5E9">Peça uma avaliação gratuita</a>.</p></details>
+    <details><summary>Como funciona o cálculo?</summary><p>Multiplicamos a referência histórica por m² da cidade selecionada pela área construída e aplicamos os fatores de quartos, conservação e características marcadas. A simulação não usa anúncios ou transações em tempo real.</p></details>
+    <details><summary>O que significa a faixa ilustrativa de ±7%?</summary><p>É uma regra fixa: mostramos 7% abaixo e 7% acima do valor simulado. A faixa não indica probabilidade de venda, intervalo de confiança nem margem de erro estatística.</p></details>
+    <details><summary>Como a ferramenta trata a frente para o mar?</summary><p>Marcar frente para o mar multiplica o valor por 1,35; marcar até 200 metros da praia multiplica por 1,12. São hipóteses do cálculo, não valorizações comprovadas. Se as duas opções forem marcadas, os fatores se multiplicam.</p></details>
+    <details><summary>Por que Caraguatatuba não aparece na lista de cidades?</summary><p>A cidade consta apenas na tabela histórica, para consulta. O simulador não calcula um valor para Caraguatatuba.</p></details>
+    <details><summary>A simulação substitui avaliação profissional?</summary><p>Não. É um ponto de partida ilustrativo. Uma avaliação individual considera fatores como andar, vista, documentação e imóveis comparáveis do bairro.</p><p><a href="/cadastrar-imovel.html" style="color:#0EA5E9">Cadastre seu imóvel para conversar sobre a avaliação</a>.</p></details>
   </div>
 
   <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Veja o valor por bairro</h2>
-    <p style="font-size:14px;color:#475569;margin-bottom:8px">O m² varia muito dentro da mesma cidade. Explore os guias de bairros com custo por m², rentabilidade de temporada e lançamentos:</p>
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Explore os guias de bairro</h2>
+    <p style="font-size:14px;color:#475569;margin-bottom:8px">Valores podem variar dentro da mesma cidade. Use os guias para conhecer os bairros e confira fontes, datas e imóveis semelhantes antes de decidir:</p>
     <div class="links">
       <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
       <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
@@ -180,10 +189,29 @@
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
 function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
-function calc(){
+function calc(event){
+  event.preventDefault();
+  const input = document.getElementById('area');
+  const error = document.getElementById('area-erro');
+  const result = document.getElementById('res');
+  const valueOutput = document.getElementById('valor');
+  const rangeOutput = document.getElementById('range');
+  const breakdown = document.getElementById('bd');
+  const clearWithError = (message) => {
+    result.hidden = true;
+    valueOutput.textContent = '';
+    rangeOutput.textContent = '';
+    breakdown.textContent = '';
+    input.setAttribute('aria-invalid', 'true');
+    error.textContent = message;
+    input.focus();
+  };
   const m2 = parseFloat(document.getElementById('cidade').value);
-  const area = parseFloat(document.getElementById('area').value)||0;
-  if(area<=0){ alert('Informe a área!'); return; }
+  const area = input.valueAsNumber;
+  if (!Number.isFinite(area) || area <= 0) {
+    clearWithError('Informe uma área construída válida, maior que zero.');
+    return;
+  }
   let mult = parseFloat(document.getElementById('quartos').value) * parseFloat(document.getElementById('estado').value);
   const extras = [];
   if(document.getElementById('frente').checked){ mult*=1.35; extras.push('Frente mar +35%'); }
@@ -193,14 +221,26 @@ function calc(){
   if(document.getElementById('vaga').checked){ mult*=1.04; extras.push('Vaga +4%'); }
   const base = m2*area;
   const valor = base*mult;
-  document.getElementById('valor').textContent = fmt(valor);
-  document.getElementById('range').textContent = 'Faixa provável: ' + fmt(valor*0.93) + ' — ' + fmt(valor*1.07);
-  document.getElementById('bd').innerHTML =
+  const lower = valor*0.93;
+  const upper = valor*1.07;
+  // Values are displayed in whole reais. Reject only out-of-precision arithmetic,
+  // not areas above or below an assumed limit for actual properties.
+  if (![base, valor, lower, upper].every(value => Number.isSafeInteger(Math.round(value)) && Math.round(value) > 0)) {
+    clearWithError('A área informada não permite calcular a faixa com precisão. Confira a unidade (m²) e o número digitado.');
+    return;
+  }
+  input.removeAttribute('aria-invalid');
+  error.textContent = '';
+  valueOutput.textContent = fmt(valor);
+  rangeOutput.textContent = 'Faixa ilustrativa (±7%): ' + fmt(lower) + ' — ' + fmt(upper);
+  breakdown.innerHTML =
     `<div><span>Base (${fmt(m2)}/m² × ${area}m²)</span><strong>${fmt(base)}</strong></div>` +
     extras.map(e=>`<div><span>${e}</span><strong>✓</strong></div>`).join('');
-  document.getElementById('res').style.display = 'block';
-  document.getElementById('res').scrollIntoView({behavior:'smooth'});
+  result.hidden = false;
+  result.focus({preventScroll:true});
+  result.scrollIntoView({behavior:'smooth'});
 }
+document.getElementById('estimador').addEventListener('submit', calc);
 </script>
 
 

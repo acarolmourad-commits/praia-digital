@@ -171,13 +171,13 @@
   "apps/valor-imovel/index.html": {
     "heading_id": "pd-app-title",
     "scripts": [
-      "<script> sha256:e6702723c7840d3d06d94eafb61cae4d3783930d3866e7c774efa537d30b1416",
+      "<script> sha256:a1cb9d0d15efdba0ca1f354eb71c67cba3319ee2281ed0be69e587932d0a4955",
       "<script defer src=\"/js/shared.js\">",
       "<script defer src=\"/assets/js/related-ads.js\">"
     ],
     "controls": [
-      "<select id=\"cidade\">",
-      "<input type=\"number\" id=\"area\" value=\"105\">",
+      "<select id=\"cidade\" aria-describedby=\"referencia-ajuda\">",
+      "<input type=\"number\" id=\"area\" value=\"105\" required step=\"any\" aria-describedby=\"area-ajuda area-erro\">",
       "<select id=\"quartos\">",
       "<select id=\"estado\">",
       "<input type=\"checkbox\" id=\"frente\">",
@@ -185,7 +185,7 @@
       "<input type=\"checkbox\" id=\"cond\">",
       "<input type=\"checkbox\" id=\"mobilia\">",
       "<input type=\"checkbox\" id=\"vaga\">",
-      "<button onclick=\"calc()\">"
+      "<button type=\"submit\">"
     ]
   },
   "apps/calculadora-valorizacao/index.html": {
