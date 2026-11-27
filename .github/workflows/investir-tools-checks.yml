@@ -2,6 +2,13 @@ name: Investir tools checks
 on:
   pull_request:
     paths:
+      - "index.html"
+      - "blog/fgts-financiamento-sbpe-mcmv-imovel-litoral-2026.html"
+      - "ferramentas/pre-qualificacao-credito-2026.html"
+      - "js/orcamento-moradia.js"
+      - "tests/test_financing_journey.py"
+      - "apps/renda-para-financiar/**"
+      - "apps/custo-de-compra/**"
       - "ferramentas/avaliacao-preco.html"
       - "apps/calculadora-financiamento/**"
       - "js/investir-tools-core.js"
@@ -19,6 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - run: python3 tests/test_financing_journey.py
       - run: node tests/investir-tools.cjs
       - name: Check app network structure
         run: python3 tests/test_app_network.py NetworkTests.test_structure_and_targets

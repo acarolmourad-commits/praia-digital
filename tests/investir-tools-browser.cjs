@@ -11,6 +11,27 @@ const root = path.resolve(__dirname, "..");
       : {}),
   });
   try {
+    // With scripts unavailable, both a click and an implicit submit must stay local.
+    const offline = await browser.newPage({ javaScriptEnabled: false });
+    for (const file of ["apps/calculadora-financiamento/index.html", "ferramentas/pre-qualificacao-credito-2026.html"]) {
+      const target = "https://pd.test/" + file;
+      const navigation = [];
+      await offline.route("**/*", async (route) => {
+        if (route.request().isNavigationRequest()) navigation.push(route.request().url());
+        if (route.request().url() !== target) return route.abort();
+        return route.fulfill({contentType: "text/html; charset=utf-8", body: fs.readFileSync(path.join(root, file))});
+      });
+      await offline.goto(target);
+      const form = offline.locator("form").first();
+      assert.equal(await form.locator('button[type="submit"]').isDisabled(), true);
+      const price = form.locator('input[type="number"]').first();
+      await price.fill("480000");
+      await price.press("Enter");
+      assert.equal(offline.url(), target);
+      assert.deepEqual(navigation, [target]);
+      await offline.unroute("**/*");
+    }
+    await offline.close();
     for (const width of [320, 390, 768, 1280]) {
       const page = await browser.newPage({
         viewport: { width, height: 900 },
@@ -49,6 +70,23 @@ const root = path.resolve(__dirname, "..");
           body: fs.readFileSync(f),
         });
       });
+      await page.goto("https://pd.test/ferramentas/pre-qualificacao-credito-2026.html");
+      await page.locator("#preco").fill("480000");
+      await page.locator("#entrada").fill("96000");
+      await page.locator("#renda").fill("10000");
+      await page.getByRole("button", {name: "Calcular orçamento"}).click();
+      assert.match(await page.locator("#result").innerText(), /384\.000,00/);
+      assert.match(await page.locator("#result").innerText(), /3\.000,00/);
+      await page.locator("#tipo").selectOption("consorcio");
+      assert.equal(await page.locator("#result").innerText(), "");
+      await page.getByRole("button", {name: "Calcular orçamento"}).click();
+      assert.match(await page.locator("#result").innerText(), /carta de crédito/);
+      await page.locator("#entrada").fill("490000");
+      await page.locator("#entrada").press("Enter");
+      assert.equal(await page.locator("#entrada").evaluate((e) => e.validity.customError), true);
+      await page.locator("#entrada").fill("96000");
+      await page.locator("#entrada").press("Enter");
+      assert.match(await page.locator("#result").innerText(), /384\.000,00/);
       await page.goto("https://pd.test/apps/calculadora-financiamento/");
       await page.getByRole("button", { name: "Comparar SAC e Price" }).click();
       assert.match(await page.locator("#rows").innerText(), /7\.195,56/);

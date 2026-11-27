@@ -75,7 +75,7 @@
     "heading_id": "pd-app-title",
     "scripts": [
       "<script defer src=\"/js/investir-tools-core.js?v=20261112\">",
-      "<script defer src=\"/js/financiamento-ui.js?v=20261112\">",
+      "<script defer src=\"/js/financiamento-ui.js?v=20261124\">",
       "<script defer src=\"/js/shared.js\">"
     ],
     "controls": [
@@ -86,7 +86,7 @@
       "<input\n              id=\"meses\"\n              name=\"meses\"\n              type=\"number\"\n              value=\"240\"\n              min=\"1\"\n              max=\"600\"\n              step=\"1\"\n              required\n              aria-describedby=\"meses-help meses-error\"\n            />",
       "<input\n              id=\"seguros\"\n              name=\"seguros\"\n              type=\"number\"\n              value=\"0\"\n              min=\"0\"\n              max=\"1000000\"\n              step=\"any\"\n              required\n              aria-describedby=\"seguros-help seguros-error\"\n            />",
       "<input\n              id=\"comprometimento\"\n              name=\"comprometimento\"\n              type=\"number\"\n              value=\"30\"\n              min=\"1\"\n              max=\"100\"\n              step=\"any\"\n              required\n              aria-describedby=\"comprometimento-help comprometimento-error\"\n            />",
-      "<button type=\"submit\">"
+      "<button type=\"submit\" disabled>"
     ]
   },
   "apps/calculadora-consorcio/index.html": {

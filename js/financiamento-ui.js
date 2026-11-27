@@ -13,6 +13,7 @@
       document.getElementById(id + "-error").textContent = "";
     }
   }
+  if (typeof window.PDInvestir?.finance !== "function") return;
   form.addEventListener("input", () => {
     clear();
     status.textContent = "Premissas alteradas. Calcule novamente.";
@@ -67,4 +68,5 @@
       "Cálculo atualizado. Estimativa, não proposta de crédito.";
     document.getElementById("result-title").focus();
   });
+  form.querySelector('button[type="submit"]').disabled = false;
 })();

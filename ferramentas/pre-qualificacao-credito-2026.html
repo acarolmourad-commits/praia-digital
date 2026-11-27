@@ -6,20 +6,38 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Qual a taxa de financiamento imobiliário em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com a Selic em 15% a.a., as taxas via SBPE partem de cerca de 11% a 12% a.a. + taxa de referência, e via poupança ficam entre 9% e 10% a.a. + TR."}},
-    {"@type": "Question", "name": "Quanto da renda pode ser comprometido com a parcela?", "acceptedAnswer": {"@type": "Answer", "text": "Os bancos limitam a parcela a até 30% da renda mensal bruta comprovada."}},
-    {"@type": "Question", "name": "Quanto eu preciso de entrada?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente a partir de 20% do valor do imóvel, mais cerca de 4% a 5% para custas de ITBI, escritura e registro."}},
-    {"@type": "Question", "name": "Quem pode usar FGTS?", "acceptedAnswer": {"@type": "Answer", "text": "Quem não possui imóvel na cidade onde mora ou trabalha, não tem financiamento ativo no SFH e soma pelo menos 3 anos de trabalho sob regime do FGTS."}},
-    {"@type": "Question", "name": "Quais cidades são atendidas?", "acceptedAnswer": {"@type": "Answer", "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."}},
-    {"@type": "Question", "name": "Quanto tempo para retorno?", "acceptedAnswer": {"@type": "Answer", "text": "Em até 24 horas após o contato, com atendimento humanizado."}}
+    {
+      "@type": "Question",
+      "name": "Esta página consulta ou pré-aprova crédito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. As ferramentas indicadas estimam parcelas e renda com as premissas que você informar. A instituição financeira analisa a renda, outros compromissos, a documentação e o imóvel antes de decidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que significa usar 30% da renda na simulação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É uma referência de orçamento que você pode ajustar no simulador de renda. Não é limite obrigatório nem sinal de aprovação de crédito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como comparar duas propostas de financiamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use o mesmo valor financiado e o mesmo prazo para comparar parcelas. Peça a cada instituição o Custo Efetivo Total (CET), o cronograma, o indexador e a entrada exigida."
+      }
+    }
   ]
 }
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pré-qualificação de Crédito | Praia Digital</title>
-<meta name="keywords" content="Pré-qualificação de Crédito, financiamento imobiliário litoral paulista, FGTS, consórcio, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe">
-<meta name="description" content="Verifique sua elegibilidade para financiamento ou consórcio no litoral paulista. Cálculo ao vivo com taxas de 2025-2026.">
+<title>Planejamento de crédito imobiliário | Praia Digital</title>
+<meta name="keywords" content="simulação de financiamento imobiliário, SAC, Price, renda indicativa, litoral paulista">
+<meta name="description" content="Compare parcelas SAC e Price e estime a renda com suas premissas. As ferramentas não consultam nem aprovam crédito.">
 <link rel="canonical" href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">
 <style>
 body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
@@ -27,31 +45,23 @@ body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:
 .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
 h1{font-size:1.6rem;margin-bottom:.4rem}
 h2{font-size:1.15rem;color:#0e7c7b;margin-top:0}
-label{display:block;color:#334155;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1f2937;box-sizing:border-box}
-.btn{display:inline-block;margin-top:1rem;background:#0e7c7b;color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;font-size:1rem}
-.btn:hover{background:#0b6867}
-.result{background:#f0fdfa;border:1px solid #99d9d8;border-radius:12px;padding:1rem;margin-top:1rem;color:#1f2937}
 a{color:#0e7c7b;text-decoration:none}
 a:hover{text-decoration:underline}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.pill{display:inline-block;background:#e0f5f5;color:#0e7c7b;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:700;margin-right:6px}
-.bar{height:14px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:6px 0}
-.bar>div{height:100%;background:#0e7c7b;transition:width .2s}
-.key{font-size:.92rem;color:#475569}
 details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;padding:10px 14px;background:#fff}
 summary{cursor:pointer;font-weight:700;color:#0f172a}
 details[open] summary{color:#0e7c7b}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-th,td{border:1px solid #e2e8f0;padding:8px 10px;text-align:left}
-th{background:#f1f5f9;color:#334155}
-.note{font-size:.85rem;color:#64748b;margin-top:.8rem}
 .how{margin:.5rem 0;padding-left:1.2rem}
 .how li{margin-bottom:.4rem}
+#orcamento {display:grid;gap:.9rem;max-width:44rem}
+#orcamento label {display:grid;gap:.25rem;font-weight:600}
+#orcamento input,#orcamento select,#orcamento button {min-width:0;box-sizing:border-box;width:100%;padding:.65rem;font:inherit}
+#orcamento button {background:#075c5b;color:white;border:0;border-radius:.4rem}
+#orcamento button:disabled {opacity:.65}
+#orcamento :focus-visible {outline:3px solid #075c5b;outline-offset:3px}
 </style>
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pré-qualificação de Crédito | Praia Digital">
-<meta property="og:description" content="Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista.">
+<meta property="og:title" content="Planejamento de crédito imobiliário | Praia Digital">
+<meta property="og:description" content="Compare parcelas SAC e Price e estime a renda com suas premissas. As ferramentas não consultam nem aprovam crédito.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -59,8 +69,8 @@ th{background:#f1f5f9;color:#334155}
 <meta property="og:site_name" content="Praia Digital">
 <meta property="og:url" content="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pré-qualificação de Crédito | Praia Digital">
-<meta name="twitter:description" content="Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista.">
+<meta name="twitter:title" content="Planejamento de crédito imobiliário | Praia Digital">
+<meta name="twitter:description" content="Compare parcelas SAC e Price e estime a renda com suas premissas. As ferramentas não consultam nem aprovam crédito.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
 <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -103,130 +113,51 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 <div class="container" id="main">
 
   <div class="card">
-    <span class="pill">Atualizado 2025-2026</span><span class="pill">Selic 15% a.a.</span><span class="pill">Todo o litoral de SP</span>
-    <h1>Pré-qualificação de Crédito</h1>
-    <p>Responda em menos de 1 minuto e descubra se seu perfil cabe nos financiamentos atuais — tudo calculado automaticamente enquanto você digita.</p>
-    <ol class="how">
-      <li><strong>Informe</strong> o valor do imóvel, a entrada e a renda da família.</li>
-      <li><strong>Escolha</strong> a modalidade: financiamento, FGTS ou consórcio.</li>
-      <li><strong>Veja</strong> a parcela estimada, o limite por renda e seu escore de elegibilidade ao vivo.</li>
-    </ol>
+    <h1>Planejamento de crédito imobiliário</h1>
+    <p>Escolha qual conta quer fazer. Os simuladores usam as condições que você informar, não consultam o banco e não fazem análise ou aprovação de crédito.</p>
+    <ul class="how">
+      <li><a href="/apps/calculadora-financiamento/"><strong>Compare parcelas SAC e Price</strong></a> com o mesmo valor, entrada, taxa e prazo.</li>
+      <li><a href="/apps/renda-para-financiar/"><strong>Estime a renda para financiar</strong></a> informando preço do imóvel, entrada em percentual, taxa, prazo e a fração da renda que pretende reservar. A sugestão inicial de 30% é ajustável e serve como referência de orçamento.</li>
+      <li><a href="/apps/custo-de-compra/"><strong>Organize os custos de compra</strong></a> em separado, com os valores de ITBI, escritura e registro aplicáveis à sua operação.</li>
+    </ul>
+    <p><a href="/blog/fgts-financiamento-sbpe-mcmv-imovel-litoral-2026.html">Entenda SBPE, FGTS e Minha Casa, Minha Vida</a> antes de escolher uma linha de crédito.</p>
   </div>
 
-  <div class="card">
-    <h2>Simulador</h2>
-    <div class="grid">
-      <div><label for="nome">Nome</label><input id="nome" placeholder="Seu nome"></div>
-      <div><label for="cidade">Cidade do imóvel</label><input id="cidade" placeholder="Ex: Santos"></div>
-    </div>
-    <div class="grid">
-      <div><label for="preco">Valor do imóvel (R$)</label><input id="preco" type="number" min="0" placeholder="Ex: 500000"></div>
-      <div><label for="entrada">Entrada (R$)</label><input id="entrada" type="number" min="0" placeholder="Ex: 100000"></div>
-    </div>
-    <div class="grid">
-      <div><label for="renda">Renda mensal da família (R$)</label><input id="renda" type="number" min="0" placeholder="Ex: 12000"></div>
-      <div><label for="tipo">Modalidade</label>
-        <select id="tipo">
-          <option>Financiamento (SBPE)</option>
-          <option>Financiamento via poupança</option>
-          <option>FGTS + financiamento</option>
-          <option>Consórcio</option>
-        </select>
-      </div>
-    </div>
-    <button class="btn" onclick="qualificar(true)">Verificar elegibilidade</button>
-    <div class="result" id="result" style="display:none"></div>
-    <p class="note">Parcela estimada com a taxa média da modalidade em 2025-2026. A aprovação final depende da análise do banco.</p>
-  </div>
-
-  <div class="card">
-    <h2>O que os bancos analisam em 2026</h2>
-    <table>
-      <tr><th>Critério</th><th>Regra atual</th></tr>
-      <tr><td>Comprometimento de renda</td><td>Parcela máxima de 30% da renda bruta comprovada</td></tr>
-      <tr><td>Entrada mínima</td><td><strong>20%</strong> do valor do imóvel (financiamento de até 80%)</td></tr>
-      <tr><td>Custas extras</td><td>ITBI (2% em Santos, até 3% em outras cidades) + escritura e registro (1% a 2%)</td></tr>
-      <tr><td>Taxa SBPE</td><td>A partir de ~11% a 12% a.a. + taxa de referência (2025-2026)</td></tr>
-      <tr><td>Taxa poupança</td><td>Entre 9% e 10% a.a. + TR; limites de imóvel e renda maiores que no MCMV</td></tr>
-      <tr><td>FGTS</td><td>Exige 3 anos sob regime FGTS, não ter imóvel na mesma cidade nem financiamento ativo no SFH</td></tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <h2>Compare as modalidades</h2>
-    <p class="key">Valores de referência de mercado (2025-2026) para compra de imóvel de R$ 500 mil, com entrada de 20% e prazo de 30 anos:</p>
-    <table>
-      <tr><th>Modalidade</th><th>Parcela média*</th><th>Pontos fortes</th><th>Atenção</th></tr>
-      <tr><td>Financiamento SBPE</td><td>~R$ 4.300</td><td>Liberação rápida de crédito</td><td>Juros totais altos com Selic a 15%</td></tr>
-      <tr><td>Financiamento via poupança</td><td>~R$ 3.700</td><td>Taxa menor; bom para valores altos</td><td>Exige mais entrada e renda</td></tr>
-      <tr><td>FGTS + financiamento</td><td>~R$ 3.600</td><td>Reduz a entrada e pode amortizar</td><td>Regras rígidas de uso</td></tr>
-      <tr><td>Consórcio</td><td>~R$ 3.200</td><td>Sem juros; taxa de administração ~15% total</td><td>Depende de sorteio ou lance</td></tr>
-    </table>
-    <p class="note">*Exemplos ilustrativos. Não constituem oferta de crédito.</p>
-  </div>
+  <section class="card" aria-labelledby="titulo-orcamento">
+    <h2 id="titulo-orcamento">Organize o orçamento da compra</h2>
+    <p>Confira quanto falta após a entrada e quanto da renda você pretende reservar por mês. Nome e cidade são opcionais e não entram no cálculo.</p>
+    <form id="orcamento">
+      <label>Nome (opcional)<input id="nome" autocomplete="off"></label>
+      <label>Cidade do imóvel (opcional)<input id="cidade" autocomplete="off"></label>
+      <label>Valor do imóvel (R$)<input id="preco" type="number" min="0.01" max="1000000000" step="0.01" required></label>
+      <label>Entrada disponível (R$)<input id="entrada" type="number" min="0" max="1000000000" step="0.01" required></label>
+      <label>Renda mensal da família (R$)<input id="renda" type="number" min="0.01" max="1000000000" step="0.01" required></label>
+      <label>Parcela da renda a reservar (%)<input id="percentual" type="number" min="0.01" max="100" step="0.01" value="30" required></label>
+      <label>Modalidade a estudar<select id="tipo">
+        <option value="sbpe">Financiamento com recursos da poupança (SBPE)</option>
+        <option value="fgts">Financiamento com uso do saldo pessoal do FGTS</option>
+        <option value="mcmv">Minha Casa, Minha Vida financiado</option>
+        <option value="consorcio">Consórcio</option>
+      </select></label>
+      <button type="submit" disabled>Calcular orçamento</button>
+      <output id="result" role="status" aria-live="polite"></output>
+    </form>
+    <noscript><p>Para fazer a conta à mão, subtraia a entrada do preço. Multiplique a renda pelo percentual escolhido e divida por 100 para encontrar a reserva mensal.</p></noscript>
+    <p>O valor a cobrir e a reserva mensal não incluem juros, seguros, tarifas ou tributos. Consulte o <a href="/apps/calculadora-consorcio/">simulador de consórcio</a> para estudar parcelas e lance.</p>
+  </section>
+  <script src="/js/orcamento-moradia.js" defer></script>
 
   <div class="card">
     <h2>Perguntas frequentes</h2>
-    <details><summary>Qual a taxa de financiamento imobiliário em 2026?</summary><p>Com a Selic em 15% a.a., as taxas via SBPE partem de cerca de 11% a 12% a.a. + taxa de referência, e via poupança ficam entre 9% e 10% a.a. + TR. Vale comparar mais de um banco — uma diferença de 0,5% a.a. representa dezenas de milhares de reais no total pago.</p></details>
-    <details><summary>Quanto de entrada eu preciso?</summary><p>Cerca de 20% do valor do imóvel, mais 4% a 5% para ITBI (2% em Santos), escritura e registro. Para um imóvel de R$ 500 mil, prepare-se para aproximadamente R$ 125 mil no ato da compra.</p></details>
-    <details><summary>Autônomo consegue financiamento?</summary><p>Sim, mas é preciso comprovar renda por extratos bancários (movimentação consistente por 6 a 12 meses), Decore feito por contador e CPF sem restrições.</p></details>
-    <details><summary>Eu posso usar FGTS?</summary><p>Se você não tem imóvel na cidade onde mora ou trabalha e não possui financiamento ativo no SFH, sim. É exigido mínimo de 3 anos de trabalho sob regime do FGTS (não necessariamente consecutivos).</p></details>
-    <details><summary>Consórcio vale a pena em 2026?</summary><p>Para quem não tem urgência, sim: não há juros, apenas taxa de administração (até ~15-18% do crédito total, embutida nas parcelas). A contemplação, porém, depende de sorteio ou lance.</p></details>
-    <details><summary>Quais cidades atendemos?</summary><p>Todo o litoral paulista: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p></details>
+    <details><summary>Esta página consulta ou pré-aprova crédito?</summary><p>Não. As ferramentas indicadas estimam parcelas e renda com as premissas que você informar. A instituição financeira analisa a renda, outros compromissos, a documentação e o imóvel antes de decidir.</p></details>
+    <details><summary>O que significa usar 30% da renda na simulação?</summary><p>É uma referência de orçamento que você pode ajustar no simulador de renda. Não é limite obrigatório nem sinal de aprovação de crédito.</p></details>
+    <details><summary>Como comparar duas propostas de financiamento?</summary><p>Use o mesmo valor financiado e o mesmo prazo para comparar parcelas. Peça a cada instituição o Custo Efetivo Total (CET), o cronograma, o indexador e a entrada exigida.</p></details>
   </div>
 
-  <p><a href="https://praia.digital/ferramentas/credito-ia-2026.html">← Persona Crédito IA</a> · <a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista no WhatsApp →</a></p>
+  <p><a href="https://praia.digital/ferramentas/credito-ia-2026.html">← Persona Crédito IA</a> · <a href="https://wa.me/5511954346288" rel="noopener">Contato opcional pelo WhatsApp →</a></p>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0}):String(v)}
-function parcelaPrice(c,meses,taxaM){return c*(Math.pow(1+taxaM,meses)*taxaM)/(Math.pow(1+taxaM,meses)-1)}
-function qualificar(showEmpty){
-  var preco=parseFloat(document.getElementById('preco').value)||0;
-  var entrada=parseFloat(document.getElementById('entrada').value)||0;
-  var renda=parseFloat(document.getElementById('renda').value)||0;
-  var tipo=(document.getElementById('tipo').value||'').trim();
-  var nome=(document.getElementById('nome').value||'Você').trim();
-  var cidade=(document.getElementById('cidade').value||'litoral').trim();
-  var box=document.getElementById('result');
-  if(!preco||!renda){
-    if(showEmpty){box.style.display='block';box.innerHTML='<p>Preencha o valor do imóvel, a entrada e a renda para simular.</p>';}
-    return;
-  }
-  var comp=Math.max(0,preco-entrada);
-  var maxParcela=renda*0.30;
-  var meses=360;
-  var taxasAA={'Financiamento (SBPE)':0.115,'Financiamento via poupança':0.095,'FGTS + financiamento':0.11,'Consórcio':0};
-  var taxaAA=taxasAA[tipo]||0.115;
-  var taxaM=Math.pow(1+taxaAA,1/12)-1;
-  var parcela,linfo;
-  if(tipo==='Consórcio'){parcela=comp*1.15/meses;linfo='sem juros — parcela inclui taxa de administração de 15% total;';}
-  else{parcela=parcelaPrice(comp,meses,taxaM);linfo='com taxa de '+(taxaAA*100).toFixed(1)+'% a.a. estimada;';}
-  var elegivel=parcela<=maxParcela;
-  var pctEntrada=preco?entrada/preco:0;
-  var compromet=renda?parcela/renda:1;
-  var score=Math.min(10,Math.max(1,Math.round(((pctEntrada*4)+(Math.min(renda/(preco||1),0.05)*60)+((1-Math.min(compromet,1))*3))*10)/10));
-  var custas=preco*0.045;
-  var pctBar=Math.min(100,Math.round(compromet*100));
-  box.style.display='block';
-  box.innerHTML='<p><strong>'+nome+'</strong>, simulação para <strong>'+cidade+'</strong> ('+tipo+'):</p>'
-    +'<p><strong>Valor a financiar:</strong> '+fmt(comp)+'</p>'
-    +'<p><strong>Parcela estimada:</strong> '+fmt(parcela)+'/mês '+linfo+'</p>'
-    +'<p><strong>Limite por renda (30%):</strong> '+fmt(maxParcela)+'/mês</p>'
-    +'<div class="bar"><div style="width:'+pctBar+'%;background:'+(compromet<=1?'#0e7c7b':'#dc1717')+'"></div></div>'
-    +'<p class="key">Comprometimento da renda: '+(compromet*100).toFixed(1)+'%</p>'
-    +'<p><strong>Elegibilidade:</strong> '+(elegivel?'✅ Perfil compatível com pré-aprovação':'⚠️ Aumente a entrada ou a renda — a parcela excede o limite')+'</p>'
-    +'<p><strong>Escore de elegibilidade:</strong> '+score+'/10</p>'
-    +'<p><strong>Reserve para custas (ITBI + cartório, ~4,5%):</strong> '+fmt(custas)+'</p>'
-    +'<p><a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista →</a></p>';
-}
-['preco','entrada','renda','tipo','nome','cidade'].forEach(function(id){
-  var el=document.getElementById(id);
-  el.addEventListener('input',function(){qualificar(false)});
-  el.addEventListener('change',function(){qualificar(false)});
-});
-</script>
 <meta name="pd-shared-footer">
 </body>
 </html>
