@@ -77,6 +77,17 @@
     .task input:checked + span { color:#667985; text-decoration:line-through; }
     .section { margin-top:2.5rem; }
     .section h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.25; }
+    #intervalo-entre-reservas { scroll-margin-top:5.5rem; }
+    .turnover-fields { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr)); gap:.8rem; margin:.9rem 0; }
+    .turnover-fields label { display:block; font-weight:650; }
+    .turnover-fields input { display:block; width:100%; min-width:0; min-height:44px; padding:.45rem; border:1px solid #708593; border-radius:.5rem; font:inherit; color:var(--ink); background:#fff; }
+    .turnover-fields input[aria-invalid="true"] { border-color:#9f1239; }
+    #turnover-error:empty { margin:0; }
+    #turnover-error { color:#9f1239; font-weight:650; }
+    #turnover-result { margin-top:1rem; }
+    #turnover-result p { margin:0; }
+    #turnover-result p:first-child { font-weight:750; }
+    @media print { .turnover-screen { display:none !important; } }
     .tip-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
     .tip { padding:1rem; background:#fff; border:1px solid var(--line); border-radius:.9rem; }
     .tip h3 { margin:.1rem 0 .4rem; font-size:1.05rem; }
@@ -185,6 +196,7 @@
         <section class="checklist" aria-labelledby="checkout-title">
           <h2 id="checkout-title">4. Check-out e próxima reserva</h2>
           <p class="hint">Feche a estadia e prepare a próxima troca.</p>
+          <p class="turnover-screen"><a href="#intervalo-entre-reservas">Calcular o tempo entre reservas</a></p>
           <ul class="task-list">
             <li><label class="task"><input type="checkbox"><span>Enviar lembrete de check-out com horário e instruções combinadas.</span></label></li>
             <li><label class="task"><input type="checkbox"><span>Confirmar devolução de chaves ou encerramento do acesso digital.</span></label></li>
@@ -197,6 +209,28 @@
           </ul>
         </section>
       </div>
+    </section>
+
+    <section id="intervalo-entre-reservas" class="section checklist turnover-screen" aria-labelledby="turnover-title">
+      <h2 id="turnover-title">Planeje o intervalo entre reservas</h2>
+      <p id="turnover-help">Estime se há tempo para preparar o imóvel quando o check-out e o próximo check-in são <strong>no mesmo dia</strong>. Use os horários locais do imóvel. A conta soma as tarefas em sequência; não confirma disponibilidade, autorização ou prontidão. Os horários informados não são enviados nem salvos pelo planejador.</p>
+      <form id="turnover-form" novalidate aria-describedby="turnover-help">
+        <div class="turnover-fields">
+          <div><label for="turnover-out">Horário de check-out</label><input id="turnover-out" type="time" required aria-describedby="turnover-error"></div>
+          <div><label for="turnover-in">Horário do próximo check-in</label><input id="turnover-in" type="time" required aria-describedby="turnover-error"></div>
+          <div><label for="turnover-clean">Limpeza (min)</label><input id="turnover-clean" type="number" inputmode="numeric" required min="1" max="1440" step="1" aria-describedby="turnover-minutes turnover-error"></div>
+          <div><label for="turnover-inspect">Vistoria e reposição (min)</label><input id="turnover-inspect" type="number" inputmode="numeric" required min="0" max="1440" step="1" aria-describedby="turnover-minutes turnover-error"></div>
+          <div><label for="turnover-buffer">Margem para imprevistos (min)</label><input id="turnover-buffer" type="number" inputmode="numeric" required min="0" max="1440" step="1" aria-describedby="turnover-minutes turnover-error"></div>
+        </div>
+        <p class="hint" id="turnover-minutes">Use minutos inteiros. Limpeza: no mínimo 1 minuto. Nas outras etapas, informe 0 se não precisar reservar tempo.</p>
+        <p id="turnover-error" role="alert"></p>
+        <div class="toolbar-actions">
+          <button class="button button-dark" type="submit" disabled>Calcular intervalo</button>
+          <button class="button button-light" type="button" id="turnover-example" disabled>Preencher exemplo</button>
+        </div>
+      </form>
+      <div id="turnover-result" class="notice" role="region" aria-label="Resultado da estimativa" tabindex="-1" hidden></div>
+      <noscript><p>Para calcular à mão, subtraia o horário de saída do horário de entrada e compare com a soma dos minutos de limpeza, vistoria e margem.</p></noscript>
     </section>
 
     <section id="boas-praticas" class="section" aria-labelledby="praticas-title">
@@ -228,6 +262,7 @@
 
   <meta name="pd-shared-footer">
   <script src="https://praia.digital/js/shared.js?v=2.0" defer></script>
+  <script src="/js/intervalo-entre-reservas.js" defer></script>
   <script>
     (function () {
       'use strict';
