@@ -40,6 +40,24 @@ async function noOverflow(page, label) {
     `${label} horizontal overflow: ${JSON.stringify(dimensions)}`);
 }
 
+async function turnoverFromHome(page, width) {
+  const home = origin + '/#central-airbnb-booking';
+  const path = '/anfitrioes/checklists-anfitrioes.html#intervalo-entre-reservas';
+  await page.goto(home);
+  const feature = page.locator('#central-airbnb-booking').getByRole('link', {name:'Calcule quanto tempo sobra entre reservas', exact:true});
+  assert.equal(await page.locator(`a[href="${path}"]`).count(), 1);
+  assert.equal(await feature.getAttribute('href'), path);
+  assert(await feature.isVisible());
+  await feature.press('Enter');
+  await page.waitForURL(origin + path);
+  assert(await page.getByRole('heading', {name:'Planeje o intervalo entre reservas', exact:true}).isVisible());
+  assert(await page.getByRole('button', {name:'Calcular intervalo', exact:true}).isEnabled());
+  await noOverflow(page, `intervalo entre reservas ${width}px`);
+  await page.goBack();
+  assert.equal(page.url(), home);
+  console.log(`${width}px: home → estimativa de intervalo entre reservas → voltar`);
+}
+
 async function blackFriday(page, width) {
   const special = origin + '/compras/black-friday.html';
   await page.goto(origin + '/#especial-black-friday');
@@ -439,10 +457,11 @@ async function houseListing(page,width){
         await contactAndCases(page, width);
         await houseListing(page,width);
         await appCatalog(browser, page, width);
+        await turnoverFromHome(page, width);
         await blackFriday(page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
+        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'interval between reservations discovery', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });
