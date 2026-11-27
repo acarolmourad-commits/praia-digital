@@ -1,0 +1,80 @@
+"""Guard the eight municipal event guides against the legacy shared Santos template."""
+import json
+from pathlib import Path
+import re
+import unittest
+from html.parser import HTMLParser
+
+ROOT = Path(__file__).resolve().parents[1]
+SECTION = "eventos-litoral-paulista-2026-2027"
+SOURCES = {
+    "bertioga": "https://www.bertioga.sp.gov.br/turismo/noticias",
+    "guaruja": "https://portalguaruja.tur.br/",
+    "itanhaem": "https://www2.itanhaem.sp.gov.br/turismo/calendario.html",
+    "mongagua": "https://mongagua.sp.gov.br/noticias/cultura",
+    "peruibe": "https://cultura.peruibe.sp.gov.br/eventos",
+    "praia-grande": "https://turismo.praiagrande.sp.gov.br/eventos-oficiais-novo/",
+    "santos": "https://www.turismosantos.com.br/pt-br/eventos",
+    "sao-vicente": "https://www.saovicente.sp.gov.br/visite-sao-vicente-1"
+}
+
+class EventHTML(HTMLParser):
+    def __init__(self, raw):
+        super().__init__()
+        self.nodes = []
+        self.feed(raw)
+
+    def handle_starttag(self, tag, attrs):
+        self.nodes.append((tag, dict(attrs)))
+
+    def get(self, tag):
+        return [attrs for name, attrs in self.nodes if name == tag]
+
+
+class MunicipalEventGuideTests(unittest.TestCase):
+    def test_all_agenda_urls_and_own_metadata(self):
+        expected = {f"agenda-eventos-{key}.html" for key in SOURCES}
+        self.assertEqual({item.name for item in (ROOT / SECTION).glob("agenda-eventos-*.html")}, expected)
+        for key in SOURCES:
+            with self.subTest(city=key):
+                rel = f"{SECTION}/agenda-eventos-{key}.html"
+                raw = (ROOT / rel).read_text(encoding="utf-8")
+                doc = EventHTML(raw)
+                url = f"https://praia.digital/{rel}"
+                self.assertEqual(doc.get("html"), [{"lang": "pt-BR"}])
+                self.assertEqual(len(doc.get("h1")), 1)
+                self.assertEqual([a.get("href") for a in doc.get("link") if a.get("rel") == "canonical"], [url])
+                self.assertNotRegex(raw, r"\bhreflang=|>>")
+                props = {a.get("property"): a.get("content") for a in doc.get("meta") if a.get("property")}
+                self.assertEqual(props["og:url"], url)
+                self.assertEqual(props["og:locale"], "pt_BR")
+                matches = re.findall(r'<script type="application/ld\+json">([^<]+)</script>', raw)
+                self.assertEqual(len(matches), 1)
+                entity = json.loads(matches[0])
+                self.assertEqual((entity["@type"], entity["url"], entity["mainEntityOfPage"], entity["inLanguage"]),
+                                 ("Article", url, url, "pt-BR"))
+
+    def test_sources_local_routes_and_no_sales_promises(self):
+        for key, source in SOURCES.items():
+            with self.subTest(city=key):
+                raw = (ROOT / SECTION / f"agenda-eventos-{key}.html").read_text(encoding="utf-8")
+                doc = EventHTML(raw)
+                anchors = [a["href"] for a in doc.get("a")]
+                ids = [attrs["id"] for _, attrs in doc.nodes if "id" in attrs]
+                self.assertEqual(len(ids), len(set(ids)))
+                self.assertTrue(all(ref[1:] in ids for ref in anchors if ref.startswith("#")))
+                self.assertIn(source, anchors)
+                self.assertIn(f"/{SECTION}.html", anchors)
+                self.assertIn(f"/cidades/{key}.html", anchors)
+                self.assertEqual([href for href in anchors if href.startswith(("http:", "https:"))], [source])
+                self.assertRegex(raw, r"não é um calendário atualizado nem confirma datas")
+                self.assertNotRegex(raw, r"(?i)lucr[eo]|alto impacto|valorização|ocupação|btn-whatsapp|ga4_measurement")
+                if key != "santos":
+                    self.assertNotRegex(raw, r"(?i)\bSantos\b")
+                if key == "praia-grande":
+                    self.assertIn("/bairros/index.html#praia-grande", anchors)
+                    self.assertIn("/apps/simulador-roi-temporada/", anchors)
+
+
+if __name__ == "__main__":
+    unittest.main()
