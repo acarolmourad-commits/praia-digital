@@ -192,5 +192,28 @@ class CarnavalGuideTests(unittest.TestCase):
                 self.assertIn("pontos facultativos do Executivo municipal" if slug == "bertioga" else "não são datas confirmadas de desfiles", raw)
 
 
+class RegionalCarnavalNavigationTests(unittest.TestCase):
+    def test_regional_toc_and_municipal_round_trip(self):
+        raw = (ROOT / f"{SECTION}.html").read_text(encoding="utf-8")
+        doc = EventHTML(raw)
+        anchor = "carnaval-guias"
+        self.assertEqual(sum(node.get("id") == anchor for node in doc.get("section")), 1)
+        toc = re.search(r'<nav class="article-toc"[^>]*>([\s\S]*?)</nav>', raw).group(1)
+        self.assertEqual(sum(node.get("href") == f"#{anchor}" for node in EventHTML(toc).get("a")), 1)
+        section = re.search(r'<section id="carnaval-guias">([\s\S]*?)</section>', raw).group(1)
+        self.assertIn("não confirmam desfiles, blocos, locais nem horários", section)
+        slugs = ("bertioga", "guaruja")
+        self.assertEqual([node["href"] for node in EventHTML(section).get("a")],
+                         [f"/{SECTION}/carnaval-{slug}.html" for slug in slugs])
+        for slug in slugs:
+            with self.subTest(city=slug):
+                agenda_path = f"/{SECTION}/agenda-eventos-{slug}.html"
+                carnival_path = f"/{SECTION}/carnaval-{slug}.html"
+                agenda = (ROOT / agenda_path[1:]).read_text(encoding="utf-8")
+                carnival = (ROOT / carnival_path[1:]).read_text(encoding="utf-8")
+                self.assertEqual(sum(node.get("href") == carnival_path for node in EventHTML(agenda).get("a")), 1)
+                self.assertEqual(sum(node.get("href") == agenda_path for node in EventHTML(carnival).get("a")), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

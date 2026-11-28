@@ -40,7 +40,14 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'Bertioga December agenda horizontal overflow');
   for(const city of ['bertioga','guaruja']){
    const slug='eventos-litoral-paulista-2026-2027';
-   await page.goto('http://local.test/'+slug+'/carnaval-'+city+'.html');
+   await page.goto('http://local.test/'+file);
+   const toc = page.getByRole('link',{name:'Carnaval por cidade',exact:true});
+   await toc.press('Enter');
+   assert.equal(new URL(page.url()).hash,'#carnaval-guias');
+   const carnival = page.locator('#carnaval-guias');
+   assert.match(await carnival.innerText(),/não confirmam desfiles, blocos, locais nem horários/);
+   await carnival.locator('a[href="/'+slug+'/carnaval-'+city+'.html"]').press('Enter');
+   await page.waitForURL('http://local.test/'+slug+'/carnaval-'+city+'.html');
    assert.equal(await page.getByRole('heading',{level:1}).count(),1);
    await page.getByRole('link',{name:'Perguntas frequentes',exact:true}).press('Enter');
    assert.equal(new URL(page.url()).hash,'#perguntas');
@@ -50,6 +57,10 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
    await events.press('Enter');
    await page.waitForURL('http://local.test/'+slug+'/agenda-eventos-'+city+'.html');
    assert.match(await page.locator('h1').innerText(),/onde conferir a programação/);
+   const back = page.locator('a[href="/'+slug+'/carnaval-'+city+'.html"]');
+   assert.equal(await back.count(),1);
+   await back.press('Enter');
+   await page.waitForURL('http://local.test/'+slug+'/carnaval-'+city+'.html');
   }
   await page.close();
  }
