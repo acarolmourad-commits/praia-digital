@@ -144,3 +144,13 @@ for(const term of ['1 a 2 km','duração estimada de 1h30 a 2h','A monitoria é 
  assert(bertiogaTrail.includes(term),term);
 assert.deepEqual([...bertiogaTrail.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.bertioga.sp.gov.br/turismo/pontos-turisticos/trilhas/trilha-do-veu-da-noiva']);
 console.log('Itaguaré Trail visitor guidance is linked only from Bertioga with practical checks and time estimates.');
+
+const bertiogaAgenda='/eventos-litoral-paulista-2026-2027/agenda-eventos-bertioga.html';
+assert.deepEqual(data.cities.filter(c=>c.visitAgenda).map(c=>c.slug),['bertioga']);
+assert.equal((bertiogaTrailPage.split('href="'+bertiogaAgenda+'"').length-1),1);
+assert(bertiogaVisit.includes('<a href="'+bertiogaAgenda+'">Agenda de Bertioga</a>'),'Agenda shortcut must be visible in the visit section');
+const bertiogaAgendaPage=read(bertiogaAgenda.slice(1));
+assert(bertiogaAgendaPage.includes('id="dezembro-2026"'));
+assert(bertiogaAgendaPage.includes('href="#dezembro-2026"'));
+assert(bertiogaAgendaPage.includes('<a href="/cidades/bertioga.html">Guia local de Bertioga</a>'),'Keep the existing return link');
+console.log('Bertioga city guide and agenda are connected in both directions.');
