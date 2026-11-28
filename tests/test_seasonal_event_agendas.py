@@ -66,7 +66,13 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 self.assertIn(source, anchors)
                 self.assertIn(f"/{SECTION}.html", anchors)
                 self.assertIn(f"/cidades/{key}.html", anchors)
-                self.assertEqual([href for href in anchors if href.startswith(("http:", "https:"))], [source])
+                expected_external = [source]
+                if key == "praia-grande":
+                    expected_external += [
+                        "https://p-www2.praiagrande.sp.gov.br/noticia/estacao-verao-praia-tera-8-arenas-em-pg-com-muita-musica-esporte-e-diversao",
+                        "https://p-www2.praiagrande.sp.gov.br/noticia/estacao-verao-2027-recebe-grandes-nomes-da-musica-e-programacao-gratuita-nas-praias-de-pg",
+                    ]
+                self.assertEqual([href for href in anchors if href.startswith(("http:", "https:"))], expected_external)
                 self.assertRegex(raw, r"não é um calendário atualizado nem confirma datas")
                 self.assertNotRegex(raw, r"(?i)lucr[eo]|alto impacto|valorização|ocupação|btn-whatsapp|ga4_measurement")
                 if key != "santos":
@@ -74,6 +80,46 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 if key == "praia-grande":
                     self.assertIn("/bairros/index.html#praia-grande", anchors)
                     self.assertIn("/apps/simulador-roi-temporada/", anchors)
+
+
+class NewYearGuideTests(unittest.TestCase):
+    def test_seven_existing_urls_use_only_city_sources_and_routes(self):
+        date_markers = ["2026-12-31", "2027-01-01"]
+        central = f"/{SECTION}.html"
+        cities = {slug: source for slug, source in SOURCES.items() if slug != "santos"}
+        for slug, official in cities.items():
+            with self.subTest(city=slug):
+                url = f"https://praia.digital/{SECTION}/reveillon-{slug}.html"
+                raw = (ROOT / SECTION / f"reveillon-{slug}.html").read_text(encoding="utf-8")
+                doc = EventHTML(raw)
+                self.assertEqual(doc.get("html"), [{"lang": "pt-BR"}])
+                self.assertEqual(len(doc.get("h1")), 1)
+                self.assertEqual([a.get("href") for a in doc.get("link") if a.get("rel") == "canonical"], [url])
+                self.assertEqual([a["datetime"] for a in doc.get("time")], date_markers)
+                self.assertFalse(any(a.get("hreflang") for a in doc.get("link")))
+                self.assertEqual([m["content"] for m in doc.get("meta") if m.get("property") == "og:url"], [url])
+                article = json.loads(re.search(r'<script type="application/ld\+json">([^<]+)</script>', raw).group(1))
+                self.assertEqual([article[k] for k in ("@type", "url", "mainEntityOfPage", "inLanguage")],
+                                 ["Article", url, url, "pt-BR"])
+                anchors = [a["href"] for a in doc.get("a")]
+                ids = [attrs["id"] for _, attrs in doc.nodes if "id" in attrs]
+                self.assertEqual(len(ids), len(set(ids)))
+                self.assertTrue(all(ref[1:] in ids for ref in anchors if ref.startswith("#")))
+                for target in (official, central, f"/{SECTION}/agenda-eventos-{slug}.html", f"/cidades/{slug}.html"):
+                    self.assertIn(target, anchors)
+                expected_external = [official]
+                if slug == "praia-grande":
+                    expected_external.append(
+                        "https://www2.praiagrande.sp.gov.br/noticia/"
+                        "sucesso-no-ultimo-verao-cubos-de-led-estao-de-volta-a-orla-de-praia-grande"
+                    )
+                self.assertEqual([href for href in anchors if href.startswith(("http:", "https:"))], expected_external)
+                self.assertNotRegex(raw, r"(?i)\bsantos\b|lucre|valorização|alto impacto|wa\.me")
+                self.assertIn("não é a programação oficial deste Réveillon", raw)
+                if slug == "praia-grande":
+                    self.assertIn("Comunicado da Prefeitura sobre os cubos de LED, de 30/09/2026", raw)
+                    self.assertIn("a Prefeitura anunciou que os cubos de LED voltariam no Réveillon", raw)
+                    self.assertIn("O comunicado deixou a localização e os detalhes para outra divulgação.", raw)
 
 
 if __name__ == "__main__":
