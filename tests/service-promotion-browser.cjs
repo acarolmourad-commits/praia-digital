@@ -88,6 +88,28 @@ await turnover.emulateMedia({media:'print'});
 assert.equal(await answer.isVisible(),false);
 assert.equal(await turnover.locator('.task-list input[type=checkbox]').count(),33);
 console.log(`Intervalo entre reservas passed at ${width}px: discovery, validation, deficit, recovery, print`);
+const safety = turnover.locator('section[aria-labelledby="safety-title"]');
+const checks = turnover.locator('.task-list input[type=checkbox]');
+const legacyTaskStates = await checks.evaluateAll(nodes=>nodes.map(node=>node.checked));
+const savedChecklist = await turnover.evaluate(()=>localStorage.getItem('praiaDigitalChecklistAnfitriaoV2'));
+const safetyGuides = [
+ ['receber alertas da Defesa Civil pelo CEP do imóvel','/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html',/Como receber alertas da Defesa Civil/],
+ ['consultar a balneabilidade por ponto da praia','/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html',/Como saber se uma praia está própria para banho/],
+];
+for(const [label,href,heading] of safetyGuides){
+ const link=safety.getByRole('link',{name:label,exact:true});
+ assert.equal(await link.count(),1);
+ assert.equal(await link.getAttribute('href'),href);
+ await link.press('Enter');
+ await turnover.waitForURL('https://praia.digital'+href);
+ assert.match(await turnover.locator('h1').innerText(),heading);
+ await turnover.goBack();
+ await turnover.waitForURL('**/anfitrioes/checklists-anfitrioes.html#intervalo-entre-reservas');
+ assert.equal(await checks.count(),33);
+ assert.deepEqual(await checks.evaluateAll(nodes=>nodes.map(node=>node.checked)),legacyTaskStates);
+ assert.equal(await turnover.evaluate(()=>localStorage.getItem('praiaDigitalChecklistAnfitriaoV2')),savedChecklist);
+}
+assert(await turnover.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Host checklist horizontal overflow');
 await turnover.close();
 for(const [name,url] of [['listing','/servicos/anuncios-airbnb-booking.html'],['editing','/servicos/edicao-anuncios-airbnb-booking.html'],['pricelabs','/anfitrioes/central-priceplabs.html']]){const page=await context.newPage();await page.goto('https://praia.digital'+url);await page.waitForLoadState('domcontentloaded');if(name==='listing')assert.match(await page.locator('section.cta').evaluate(el=>getComputedStyle(el).backgroundImage),/linear-gradient/);if(name==='pricelabs')assert.equal(await page.locator('.hero .btn-secondary').first().evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(21, 56, 91)');const overflow=await page.evaluate(()=>[...document.querySelectorAll('body *')].filter(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right>innerWidth+1}).map(el=>({tag:el.tagName,cls:el.className,width:el.getBoundingClientRect().width,text:el.textContent.slice(0,80)})).slice(0,12));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),name+' overflow '+JSON.stringify(overflow));{const map=JSON.parse(fs.readFileSync(path.join(root,'assets/data/service-payment-links.json'),'utf8'));const allowed=Object.values(map.services).map(v=>v.url);for(const href of await page.locator('a[href*="buy.stripe.com"]').evaluateAll(els=>els.map(e=>e.href)))assert.ok(allowed.includes(href));}assert.ok((await page.locator('body').innerText()).includes('499'));await screenshot(page,{path:path.join(output,`${name}-${width}.png`),fullPage:true});if(name==='editing'){await page.locator('a[href="/education/cursos/airbnb-do-zero/amostra.html"]').click();await page.waitForURL('**/amostra.html');assert.match(await page.locator('body').innerText(),/amostra/i);await page.goBack();assert.ok(page.url().endsWith(url));}await page.close();}
 for(const [name,url] of [['legacy-academy','/academy/cursos/airbnb-do-zero/index.html?status=success'],['services-index','/servicos.html'],['pricing-diagnostics','/anfitrioes/diagnosticos-anfitrioes.html']]){
