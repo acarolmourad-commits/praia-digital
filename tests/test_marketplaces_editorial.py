@@ -83,6 +83,27 @@ class EditorialTests(unittest.TestCase):
         for url in urls:
             self.assertEqual(url.findtext('s:lastmod', namespaces=ns), self.data['reviewed_on'])
 
+    def test_pending_pages_are_noindex_and_not_in_general_sitemap(self):
+        hub = (ROOT / 'blog' / 'novidades-airbnb-booking.html').read_text()
+        pending_html = re.search(
+            r'Links detectados ainda sem revisão</h3>(.*?)<h3>Estado das fontes monitoradas</h3>', hub, re.S
+        ).group(1)
+        pending_files = re.findall(r'href="/blog/(novidades-[^"]+\.html)"', pending_html)
+        ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+        locs = {loc.text for loc in ET.parse(ROOT / 'sitemap.xml').findall('s:url/s:loc', ns)}
+        for filename in pending_files:
+            with self.subTest(filename=filename):
+                html = (ROOT / 'blog' / filename).read_text()
+                head = html.partition('</head>')[0]
+                self.assertEqual(head.count('<meta name="robots" content="noindex">'), 1)
+                self.assertIn('sem revisão editorial', html)
+                self.assertNotIn('https://praia.digital/blog/' + filename, locs)
+        self.assertIn('https://praia.digital/blog/novidades-airbnb-booking.html', locs)
+        self.assertNotRegex(hub, r'<meta\s+name="robots"[^>]*\bnoindex\b')
+        for article in self.data['articles']:
+            rendered = (ROOT / 'blog' / article['file']).read_text()
+            self.assertNotRegex(rendered, r'<meta\s+name="robots"[^>]*\bnoindex\b')
+
     def test_invalid_source_paths_dates_and_duplicates_rejected(self):
         mutations = [
             lambda d: d.update(reviewed_on='2099-01-01'),
@@ -147,6 +168,7 @@ class EditorialTests(unittest.TestCase):
         body = monitor.article_html('Airbnb', 'Link detectado', '2026-11-11 10:00 UTC', [('https://news.airbnb.com/new-long-news-title', 'Título da fonte')], source, False, 'novidades-test.html')
         self.assertIn('Data original de publicação não confirmada', body)
         self.assertIn('sem revisão editorial', body)
+        self.assertEqual(body.partition('</head>')[0].count('<meta name="robots" content="noindex">'), 1)
         self.assertIn('href="https://praia.digital/blog/novidades-test.html"', body)
 
     def test_extract_official_absolute_relative_links_only(self):
@@ -190,7 +212,11 @@ class EditorialTests(unittest.TestCase):
         state = {'sources': {source['id']: {'seen': {'https://news.airbnb.com/existing-official-news': 'Existing'}}}, 'articles': []}
         after, report, pages = self.run_monitor(state, source, (200, '<a href="/another-official-news-headline">New official headline</a>'))
         self.assertEqual(len(after['articles']), 1)
-        self.assertIn('sem revisão editorial', pages[after['articles'][0]['file']])
+        automatic = pages[after['articles'][0]['file']]
+        self.assertIn('sem revisão editorial', automatic)
+        self.assertIn('<meta name="robots" content="noindex">', automatic)
+        for reviewed_or_hub in [pages['novidades-airbnb-booking.html'], *[pages[a['file']] for a in self.data['articles']]]:
+            self.assertNotRegex(reviewed_or_hub, r'<meta\s+name="robots"[^>]*\bnoindex\b')
         self.assertIn('LiDAR', pages['novidades-20261021-194712-airbnb-resources.html'])
         self.assertIn('Links detectados ainda sem revisão', pages['novidades-airbnb-booking.html'])
 

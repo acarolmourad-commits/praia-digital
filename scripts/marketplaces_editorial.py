@@ -63,12 +63,13 @@ li{margin:9px 0}ul,ol{padding-left:24px}nav.links{display:flex;gap:12px;flex-wra
 """
 
 
-def page(title, description, body, filename):
+def page(title, description, body, filename, *, noindex=False):
     canonical = "https://praia.digital/blog/" + filename
+    robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     return f'''<!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(title)} | Praia Digital</title><meta name="description" content="{esc(description)}">
+{robots}<title>{esc(title)} | Praia Digital</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(canonical)}"><style>{STYLE}</style></head><body>
 <header class="pd-header"><div class="wrap"><a href="/">Praia Digital</a> · <a href="/blog/novidades-airbnb-booking.html">Informativos Airbnb e Booking</a></div></header>
 <main id="conteudo"><div class="wrap">{body}</div></main>
@@ -110,7 +111,7 @@ def automatic_html(platform, title, detected_on, items, source, is_hash, filenam
 <section class="notice"><h2>Leitura pendente</h2><p>O monitor encontrou um link ou uma alteração na fonte oficial. Isso não confirma lançamento de recurso, mudança de regra nem disponibilidade no Brasil.</p></section>
 <h2>Links encontrados</h2><ul>{links}</ul><h2>Antes de agir</h2><p>Leia a fonte, confira a data e verifique se o anúncio se aplica à sua conta e ao seu país. Este registro ainda não contém uma análise prática revisada.</p>
 <p><a href="/blog/novidades-airbnb-booking.html">Ver os informativos revisados</a></p>'''
-    return page(title, "Link de fonte oficial detectado automaticamente, ainda sem revisão editorial ou confirmação de disponibilidade no Brasil.", body, filename)
+    return page(title, "Link de fonte oficial detectado automaticamente, ainda sem revisão editorial ou confirmação de disponibilidade no Brasil.", body, filename, noindex=True)
 
 
 def index_html(articles, editorial=None, sources=None):
