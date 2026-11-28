@@ -70,8 +70,8 @@ async function hostSafetyFromHome(page, width) {
   await page.waitForURL(origin + path);
   const safety = page.locator('section[aria-labelledby="safety-title"]');
   assert(await safety.getByRole('heading', {name:'3. Segurança e funcionamento', exact:true}).isVisible());
-  assert(await safety.getByRole('link', {name:'receber alertas da Defesa Civil pelo CEP do imóvel', exact:true}).isVisible());
-  assert(await safety.getByRole('link', {name:'consultar a balneabilidade por ponto da praia', exact:true}).isVisible());
+  assert(await safety.locator('a[href="/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html#check-in"]').isVisible());
+  assert(await safety.locator('a[href="/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html#hospedes"]').isVisible());
   await noOverflow(page, `checklist de segurança dos anfitriões ${width}px`);
   await page.goBack();
   assert.equal(page.url(), home);
