@@ -38,6 +38,19 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
   assert.equal(await december.getByRole('link',{name:'Programação de Natal da Prefeitura de Bertioga',exact:true}).getAttribute('href'),'https://bertioga.sp.gov.br/bertioga-celebra-o-natal-com-ballet-circo-shows-e-grandes-eventos-de-4-a-23-de-dezembro');
   assert.equal(await december.locator('li').count(),3);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'Bertioga December agenda horizontal overflow');
+  for(const city of ['bertioga','guaruja']){
+   const slug='eventos-litoral-paulista-2026-2027';
+   await page.goto('http://local.test/'+slug+'/carnaval-'+city+'.html');
+   assert.equal(await page.getByRole('heading',{level:1}).count(),1);
+   await page.getByRole('link',{name:'Perguntas frequentes',exact:true}).press('Enter');
+   assert.equal(new URL(page.url()).hash,'#perguntas');
+   assert.equal(await page.locator('a[href^="mailto:comercial@praia.digital?"]').count(),1);
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'horizontal overflow: '+city);
+   const events=page.locator('a[href="/'+slug+'/agenda-eventos-'+city+'.html"]');
+   await events.press('Enter');
+   await page.waitForURL('http://local.test/'+slug+'/agenda-eventos-'+city+'.html');
+   assert.match(await page.locator('h1').innerText(),/onde conferir a programação/);
+  }
   await page.close();
  }
  await browser.close(); console.log('PASS: Events planning guide semantic structure, schema, internal paths/fragments, official sources, 390/1280px overflow and anchor navigation');
