@@ -17,6 +17,10 @@ SOURCES = {
     "santos": "https://www.turismosantos.com.br/pt-br/eventos",
     "sao-vicente": "https://www.saovicente.sp.gov.br/visite-sao-vicente-1"
 }
+BERTIOGA_DECEMBER_SOURCES = (
+    "https://www.bertioga.sp.gov.br/turma-adulta-de-teatro-da-casa-da-cultura-apresenta-espetaculo-o-cortico-com-entrada-gratuita",
+    "https://bertioga.sp.gov.br/bertioga-celebra-o-natal-com-ballet-circo-shows-e-grandes-eventos-de-4-a-23-de-dezembro",
+)
 
 class EventHTML(HTMLParser):
     def __init__(self, raw):
@@ -67,6 +71,8 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 self.assertIn(f"/{SECTION}.html", anchors)
                 self.assertIn(f"/cidades/{key}.html", anchors)
                 expected_external = [source]
+                if key == "bertioga":
+                    expected_external.extend(BERTIOGA_DECEMBER_SOURCES)
                 if key == "praia-grande":
                     expected_external += [
                         "https://p-www2.praiagrande.sp.gov.br/noticia/estacao-verao-praia-tera-8-arenas-em-pg-com-muita-musica-esporte-e-diversao",
@@ -80,6 +86,21 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 if key == "praia-grande":
                     self.assertIn("/bairros/index.html#praia-grande", anchors)
                     self.assertIn("/apps/simulador-roi-temporada/", anchors)
+
+
+    def test_bertioga_december_selection(self):
+        raw = (ROOT / SECTION / "agenda-eventos-bertioga.html").read_text(encoding="utf-8")
+        section = re.search(r'<section id="dezembro-2026">([\s\S]*?)</section>', raw).group(1)
+        self.assertEqual([a["href"] for a in EventHTML(section).get("a")], list(BERTIOGA_DECEMBER_SOURCES))
+        self.assertEqual([a["datetime"] for a in EventHTML(section).get("time")], [
+            "2026-12-08T20:30:00-03:00", "2026-12-20", "2026-12-23", "2026-12-23T20:00:00-03:00",
+        ])
+        for text in ("O Cortiço", "Espaço Cultural Praia", "Sinfonia das Águas", "às 19h",
+                     "não informa embarque do público", "Banda Paralela", "na Feira do Bem",
+                     "confira nos comunicados se houve alterações"):
+            self.assertIn(text, section)
+        self.assertNotIn("Parada de Natal", section)
+        self.assertEqual(raw.count('href="#dezembro-2026"'), 1)
 
 
 class NewYearGuideTests(unittest.TestCase):

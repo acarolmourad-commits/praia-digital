@@ -29,6 +29,15 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'horizontal overflow');
   await page.locator('.article-toc a[href="#status"]').click();assert(new URL(page.url()).hash==='#status');
   await page.locator('a[href="#conteudo"]').last().click();assert(new URL(page.url()).hash==='#conteudo');
+  await page.goto('http://local.test/eventos-litoral-paulista-2026-2027/agenda-eventos-bertioga.html');
+  const agendaLink=page.getByRole('link',{name:'Dezembro de 2026',exact:true});
+  await agendaLink.press('Enter');
+  assert.equal(new URL(page.url()).hash,'#dezembro-2026');
+  const december=page.locator('#dezembro-2026');
+  assert.equal(await december.getByRole('link',{name:'Comunicado da Prefeitura sobre O Cortiço',exact:true}).getAttribute('href'),'https://www.bertioga.sp.gov.br/turma-adulta-de-teatro-da-casa-da-cultura-apresenta-espetaculo-o-cortico-com-entrada-gratuita');
+  assert.equal(await december.getByRole('link',{name:'Programação de Natal da Prefeitura de Bertioga',exact:true}).getAttribute('href'),'https://bertioga.sp.gov.br/bertioga-celebra-o-natal-com-ballet-circo-shows-e-grandes-eventos-de-4-a-23-de-dezembro');
+  assert.equal(await december.locator('li').count(),3);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'Bertioga December agenda horizontal overflow');
   await page.close();
  }
  await browser.close(); console.log('PASS: Events planning guide semantic structure, schema, internal paths/fragments, official sources, 390/1280px overflow and anchor navigation');
