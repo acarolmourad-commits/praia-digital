@@ -58,6 +58,26 @@ async function turnoverFromHome(page, width) {
   console.log(`${width}px: home → estimativa de intervalo entre reservas → voltar`);
 }
 
+async function hostSafetyFromHome(page, width) {
+  const home = origin + '/#central-airbnb-booking';
+  const path = '/anfitrioes/checklists-anfitrioes.html#safety-title';
+  await page.goto(home);
+  const feature = page.locator('#central-airbnb-booking').getByRole('link', {name:'Abra a seção de segurança do checklist', exact:true});
+  assert.equal(await page.locator(`a[href="${path}"]`).count(), 1);
+  assert.equal(await feature.getAttribute('href'), path);
+  assert(await feature.isVisible());
+  await feature.press('Enter');
+  await page.waitForURL(origin + path);
+  const safety = page.locator('section[aria-labelledby="safety-title"]');
+  assert(await safety.getByRole('heading', {name:'3. Segurança e funcionamento', exact:true}).isVisible());
+  assert(await safety.locator('a[href="/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html#check-in"]').isVisible());
+  assert(await safety.locator('a[href="/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html#hospedes"]').isVisible());
+  await noOverflow(page, `checklist de segurança dos anfitriões ${width}px`);
+  await page.goBack();
+  assert.equal(page.url(), home);
+  console.log(`${width}px: home → seção de segurança do checklist → voltar`);
+}
+
 async function blackFriday(page, width) {
   const special = origin + '/compras/black-friday.html';
   await page.goto(origin + '/#especial-black-friday');
@@ -458,10 +478,11 @@ async function houseListing(page,width){
         await houseListing(page,width);
         await appCatalog(browser, page, width);
         await turnoverFromHome(page, width);
+        await hostSafetyFromHome(page, width);
         await blackFriday(page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'interval between reservations discovery', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
+        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'interval between reservations discovery', 'host checklist safety discovery', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });
