@@ -161,5 +161,36 @@ class RegionalNewYearNavigationTests(unittest.TestCase):
         self.assertIn("não confirmação de festas, fogos, locais ou horários", section)
 
 
+
+class CarnavalGuideTests(unittest.TestCase):
+    def test_current_two_local_guides_keep_urls_and_use_primary_sources(self):
+        sources = {"bertioga":["Bertioga","https://www.bertioga.sp.gov.br/turismo/noticias","https://www.bertioga.sp.gov.br/wp/wp-content/uploads/2026/11/ATOS-INTERNOS-1322.pdf"],"guaruja":["Guarujá","https://portalguaruja.tur.br/","https://atos.cnj.jus.br/files/original171025202512106939a981ed01c.pdf"]}
+        for slug, (city, portal, dates_source) in sources.items():
+            with self.subTest(city=slug):
+                rel = f"{SECTION}/carnaval-{slug}.html"
+                url = "https://praia.digital/" + rel
+                raw = (ROOT / rel).read_text(encoding="utf-8")
+                doc = EventHTML(raw)
+                self.assertEqual(doc.get("html"), [{"lang": "pt-BR"}])
+                self.assertEqual(len(doc.get("h1")), 1)
+                self.assertEqual([x["href"] for x in doc.get("link") if x.get("rel") == "canonical"], [url])
+                self.assertEqual([x["content"] for x in doc.get("meta") if x.get("name") == "robots"], ["index, follow"])
+                self.assertIn(f"<title>Eventos em {city}: Carnaval 2026/2027 | Praia Digital</title>", raw)
+                self.assertNotRegex(raw, r"Santos|hreflang|>>|wa\.me|btn-whatsapp|lucre|alta demanda|valorização|GA4_MEASUREMENT_ID")
+                meta = json.loads(re.search(r'<script type="application/ld\+json">([^<]+)</script>', raw).group(1))
+                self.assertEqual([meta["@type"], meta["url"], meta["mainEntityOfPage"], meta["inLanguage"]], ["Article", url, url, "pt-BR"])
+                links = [a["href"] for a in doc.get("a")]
+                self.assertEqual([href for href in links if href.startswith("https://")], [dates_source, portal])
+                self.assertEqual(len([href for href in links if href.startswith("mailto:comercial@praia.digital?")]), 1)
+                self.assertTrue(all((ROOT / link[1:]).is_file() for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html")))
+                for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html"):
+                    self.assertIn(link, links)
+                dates = [t["datetime"] for t in doc.get("time")]
+                self.assertEqual(dates, ["2027-02-08", "2027-02-09"] + (["2027-02-10"] if slug == "bertioga" else []) + ["2026-11-28"])
+                self.assertIn("não localizamos nesses canais a programação detalhada", raw)
+                self.assertIn("As datas de referência confirmam os dias de festa?", raw)
+                self.assertIn("pontos facultativos do Executivo municipal" if slug == "bertioga" else "não são datas confirmadas de desfiles", raw)
+
+
 if __name__ == "__main__":
     unittest.main()
