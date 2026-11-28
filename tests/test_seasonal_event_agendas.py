@@ -122,5 +122,23 @@ class NewYearGuideTests(unittest.TestCase):
                     self.assertIn("O comunicado deixou a localização e os detalhes para outra divulgação.", raw)
 
 
+class RegionalNewYearNavigationTests(unittest.TestCase):
+    def test_regional_guide_links_to_the_seven_revised_city_guides(self):
+        raw = (ROOT / f"{SECTION}.html").read_text(encoding="utf-8")
+        doc = EventHTML(raw)
+        anchor = "reveillon-guias"
+        self.assertEqual(sum(node.get("id") == anchor for node in doc.get("section")), 1)
+        self.assertEqual(sum(node.get("href") == f"#{anchor}" for node in doc.get("a")), 1)
+        section = re.search(r'<section id="reveillon-guias">([\s\S]*?)</section>', raw).group(1)
+        links = [node["href"] for node in EventHTML(section).get("a")]
+        expected = [
+            "bertioga", "guaruja", "itanhaem", "mongagua", "peruibe", "praia-grande", "sao-vicente",
+        ]
+        self.assertEqual(links, [f"/{SECTION}/reveillon-{slug}.html" for slug in expected])
+        for link in links:
+            self.assertTrue((ROOT / link.lstrip("/")).is_file(), link)
+        self.assertIn("não confirmação de festas, fogos, locais ou horários", section)
+
+
 if __name__ == "__main__":
     unittest.main()
