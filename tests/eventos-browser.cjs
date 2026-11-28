@@ -17,7 +17,7 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
   await page.goto('http://local.test/'+file);
   for(const t of ['html','head','body','main','article','h1','title'])assert.equal(await page.locator(t).count(),1,t);
   assert.equal(await page.locator('script[type="application/ld+json"]').count(),1);
-  const d=JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());assert.equal(d['@type'],'Article');assert.equal(d.datePublished,undefined);assert.equal(d.dateModified,'2026-11-17');
+  const d=JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());assert.equal(d['@type'],'Article');assert.equal(d.datePublished,undefined);assert.equal(d.dateModified,await page.locator('.byline time').getAttribute('datetime'));
   const ids=await page.locator('[id]').evaluateAll(es=>es.map(e=>e.id));assert.equal(new Set(ids).size,ids.length);
   const body=await page.locator('body').innerText();
   for(const phrase of ['não é um calendário confirmado','não fornece atualização em tempo real','não comprova demanda','data a confirmar'])assert(body.includes(phrase),phrase);
@@ -38,29 +38,33 @@ const html=fs.readFileSync(path.join(root,file),'utf8');
   assert.equal(await december.getByRole('link',{name:'Programação de Natal da Prefeitura de Bertioga',exact:true}).getAttribute('href'),'https://bertioga.sp.gov.br/bertioga-celebra-o-natal-com-ballet-circo-shows-e-grandes-eventos-de-4-a-23-de-dezembro');
   assert.equal(await december.locator('li').count(),3);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'Bertioga December agenda horizontal overflow');
-  for(const city of ['bertioga','guaruja']){
-   const slug='eventos-litoral-paulista-2026-2027';
+  const cities = ['bertioga','guaruja','itanhaem','mongagua','peruibe','praia-grande','santos','sao-vicente'];
+  const slug = 'eventos-litoral-paulista-2026-2027';
+  for (const city of cities) {
    await page.goto('http://local.test/'+file);
-   const toc = page.getByRole('link',{name:'Carnaval por cidade',exact:true});
-   await toc.press('Enter');
+   await page.getByRole('link',{name:'Carnaval por cidade',exact:true}).press('Enter');
    assert.equal(new URL(page.url()).hash,'#carnaval-guias');
-   const carnival = page.locator('#carnaval-guias');
-   assert.match(await carnival.innerText(),/não confirmam desfiles, blocos, locais nem horários/);
-   await carnival.locator('a[href="/'+slug+'/carnaval-'+city+'.html"]').press('Enter');
-   await page.waitForURL('http://local.test/'+slug+'/carnaval-'+city+'.html');
+   const carnivalPath = '/'+slug+'/carnaval-'+city+'.html';
+   await page.locator('#carnaval-guias a[href="'+carnivalPath+'"]').press('Enter');
+   await page.waitForURL('http://local.test'+carnivalPath);
    assert.equal(await page.getByRole('heading',{level:1}).count(),1);
-   await page.getByRole('link',{name:'Perguntas frequentes',exact:true}).press('Enter');
+   await page.keyboard.press('Tab');
+   const skip = page.getByRole('link',{name:'Pular para o conteúdo',exact:true});
+   assert(await skip.evaluate(el=>el===document.activeElement && el.getBoundingClientRect().top>=0),'skip link: '+city);
+   await page.keyboard.press('Enter');
+   assert.equal(await page.evaluate(()=>document.activeElement.id),'main');
+   await page.locator('.article-toc a[href="#perguntas"]').press('Enter');
    assert.equal(new URL(page.url()).hash,'#perguntas');
-   assert.equal(await page.locator('a[href^="mailto:comercial@praia.digital?"]').count(),1);
+   assert.equal(await page.getByRole('link',{name:'Fale com a Praia Digital por e-mail',exact:true}).getAttribute('href'),'mailto:comercial@praia.digital');
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'horizontal overflow: '+city);
-   const events=page.locator('a[href="/'+slug+'/agenda-eventos-'+city+'.html"]');
-   await events.press('Enter');
-   await page.waitForURL('http://local.test/'+slug+'/agenda-eventos-'+city+'.html');
-   assert.match(await page.locator('h1').innerText(),/onde conferir a programação/);
-   const back = page.locator('a[href="/'+slug+'/carnaval-'+city+'.html"]');
-   assert.equal(await back.count(),1);
-   await back.press('Enter');
-   await page.waitForURL('http://local.test/'+slug+'/carnaval-'+city+'.html');
+   if (city==='bertioga' || city==='guaruja') {
+    await page.locator('a[href="/'+slug+'/agenda-eventos-'+city+'.html"]').press('Enter');
+    await page.waitForURL('http://local.test/'+slug+'/agenda-eventos-'+city+'.html');
+    await page.locator('a[href="'+carnivalPath+'"]').press('Enter');
+    await page.waitForURL('http://local.test'+carnivalPath);
+   }
+   await page.locator('a[href="/'+file+'#carnaval-guias"]').press('Enter');
+   await page.waitForURL('http://local.test/'+file+'#carnaval-guias');
   }
   await page.close();
  }

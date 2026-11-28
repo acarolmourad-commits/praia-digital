@@ -1,6 +1,7 @@
 """Guard the eight municipal event guides against the legacy shared Santos template."""
 import json
 from pathlib import Path
+from xml.etree import ElementTree
 import re
 import unittest
 from html.parser import HTMLParser
@@ -161,58 +162,107 @@ class RegionalNewYearNavigationTests(unittest.TestCase):
         self.assertIn("não confirmação de festas, fogos, locais ou horários", section)
 
 
-
 class CarnavalGuideTests(unittest.TestCase):
-    def test_current_two_local_guides_keep_urls_and_use_primary_sources(self):
-        sources = {"bertioga":["Bertioga","https://www.bertioga.sp.gov.br/turismo/noticias","https://www.bertioga.sp.gov.br/wp/wp-content/uploads/2026/11/ATOS-INTERNOS-1322.pdf"],"guaruja":["Guarujá","https://portalguaruja.tur.br/","https://atos.cnj.jus.br/files/original171025202512106939a981ed01c.pdf"]}
-        for slug, (city, portal, dates_source) in sources.items():
-            with self.subTest(city=slug):
-                rel = f"{SECTION}/carnaval-{slug}.html"
-                url = "https://praia.digital/" + rel
-                raw = (ROOT / rel).read_text(encoding="utf-8")
+    # These sources establish different levels of detail for the 2027 edition.
+    evidence = {
+        "bertioga": ("www.bertioga.sp.gov.br/wp/wp-content/uploads/2026/11/ATOS-INTERNOS-1322.pdf", "pontos facultativos do Executivo municipal"),
+        "guaruja": ("www.guaruja.sp.gov.br/apos-11-anos-guaruja-anuncia-retorno-dos-desfiles-competitivos-de-carnaval-em-2027", "volta dos desfiles competitivos"),
+        "itanhaem": ("www.itanhaem.sp.gov.br/wp-content/uploads/2026/11/1006.pdf", "região central ficou fora"),
+        "mongagua": ("www.mongagua.sp.gov.br/turismo/calendario-de-eventos", "grade municipal com dias, locais e horários para 2027 seguia em aberto"),
+        "peruibe": ("www.peruibe.sp.gov.br/portal/wp-content/uploads/2026/11/DOM-E_-_884_assinado.pdf", "17 blocos classificados"),
+        "praia-grande": ("www2.praiagrande.sp.gov.br/noticiaNP/id/5075", "Estação Verão"),
+        "santos": ("www.santos.sp.gov.br/?q=node/172165", "15 escolas de samba"),
+        "sao-vicente": ("www.saovicente.sp.gov.br/informacao/sao-vicente-abre-credenciamento-para-blocos-e-bandas-do-carnaval-2026", "credenciamento encontrado é da edição de 2026"),
+    }
+
+    def test_existing_urls_metadata_and_unique_editorial_content(self):
+        files = sorted((ROOT / SECTION).glob("carnaval-*.html"))
+        self.assertEqual({f.name for f in files}, {f"carnaval-{city}.html" for city in SOURCES})
+        sitemap = ElementTree.parse(ROOT / "sitemap.xml")
+        locs = [node.text for node in sitemap.findall(".//{*}loc")]
+        headlines, descriptions = [], []
+        for path in files:
+            with self.subTest(page=path.name):
+                url = "https://praia.digital/" + path.relative_to(ROOT).as_posix()
+                raw = path.read_text(encoding="utf-8")
                 doc = EventHTML(raw)
+                meta = {m.get("name") or m.get("property"): m.get("content") for m in doc.get("meta")}
                 self.assertEqual(doc.get("html"), [{"lang": "pt-BR"}])
-                self.assertEqual(len(doc.get("h1")), 1)
-                self.assertEqual([x["href"] for x in doc.get("link") if x.get("rel") == "canonical"], [url])
-                self.assertEqual([x["content"] for x in doc.get("meta") if x.get("name") == "robots"], ["index, follow"])
-                self.assertIn(f"<title>Eventos em {city}: Carnaval 2026/2027 | Praia Digital</title>", raw)
-                self.assertNotRegex(raw, r"Santos|hreflang|>>|wa\.me|btn-whatsapp|lucre|alta demanda|valorização|GA4_MEASUREMENT_ID")
-                meta = json.loads(re.search(r'<script type="application/ld\+json">([^<]+)</script>', raw).group(1))
-                self.assertEqual([meta["@type"], meta["url"], meta["mainEntityOfPage"], meta["inLanguage"]], ["Article", url, url, "pt-BR"])
+                for tag in ("title", "h1"):
+                    self.assertEqual(len(doc.get(tag)), 1)
+                headline = re.search(r"<h1>([^<]+)</h1>", raw).group(1)
+                self.assertIn(f"<title>{headline} | Praia Digital</title>", raw)
+                headlines.append(headline)
+                descriptions.append(meta["description"])
+                self.assertTrue(meta["description"].strip())
+                self.assertEqual([m["href"] for m in doc.get("link") if m.get("rel") == "canonical"], [url])
+                self.assertEqual(locs.count(url), 1)
+                self.assertEqual((meta["robots"], meta["og:url"], meta["og:locale"]), ("index, follow", url, "pt_BR"))
+                for field in ("og", "twitter"):
+                    self.assertEqual(meta[field + ":title"], headline)
+                    self.assertEqual(meta[field + ":description"], meta["description"])
+                entities = [json.loads(blob) for blob in re.findall(r'<script type="application/ld\+json">([^<]+)</script>', raw)]
+                self.assertEqual(len(entities), 1)
+                article = entities[0]
+                self.assertEqual([article[key] for key in ("@type", "url", "mainEntityOfPage", "inLanguage", "headline", "description")],
+                                 ["Article", url, url, "pt-BR", headline, meta["description"]])
+                self.assertIn(article["dateModified"], [t["datetime"] for t in doc.get("time")])
+                self.assertNotRegex(raw, r"(?i)hreflang=|>>|FAQPage|wa\.me|whatsapp|lucre na temporada|GA4_MEASUREMENT_ID")
+        self.assertEqual(len(set(headlines)), len(files))
+        self.assertEqual(len(set(descriptions)), len(files))
+
+    def test_sources_local_destinations_and_email(self):
+        self.assertEqual(set(self.evidence), set(SOURCES))
+        for city, (source, fact) in self.evidence.items():
+            with self.subTest(city=city):
+                raw = (ROOT / SECTION / f"carnaval-{city}.html").read_text(encoding="utf-8")
+                doc = EventHTML(raw)
                 links = [a["href"] for a in doc.get("a")]
-                self.assertEqual([href for href in links if href.startswith("https://")], [dates_source, portal])
-                self.assertEqual(len([href for href in links if href.startswith("mailto:comercial@praia.digital?")]), 1)
-                self.assertTrue(all((ROOT / link[1:]).is_file() for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html")))
-                for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html"):
-                    self.assertIn(link, links)
-                dates = [t["datetime"] for t in doc.get("time")]
-                self.assertEqual(dates, ["2027-02-08", "2027-02-09"] + (["2027-02-10"] if slug == "bertioga" else []) + ["2026-11-28"])
-                self.assertIn("não localizamos nesses canais a programação detalhada", raw)
-                self.assertIn("As datas de referência confirmam os dias de festa?", raw)
-                self.assertIn("pontos facultativos do Executivo municipal" if slug == "bertioga" else "não são datas confirmadas de desfiles", raw)
+                ids = [attrs["id"] for _, attrs in doc.nodes if "id" in attrs]
+                self.assertEqual(len(set(ids)), len(ids))
+                self.assertTrue(all(link[1:] in ids for link in links if link.startswith("#")))
+                self.assertIn("https://" + source, links)
+                self.assertIn(fact, raw)
+                self.assertEqual([link for link in links if link.startswith("mailto:")], ["mailto:comercial@praia.digital"])
+                self.assertFalse(any(link.endswith("/santos.html") or link == "santos.html" for link in links
+                                     if link != f"/cidades/{city}.html"))
+                targets = (f"/{SECTION}.html#carnaval-guias", f"/{SECTION}/agenda-eventos-{city}.html", f"/cidades/{city}.html",
+                           "/apps/comparador-cidades/", "/compras/verao.html#carnaval-2027", "/apps/simulador-roi-temporada/")
+                for target in targets:
+                    self.assertEqual(links.count(target), 1)
+                    path, _, fragment = target.partition("#")
+                    destination = ROOT / path.lstrip("/")
+                    if destination.is_dir():
+                        destination /= "index.html"
+                    self.assertTrue(destination.is_file(), target)
+                    if fragment:
+                        self.assertIn(f'id="{fragment}"', destination.read_text(encoding="utf-8"))
+
+    def test_dates_are_attributed_to_the_right_activity(self):
+        def body(city):
+            return (ROOT / SECTION / f"carnaval-{city}.html").read_text(encoding="utf-8").split("<main", 1)[1]
+
+        self.assertRegex(body("guaruja"), r'[Oo] lançamento[^<.]*<time datetime="2026-11-29">')
+        self.assertRegex(body("santos"), r'nas noites de <time datetime="2027-01-29">29</time> e <time datetime="2027-01-30">')
+        self.assertIn("Passarela do Samba Dráuzio da Cruz", body("santos"))
+        self.assertIn("não traz a ordem de saída, o horário nem o percurso", body("peruibe"))
+        self.assertIn('prazo de inscrição terminou em <time datetime="2026-11-19">', body("itanhaem"))
 
 
 class RegionalCarnavalNavigationTests(unittest.TestCase):
     def test_regional_toc_and_municipal_round_trip(self):
         raw = (ROOT / f"{SECTION}.html").read_text(encoding="utf-8")
         doc = EventHTML(raw)
-        anchor = "carnaval-guias"
-        self.assertEqual(sum(node.get("id") == anchor for node in doc.get("section")), 1)
-        toc = re.search(r'<nav class="article-toc"[^>]*>([\s\S]*?)</nav>', raw).group(1)
-        self.assertEqual(sum(node.get("href") == f"#{anchor}" for node in EventHTML(toc).get("a")), 1)
-        section = re.search(r'<section id="carnaval-guias">([\s\S]*?)</section>', raw).group(1)
-        self.assertIn("não confirmam desfiles, blocos, locais nem horários", section)
-        slugs = ("bertioga", "guaruja")
-        self.assertEqual([node["href"] for node in EventHTML(section).get("a")],
-                         [f"/{SECTION}/carnaval-{slug}.html" for slug in slugs])
-        for slug in slugs:
-            with self.subTest(city=slug):
-                agenda_path = f"/{SECTION}/agenda-eventos-{slug}.html"
-                carnival_path = f"/{SECTION}/carnaval-{slug}.html"
-                agenda = (ROOT / agenda_path[1:]).read_text(encoding="utf-8")
-                carnival = (ROOT / carnival_path[1:]).read_text(encoding="utf-8")
-                self.assertEqual(sum(node.get("href") == carnival_path for node in EventHTML(agenda).get("a")), 1)
-                self.assertEqual(sum(node.get("href") == agenda_path for node in EventHTML(carnival).get("a")), 1)
+        self.assertEqual(sum(node.get("id") == "carnaval-guias" for node in doc.get("section")), 1)
+        toc = re.search(r'<nav class="article-toc"[^>]*>(.*?)</nav>', raw, re.S).group(1)
+        self.assertEqual(sum(node.get("href") == "#carnaval-guias" for node in EventHTML(toc).get("a")), 1)
+        section = re.search(r'<section id="carnaval-guias">(.*?)</section>', raw, re.S).group(1)
+        self.assertCountEqual([node["href"] for node in EventHTML(section).get("a")],
+                              [f"/{SECTION}/carnaval-{slug}.html" for slug in SOURCES])
+        # The two existing agenda pages also link back to their Carnaval guides.
+        for slug in ("bertioga", "guaruja"):
+            agenda = (ROOT / SECTION / f"agenda-eventos-{slug}.html").read_text(encoding="utf-8")
+            self.assertEqual(sum(a["href"] == f"/{SECTION}/carnaval-{slug}.html" for a in EventHTML(agenda).get("a")), 1)
 
 
 if __name__ == "__main__":
