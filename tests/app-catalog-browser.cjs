@@ -22,6 +22,20 @@ try{for(const width of [360,768,1280]){
   assert.equal(await page.locator('.pd-site-header').count(),1);
   assert.equal(await page.locator('.pd-catalog-group .card').count(),16);
   assert.equal(await page.locator('#guia-premissas').count(),1);
+  const notes=page.locator('section[aria-labelledby="guia-premissas"]');
+  const evidenceLink=notes.getByRole('link',{name:'Evidências e encaminhamento',exact:true});
+  assert.equal(await evidenceLink.getAttribute('href'),'/apps/relatorio-imovel/#evidencias-da-visita');
+  assert.equal(await page.locator('a[href="/apps/relatorio-imovel/#evidencias-da-visita"]').count(),1);
+  const reportCard=page.locator('.pd-catalog-group .card[href="/apps/relatorio-imovel/"]');
+  assert.equal(await reportCard.count(),1,'Keep the catalog’s main report card');
+  await evidenceLink.press('Enter');
+  await page.waitForURL(origin+'/apps/relatorio-imovel/#evidencias-da-visita');
+  const capture=page.locator('#evidencias-da-visita');
+  assert.equal(await capture.locator('legend').innerText(),'Evidências e encaminhamento');
+  for (const field of ['Fontes e datas de confirmação','Pontos a confirmar','Próximos passos']) {
+    assert.equal(await capture.getByLabel(field,{exact:true}).count(),1,field);
+  }
+  await page.goto(origin+'/apps/');
   const visibleCards = page.locator('.pd-catalog-group .card:visible');
   assert.equal(await visibleCards.count(),16);
   const goal = page.locator('#app-goal');

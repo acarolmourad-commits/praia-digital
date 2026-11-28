@@ -17,6 +17,10 @@ SOURCES = {
     "santos": "https://www.turismosantos.com.br/pt-br/eventos",
     "sao-vicente": "https://www.saovicente.sp.gov.br/visite-sao-vicente-1"
 }
+BERTIOGA_DECEMBER_SOURCES = (
+    "https://www.bertioga.sp.gov.br/turma-adulta-de-teatro-da-casa-da-cultura-apresenta-espetaculo-o-cortico-com-entrada-gratuita",
+    "https://bertioga.sp.gov.br/bertioga-celebra-o-natal-com-ballet-circo-shows-e-grandes-eventos-de-4-a-23-de-dezembro",
+)
 
 class EventHTML(HTMLParser):
     def __init__(self, raw):
@@ -67,6 +71,8 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 self.assertIn(f"/{SECTION}.html", anchors)
                 self.assertIn(f"/cidades/{key}.html", anchors)
                 expected_external = [source]
+                if key == "bertioga":
+                    expected_external.extend(BERTIOGA_DECEMBER_SOURCES)
                 if key == "praia-grande":
                     expected_external += [
                         "https://p-www2.praiagrande.sp.gov.br/noticia/estacao-verao-praia-tera-8-arenas-em-pg-com-muita-musica-esporte-e-diversao",
@@ -80,6 +86,21 @@ class MunicipalEventGuideTests(unittest.TestCase):
                 if key == "praia-grande":
                     self.assertIn("/bairros/index.html#praia-grande", anchors)
                     self.assertIn("/apps/simulador-roi-temporada/", anchors)
+
+
+    def test_bertioga_december_selection(self):
+        raw = (ROOT / SECTION / "agenda-eventos-bertioga.html").read_text(encoding="utf-8")
+        section = re.search(r'<section id="dezembro-2026">([\s\S]*?)</section>', raw).group(1)
+        self.assertEqual([a["href"] for a in EventHTML(section).get("a")], list(BERTIOGA_DECEMBER_SOURCES))
+        self.assertEqual([a["datetime"] for a in EventHTML(section).get("time")], [
+            "2026-12-08T20:30:00-03:00", "2026-12-20", "2026-12-23", "2026-12-23T20:00:00-03:00",
+        ])
+        for text in ("O Cortiço", "Espaço Cultural Praia", "Sinfonia das Águas", "às 19h",
+                     "não informa embarque do público", "Banda Paralela", "na Feira do Bem",
+                     "confira nos comunicados se houve alterações"):
+            self.assertIn(text, section)
+        self.assertNotIn("Parada de Natal", section)
+        self.assertEqual(raw.count('href="#dezembro-2026"'), 1)
 
 
 class NewYearGuideTests(unittest.TestCase):
@@ -138,6 +159,60 @@ class RegionalNewYearNavigationTests(unittest.TestCase):
         for link in links:
             self.assertTrue((ROOT / link.lstrip("/")).is_file(), link)
         self.assertIn("não confirmação de festas, fogos, locais ou horários", section)
+
+
+
+class CarnavalGuideTests(unittest.TestCase):
+    def test_current_two_local_guides_keep_urls_and_use_primary_sources(self):
+        sources = {"bertioga":["Bertioga","https://www.bertioga.sp.gov.br/turismo/noticias","https://www.bertioga.sp.gov.br/wp/wp-content/uploads/2026/11/ATOS-INTERNOS-1322.pdf"],"guaruja":["Guarujá","https://portalguaruja.tur.br/","https://atos.cnj.jus.br/files/original171025202512106939a981ed01c.pdf"]}
+        for slug, (city, portal, dates_source) in sources.items():
+            with self.subTest(city=slug):
+                rel = f"{SECTION}/carnaval-{slug}.html"
+                url = "https://praia.digital/" + rel
+                raw = (ROOT / rel).read_text(encoding="utf-8")
+                doc = EventHTML(raw)
+                self.assertEqual(doc.get("html"), [{"lang": "pt-BR"}])
+                self.assertEqual(len(doc.get("h1")), 1)
+                self.assertEqual([x["href"] for x in doc.get("link") if x.get("rel") == "canonical"], [url])
+                self.assertEqual([x["content"] for x in doc.get("meta") if x.get("name") == "robots"], ["index, follow"])
+                self.assertIn(f"<title>Eventos em {city}: Carnaval 2026/2027 | Praia Digital</title>", raw)
+                self.assertNotRegex(raw, r"Santos|hreflang|>>|wa\.me|btn-whatsapp|lucre|alta demanda|valorização|GA4_MEASUREMENT_ID")
+                meta = json.loads(re.search(r'<script type="application/ld\+json">([^<]+)</script>', raw).group(1))
+                self.assertEqual([meta["@type"], meta["url"], meta["mainEntityOfPage"], meta["inLanguage"]], ["Article", url, url, "pt-BR"])
+                links = [a["href"] for a in doc.get("a")]
+                self.assertEqual([href for href in links if href.startswith("https://")], [dates_source, portal])
+                self.assertEqual(len([href for href in links if href.startswith("mailto:comercial@praia.digital?")]), 1)
+                self.assertTrue(all((ROOT / link[1:]).is_file() for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html")))
+                for link in (f"/{SECTION}.html", f"/cidades/{slug}.html", f"/{SECTION}/agenda-eventos-{slug}.html"):
+                    self.assertIn(link, links)
+                dates = [t["datetime"] for t in doc.get("time")]
+                self.assertEqual(dates, ["2027-02-08", "2027-02-09"] + (["2027-02-10"] if slug == "bertioga" else []) + ["2026-11-28"])
+                self.assertIn("não localizamos nesses canais a programação detalhada", raw)
+                self.assertIn("As datas de referência confirmam os dias de festa?", raw)
+                self.assertIn("pontos facultativos do Executivo municipal" if slug == "bertioga" else "não são datas confirmadas de desfiles", raw)
+
+
+class RegionalCarnavalNavigationTests(unittest.TestCase):
+    def test_regional_toc_and_municipal_round_trip(self):
+        raw = (ROOT / f"{SECTION}.html").read_text(encoding="utf-8")
+        doc = EventHTML(raw)
+        anchor = "carnaval-guias"
+        self.assertEqual(sum(node.get("id") == anchor for node in doc.get("section")), 1)
+        toc = re.search(r'<nav class="article-toc"[^>]*>([\s\S]*?)</nav>', raw).group(1)
+        self.assertEqual(sum(node.get("href") == f"#{anchor}" for node in EventHTML(toc).get("a")), 1)
+        section = re.search(r'<section id="carnaval-guias">([\s\S]*?)</section>', raw).group(1)
+        self.assertIn("não confirmam desfiles, blocos, locais nem horários", section)
+        slugs = ("bertioga", "guaruja")
+        self.assertEqual([node["href"] for node in EventHTML(section).get("a")],
+                         [f"/{SECTION}/carnaval-{slug}.html" for slug in slugs])
+        for slug in slugs:
+            with self.subTest(city=slug):
+                agenda_path = f"/{SECTION}/agenda-eventos-{slug}.html"
+                carnival_path = f"/{SECTION}/carnaval-{slug}.html"
+                agenda = (ROOT / agenda_path[1:]).read_text(encoding="utf-8")
+                carnival = (ROOT / carnival_path[1:]).read_text(encoding="utf-8")
+                self.assertEqual(sum(node.get("href") == carnival_path for node in EventHTML(agenda).get("a")), 1)
+                self.assertEqual(sum(node.get("href") == agenda_path for node in EventHTML(carnival).get("a")), 1)
 
 
 if __name__ == "__main__":

@@ -111,6 +111,18 @@
     },
     {
       "slug": "bertioga",
+      "visitAgenda": [
+        "/eventos-litoral-paulista-2026-2027/agenda-eventos-bertioga.html",
+        "Agenda de Bertioga"
+      ],
+      "itaguareTrail": {
+        "title": "Trilha do Itaguaré: Relíquias do Passado",
+        "summary": "A Prefeitura de Bertioga informa um percurso de 1 a 2 km, com duração estimada de 1h30 a 2h. A monitoria é opcional. Confira as condições de acesso e as orientações atualizadas antes de sair.",
+        "source": [
+          "https://www.bertioga.sp.gov.br/turismo/pontos-turisticos/trilhas/trilha-do-veu-da-noiva",
+          "Consulte a ficha da trilha na Prefeitura de Bertioga"
+        ]
+      },
       "name": "Bertioga",
       "region": "Baixada Santista",
       "intro": "Enseada, Riviera de São Lourenço e praias como Itaguaré e Guaratuba ajudam a orientar a pesquisa por diferentes trechos do município.",
