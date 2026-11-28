@@ -131,3 +131,16 @@ assert(localCatalog.includes('aria-labelledby="o-negocio-delas-titulo"'));
 for(const term of ['catálogo digital gratuito','produtos e serviços','liderados por mulheres','Organizado por município','Sebrae em parceria com a Prefeitura de Ilhabela']) assert(localCatalog.includes(term),term);
 assert.deepEqual([...localCatalog.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.ilhabela.sp.gov.br/portal/noticias/0/3/18642/ilhabela-lanca-catalogo-digital-de-empreendedoras-da-regiao']);
 console.log('O Negócio Delas visitor guidance is present only in Ilhabela, with municipal source.');
+
+assert.deepEqual(data.cities.filter(c=>c.itaguareTrail).map(c=>c.slug),['bertioga']);
+const bertiogaTrailPage=read('cidades/bertioga.html');
+const bertiogaVisit=bertiogaTrailPage.match(/<section id="visita">([\s\S]*?)<\/section>/)?.[1];
+const bertiogaTrail=bertiogaVisit?.match(/<article class="card" id="trilha-itaguare"[\s\S]*?<\/article>/)?.[0];
+assert(bertiogaTrail,'Trail card should be inside Referências locais');
+assert.equal((bertiogaTrailPage.match(/id="trilha-itaguare"/g)||[]).length,1);
+assert(bertiogaTrail.includes('aria-labelledby="trilha-itaguare-titulo"'));
+assert(bertiogaTrail.includes('<h3 id="trilha-itaguare-titulo">Trilha do Itaguaré: Relíquias do Passado</h3>'));
+for(const term of ['1 a 2 km','duração estimada de 1h30 a 2h','A monitoria é opcional','Confira as condições de acesso'])
+ assert(bertiogaTrail.includes(term),term);
+assert.deepEqual([...bertiogaTrail.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['https://www.bertioga.sp.gov.br/turismo/pontos-turisticos/trilhas/trilha-do-veu-da-noiva']);
+console.log('Itaguaré Trail visitor guidance is linked only from Bertioga with practical checks and time estimates.');
