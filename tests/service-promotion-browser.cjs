@@ -27,6 +27,15 @@ await journey.waitForURL('**/servicos/anuncios-airbnb-booking.html#investimento'
 await journey.close();
 const turnover=await context.newPage();
 await turnover.goto('https://praia.digital/anfitrioes/central-airbnb.html');
+const tutorials = turnover.locator('#gratuitos article').filter({has:turnover.getByRole('heading',{name:'Tutoriais para anfitriões',exact:true})});
+for (const [label,href] of [
+ ['Como receber alertas da Defesa Civil pelo CEP do imóvel','/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html'],
+ ['Como ler o boletim de balneabilidade da CETESB','/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html'],
+]) {
+ const link=tutorials.getByRole('link',{name:label,exact:true});
+ assert.equal(await link.count(),1);
+ assert.equal(await link.getAttribute('href'),href);
+}
 await turnover.getByRole('link',{name:'Planejar intervalo entre reservas →',exact:true}).press('Enter');
 await turnover.waitForURL('**/anfitrioes/checklists-anfitrioes.html#intervalo-entre-reservas');
 assert.match(await turnover.locator('#turnover-title').innerText(),/intervalo entre reservas/i);
@@ -88,13 +97,14 @@ await turnover.emulateMedia({media:'print'});
 assert.equal(await answer.isVisible(),false);
 assert.equal(await turnover.locator('.task-list input[type=checkbox]').count(),33);
 console.log(`Intervalo entre reservas passed at ${width}px: discovery, validation, deficit, recovery, print`);
+await turnover.emulateMedia({media:'screen'});
 const safety = turnover.locator('section[aria-labelledby="safety-title"]');
 const checks = turnover.locator('.task-list input[type=checkbox]');
 const legacyTaskStates = await checks.evaluateAll(nodes=>nodes.map(node=>node.checked));
 const savedChecklist = await turnover.evaluate(()=>localStorage.getItem('praiaDigitalChecklistAnfitriaoV2'));
 const safetyGuides = [
- ['receber alertas da Defesa Civil pelo CEP do imóvel','/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html',/Como receber alertas da Defesa Civil/],
- ['consultar a balneabilidade por ponto da praia','/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html',/Como saber se uma praia está própria para banho/],
+ ['mensagem de check-in sobre os alertas da Defesa Civil','/blog/alertas-defesa-civil-cep-imovel-temporada-litoral.html#check-in',/Uma nota curta para o check-in/],
+ ['exemplo de mensagem com o boletim da CETESB','/blog/balneabilidade-litoral-paulista-como-consultar-cetesb.html#hospedes',/O que colocar na mensagem ao hóspede/],
 ];
 for(const [label,href,heading] of safetyGuides){
  const link=safety.getByRole('link',{name:label,exact:true});
@@ -102,7 +112,7 @@ for(const [label,href,heading] of safetyGuides){
  assert.equal(await link.getAttribute('href'),href);
  await link.press('Enter');
  await turnover.waitForURL('https://praia.digital'+href);
- assert.match(await turnover.locator('h1').innerText(),heading);
+ assert.match(await turnover.locator('h2:target').innerText(),heading);
  await turnover.goBack();
  await turnover.waitForURL('**/anfitrioes/checklists-anfitrioes.html#intervalo-entre-reservas');
  assert.equal(await checks.count(),33);
